@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Monitor Operacional GEO SPI</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">SPI • DEV</div>
+      <h1>Monitor Operacional GEO SPI</h1>
+      <p>Visão geográfica operacional do Backbone do Interior de São Paulo</p>
+    </div>
+    <div class="status"><span class="dot"></span><span id="statusText">Carregando Backbone…</span></div>
+  </header>
+  <main class="shell">
+    <section class="map-wrap">
+      <div id="map"></div>
+      <div class="legend">
+        <strong>BACKBONE</strong>
+        <span><i class="line alta"></i> Confiança alta</span>
+        <span><i class="line media"></i> Confiança média</span>
+        <span><i class="line baixa"></i> Confiança baixa</span>
+        <span><i class="line sem"></i> Sem referência</span>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <section class="panel hero">
+        <div class="panel-title">Visão operacional</div>
+        <div class="metrics">
+          <div><span id="rotas">—</span><small>rotas no mapa</small></div>
+          <div><span id="clusters">—</span><small>clusters</small></div>
+          <div><span id="cabos">—</span><small>cabos</small></div>
+          <div><span id="municipios">—</span><small>municípios nas pontas</small></div>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="panel-title">Filtros</div>
+        <label>Cluster<select id="clusterFilter"><option value="">Todos</option></select></label>
+        <label>Confiança<select id="confidenceFilter"><option value="">Todas</option><option>ALTA</option><option>MEDIA</option><option>BAIXA</option><option>SEM_REFERENCIA</option></select></label>
+        <label>Buscar trecho / cabo / município<input id="searchBox" placeholder="Ex.: IEN.AT, F-0275, Campinas"></label>
+        <button id="resetBtn">Limpar filtros</button>
+      </section>
+      <section class="panel event-panel">
+        <div class="panel-title">Camadas operacionais</div>
+        <div class="layer coming"><span>🌩️ Clima / tempestade</span><b>próxima etapa</b></div>
+        <div class="layer coming"><span>⚡ Energia</span><b>próxima etapa</b></div>
+        <div class="layer coming"><span>🔥 Fire Core</span><b>próxima etapa</b></div>
+        <div class="layer coming"><span>🚨 Defesa Civil</span><b>próxima etapa</b></div>
+      </section>
+      <section class="panel details" id="details"><div class="panel-title">Trecho selecionado</div><p>Clique em um trecho do Backbone para ver os detalhes.</p></section>
+    </aside>
+  </main>
+  <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
