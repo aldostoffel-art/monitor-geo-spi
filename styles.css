@@ -156,3 +156,14 @@ body.trajectory-map-mode .climate-strip-label small{font-size:7px!important}
 body.trajectory-map-mode .climate-strip-item{padding:3px 8px!important;font-size:9px!important;gap:5px!important}
 body.trajectory-map-mode .climate-strip-item b{font-size:9px!important}
 @media(max-width:900px){body.trajectory-map-mode .topbar{min-height:40px!important;padding:3px 8px!important}body.trajectory-map-mode .topbar h1{font-size:16px!important}body.trajectory-map-mode .view-tabs{padding:2px 5px!important}body.trajectory-map-mode .view-tab{padding:3px 2px!important;font-size:8px!important}}
+
+/* Fire DEV: KPI ativos clicável + destaque operacional */
+.fire-focus-kpis .fire-kpi-action{appearance:none;text-align:left;cursor:pointer;padding:10px;border-radius:9px;background:#0f1822;border:1px solid #7c2d12;color:inherit;transition:.16s ease;min-width:0}
+.fire-focus-kpis .fire-kpi-action:hover,.fire-focus-kpis .fire-kpi-action:focus-visible{background:#25150f;border-color:#fb923c;box-shadow:0 0 0 2px rgba(251,146,60,.18),0 0 18px rgba(249,115,22,.22);outline:none;transform:translateY(-1px)}
+.fire-focus-kpis .fire-kpi-action strong,.fire-focus-kpis .fire-kpi-action span,.fire-focus-kpis .fire-kpi-action small{display:block}
+.fire-focus-kpis .fire-kpi-action small{font-size:8px;color:#fb923c;margin-top:3px;font-weight:800}
+.fire-kpi-pulse{animation:fireKpiPulse .6s ease 3}
+@keyframes fireKpiPulse{50%{box-shadow:0 0 0 4px rgba(249,115,22,.28),0 0 24px rgba(249,115,22,.65)}}
+.fire-marker-focus{filter:drop-shadow(0 0 9px rgba(255,69,0,1)) drop-shadow(0 0 18px rgba(255,140,0,.82))}
+.fire-marker-selected{filter:drop-shadow(0 0 12px #fff) drop-shadow(0 0 22px #f97316) drop-shadow(0 0 32px #ef4444)}
+.fire-popup-more{margin-top:8px;border-top:1px solid #374151;padding-top:6px}
