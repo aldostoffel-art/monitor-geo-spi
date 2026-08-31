@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20260831024645">
+  <link rel="stylesheet" href="styles.css?v=202608311322">
 </head>
 <body>
   <header class="topbar">
@@ -17,6 +17,12 @@
     </div>
     <div class="status"><span class="dot"></span><span id="statusText">Carregando Backbone…</span></div>
   </header>
+  <section id="climateStrip" class="climate-strip severity-monitoramento" aria-label="Faixa climática operacional" aria-live="polite">
+    <div class="climate-strip-label"><span>🌩️ CLIMA SPI</span><small id="climateStripStatus">carregando</small></div>
+    <div class="climate-strip-viewport">
+      <div id="climateStripTrack" class="climate-strip-track"><span class="climate-strip-empty">Carregando ameaças climáticas relevantes…</span></div>
+    </div>
+  </section>
   <main class="shell">
     <section class="map-wrap">
       <div id="map"></div>
@@ -66,6 +72,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=20260831024645"></script>
+  <script src="app.js?v=202608311322"></script>
 </body>
 </html>
