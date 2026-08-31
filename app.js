@@ -3,16 +3,20 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,att
 
 const DATA_FILES=['data/backbone-1.geojson','data/backbone-2.geojson','data/backbone-3.geojson','data/backbone-4.geojson'];
 const FIRE_DATA='data/fire-core.json';
+const ENERGY_DATA='data/energy-core.json';
 const FIRE_REFRESH_MS=120000;
+const ENERGY_REFRESH_MS=300000;
 const WEATHER_DATA='data/weather-risk.json';
 const WEATHER_REFRESH_MS=300000;
 let allFeatures=[],layer=null,fireEvents=[],weatherEvents=[];
 const fireLayer=L.layerGroup().addTo(map);
 const weatherLayer=L.layerGroup().addTo(map);
 const relatedBackboneLayer=L.layerGroup().addTo(map);
+const energyLayer=L.layerGroup().addTo(map);
 
 const colorFor=c=>({ALTA:'#7c3aed',MEDIA:'#f59e0b',BAIXA:'#ef4444',SEM_REFERENCIA:'#64748b'})[c]||'#38bdf8';
 const fireColor=c=>({URGENTE:'#dc2626',ATENCAO:'#f59e0b',MONITORAMENTO:'#16a34a'})[(c||'').toUpperCase()]||'#64748b';
+const energyColor=n=>({CRITICO:'#dc2626',ALTO:'#ea580c',ATENCAO:'#f59e0b',BAIXO:'#0ea5e9',MONITORAMENTO:'#64748b'})[(n||'').toUpperCase()]||'#64748b';
 const weatherColor=c=>({CRITICO:'#dc2626',ALTO:'#ea580c',ATENCAO:'#f59e0b',MONITORAMENTO:'#0ea5e9'})[(c||'').toUpperCase()]||'#64748b';
 const norm=v=>(v??'').toString().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase();
 const esc=v=>(v??'—').toString().replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
@@ -28,6 +32,12 @@ function firePopupHtml(e){return `<div class="fire-popup"><b style="color:${fire
 function fireDetailsHtml(e){const rows=[['Classificação',e.classificacao],['Evento',e.id_evento],['Município',e.municipio],['Última detecção',e.ultima_deteccao],['Backbone',e.backbone],['Cabo',e.cabo],['Distância',fmtKm(e.distancia_backbone_km)],['Confiança',e.confianca_rota],['Satélite',e.satelite],['Detecções',e.deteccoes]];return `<div class="panel-title">🔥 Fire Core</div><h3 class="fire-title" style="color:${fireColor(e.classificacao)}">${esc(e.classificacao)}</h3>${rows.map(r=>`<div class="row"><span>${esc(r[0])}</span><span>${esc(r[1]??'—')}</span></div>`).join('')}`;}
 function highlightBackbone(e){relatedBackboneLayer.clearLayers();const f=allFeatures.find(x=>{const p=x.properties||{};return (e.id_backbone&&p.id_backbone===e.id_backbone)||(e.backbone&&p.trecho===e.backbone);});if(!f)return;L.geoJSON(f,{style:{color:fireColor(e.classificacao),weight:8,opacity:1}}).addTo(relatedBackboneLayer).bringToFront();}
 function renderFire(){fireLayer.clearLayers();relatedBackboneLayer.clearLayers();const enabled=document.getElementById('fireToggle')?.checked!==false;document.getElementById('fireCount').textContent=`${fireEvents.length} ativo${fireEvents.length===1?'':'s'}`;if(!enabled)return;fireEvents.forEach(e=>{const lat=Number(e.latitude),lon=Number(e.longitude);if(!Number.isFinite(lat)||!Number.isFinite(lon))return;const color=fireColor(e.classificacao);const marker=L.circleMarker([lat,lon],{radius:10,color:'#fff',weight:2,fillColor:color,fillOpacity:.95});marker.bindPopup(firePopupHtml(e));marker.bindTooltip(`🔥 ${e.classificacao||'FIRE'} • ${e.id_evento||''}`);marker.on('click',()=>{document.getElementById('details').innerHTML=fireDetailsHtml(e);highlightBackbone(e);});marker.addTo(fireLayer);const p=e.ponto_mais_proximo||{};const plat=Number(p.latitude),plon=Number(p.longitude);if(Number.isFinite(plat)&&Number.isFinite(plon)){L.polyline([[lat,lon],[plat,plon]],{color,weight:3,opacity:.85,dashArray:'8 8'}).addTo(fireLayer);L.circleMarker([plat,plon],{radius:5,color,weight:2,fillColor:'#fff',fillOpacity:1}).addTo(fireLayer);}});}
+
+
+function energyPopupHtml(e){return `<div class="energy-popup"><b style="color:${energyColor(e.nivel)}">⚡ ${esc(e.nivel)}</b><br><b>${esc(e.municipio)}</b> • ${esc(e.distribuidora)}<br>Ocorrência: ${esc(e.numero_ocorrencia||e.id_ocorrencia)}<br>Sites impactados: <b>${esc(e.sites_impactados)}</b><br>Sites ≤4h: <b>${esc(e.sites_ate_4h)}</b><br>Clientes interrompidos: ${Number(e.clientes_interrompidos||0).toLocaleString('pt-BR')}<br>Score: ${esc(e.score)}<br>Confiança geográfica: ${esc(e.confianca_geografica)}</div>`;}
+function energyDetailsHtml(e){const areas=(e.areas||[]).join(', ')||'—';const crit=(e.sites_criticos||[]).map(s=>`${s.site||'—'}${s.distancia_km!=null?` (${Number(s.distancia_km).toFixed(2)} km)`:''}`).join(', ')||'—';const motivos=(e.motivos||[]).join(' • ')||'—';const rows=[['Nível',e.nivel],['Município',e.municipio],['Distribuidora',e.distribuidora],['Ocorrência',e.numero_ocorrencia||e.id_ocorrencia],['Status',e.status],['Início',e.inicio],['Score',e.score],['Sites impactados',e.sites_impactados],['Sites ≤4h',e.sites_ate_4h],['Clientes',Number(e.clientes_interrompidos||0).toLocaleString('pt-BR')],['Confiança geo',e.confianca_geografica],['Áreas',areas],['Sites críticos',crit],['Motivos',motivos]];return `<div class="panel-title">⚡ Energy Core</div><h3 class="energy-title" style="color:${energyColor(e.nivel)}">${esc(e.nivel)} • ${esc(e.municipio)}</h3>${rows.map(r=>`<div class="row"><span>${esc(r[0])}</span><span>${esc(r[1]??'—')}</span></div>`).join('')}`;}
+function renderEnergy(){energyLayer.clearLayers();const enabled=document.getElementById('energyToggle')?.checked!==false;const count=document.getElementById('energyCount');if(count)count.textContent=`${energyEvents.length} ocorr.`;if(!enabled)return;energyEvents.forEach(e=>{const lat=Number(e.latitude),lon=Number(e.longitude);if(!Number.isFinite(lat)||!Number.isFinite(lon))return;const color=energyColor(e.nivel);const sev=(e.nivel||'').toUpperCase();const radius=sev==='CRITICO'?9:sev==='ALTO'?8:sev==='ATENCAO'?7:5;const marker=L.circleMarker([lat,lon],{radius,color:'#fff',weight:1.5,fillColor:color,fillOpacity:sev==='MONITORAMENTO'?.45:.82});marker.bindPopup(energyPopupHtml(e));marker.bindTooltip(`⚡ ${e.nivel||'ENERGIA'} • ${e.municipio||''} • ${e.sites_impactados||0} sites`);marker.on('click',()=>{document.getElementById('details').innerHTML=energyDetailsHtml(e);});marker.addTo(energyLayer);});}
+async function loadEnergy(){try{const r=await fetch(`${ENERGY_DATA}?t=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw new Error(`Energy HTTP ${r.status}`);const obj=await r.json();energyEvents=Array.isArray(obj.eventos)?obj.eventos:[];renderEnergy();const c=document.getElementById('energyCount');if(c)c.title=obj.gerado_em?`Atualizado: ${obj.gerado_em}`:'Energy Core';}catch(err){console.error('Falha Energy Core',err);const c=document.getElementById('energyCount');if(c)c.textContent='erro';}}
 async function loadFire(){try{const r=await fetch(`${FIRE_DATA}?t=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw new Error(`Fire HTTP ${r.status}`);const obj=await r.json();fireEvents=Array.isArray(obj.eventos_ativos)?obj.eventos_ativos:[];renderFire();document.getElementById('fireCount').title=obj.gerado_em?`Atualizado: ${obj.gerado_em}`:'Fire Core';}catch(err){console.error('Falha Fire Core',err);document.getElementById('fireCount').textContent='erro';}}
 
 function weatherPopupHtml(e){const ativo=e.ameaca_ativa?'SIM':'NÃO';return `<div class="weather-popup"><b style="color:${weatherColor(e.nivel_risco)}">🌩️ ${esc(e.nivel_risco)}</b><br><b>${esc(e.municipio)}</b><br>Ameaça ativa: <b>${ativo}</b><br>Temperatura: ${esc(e.temperatura_c)} °C<br>Vento atual: ${esc(e.vento_atual_kmh)} km/h<br>Rajada: <b>${esc(e.rajada_kmh)} km/h</b><br>Chuva total: ${esc(e.chuva_total_mm)} mm<br>Prob. chuva: ${esc(e.probabilidade_chuva_pico)}%<br>Tempestade: ${e.tempestade?'SIM':'NÃO'}<br>Sites expostos: ${esc(e.sites_total)}<br>Sites ≤4h: ${esc(e.sites_ate_4h)}</div>`;}
@@ -40,6 +50,7 @@ Promise.all(DATA_FILES.map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);retu
 document.getElementById('searchBox').addEventListener('input',()=>{clearTimeout(window._t);window._t=setTimeout(render,180)});
 document.getElementById('resetBtn').addEventListener('click',()=>{document.getElementById('clusterFilter').value='';document.getElementById('confidenceFilter').value='';document.getElementById('searchBox').value='';render()});
 document.getElementById('fireToggle').addEventListener('change',renderFire);
+document.getElementById('energyToggle').addEventListener('change',renderEnergy);
 document.getElementById('weatherToggle').addEventListener('change',renderWeather);
 loadFire();
 loadWeather();
