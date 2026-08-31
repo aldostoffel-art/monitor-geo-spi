@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20260831180828">
+  <link rel="stylesheet" href="styles.css?v=20260831181823">
 </head>
 <body>
   <header class="topbar">
@@ -31,6 +31,14 @@
   <main class="shell" id="mapView">
     <section class="map-wrap">
       <div id="map"></div>
+      <div id="trajectoryMapLegend" class="trajectory-map-legend" aria-label="Legenda da Trajetória">
+        <strong>TRAJETÓRIA • DEFESA CIVIL</strong>
+        <span><i class="traj-sev extreme"></i> Extreme</span>
+        <span><i class="traj-sev alerta"></i> Alerta</span>
+        <span><i class="traj-sev forecast"></i> Previsão meteorológica</span>
+        <span><i class="traj-line-confirmed"></i> Deslocamento confirmado</span>
+        <span><i class="traj-line-wind"></i> Direção do vento (não é trajetória)</span>
+      </div>
       <div id="mobileFocusPanel" class="mobile-focus-panel" hidden>
         <div class="mobile-focus-title">📡 MÓVEL • VISÃO OPERACIONAL</div>
         <div class="mobile-focus-kpis">
@@ -127,6 +135,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=20260831181305"></script>
+  <script src="app.js?v=20260831181823"></script>
 </body>
 </html>
