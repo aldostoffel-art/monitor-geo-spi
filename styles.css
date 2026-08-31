@@ -50,3 +50,7 @@
 
 /* Aba Fire + Backbone DEV */
 .fire-focus-mode .map-full-only{display:none!important}.fire-focus-panel{border-color:#7c2d12;background:linear-gradient(180deg,#24150e,#16120f)}.fire-focus-kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:9px}.fire-focus-kpis div{padding:10px;border-radius:9px;background:#0f1822;border:1px solid #4b2a1b}.fire-focus-kpis strong{display:block;font-size:24px;color:#fb923c}.fire-focus-kpis span{display:block;font-size:10px;color:#9daebe}.fire-focus-nearest{padding:10px;border-radius:9px;background:#0d1620;border:1px solid #3a2a22;font-size:11px;line-height:1.5;margin-bottom:8px}.fire-focus-panel small{color:#8194a7;line-height:1.4}.fire-focus-mode .sidebar{background:#111711}.fire-focus-mode .legend{border-color:#5b3a28}@media(max-width:900px){.fire-focus-mode .sidebar{padding-top:10px}}
+
+
+/* Navegação mobile: três abas sempre visíveis */
+.view-tabs{width:100%;overflow:hidden}.view-tab{min-width:0;white-space:nowrap}.tab-short{display:none}@media(max-width:900px){.view-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;padding:6px}.view-tab{width:100%;min-width:0;padding:7px 3px;font-size:10px;text-align:center;overflow:hidden;text-overflow:ellipsis}.tab-long{display:none}.tab-short{display:inline}.tab-icon{margin-right:2px}}
