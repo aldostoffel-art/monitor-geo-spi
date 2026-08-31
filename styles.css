@@ -6,10 +6,9 @@
 .energy-layer{background:rgba(245,158,11,.055)}.energy-layer b{color:#f5c04f}.energy-title{margin-bottom:10px}.energy-popup{line-height:1.55}
 
 .energy-outage-wrapper{background:transparent!important;border:0!important}
-.energy-outage-icon{position:relative;width:18px;height:18px;display:flex;align-items:center;justify-content:center;filter:drop-shadow(0 1px 1px rgba(0,0,0,.55))}
-.energy-bolt{font-size:16px;line-height:1;color:#facc15;font-family:"Segoe UI Emoji","Noto Color Emoji",sans-serif}
-.energy-slash{position:absolute;width:17px;height:2px;background:#facc15;border:0;border-radius:2px;transform:rotate(-48deg);box-shadow:0 0 1px rgba(0,0,0,.9)}
-
-.energy-outage-icon.energy-compact{width:14px;height:14px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.5))}
-.energy-outage-icon.energy-compact .energy-bolt{font-size:12px}
-.energy-outage-icon.energy-compact .energy-slash{width:13px;height:1.5px}
+.energy-outage-icon{position:relative;width:11px;height:11px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.45))}
+.energy-bolt{position:absolute;left:2px;top:0;width:7px;height:11px;background:#facc15;clip-path:polygon(56% 0,18% 48%,46% 48%,29% 100%,82% 39%,53% 39%)}
+.energy-slash{position:absolute;left:1px;top:5px;width:10px;height:1.2px;background:#facc15;border-radius:2px;transform:rotate(-48deg);box-shadow:0 0 .5px rgba(0,0,0,.8)}
+.energy-outage-icon.energy-compact{width:8px;height:8px;filter:drop-shadow(0 .5px .5px rgba(0,0,0,.4))}
+.energy-outage-icon.energy-compact .energy-bolt{left:1.5px;top:0;width:5px;height:8px}
+.energy-outage-icon.energy-compact .energy-slash{left:.5px;top:3.7px;width:7px;height:1px}
