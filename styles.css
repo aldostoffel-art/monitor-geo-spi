@@ -136,3 +136,23 @@ body.trajectory-map-mode .leaflet-popup-content-wrapper:has(.trajectory-map-popu
 body.trajectory-map-mode .trajectory-map-popup .trajectory-critical-row{padding:4px 0!important}
 body.trajectory-map-mode .trajectory-map-popup .trajectory-critical-head{padding:2px 0 6px!important}
 @media(max-height:760px){body.trajectory-map-mode .topbar{min-height:54px!important;padding:5px 14px!important}body.trajectory-map-mode .topbar p{display:none}body.trajectory-map-mode .leaflet-popup-content .trajectory-map-popup{max-height:58vh!important}}
+
+/* Trajetória: topo realmente compacto para maximizar mapa/carimbo */
+body.trajectory-map-mode .topbar{min-height:44px!important;padding:4px 14px!important;display:flex!important;align-items:center!important;justify-content:space-between!important}
+body.trajectory-map-mode .topbar h1{font-size:18px!important;line-height:1!important;margin:0!important}
+body.trajectory-map-mode .topbar p{display:none!important}
+body.trajectory-map-mode .topbar .eyebrow{font-size:7px!important;line-height:1!important;margin-bottom:2px!important}
+body.trajectory-map-mode .view-tabs{padding:3px 10px!important;gap:4px!important;min-height:30px!important}
+body.trajectory-map-mode .view-tab{padding:4px 9px!important;font-size:9px!important;min-height:24px!important}
+body.trajectory-map-mode .important-event-strip{min-height:27px!important}
+body.trajectory-map-mode .important-event-label{padding:3px 8px!important}
+body.trajectory-map-mode .important-event-label span{font-size:8px!important}
+body.trajectory-map-mode .important-event-label strong{font-size:7px!important;padding:2px 5px!important}
+body.trajectory-map-mode .important-event-item{padding:3px 8px!important;font-size:9px!important;gap:5px!important}
+body.trajectory-map-mode .climate-strip{min-height:25px!important}
+body.trajectory-map-mode .climate-strip-label{padding:3px 8px!important;gap:5px!important}
+body.trajectory-map-mode .climate-strip-label span{font-size:8px!important}
+body.trajectory-map-mode .climate-strip-label small{font-size:7px!important}
+body.trajectory-map-mode .climate-strip-item{padding:3px 8px!important;font-size:9px!important;gap:5px!important}
+body.trajectory-map-mode .climate-strip-item b{font-size:9px!important}
+@media(max-width:900px){body.trajectory-map-mode .topbar{min-height:40px!important;padding:3px 8px!important}body.trajectory-map-mode .topbar h1{font-size:16px!important}body.trajectory-map-mode .view-tabs{padding:2px 5px!important}body.trajectory-map-mode .view-tab{padding:3px 2px!important;font-size:8px!important}}
