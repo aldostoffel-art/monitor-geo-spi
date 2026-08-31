@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=202608311700">
+  <link rel="stylesheet" href="styles.css?v=202608311745">
 </head>
 <body>
   <header class="topbar">
@@ -17,6 +17,7 @@
     </div>
     <div class="status"><span class="dot"></span><span id="statusText">Carregando Backbone…</span></div>
   </header>
+  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button">🗺️ Mapa completo</button><button id="tabComando" class="view-tab" type="button">🎯 Visão de Comando</button></nav>
   <section id="importantEventStrip" class="important-event-strip" aria-label="Eventos meteorológicos importantes" aria-live="assertive" hidden>
     <div class="important-event-label"><span>🚨 EVENTO IMPORTANTE</span><strong id="importantEventLevel">URGENTE</strong></div>
     <div class="important-event-viewport"><div id="importantEventTrack" class="important-event-track"></div></div>
@@ -27,7 +28,7 @@
       <div id="climateStripTrack" class="climate-strip-track"><span class="climate-strip-empty">Carregando ameaças climáticas relevantes…</span></div>
     </div>
   </section>
-  <main class="shell">
+  <main class="shell" id="mapView">
     <section class="map-wrap">
       <div id="map"></div>
       <div class="legend">
@@ -82,8 +83,22 @@
       <section class="panel details" id="details"><div class="panel-title">Trecho selecionado</div><p>Clique em um trecho do Backbone para ver os detalhes.</p></section>
     </aside>
   </main>
+  <main id="commandView" class="command-view" hidden>
+    <section class="command-hero">
+      <div><div class="eyebrow">SPI • DEV • VISÃO DE COMANDO</div><h2>Onde atuar primeiro</h2><p>Inteligência por trás, somente prioridades na tela. Clima, Defesa Civil, energia, Fire, sites ≤4h e Backbone.</p></div>
+      <div id="commandReadiness" class="command-readiness">ANALISANDO</div>
+    </section>
+    <section id="commandUrgent" class="command-urgent"><b>🚨 EVENTO PRIORITÁRIO</b><div id="commandUrgentText">Consolidando eventos relevantes…</div></section>
+    <section class="command-grid">
+      <article class="command-card command-priority"><div class="command-card-title">🎯 Onde atacar primeiro</div><div id="commandPriorityList"></div></article>
+      <article class="command-card"><div class="command-card-title">⏱️ Próximas horas</div><div id="commandNextHours"></div></article>
+      <article class="command-card"><div class="command-card-title">🛡️ Infraestrutura vulnerável</div><div id="commandVulnerability"></div></article>
+      <article class="command-card"><div class="command-card-title">👁️ O que estamos monitorando</div><div id="commandWatch"></div></article>
+    </section>
+    <section class="command-footer-note">Detalhes permanecem disponíveis na aba <b>Mapa completo</b>. Esta visão não cria novos scores: usa apenas classificações e dados já calculados pelos Cores DEV.</section>
+  </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=202608311700"></script>
+  <script src="app.js?v=202608311745"></script>
 </body>
 </html>
