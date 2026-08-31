@@ -52,6 +52,14 @@
         <div class="layer active fire-layer"><label class="layer-toggle"><input type="checkbox" id="fireToggle" checked><span>🔥 Fire Core</span></label><b id="fireCount">carregando</b></div>
         <div class="layer active defesa-layer"><label class="layer-toggle"><input type="checkbox" id="defesaToggle" checked><span>🚨 Defesa Civil</span></label><b id="defesaCount">carregando</b></div>
       </section>
+      <section class="panel analyst-panel" id="analystPanel">
+        <div class="analyst-head"><div><div class="panel-title">🧠 Analista Operacional SPI</div><small id="analystUpdated">Consolidando os Cores…</small></div><span class="analyst-badge" id="readinessBadge">—</span></div>
+        <div class="analyst-summary" id="analystSummary">Aguardando dados operacionais.</div>
+        <div class="analyst-actions"><button data-analysis="situacao">Situação agora</button><button data-analysis="preparacao">Preparação da Regional</button><button data-analysis="projecao">Projeção operacional</button></div>
+        <label class="analyst-question">Pergunte ao SPI<input id="analystQuestion" placeholder="Ex.: Onde precisamos de maior atenção?"></label>
+        <button id="analystAsk">Analisar</button>
+        <div class="analyst-answer" id="analystAnswer">O analista consolida somente informações já calculadas pelos Cores DEV. Rankings e classificações continuam sendo definidos pelo Python.</div>
+      </section>
       <section class="panel details" id="details"><div class="panel-title">Trecho selecionado</div><p>Clique em um trecho do Backbone para ver os detalhes.</p></section>
     </aside>
   </main>
