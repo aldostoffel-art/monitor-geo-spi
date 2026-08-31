@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=202608311805">
+  <link rel="stylesheet" href="styles.css?v=202608311825">
 </head>
 <body>
   <header class="topbar">
@@ -17,7 +17,7 @@
     </div>
     <div class="status"><span class="dot"></span><span id="statusText">Carregando Backbone…</span></div>
   </header>
-  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button">🗺️ Mapa completo</button><button id="tabComando" class="view-tab" type="button">🎯 Visão de Comando</button><button id="tabFire" class="view-tab" type="button">🔥 Fire + Backbone</button></nav>
+  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button></nav>
   <section id="importantEventStrip" class="important-event-strip" aria-label="Eventos meteorológicos importantes" aria-live="assertive" hidden>
     <div class="important-event-label"><span>🚨 EVENTO IMPORTANTE</span><strong id="importantEventLevel">URGENTE</strong></div>
     <div class="important-event-viewport"><div id="importantEventTrack" class="important-event-track"></div></div>
@@ -105,6 +105,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=202608311805"></script>
+  <script src="app.js?v=202608311825"></script>
 </body>
 </html>
