@@ -8,11 +8,14 @@ const FIRE_REFRESH_MS=120000;
 const ENERGY_REFRESH_MS=300000;
 const WEATHER_DATA='data/weather-risk.json';
 const WEATHER_REFRESH_MS=300000;
-let allFeatures=[],layer=null,fireEvents=[],weatherEvents=[],energyEvents=[];
+const DEFESA_DATA='data/defesa-civil.json';
+const DEFESA_REFRESH_MS=300000;
+let allFeatures=[],layer=null,fireEvents=[],weatherEvents=[],energyEvents=[],defesaEvents=[];
 const fireLayer=L.layerGroup().addTo(map);
 const weatherLayer=L.layerGroup().addTo(map);
 const relatedBackboneLayer=L.layerGroup().addTo(map);
 const energyLayer=L.layerGroup().addTo(map);
+const defesaLayer=L.layerGroup().addTo(map);
 
 const colorFor=c=>({ALTA:'#7c3aed',MEDIA:'#f59e0b',BAIXA:'#ef4444',SEM_REFERENCIA:'#64748b'})[c]||'#38bdf8';
 const fireColor=c=>({URGENTE:'#dc2626',ATENCAO:'#f59e0b',MONITORAMENTO:'#16a34a'})[(c||'').toUpperCase()]||'#64748b';
@@ -46,6 +49,12 @@ function weatherDetailsHtml(e){const rows=[['Nível',e.nivel_risco],['Município
 function renderWeather(){weatherLayer.clearLayers();const enabled=document.getElementById('weatherToggle')?.checked!==false;const ativos=weatherEvents.filter(e=>e.ameaca_ativa).length;const count=document.getElementById('weatherCount');if(count){count.textContent=`${ativos} ameaça${ativos===1?'':'s'}`;count.title=`${weatherEvents.length} municípios monitorados`;}if(!enabled)return;weatherEvents.forEach(e=>{const lat=Number(e.latitude),lon=Number(e.longitude);if(!Number.isFinite(lat)||!Number.isFinite(lon))return;const color=weatherColor(e.nivel_risco);const active=Boolean(e.ameaca_ativa)||Boolean(e.tempestade);const marker=L.circleMarker([lat,lon],{radius:active?9:6,color:active?'#fff':color,weight:active?2:1,fillColor:color,fillOpacity:active?.9:.42,opacity:active?1:.72});marker.bindPopup(weatherPopupHtml(e));marker.bindTooltip(`🌩️ ${e.municipio||''} • ${e.nivel_risco||''} • rajada ${e.rajada_kmh??'—'} km/h`);marker.on('click',()=>{document.getElementById('details').innerHTML=weatherDetailsHtml(e);});marker.addTo(weatherLayer);});}
 async function loadWeather(){try{const r=await fetch(`${WEATHER_DATA}?t=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw new Error(`Weather HTTP ${r.status}`);const obj=await r.json();weatherEvents=Array.isArray(obj.eventos)?obj.eventos:[];renderWeather();const c=document.getElementById('weatherCount');if(c&&obj.gerado_em)c.dataset.updated=obj.gerado_em;}catch(err){console.error('Falha Weather Risk',err);const c=document.getElementById('weatherCount');if(c)c.textContent='erro';}}
 
+
+function defesaPopupHtml(e){return `<div class="defesa-popup"><b style="color:#ef4444">🚨 DEFESA CIVIL</b><br><b>${esc(e.tipo||e.titulo)}</b><br>Município: <b>${esc(e.municipio)}</b><br>Gravidade: ${esc(e.gravidade)}<br>Urgência: ${esc(e.urgencia)}<br>Certeza: ${esc(e.certeza)}<br>Vigência: ${esc(e.vigencia)}<br><br>${esc(e.resumo)}</div>`;}
+function defesaDetailsHtml(e){const rows=[['Tipo',e.tipo||e.titulo],['Município',e.municipio],['Gravidade',e.gravidade],['Urgência',e.urgencia],['Certeza',e.certeza],['Vigência',e.vigencia],['Status',e.status],['Fonte',e.fonte]];return `<div class="panel-title">🚨 Defesa Civil</div><h3 style="color:#ef4444">${esc(e.tipo||e.titulo)}</h3>${rows.map(r=>`<div class="row"><span>${esc(r[0])}</span><span>${esc(r[1]??'—')}</span></div>`).join('')}<p>${esc(e.resumo)}</p>`;}
+function renderDefesa(){defesaLayer.clearLayers();const enabled=document.getElementById('defesaToggle')?.checked!==false;const count=document.getElementById('defesaCount');if(count)count.textContent=`${defesaEvents.length} município${defesaEvents.length===1?'':'s'}`;if(!enabled)return;defesaEvents.forEach(e=>{const lat=Number(e.latitude),lon=Number(e.longitude);if(!Number.isFinite(lat)||!Number.isFinite(lon))return;const marker=L.circleMarker([lat,lon],{radius:8,color:'#ffffff',weight:2,fillColor:'#ef4444',fillOpacity:.95});marker.bindPopup(defesaPopupHtml(e));marker.bindTooltip(`🚨 ${e.tipo||e.titulo||'Defesa Civil'} • ${e.municipio||''}`);marker.on('click',()=>{document.getElementById('details').innerHTML=defesaDetailsHtml(e);});marker.addTo(defesaLayer);});}
+async function loadDefesa(){try{const r=await fetch(`${DEFESA_DATA}?t=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw new Error(`Defesa Civil HTTP ${r.status}`);const obj=await r.json();defesaEvents=Array.isArray(obj.eventos_geo)?obj.eventos_geo:[];renderDefesa();const c=document.getElementById('defesaCount');if(c)c.title=obj.gerado_em?`Atualizado: ${obj.gerado_em}`:'Defesa Civil';}catch(err){console.error('Falha Defesa Civil',err);const c=document.getElementById('defesaCount');if(c)c.textContent='erro';}}
+
 Promise.all(DATA_FILES.map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()}))).then(parts=>{allFeatures=parts.flatMap(p=>p.features||[]);populate();document.getElementById('statusText').textContent=`Backbone DEV carregado • ${allFeatures.length.toLocaleString('pt-BR')} rotas`;if(layer&&allFeatures.length)map.fitBounds(layer.getBounds(),{padding:[20,20]});renderFire();renderWeather();}).catch(err=>{document.getElementById('statusText').textContent='Falha ao carregar Backbone';console.error(err)});
 ['clusterFilter','confidenceFilter'].forEach(id=>document.getElementById(id).addEventListener('change',render));
 document.getElementById('searchBox').addEventListener('input',()=>{clearTimeout(window._t);window._t=setTimeout(render,180)});
@@ -54,9 +63,12 @@ document.getElementById('fireToggle').addEventListener('change',renderFire);
 document.getElementById('energyToggle').addEventListener('change',renderEnergy);
 map.on('zoomend',renderEnergy);
 document.getElementById('weatherToggle').addEventListener('change',renderWeather);
+document.getElementById('defesaToggle').addEventListener('change',renderDefesa);
 loadFire();
 loadWeather();
 loadEnergy();
+loadDefesa();
 setInterval(loadFire,FIRE_REFRESH_MS);
 setInterval(loadWeather,WEATHER_REFRESH_MS);
 setInterval(loadEnergy,ENERGY_REFRESH_MS);
+setInterval(loadDefesa,DEFESA_REFRESH_MS);
