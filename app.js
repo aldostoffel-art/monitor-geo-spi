@@ -72,3 +72,49 @@ setInterval(loadFire,FIRE_REFRESH_MS);
 setInterval(loadWeather,WEATHER_REFRESH_MS);
 setInterval(loadEnergy,ENERGY_REFRESH_MS);
 setInterval(loadDefesa,DEFESA_REFRESH_MS);
+
+
+// Analista Operacional SPI DEV — consolida resultados calculados pelos Cores.
+function analystSnapshot(){
+ const threats=weatherEvents.filter(e=>e.ameaca_ativa||e.tempestade);
+ const critical=weatherEvents.filter(e=>['CRITICO','ALTO'].includes(norm(e.nivel_risco)));
+ const vulnerable=weatherEvents.filter(e=>Number(e.sites_ate_4h||0)>0);
+ const maxGust=[...weatherEvents].sort((a,b)=>Number(b.rajada_kmh||0)-Number(a.rajada_kmh||0))[0];
+ const maxRain=[...weatherEvents].sort((a,b)=>Number(b.chuva_total_mm||0)-Number(a.chuva_total_mm||0))[0];
+ const fireUrg=fireEvents.filter(e=>norm(e.classificacao)==='URGENTE');
+ const dc=new Set(defesaEvents.map(e=>norm(e.municipio)).filter(Boolean));
+ const convergence=weatherEvents.filter(w=>dc.has(norm(w.municipio))&&(w.ameaca_ativa||w.tempestade));
+ let readiness='PREPARADA';
+ if(critical.length||fireUrg.length||threats.length>=5) readiness='CRÍTICA';
+ else if(threats.length||fireEvents.length||defesaEvents.length||energyEvents.length) readiness='ATENÇÃO';
+ return {threats,critical,vulnerable,maxGust,maxRain,fireUrg,convergence,readiness};
+}
+function analystText(mode='situacao',question=''){
+ const s=analystSnapshot();
+ const gust=s.maxGust?`${s.maxGust.municipio}: ${s.maxGust.rajada_kmh} km/h`:'sem dado';
+ const rain=s.maxRain?`${s.maxRain.municipio}: ${s.maxRain.chuva_total_mm} mm`:'sem dado';
+ const lines=[];
+ if(mode==='preparacao'){
+  lines.push(`<b>Preparação da Regional — ${s.readiness}</b>`);
+  lines.push(`Energia: ${energyEvents.length} região(ões) representada(s) sem energia. Vulnerabilidade: ${s.vulnerable.length} município(s) com sites ≤4h. Defesa Civil: ${defesaEvents.length} município(s). Fire Core: ${fireEvents.length} evento(s) ativo(s).`);
+  if(s.threats.length) lines.push(`Existem ${s.threats.length} ameaça(s) meteorológica(s) ativa(s). Recomenda-se priorizar conferência de autonomia, GMGs, equipes e acessos nos municípios expostos antes do agravamento.`); else lines.push('Não há ameaça meteorológica ativa classificada pelo Weather Risk neste ciclo. Manter prontidão nos locais já afetados pelas demais camadas.');
+  if(s.convergence.length) lines.push(`Há convergência entre ameaça climática e Defesa Civil em ${s.convergence.length} município(s), elevando a prioridade de acompanhamento.`);
+ } else if(mode==='projecao'){
+  lines.push('<b>Projeção operacional</b>');
+  lines.push(`Maior rajada disponível: ${esc(gust)}. Maior chuva total disponível: ${esc(rain)}.`);
+  lines.push('Trajetória, chegada, pico e saída só serão afirmados quando esses campos estiverem calculados e publicados pelos Cores. O analista não inventa horários ou deslocamentos.');
+ } else {
+  lines.push(`<b>Situação agora — ${s.readiness}</b>`);
+  lines.push(`Clima: ${s.threats.length} ameaça(s) ativa(s). Energia: ${energyEvents.length} região(ões). Fire: ${fireEvents.length} ativo(s). Defesa Civil: ${defesaEvents.length} município(s).`);
+  lines.push(`Maior rajada: ${esc(gust)}. Maior chuva: ${esc(rain)}.`);
+  if(s.critical.length) lines.push(`${s.critical.length} município(s) estão em nível ALTO/CRÍTICO no Weather Risk.`);
+ }
+ if(question){const q=norm(question); if(q.includes('QUEIM')||q.includes('FOGO'))lines.push(`<b>Resposta:</b> ${fireEvents.length} evento(s) Fire ativo(s).`);else if(q.includes('ENERG'))lines.push(`<b>Resposta:</b> ${energyEvents.length} região(ões) representada(s) na camada Energia.`);else if(q.includes('DEFESA'))lines.push(`<b>Resposta:</b> ${defesaEvents.length} município(s) na camada Defesa Civil.`);else if(q.includes('CHUVA'))lines.push(`<b>Resposta:</b> maior chuva disponível: ${esc(rain)}.`);else if(q.includes('VENTO')||q.includes('RAJADA'))lines.push(`<b>Resposta:</b> maior rajada disponível: ${esc(gust)}.`);else lines.push(`<b>Resposta operacional:</b> quadro consolidado ${s.readiness}. A leitura preventiva completa está em “Preparação da Regional”.`);}
+ return lines.join('<br><br>');
+}
+function refreshAnalyst(){const p=document.getElementById('analystPanel');if(!p)return;const s=analystSnapshot(),badge=document.getElementById('readinessBadge');badge.textContent=s.readiness;badge.dataset.level=norm(s.readiness);document.getElementById('analystSummary').innerHTML=analystText('situacao');document.getElementById('analystUpdated').textContent=`Fire ${fireEvents.length} • Clima ${weatherEvents.length} • Energia ${energyEvents.length} • Defesa ${defesaEvents.length}`;}
+function analystRun(mode){document.getElementById('analystAnswer').innerHTML=analystText(mode,document.getElementById('analystQuestion').value.trim());}
+document.querySelectorAll('[data-analysis]').forEach(b=>b.addEventListener('click',()=>analystRun(b.dataset.analysis)));
+document.getElementById('analystAsk')?.addEventListener('click',()=>analystRun('situacao'));
+document.getElementById('analystQuestion')?.addEventListener('keydown',e=>{if(e.key==='Enter')analystRun('situacao')});
+setInterval(refreshAnalyst,15000);setTimeout(refreshAnalyst,1800);
