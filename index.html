@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20260831_topo_traj">
+  <link rel="stylesheet" href="styles.css?v=20260831_fire_click">
 </head>
 <body>
   <header class="topbar">
@@ -85,7 +85,7 @@
       </section>
       <section class="panel fire-focus-panel fire-only-panel" id="fireFocusPanel" hidden>
         <div class="panel-title">🔥 Fire Core • visão limpa</div>
-        <div class="fire-focus-kpis"><div><strong id="fireFocusActive">—</strong><span>eventos ativos</span></div><div><strong id="fireFocusUrgent">—</strong><span>urgentes</span></div></div>
+        <div class="fire-focus-kpis"><button type="button" class="fire-kpi-action" id="fireActiveButton" title="Mostrar todos os eventos Fire ativos no mapa"><strong id="fireFocusActive">—</strong><span>eventos ativos</span><small>clique para localizar</small></button><div><strong id="fireFocusUrgent">—</strong><span>urgentes</span></div></div>
         <div id="fireFocusNearest" class="fire-focus-nearest">Carregando eventos Fire…</div>
         <div class="fire-history-kpis"><div><strong id="fireHistory24h">—</strong><span>encerrados nas últimas 24h</span></div><div><strong id="fireHistoryTotal">—</strong><span>eventos no histórico Fire</span></div></div>
         <div class="fire-history-title">🕘 Histórico recente</div><div id="fireHistoryList" class="fire-history-list">Carregando histórico Fire…</div>
@@ -139,6 +139,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=20260831_topo_traj"></script>
+  <script src="app.js?v=20260831_fire_click"></script>
 </body>
 </html>
