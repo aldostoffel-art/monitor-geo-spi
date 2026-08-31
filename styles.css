@@ -115,3 +115,24 @@
 .trajectory-player{display:flex;align-items:center;gap:6px;margin:7px 0 10px}.trajectory-player button{padding:6px 8px;font-size:9px;border-radius:7px}.trajectory-player span{font-size:9px;color:#9fb5c8;line-height:1.2}.trajectory-player span b{color:#fbbf24}
 .forecast-play-marker-wrap{background:transparent!important;border:0!important}.forecast-play-marker{min-width:98px;padding:5px 6px;border-radius:9px;text-align:center;background:rgba(180,83,9,.94);border:2px solid #fde68a;color:#fff;box-shadow:0 0 14px rgba(245,158,11,.65);animation:forecastPulse 1.1s ease-in-out infinite alternate}.forecast-play-marker.severe{background:rgba(185,28,28,.95);border-color:#fecaca;box-shadow:0 0 18px rgba(239,68,68,.75)}.forecast-play-marker b,.forecast-play-marker small,.forecast-play-marker em{display:block}.forecast-play-marker b{font-size:10px}.forecast-play-marker small{font-size:8px;font-weight:900}.forecast-play-marker em{font-style:normal;font-size:7px;margin-top:2px}.forecast-play-circle{animation:forecastRing 1.2s ease-in-out infinite alternate}@keyframes forecastPulse{from{transform:scale(.96)}to{transform:scale(1.05)}}@keyframes forecastRing{from{stroke-opacity:.45;fill-opacity:.06}to{stroke-opacity:1;fill-opacity:.2}}
 @media(max-width:700px){.trajectory-map-mode .trajectory-map-legend{max-width:calc(100% - 16px)!important;gap:3px 6px!important}.trajectory-map-legend span,.trajectory-map-legend .traj-legend-item b{font-size:7px!important}.trajectory-map-legend strong{display:none}.trajectory-player{flex-wrap:wrap}.forecast-play-marker{min-width:88px}.forecast-play-marker b{font-size:9px}}
+
+/* Trajetória DEV: maximizar área útil e leitura do carimbo */
+body.trajectory-map-mode .topbar{min-height:64px!important;padding:8px 18px!important}
+body.trajectory-map-mode .topbar h1{font-size:21px!important;margin:0 0 2px!important}
+body.trajectory-map-mode .topbar p{font-size:11px!important}
+body.trajectory-map-mode .eyebrow{font-size:9px!important}
+body.trajectory-map-mode .view-tabs{padding:4px 12px!important}
+body.trajectory-map-mode .view-tab{padding:5px 10px!important}
+body.trajectory-map-mode .important-event-strip{min-height:31px!important}
+body.trajectory-map-mode .important-event-label{padding:4px 10px!important}
+body.trajectory-map-mode .important-event-item{padding:5px 10px!important;font-size:10px!important}
+body.trajectory-map-mode .climate-strip{min-height:29px!important}
+body.trajectory-map-mode .climate-strip-label{padding:4px 9px!important}
+body.trajectory-map-mode .climate-strip-item{padding:4px 9px!important;font-size:9px!important}
+body.trajectory-map-mode footer{padding:3px 10px!important;font-size:8px!important}
+body.trajectory-map-mode .leaflet-popup-content .trajectory-map-popup{max-height:min(62vh,560px)!important}
+body.trajectory-map-mode .leaflet-popup-content:has(.trajectory-map-popup){margin:8px 12px!important}
+body.trajectory-map-mode .leaflet-popup-content-wrapper:has(.trajectory-map-popup){transform:translateY(-8px)}
+body.trajectory-map-mode .trajectory-map-popup .trajectory-critical-row{padding:4px 0!important}
+body.trajectory-map-mode .trajectory-map-popup .trajectory-critical-head{padding:2px 0 6px!important}
+@media(max-height:760px){body.trajectory-map-mode .topbar{min-height:54px!important;padding:5px 14px!important}body.trajectory-map-mode .topbar p{display:none}body.trajectory-map-mode .leaflet-popup-content .trajectory-map-popup{max-height:58vh!important}}
