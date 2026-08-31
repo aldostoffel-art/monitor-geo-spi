@@ -1,8 +1,8 @@
 {
   "core": "ENERGY CORE SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-08-31T01:15:24.341216+00:00",
-  "fonte_gerada_em": "2026-08-30T22:10:35-03:00",
+  "gerado_em": "2026-08-31T01:20:02.521539+00:00",
+  "fonte_gerada_em": "2026-08-30T22:17:05-03:00",
   "quantidade_ocorrencias_origem": 422,
   "quantidade_eventos_geo": 215,
   "descartados_sem_impacto_operacional": 207,
@@ -4312,7 +4312,7 @@
       "longitude": -49.970064,
       "origem_coordenada": "SITE_CORRELACIONADO",
       "nivel": "ATENCAO",
-      "score": 35,
+      "score": 40,
       "status": "aberta",
       "inicio": "2026-08-30T21:11:49",
       "clientes_interrompidos": 0,
@@ -4326,7 +4326,7 @@
       ],
       "sites_criticos": [],
       "motivos": [
-        "risco temporal AUTONOMIA_DESCONHECIDA_MONITORAR: +10",
+        "risco temporal AUTONOMIA_DESCONHECIDA_ATENCAO: +15",
         "site SPI relacionado: +5",
         "site em distância crítica: +15",
         "confiança geográfica alta: +5"
@@ -4413,6 +4413,40 @@
         "codigo": "YBC",
         "site": "SPYBC",
         "menor_distancia_km_precisa": 0.9336,
+        "prioridade_distancia": "CRITICA"
+      }
+    },
+    {
+      "id_ocorrencia": "NEOENERGIA_ELEKTRO|ELEKTRO-2026-1485656|ITARARE",
+      "numero_ocorrencia": "ELEKTRO-2026-1485656",
+      "distribuidora": "NEOENERGIA ELEKTRO",
+      "municipio": "ITARARE",
+      "latitude": -24.107256,
+      "longitude": -49.334658,
+      "origem_coordenada": "SITE_CORRELACIONADO",
+      "nivel": "ATENCAO",
+      "score": 35,
+      "status": "aberta",
+      "inicio": "2026-08-30T21:14:41",
+      "clientes_interrompidos": 0,
+      "sites_impactados": 3,
+      "sites_ate_4h": 0,
+      "sites_distancia_critica": 1,
+      "sites_distancia_alta": 2,
+      "confianca_geografica": "MEDIA",
+      "areas": [
+        "ITARARE"
+      ],
+      "sites_criticos": [],
+      "motivos": [
+        "risco temporal AUTONOMIA_DESCONHECIDA_ATENCAO: +15",
+        "site SPI relacionado: +5",
+        "site em distância crítica: +15"
+      ],
+      "referencia": {
+        "codigo": "ITE",
+        "site": "SPITE",
+        "menor_distancia_km_precisa": 0.8118,
         "prioridade_distancia": "CRITICA"
       }
     },
@@ -5736,40 +5770,6 @@
       "score": 30,
       "status": "aberta",
       "inicio": "2026-08-30T21:23:31",
-      "clientes_interrompidos": 0,
-      "sites_impactados": 3,
-      "sites_ate_4h": 0,
-      "sites_distancia_critica": 1,
-      "sites_distancia_alta": 2,
-      "confianca_geografica": "MEDIA",
-      "areas": [
-        "ITARARE"
-      ],
-      "sites_criticos": [],
-      "motivos": [
-        "risco temporal AUTONOMIA_DESCONHECIDA_MONITORAR: +10",
-        "site SPI relacionado: +5",
-        "site em distância crítica: +15"
-      ],
-      "referencia": {
-        "codigo": "ITE",
-        "site": "SPITE",
-        "menor_distancia_km_precisa": 0.8118,
-        "prioridade_distancia": "CRITICA"
-      }
-    },
-    {
-      "id_ocorrencia": "NEOENERGIA_ELEKTRO|ELEKTRO-2026-1485656|ITARARE",
-      "numero_ocorrencia": "ELEKTRO-2026-1485656",
-      "distribuidora": "NEOENERGIA ELEKTRO",
-      "municipio": "ITARARE",
-      "latitude": -24.107256,
-      "longitude": -49.334658,
-      "origem_coordenada": "SITE_CORRELACIONADO",
-      "nivel": "MONITORAMENTO",
-      "score": 30,
-      "status": "aberta",
-      "inicio": "2026-08-30T21:14:41",
       "clientes_interrompidos": 0,
       "sites_impactados": 3,
       "sites_ate_4h": 0,
