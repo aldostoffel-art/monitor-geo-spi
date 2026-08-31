@@ -1,8 +1,73 @@
 {
-  "gerado_em": "2026-08-31T04:51:28.949794+00:00",
+  "gerado_em": "2026-08-31T19:21:17.448519+00:00",
   "ambiente": "DEV",
   "fonte": "FIRE CORE SPI",
-  "quantidade_eventos_fire_ativos": 0,
-  "quantidade_eventos_geo_elegiveis": 0,
-  "eventos_ativos": []
+  "quantidade_eventos_fire_ativos": 2,
+  "quantidade_eventos_geo_elegiveis": 2,
+  "eventos_ativos": [
+    {
+      "id_evento": "FIRE-20260831-007",
+      "status": "ATIVO",
+      "latitude": -20.2982,
+      "longitude": -47.8378,
+      "municipio": "Ituverava",
+      "classificacao": "URGENTE",
+      "ultima_deteccao": "2026-08-31T19:00:00+00:00",
+      "satelite": "GOES-19, NPP-375",
+      "deteccoes": 16,
+      "backbone": "AMX.AR-RPO.NO",
+      "id_backbone": "BB-7593B5E83C6B",
+      "cabo": "F-0260",
+      "ponta_a": {
+        "codigo": "AMX.AR",
+        "municipio": "ARAMINA",
+        "latitude": -20.0884,
+        "longitude": -47.7884
+      },
+      "ponta_b": {
+        "codigo": "RPO.NO",
+        "municipio": "RIBEIRAO PRETO",
+        "latitude": -21.1765,
+        "longitude": -47.8106
+      },
+      "distancia_backbone_km": 4.02,
+      "confianca_rota": "MEDIA",
+      "ponto_mais_proximo": {
+        "latitude": -20.298285,
+        "longitude": -47.799394
+      }
+    },
+    {
+      "id_evento": "FIRE-20260831-014",
+      "status": "ATIVO",
+      "latitude": -20.3187,
+      "longitude": -47.8331,
+      "municipio": "Ituverava",
+      "classificacao": "URGENTE",
+      "ultima_deteccao": "2026-08-31T19:00:00+00:00",
+      "satelite": "GOES-19",
+      "deteccoes": 1,
+      "backbone": "AMX.AR-RPO.NO",
+      "id_backbone": "BB-7593B5E83C6B",
+      "cabo": "F-0260",
+      "ponta_a": {
+        "codigo": "AMX.AR",
+        "municipio": "ARAMINA",
+        "latitude": -20.0884,
+        "longitude": -47.7884
+      },
+      "ponta_b": {
+        "codigo": "RPO.NO",
+        "municipio": "RIBEIRAO PRETO",
+        "latitude": -21.1765,
+        "longitude": -47.8106
+      },
+      "distancia_backbone_km": 3.127,
+      "confianca_rota": "MEDIA",
+      "ponto_mais_proximo": {
+        "latitude": -20.323003,
+        "longitude": -47.803464
+      }
+    }
+  ]
 }
