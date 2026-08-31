@@ -167,3 +167,6 @@ body.trajectory-map-mode .climate-strip-item b{font-size:9px!important}
 .fire-marker-focus{filter:drop-shadow(0 0 9px rgba(255,69,0,1)) drop-shadow(0 0 18px rgba(255,140,0,.82))}
 .fire-marker-selected{filter:drop-shadow(0 0 12px #fff) drop-shadow(0 0 22px #f97316) drop-shadow(0 0 32px #ef4444)}
 .fire-popup-more{margin-top:8px;border-top:1px solid #374151;padding-top:6px}
+
+/* Trajetória futura visível + Fire seleção persistente */
+.trajectory-future{display:grid;gap:5px;margin:5px 0 8px;max-height:180px;overflow:auto}.trajectory-future-row{text-align:left;background:#0c1823;border:1px solid #2b4357;border-radius:7px;padding:6px 7px;color:#dbeafe}.trajectory-future-row:hover{border-color:#38bdf8;background:#102536}.trajectory-future-row b,.trajectory-future-row span{display:block}.trajectory-future-row b{font-size:9px;color:#7dd3fc}.trajectory-future-row span{font-size:8px;color:#b5c7d7;margin-top:2px}.fire-marker-selected{animation:fireSelectedPulse 1.35s ease-in-out infinite}@keyframes fireSelectedPulse{50%{filter:drop-shadow(0 0 12px #fff) drop-shadow(0 0 22px #f97316)}}
