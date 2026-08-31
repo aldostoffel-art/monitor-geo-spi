@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20260831185349">
+  <link rel="stylesheet" href="styles.css?v=20260831203243">
 </head>
 <body>
   <header class="topbar">
@@ -111,6 +111,7 @@
         <div class="panel-title">🧭 Trajetória do evento</div>
         <div class="trajectory-legend"><span><i class="traj-dot now"></i> AGORA: alerta recente + compatível com janela atual</span><span><i class="traj-dot recent"></i> RECENTE: alerta ainda relevante, continuidade não confirmada</span><span><i class="traj-dot future"></i> PREVISÃO / PREVISÃO OFICIAL</span><span><i class="traj-line"></i> deslocamento confirmado</span></div>
         <div id="trajectorySummary" class="trajectory-summary">Consolidando eventos severos…</div>
+        <div class="trajectory-player"><button id="trajectoryPlay">▶ Evolução 12h</button><button id="trajectoryStop">■ Parar</button><span id="trajectoryPlayStatus">Previsão parada</span></div>
         <div class="trajectory-box-title">📋 Dados do evento selecionado</div>
         <div id="trajectoryCritical" class="trajectory-critical">Selecionando evento mais crítico…</div>
         <div class="trajectory-box-title">🧭 Trajetória / deslocamento</div>
@@ -138,6 +139,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=20260831185349"></script>
+  <script src="app.js?v=20260831203243"></script>
 </body>
 </html>
