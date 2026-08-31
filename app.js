@@ -10,12 +10,15 @@ const WEATHER_DATA='data/weather-risk.json';
 const WEATHER_REFRESH_MS=300000;
 const DEFESA_DATA='data/defesa-civil.json';
 const DEFESA_REFRESH_MS=300000;
-let allFeatures=[],layer=null,fireEvents=[],weatherEvents=[],energyEvents=[],defesaEvents=[];
+const SITES_DATA='data/sites.json';
+const SITES_REFRESH_MS=1800000;
+let allFeatures=[],layer=null,fireEvents=[],weatherEvents=[],energyEvents=[],defesaEvents=[],siteEvents=[];
 const fireLayer=L.layerGroup().addTo(map);
 const weatherLayer=L.layerGroup().addTo(map);
 const relatedBackboneLayer=L.layerGroup().addTo(map);
 const energyLayer=L.layerGroup().addTo(map);
 const defesaLayer=L.layerGroup().addTo(map);
+const sitesLayer=L.layerGroup().addTo(map);
 
 const colorFor=c=>({ALTA:'#7c3aed',MEDIA:'#f59e0b',BAIXA:'#ef4444',SEM_REFERENCIA:'#64748b'})[c]||'#38bdf8';
 const fireColor=c=>({URGENTE:'#dc2626',ATENCAO:'#f59e0b',MONITORAMENTO:'#16a34a'})[(c||'').toUpperCase()]||'#64748b';
@@ -53,6 +56,13 @@ async function loadWeather(){try{const r=await fetch(`${WEATHER_DATA}?t=${Date.n
 function defesaPopupHtml(e){return `<div class="defesa-popup"><b style="color:#ef4444">🚨 DEFESA CIVIL</b><br><b>${esc(e.tipo||e.titulo)}</b><br>Município: <b>${esc(e.municipio)}</b><br>Gravidade: ${esc(e.gravidade)}<br>Urgência: ${esc(e.urgencia)}<br>Certeza: ${esc(e.certeza)}<br>Vigência: ${esc(e.vigencia)}<br><br>${esc(e.resumo)}</div>`;}
 function defesaDetailsHtml(e){const rows=[['Tipo',e.tipo||e.titulo],['Município',e.municipio],['Gravidade',e.gravidade],['Urgência',e.urgencia],['Certeza',e.certeza],['Vigência',e.vigencia],['Status',e.status],['Fonte',e.fonte]];return `<div class="panel-title">🚨 Defesa Civil</div><h3 style="color:#ef4444">${esc(e.tipo||e.titulo)}</h3>${rows.map(r=>`<div class="row"><span>${esc(r[0])}</span><span>${esc(r[1]??'—')}</span></div>`).join('')}<p>${esc(e.resumo)}</p>`;}
 function renderDefesa(){defesaLayer.clearLayers();const enabled=document.getElementById('defesaToggle')?.checked!==false;const count=document.getElementById('defesaCount');if(count)count.textContent=`${defesaEvents.length} município${defesaEvents.length===1?'':'s'}`;if(!enabled)return;defesaEvents.forEach(e=>{const lat=Number(e.latitude),lon=Number(e.longitude);if(!Number.isFinite(lat)||!Number.isFinite(lon))return;const marker=L.circleMarker([lat,lon],{radius:8,color:'#ffffff',weight:2,fillColor:'#ef4444',fillOpacity:.95});marker.bindPopup(defesaPopupHtml(e));marker.bindTooltip(`🚨 ${e.tipo||e.titulo||'Defesa Civil'} • ${e.municipio||''}`);marker.on('click',()=>{document.getElementById('details').innerHTML=defesaDetailsHtml(e);});marker.addTo(defesaLayer);});}
+
+function siteIsCritical(e){return Boolean(e.ate_4h)||norm(e.autonomia).includes('ATE 4H');}
+function sitePopupHtml(e){return `<div class="site-popup"><b style="color:${siteIsCritical(e)?'#fb7185':'#7dd3fc'}">📡 ${esc(e.ufsite||e.site)}</b><br><b>${esc(e.municipio)}</b><br>Autonomia: <b>${esc(e.autonomia)}</b><br>Distribuidora: ${esc(e.distribuidora)}<br>DDD: ${esc(e.ddd)}</div>`;}
+function siteDetailsHtml(e){const rows=[['Site',e.ufsite||e.site],['Município',e.municipio],['Autonomia',e.autonomia],['Faixa crítica',siteIsCritical(e)?'≤ 4h':'Acima de 4h'],['Distribuidora',e.distribuidora],['DDD',e.ddd],['IBGE',e.ibge]];return `<div class="panel-title">📡 Site</div><h3 style="color:${siteIsCritical(e)?'#fb7185':'#7dd3fc'}">${esc(e.ufsite||e.site)}</h3>${rows.map(r=>`<div class="row"><span>${esc(r[0])}</span><span>${esc(r[1]??'—')}</span></div>`).join('')}`;}
+function renderSites(){sitesLayer.clearLayers();const enabled=document.getElementById('sitesToggle')?.checked===true;const count=document.getElementById('sitesCount');const crit=siteEvents.filter(siteIsCritical).length;if(count){count.textContent=`${siteEvents.length.toLocaleString('pt-BR')} • ${crit} ≤4h`;count.title='Sites totais • sites com autonomia até 4h';}if(!enabled)return;const z=map.getZoom();siteEvents.forEach(e=>{const lat=Number(e.latitude),lon=Number(e.longitude);if(!Number.isFinite(lat)||!Number.isFinite(lon))return;const c=siteIsCritical(e),radius=z<=7?(c?3.0:2.0):z<=9?(c?4.2:2.8):(c?5.5:3.8);const marker=L.circleMarker([lat,lon],{radius,color:c?'#fecdd3':'#dbeafe',weight:c?1.0:.6,fillColor:c?'#fb7185':'#38bdf8',fillOpacity:c?.92:.58,opacity:.92});marker.bindPopup(sitePopupHtml(e));marker.bindTooltip(`📡 ${e.ufsite||e.site||''} • ${e.municipio||''} • ${e.autonomia||''}`);marker.on('click',()=>{document.getElementById('details').innerHTML=siteDetailsHtml(e);});marker.addTo(sitesLayer);});}
+async function loadSites(){try{const r=await fetch(`${SITES_DATA}?t=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw new Error(`Sites HTTP ${r.status}`);const obj=await r.json();siteEvents=Array.isArray(obj.sites)?obj.sites:[];renderSites();}catch(err){console.error('Falha Sites GEO',err);const c=document.getElementById('sitesCount');if(c)c.textContent='erro';}}
+
 async function loadDefesa(){try{const r=await fetch(`${DEFESA_DATA}?t=${Date.now()}`,{cache:'no-store'});if(!r.ok)throw new Error(`Defesa Civil HTTP ${r.status}`);const obj=await r.json();defesaEvents=Array.isArray(obj.eventos_geo)?obj.eventos_geo:[];renderDefesa();const c=document.getElementById('defesaCount');if(c)c.title=obj.gerado_em?`Atualizado: ${obj.gerado_em}`:'Defesa Civil';}catch(err){console.error('Falha Defesa Civil',err);const c=document.getElementById('defesaCount');if(c)c.textContent='erro';}}
 
 Promise.all(DATA_FILES.map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()}))).then(parts=>{allFeatures=parts.flatMap(p=>p.features||[]);populate();document.getElementById('statusText').textContent=`Backbone DEV carregado • ${allFeatures.length.toLocaleString('pt-BR')} rotas`;if(layer&&allFeatures.length)map.fitBounds(layer.getBounds(),{padding:[20,20]});renderFire();renderWeather();}).catch(err=>{document.getElementById('statusText').textContent='Falha ao carregar Backbone';console.error(err)});
@@ -64,14 +74,18 @@ document.getElementById('energyToggle').addEventListener('change',renderEnergy);
 map.on('zoomend',renderEnergy);
 document.getElementById('weatherToggle').addEventListener('change',renderWeather);
 document.getElementById('defesaToggle').addEventListener('change',renderDefesa);
+document.getElementById('sitesToggle').addEventListener('change',renderSites);
+map.on('zoomend',renderSites);
 loadFire();
 loadWeather();
 loadEnergy();
 loadDefesa();
+loadSites();
 setInterval(loadFire,FIRE_REFRESH_MS);
 setInterval(loadWeather,WEATHER_REFRESH_MS);
 setInterval(loadEnergy,ENERGY_REFRESH_MS);
 setInterval(loadDefesa,DEFESA_REFRESH_MS);
+setInterval(loadSites,SITES_REFRESH_MS);
 
 
 // Analista Operacional SPI DEV — consolida resultados calculados pelos Cores.
@@ -114,7 +128,7 @@ function analystText(mode='situacao',question=''){
 }
 let analystMode='situacao';
 function setAnalystActive(mode){document.querySelectorAll('[data-analysis]').forEach(b=>{const active=b.dataset.analysis===mode;b.classList.toggle('active',active);b.setAttribute('aria-pressed',active?'true':'false');});}
-function refreshAnalyst(){const p=document.getElementById('analystPanel');if(!p)return;const s=analystSnapshot(),badge=document.getElementById('readinessBadge');badge.textContent=s.readiness;badge.dataset.level=norm(s.readiness);document.getElementById('analystSummary').innerHTML=analystText(analystMode);document.getElementById('analystUpdated').textContent=`Fire ${fireEvents.length} • Clima ${weatherEvents.length} • Energia ${energyEvents.length} • Defesa ${defesaEvents.length}`;setAnalystActive(analystMode);}
+function refreshAnalyst(){const p=document.getElementById('analystPanel');if(!p)return;const s=analystSnapshot(),badge=document.getElementById('readinessBadge');badge.textContent=s.readiness;badge.dataset.level=norm(s.readiness);document.getElementById('analystSummary').innerHTML=analystText(analystMode);document.getElementById('analystUpdated').textContent=`Fire ${fireEvents.length} • Clima ${weatherEvents.length} • Energia ${energyEvents.length} • Defesa ${defesaEvents.length} • Sites ${siteEvents.length}`;setAnalystActive(analystMode);}
 function analystRun(mode){analystMode=mode||'situacao';const summary=document.getElementById('analystSummary');summary.innerHTML=analystText(analystMode);setAnalystActive(analystMode);summary.classList.remove('analyst-flash');void summary.offsetWidth;summary.classList.add('analyst-flash');}
 function analystAsk(){const q=document.getElementById('analystQuestion').value.trim();const answer=document.getElementById('analystAnswer');answer.innerHTML=q?analystText('situacao',q):'<b>Digite uma pergunta para o Analista SPI.</b>';answer.classList.remove('analyst-flash');void answer.offsetWidth;answer.classList.add('analyst-flash');}
 document.querySelectorAll('[data-analysis]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();analystRun(b.dataset.analysis);}));
