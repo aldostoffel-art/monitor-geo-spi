@@ -31,3 +31,9 @@
 @keyframes climateTicker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(max-width:900px){.climate-strip{grid-template-columns:1fr;min-height:0;position:sticky;top:0}.climate-strip-label{padding:5px 10px;border-right:0;border-bottom:1px solid rgba(255,255,255,.1);justify-content:space-between}.climate-strip-viewport{min-height:32px}.climate-strip-item{font-size:10px;padding:6px 10px;gap:5px}.climate-strip-item b{font-size:10px}.climate-strip-run{animation-duration:58s}}
 @media(prefers-reduced-motion:reduce){.climate-strip-run{animation:none;overflow-x:auto;max-width:100vw}}
+
+
+/* Previsão meteorológica horária DEV */
+.forecast-title{margin-top:14px;margin-bottom:8px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.07em;color:#93a6b8}
+.forecast-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}.forecast-card{display:flex;flex-direction:column;gap:3px;padding:8px;border-radius:9px;background:#0d1823;border:1px solid #294054;font-size:10px;line-height:1.35;color:#bfd0df}.forecast-card b{font-size:11px;color:#fff}.forecast-card strong{color:#facc15}.forecast-storm{border-color:#f59e0b;background:#261c0f}.forecast-empty{font-size:11px;color:#8194a7;padding:8px 0}
+@media(max-width:900px){.forecast-grid{grid-template-columns:1fr}.forecast-card{font-size:10px}}
