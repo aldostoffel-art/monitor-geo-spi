@@ -1,10 +1,10 @@
 {
   "core": "ENERGY CORE SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-01T19:50:03.009074+00:00",
-  "fonte_gerada_em": "2026-09-01T16:48:35-03:00",
-  "quantidade_ocorrencias_origem": 584,
-  "quantidade_regioes_sem_energia": 457,
+  "gerado_em": "2026-09-01T20:00:03.216467+00:00",
+  "fonte_gerada_em": "2026-09-01T16:55:08-03:00",
+  "quantidade_ocorrencias_origem": 566,
+  "quantidade_regioes_sem_energia": 431,
   "sem_coordenada": [],
   "regioes": [
     {
@@ -19,6 +19,7 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
+        "em_atendimento",
         "aberta"
       ],
       "ocorrencias": [
@@ -39,14 +40,15 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500269",
         "ELEKTRO-2026-1499653",
         "ELEKTRO-2026-1499007",
         "ELEKTRO-2026-1498933",
         "ELEKTRO-2026-1498847",
-        "ELEKTRO-2026-1498813",
         "ELEKTRO-2026-1498093"
       ],
       "sem_energia": true
@@ -68,21 +70,18 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1499395",
-        "ELEKTRO-2026-1499291",
         "ELEKTRO-2026-1499238",
         "ELEKTRO-2026-1499201",
         "ELEKTRO-2026-1499126",
-        "ELEKTRO-2026-1498908",
+        "ELEKTRO-2026-1499059",
         "ELEKTRO-2026-1498843",
         "ELEKTRO-2026-1498610",
         "ELEKTRO-2026-1460736",
         "ELEKTRO-2026-1498586",
-        "ELEKTRO-2026-1498503",
         "ELEKTRO-2026-1498369",
         "ELEKTRO-2026-1498356",
         "ELEKTRO-2026-1460922",
-        "ELEKTRO-2026-1498179",
-        "ELEKTRO-2026-1497963"
+        "ELEKTRO-2026-1498179"
       ],
       "sem_energia": true
     },
@@ -140,6 +139,7 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1499830",
         "ELEKTRO-2026-1499121",
         "ELEKTRO-2026-1499267",
         "ELEKTRO-2026-1498789",
@@ -187,8 +187,7 @@
         "ELEKTRO-2026-1460228",
         "ELEKTRO-2026-1498620",
         "ELEKTRO-2026-1498530",
-        "ELEKTRO-2026-1475799",
-        "ELEKTRO-2026-1460136"
+        "ELEKTRO-2026-1475799"
       ],
       "sem_energia": true
     },
@@ -204,17 +203,18 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta",
-        "em_atendimento"
+        "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500239",
+        "ELEKTRO-2026-1500001",
+        "ELEKTRO-2026-1499986",
+        "ELEKTRO-2026-1499945",
+        "ELEKTRO-2026-1499846",
         "ELEKTRO-2026-1499545",
         "ELEKTRO-2026-1499472",
         "ELEKTRO-2026-1499101",
-        "ELEKTRO-2026-1498922",
-        "ELEKTRO-2026-1498553",
         "ELEKTRO-2026-1498416",
-        "ELEKTRO-2026-1498231",
         "ELEKTRO-2026-1498068"
       ],
       "sem_energia": true
@@ -234,16 +234,16 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500117",
+        "ELEKTRO-2026-1500047",
         "ELEKTRO-2026-1499649",
         "ELEKTRO-2026-1499643",
         "ELEKTRO-2026-1499486",
         "ELEKTRO-2026-1499139",
-        "ELEKTRO-2026-1498833",
         "ELEKTRO-2026-1498802",
         "ELEKTRO-2026-1498652",
         "ELEKTRO-2026-1498307",
-        "ELEKTRO-2026-1498032",
-        "ELEKTRO-2026-1497944"
+        "ELEKTRO-2026-1498032"
       ],
       "sem_energia": true
     },
@@ -262,7 +262,9 @@
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1499111"
+        "ELEKTRO-2026-1500079",
+        "ELEKTRO-2026-1499111",
+        "ELEKTRO-2026-1499919"
       ],
       "sem_energia": true
     },
@@ -675,6 +677,25 @@
       "sem_energia": true
     },
     {
+      "regiao": "PQ DAS UNIVERSIDADES",
+      "municipio": "CAMPINAS",
+      "latitude": -22.838094,
+      "longitude": -47.053225,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ALTO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413301602"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "CENTRO",
       "municipio": "FRANCO DA ROCHA",
       "latitude": -23.334067,
@@ -876,10 +897,12 @@
         "SANTA CRUZ"
       ],
       "status": [
-        "Em Execução"
+        "Em Execução",
+        "Em Preparação"
       ],
       "ocorrencias": [
-        "OS 1413299970"
+        "OS 1413299970",
+        "OS 1413294365"
       ],
       "sem_energia": true
     },
@@ -918,6 +941,25 @@
       ],
       "ocorrencias": [
         "OS 1413293792"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "JD DAYSE",
+      "municipio": "ITAPETININGA",
+      "latitude": -23.590886,
+      "longitude": -48.049125,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "ALTO",
+      "distribuidoras": [
+        "SANTA CRUZ"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413294365"
       ],
       "sem_energia": true
     },
@@ -998,6 +1040,25 @@
       "sem_energia": true
     },
     {
+      "regiao": "VL SANTANA",
+      "municipio": "ITAPETININGA",
+      "latitude": -23.58326,
+      "longitude": -48.050056,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ALTO",
+      "distribuidoras": [
+        "SANTA CRUZ"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413294365"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "PQ S FRANCISCO",
       "municipio": "ITATIBA",
       "latitude": -23.008685,
@@ -1032,6 +1093,120 @@
       ],
       "ocorrencias": [
         "OS 1413300688"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "CD NOVA I",
+      "municipio": "ITU",
+      "latitude": -23.283578,
+      "longitude": -47.300281,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "ALTO",
+      "distribuidoras": [
+        "PIRATININGA"
+      ],
+      "status": [
+        "Em Execução"
+      ],
+      "ocorrencias": [
+        "OS 1413301758"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "CH HARMONIA",
+      "municipio": "ITU",
+      "latitude": -23.396936,
+      "longitude": -47.317885,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ALTO",
+      "distribuidoras": [
+        "PIRATININGA"
+      ],
+      "status": [
+        "Em Execução"
+      ],
+      "ocorrencias": [
+        "OS 1413301758"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "CRUZ DAS ALMAS",
+      "municipio": "ITU",
+      "latitude": -23.284774,
+      "longitude": -47.305026,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ALTO",
+      "distribuidoras": [
+        "PIRATININGA"
+      ],
+      "status": [
+        "Em Execução"
+      ],
+      "ocorrencias": [
+        "OS 1413301758"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "LOT ITU",
+      "municipio": "ITU",
+      "latitude": -23.283578,
+      "longitude": -47.300281,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "ALTO",
+      "distribuidoras": [
+        "PIRATININGA"
+      ],
+      "status": [
+        "Em Execução"
+      ],
+      "ocorrencias": [
+        "OS 1413301758"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "LOT RES UNA",
+      "municipio": "ITU",
+      "latitude": -23.283578,
+      "longitude": -47.300281,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "ALTO",
+      "distribuidoras": [
+        "PIRATININGA"
+      ],
+      "status": [
+        "Em Execução"
+      ],
+      "ocorrencias": [
+        "OS 1413301758"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "VL PROGRESSO",
+      "municipio": "ITU",
+      "latitude": -23.283578,
+      "longitude": -47.300281,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "ALTO",
+      "distribuidoras": [
+        "PIRATININGA"
+      ],
+      "status": [
+        "Em Execução"
+      ],
+      "ocorrencias": [
+        "OS 1413301758"
       ],
       "sem_energia": true
     },
@@ -1228,21 +1403,21 @@
       "sem_energia": true
     },
     {
-      "regiao": "Jardim D'Abril",
-      "municipio": "Osasco",
-      "latitude": -23.558522,
-      "longitude": -46.777332,
+      "regiao": "PORTO FERREIRA",
+      "municipio": "PORTO FERREIRA",
+      "latitude": -21.842921,
+      "longitude": -47.452453,
       "origem_coordenada": "AREA_GEOCODIFICADA",
       "confianca_geografica": "ALTA",
       "nivel": "ALTO",
       "distribuidoras": [
-        "ENEL SP"
+        "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "ATIVA"
+        "aberta"
       ],
       "ocorrencias": [
-        "ENEL-3534401034"
+        "ELEKTRO-2026-1499935"
       ],
       "sem_energia": true
     },
@@ -1668,6 +1843,44 @@
       "sem_energia": true
     },
     {
+      "regiao": "RURAL",
+      "municipio": "AVARÉ",
+      "latitude": -23.097256,
+      "longitude": -48.936126,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "MEDIA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "SANTA CRUZ"
+      ],
+      "status": [
+        "Fim de Participação"
+      ],
+      "ocorrencias": [
+        "OS 1413301608"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "PQ JARAGUA",
+      "municipio": "BAURU",
+      "latitude": -22.305154,
+      "longitude": -49.108039,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Fim de Participação"
+      ],
+      "ocorrencias": [
+        "OS 1413301584"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "ANDES",
       "municipio": "BEBEDOURO",
       "latitude": -21.052244,
@@ -1782,6 +1995,25 @@
       "sem_energia": true
     },
     {
+      "regiao": "Mutinga",
+      "municipio": "Barueri",
+      "latitude": -23.496924,
+      "longitude": -46.81423,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "ENEL SP"
+      ],
+      "status": [
+        "ATIVA"
+      ],
+      "ocorrencias": [
+        "ENEL-3505708009"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "Silveira",
       "municipio": "Barueri",
       "latitude": -23.523495,
@@ -1801,6 +2033,46 @@
       "sem_energia": true
     },
     {
+      "regiao": "AREA RURAL DO MUNICIPIO",
+      "municipio": "CAMPINAS",
+      "latitude": -22.853567,
+      "longitude": -47.027261,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Execução",
+        "Em Deslocamento"
+      ],
+      "ocorrencias": [
+        "OS 1413300287",
+        "OS 1413297716"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "PQ IMPERADOR",
+      "municipio": "CAMPINAS",
+      "latitude": -22.845508,
+      "longitude": -47.024784,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Execução"
+      ],
+      "ocorrencias": [
+        "OS 1413300287"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "CAMPOS DO JORDAO",
       "municipio": "CAMPOS DO JORDAO",
       "latitude": -22.738299,
@@ -1816,16 +2088,15 @@
         "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500261",
         "ELEKTRO-2026-1499635",
         "ELEKTRO-2026-1499594",
         "ELEKTRO-2026-1499297",
         "ELEKTRO-2026-1499257",
         "ELEKTRO-2026-1498727",
         "ELEKTRO-2026-1498399",
-        "ELEKTRO-2026-1498376",
         "ELEKTRO-2026-1498234",
-        "ELEKTRO-2026-1498064",
-        "ELEKTRO-2026-1497917"
+        "ELEKTRO-2026-1498064"
       ],
       "sem_energia": true
     },
@@ -1868,6 +2139,44 @@
       "sem_energia": true
     },
     {
+      "regiao": "Vila Dirce",
+      "municipio": "Carapicuíba",
+      "latitude": -23.56336,
+      "longitude": -46.851186,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "ENEL SP"
+      ],
+      "status": [
+        "ATIVA"
+      ],
+      "ocorrencias": [
+        "ENEL-351060930"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "JD PAULISTA",
+      "municipio": "FRANCA",
+      "latitude": -20.522001,
+      "longitude": -47.374935,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Fim de Participação"
+      ],
+      "ocorrencias": [
+        "OS 1413300544"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "FRANCISCO MORATO",
       "municipio": "FRANCISCO MORATO",
       "latitude": -23.282077,
@@ -1879,15 +2188,16 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500164",
         "ELEKTRO-2026-1499611",
         "ELEKTRO-2026-1499562",
         "ELEKTRO-2026-1499547",
         "ELEKTRO-2026-1499492",
         "ELEKTRO-2026-1499247",
-        "ELEKTRO-2026-1499059",
         "ELEKTRO-2026-1498505",
         "ELEKTRO-2026-1498440",
         "ELEKTRO-2026-1498282"
@@ -1915,105 +2225,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "CARMO MESSIAS",
-      "municipio": "IBIUNA",
-      "latitude": -23.747393,
-      "longitude": -47.05123,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Execução",
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413300738",
-        "OS 1413297721"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "DOS RIBEIROS",
-      "municipio": "IBIUNA",
-      "latitude": -23.649116,
-      "longitude": -47.165766,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Execução",
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413300738",
-        "OS 1413300315"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "LOT RECREIO",
-      "municipio": "IBIUNA",
-      "latitude": -23.649116,
-      "longitude": -47.165766,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413300738"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "VERAVA",
-      "municipio": "IBIUNA",
-      "latitude": -23.779241,
-      "longitude": -47.104831,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413300738"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "VOTORANTIM",
-      "municipio": "IBIUNA",
-      "latitude": -23.651881,
-      "longitude": -47.149854,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413300738"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "JD MORADA DO SOL",
       "municipio": "INDAIATUBA",
       "latitude": -23.124151,
@@ -2025,67 +2236,10 @@
         "PIRATININGA"
       ],
       "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413300704"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "PQ RES SANTA MARIA",
-      "municipio": "INDAIATUBA",
-      "latitude": -23.089728,
-      "longitude": -47.182878,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
         "Em Execução"
       ],
       "ocorrencias": [
-        "OS 1413300366"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "QUINTA DO LAGO",
-      "municipio": "INDAIATUBA",
-      "latitude": -23.096099,
-      "longitude": -47.164814,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413300366"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "TOMBADOURO",
-      "municipio": "INDAIATUBA",
-      "latitude": -23.08881,
-      "longitude": -47.172175,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413300366"
+        "OS 1413300733"
       ],
       "sem_energia": true
     },
@@ -2124,6 +2278,8 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500022",
+        "ELEKTRO-2026-1499860",
         "ELEKTRO-2026-1499535",
         "ELEKTRO-2026-1499264",
         "ELEKTRO-2026-1498894",
@@ -2284,82 +2440,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "CHAMPIRRA",
-      "municipio": "JUNDIAI",
-      "latitude": -23.100956,
-      "longitude": -46.871549,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413298597"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "ERMIDA",
-      "municipio": "JUNDIAI",
-      "latitude": -23.190884,
-      "longitude": -46.980193,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413298597"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "HERMIDA",
-      "municipio": "JUNDIAI",
-      "latitude": -23.221573,
-      "longitude": -46.971133,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "MEDIA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413298597"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "JD ERMIDA II",
-      "municipio": "JUNDIAI",
-      "latitude": -23.189278,
-      "longitude": -46.963165,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413298597"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "MEDEIROS",
       "municipio": "JUNDIAI",
       "latitude": -23.183251,
@@ -2371,10 +2451,29 @@
         "PIRATININGA"
       ],
       "status": [
-        "Em Preparação"
+        "Em Deslocamento"
       ],
       "ocorrencias": [
         "OS 1413299940"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "STA CLARA",
+      "municipio": "JUNDIAI",
+      "latitude": -23.224446,
+      "longitude": -46.892786,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "MEDIA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "PIRATININGA"
+      ],
+      "status": [
+        "Em Execução"
+      ],
+      "ocorrencias": [
+        "OS 1413301140"
       ],
       "sem_energia": true
     },
@@ -2412,6 +2511,7 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500257",
         "ELEKTRO-2026-1499353"
       ],
       "sem_energia": true
@@ -2602,7 +2702,8 @@
         "Em Execução"
       ],
       "ocorrencias": [
-        "OS 1413300001"
+        "OS 1413300001",
+        "OS 1413299847"
       ],
       "sem_energia": true
     },
@@ -3177,25 +3278,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "SANTANA DA PONTE PENSA",
-      "municipio": "SANTANA DA PONTE PENSA",
-      "latitude": -20.2525,
-      "longitude": -50.791967,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1497954"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "CENTRO-ENG SCHMIDT",
       "municipio": "SAO JOSE DO RIO PRETO",
       "latitude": -20.842727,
@@ -3268,315 +3350,6 @@
       ],
       "ocorrencias": [
         "OS 1413284877"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "BANDEIRANTES",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.52389,
-      "longitude": -47.132726,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Fim de Participação",
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413300963",
-        "OS 1413301484",
-        "OS 1413300063"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "CDO RES QUINTA VIDEIRAS",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.536908,
-      "longitude": -47.134954,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413301484"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "CH LAGO AZUL",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.589297,
-      "longitude": -47.035305,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Fim de Participação"
-      ],
-      "ocorrencias": [
-        "OS 1413300963"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "GABRIEL PIZA",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.559728,
-      "longitude": -47.123494,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Fim de Participação"
-      ],
-      "ocorrencias": [
-        "OS 1413298502"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "JUCA ROCHA",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.595327,
-      "longitude": -47.039045,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Fim de Participação",
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413300963",
-        "OS 1413301484"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "LAGOA",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.531683,
-      "longitude": -47.136651,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Fim de Participação"
-      ],
-      "ocorrencias": [
-        "OS 1413300963"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "MAILASQUE",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.536908,
-      "longitude": -47.134954,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413301484"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "MARSELHA IV",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.531683,
-      "longitude": -47.136651,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Fim de Participação"
-      ],
-      "ocorrencias": [
-        "OS 1413300963"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "MONJOLINHO",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.531683,
-      "longitude": -47.136651,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Fim de Participação"
-      ],
-      "ocorrencias": [
-        "OS 1413300963"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "MORADA DOS PASSAROS",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.577587,
-      "longitude": -47.121252,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Fim de Participação"
-      ],
-      "ocorrencias": [
-        "OS 1413298502"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "PTE LAVRADA",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.545869,
-      "longitude": -47.133256,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Fim de Participação"
-      ],
-      "ocorrencias": [
-        "OS 1413298502"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "TABOAO",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.541619,
-      "longitude": -47.129214,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413301484"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "TAIPAS DE PEDRA",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.558603,
-      "longitude": -47.047839,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "MEDIA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413301484"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "TAIPAS PEDRA",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.536908,
-      "longitude": -47.134954,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413301484"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "VARGEM GRANDE",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.599325,
-      "longitude": -47.069806,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413301484"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "VL NOVA S ROQUE",
-      "municipio": "SAO ROQUE",
-      "latitude": -23.527898,
-      "longitude": -47.151437,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413301484"
       ],
       "sem_energia": true
     },
@@ -3678,59 +3451,40 @@
       "sem_energia": true
     },
     {
-      "regiao": "TAPIRAI",
-      "municipio": "TAPIRAI",
-      "latitude": -23.963357,
-      "longitude": -47.507486,
+      "regiao": "CAJURU",
+      "municipio": "SOROCABA",
+      "latitude": -23.394157,
+      "longitude": -47.37851,
       "origem_coordenada": "AREA_GEOCODIFICADA",
       "confianca_geografica": "ALTA",
       "nivel": "ATENCAO",
       "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
+        "PIRATININGA"
       ],
       "status": [
-        "aberta"
+        "Em Preparação"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1499349"
+        "OS 1413301647"
       ],
       "sem_energia": true
     },
     {
-      "regiao": "CJ RES IPIRANGA",
-      "municipio": "TAQUARITINGA",
-      "latitude": -21.400855,
-      "longitude": -48.486077,
+      "regiao": "CAJURU DO SUL",
+      "municipio": "SOROCABA",
+      "latitude": -23.415899,
+      "longitude": -47.389353,
       "origem_coordenada": "AREA_GEOCODIFICADA",
       "confianca_geografica": "ALTA",
       "nivel": "ATENCAO",
       "distribuidoras": [
-        "PAULISTA"
+        "PIRATININGA"
       ],
       "status": [
-        "Em Execução"
+        "Em Preparação"
       ],
       "ocorrencias": [
-        "OS 1413300147"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "PQ RES RINCAO NOVO",
-      "municipio": "TAQUARITINGA",
-      "latitude": -21.397561,
-      "longitude": -48.499406,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413300147"
+        "OS 1413301647"
       ],
       "sem_energia": true
     },
@@ -3750,11 +3504,12 @@
         "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500226",
+        "ELEKTRO-2026-1499753",
         "ELEKTRO-2026-1499610",
         "ELEKTRO-2026-1499271",
         "ELEKTRO-2026-1498770",
         "ELEKTRO-2026-1498387",
-        "ELEKTRO-2026-1498346",
         "ELEKTRO-2026-1455035",
         "ELEKTRO-2026-1498144"
       ],
@@ -3776,25 +3531,6 @@
       ],
       "ocorrencias": [
         "ENEL-355280905"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "VOTUPORANGA",
-      "municipio": "VOTUPORANGA",
-      "latitude": -20.441022,
-      "longitude": -49.977007,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1499343"
       ],
       "sem_energia": true
     },
@@ -3833,6 +3569,25 @@
       ],
       "ocorrencias": [
         "OS 1413301083"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "REGIAO OESTE",
+      "municipio": "ARACOIABA DA SERRA",
+      "latitude": -23.522099,
+      "longitude": -47.600733,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "BAIXO",
+      "distribuidoras": [
+        "PIRATININGA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413300137"
       ],
       "sem_energia": true
     },
@@ -4097,12 +3852,10 @@
         "PIRATININGA"
       ],
       "status": [
-        "Fim de Participação",
-        "Em Preparação"
+        "Fim de Participação"
       ],
       "ocorrencias": [
-        "OS 1413295934",
-        "OS 1413299631"
+        "OS 1413295934"
       ],
       "sem_energia": true
     },
@@ -4122,6 +3875,25 @@
       ],
       "ocorrencias": [
         "OS 1413298115"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "COHAB HUMBERTO POPOLO",
+      "municipio": "BOTUCATU",
+      "latitude": -22.891034,
+      "longitude": -48.449932,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "BAIXO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Execução"
+      ],
+      "ocorrencias": [
+        "OS 1413301648"
       ],
       "sem_energia": true
     },
@@ -4223,25 +3995,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "MORADA DO SOL II",
-      "municipio": "BURITIZAL",
-      "latitude": -20.1925,
-      "longitude": -47.717081,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "BAIXO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413300574"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "CONCEICAO",
       "municipio": "CACONDE",
       "latitude": -21.480698,
@@ -4253,11 +4006,50 @@
         "SANTA CRUZ"
       ],
       "status": [
+        "Fim de Participação",
         "Em Preparação"
       ],
       "ocorrencias": [
         "OS 1413297170",
         "OS 1413297107"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "AREA RURAL DT BR GERALDO",
+      "municipio": "CAMPINAS",
+      "latitude": -22.904322,
+      "longitude": -47.066593,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "BAIXO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413298211"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "COL TOZAN",
+      "municipio": "CAMPINAS",
+      "latitude": -22.904322,
+      "longitude": -47.066593,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "BAIXO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413298211"
       ],
       "sem_energia": true
     },
@@ -4292,7 +4084,7 @@
         "PAULISTA"
       ],
       "status": [
-        "Em Execução"
+        "Em Preparação"
       ],
       "ocorrencias": [
         "OS 1413301319"
@@ -4349,10 +4141,12 @@
         "SANTA CRUZ"
       ],
       "status": [
-        "Fim de Participação"
+        "Fim de Participação",
+        "Em Execução"
       ],
       "ocorrencias": [
-        "OS 1413296814"
+        "OS 1413296814",
+        "OS 1413301125"
       ],
       "sem_energia": true
     },
@@ -4368,12 +4162,10 @@
         "SANTA CRUZ"
       ],
       "status": [
-        "Fim de Participação",
-        "Em Execução"
+        "Fim de Participação"
       ],
       "ocorrencias": [
-        "OS 1413296814",
-        "OS 1413299897"
+        "OS 1413296814"
       ],
       "sem_energia": true
     },
@@ -4389,29 +4181,10 @@
         "SANTA CRUZ"
       ],
       "status": [
-        "Em Preparação"
+        "Fim de Participação"
       ],
       "ocorrencias": [
-        "OS 1413299077"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "C 120 A LIN FAZ ABAETE",
-      "municipio": "DUMONT",
-      "latitude": -21.238355,
-      "longitude": -47.973122,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "BAIXO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413291958"
+        "OS 1413291076"
       ],
       "sem_energia": true
     },
@@ -4446,7 +4219,7 @@
         "PAULISTA"
       ],
       "status": [
-        "Em Deslocamento",
+        "Em Execução",
         "Em Preparação"
       ],
       "ocorrencias": [
@@ -4494,6 +4267,26 @@
       "sem_energia": true
     },
     {
+      "regiao": "FLORIDA PAULISTA",
+      "municipio": "FLORIDA PAULISTA",
+      "latitude": -21.595394,
+      "longitude": -51.152163,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "BAIXO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "aberta"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1499852",
+        "ELEKTRO-2026-1498974"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "ARARAQUARA",
       "municipio": "GAVIAO PEIXOTO",
       "latitude": -21.761833,
@@ -4532,45 +4325,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "ASSENT NOVA VIDA",
-      "municipio": "IARAS",
-      "latitude": -22.881656,
-      "longitude": -49.147509,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "BAIXO",
-      "distribuidoras": [
-        "SANTA CRUZ"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413299354",
-        "OS 1413296206"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "CENTRO",
-      "municipio": "IARAS",
-      "latitude": -22.881656,
-      "longitude": -49.147509,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "BAIXO",
-      "distribuidoras": [
-        "SANTA CRUZ"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413296206"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "RURAL",
       "municipio": "IARAS",
       "latitude": -22.881656,
@@ -4585,9 +4339,6 @@
         "Em Preparação"
       ],
       "ocorrencias": [
-        "OS 1413299354",
-        "OS 1413296206",
-        "OS 1413300659",
         "OS 1413300216"
       ],
       "sem_energia": true
@@ -4623,7 +4374,7 @@
         "PIRATININGA"
       ],
       "status": [
-        "Fim de Participação"
+        "Em Preparação"
       ],
       "ocorrencias": [
         "OS 1413300912"
@@ -4669,29 +4420,10 @@
       "sem_energia": true
     },
     {
-      "regiao": "CD NOVA I",
-      "municipio": "ITU",
-      "latitude": -23.278444,
-      "longitude": -47.30639,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "BAIXO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413291624"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "APARECIDA",
-      "municipio": "JABOTICABAL",
-      "latitude": -21.246476,
-      "longitude": -48.320542,
+      "regiao": "MACHADINHO",
+      "municipio": "ITAPIRA",
+      "latitude": -22.432105,
+      "longitude": -46.80664,
       "origem_coordenada": "REFERENCIA_OPERACIONAL",
       "confianca_geografica": "FALLBACK",
       "nivel": "BAIXO",
@@ -4699,29 +4431,29 @@
         "PAULISTA"
       ],
       "status": [
-        "Em Preparação"
+        "Fim de Participação"
       ],
       "ocorrencias": [
-        "OS 1413300403"
+        "OS 1413300128"
       ],
       "sem_energia": true
     },
     {
-      "regiao": "CH REC FLORESTA",
-      "municipio": "JAGUARIÚNA",
-      "latitude": -22.697288,
-      "longitude": -46.988855,
+      "regiao": "TANQUINHO",
+      "municipio": "ITAPIRA",
+      "latitude": -22.432105,
+      "longitude": -46.80664,
       "origem_coordenada": "REFERENCIA_OPERACIONAL",
       "confianca_geografica": "FALLBACK",
       "nivel": "BAIXO",
       "distribuidoras": [
-        "SANTA CRUZ"
+        "PAULISTA"
       ],
       "status": [
-        "Em Execução"
+        "Fim de Participação"
       ],
       "ocorrencias": [
-        "OS 1413299720"
+        "OS 1413300128"
       ],
       "sem_energia": true
     },
@@ -4740,8 +4472,7 @@
         "Em Preparação"
       ],
       "ocorrencias": [
-        "OS 1413295671",
-        "OS 1413297702"
+        "OS 1413295671"
       ],
       "sem_energia": true
     },
@@ -4761,6 +4492,25 @@
       ],
       "ocorrencias": [
         "OS 1413298898"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "CAFELANDIA",
+      "municipio": "LINS",
+      "latitude": -21.664063,
+      "longitude": -49.741172,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "BAIXO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Execução"
+      ],
+      "ocorrencias": [
+        "OS 1413298090"
       ],
       "sem_energia": true
     },
@@ -4860,82 +4610,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "CENTRO ROSARIO SAO PAULO",
-      "municipio": "MONTE AZUL PAULISTA",
-      "latitude": -20.892648,
-      "longitude": -48.677101,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "BAIXO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413299918"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "MT A PAULISTA",
-      "municipio": "MONTE AZUL PAULISTA",
-      "latitude": -20.968778,
-      "longitude": -48.688711,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "BAIXO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413299918"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "ROSARIO S PAULO",
-      "municipio": "MONTE AZUL PAULISTA",
-      "latitude": -20.927388,
-      "longitude": -48.607987,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "BAIXO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413299918"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "MRO AGUDO",
-      "municipio": "MORRO AGUDO",
-      "latitude": -20.728219,
-      "longitude": -48.061245,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "BAIXO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413301219"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "NINHO VERDE",
       "municipio": "PARDINHO",
       "latitude": -23.143504,
@@ -5008,9 +4682,9 @@
         "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1499923",
         "ELEKTRO-2026-1499692",
         "ELEKTRO-2026-1499581",
-        "ELEKTRO-2026-1499534",
         "ELEKTRO-2026-1499529",
         "ELEKTRO-2026-1499365",
         "ELEKTRO-2026-1499253",
@@ -5019,21 +4693,21 @@
       "sem_energia": true
     },
     {
-      "regiao": "S LUIZ",
-      "municipio": "POMPEIA",
-      "latitude": -22.12435,
-      "longitude": -50.18704,
+      "regiao": "VOLTA DO POCO",
+      "municipio": "PORTO FELIZ",
+      "latitude": -23.179894,
+      "longitude": -47.486977,
       "origem_coordenada": "AREA_GEOCODIFICADA",
       "confianca_geografica": "MEDIA",
       "nivel": "BAIXO",
       "distribuidoras": [
-        "PAULISTA"
+        "PIRATININGA"
       ],
       "status": [
-        "Fim de Participação"
+        "Em Preparação"
       ],
       "ocorrencias": [
-        "OS 1413299009"
+        "OS 1413300616"
       ],
       "sem_energia": true
     },
@@ -5171,21 +4845,21 @@
       "sem_energia": true
     },
     {
-      "regiao": "JD RCT DOS SONHOS",
-      "municipio": "SUMARE",
-      "latitude": -22.824639,
-      "longitude": -47.216889,
+      "regiao": "FAXINAL DOS ALMEIDAS",
+      "municipio": "SÃO MIGUEL ARCANJO",
+      "latitude": -23.859561,
+      "longitude": -47.990114,
       "origem_coordenada": "REFERENCIA_OPERACIONAL",
       "confianca_geografica": "FALLBACK",
       "nivel": "BAIXO",
       "distribuidoras": [
-        "PAULISTA"
+        "SANTA CRUZ"
       ],
       "status": [
-        "Em Preparação"
+        "Fim de Participação"
       ],
       "ocorrencias": [
-        "OS 1413299161"
+        "OS 1413292962"
       ],
       "sem_energia": true
     },
@@ -5247,6 +4921,63 @@
       "sem_energia": true
     },
     {
+      "regiao": "DIVISA",
+      "municipio": "TAPIRATIBA",
+      "latitude": -21.468251,
+      "longitude": -46.751032,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "BAIXO",
+      "distribuidoras": [
+        "SANTA CRUZ"
+      ],
+      "status": [
+        "Em Deslocamento"
+      ],
+      "ocorrencias": [
+        "OS 1413298570"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "RURAL - TAPIRATIBA",
+      "municipio": "TAPIRATIBA",
+      "latitude": -21.468251,
+      "longitude": -46.751032,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "BAIXO",
+      "distribuidoras": [
+        "SANTA CRUZ"
+      ],
+      "status": [
+        "Em Deslocamento"
+      ],
+      "ocorrencias": [
+        "OS 1413298570"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "STO ANT DA LIMEIRINHA",
+      "municipio": "TAPIRATIBA",
+      "latitude": -21.468251,
+      "longitude": -46.751032,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "BAIXO",
+      "distribuidoras": [
+        "SANTA CRUZ"
+      ],
+      "status": [
+        "Em Deslocamento"
+      ],
+      "ocorrencias": [
+        "OS 1413298570"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "DT INDUSTRIAL",
       "municipio": "TAQUARITINGA",
       "latitude": -21.412825,
@@ -5285,6 +5016,46 @@
       "sem_energia": true
     },
     {
+      "regiao": "CENTRO",
+      "municipio": "VALPARAISO",
+      "latitude": -21.326786,
+      "longitude": -50.949081,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "BAIXO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Fim de Participação"
+      ],
+      "ocorrencias": [
+        "OS 1413299406"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "VARGEM GRANDE DO SUL",
+      "municipio": "VARGEM GRANDE DO SUL",
+      "latitude": -21.867594,
+      "longitude": -46.910938,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "BAIXO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "aberta",
+        "em_atendimento"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1500130",
+        "ELEKTRO-2026-1498736"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "AGUAI",
       "municipio": "AGUAI",
       "latitude": -22.057043,
@@ -5299,14 +5070,13 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500251",
         "ELEKTRO-2026-1499596",
         "ELEKTRO-2026-1499509",
         "ELEKTRO-2026-1499428",
         "ELEKTRO-2026-1499391",
         "ELEKTRO-2026-1499294",
         "ELEKTRO-2026-1499240",
-        "ELEKTRO-2026-1499177",
-        "ELEKTRO-2026-1499172",
         "ELEKTRO-2026-1498889",
         "ELEKTRO-2026-1498851",
         "ELEKTRO-2026-1498798"
@@ -5329,6 +5099,25 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1499256"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "ANDRADINA",
+      "municipio": "ANDRADINA",
+      "latitude": -20.866,
+      "longitude": -51.369071,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "aberta"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1500223"
       ],
       "sem_energia": true
     },
@@ -5499,6 +5288,7 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
+        "em_atendimento",
         "aberta"
       ],
       "ocorrencias": [
@@ -5519,13 +5309,11 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta",
-        "em_atendimento"
+        "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1499589",
-        "ELEKTRO-2026-1499440",
-        "ELEKTRO-2026-1499134"
+        "ELEKTRO-2026-1500215",
+        "ELEKTRO-2026-1499589"
       ],
       "sem_energia": true
     },
@@ -5541,7 +5329,7 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "em_atendimento"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1498600"
@@ -5617,9 +5405,11 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500195",
         "ELEKTRO-2026-1498421"
       ],
       "sem_energia": true
@@ -5644,40 +5434,21 @@
       "sem_energia": true
     },
     {
-      "regiao": "PQ DAS CASCATAS",
-      "municipio": "BOTUCATU",
-      "latitude": -22.891727,
-      "longitude": -48.491679,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413296457"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "RUBIAO JUNIOR",
-      "municipio": "BOTUCATU",
-      "latitude": -22.896106,
-      "longitude": -48.492112,
+      "regiao": "BURITAMA",
+      "municipio": "BURITAMA",
+      "latitude": -21.058715,
+      "longitude": -50.223115,
       "origem_coordenada": "AREA_GEOCODIFICADA",
       "confianca_geografica": "ALTA",
       "nivel": "MONITORAMENTO",
       "distribuidoras": [
-        "PAULISTA"
+        "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "Em Preparação"
+        "aberta"
       ],
       "ocorrencias": [
-        "OS 1413296457"
+        "ELEKTRO-2026-1500214"
       ],
       "sem_energia": true
     },
@@ -5697,63 +5468,6 @@
       ],
       "ocorrencias": [
         "ENEL-3505708014"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "Califórnia",
-      "municipio": "Barueri",
-      "latitude": -23.49458,
-      "longitude": -46.895826,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "ENEL SP"
-      ],
-      "status": [
-        "ATIVA"
-      ],
-      "ocorrencias": [
-        "ENEL-3505708002"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "Fazenda Militar",
-      "municipio": "Barueri",
-      "latitude": -23.5008,
-      "longitude": -46.8471,
-      "origem_coordenada": "REFERENCIA_MUNICIPIO_BACKBONE",
-      "confianca_geografica": "FALLBACK_MUNICIPAL",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "ENEL SP"
-      ],
-      "status": [
-        "ATIVA"
-      ],
-      "ocorrencias": [
-        "ENEL-3505708011"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "Mutinga",
-      "municipio": "Barueri",
-      "latitude": -23.496924,
-      "longitude": -46.81423,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "ENEL SP"
-      ],
-      "status": [
-        "ATIVA"
-      ],
-      "ocorrencias": [
-        "ENEL-3505708009"
       ],
       "sem_energia": true
     },
@@ -5796,25 +5510,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "AREA RURAL DO MUNICIPIO",
-      "municipio": "CAMPINAS",
-      "latitude": -22.75093,
-      "longitude": -47.019468,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413297716"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "CARLOS GOMES",
       "municipio": "CAMPINAS",
       "latitude": -22.75097,
@@ -5826,7 +5521,7 @@
         "PAULISTA"
       ],
       "status": [
-        "Em Preparação"
+        "Em Deslocamento"
       ],
       "ocorrencias": [
         "OS 1413297716"
@@ -5845,7 +5540,7 @@
         "PAULISTA"
       ],
       "status": [
-        "Em Preparação"
+        "Em Deslocamento"
       ],
       "ocorrencias": [
         "OS 1413297716"
@@ -5864,13 +5559,11 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta",
-        "em_atendimento"
+        "aberta"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1498955",
-        "ELEKTRO-2026-1498783",
-        "ELEKTRO-2026-1498286"
+        "ELEKTRO-2026-1498783"
       ],
       "sem_energia": true
     },
@@ -5910,8 +5603,8 @@
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1498495",
-        "ELEKTRO-2026-1493674"
+        "ELEKTRO-2026-1499991",
+        "ELEKTRO-2026-1498495"
       ],
       "sem_energia": true
     },
@@ -5935,8 +5628,7 @@
         "ELEKTRO-2026-1499555",
         "ELEKTRO-2026-1499400",
         "ELEKTRO-2026-1498837",
-        "ELEKTRO-2026-1498225",
-        "ELEKTRO-2026-1497934"
+        "ELEKTRO-2026-1498225"
       ],
       "sem_energia": true
     },
@@ -5955,7 +5647,7 @@
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1498779",
+        "ELEKTRO-2026-1500243",
         "ELEKTRO-2026-1498256"
       ],
       "sem_energia": true
@@ -5975,7 +5667,6 @@
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1499621",
         "ELEKTRO-2026-1498405"
       ],
       "sem_energia": true
@@ -5996,6 +5687,25 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1498449"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "CORUMBATAI",
+      "municipio": "CORUMBATAI",
+      "latitude": -22.24211,
+      "longitude": -47.592823,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "aberta"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1498833"
       ],
       "sem_energia": true
     },
@@ -6033,6 +5743,7 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500061",
         "ELEKTRO-2026-1499410",
         "ELEKTRO-2026-1498703",
         "ELEKTRO-2026-1498612"
@@ -6055,44 +5766,6 @@
       ],
       "ocorrencias": [
         "ENEL-350920505"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "Jordanésia",
-      "municipio": "Cajamar",
-      "latitude": -23.334398,
-      "longitude": -46.840337,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "ENEL SP"
-      ],
-      "status": [
-        "ATIVA"
-      ],
-      "ocorrencias": [
-        "ENEL-350920510"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "Vila Dirce",
-      "municipio": "Carapicuíba",
-      "latitude": -23.56336,
-      "longitude": -46.851186,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "ENEL SP"
-      ],
-      "status": [
-        "ATIVA"
-      ],
-      "ocorrencias": [
-        "ENEL-351060930"
       ],
       "sem_energia": true
     },
@@ -6203,29 +5876,12 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500277",
         "ELEKTRO-2026-1499304"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "FLORIDA PAULISTA",
-      "municipio": "FLORIDA PAULISTA",
-      "latitude": -21.595394,
-      "longitude": -51.152163,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "aberta"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1498974"
       ],
       "sem_energia": true
     },
@@ -6249,63 +5905,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "LOT CASTELAMARE II",
-      "municipio": "GLICERIO",
-      "latitude": -21.383883,
-      "longitude": -50.211769,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413298777"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "MIRANTE DO BONITO",
-      "municipio": "GLICERIO",
-      "latitude": -21.262303,
-      "longitude": -50.151396,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413298777"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "RCT DO SOL NASCENTE",
-      "municipio": "GLICERIO",
-      "latitude": -21.383883,
-      "longitude": -50.211769,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413298777"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "GUAPIARA",
       "municipio": "GUAPIARA",
       "latitude": -24.213121,
@@ -6317,12 +5916,71 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500181",
         "ELEKTRO-2026-1499640",
         "ELEKTRO-2026-1499235",
         "ELEKTRO-2026-1498251"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "CARMO MESSIAS",
+      "municipio": "IBIUNA",
+      "latitude": -23.747393,
+      "longitude": -47.05123,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "PIRATININGA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413297721"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "CURRAL",
+      "municipio": "IBIUNA",
+      "latitude": -23.651104,
+      "longitude": -47.174604,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "PIRATININGA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413299043"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "DO JAU",
+      "municipio": "IBIUNA",
+      "latitude": -23.649116,
+      "longitude": -47.165766,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "PIRATININGA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413299043"
       ],
       "sem_energia": true
     },
@@ -6417,7 +6075,7 @@
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1444382"
+        "ELEKTRO-2026-1499800"
       ],
       "sem_energia": true
     },
@@ -6436,27 +6094,7 @@
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1459528",
-        "ELEKTRO-2026-1478694"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "INDIAPORA",
-      "municipio": "INDIAPORA",
-      "latitude": -19.956234,
-      "longitude": -50.264437,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1498316"
+        "ELEKTRO-2026-1459528"
       ],
       "sem_energia": true
     },
@@ -6611,15 +6249,13 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta",
-        "em_atendimento"
+        "aberta"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1499582",
         "ELEKTRO-2026-1499170",
         "ELEKTRO-2026-1499114",
-        "ELEKTRO-2026-1498211",
-        "ELEKTRO-2026-1497959"
+        "ELEKTRO-2026-1498211"
       ],
       "sem_energia": true
     },
@@ -6681,8 +6317,7 @@
       "ocorrencias": [
         "ELEKTRO-2026-1499671",
         "ELEKTRO-2026-1498401",
-        "ELEKTRO-2026-1498310",
-        "ELEKTRO-2026-1498115"
+        "ELEKTRO-2026-1498310"
       ],
       "sem_energia": true
     },
@@ -6770,8 +6405,7 @@
         "ELEKTRO-2026-1498444",
         "ELEKTRO-2026-1498341",
         "ELEKTRO-2026-1498308",
-        "ELEKTRO-2026-1498192",
-        "ELEKTRO-2026-1498079"
+        "ELEKTRO-2026-1498192"
       ],
       "sem_energia": true
     },
@@ -6787,11 +6421,13 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "em_atendimento",
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1499616",
+        "ELEKTRO-2026-1500036",
+        "ELEKTRO-2026-1499976",
+        "ELEKTRO-2026-1499969",
         "ELEKTRO-2026-1499612",
         "ELEKTRO-2026-1499599",
         "ELEKTRO-2026-1499409",
@@ -6799,35 +6435,13 @@
         "ELEKTRO-2026-1499148",
         "ELEKTRO-2026-1499142",
         "ELEKTRO-2026-1498776",
-        "ELEKTRO-2026-1498661",
         "ELEKTRO-2026-1498635",
         "ELEKTRO-2026-1498622",
         "ELEKTRO-2026-1498589",
         "ELEKTRO-2026-1498572",
         "ELEKTRO-2026-1498326",
         "ELEKTRO-2026-1498312",
-        "ELEKTRO-2026-1498241",
-        "ELEKTRO-2026-1498180",
-        "ELEKTRO-2026-1497908"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "LOURDES",
-      "municipio": "LOURDES",
-      "latitude": -20.947893,
-      "longitude": -50.228607,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "aberta"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1448830"
+        "ELEKTRO-2026-1498180"
       ],
       "sem_energia": true
     },
@@ -7022,40 +6636,21 @@
       "sem_energia": true
     },
     {
-      "regiao": "CENTRO",
-      "municipio": "MACATUBA",
-      "latitude": -22.508916,
-      "longitude": -48.710841,
+      "regiao": "SETUBAL",
+      "municipio": "MAIRINQUE",
+      "latitude": -23.576631,
+      "longitude": -47.223431,
       "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "MEDIA",
+      "confianca_geografica": "ALTA",
       "nivel": "MONITORAMENTO",
       "distribuidoras": [
-        "PAULISTA"
+        "PIRATININGA"
       ],
       "status": [
-        "Em Execução"
+        "Fim de Participação"
       ],
       "ocorrencias": [
-        "OS 1413299549"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "JD CAPRI",
-      "municipio": "MACATUBA",
-      "latitude": -22.509893,
-      "longitude": -48.713216,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413299549"
+        "OS 1413301500"
       ],
       "sem_energia": true
     },
@@ -7114,6 +6709,25 @@
       "ocorrencias": [
         "ELEKTRO-2026-1499577",
         "ELEKTRO-2026-1498865"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "MIRANTE DO PARANAPANEMA",
+      "municipio": "MIRANTE DO PARANAPANEMA",
+      "latitude": -22.346793,
+      "longitude": -51.924717,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "aberta"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1500039"
       ],
       "sem_energia": true
     },
@@ -7379,6 +6993,7 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1499823",
         "ELEKTRO-2026-1498903",
         "ELEKTRO-2026-1498204"
       ],
@@ -7415,12 +7030,12 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
+        "em_atendimento",
         "aberta"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1499548",
-        "ELEKTRO-2026-1498767",
-        "ELEKTRO-2026-1498706"
+        "ELEKTRO-2026-1498767"
       ],
       "sem_energia": true
     },
@@ -7477,6 +7092,7 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1499934",
         "ELEKTRO-2026-1499434",
         "ELEKTRO-2026-1499427",
         "ELEKTRO-2026-1499263",
@@ -7486,21 +7102,40 @@
       "sem_energia": true
     },
     {
-      "regiao": "NOVA CANAA PAULISTA",
-      "municipio": "NOVA CANAA PAULISTA",
-      "latitude": -20.371,
-      "longitude": -50.918625,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
+      "regiao": "CH ACAPULCO",
+      "municipio": "NOVA ODESSA",
+      "latitude": -22.786939,
+      "longitude": -47.283747,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
       "nivel": "MONITORAMENTO",
       "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
+        "PAULISTA"
       ],
       "status": [
-        "aberta"
+        "Em Preparação"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1456181"
+        "OS 1413300058"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "RCT LAS PALMAS",
+      "municipio": "NOVA ODESSA",
+      "latitude": -22.786939,
+      "longitude": -47.283747,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413300058"
       ],
       "sem_energia": true
     },
@@ -7657,12 +7292,12 @@
       "sem_energia": true
     },
     {
-      "regiao": "PEREIRA BARRETO",
+      "regiao": "BAIRRO SECCAO SANTISSIMO",
       "municipio": "PEREIRA BARRETO",
-      "latitude": -20.68,
-      "longitude": -51.106076,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
+      "latitude": -20.617963,
+      "longitude": -51.020313,
+      "origem_coordenada": "REFERENCIA_OCORRENCIA",
+      "confianca_geografica": "FALLBACK",
       "nivel": "MONITORAMENTO",
       "distribuidoras": [
         "NEOENERGIA ELEKTRO"
@@ -7696,10 +7331,8 @@
         "ELEKTRO-2026-1499346",
         "ELEKTRO-2026-1499335",
         "ELEKTRO-2026-1499207",
-        "ELEKTRO-2026-1499145",
         "ELEKTRO-2026-1499138",
         "ELEKTRO-2026-1499094",
-        "ELEKTRO-2026-1499086",
         "ELEKTRO-2026-1498991",
         "ELEKTRO-2026-1498934",
         "ELEKTRO-2026-1498733",
@@ -7708,9 +7341,7 @@
         "ELEKTRO-2026-1498504",
         "ELEKTRO-2026-1498344",
         "ELEKTRO-2026-1498191",
-        "ELEKTRO-2026-1498030",
-        "ELEKTRO-2026-1497983",
-        "ELEKTRO-2026-1497916"
+        "ELEKTRO-2026-1498030"
       ],
       "sem_energia": true
     },
@@ -7783,7 +7414,7 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "em_atendimento"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1499381"
@@ -7805,6 +7436,9 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500139",
+        "ELEKTRO-2026-1499985",
+        "ELEKTRO-2026-1499839",
         "ELEKTRO-2026-1498976",
         "ELEKTRO-2026-1498850",
         "ELEKTRO-2026-1498775",
@@ -7812,46 +7446,26 @@
         "ELEKTRO-2026-1498408",
         "ELEKTRO-2026-1498375",
         "ELEKTRO-2026-1498315",
-        "ELEKTRO-2026-1498039",
-        "ELEKTRO-2026-1497900"
+        "ELEKTRO-2026-1498039"
       ],
       "sem_energia": true
     },
     {
-      "regiao": "JD ACLIMACAO",
-      "municipio": "PIRAJUI",
-      "latitude": -21.986944,
-      "longitude": -49.457755,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
+      "regiao": "PIRACICABA TUPI",
+      "municipio": "PIRACICABA",
+      "latitude": -22.743549,
+      "longitude": -47.526561,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
       "nivel": "MONITORAMENTO",
       "distribuidoras": [
         "PAULISTA"
       ],
       "status": [
-        "Em Preparação"
+        "Em Execução"
       ],
       "ocorrencias": [
-        "OS 1413300408"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "JD AMERICA",
-      "municipio": "PIRAJUI",
-      "latitude": -21.986944,
-      "longitude": -49.457755,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413300408"
+        "OS 1413299927"
       ],
       "sem_energia": true
     },
@@ -7951,6 +7565,26 @@
       "sem_energia": true
     },
     {
+      "regiao": "PORANGABA",
+      "municipio": "PORANGABA",
+      "latitude": -23.174826,
+      "longitude": -48.102016,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "aberta"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1500192",
+        "ELEKTRO-2026-1499881"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "BOM RETIRO",
       "municipio": "PORTO FELIZ",
       "latitude": -23.305291,
@@ -8046,82 +7680,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "C 119 B PDS SIT FORMIGA",
-      "municipio": "PRADOPOLIS",
-      "latitude": -21.358597,
-      "longitude": -48.068408,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413299802"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "CENTRO",
-      "municipio": "PRADOPOLIS",
-      "latitude": -21.361145,
-      "longitude": -48.077901,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "MEDIA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413299802"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "JD S PAULO",
-      "municipio": "PRADOPOLIS",
-      "latitude": -21.35773,
-      "longitude": -48.078234,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "MEDIA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413299802"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "RURAL - PRADOPOLIS",
-      "municipio": "PRADOPOLIS",
-      "latitude": -21.358597,
-      "longitude": -48.068408,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413299802"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "Pirapora do Bom Jesus",
       "municipio": "Pirapora do Bom Jesus",
       "latitude": -23.378083,
@@ -8196,8 +7754,7 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1498675",
-        "ELEKTRO-2026-1497994",
-        "ELEKTRO-2026-1497932"
+        "ELEKTRO-2026-1497994"
       ],
       "sem_energia": true
     },
@@ -8213,11 +7770,9 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "em_atendimento",
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1498167",
         "ELEKTRO-2026-1498021"
       ],
       "sem_energia": true
@@ -8237,6 +7792,7 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500015",
         "ELEKTRO-2026-1498615",
         "ELEKTRO-2026-1498456"
       ],
@@ -8277,7 +7833,6 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1499015",
-        "ELEKTRO-2026-1498809",
         "ELEKTRO-2026-1498464"
       ],
       "sem_energia": true
@@ -8360,44 +7915,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "STA MARIA DA SERRA",
-      "municipio": "SANTA MARIA DA SERRA",
-      "latitude": -22.564241,
-      "longitude": -48.157572,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413299707"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "BOTAFOGO",
-      "municipio": "SANTA RITA DO PASSA QUATRO",
-      "latitude": -21.718649,
-      "longitude": -47.473495,
-      "origem_coordenada": "REFERENCIA_OCORRENCIA",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1499075"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "SANTA RITA DO PASSA QUATRO",
       "municipio": "SANTA RITA DO PASSA QUATRO",
       "latitude": -21.676592,
@@ -8409,10 +7926,29 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "em_atendimento"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1499187"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "CENTRO",
+      "municipio": "SANTO ANTONIO DO JARDIM",
+      "latitude": -22.121933,
+      "longitude": -46.686117,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413301726"
       ],
       "sem_energia": true
     },
@@ -8428,12 +7964,15 @@
         "PAULISTA"
       ],
       "status": [
+        "Em Deslocamento",
         "Em Preparação",
         "Em Execução"
       ],
       "ocorrencias": [
         "OS 1413294513",
+        "OS 1413301726",
         "OS 1413295522",
+        "OS 1413299202",
         "OS 1413299668",
         "OS 1413290920"
       ],
@@ -8451,12 +7990,29 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "em_atendimento",
+        "em_atendimento"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1498944"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "SAO BENTO DO SAPUCAI",
+      "municipio": "SAO BENTO DO SAPUCAI",
+      "latitude": -22.680635,
+      "longitude": -45.686409,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1499390",
-        "ELEKTRO-2026-1498944"
+        "ELEKTRO-2026-1500256"
       ],
       "sem_energia": true
     },
@@ -8495,25 +8051,6 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1499089"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "PQ NOVA ESPERANCA",
-      "municipio": "SAO JOSE DO RIO PRETO",
-      "latitude": -20.741408,
-      "longitude": -49.416595,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PAULISTA"
-      ],
-      "status": [
-        "Fim de Participação"
-      ],
-      "ocorrencias": [
-        "OS 1413298830"
       ],
       "sem_energia": true
     },
@@ -8594,8 +8131,7 @@
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1499615",
-        "ELEKTRO-2026-1498210"
+        "ELEKTRO-2026-1499615"
       ],
       "sem_energia": true
     },
@@ -8611,12 +8147,10 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta",
-        "em_atendimento"
+        "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1499576",
-        "ELEKTRO-2026-1497985"
+        "ELEKTRO-2026-1451686"
       ],
       "sem_energia": true
     },
@@ -8656,6 +8190,7 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1499498",
+        "ELEKTRO-2026-1500010",
         "ELEKTRO-2026-1498110",
         "ELEKTRO-2026-1498117",
         "ELEKTRO-2026-1498026"
@@ -8718,10 +8253,12 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta",
-        "em_atendimento"
+        "em_atendimento",
+        "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1500175",
+        "ELEKTRO-2026-1500095",
         "ELEKTRO-2026-1499647",
         "ELEKTRO-2026-1499617",
         "ELEKTRO-2026-1499575",
@@ -8746,29 +8283,7 @@
         "ELEKTRO-2026-1498337",
         "ELEKTRO-2026-1498336",
         "ELEKTRO-2026-1498145",
-        "ELEKTRO-2026-1498072",
-        "ELEKTRO-2026-1497971",
-        "ELEKTRO-2026-1497942",
-        "ELEKTRO-2026-1497921"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "URANIA",
-      "municipio": "URANIA",
-      "latitude": -20.1975,
-      "longitude": -50.646651,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "aberta"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1486881"
+        "ELEKTRO-2026-1498072"
       ],
       "sem_energia": true
     },
@@ -8784,33 +8299,10 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "em_atendimento"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1498822",
-        "ELEKTRO-2026-1442753",
-        "ELEKTRO-2026-1442658"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "VARGEM GRANDE DO SUL",
-      "municipio": "VARGEM GRANDE DO SUL",
-      "latitude": -21.867594,
-      "longitude": -46.910938,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento",
-        "aberta"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1499036",
-        "ELEKTRO-2026-1498736"
+        "ELEKTRO-2026-1498822"
       ],
       "sem_energia": true
     },
@@ -8940,7 +8432,7 @@
         "PAULISTA"
       ],
       "status": [
-        "Em Preparação"
+        "Em Execução"
       ],
       "ocorrencias": [
         "OS 1413301320"
@@ -8959,7 +8451,7 @@
         "PAULISTA"
       ],
       "status": [
-        "Em Preparação"
+        "Em Execução"
       ],
       "ocorrencias": [
         "OS 1413301320"
@@ -8978,7 +8470,7 @@
         "PAULISTA"
       ],
       "status": [
-        "Em Preparação"
+        "Em Execução"
       ],
       "ocorrencias": [
         "OS 1413301320"
@@ -8997,7 +8489,7 @@
         "PAULISTA"
       ],
       "status": [
-        "Em Preparação"
+        "Em Execução"
       ],
       "ocorrencias": [
         "OS 1413301320"
