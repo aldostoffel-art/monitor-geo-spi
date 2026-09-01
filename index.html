@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=20260901_trajetoria_manchas">
+  <link rel="stylesheet" href="styles.css?v=20260901_trajetoria_preventiva_v2">
 </head>
 <body>
   <header class="topbar">
@@ -118,6 +118,14 @@
         <div id="trajectoryForecastRoute" class="trajectory-forecast-route">Calculando sequência prevista…</div>
         <div class="trajectory-box-title">🔮 Próximas 12h</div>
         <div id="trajectoryFuture" class="trajectory-future">Calculando previsão futura…</div>
+        <div class="trajectory-box-title">🤖 Analista de Trajetória</div>
+        <div class="trajectory-ai-actions">
+          <button type="button" data-traj-ai="proximos">➡️ Quem vem depois?</button>
+          <button type="button" data-traj-ai="fim">⏱️ Até que horas?</button>
+          <button type="button" data-traj-ai="sites">🔋 Sites ≤4h</button>
+          <button type="button" data-traj-ai="resumo">🛡️ Resumo preventivo</button>
+        </div>
+        <div id="trajectoryAiAnswer" class="trajectory-ai-answer">Selecione um evento ou use uma pergunta rápida.</div>
         <div class="trajectory-box-title">📋 Dados do evento selecionado</div>
         <div id="trajectoryCritical" class="trajectory-critical">Selecionando evento mais crítico…</div>
         <div class="trajectory-box-title">🧭 Trajetória / deslocamento</div>
@@ -145,6 +153,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=20260901_trajetoria_manchas"></script>
+  <script src="app.js?v=20260901_trajetoria_preventiva_v2"></script>
 </body>
 </html>
