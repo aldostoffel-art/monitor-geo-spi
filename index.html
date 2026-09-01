@@ -112,6 +112,8 @@
         <div class="trajectory-legend"><span><i class="traj-dot now"></i> AGORA: alerta recente + compatível com janela atual</span><span><i class="traj-dot recent"></i> RECENTE: alerta ainda relevante, continuidade não confirmada</span><span><i class="traj-dot future"></i> PREVISÃO / PREVISÃO OFICIAL</span><span><i class="traj-line"></i> deslocamento confirmado</span></div>
         <div id="trajectorySummary" class="trajectory-summary">Consolidando eventos severos…</div>
         <div class="trajectory-player"><button id="trajectoryPlay">▶ Evolução 12h</button><button id="trajectoryStop">■ Parar</button><span id="trajectoryPlayStatus">Previsão parada</span></div>
+        <div class="trajectory-box-title">🟣 Progressão prevista</div>
+        <div id="trajectoryForecastRoute" class="trajectory-forecast-route">Calculando sequência prevista…</div>
         <div class="trajectory-box-title">🔮 Próximas 12h</div>
         <div id="trajectoryFuture" class="trajectory-future">Calculando previsão futura…</div>
         <div class="trajectory-box-title">📋 Dados do evento selecionado</div>
@@ -120,7 +122,7 @@
         <div id="trajectoryPath" class="trajectory-path">Aguardando evento selecionado…</div>
         <div class="trajectory-box-title">⏱️ Outros eventos</div>
         <div id="trajectoryTimeline" class="trajectory-timeline"></div>
-        <small class="trajectory-note">Linhas só representam deslocamento explicitamente informado por fonte oficial. Pontos previstos independentes não são conectados como uma única tempestade.</small>
+        <small class="trajectory-note">Linha vermelha = deslocamento informado por fonte oficial. Linha roxa pontilhada = progressão temporal da previsão entre grupos horários; não representa rastreamento confirmado da mesma célula.</small>
       </section>
       <section class="panel details" id="details"><div class="panel-title">Trecho selecionado</div><p>Clique em um trecho do Backbone para ver os detalhes.</p></section>
     </aside>
