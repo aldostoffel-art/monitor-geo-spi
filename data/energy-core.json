@@ -1,32 +1,12 @@
 {
   "core": "ENERGY CORE SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-01T05:50:03.036134+00:00",
-  "fonte_gerada_em": "2026-09-01T02:46:13-03:00",
-  "quantidade_ocorrencias_origem": 560,
-  "quantidade_regioes_sem_energia": 494,
+  "gerado_em": "2026-09-01T05:55:02.132874+00:00",
+  "fonte_gerada_em": "2026-09-01T02:52:06-03:00",
+  "quantidade_ocorrencias_origem": 559,
+  "quantidade_regioes_sem_energia": 498,
   "sem_coordenada": [],
   "regioes": [
-    {
-      "regiao": "APIAI",
-      "municipio": "APIAI",
-      "latitude": -24.501929,
-      "longitude": -48.847618,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "CRITICO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1493419",
-        "ELEKTRO-2026-1487323"
-      ],
-      "sem_energia": true
-    },
     {
       "regiao": "ARARAS",
       "municipio": "ARARAS",
@@ -58,9 +38,12 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1493814",
+        "ELEKTRO-2026-1493811",
         "ELEKTRO-2026-1493764",
         "ELEKTRO-2026-1493746",
         "ELEKTRO-2026-1493408",
@@ -81,7 +64,7 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "em_atendimento"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1493736"
@@ -248,13 +231,12 @@
         "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1493792",
         "ELEKTRO-2026-1493720",
-        "ELEKTRO-2026-1493718",
         "ELEKTRO-2026-1493704",
         "ELEKTRO-2026-1493429",
         "ELEKTRO-2026-1492784",
         "ELEKTRO-2026-1492708",
-        "ELEKTRO-2026-1491767",
         "ELEKTRO-2026-1491430",
         "ELEKTRO-2026-1491083",
         "ELEKTRO-2026-1491025",
@@ -299,7 +281,6 @@
       "ocorrencias": [
         "ELEKTRO-2026-1493756",
         "ELEKTRO-2026-1493701",
-        "ELEKTRO-2026-1489687",
         "ELEKTRO-2026-1487796"
       ],
       "sem_energia": true
@@ -322,6 +303,25 @@
         "ELEKTRO-2026-1493786",
         "ELEKTRO-2026-1493706",
         "ELEKTRO-2026-1493185"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "Santana de Parnaíba",
+      "municipio": "Santana de Parnaíba",
+      "latitude": -23.446957,
+      "longitude": -46.910471,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "CRITICO",
+      "distribuidoras": [
+        "ENEL SP"
+      ],
+      "status": [
+        "ATIVA"
+      ],
+      "ocorrencias": [
+        "ENEL-354730405"
       ],
       "sem_energia": true
     },
@@ -1910,25 +1910,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "Jardim D'Abril",
-      "municipio": "Osasco",
-      "latitude": -23.558522,
-      "longitude": -46.777332,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ALTO",
-      "distribuidoras": [
-        "ENEL SP"
-      ],
-      "status": [
-        "ATIVA"
-      ],
-      "ocorrencias": [
-        "ENEL-3534401034"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "PAULICEIA",
       "municipio": "PIRACICABA",
       "latitude": -22.749193,
@@ -2458,25 +2439,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "Santana de Parnaíba",
-      "municipio": "Santana de Parnaíba",
-      "latitude": -23.446957,
-      "longitude": -46.910471,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ALTO",
-      "distribuidoras": [
-        "ENEL SP"
-      ],
-      "status": [
-        "ATIVA"
-      ],
-      "ocorrencias": [
-        "ENEL-354730405"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "CANDINHO",
       "municipio": "VALINHOS",
       "latitude": -22.980405,
@@ -2995,6 +2957,63 @@
       "sem_energia": true
     },
     {
+      "regiao": "Cruz Preta",
+      "municipio": "Barueri",
+      "latitude": -23.493058,
+      "longitude": -46.880536,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "MEDIA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "ENEL SP"
+      ],
+      "status": [
+        "ATIVA"
+      ],
+      "ocorrencias": [
+        "ENEL-3505708008"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "Mutinga",
+      "municipio": "Barueri",
+      "latitude": -23.496924,
+      "longitude": -46.81423,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "ENEL SP"
+      ],
+      "status": [
+        "ATIVA"
+      ],
+      "ocorrencias": [
+        "ENEL-3505708009"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "Silveira",
+      "municipio": "Barueri",
+      "latitude": -23.523495,
+      "longitude": -46.893527,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "ENEL SP"
+      ],
+      "status": [
+        "ATIVA"
+      ],
+      "ocorrencias": [
+        "ENEL-3505708016"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "AREA RURAL DO MUNICIPIO",
       "municipio": "CAMPINAS",
       "latitude": -22.969069,
@@ -3105,11 +3124,71 @@
         "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1493826",
+        "ELEKTRO-2026-1493821",
+        "ELEKTRO-2026-1493809",
         "ELEKTRO-2026-1493769",
         "ELEKTRO-2026-1493765",
         "ELEKTRO-2026-1493599",
         "ELEKTRO-2026-1493489",
         "ELEKTRO-2026-1493441"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "Polvilho",
+      "municipio": "Cajamar",
+      "latitude": -23.41087,
+      "longitude": -46.847221,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "ENEL SP"
+      ],
+      "status": [
+        "ATIVA"
+      ],
+      "ocorrencias": [
+        "ENEL-350920515"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "Aldeia de Carapicuíba",
+      "municipio": "Carapicuíba",
+      "latitude": -23.566561,
+      "longitude": -46.828733,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "ENEL SP"
+      ],
+      "status": [
+        "ATIVA"
+      ],
+      "ocorrencias": [
+        "ENEL-351060910"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "Vila Dirce",
+      "municipio": "Carapicuíba",
+      "latitude": -23.56336,
+      "longitude": -46.851186,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "ENEL SP"
+      ],
+      "status": [
+        "ATIVA"
+      ],
+      "ocorrencias": [
+        "ENEL-351060930"
       ],
       "sem_energia": true
     },
@@ -3125,10 +3204,11 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "em_atendimento",
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1493800",
         "ELEKTRO-2026-1493710",
         "ELEKTRO-2026-1493707",
         "ELEKTRO-2026-1493695",
@@ -3184,6 +3264,7 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1493807",
         "ELEKTRO-2026-1493753"
       ],
       "sem_energia": true
@@ -3380,8 +3461,7 @@
         "ELEKTRO-2026-1489998",
         "ELEKTRO-2026-1488773",
         "ELEKTRO-2026-1488392",
-        "ELEKTRO-2026-1488095",
-        "ELEKTRO-2026-1487231"
+        "ELEKTRO-2026-1488095"
       ],
       "sem_energia": true
     },
@@ -3941,6 +4021,25 @@
       "sem_energia": true
     },
     {
+      "regiao": "Industrial Anhanguera",
+      "municipio": "Osasco",
+      "latitude": -23.482348,
+      "longitude": -46.777757,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "ENEL SP"
+      ],
+      "status": [
+        "ATIVA"
+      ],
+      "ocorrencias": [
+        "ENEL-3534401049"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "Jaguaribe",
       "municipio": "Osasco",
       "latitude": -23.55668,
@@ -3994,6 +4093,25 @@
       ],
       "ocorrencias": [
         "ENEL-3534401038"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "Mutinga",
+      "municipio": "Osasco",
+      "latitude": -23.549688,
+      "longitude": -46.79127,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "MEDIA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "ENEL SP"
+      ],
+      "status": [
+        "ATIVA"
+      ],
+      "ocorrencias": [
+        "ENEL-3534401040"
       ],
       "sem_energia": true
     },
@@ -4721,6 +4839,7 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1493802",
         "ELEKTRO-2026-1493728",
         "ELEKTRO-2026-1493584"
       ],
@@ -6210,9 +6329,7 @@
         "ELEKTRO-2026-1492584",
         "ELEKTRO-2026-1492232",
         "ELEKTRO-2026-1491870",
-        "ELEKTRO-2026-1487941",
-        "ELEKTRO-2026-1487484",
-        "ELEKTRO-2026-1487397"
+        "ELEKTRO-2026-1487941"
       ],
       "sem_energia": true
     },
@@ -6448,19 +6565,15 @@
         "ELEKTRO-2026-1493238",
         "ELEKTRO-2026-1493168",
         "ELEKTRO-2026-1493123",
-        "ELEKTRO-2026-1493119",
-        "ELEKTRO-2026-1493118",
-        "ELEKTRO-2026-1493069",
-        "ELEKTRO-2026-1492093",
-        "ELEKTRO-2026-1488097"
+        "ELEKTRO-2026-1492093"
       ],
       "sem_energia": true
     },
     {
       "regiao": "BRO BARRA GRANDE",
       "municipio": "BARAO DE ANTONINA",
-      "latitude": -23.620572,
-      "longitude": -49.561335,
+      "latitude": -23.55264,
+      "longitude": -49.56367,
       "origem_coordenada": "REFERENCIA_OCORRENCIA",
       "confianca_geografica": "FALLBACK",
       "nivel": "MONITORAMENTO",
@@ -6471,7 +6584,7 @@
         "em_atendimento"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1493287"
+        "ELEKTRO-2026-1493069"
       ],
       "sem_energia": true
     },
@@ -6821,120 +6934,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "Califórnia",
-      "municipio": "Barueri",
-      "latitude": -23.49458,
-      "longitude": -46.895826,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "ENEL SP"
-      ],
-      "status": [
-        "ATIVA"
-      ],
-      "ocorrencias": [
-        "ENEL-3505708002"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "Fazenda Militar",
-      "municipio": "Barueri",
-      "latitude": -23.5008,
-      "longitude": -46.8471,
-      "origem_coordenada": "REFERENCIA_MUNICIPIO_BACKBONE",
-      "confianca_geografica": "FALLBACK_MUNICIPAL",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "ENEL SP"
-      ],
-      "status": [
-        "ATIVA"
-      ],
-      "ocorrencias": [
-        "ENEL-3505708011"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "Mutinga",
-      "municipio": "Barueri",
-      "latitude": -23.496924,
-      "longitude": -46.81423,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "ENEL SP"
-      ],
-      "status": [
-        "ATIVA"
-      ],
-      "ocorrencias": [
-        "ENEL-3505708009"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "Silveira",
-      "municipio": "Barueri",
-      "latitude": -23.523495,
-      "longitude": -46.893527,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "ENEL SP"
-      ],
-      "status": [
-        "ATIVA"
-      ],
-      "ocorrencias": [
-        "ENEL-3505708016"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "Votupoca",
-      "municipio": "Barueri",
-      "latitude": -23.532951,
-      "longitude": -46.871166,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "ENEL SP"
-      ],
-      "status": [
-        "ATIVA"
-      ],
-      "ocorrencias": [
-        "ENEL-3505708012"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "BRO RETIRO",
-      "municipio": "CABREUVA",
-      "latitude": -23.263446,
-      "longitude": -47.122903,
-      "origem_coordenada": "REFERENCIA_OCORRENCIA",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1493668"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "CABREUVA",
       "municipio": "CABREUVA",
       "latitude": -23.324908,
@@ -6946,11 +6945,32 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1493712",
+        "ELEKTRO-2026-1493668",
         "ELEKTRO-2026-1493540"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "BAIRRO DOS MELLOS",
+      "municipio": "CAMPOS DO JORDAO",
+      "latitude": -22.747371,
+      "longitude": -45.62029,
+      "origem_coordenada": "REFERENCIA_OCORRENCIA",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "aberta"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1493824"
       ],
       "sem_energia": true
     },
@@ -6974,7 +6994,7 @@
       "sem_energia": true
     },
     {
-      "regiao": "BRO CAPOEIRA ALTA",
+      "regiao": "BRO CANDIDOS",
       "municipio": "CAPAO BONITO",
       "latitude": -24.061077,
       "longitude": -48.414963,
@@ -7083,7 +7103,8 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1493655",
@@ -7113,6 +7134,25 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1493679"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "JD CANDIDA",
+      "municipio": "CORDEIROPOLIS",
+      "latitude": -22.470883,
+      "longitude": -47.427691,
+      "origem_coordenada": "REFERENCIA_OCORRENCIA",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "em_atendimento"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1493790"
       ],
       "sem_energia": true
     },
@@ -7174,25 +7214,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "BREJINHO",
-      "municipio": "CUNHA",
-      "latitude": -22.923139,
-      "longitude": -44.812103,
-      "origem_coordenada": "REFERENCIA_OCORRENCIA",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1493547"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "CUNHA",
       "municipio": "CUNHA",
       "latitude": -23.11687,
@@ -7242,25 +7263,6 @@
       ],
       "ocorrencias": [
         "ENEL-350920505"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "Vila Dirce",
-      "municipio": "Carapicuíba",
-      "latitude": -23.56336,
-      "longitude": -46.851186,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "ENEL SP"
-      ],
-      "status": [
-        "ATIVA"
-      ],
-      "ocorrencias": [
-        "ENEL-351060930"
       ],
       "sem_energia": true
     },
@@ -7355,13 +7357,12 @@
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1493646",
         "ELEKTRO-2026-1492641"
       ],
       "sem_energia": true
     },
     {
-      "regiao": "BRO ALEGRE DE BAIXO",
+      "regiao": "BRO BOA VISTA",
       "municipio": "GUAPIARA",
       "latitude": -24.167559,
       "longitude": -48.496389,
@@ -7415,12 +7416,11 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "em_atendimento"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1493758",
-        "ELEKTRO-2026-1493708",
-        "ELEKTRO-2026-1493464"
+        "ELEKTRO-2026-1493708"
       ],
       "sem_energia": true
     },
@@ -7474,30 +7474,13 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1493741",
         "ELEKTRO-2026-1493711",
-        "ELEKTRO-2026-1493703"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "RURAL",
-      "municipio": "IRACEMAPOLIS",
-      "latitude": -22.6406,
-      "longitude": -47.497346,
-      "origem_coordenada": "REFERENCIA_OCORRENCIA",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento"
-      ],
-      "ocorrencias": [
+        "ELEKTRO-2026-1493703",
         "ELEKTRO-2026-1493667"
       ],
       "sem_energia": true
@@ -7583,7 +7566,7 @@
         "em_atendimento"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1493785",
+        "ELEKTRO-2026-1493820",
         "ELEKTRO-2026-1493759",
         "ELEKTRO-2026-1493596",
         "ELEKTRO-2026-1493448",
@@ -7652,10 +7635,10 @@
         "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1493825",
         "ELEKTRO-2026-1493381",
         "ELEKTRO-2026-1493189",
         "ELEKTRO-2026-1493184",
-        "ELEKTRO-2026-1493106",
         "ELEKTRO-2026-1492911",
         "ELEKTRO-2026-1492826",
         "ELEKTRO-2026-1492067",
@@ -8011,6 +7994,7 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1493818",
         "ELEKTRO-2026-1493714",
         "ELEKTRO-2026-1493697",
         "ELEKTRO-2026-1493672",
@@ -8243,6 +8227,7 @@
         "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1493797",
         "ELEKTRO-2026-1493761",
         "ELEKTRO-2026-1493748",
         "ELEKTRO-2026-1493481",
@@ -8387,11 +8372,28 @@
         "ELEKTRO-2026-1490931",
         "ELEKTRO-2026-1492441",
         "ELEKTRO-2026-1490456",
-        "ELEKTRO-2026-1489740",
-        "ELEKTRO-2026-1489075",
         "ELEKTRO-2026-1488411",
         "ELEKTRO-2026-1488209",
         "ELEKTRO-2026-1487705"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "NOVA INDEPENDENCIA",
+      "municipio": "NOVA INDEPENDENCIA",
+      "latitude": -21.138763,
+      "longitude": -51.519402,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "aberta"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1493787"
       ],
       "sem_energia": true
     },
@@ -8625,6 +8627,25 @@
       "sem_energia": true
     },
     {
+      "regiao": "CEMITERIO",
+      "municipio": "PANORAMA",
+      "latitude": -21.371391,
+      "longitude": -51.846185,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "MEDIA",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "em_atendimento"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1492891"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "PANORAMA",
       "municipio": "PANORAMA",
       "latitude": -21.459988,
@@ -8636,13 +8657,11 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta",
-        "em_atendimento"
+        "aberta"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1493659",
-        "ELEKTRO-2026-1493314",
-        "ELEKTRO-2026-1492891"
+        "ELEKTRO-2026-1493314"
       ],
       "sem_energia": true
     },
@@ -8793,6 +8812,44 @@
       "sem_energia": true
     },
     {
+      "regiao": "ATIBAINHA",
+      "municipio": "PIRACAIA",
+      "latitude": -23.063686,
+      "longitude": -46.221347,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "MEDIA",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "em_atendimento"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1493789"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "BAIRRO BATISTADA",
+      "municipio": "PIRACAIA",
+      "latitude": -23.021456,
+      "longitude": -46.363902,
+      "origem_coordenada": "REFERENCIA_OCORRENCIA",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "aberta"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1493805"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "PIRACAIA",
       "municipio": "PIRACAIA",
       "latitude": -23.04,
@@ -8804,11 +8861,12 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "em_atendimento",
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1493778",
+        "ELEKTRO-2026-1493827",
+        "ELEKTRO-2026-1493799",
         "ELEKTRO-2026-1493762",
         "ELEKTRO-2026-1493749",
         "ELEKTRO-2026-1493445",
@@ -8824,13 +8882,11 @@
         "ELEKTRO-2026-1492371",
         "ELEKTRO-2026-1491944",
         "ELEKTRO-2026-1491865",
-        "ELEKTRO-2026-1491749",
         "ELEKTRO-2026-1491691",
         "ELEKTRO-2026-1491627",
         "ELEKTRO-2026-1491515",
         "ELEKTRO-2026-1491484",
-        "ELEKTRO-2026-1491228",
-        "ELEKTRO-2026-1490540"
+        "ELEKTRO-2026-1491228"
       ],
       "sem_energia": true
     },
@@ -8849,7 +8905,6 @@
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1493705",
         "ELEKTRO-2026-1493539",
         "ELEKTRO-2026-1493322",
         "ELEKTRO-2026-1492760"
@@ -8971,6 +9026,25 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1488958"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "Pirapora do Bom Jesus",
+      "municipio": "Pirapora do Bom Jesus",
+      "latitude": -23.378083,
+      "longitude": -46.979117,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "ENEL SP"
+      ],
+      "status": [
+        "ATIVA"
+      ],
+      "ocorrencias": [
+        "ENEL-353910305"
       ],
       "sem_energia": true
     },
@@ -9359,6 +9433,7 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1493804",
         "ELEKTRO-2026-1491211"
       ],
       "sem_energia": true
@@ -9537,7 +9612,6 @@
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1493682",
         "ELEKTRO-2026-1493335"
       ],
       "sem_energia": true
