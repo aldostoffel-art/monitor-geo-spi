@@ -1,4 +1,9 @@
 const map=L.map('map',{preferCanvas:true,zoomControl:true}).setView([-22.45,-48.4],7);
+// Mantém o Leaflet dimensionado corretamente após layout responsivo/cache móvel.
+function spiFixMapSize(){try{map.invalidateSize({pan:false,animate:false})}catch(e){}}
+window.addEventListener('load',()=>{spiFixMapSize();setTimeout(spiFixMapSize,120);setTimeout(spiFixMapSize,700)});
+window.addEventListener('resize',()=>setTimeout(spiFixMapSize,80));
+window.addEventListener('orientationchange',()=>setTimeout(spiFixMapSize,180));
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap'}).addTo(map);
 
 const DATA_FILES=['data/backbone-1.geojson','data/backbone-2.geojson','data/backbone-3.geojson','data/backbone-4.geojson'];
@@ -193,7 +198,7 @@ function commandBoardRowHtml(win){const rows=commandBoardRegionRows(win),lv=comm
 function renderCommandView(){const root=document.getElementById('commandView');if(!root)return;const snap=analystSnapshot(),top=analystTop(snap,5),ready=document.getElementById('commandReadiness');if(ready){ready.textContent=snap.readiness;ready.dataset.level=norm(snap.readiness)}const imp=[...importantOfficialEvents(),...importantForecastEvents()].sort((a,b)=>b.score-a.score)[0],urgent=document.getElementById('commandUrgentText');if(urgent)urgent.innerHTML=imp?importantMessage(imp):'<strong>Operação em monitoramento preventivo.</strong> Nenhum evento urgente consolidado neste ciclo.';const set=(id,v)=>{const e=document.getElementById(id);if(e)e.textContent=v};set('commandSummaryRegions',top.length);set('commandSummarySites',snap.exposedCritSites.length);set('commandSummaryEnergy',energyEvents.length);set('commandSummaryFire',fireEvents.length);set('commandSummaryAlerts',operationalDefesaEvents().length);const upd=document.getElementById('commandBoardUpdated');if(upd)upd.textContent='Atualizado '+new Date().toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});const rows=document.getElementById('commandBoardRows');if(rows)rows.innerHTML=commandBoardWindows().map(commandBoardRowHtml).join('')}
 
 function showCommandTab(){leaveTrajectoryMode();leaveMobileMode();leaveFireMode();document.body.classList.add('command-board-mobile');document.getElementById('mapView').hidden=true;document.getElementById('commandView').hidden=false;setActiveViewTab('tabComando');renderCommandView()}
-function showMapTab(){document.body.classList.remove('command-board-mobile');leaveTrajectoryMode();leaveMobileMode();leaveFireMode();document.getElementById('commandView').hidden=true;document.getElementById('mapView').hidden=false;setActiveViewTab('tabMapa');setTimeout(()=>map.invalidateSize(),60);renderFire()}
+function showMapTab(){document.body.classList.remove('command-board-mobile');leaveTrajectoryMode();leaveMobileMode();leaveFireMode();document.getElementById('commandView').hidden=true;document.getElementById('mapView').hidden=false;setActiveViewTab('tabMapa');setTimeout(()=>{spiFixMapSize();map.invalidateSize()},80);renderFire()}
 document.getElementById('tabComando')?.addEventListener('click',showCommandTab);document.getElementById('tabMapa')?.addEventListener('click',showMapTab);setInterval(()=>{if(!document.getElementById('commandView')?.hidden)renderCommandView()},10000);
 
 
