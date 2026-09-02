@@ -332,3 +332,21 @@ body.trajectory-map-mode .map-full-only,body.trajectory-map-mode #details,body.t
  body.command-board-mobile #commandView .command-board-table{min-width:1080px!important}
  body.command-board-mobile #commandView .command-board-footer{min-width:760px!important}
 }
+/* Mobile map usability fix 2026-09-02: viewport real, mapa visível e gestos preservados */
+@media(max-width:900px){
+ html,body{height:auto!important;min-height:100%!important;overflow-x:hidden!important;overflow-y:auto!important}
+ body{display:block!important}
+ .topbar{min-height:0!important;padding:10px 12px!important}
+ .topbar h1{font-size:18px!important;margin:2px 0!important}
+ .topbar p{font-size:10px!important;line-height:1.25!important}
+ .topbar .status{display:none!important}
+ .view-tabs{position:relative!important;display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;overflow:visible!important;padding:6px!important;gap:5px!important}
+ .view-tab{min-width:0!important;width:100%!important;padding:8px 3px!important;font-size:10px!important;touch-action:manipulation!important}
+ .climate-strip{position:relative!important;top:auto!important;z-index:20!important}
+ #mapView.shell{display:block!important;height:auto!important;min-height:0!important}
+ #mapView .map-wrap{display:block!important;height:58vh!important;min-height:390px!important;max-height:620px!important;position:relative!important}
+ #mapView #map{display:block!important;width:100%!important;height:100%!important;min-height:390px!important;touch-action:none!important}
+ #mapView .sidebar{display:block!important;overflow:visible!important;padding:10px!important}
+ #mapView .legend{left:8px!important;bottom:8px!important;max-width:210px!important;padding:8px 10px!important}
+ footer{position:relative!important}
+}
