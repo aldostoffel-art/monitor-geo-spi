@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788316247">
+  <link rel="stylesheet" href="styles.css?v=1788324662">
 </head>
 <body>
   <header class="topbar">
@@ -156,7 +156,7 @@
 
   <main id="weatherLabView" class="weatherlab-view" hidden>
     <section class="weatherlab-top">
-      <div><div class="eyebrow">SPI • DEV • TESTE VISUAL</div><h2>Monitor Climático Operacional</h2><p>Eventos reais dos Cores DEV. O contorno representa a área operacional do evento — não uma nuvem desenhada artificialmente.</p></div>
+      <div><div class="eyebrow">SPI • DEV • TESTE VISUAL</div><h2>Monitor Climático Operacional</h2><p>Radar observado + risco operacional SPI. Limites coloridos representam municípios afetados; a camada de radar permanece observacional.</p></div>
       <div class="weatherlab-updated" id="weatherLabUpdated">Atualizando…</div>
     </section>
     <section class="weatherlab-kpis">
@@ -171,7 +171,7 @@
       <div class="weatherlab-mapbox">
         <div class="weatherlab-map-head"><span>MONITOR OPERACIONAL GEO SPI <small>VIVO | ASSISTENTE OPERACIONAL</small></span><small id="weatherLabRadarStamp">Radar: conectando…</small></div>
         <div class="weatherlab-source-tabs"><button id="weatherLabRadarBtn" class="active">RADAR</button><button id="weatherLabSatelliteBtn">SATÉLITE</button></div>
-        <div class="weatherlab-layerbox"><b>CAMADAS</b><label><input type="checkbox" id="weatherLabRadarToggle" checked> Radar real</label><label><input type="checkbox" id="weatherLabEventToggle" checked> Eventos / alertas</label><label><input type="checkbox" id="weatherLabProjectionToggle" checked> Projeção SPI</label><hr><b>INTENSIDADE DA CHUVA</b><span><i class="dbz extreme"></i> Extrema</span><span><i class="dbz verystrong"></i> Muito forte</span><span><i class="dbz strong"></i> Forte</span><span><i class="dbz moderate"></i> Moderada</span><span><i class="dbz weak"></i> Fraca</span><small id="weatherLabRadarSource">Fonte radar: RainViewer</small></div>
+        <div class="weatherlab-layerbox"><b>CAMADAS</b><label><input type="checkbox" id="weatherLabRadarToggle" checked> Radar real</label><label><input type="checkbox" id="weatherLabEventToggle" checked> Áreas / alertas SPI</label><label><input type="checkbox" id="weatherLabProjectionToggle" checked> Projeção SPI</label><hr><b>INTENSIDADE NO MAPA</b><span><i class="dbz extreme"></i> Crítico SPI</span><span><i class="dbz verystrong"></i> Alto SPI</span><span><i class="dbz strong"></i> Atenção</span><span><i class="dbz moderate"></i> Monitoramento</span><span><i class="dbz weak"></i> Radar observado</span><small id="weatherLabRadarSource">Radar real: RainViewer • áreas: Cores SPI + IBGE</small></div>
         <div id="weatherLabMap" class="weatherlab-map"></div>
         <div class="weatherlab-legend"><b>INTENSIDADE OPERACIONAL</b><span><i class="wl-extreme"></i>Crítico</span><span><i class="wl-high"></i>Alto</span><span><i class="wl-watch"></i>Monitoramento</span><small>Contornos irregulares = envelope operacional aproximado, não radar.</small></div>
       </div>
@@ -186,6 +186,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788316247"></script>
+  <script src="app.js?v=1788324662"></script>
 </body>
 </html>
