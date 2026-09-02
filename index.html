@@ -139,19 +139,11 @@
       <section class="panel details" id="details"><div class="panel-title">Trecho selecionado</div><p>Clique em um trecho do Backbone para ver os detalhes.</p></section>
     </aside>
   </main>
-  <main id="commandView" class="command-view" hidden>
-    <section class="command-hero">
-      <div><div class="eyebrow">SPI • DEV • VISÃO DE COMANDO</div><h2>Onde atuar primeiro</h2><p>Inteligência por trás, somente prioridades na tela. Clima, Defesa Civil, energia, Fire, sites ≤4h e Backbone.</p></div>
-      <div id="commandReadiness" class="command-readiness">ANALISANDO</div>
-    </section>
-    <section id="commandUrgent" class="command-urgent"><b>🚨 EVENTO PRIORITÁRIO</b><div id="commandUrgentText">Consolidando eventos relevantes…</div></section>
-    <section class="command-grid">
-      <article class="command-card command-priority"><div class="command-card-title">🎯 Onde atacar primeiro</div><div id="commandPriorityList"></div></article>
-      <article class="command-card"><div class="command-card-title">⏱️ Próximas horas</div><div id="commandNextHours"></div></article>
-      <article class="command-card"><div class="command-card-title">🛡️ Infraestrutura vulnerável</div><div id="commandVulnerability"></div></article>
-      <article class="command-card"><div class="command-card-title">👁️ O que estamos monitorando</div><div id="commandWatch"></div></article>
-    </section>
-    <section class="command-footer-note">Detalhes permanecem disponíveis na aba <b>Mapa completo</b>. Esta visão não cria novos scores: usa apenas classificações e dados já calculados pelos Cores DEV.</section>
+  <main id="commandView" class="command-view command-board" hidden>
+    <section class="command-board-head"><div class="command-board-brand"><span class="command-weather-icon">🌧️</span><div><small>BOLETIM OPERACIONAL • SPI DEV</small><h2>VISÃO CLIMÁTICA & OPERACIONAL — SP</h2><p>Resumo executivo dos Cores • prevenção, impacto e prioridade operacional</p></div></div><div class="command-board-status"><span id="commandBoardPeriod">PRÓXIMAS 48H</span><small id="commandBoardUpdated">Atualizando…</small><b id="commandReadiness" class="command-readiness">ANALISANDO</b></div></section>
+    <section class="command-board-summary"><div class="command-summary-main"><b>RESUMO EXECUTIVO</b><div id="commandUrgentText">Consolidando eventos relevantes…</div></div><div><small>REGIÕES PRIORITÁRIAS</small><strong id="commandSummaryRegions">—</strong></div><div><small>SITES ≤4H EXPOSTOS</small><strong id="commandSummarySites">—</strong></div><div><small>ENERGIA</small><strong id="commandSummaryEnergy">—</strong></div><div><small>FIRE</small><strong id="commandSummaryFire">—</strong></div><div><small>ALERTAS OFICIAIS</small><strong id="commandSummaryAlerts">—</strong></div></section>
+    <section class="command-board-table-wrap"><div class="command-board-table"><div class="command-board-th"><span>JANELA</span><span>VISÃO OPERACIONAL</span><span>ALERTAS / SINAIS</span><span>REGIÕES EM ATENÇÃO</span><span>CLIMA PREVISTO</span><span>IMPACTO SPI</span></div><div id="commandBoardRows" class="command-board-rows"></div></div></section>
+    <section class="command-board-footer"><div id="commandBoardLegend"><b>LEGENDA</b><span><i class="c-critical"></i>Crítico</span><span><i class="c-high"></i>Alto</span><span><i class="c-watch"></i>Atenção</span><span><i class="c-low"></i>Baixo</span></div><small>Fontes: Weather Risk SPI • Previsão SPI • Defesa Civil/INMET • Energy Core • Fire Core • Sites. A classificação operacional não substitui alerta oficial.</small></section>
   </main>
 
   <main id="weatherLabView" class="weatherlab-view" hidden>
