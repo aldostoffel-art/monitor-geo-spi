@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788314190">
+  <link rel="stylesheet" href="styles.css?v=1788315513">
 </head>
 <body>
   <header class="topbar">
@@ -169,7 +169,9 @@
     </section>
     <section class="weatherlab-grid">
       <div class="weatherlab-mapbox">
-        <div class="weatherlab-map-head"><span>🌩️ EVENTOS CLIMÁTICOS REAIS</span><small>Weather Risk • INMET/Defesa • METAR/CEMADEN • previsão SPI</small></div>
+        <div class="weatherlab-map-head"><span>MONITOR OPERACIONAL GEO SPI <small>VIVO | ASSISTENTE OPERACIONAL</small></span><small id="weatherLabRadarStamp">Radar: conectando…</small></div>
+        <div class="weatherlab-source-tabs"><button id="weatherLabRadarBtn" class="active">RADAR</button><button id="weatherLabSatelliteBtn">SATÉLITE</button></div>
+        <div class="weatherlab-layerbox"><b>CAMADAS</b><label><input type="checkbox" id="weatherLabRadarToggle" checked> Radar real</label><label><input type="checkbox" id="weatherLabEventToggle" checked> Eventos / alertas</label><label><input type="checkbox" id="weatherLabProjectionToggle" checked> Projeção SPI</label><hr><b>INTENSIDADE DA CHUVA</b><span><i class="dbz extreme"></i> Extrema</span><span><i class="dbz verystrong"></i> Muito forte</span><span><i class="dbz strong"></i> Forte</span><span><i class="dbz moderate"></i> Moderada</span><span><i class="dbz weak"></i> Fraca</span><small id="weatherLabRadarSource">Fonte radar: RainViewer</small></div>
         <div id="weatherLabMap" class="weatherlab-map"></div>
         <div class="weatherlab-legend"><b>INTENSIDADE OPERACIONAL</b><span><i class="wl-extreme"></i>Crítico</span><span><i class="wl-high"></i>Alto</span><span><i class="wl-watch"></i>Monitoramento</span><small>Contornos irregulares = envelope operacional aproximado, não radar.</small></div>
       </div>
@@ -180,10 +182,10 @@
         <section><h3>🤖 ANALISTA CLIMÁTICO</h3><div class="weatherlab-ai-actions"><button data-wl-ai="agora">O que acontece agora?</button><button data-wl-ai="pico">Onde será o pico?</button><button data-wl-ai="sites">Sites ≤4h</button></div><div id="weatherLabAi">Selecione um evento no mapa ou uma pergunta rápida.</div></section>
       </aside>
     </section>
-    <section class="weatherlab-timeline"><button id="weatherLabPlay">▶ Evolução 12h</button><span class="live">● AO VIVO</span><div id="weatherLabTimeline">Aguardando previsão…</div></section>
+    <section class="weatherlab-timeline"><button id="weatherLabRadarPlay">▶</button><span class="live">● AO VIVO</span><div class="wl-radar-scrub"><input id="weatherLabRadarRange" type="range" min="0" max="0" value="0"><div id="weatherLabRadarTimes" class="wl-radar-times"></div></div><button id="weatherLabProjectionBtn">＋ PROJEÇÃO<br><small>ATÉ +12H</small></button></section>
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788314190"></script>
+  <script src="app.js?v=1788315513"></script>
 </body>
 </html>
