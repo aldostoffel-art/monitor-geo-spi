@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Monitor Operacional GEO SPI</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css?v=1788355756-fixed">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">SPI • DEV</div>
+      <h1>Monitor Operacional GEO SPI</h1>
+      <p>Visão geográfica operacional do Backbone do Interior de São Paulo</p>
+    </div>
+    <div class="status"><span class="dot"></span><span id="statusText">Carregando Backbone…</span></div>
+  </header>
+  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button><button id="tabWeatherLab" class="view-tab" type="button"><span class="tab-icon">🌩️</span><span class="tab-long">Clima Real • TESTE</span><span class="tab-short">Clima</span></button></nav>
+  <section id="importantEventStrip" class="important-event-strip" aria-label="Eventos meteorológicos importantes" aria-live="assertive" hidden>
+    <div class="important-event-label"><span>🚨 EVENTO IMPORTANTE</span><strong id="importantEventLevel">URGENTE</strong></div>
+    <div class="important-event-viewport"><div id="importantEventTrack" class="important-event-track"></div></div>
+  </section>
+  <section id="climateStrip" class="climate-strip severity-monitoramento" aria-label="Faixa climática operacional" aria-live="polite">
+    <div class="climate-strip-label"><span>🌩️ CLIMA SPI</span><small id="climateStripStatus">carregando</small></div>
+    <div class="climate-strip-viewport">
+      <div id="climateStripTrack" class="climate-strip-track"><span class="climate-strip-empty">Carregando ameaças climáticas relevantes…</span></div>
+    </div>
+  </section>
+  <main class="shell" id="mapView">
+    <section class="map-wrap">
+      <div id="map"></div>
+      <div id="trajectoryMapLegend" class="trajectory-map-legend" aria-label="Legenda da Trajetória">
+        <strong>TRAJETÓRIA • DEFESA CIVIL</strong>
+        <span class="traj-legend-item"><i class="traj-sev extreme"></i><b>Extreme</b><small>Defesa Civil: gravidade extrema • ex.: ventos/rajadas muito intensos, tempestade severa, granizo ou raios</small></span>
+        <span class="traj-legend-item"><i class="traj-sev alerta"></i><b>Alerta</b><small>Defesa Civil: evento oficial que exige atenção e acompanhamento</small></span>
+        <span><i class="traj-sev forecast"></i> Previsão meteorológica</span>
+        <span><i class="traj-line-confirmed"></i> Deslocamento confirmado</span>
+        <span><i class="traj-line-wind"></i> Direção do vento (não é trajetória)</span>
+      </div>
+      <div id="mobileFocusPanel" class="mobile-focus-panel" hidden>
+        <div class="mobile-focus-title">📡 MÓVEL • VISÃO OPERACIONAL</div>
+        <div class="mobile-focus-kpis">
+          <div><strong id="mobileTotalSites">—</strong><span>sites</span></div>
+          <div class="mobile-critical"><strong id="mobileCriticalSites">—</strong><span>≤4h</span></div>
+          <div class="mobile-energy"><strong id="mobileEnergyEvents">—</strong><span>falhas energia</span></div>
+        </div>
+        <div class="mobile-focus-legend"><span><i class="site-dot site-normal"></i> Site &gt;4h / sem criticidade</span><span><i class="site-dot site-critical"></i> Site ≤4h</span><span>⚡ Falha de energia</span></div>
+        <div class="mobile-intel" id="mobileIntel"><b>⚡ Inteligência de energia</b><span>Clique em uma falha de energia ou município no mapa.</span></div>
+      </div>
+
+      <div class="legend">
+        <strong>BACKBONE</strong>
+        <span><i class="line alta"></i> Confiança alta</span>
+        <span><i class="line media"></i> Confiança média</span>
+        <span><i class="line baixa"></i> Confiança baixa</span>
+        <span><i class="line sem"></i> Sem referência</span>
+      </div>
+    </section>
+    <aside class="sidebar">
+      <section class="panel hero map-full-only">
+        <div class="panel-title">Visão operacional</div>
+        <div class="metrics">
+          <div><span id="rotas">—</span><small>rotas no mapa</small></div>
+          <div><span id="clusters">—</span><small>clusters</small></div>
+          <div><span id="cabos">—</span><small>cabos</small></div>
+          <div><span id="municipios">—</span><small>municípios nas pontas</small></div>
+        </div>
+      </section>
+      <section class="panel map-full-only">
+        <div class="panel-title">Filtros</div>
+        <label>Cluster<select id="clusterFilter"><option value="">Todos</option></select></label>
+        <label>Confiança<select id="confidenceFilter"><option value="">Todas</option><option>ALTA</option><option>MEDIA</option><option>BAIXA</option><option>SEM_REFERENCIA</option></select></label>
+        <label>Buscar trecho / cabo / município<input id="searchBox" placeholder="Ex.: IEN.AT, F-0275, Campinas"></label>
+        <button id="resetBtn">Limpar filtros</button>
+      </section>
+      <section class="panel event-panel map-full-only">
+        <div class="panel-title">Camadas operacionais</div>
+        <div class="layer active weather-layer"><label class="layer-toggle"><input type="checkbox" id="weatherToggle" checked><span>🌩️ Clima / tempestade</span></label><b id="weatherCount">carregando</b></div>
+        <div class="layer active energy-layer"><label class="layer-toggle"><input type="checkbox" id="energyToggle" checked><span>⚡ Energia</span></label><b id="energyCount">carregando</b></div>
+        <div class="layer active fire-layer"><label class="layer-toggle"><input type="checkbox" id="fireToggle" checked><span>🔥 Fire Core</span></label><b id="fireCount">carregando</b></div>
+        <div class="layer active defesa-layer"><label class="layer-toggle"><input type="checkbox" id="defesaToggle" checked><span>🚨 Defesa Civil</span></label><b id="defesaCount">carregando</b></div>
+        <div class="layer sites-layer"><label class="layer-toggle"><input type="checkbox" id="sitesToggle"><span>📡 Sites</span></label><b id="sitesCount">carregando</b></div>
+      </section>
+      <section class="panel fire-focus-panel fire-only-panel" id="fireFocusPanel" hidden>
+        <div class="panel-title">🔥 Fire Core • visão limpa</div>
+        <div class="fire-focus-kpis"><button type="button" class="fire-kpi-action" id="fireActiveButton" title="Mostrar todos os eventos Fire ativos no mapa"><strong id="fireFocusActive">—</strong><span>eventos ativos</span><small>clique para localizar</small></button><div><strong id="fireFocusUrgent">—</strong><span>urgentes</span></div></div>
+        <div id="fireFocusNearest" class="fire-focus-nearest">Carregando eventos Fire…</div>
+        <div class="fire-history-kpis"><div><strong id="fireHistory24h">—</strong><span>encerrados nas últimas 24h</span></div><div><strong id="fireHistoryTotal">—</strong><span>eventos no histórico Fire</span></div></div>
+        <div class="fire-history-title">🕘 Histórico recente</div><div id="fireHistoryList" class="fire-history-list">Carregando histórico Fire…</div>
+        <small>Mapa: Backbone + Fire ativo e eventos encerrados nas últimas 24h (marcadores translúcidos). Histórico vem do próprio Fire Core V2.1.</small>
+      </section>
+      <section class="panel forecast-spi-panel forecast-context-panel" id="forecastSpiPanel">
+        <div class="panel-title">🌦️ Previsão SPI</div>
+        <div class="forecast-spi-head"><span>Previsão meteorológica geral</span><small id="forecastSpiUpdated">carregando…</small></div>
+        <label>Região<select id="forecastSpiRegion"></select></label>
+        <div id="forecastSpiSummary" class="forecast-spi-summary">Consultando previsão independente das bases operacionais…</div>
+        <div id="forecastSpiWindows" class="forecast-spi-windows"></div>
+        <small id="forecastSpiSource" class="forecast-spi-source"></small>
+      </section>
+      <section class="panel analyst-panel map-full-only" id="analystPanel">
+        <div class="analyst-head"><div><div class="panel-title">🧠 Analista SPI Vivo <span class="live-dot"></span></div><small id="analystUpdated">Consolidando os Cores…</small></div><span class="analyst-badge" id="readinessBadge">—</span></div>
+        <div class="analyst-livebar"><span id="analystTrend" class="analyst-trend">→ ESTÁVEL</span><span id="analystClock">Analisando agora…</span></div><div class="analyst-change" id="analystChange">🔎 Estabelecendo linha de base operacional…</div><div class="analyst-summary" id="analystSummary">Aguardando dados operacionais.</div><div class="analyst-watch"><b>👁️ Monitorando agora</b><div id="analystWatch">Clima • energia • Fire • Defesa Civil • sites críticos • Backbone</div></div><div class="analyst-timeline" id="analystTimeline"></div>
+        <div class="analyst-actions"><button data-analysis="situacao">Situação agora</button><button data-analysis="preparacao">Preparação da Regional</button><button data-analysis="projecao">Projeção operacional</button></div>
+        <label class="analyst-question">Pergunte ao SPI<input id="analystQuestion" placeholder="Ex.: Onde precisamos de maior atenção?"></label>
+        <button id="analystAsk">Analisar</button>
+        <div class="analyst-answer" id="analystAnswer">O analista consolida somente informações já calculadas pelos Cores DEV. Rankings e classificações continuam sendo definidos pelo Python.</div>
+      </section>
+      <section class="panel trajectory-only-panel" id="trajectoryPanel" hidden>
+        <div class="panel-title">🧭 Trajetória do evento</div>
+        <div class="trajectory-legend"><span><i class="traj-dot now"></i> AGORA: alerta recente + compatível com janela atual</span><span><i class="traj-dot recent"></i> RECENTE: alerta ainda relevante, continuidade não confirmada</span><span><i class="traj-dot future"></i> PREVISÃO / PREVISÃO OFICIAL</span><span><i class="traj-line"></i> deslocamento confirmado</span></div>
+        <div id="trajectorySummary" class="trajectory-summary">Consolidando eventos severos…</div>
+        <div class="trajectory-box-title trajectory-now-title">🔴 AGORA | CONDIÇÃO ATUAL</div>
+        <div id="trajectoryNow" class="trajectory-now">Lendo condição atual…</div>
+        <div class="trajectory-player"><button id="trajectoryPlay">▶ Evolução 12h</button><button id="trajectoryStop">■ Parar</button><span id="trajectoryPlayStatus">Previsão parada</span></div>
+        <div class="trajectory-box-title">🛡️ Prevenção INPE 48h</div>
+        <div id="trajectoryPrevention" class="trajectory-prevention">Carregando áreas preventivas D+1/D+2…</div>
+        <div class="trajectory-box-title">🟣 Progressão prevista</div>
+        <div id="trajectoryForecastRoute" class="trajectory-forecast-route">Calculando sequência prevista…</div>
+        <div class="trajectory-box-title">🔮 Próximas 12h</div>
+        <div id="trajectoryFuture" class="trajectory-future">Calculando previsão futura…</div>
+        <div class="trajectory-box-title">🤖 Analista de Trajetória</div>
+        <div class="trajectory-ai-actions">
+          <button type="button" data-traj-ai="proximos">➡️ Quem vem depois?</button>
+          <button type="button" data-traj-ai="fim">⏱️ Até que horas?</button>
+          <button type="button" data-traj-ai="sites">🔋 Sites ≤4h</button>
+          <button type="button" data-traj-ai="resumo">🛡️ Resumo preventivo</button>
+        </div>
+        <div id="trajectoryAiAnswer" class="trajectory-ai-answer">Selecione um evento ou use uma pergunta rápida.</div>
+        <div class="trajectory-box-title">📋 Dados do evento selecionado</div>
+        <div id="trajectoryCritical" class="trajectory-critical">Selecionando evento mais crítico…</div>
+        <div class="trajectory-box-title">🧭 Trajetória / deslocamento</div>
+        <div id="trajectoryPath" class="trajectory-path">Aguardando evento selecionado…</div>
+        <div class="trajectory-box-title">⏱️ Outros eventos</div>
+        <div id="trajectoryTimeline" class="trajectory-timeline"></div>
+        <small class="trajectory-note">Linha vermelha = deslocamento informado por fonte oficial. Linha roxa pontilhada = progressão temporal da previsão entre grupos horários; não representa rastreamento confirmado da mesma célula.</small>
+      </section>
+      <section class="panel details" id="details"><div class="panel-title">Trecho selecionado</div><p>Clique em um trecho do Backbone para ver os detalhes.</p></section>
+    </aside>
+  </main>
+  <main id="commandView" class="command-view command-board" hidden>
+    <section class="command-board-head"><div class="command-board-brand"><span class="command-weather-icon">🌧️</span><div><small>BOLETIM OPERACIONAL • SPI DEV</small><h2>VISÃO CLIMÁTICA & OPERACIONAL — SP</h2><p>Resumo executivo dos Cores • prevenção, impacto e prioridade operacional</p></div></div><div class="command-board-status"><span id="commandBoardPeriod">PRÓXIMAS 48H</span><small id="commandBoardUpdated">Atualizando…</small><b id="commandReadiness" class="command-readiness">ANALISANDO</b></div></section>
+    <section class="command-board-summary"><div class="command-summary-main"><b>RESUMO EXECUTIVO</b><div id="commandUrgentText">Consolidando eventos relevantes…</div></div><div><small>REGIÕES PRIORITÁRIAS</small><strong id="commandSummaryRegions">—</strong></div><div><small>SITES ≤4H EXPOSTOS</small><strong id="commandSummarySites">—</strong></div><div><small>ENERGIA</small><strong id="commandSummaryEnergy">—</strong></div><div><small>FIRE</small><strong id="commandSummaryFire">—</strong></div><div><small>ALERTAS OFICIAIS</small><strong id="commandSummaryAlerts">—</strong></div></section>
+    <section class="command-board-table-wrap"><div class="command-board-table"><div class="command-board-th"><span>JANELA</span><span>VISÃO OPERACIONAL</span><span>ALERTAS / SINAIS</span><span>REGIÕES EM ATENÇÃO</span><span>CLIMA PREVISTO</span><span>IMPACTO SPI</span></div><div id="commandBoardRows" class="command-board-rows"></div></div></section>
+    <section class="command-board-footer"><div id="commandBoardLegend"><b>LEGENDA</b><span><i class="c-critical"></i>Crítico</span><span><i class="c-high"></i>Alto</span><span><i class="c-watch"></i>Atenção</span><span><i class="c-low"></i>Baixo</span></div><small>Fontes: Weather Risk SPI • Previsão SPI • Defesa Civil/INMET • Energy Core • Fire Core • Sites. A classificação operacional não substitui alerta oficial.</small></section>
+  </main>
+
+  <main id="weatherLabView" class="weatherlab-view" hidden>
+    <section class="weatherlab-top">
+      <div><div class="eyebrow">SPI • DEV • TESTE VISUAL</div><h2>Monitor Climático Operacional</h2><p>Radar observado + risco operacional SPI. Limites coloridos representam municípios afetados; a camada de radar permanece observacional.</p></div>
+      <div class="weatherlab-updated" id="weatherLabUpdated">Atualizando…</div>
+    </section>
+    <section class="weatherlab-kpis">
+      <div class="weatherlab-alert"><span>⚠</span><b>ALERTAS OFICIAIS ATIVOS</b><strong id="weatherLabOfficial">—</strong></div>
+      <div><b>CIDADES EM ALERTA</b><strong id="weatherLabCities">—</strong></div>
+      <div><b>SITES EM ALERTA</b><strong id="weatherLabSites">—</strong></div>
+      <div><b>SITES ≤ 4H</b><strong id="weatherLabSites4h">—</strong></div>
+      <div><b>RAJADA MÁX. PREVISTA</b><strong id="weatherLabGust">—</strong></div>
+      <div><b>CHUVA MÁX. PREVISTA</b><strong id="weatherLabRain">—</strong></div>
+    </section>
+    <section class="weatherlab-grid">
+      <div class="weatherlab-mapbox">
+        <div class="weatherlab-map-head"><span>MONITOR OPERACIONAL GEO SPI <small>VIVO | ASSISTENTE OPERACIONAL</small></span><small id="weatherLabRadarStamp">Radar: conectando…</small></div>
+        <div class="weatherlab-source-tabs"><button id="weatherLabRadarBtn" class="active">RADAR</button><button id="weatherLabSatelliteBtn">SATÉLITE</button></div>
+        <div class="weatherlab-layerbox"><b>CAMADAS</b><label><input type="checkbox" id="weatherLabRadarToggle" checked> Radar real</label><label><input type="checkbox" id="weatherLabEventToggle" checked> Áreas / alertas SPI</label><label><input type="checkbox" id="weatherLabProjectionToggle" checked> Projeção SPI</label><hr><b>INTENSIDADE NO MAPA</b><span><i class="dbz extreme"></i> Crítico SPI</span><span><i class="dbz verystrong"></i> Alto SPI</span><span><i class="dbz strong"></i> Atenção</span><span><i class="dbz moderate"></i> Monitoramento</span><span><i class="dbz weak"></i> Radar observado</span><small id="weatherLabRadarSource">Radar real: RainViewer • áreas: Cores SPI + IBGE</small></div>
+        <div id="weatherLabMap" class="weatherlab-map"></div>
+        <div class="weatherlab-legend"><b>INTENSIDADE OPERACIONAL</b><span><i class="wl-extreme"></i>Crítico</span><span><i class="wl-high"></i>Alto</span><span><i class="wl-watch"></i>Monitoramento</span><small>Contornos irregulares = envelope operacional aproximado, não radar.</small></div>
+      </div>
+      <aside class="weatherlab-side">
+        <section><h3>AGORA | CONDIÇÃO ATUAL</h3><div id="weatherLabNow">Consolidando…</div></section>
+        <section><h3>ALERTAS OFICIAIS</h3><div id="weatherLabAlerts">Consolidando…</div></section>
+        <section><h3>TRAJETÓRIA E PROJEÇÃO</h3><div id="weatherLabProjection">Consolidando…</div></section>
+        <section><h3>🤖 ANALISTA CLIMÁTICO</h3><div class="weatherlab-ai-actions"><button data-wl-ai="agora">O que acontece agora?</button><button data-wl-ai="pico">Onde será o pico?</button><button data-wl-ai="sites">Sites ≤4h</button></div><div id="weatherLabAi">Selecione um evento no mapa ou uma pergunta rápida.</div></section>
+      </aside>
+    </section>
+    <section class="weatherlab-timeline"><button id="weatherLabRadarPlay">▶</button><span class="live">● AO VIVO</span><div class="wl-radar-scrub"><input id="weatherLabRadarRange" type="range" min="0" max="0" value="0"><div id="weatherLabRadarTimes" class="wl-radar-times"></div></div><button id="weatherLabProjectionBtn">＋ PROJEÇÃO<br><small>ATÉ +12H</small></button></section>
+  </main>
+  <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js?v=1788355756-fixed"></script>
+</body>
+</html>
