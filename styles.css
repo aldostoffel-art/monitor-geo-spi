@@ -366,3 +366,91 @@ body.trajectory-map-mode .map-full-only,body.trajectory-map-mode #details,body.t
 /* Clima Real DEV — prevenção operacional próximas horas 2026-09-02 */
 .wl-prevention-section{border:1px solid rgba(56,189,248,.26)!important;background:linear-gradient(180deg,rgba(14,116,144,.10),rgba(15,23,42,.18))!important}
 .wl-prevention-summary{display:grid;gap:7px}.wl-prevention-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 8px;border-radius:8px;background:rgba(15,23,42,.72);border-left:4px solid #38bdf8}.wl-prevention-head strong{font-size:12px;color:#e2e8f0}.wl-prevention-head span{font-size:10px;color:#7dd3fc;text-align:right}.wl-prevention-card{display:grid;gap:3px;padding:7px 8px;border-radius:8px;background:rgba(15,23,42,.62);border:1px solid rgba(148,163,184,.16)}.wl-prevention-card.high{border-left:4px solid #f97316}.wl-prevention-card.critical{border-left:4px solid #ef4444}.wl-prevention-card.watch{border-left:4px solid #eab308}.wl-prevention-card b{font-size:11px;color:#f8fafc}.wl-prevention-card span{font-size:10px;color:#cbd5e1;line-height:1.35}.wl-prevention-card small{font-size:9px;color:#94a3b8;line-height:1.3}.wl-prevention-empty{font-size:10px;color:#cbd5e1;line-height:1.45;padding:7px 8px;border-radius:8px;background:rgba(15,23,42,.55)}
+
+/* MAP interaction/visibility fix 2026-09-02 — desktop + mobile */
+#mapView:not([hidden]){opacity:1!important;filter:none!important;visibility:visible!important;pointer-events:auto!important}
+#mapView .map-wrap,#mapView #map{opacity:1!important;filter:none!important;visibility:visible!important;pointer-events:auto!important}
+#mapView #map .leaflet-map-pane,#mapView #map .leaflet-tile-pane{opacity:1!important;visibility:visible!important}
+#mapView #map .leaflet-tile{filter:none!important;opacity:1!important}
+#mapView #map .leaflet-overlay-pane,#mapView #map .leaflet-marker-pane,#mapView #map .leaflet-tooltip-pane,#mapView #map .leaflet-popup-pane{pointer-events:auto}
+#mapView .legend{pointer-events:none!important}
+@media(min-width:901px){
+ #mapView.shell:not([hidden]){display:grid!important;opacity:1!important;filter:none!important;pointer-events:auto!important}
+ #mapView .map-wrap{min-height:620px!important}
+ #mapView #map{min-height:620px!important;cursor:grab!important;touch-action:none!important}
+ #mapView #map:active{cursor:grabbing!important}
+}
+
+/* Clima Real DEV — correção de luminosidade 2026-09-02 */
+/* O mapa estava deliberadamente escurecido por brightness(.44). Mantém o tema escuro da UI, mas devolve leitura natural à imagem de satélite. */
+#weatherLabView .weatherlab-satellite-base .leaflet-tile-pane{
+  filter:brightness(.90) saturate(.98) contrast(1.06)!important;
+  opacity:1!important;
+}
+#weatherLabView .weatherlab-satellite-base .leaflet-tile-pane .leaflet-tile{
+  filter:none!important;
+  opacity:1!important;
+}
+
+/* Clima Real DEV — mapa mais claro, referência operacional 2026-09-02 */
+#weatherLabView .weatherlab-satellite-base .leaflet-tile-pane{
+  filter:brightness(1.12) saturate(1.06) contrast(1.02)!important;
+  opacity:1!important;
+}
+#weatherLabView .weatherlab-satellite-base .leaflet-tile-pane .leaflet-tile{
+  filter:none!important;
+  opacity:1!important;
+}
+
+/* SPI DEV 2026-09-02 — mapa mais claro, preservando UI escura e overlays operacionais */
+#weatherLabView .weatherlab-satellite-base .leaflet-tile-pane{
+  filter:brightness(1.16) saturate(1.03) contrast(1.02)!important;
+  opacity:1!important;
+}
+#weatherLabView .weatherlab-satellite-base .leaflet-tile-pane .leaflet-tile{
+  filter:none!important;
+  opacity:1!important;
+}
+#weatherLabView .leaflet-tile-pane{
+  opacity:1!important;
+}
+
+/* SPI DEV 2026-09-02 — Clima Real: mesma base cartográfica da Trajetória; evento em envelope orgânico. */
+#weatherLabView .weatherlab-map .leaflet-tile-pane{filter:none!important;opacity:1!important}
+#weatherLabView .weatherlab-leaflet{background:#dfe7ec!important}
+#weatherLabView .wl-storm-envelope{stroke-linejoin:round!important;stroke-linecap:round!important;cursor:pointer;filter:drop-shadow(0 0 4px rgba(0,0,0,.28))}
+#weatherLabView .wl-storm-envelope.wl-critical{filter:drop-shadow(0 0 5px rgba(255,52,72,.56))}
+#weatherLabView .wl-storm-envelope.wl-high{filter:drop-shadow(0 0 4px rgba(255,138,31,.46))}
+#weatherLabView .wl-reference-city.watch span{background:#a37a05!important}
+
+/* SPI DEV 2026-09-02 — Clima Real alinhado à Trajetória: mapa claro + envelope orgânico. */
+#weatherLabView .weatherlab-map .leaflet-tile-pane{filter:none!important;opacity:1!important}
+#weatherLabView .weatherlab-map .leaflet-tile{filter:none!important;opacity:1!important}
+#weatherLabView .weatherlab-map{background:#dfe7ec!important}
+#weatherLabView .wl-storm-envelope{fill-opacity:.055!important;stroke-width:3px!important;stroke-linejoin:round!important;stroke-linecap:round!important}
+#weatherLabView .wl-storm-envelope.wl-critical{fill-opacity:.085!important}
+#weatherLabView .wl-storm-envelope.wl-high{fill-opacity:.065!important}
+
+
+/* SPI DEV 2026-09-02 — Clima Real: base clara idêntica à Trajetória, sem escurecimento. */
+#weatherLabView .weatherlab-map .leaflet-tile-pane,
+#weatherLabView .weatherlab-map .leaflet-tile-pane img,
+#weatherLabView .weatherlab-map .leaflet-tile,
+#weatherLabView .weatherlab-map img.wl-clear-base{
+  filter:none!important; opacity:1!important; mix-blend-mode:normal!important;
+}
+#weatherLabView .weatherlab-map{background:#dfe7ec!important}
+#weatherLabView .weatherlab-map .leaflet-overlay-pane{mix-blend-mode:normal!important}
+
+
+/* SPI DEV 2026-09-02 — Clima Real = mesma cartografia da Trajetória + massas orgânicas, sem quadrados. */
+#weatherLabView .weatherlab-trajectory-base .leaflet-tile-pane,
+#weatherLabView .weatherlab-trajectory-base .leaflet-tile-pane img,
+#weatherLabView .weatherlab-trajectory-base .leaflet-tile{
+  filter:none!important; opacity:1!important; mix-blend-mode:normal!important;
+}
+#weatherLabView .weatherlab-trajectory-base{background:#dfe7ec!important}
+#weatherLabView .weatherlab-trajectory-base .leaflet-overlay-pane{mix-blend-mode:normal!important}
+#weatherLabView .wl-radar-layer{filter:none!important;mix-blend-mode:multiply;opacity:.82}
+#weatherLabView .wl-storm-mass.organic{stroke:none!important;filter:blur(3px) saturate(1.12);pointer-events:none!important}
+#weatherLabView .wl-storm-envelope{background:transparent!important;border-radius:50%!important}
