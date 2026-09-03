@@ -487,3 +487,14 @@ body.trajectory-map-mode .map-full-only,body.trajectory-map-mode #details,body.t
 #commandView .command-board-tr.has-event .command-board-window{
   font-weight:900!important;
 }
+
+/* DEV 2026-09-03 — Visão de Comando: linha inteira assume a cor operacional do evento. */
+#commandView .command-board-tr.no-event{background:#f4f7f9!important;color:#263442!important;box-shadow:inset 8px 0 0 #94a3b8!important}
+#commandView .command-board-tr.has-event.level-low{background:#dff3e5!important;color:#173523!important;box-shadow:inset 10px 0 0 #35a853!important}
+#commandView .command-board-tr.has-event.level-watch{background:#fff0a8!important;color:#3a300b!important;box-shadow:inset 10px 0 0 #e3b800!important}
+#commandView .command-board-tr.has-event.level-high{background:#ffd5a3!important;color:#42280d!important;box-shadow:inset 10px 0 0 #ed7b0b!important}
+#commandView .command-board-tr.has-event.level-critical{background:#f5b4b8!important;color:#4d1116!important;box-shadow:inset 10px 0 0 #c80d18!important}
+#commandView .command-board-tr.has-event>div{background:transparent!important}
+
+/* Command board: municipios afetados + destaque oficial (2026-09-03) */
+.command-board-vision .command-affected{display:block;margin-top:7px;padding-top:6px;border-top:1px solid rgba(70,80,90,.18);font-size:10px;line-height:1.35;color:#3d4650}.command-board-vision .command-affected b{color:#222}.command-board-alert{padding:6px 8px;border-left:4px solid #e0a100;background:rgba(255,196,0,.10);border-radius:3px}.command-board-alert b{display:block;color:#9a5b00}.command-board-alert span{display:block;margin-top:3px;line-height:1.3}.command-board-tr.level-critical{background:#ffe8e8}.command-board-tr.level-high{background:#fff0df}.command-board-tr.level-watch{background:#fff8d9}.command-board-tr.level-low{background:#f0f9f1}
