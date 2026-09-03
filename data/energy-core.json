@@ -1,10 +1,10 @@
 {
   "core": "ENERGY CORE SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-03T07:55:01.835264+00:00",
-  "fonte_gerada_em": "2026-09-03T04:50:41-03:00",
-  "quantidade_ocorrencias_origem": 198,
-  "quantidade_regioes_sem_energia": 128,
+  "gerado_em": "2026-09-03T08:00:02.121251+00:00",
+  "fonte_gerada_em": "2026-09-03T04:56:53-03:00",
+  "quantidade_ocorrencias_origem": 199,
+  "quantidade_regioes_sem_energia": 131,
   "sem_coordenada": [],
   "regioes": [
     {
@@ -434,6 +434,25 @@
       ],
       "ocorrencias": [
         "ENEL-355280905"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "CENTRO",
+      "municipio": "ARARAQUARA",
+      "latitude": -21.799771,
+      "longitude": -48.182445,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "MEDIA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413307971"
       ],
       "sem_energia": true
     },
@@ -1123,9 +1142,11 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
+        "aberta",
         "em_atendimento"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1508237",
         "ELEKTRO-2026-1454888"
       ],
       "sem_energia": true
@@ -1743,44 +1764,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "S ROQUE DA CHAVE",
-      "municipio": "ITUPEVA",
-      "latitude": -23.150408,
-      "longitude": -47.028077,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413307960"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "STA JULIA",
-      "municipio": "ITUPEVA",
-      "latitude": -23.155181,
-      "longitude": -47.041568,
-      "origem_coordenada": "REFERENCIA_OPERACIONAL",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Execução"
-      ],
-      "ocorrencias": [
-        "OS 1413307960"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "CD JARDIM",
       "municipio": "JABOTICABAL",
       "latitude": -21.246476,
@@ -1792,10 +1775,10 @@
         "PAULISTA"
       ],
       "status": [
-        "Em Preparação"
+        "Em Execução"
       ],
       "ocorrencias": [
-        "OS 1413307948"
+        "OS 1413307964"
       ],
       "sem_energia": true
     },
@@ -1811,10 +1794,10 @@
         "PAULISTA"
       ],
       "status": [
-        "Em Preparação"
+        "Em Execução"
       ],
       "ocorrencias": [
-        "OS 1413307948"
+        "OS 1413307964"
       ],
       "sem_energia": true
     },
@@ -1936,8 +1919,6 @@
         "ELEKTRO-2026-1507898",
         "ELEKTRO-2026-1507802",
         "ELEKTRO-2026-1506958",
-        "ELEKTRO-2026-1506734",
-        "ELEKTRO-2026-1505977",
         "ELEKTRO-2026-1503741",
         "ELEKTRO-2026-1503071"
       ],
@@ -2261,6 +2242,63 @@
       "sem_energia": true
     },
     {
+      "regiao": "CONVIVIO TEIXEIRA",
+      "municipio": "PIRACICABA",
+      "latitude": -22.754083,
+      "longitude": -47.529517,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413307140"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "TUPI",
+      "municipio": "PIRACICABA",
+      "latitude": -22.743252,
+      "longitude": -47.526927,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413307140"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "VILLA D ITALIA II",
+      "municipio": "PIRACICABA",
+      "latitude": -22.754083,
+      "longitude": -47.529517,
+      "origem_coordenada": "REFERENCIA_OPERACIONAL",
+      "confianca_geografica": "FALLBACK",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413307140"
+      ],
+      "sem_energia": true
+    },
+    {
       "regiao": "PIRASSUNUNGA",
       "municipio": "PIRASSUNUNGA",
       "latitude": -22.008546,
@@ -2342,6 +2380,25 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1507870"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "JD RECREIO",
+      "municipio": "RIBEIRAO PRETO",
+      "latitude": -21.17292,
+      "longitude": -47.866162,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "MONITORAMENTO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413307126"
       ],
       "sem_energia": true
     },
