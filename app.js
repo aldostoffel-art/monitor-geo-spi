@@ -398,3 +398,51 @@ document.getElementById('weatherLabSatelliteBtn')?.addEventListener('click',()=>
 document.getElementById('weatherLabRadarBtn')?.addEventListener('click',()=>{document.getElementById('weatherLabSatelliteBtn')?.classList.remove('active');document.getElementById('weatherLabRadarBtn')?.classList.add('active');wlLoadRealRadar()});
 
 window.addEventListener('resize',()=>{if(!document.getElementById('weatherLabView')?.hidden)wlApplyReferenceViewport()});
+
+
+// === Meteorologia Tática DEV v1 | 2026-09-03 ===
+// Nova aba usa as mesmas fontes validadas do WeatherLab, sem criar motor paralelo.
+let tacticalMode=false,tacticalNetworkLayer=null,tacticalProjectionLayer=null,tacticalLabelLayer=null;
+function tacticalStableId(name){let h=2166136261;for(const c of norm(name||'EVENTO')){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return 'GEO-'+String(Math.abs(h)%10000).padStart(4,'0')}
+function tacticalBackboneRelevantFeature(f,names){const p=f?.properties||{},a=norm(p.municipio_a),b=norm(p.municipio_b),c=norm(p.cluster);return names.has(a)||names.has(b)||names.has(c)}
+function tacticalCurrentNames(){const names=new Set();for(const e of wlEvents()){if(e.municipio)names.add(norm(e.municipio))}for(const e of operationalDefesaEvents()){if(e.municipio)names.add(norm(e.municipio))}return names}
+function tacticalEnergyForNames(names){return energyEvents.filter(e=>names.has(norm(e.municipio))||names.has(norm(e.regiao)))}
+function tacticalRenderNetwork(){
+  if(!weatherLabMap)return;
+  if(!tacticalNetworkLayer)tacticalNetworkLayer=L.layerGroup().addTo(weatherLabMap); tacticalNetworkLayer.clearLayers();
+  if(!tacticalMode)return;
+  const names=tacticalCurrentNames(),showBb=document.getElementById('weatherLabBackboneToggle')?.checked!==false,showSites=document.getElementById('weatherLabCriticalSitesToggle')?.checked!==false;
+  if(showBb){const feats=(allFeatures||[]).filter(f=>!names.size||tacticalBackboneRelevantFeature(f,names));L.geoJSON({type:'FeatureCollection',features:feats},{style:{color:'#5ee7ff',weight:2.2,opacity:.70,interactive:false}}).addTo(tacticalNetworkLayer)}
+  if(showSites){for(const s of siteEvents.filter(siteIsCritical)){const lat=Number(s.latitude),lon=Number(s.longitude);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;if(names.size&&!names.has(norm(s.municipio)))continue;L.circleMarker([lat,lon],{radius:4,color:'#fff',weight:1,fillColor:'#22c55e',fillOpacity:.95}).bindTooltip(`📡 ${s.site||s.nome||'Site'} • ${s.municipio||'—'} • autonomia ≤4h`).addTo(tacticalNetworkLayer)}}
+}
+function tacticalRenderProjection(){
+  if(!weatherLabMap)return;
+  if(!tacticalProjectionLayer)tacticalProjectionLayer=L.layerGroup().addTo(weatherLabMap);tacticalProjectionLayer.clearLayers();
+  if(!tacticalMode||document.getElementById('weatherLabProjectionToggle')?.checked===false)return;
+  const groups=trajectoryForecastImpactSequence().slice(0,6);
+  for(const g of groups){const hh=new Date(g.t).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}),x=[...g.items].sort((a,b)=>trajectoryImpactLevel(b).score-trajectoryImpactLevel(a).score)[0],lv=trajectoryImpactLevel(x),s=g.items.reduce((n,z)=>n+trajectorySitesAtPoint(z).ate4h,0);trajectoryDrawBlob(tacticalProjectionLayer,g.lat,g.lon,lv.key==='severe'?22:lv.key==='high'?17:13,lv.color,{weight:2,fillOpacity:.045,dashArray:'5 7',seed:new Date(g.t).getHours(),bearing:Number(x.dir||0)});L.marker([g.lat,g.lon],{icon:L.divIcon({className:'tactical-proj-label-wrap',html:`<div class="tactical-proj-label severity-${lv.key}"><b>${hh}</b><span>${esc(x.municipio)}</span><small>PROJEÇÃO • ${s} ≤4h</small></div>`,iconSize:[120,48],iconAnchor:[60,24]}),interactive:true,zIndexOffset:1150}).bindTooltip('Projeção meteorológica regional; não confirma rastreamento da mesma célula.').addTo(tacticalProjectionLayer)}
+}
+function tacticalRenderLabels(){
+  if(!weatherLabMap)return;
+  if(!tacticalLabelLayer)tacticalLabelLayer=L.layerGroup().addTo(weatherLabMap);tacticalLabelLayer.clearLayers();
+  if(!tacticalMode)return;
+  const groups=wlStormGroups(wlEvents()).slice(0,8);
+  groups.forEach((g,i)=>{const [lat,lon]=wlGroupCenter(g),sev=wlGroupSeverity(g),meta=wlStormMeta(g),name=wlStormTitle(g)||g.map(x=>x.municipio).filter(Boolean).slice(0,2).join(' / ')||'EVENTO',id=tacticalStableId(name);L.marker([lat,lon],{icon:L.divIcon({className:'tactical-event-id-wrap',html:`<div class="tactical-event-id ${sev}"><strong>${id}</strong><b>${esc(name)}</b><small>${sev==='critical'?'CRÍTICO':sev==='high'?'ALTO':'MONITORAMENTO'} • raj ${meta.gust.toFixed(0)} km/h • ${meta.low} ≤4h</small></div>`,iconSize:[172,55],iconAnchor:[86,-8]}),interactive:false,zIndexOffset:1600}).addTo(tacticalLabelLayer)})
+}
+function tacticalRenderImpact(){
+  const box=document.getElementById('weatherLabTacticalImpact');if(!box)return;
+  const ev=wlEvents(),names=tacticalCurrentNames(),energy=tacticalEnergyForNames(names),critSites=siteEvents.filter(s=>siteIsCritical(s)&&(!names.size||names.has(norm(s.municipio)))),bb=(allFeatures||[]).filter(f=>!names.size||tacticalBackboneRelevantFeature(f,names)),off=operationalDefesaEvents();
+  const top=[...ev].sort((a,b)=>wlSeverityRank(wlRisk(b))-wlSeverityRank(wlRisk(a))||wlNum(b.rajada_kmh)-wlNum(a.rajada_kmh))[0],temp=top&&Number.isFinite(Number(top.temperatura_c))?Number(top.temperatura_c):null;
+  const mun=[...names].slice(0,6).map(n=>{const w=weatherEvents.find(x=>norm(x.municipio)===n);return w?.municipio||n}).join(' • ');
+  box.innerHTML=`<div class="tactical-impact-kpis"><div><small>SITES ≤4H</small><b>${critSites.length}</b></div><div><small>BACKBONE</small><b>${bb.length}</b></div><div><small>ENERGIA</small><b>${energy.length}</b></div><div><small>TEMP.</small><b>${temp!=null?temp.toFixed(0)+'°C':'—'}</b></div></div><div class="tactical-impact-text"><b>Municípios no recorte operacional</b><span>${esc(mun||'Sem município com ameaça ativa neste ciclo')}</span><small>${off.length?`🚨 ${off.length} registro(s) oficial(is) meteorológico(s) no feed operacional.`:'✓ Sem alerta meteorológico oficial relevante carregado.'}</small></div>`;
+}
+function tacticalRefresh(){if(!tacticalMode)return;renderWeatherLab();tacticalRenderNetwork();tacticalRenderProjection();tacticalRenderLabels();tacticalRenderImpact();const h=document.querySelector('.weatherlab-map-head>span');if(h)h.innerHTML='MONITOR METEOROLÓGICO TÁTICO SPI <small>RADAR • ALERTAS • REDE • PROJEÇÃO</small>';}
+function tacticalSetActive(){document.querySelectorAll('.view-tab').forEach(x=>x.classList.remove('active'));document.getElementById('tabTactical')?.classList.add('active')}
+function showTacticalTab(){showWeatherLabTab();tacticalMode=true;document.body.classList.add('tactical-mode');tacticalSetActive();setTimeout(()=>{weatherLabMap?.invalidateSize();tacticalRefresh()},180)}
+function leaveTacticalMode(){if(!tacticalMode)return;tacticalMode=false;document.body.classList.remove('tactical-mode');tacticalNetworkLayer?.clearLayers();tacticalProjectionLayer?.clearLayers();tacticalLabelLayer?.clearLayers();const h=document.querySelector('.weatherlab-map-head>span');if(h)h.innerHTML='MONITOR OPERACIONAL GEO SPI <small>VIVO | ASSISTENTE OPERACIONAL</small>';}
+document.getElementById('tabTactical')?.addEventListener('click',showTacticalTab);
+['tabMapa','tabComando','tabFire','tabMobile','tabTrajectory','tabWeatherLab'].forEach(id=>document.getElementById(id)?.addEventListener('click',()=>{if(id!=='tabTactical')leaveTacticalMode()}));
+document.getElementById('weatherLabBackboneToggle')?.addEventListener('change',tacticalRenderNetwork);
+document.getElementById('weatherLabCriticalSitesToggle')?.addEventListener('change',tacticalRenderNetwork);
+document.getElementById('weatherLabProjectionToggle')?.addEventListener('change',tacticalRenderProjection);
+setInterval(()=>{if(tacticalMode){tacticalRenderNetwork();tacticalRenderProjection();tacticalRenderLabels();tacticalRenderImpact()}},30000);
