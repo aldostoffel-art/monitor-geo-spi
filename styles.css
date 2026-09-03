@@ -454,3 +454,36 @@ body.trajectory-map-mode .map-full-only,body.trajectory-map-mode #details,body.t
 #weatherLabView .wl-radar-layer{filter:none!important;mix-blend-mode:multiply;opacity:.82}
 #weatherLabView .wl-storm-mass.organic{stroke:none!important;filter:blur(3px) saturate(1.12);pointer-events:none!important}
 #weatherLabView .wl-storm-envelope{background:transparent!important;border-radius:50%!important}
+
+
+/* Command Board DEV — destaque temporal por evento (2026-09-02)
+   Sem evento: neutro. Evento baixo: verde. Atenção: amarelo. Alto: laranja. Crítico: vermelho.
+   A faixa lateral reforça a severidade sem perder legibilidade da linha inteira. */
+#commandView .command-board-tr.no-event{
+  background:#fff8e8!important;
+  color:#2f281b!important;
+  box-shadow:none!important;
+}
+#commandView .command-board-tr.has-event.level-low{
+  background:#eef8ef!important;
+  color:#203626!important;
+  box-shadow:inset 8px 0 0 #4db96a!important;
+}
+#commandView .command-board-tr.has-event.level-watch{
+  background:#fff8d8!important;
+  color:#3b3218!important;
+  box-shadow:inset 8px 0 0 #f0c72a!important;
+}
+#commandView .command-board-tr.has-event.level-high{
+  background:#fff0dc!important;
+  color:#3d2b18!important;
+  box-shadow:inset 8px 0 0 #f08b12!important;
+}
+#commandView .command-board-tr.has-event.level-critical{
+  background:#fde6e8!important;
+  color:#451b1f!important;
+  box-shadow:inset 8px 0 0 #c80d18!important;
+}
+#commandView .command-board-tr.has-event .command-board-window{
+  font-weight:900!important;
+}
