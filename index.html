@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788397358">
+  <link rel="stylesheet" href="styles.css?v=1788432218">
 </head>
 <body>
   <header class="topbar">
@@ -17,7 +17,7 @@
     </div>
     <div class="status"><span class="dot"></span><span id="statusText">Carregando Backbone…</span></div>
   </header>
-  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button><button id="tabWeatherLab" class="view-tab" type="button"><span class="tab-icon">🌩️</span><span class="tab-long">Clima Real • TESTE</span><span class="tab-short">Clima</span></button></nav>
+  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button><button id="tabWeatherLab" class="view-tab" type="button"><span class="tab-icon">🌩️</span><span class="tab-long">Clima Real • TESTE</span><span class="tab-short">Clima</span></button><button id="tabTactical" class="view-tab" type="button"><span class="tab-icon">⚡</span><span class="tab-long">Meteorologia Tática</span><span class="tab-short">Tático</span></button></nav>
   <section id="importantEventStrip" class="important-event-strip" aria-label="Eventos meteorológicos importantes" aria-live="assertive" hidden>
     <div class="important-event-label"><span>🚨 EVENTO IMPORTANTE</span><strong id="importantEventLevel">URGENTE</strong></div>
     <div class="important-event-viewport"><div id="importantEventTrack" class="important-event-track"></div></div>
@@ -163,7 +163,7 @@
       <div class="weatherlab-mapbox">
         <div class="weatherlab-map-head"><span>MONITOR OPERACIONAL GEO SPI <small>VIVO | ASSISTENTE OPERACIONAL</small></span><small id="weatherLabRadarStamp">Radar: conectando…</small></div>
         <div class="weatherlab-source-tabs"><button id="weatherLabRadarBtn" class="active">RADAR</button><button id="weatherLabSatelliteBtn">SATÉLITE</button></div>
-        <div class="weatherlab-layerbox"><b>CAMADAS</b><label><input type="checkbox" id="weatherLabRadarToggle" checked> Radar real</label><label><input type="checkbox" id="weatherLabEventToggle" checked> Áreas / alertas SPI</label><label><input type="checkbox" id="weatherLabProjectionToggle" checked> Projeção SPI</label><hr><b>INTENSIDADE NO MAPA</b><span><i class="dbz extreme"></i> Crítico SPI</span><span><i class="dbz verystrong"></i> Alto SPI</span><span><i class="dbz strong"></i> Atenção</span><span><i class="dbz moderate"></i> Monitoramento</span><span><i class="dbz weak"></i> Radar observado</span><small id="weatherLabRadarSource">Radar real: RainViewer • áreas: Cores SPI + IBGE</small></div>
+        <div class="weatherlab-layerbox"><b>CAMADAS</b><label><input type="checkbox" id="weatherLabRadarToggle" checked> Radar real</label><label><input type="checkbox" id="weatherLabEventToggle" checked> Áreas / alertas SPI</label><label><input type="checkbox" id="weatherLabProjectionToggle" checked> Projeção SPI</label><label class="tactical-control"><input type="checkbox" id="weatherLabBackboneToggle" checked> Backbone SPI</label><label class="tactical-control"><input type="checkbox" id="weatherLabCriticalSitesToggle" checked> Sites ≤4h</label><hr><b>INTENSIDADE NO MAPA</b><span><i class="dbz extreme"></i> Crítico SPI</span><span><i class="dbz verystrong"></i> Alto SPI</span><span><i class="dbz strong"></i> Atenção</span><span><i class="dbz moderate"></i> Monitoramento</span><span><i class="dbz weak"></i> Radar observado</span><small id="weatherLabRadarSource">Radar real: RainViewer • áreas: Cores SPI + IBGE</small></div>
         <div id="weatherLabMap" class="weatherlab-map"></div>
         <div class="weatherlab-legend"><b>INTENSIDADE OPERACIONAL</b><span><i class="wl-extreme"></i>Crítico</span><span><i class="wl-high"></i>Alto</span><span><i class="wl-watch"></i>Monitoramento</span><small>Contornos irregulares = envelope operacional aproximado, não radar.</small></div>
       </div>
@@ -172,6 +172,7 @@
         <section class="wl-prevention-section"><h3>🛡️ PREVENÇÃO | PRÓXIMAS HORAS</h3><div id="weatherLabPrevention">Consolidando risco futuro…</div></section>
         <section><h3>ALERTAS OFICIAIS</h3><div id="weatherLabAlerts">Consolidando…</div></section>
         <section><h3>TRAJETÓRIA E PROJEÇÃO</h3><div id="weatherLabProjection">Consolidando…</div></section>
+        <section class="weatherlab-tactical-impact"><h3>⚡ IMPACTO SPI | REDE EXPOSTA</h3><div id="weatherLabTacticalImpact">Consolidando sites, Backbone e energia…</div></section>
         <section><h3>🤖 ANALISTA CLIMÁTICO</h3><div class="weatherlab-ai-actions"><button data-wl-ai="agora">O que acontece agora?</button><button data-wl-ai="pico">Onde será o pico?</button><button data-wl-ai="sites">Sites ≤4h</button></div><div id="weatherLabAi">Selecione um evento no mapa ou uma pergunta rápida.</div></section>
       </aside>
     </section>
@@ -179,6 +180,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788397358"></script>
+  <script src="app.js?v=1788432218"></script>
 </body>
 </html>
