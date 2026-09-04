@@ -111,6 +111,11 @@
         <div class="panel-title">🧭 Trajetória do evento</div>
         <div class="trajectory-legend"><span><i class="traj-dot now"></i> AGORA: alerta recente + compatível com janela atual</span><span><i class="traj-dot recent"></i> RECENTE: alerta ainda relevante, continuidade não confirmada</span><span><i class="traj-dot future"></i> PREVISÃO / PREVISÃO OFICIAL</span><span><i class="traj-line"></i> deslocamento confirmado</span></div>
         <div id="trajectorySummary" class="trajectory-summary">Consolidando eventos severos…</div>
+        <div class="trajectory-satellite-card">
+          <div class="trajectory-satellite-head"><span>🛰️ NUVENS OBSERVADAS</span><b>GOES-East / ABI</b></div>
+          <div class="trajectory-satellite-actions"><button id="trajectorySatelliteToggle" type="button">☁️ Nuvens ON</button><button id="trajectorySatelliteRefresh" type="button">↻ Atualizar</button><label>Opacidade <input id="trajectorySatelliteOpacity" type="range" min="20" max="85" value="58"></label></div>
+          <div id="trajectorySatelliteStatus" class="trajectory-satellite-status">NASA GIBS • GeoColor (cor real de dia / infravermelho multiespectral à noite)</div>
+        </div>
         <div class="trajectory-box-title trajectory-now-title">🔴 AGORA | CONDIÇÃO ATUAL</div>
         <div id="trajectoryNow" class="trajectory-now">Lendo condição atual…</div>
         <div class="trajectory-player"><button id="trajectoryPlay">▶ Evolução 12h</button><button id="trajectoryStop">■ Parar</button><span id="trajectoryPlayStatus">Previsão parada</span></div>
