@@ -37,7 +37,7 @@
         <span class="traj-legend-item"><i class="traj-sev alerta"></i><b>Alerta</b><small>Defesa Civil: evento oficial que exige atenção e acompanhamento</small></span>
         <span><i class="traj-sev forecast"></i> Previsão meteorológica</span>
         <span><i class="traj-line-confirmed"></i> Deslocamento confirmado</span>
-        <span><i class="traj-line-wind"></i> Direção do vento (não é trajetória)</span>
+        <span>☁️ Nuvem observada GOES • linha somente com deslocamento oficial</span>
       </div>
       <div id="mobileFocusPanel" class="mobile-focus-panel" hidden>
         <div class="mobile-focus-title">📡 MÓVEL • VISÃO OPERACIONAL</div>
@@ -113,7 +113,7 @@
         <div id="trajectorySummary" class="trajectory-summary">Consolidando eventos severos…</div>
         <div class="trajectory-satellite-card">
           <div class="trajectory-satellite-head"><span>🛰️ NUVENS OBSERVADAS</span><b>GOES-East / ABI</b></div>
-          <div class="trajectory-satellite-actions"><button id="trajectorySatelliteToggle" type="button">☁️ Nuvens ON</button><button id="trajectorySatelliteRefresh" type="button">↻ Atualizar</button><label>Opacidade <input id="trajectorySatelliteOpacity" type="range" min="20" max="85" value="58"></label></div>
+          <div class="trajectory-satellite-actions"><button id="trajectorySatelliteToggle" type="button">☁️ Nuvens ON</button><button id="trajectorySatelliteRefresh" type="button">↻ Atualizar</button><label>Opacidade <input id="trajectorySatelliteOpacity" type="range" min="20" max="85" value="68"></label></div>
           <div id="trajectorySatelliteStatus" class="trajectory-satellite-status">NASA GIBS • GeoColor (cor real de dia / infravermelho multiespectral à noite)</div>
         </div>
         <div class="trajectory-box-title trajectory-now-title">🔴 AGORA | CONDIÇÃO ATUAL</div>
@@ -139,7 +139,7 @@
         <div id="trajectoryPath" class="trajectory-path">Aguardando evento selecionado…</div>
         <div class="trajectory-box-title">⏱️ Outros eventos</div>
         <div id="trajectoryTimeline" class="trajectory-timeline"></div>
-        <small class="trajectory-note">Linha vermelha = deslocamento informado por fonte oficial. Linha roxa pontilhada = progressão temporal da previsão entre grupos horários; não representa rastreamento confirmado da mesma célula.</small>
+        <small class="trajectory-note">Nuvem GOES = observação por satélite. Linha no mapa = somente deslocamento informado por fonte oficial. O PLAY 48H mostra uma massa prevista por quadro, sem rastro acumulado.</small>
       </section>
       <section class="panel details" id="details"><div class="panel-title">Trecho selecionado</div><p>Clique em um trecho do Backbone para ver os detalhes.</p></section>
     </aside>
