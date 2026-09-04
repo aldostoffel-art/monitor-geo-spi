@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788538192">
+  <link rel="stylesheet" href="styles.css?v=1788540583">
 </head>
 <body>
   <header class="topbar">
@@ -162,6 +162,7 @@
       <div><span>⚠️</span><small>FALHAS ATIVAS</small><strong id="rpEnergyActive">—</strong></div>
       <div><span>🔥</span><small>FIRE HISTÓRICO</small><strong id="rpFireHistory">—</strong></div>
     </section>
+    <section class="rp-ai-brief" id="rpAiBrief"><div class="rp-ai-head"><div><span class="rp-ai-orb">✦</span><div><small>SPI INTELLIGENCE • ANÁLISE AUTOMÁTICA</small><b>Leitura operacional da IA</b></div></div><span id="rpAiConfidence" class="rp-ai-confidence">CONSOLIDANDO</span></div><div id="rpAiText" class="rp-ai-text">Analisando clima, energia, autonomia, Fire e histórico de Ribeirão Preto…</div><div id="rpAiSignals" class="rp-ai-signals"></div><small class="rp-ai-note">Síntese automática baseada nos dados disponíveis no Monitor SPI. Projeções representam cenários operacionais e não garantia de impacto.</small></section>
     <section class="rp-general-grid">
       <article class="rp-card rp-weather-card"><div class="rp-card-title"><b>🌦️ PREVISÃO • PRÓXIMAS 48H</b><small id="rpForecastSource">Ribeirão Preto</small></div><div id="rpForecastSummary" class="rp-forecast-summary">Carregando previsão…</div><div id="rpForecastTimeline" class="rp-forecast-timeline"></div></article>
       <article class="rp-card"><div class="rp-card-title"><b>⚡ ENERGIA • HISTÓRICO MUNICIPAL</b><small>Energy Core</small></div><div id="rpEnergySummary" class="rp-energy-summary">Consolidando histórico…</div><div id="rpEnergyActiveList" class="rp-active-list"></div></article><article class="rp-card"><div class="rp-card-title"><b>⚡ RAIOS • RIBEIRÃO PRETO</b><small>observado + previsão</small></div><div id="rpLightningSummary" class="rp-energy-summary">Consolidando raios…</div><div id="rpLightningForecast" class="rp-active-list"></div></article><article class="rp-card rp-offenders-card"><div class="rp-card-title"><b>📍 BAIRROS / ÁREAS OFENSORES</b><small>histórico consolidado</small></div><div class="rp-offenders-grid"><section><h4>⚡ Energia</h4><div id="rpOffendersEnergy">Consolidando…</div></section><section><h4>🔥 Queimadas</h4><div id="rpOffendersFire">Consolidando…</div></section><section><h4>🌳 Queda de árvores</h4><div id="rpOffendersTrees">Consolidando fonte pública…</div></section></div></article>
@@ -211,6 +212,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788539547"></script>
+  <script src="app.js?v=1788540583"></script>
 </body>
 </html>
