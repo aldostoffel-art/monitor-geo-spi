@@ -152,6 +152,24 @@
       <section class="panel details" id="details"><div class="panel-title">Trecho selecionado</div><p>Clique em um trecho do Backbone para ver os detalhes.</p></section>
     </aside>
   </main>
+  <main id="ribeiraoGeralView" class="ribeirao-geral-view" hidden>
+    <section class="rp-general-head"><div><small>RIBEIRÃO PRETO • VISÃO MUNICIPAL • DEV</small><h2>PAINEL OPERACIONAL DE RIBEIRÃO PRETO</h2><p>Sites • autonomia • energia • clima 48h • Fire • Backbone</p></div><div class="rp-general-clock"><b id="rpGeneralStatus">CONSOLIDANDO</b><small id="rpGeneralUpdated">Atualizando…</small></div></section>
+    <section class="rp-general-kpis">
+      <div><span>📡</span><small>SITES NA CIDADE</small><strong id="rpSitesTotal">—</strong></div>
+      <div class="rp-kpi-critical"><span>🔋</span><small>SITES ≤4H</small><strong id="rpSites4h">—</strong></div>
+      <div><span>🧵</span><small>ROTAS BACKBONE</small><strong id="rpRoutesTotal">—</strong></div>
+      <div class="rp-kpi-energy"><span>⚡</span><small>FALHAS DESDE O INÍCIO</small><strong id="rpEnergyHistory">—</strong></div>
+      <div><span>⚠️</span><small>FALHAS ATIVAS</small><strong id="rpEnergyActive">—</strong></div>
+      <div><span>🔥</span><small>FIRE HISTÓRICO</small><strong id="rpFireHistory">—</strong></div>
+    </section>
+    <section class="rp-general-grid">
+      <article class="rp-card rp-weather-card"><div class="rp-card-title"><b>🌦️ PREVISÃO • PRÓXIMAS 48H</b><small id="rpForecastSource">Ribeirão Preto</small></div><div id="rpForecastSummary" class="rp-forecast-summary">Carregando previsão…</div><div id="rpForecastTimeline" class="rp-forecast-timeline"></div></article>
+      <article class="rp-card"><div class="rp-card-title"><b>⚡ ENERGIA • HISTÓRICO MUNICIPAL</b><small>Energy Core</small></div><div id="rpEnergySummary" class="rp-energy-summary">Consolidando histórico…</div><div id="rpEnergyActiveList" class="rp-active-list"></div></article>
+      <article class="rp-card"><div class="rp-card-title"><b>📡 REDE MÓVEL • AUTONOMIA</b><small>Ribeirão Preto</small></div><div id="rpSitesSummary" class="rp-sites-summary">Consolidando sites…</div><div id="rpCriticalSites" class="rp-critical-sites"></div></article>
+      <article class="rp-card"><div class="rp-card-title"><b>🔥 FIRE + 🧵 BACKBONE</b><small>somente município</small></div><div id="rpFireBackboneSummary" class="rp-fire-summary">Consolidando Fire e rotas…</div></article>
+    </section>
+    <section class="rp-general-footer">Recorte exclusivo de Ribeirão Preto. Falhas de energia são OS únicas observadas pelo Energy Core desde o início do histórico do projeto; eventos ativos são contabilizados sem duplicar áreas da mesma OS.</section>
+  </main>
   <main id="commandView" class="command-view command-board" hidden>
     <section class="command-board-head"><div class="command-board-brand"><span class="command-weather-icon">🌧️</span><div><small>BOLETIM OPERACIONAL • SPI DEV</small><h2>VISÃO CLIMÁTICA & OPERACIONAL — SPI</h2><p>Resumo executivo dos Cores • prevenção, impacto e prioridade operacional</p></div></div><div class="command-board-status"><span id="commandBoardPeriod">PRÓXIMAS 48H</span><small id="commandBoardUpdated">Atualizando…</small><b id="commandReadiness" class="command-readiness">ANALISANDO</b></div></section>
     <section class="command-board-summary"><div class="command-summary-main"><b>RESUMO EXECUTIVO</b><div id="commandUrgentText">Consolidando eventos relevantes…</div></div><div><small>DDDs PRIORITÁRIOS</small><strong id="commandSummaryRegions">—</strong></div><div><small>SITES ≤4H EXPOSTOS</small><strong id="commandSummarySites">—</strong></div><div><small>ENERGIA</small><strong id="commandSummaryEnergy">—</strong></div><div><small>FIRE</small><strong id="commandSummaryFire">—</strong></div><div><small>ALERTAS OFICIAIS</small><strong id="commandSummaryAlerts">—</strong></div></section>
@@ -193,6 +211,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=rpclima-1788535594"></script>
+  <script src="app.js?v=rpgeral-1788536038"></script>
 </body>
 </html>
