@@ -533,3 +533,10 @@ body.tactical-mode #tabTactical{background:#123b59!important;border-color:#38bdf
 .trajectory-mass-popup>b{font-size:16px;color:#fff}
 .trajectory-mass-popup>span{font-weight:700;color:#fff}
 .trajectory-mass-popup small{opacity:.72;line-height:1.3}
+
+/* Trajetoria limpa v2: satelite como camada principal; sem trilhas de previsao acumuladas */
+body.trajectory-map-mode .leaflet-pane.leaflet-trajectory-satellite-pane-pane{filter:contrast(1.08) saturate(1.04)}
+body.trajectory-map-mode .trajectory-weather-envelope{stroke-dasharray:none!important;stroke-opacity:.18!important}
+body.trajectory-map-mode .trajectory-weather-mass.halo{filter:blur(4px) saturate(.95)!important}
+body.trajectory-map-mode .trajectory-weather-mass.mid{filter:blur(2px)!important}
+body.trajectory-map-mode .trajectory-projection-path,body.trajectory-map-mode .trajectory-wind-arrow-wrap{display:none!important}
