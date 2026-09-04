@@ -38,7 +38,8 @@ let allFeatures=[],layer=null,fireEvents=[],fireHistoryEvents=[],weatherEvents=[
 let selectedFireId=null;
 let ribeiraoMode=false,ribeiraoGeneralMode=false,ribeiraoPolygon=null,ribeiraoRoutes=[],ribeiraoBoundaryLayer=null,ribeiraoSavedState=null;
 const RIBEIRAO_ENERGY_HISTORY_DATA='data/ribeirao-energy-history.json';
-let ribeiraoEnergyHistory={};
+const RIBEIRAO_OFFENDERS_DATA='data/ribeirao-offenders.json';
+let ribeiraoEnergyHistory={},ribeiraoOffenders={};
 let weatherMeta={};
 const fireLayer=L.layerGroup().addTo(map);
 const fireHistoryLayer=L.layerGroup().addTo(map);
@@ -265,13 +266,15 @@ document.getElementById('tabFire')?.addEventListener('click',showFireTab);
 let mobileViewSavedToggles=null,mobileBackboneWasVisible=false;
 
 async function loadRibeiraoEnergyHistory(){try{const r=await fetch(`${RIBEIRAO_ENERGY_HISTORY_DATA}?t=${Date.now()}`,{cache:'no-store'});if(r.ok)ribeiraoEnergyHistory=await r.json();if(ribeiraoGeneralMode)renderRibeiraoGeral()}catch(e){console.warn('Falha histórico Energy Ribeirão',e)}}
+async function loadRibeiraoOffenders(){try{const r=await fetch(`${RIBEIRAO_OFFENDERS_DATA}?t=${Date.now()}`,{cache:'no-store'});if(r.ok)ribeiraoOffenders=await r.json();if(ribeiraoGeneralMode)renderRibeiraoOffenders()}catch(e){console.warn('Falha ofensores Ribeirão',e)}}
+function renderRibeiraoOffenders(){const o=ribeiraoOffenders||{},en=document.getElementById('rpOffendersEnergy'),fi=document.getElementById('rpOffendersFire'),tr=document.getElementById('rpOffendersTrees');if(en){const rows=o.energia?.ranking||[];en.innerHTML=rows.length?rows.slice(0,6).map((x,i)=>`<div class="rp-off-row"><b>${i+1}. ${esc(x.area)}</b><span>${Number(x.eventos_energia||0)} evento(s)</span></div>`).join('')+`<small>OS únicas por área • desde ${esc(o.energia?.inicio_historico||'—')}</small>`:'<small>Sem histórico de áreas disponível.</small>'}if(fi){const rows=o.fire?.ranking||[];fi.innerHTML=rows.length?rows.map((x,i)=>`<div class="rp-off-row"><b>${i+1}. ${esc(x.localidade)}</b><span>${Number(x.eventos_fire||0)} evento(s)</span></div>`).join('')+'<small>Bairro só é atribuído quando há confirmação geográfica.</small>':'<small>Sem eventos Fire no histórico municipal.</small>'}if(tr){const t=o.arvores||{},pts=t.pontos_identificados||[];tr.innerHTML=`<div class="rp-tree-total"><b>≈ ${Number(t.total_cidade_aproximado||0).toLocaleString('pt-BR')}</b><span>árvores derrubadas no temporal de 24/07/2026</span></div>${pts.map(x=>`<div class="rp-off-row"><b>${esc(x.localidade)}</b><span>${Number(x.quedas||0)}+</span></div>`).join('')}<small>Fonte: ${esc(t.fonte||'—')}. Sem ranking completo por bairro na fonte pública localizada.</small>`}}
 function rpGeneralSet(id,v){const x=document.getElementById(id);if(x)x.textContent=v}
 function rpGeneralForecast(){return (forecastSpi?.regioes||[]).find(x=>norm(x.regiao)==='RIBEIRAO PRETO')||null}
 function rpGeneralSites(){return siteEvents.filter(x=>norm(x.municipio)==='RIBEIRAO PRETO')}
 function rpGeneralEnergy(){return energyEvents.filter(x=>norm(x.municipio)==='RIBEIRAO PRETO'||norm(x.regiao)==='RIBEIRAO PRETO')}
 function rpGeneralActiveOs(rows){const z=new Set();for(const x of rows)for(const o of (x.ocorrencias||[]))if(o)z.add(o);return [...z]}
 function rpGeneralHtmlRow(a,b){return `<div class="rp-summary-row"><span>${esc(a)}</span><b>${esc(b)}</b></div>`}
-function renderRibeiraoGeral(){
+function renderRibeiraoGeral(){renderRibeiraoOffenders();
  if(!ribeiraoGeneralMode)return;
  const sites=rpGeneralSites(),low=sites.filter(x=>x.ate_4h===true),energy=rpGeneralEnergy(),activeOs=rpGeneralActiveOs(energy),fc=rpGeneralForecast();
  const hist=ribeiraoEnergyHistory||{},fireHist=ribeiraoPolygon?fireHistoryEvents.filter(ribeiraoEventInside):[],fireAct=ribeiraoPolygon?fireEvents.filter(ribeiraoEventInside):[];
@@ -289,7 +292,7 @@ function renderRibeiraoGeral(){
 async function showRibeiraoGeralTab(){
  try{leaveTrajectoryMode();leaveMobileMode();leaveFireMode();if(typeof leaveWeatherLab==='function')leaveWeatherLab();if(typeof leaveTacticalMode==='function')leaveTacticalMode()}catch(e){}
  ribeiraoGeneralMode=true;ribeiraoMode=false;document.getElementById('mapView').hidden=true;document.getElementById('commandView').hidden=true;document.getElementById('ribeiraoGeralView').hidden=false;setActiveViewTab('tabRibeiraoGeral');ribeiraoRenderClimateStrip();
- try{await ensureRibeiraoGeometry()}catch(e){console.warn(e)}renderRibeiraoGeral();loadRibeiraoEnergyHistory();
+ try{await ensureRibeiraoGeometry()}catch(e){console.warn(e)}renderRibeiraoGeral();loadRibeiraoEnergyHistory();loadRibeiraoOffenders();
 }
 function leaveRibeiraoGeral(){if(!ribeiraoGeneralMode)return;ribeiraoGeneralMode=false;const v=document.getElementById('ribeiraoGeralView');if(v)v.hidden=true;renderClimateStrip()}
 
@@ -561,7 +564,7 @@ setInterval(()=>{if(tacticalMode){tacticalRenderNetwork();tacticalRenderProjecti
 
 
 // Ribeirão Geral DEV
-loadRibeiraoEnergyHistory();
+loadRibeiraoEnergyHistory();loadRibeiraoOffenders();
 document.getElementById('tabRibeiraoGeral')?.addEventListener('click',showRibeiraoGeralTab);
 ['tabMapa','tabComando','tabFire','tabRibeirao','tabMobile','tabTrajectory'].forEach(id=>document.getElementById(id)?.addEventListener('click',leaveRibeiraoGeral));
 setInterval(()=>{if(ribeiraoGeneralMode)renderRibeiraoGeral()},30000);
