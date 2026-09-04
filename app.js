@@ -387,19 +387,29 @@ function trajectoryForecastPointHtml(x,hh){const lv=trajectoryImpactLevel(x),sit
 function trajectorySelectForecastStage(x,frame){const hh=new Date(frame.t).toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}),critical=document.getElementById('trajectoryCritical'),pathBox=document.getElementById('trajectoryPath'),lv=trajectoryImpactLevel(x),sites=trajectorySitesAtPoint(x);if(critical)critical.innerHTML=trajectoryForecastPointHtml(x,hh);if(pathBox)pathBox.innerHTML=`<div class="trajectory-path-status forecast severity-${lv.key}">🛰️ PROJEÇÃO ${esc(lv.label)} • ${esc(hh)}</div><div class="trajectory-path-meta"><b>${esc(x.municipio)}</b><br>🌧️ ${Number(x.rain||0).toFixed(1)} mm • 🎯 ${Number(x.prob||0).toFixed(0)}% • 🌬️ rajada ${Number(x.gust||0).toFixed(0)} km/h • 💨 ${Number(x.wind||0).toFixed(0)} km/h${Number(x.dir||0)?` ${esc(windCompass(Number(x.dir)))}`:''}<br>⚡ ${x.storm?'risco de tempestade/raios':'sem evidência de raios'} • 🔋 ${sites.ate4h} site(s) ≤4h<br><small>Previsão para esta região/horário; não confirma que seja a mesma célula observada agora.</small></div>`;const ai=document.getElementById('trajectoryAiAnswer');if(ai)ai.innerHTML=`<b>🤖 Leitura preventiva • ${esc(x.municipio)} ${esc(hh)}</b><br>Intensidade <b>${esc(lv.label)}</b>. ${x.storm?'Há sinal de tempestade. ':''}${Number(x.gust||0)>=60?`Rajada prevista de <b>${Number(x.gust).toFixed(0)} km/h</b>. `:''}${Number(x.rain||0)>0?`Chuva prevista <b>${Number(x.rain).toFixed(1)} mm</b> (${Number(x.prob||0).toFixed(0)}%). `:''}<b>${sites.ate4h}</b> site(s) ≤4h no recorte.`;map.flyTo([x.lat,x.lon],9,{duration:.45})}
 function trajectoryMassStyle(lv,focus=false){
   const k=lv?.key||'moderate';
-  const cfg={severe:{fill:'#ef233c',edge:'#ff5964',opacity:.48,radius:42},high:{fill:'#f97316',edge:'#fb923c',opacity:.36,radius:36},moderate:{fill:'#eab308',edge:'#facc15',opacity:.25,radius:30},watch:{fill:'#84cc16',edge:'#a3e635',opacity:.16,radius:25}}[k]||{fill:'#eab308',edge:'#facc15',opacity:.22,radius:28};
-  if(focus){cfg.opacity=Math.min(.60,cfg.opacity+.10);cfg.radius+=5}return cfg
+  const cfg={severe:{opacity:.82,radius:35},high:{opacity:.72,radius:32},moderate:{opacity:.62,radius:28},watch:{opacity:.50,radius:24}}[k]||{opacity:.58,radius:27};
+  if(focus){cfg.opacity=Math.min(.90,cfg.opacity+.06);cfg.radius+=3}return cfg
+}
+function trajectoryRadarColors(x){
+  const rain=Number(x.rain||0),gust=Number(x.gust||0),prob=Number(x.prob||0),storm=Boolean(x.storm);
+  if(storm||rain>=15||gust>=75)return['#16a34a','#facc15','#f97316','#dc2626','#a855f7'];
+  if(rain>=7||gust>=60)return['#16a34a','#facc15','#f97316','#dc2626'];
+  if(rain>=2||gust>=48||prob>=85)return['#16a34a','#facc15','#f97316'];
+  return['#0891b2','#16a34a','#facc15'];
 }
 function trajectoryMassPopup(g,strongest,lv){
   const hh=new Date(g.t).toLocaleString('pt-BR',{day:'2-digit',month:'2-digit',hour:'2-digit',minute:'2-digit'}),sites=g.items.reduce((a,x)=>{const q=trajectorySitesAtPoint(x);a.total+=q.total;a.ate4h+=q.ate4h;return a},{total:0,ate4h:0}),names=g.items.map(x=>esc(x.municipio)).slice(0,6).join(', ');
   return `<div class="trajectory-mass-popup"><strong>☁️ PROJEÇÃO • ${esc(lv.label)}</strong><b>${esc(hh)}</b><span>${names}</span><div>🌧️ ${Number(strongest.rain||0).toFixed(1)} mm • 🎯 ${Number(strongest.prob||0).toFixed(0)}%</div><div>🌬️ rajada ${Number(strongest.gust||0).toFixed(0)} km/h • 💨 ${Number(strongest.wind||0).toFixed(0)} km/h${Number(strongest.dir||0)?` ${esc(windCompass(Number(strongest.dir)))}`:''}</div><div>⚡ ${strongest.storm?'risco de tempestade/raios':'sem evidência de raios'} • 📡 ${sites.total} sites • 🔋 ${sites.ate4h} ≤4h</div><small>Área de progressão meteorológica prevista; não representa limite municipal nem rastreamento confirmado da mesma célula.</small></div>`
 }
 function trajectoryDrawMass(layer,g,focus=false){
-  if(!g||!g.items?.length)return;const strongest=[...g.items].sort((a,b)=>trajectoryImpactLevel(b).score-trajectoryImpactLevel(a).score)[0],lv=trajectoryImpactLevel(strongest),st=trajectoryMassStyle(lv,focus),pts=g.items.map(x=>[x.lat,x.lon]).filter(x=>Number.isFinite(x[0])&&Number.isFinite(x[1]));if(!pts.length)return;
+  if(!g||!g.items?.length)return;
+  const strongest=[...g.items].sort((a,b)=>trajectoryImpactLevel(b).score-trajectoryImpactLevel(a).score)[0],lv=trajectoryImpactLevel(strongest),st=trajectoryMassStyle(lv,focus),pts=g.items.map(x=>[x.lat,x.lon]).filter(x=>Number.isFinite(x[0])&&Number.isFinite(x[1]));if(!pts.length)return;
   const group=L.featureGroup().addTo(layer),click=()=>trajectorySelectForecastStage(strongest,g);
-  // massas orgânicas sobrepostas: intensidade vem de cor/opacidade, sem caixas sobre o mapa
-  pts.forEach((pt,i)=>{const rr=st.radius*(i===0?1:.82);L.circle(pt,{radius:rr*1000,stroke:false,fillColor:st.fill,fillOpacity:st.opacity*.34,interactive:false,className:'trajectory-weather-mass halo'}).addTo(group);L.circle(pt,{radius:rr*680,stroke:false,fillColor:st.fill,fillOpacity:st.opacity*.55,interactive:false,className:'trajectory-weather-mass mid'}).addTo(group);L.circle(pt,{radius:rr*390,color:st.edge,weight:focus?2:1,opacity:.60,fillColor:st.fill,fillOpacity:st.opacity,interactive:true,className:'trajectory-weather-mass core'}).bindPopup(trajectoryMassPopup(g,strongest,lv),{maxWidth:330}).on('click',click).addTo(group)});
-  if(pts.length>1){const hull=L.polygon(pts,{color:st.edge,weight:focus?2.5:1.4,opacity:.45,fillColor:st.fill,fillOpacity:st.opacity*.22,dashArray:'5 7',interactive:true,className:'trajectory-weather-envelope'}).bindPopup(trajectoryMassPopup(g,strongest,lv),{maxWidth:330}).on('click',click);hull.addTo(group)}
+  // Visual radar: nuvem/chuva colorida, sem contorno, corredor ou caixas pesadas.
+  pts.forEach((pt,i)=>{
+    const x=g.items[i]||strongest,rr=st.radius*(i===0?1:.82),colors=trajectoryRadarColors(x),rings=[1,.76,.53,.32,.17];
+    rings.slice(0,colors.length).forEach((scale,j)=>L.circle(pt,{radius:rr*1000*scale,stroke:false,fillColor:colors[j],fillOpacity:Math.max(.34,st.opacity-j*.07),interactive:j===colors.length-1,className:'trajectory-radar-cloud'}).bindPopup(j===colors.length-1?trajectoryMassPopup(g,strongest,lv):'',{maxWidth:330}).on(j===colors.length-1?'click':'add',j===colors.length-1?click:()=>{}).addTo(group));
+  });
 }
 function trajectoryDrawForecastCorridor(){
   // Mapa em repouso: a nuvem observada GOES fica como leitura principal.
