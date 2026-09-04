@@ -540,3 +540,8 @@ body.trajectory-map-mode .trajectory-weather-envelope{stroke-dasharray:none!impo
 body.trajectory-map-mode .trajectory-weather-mass.halo{filter:blur(4px) saturate(.95)!important}
 body.trajectory-map-mode .trajectory-weather-mass.mid{filter:blur(2px)!important}
 body.trajectory-map-mode .trajectory-projection-path,body.trajectory-map-mode .trajectory-wind-arrow-wrap{display:none!important}
+/* Trajectory cloud-first v2: GOES dominates; only selected event remains on map */
+body.trajectory-map-mode .trajectory-event-marker{min-width:108px!important;max-width:126px!important;min-height:38px!important;padding:4px 7px!important;opacity:.88!important}
+body.trajectory-map-mode .trajectory-event-icon{font-size:19px!important}
+body.trajectory-map-mode .trajectory-event-marker b{font-size:8px!important}
+body.trajectory-map-mode .trajectory-event-marker small{font-size:6px!important}
