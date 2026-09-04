@@ -523,3 +523,13 @@ body.tactical-mode #tabTactical{background:#123b59!important;border-color:#38bdf
 /* PLAY OPERACIONAL 48H - DEV */
 .trajectory-player{padding:7px;border:1px solid rgba(168,85,247,.34);border-radius:9px;background:linear-gradient(90deg,rgba(88,28,135,.13),rgba(15,23,42,.72))}
 #trajectoryPlay{font-weight:950;border-color:#c084fc;background:#4c1d95;color:#fff}#trajectoryStop{font-weight:900}.trajectory-player span{flex:1;min-width:150px}.trajectory-player span b{color:#e9d5ff}
+/* Trajetória DEV — massas meteorológicas clicáveis (2026-09-04) */
+.trajectory-weather-mass{filter:saturate(1.15)}
+.trajectory-weather-mass.halo{filter:blur(2px) saturate(1.05)}
+.trajectory-weather-mass.core{cursor:pointer}
+.trajectory-weather-envelope{cursor:pointer}
+.trajectory-mass-popup{display:grid;gap:5px;min-width:235px;color:#dce9f3}
+.trajectory-mass-popup>strong{font-size:13px;letter-spacing:.04em}
+.trajectory-mass-popup>b{font-size:16px;color:#fff}
+.trajectory-mass-popup>span{font-weight:700;color:#fff}
+.trajectory-mass-popup small{opacity:.72;line-height:1.3}
