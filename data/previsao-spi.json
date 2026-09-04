@@ -1,7 +1,7 @@
 {
   "ambiente": "DEV",
   "core": "PREVISAO METEOROLOGICA SPI",
-  "gerado_em": "2026-09-04T13:06:06.545575+00:00",
+  "gerado_em": "2026-09-04T13:35:52.918450+00:00",
   "fonte": "Open-Meteo",
   "independente_bases_operacionais": true,
   "horizonte_horas": 72,
@@ -11,13 +11,13 @@
       "latitude": -22.9056,
       "longitude": -47.0608,
       "atual": {
-        "time": "2026-09-04T10:00",
+        "time": "2026-09-04T10:30",
         "interval": 900,
-        "temperature_2m": 24.3,
+        "temperature_2m": 25.3,
         "weather_code": 0,
-        "wind_speed_10m": 8.7,
-        "wind_gusts_10m": 23.0,
-        "wind_direction_10m": 4
+        "wind_speed_10m": 8.8,
+        "wind_gusts_10m": 23.8,
+        "wind_direction_10m": 358
       },
       "janelas": {
         "6h": {
@@ -789,13 +789,13 @@
       "latitude": -23.5015,
       "longitude": -47.4526,
       "atual": {
-        "time": "2026-09-04T10:00",
+        "time": "2026-09-04T10:30",
         "interval": 900,
-        "temperature_2m": 23.2,
-        "weather_code": 0,
-        "wind_speed_10m": 4.9,
-        "wind_gusts_10m": 16.6,
-        "wind_direction_10m": 54
+        "temperature_2m": 24.2,
+        "weather_code": 1,
+        "wind_speed_10m": 4.7,
+        "wind_gusts_10m": 16.9,
+        "wind_direction_10m": 47
       },
       "janelas": {
         "6h": {
@@ -1563,17 +1563,795 @@
       ]
     },
     {
+      "regiao": "São José dos Campos",
+      "latitude": -23.1896,
+      "longitude": -45.8841,
+      "atual": {
+        "time": "2026-09-04T10:30",
+        "interval": 900,
+        "temperature_2m": 23.0,
+        "weather_code": 0,
+        "wind_speed_10m": 0.9,
+        "wind_gusts_10m": 14.4,
+        "wind_direction_10m": 233
+      },
+      "janelas": {
+        "6h": {
+          "horas": 6,
+          "chuva_mm": 0.0,
+          "probabilidade_chuva_max": 2.0,
+          "vento_max_kmh": 13.7,
+          "rajada_max_kmh": 28.4,
+          "tempestade": false
+        },
+        "12h": {
+          "horas": 12,
+          "chuva_mm": 0.0,
+          "probabilidade_chuva_max": 18.0,
+          "vento_max_kmh": 13.7,
+          "rajada_max_kmh": 29.9,
+          "tempestade": false
+        },
+        "24h": {
+          "horas": 24,
+          "chuva_mm": 2.3,
+          "probabilidade_chuva_max": 76.0,
+          "vento_max_kmh": 13.7,
+          "rajada_max_kmh": 29.9,
+          "tempestade": false
+        },
+        "48h": {
+          "horas": 48,
+          "chuva_mm": 10.0,
+          "probabilidade_chuva_max": 100.0,
+          "vento_max_kmh": 20.3,
+          "rajada_max_kmh": 39.6,
+          "tempestade": false
+        },
+        "72h": {
+          "horas": 72,
+          "chuva_mm": 14.0,
+          "probabilidade_chuva_max": 100.0,
+          "vento_max_kmh": 20.3,
+          "rajada_max_kmh": 39.6,
+          "tempestade": false
+        }
+      },
+      "previsao_horaria": [
+        {
+          "data_hora": "2026-09-04T10:00",
+          "temperatura_c": 21.7,
+          "probabilidade_chuva": 0,
+          "precipitacao_mm": 0.0,
+          "weather_code": 0,
+          "vento_kmh": 2.3,
+          "rajada_kmh": 15.5,
+          "direcao_vento_graus": 247
+        },
+        {
+          "data_hora": "2026-09-04T11:00",
+          "temperatura_c": 24.1,
+          "probabilidade_chuva": 0,
+          "precipitacao_mm": 0.0,
+          "weather_code": 0,
+          "vento_kmh": 1.1,
+          "rajada_kmh": 13.7,
+          "direcao_vento_graus": 108
+        },
+        {
+          "data_hora": "2026-09-04T12:00",
+          "temperatura_c": 25.6,
+          "probabilidade_chuva": 0,
+          "precipitacao_mm": 0.0,
+          "weather_code": 0,
+          "vento_kmh": 5.3,
+          "rajada_kmh": 16.9,
+          "direcao_vento_graus": 118
+        },
+        {
+          "data_hora": "2026-09-04T13:00",
+          "temperatura_c": 27.6,
+          "probabilidade_chuva": 0,
+          "precipitacao_mm": 0.0,
+          "weather_code": 1,
+          "vento_kmh": 5.3,
+          "rajada_kmh": 19.1,
+          "direcao_vento_graus": 156
+        },
+        {
+          "data_hora": "2026-09-04T14:00",
+          "temperatura_c": 29.3,
+          "probabilidade_chuva": 1,
+          "precipitacao_mm": 0.0,
+          "weather_code": 0,
+          "vento_kmh": 11.0,
+          "rajada_kmh": 24.8,
+          "direcao_vento_graus": 244
+        },
+        {
+          "data_hora": "2026-09-04T15:00",
+          "temperatura_c": 29.6,
+          "probabilidade_chuva": 2,
+          "precipitacao_mm": 0.0,
+          "weather_code": 0,
+          "vento_kmh": 13.7,
+          "rajada_kmh": 28.4,
+          "direcao_vento_graus": 267
+        },
+        {
+          "data_hora": "2026-09-04T16:00",
+          "temperatura_c": 29.2,
+          "probabilidade_chuva": 3,
+          "precipitacao_mm": 0.0,
+          "weather_code": 1,
+          "vento_kmh": 11.9,
+          "rajada_kmh": 29.9,
+          "direcao_vento_graus": 255
+        },
+        {
+          "data_hora": "2026-09-04T17:00",
+          "temperatura_c": 26.9,
+          "probabilidade_chuva": 4,
+          "precipitacao_mm": 0.0,
+          "weather_code": 1,
+          "vento_kmh": 7.9,
+          "rajada_kmh": 23.4,
+          "direcao_vento_graus": 215
+        },
+        {
+          "data_hora": "2026-09-04T18:00",
+          "temperatura_c": 23.6,
+          "probabilidade_chuva": 6,
+          "precipitacao_mm": 0.0,
+          "weather_code": 2,
+          "vento_kmh": 4.4,
+          "rajada_kmh": 14.4,
+          "direcao_vento_graus": 187
+        },
+        {
+          "data_hora": "2026-09-04T19:00",
+          "temperatura_c": 22.3,
+          "probabilidade_chuva": 9,
+          "precipitacao_mm": 0.0,
+          "weather_code": 3,
+          "vento_kmh": 12.4,
+          "rajada_kmh": 23.4,
+          "direcao_vento_graus": 172
+        },
+        {
+          "data_hora": "2026-09-04T20:00",
+          "temperatura_c": 20.4,
+          "probabilidade_chuva": 13,
+          "precipitacao_mm": 0.0,
+          "weather_code": 2,
+          "vento_kmh": 11.1,
+          "rajada_kmh": 24.8,
+          "direcao_vento_graus": 197
+        },
+        {
+          "data_hora": "2026-09-04T21:00",
+          "temperatura_c": 19.0,
+          "probabilidade_chuva": 18,
+          "precipitacao_mm": 0.0,
+          "weather_code": 1,
+          "vento_kmh": 6.2,
+          "rajada_kmh": 21.2,
+          "direcao_vento_graus": 232
+        },
+        {
+          "data_hora": "2026-09-04T22:00",
+          "temperatura_c": 18.0,
+          "probabilidade_chuva": 24,
+          "precipitacao_mm": 0.0,
+          "weather_code": 1,
+          "vento_kmh": 4.8,
+          "rajada_kmh": 11.5,
+          "direcao_vento_graus": 259
+        },
+        {
+          "data_hora": "2026-09-04T23:00",
+          "temperatura_c": 17.4,
+          "probabilidade_chuva": 32,
+          "precipitacao_mm": 0.0,
+          "weather_code": 2,
+          "vento_kmh": 8.3,
+          "rajada_kmh": 14.8,
+          "direcao_vento_graus": 236
+        },
+        {
+          "data_hora": "2026-09-05T00:00",
+          "temperatura_c": 17.2,
+          "probabilidade_chuva": 39,
+          "precipitacao_mm": 0.0,
+          "weather_code": 3,
+          "vento_kmh": 7.2,
+          "rajada_kmh": 16.6,
+          "direcao_vento_graus": 231
+        },
+        {
+          "data_hora": "2026-09-05T01:00",
+          "temperatura_c": 17.0,
+          "probabilidade_chuva": 46,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 4.8,
+          "rajada_kmh": 13.3,
+          "direcao_vento_graus": 34
+        },
+        {
+          "data_hora": "2026-09-05T02:00",
+          "temperatura_c": 16.4,
+          "probabilidade_chuva": 53,
+          "precipitacao_mm": 0.0,
+          "weather_code": 1,
+          "vento_kmh": 4.8,
+          "rajada_kmh": 12.6,
+          "direcao_vento_graus": 304
+        },
+        {
+          "data_hora": "2026-09-05T03:00",
+          "temperatura_c": 16.0,
+          "probabilidade_chuva": 57,
+          "precipitacao_mm": 1.7,
+          "weather_code": 80,
+          "vento_kmh": 0.2,
+          "rajada_kmh": 15.8,
+          "direcao_vento_graus": 180
+        },
+        {
+          "data_hora": "2026-09-05T04:00",
+          "temperatura_c": 15.7,
+          "probabilidade_chuva": 54,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 1.8,
+          "rajada_kmh": 3.6,
+          "direcao_vento_graus": 180
+        },
+        {
+          "data_hora": "2026-09-05T05:00",
+          "temperatura_c": 15.5,
+          "probabilidade_chuva": 48,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 1.8,
+          "rajada_kmh": 5.4,
+          "direcao_vento_graus": 281
+        },
+        {
+          "data_hora": "2026-09-05T06:00",
+          "temperatura_c": 15.0,
+          "probabilidade_chuva": 47,
+          "precipitacao_mm": 0.0,
+          "weather_code": 3,
+          "vento_kmh": 3.9,
+          "rajada_kmh": 7.6,
+          "direcao_vento_graus": 283
+        },
+        {
+          "data_hora": "2026-09-05T07:00",
+          "temperatura_c": 15.2,
+          "probabilidade_chuva": 55,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 5.4,
+          "rajada_kmh": 11.9,
+          "direcao_vento_graus": 244
+        },
+        {
+          "data_hora": "2026-09-05T08:00",
+          "temperatura_c": 16.7,
+          "probabilidade_chuva": 67,
+          "precipitacao_mm": 0.0,
+          "weather_code": 3,
+          "vento_kmh": 4.5,
+          "rajada_kmh": 15.5,
+          "direcao_vento_graus": 310
+        },
+        {
+          "data_hora": "2026-09-05T09:00",
+          "temperatura_c": 18.1,
+          "probabilidade_chuva": 76,
+          "precipitacao_mm": 0.2,
+          "weather_code": 51,
+          "vento_kmh": 3.5,
+          "rajada_kmh": 18.0,
+          "direcao_vento_graus": 345
+        },
+        {
+          "data_hora": "2026-09-05T10:00",
+          "temperatura_c": 20.4,
+          "probabilidade_chuva": 78,
+          "precipitacao_mm": 0.2,
+          "weather_code": 51,
+          "vento_kmh": 5.0,
+          "rajada_kmh": 17.3,
+          "direcao_vento_graus": 305
+        },
+        {
+          "data_hora": "2026-09-05T11:00",
+          "temperatura_c": 21.4,
+          "probabilidade_chuva": 76,
+          "precipitacao_mm": 0.0,
+          "weather_code": 2,
+          "vento_kmh": 6.2,
+          "rajada_kmh": 23.0,
+          "direcao_vento_graus": 324
+        },
+        {
+          "data_hora": "2026-09-05T12:00",
+          "temperatura_c": 23.5,
+          "probabilidade_chuva": 76,
+          "precipitacao_mm": 0.2,
+          "weather_code": 51,
+          "vento_kmh": 4.2,
+          "rajada_kmh": 20.2,
+          "direcao_vento_graus": 258
+        },
+        {
+          "data_hora": "2026-09-05T13:00",
+          "temperatura_c": 25.2,
+          "probabilidade_chuva": 79,
+          "precipitacao_mm": 0.0,
+          "weather_code": 3,
+          "vento_kmh": 6.1,
+          "rajada_kmh": 19.1,
+          "direcao_vento_graus": 212
+        },
+        {
+          "data_hora": "2026-09-05T14:00",
+          "temperatura_c": 25.3,
+          "probabilidade_chuva": 83,
+          "precipitacao_mm": 0.2,
+          "weather_code": 51,
+          "vento_kmh": 9.5,
+          "rajada_kmh": 32.4,
+          "direcao_vento_graus": 219
+        },
+        {
+          "data_hora": "2026-09-05T15:00",
+          "temperatura_c": 25.1,
+          "probabilidade_chuva": 86,
+          "precipitacao_mm": 1.1,
+          "weather_code": 55,
+          "vento_kmh": 7.3,
+          "rajada_kmh": 34.2,
+          "direcao_vento_graus": 228
+        },
+        {
+          "data_hora": "2026-09-05T16:00",
+          "temperatura_c": 24.1,
+          "probabilidade_chuva": 86,
+          "precipitacao_mm": 0.5,
+          "weather_code": 53,
+          "vento_kmh": 7.9,
+          "rajada_kmh": 35.3,
+          "direcao_vento_graus": 270
+        },
+        {
+          "data_hora": "2026-09-05T17:00",
+          "temperatura_c": 22.8,
+          "probabilidade_chuva": 84,
+          "precipitacao_mm": 0.5,
+          "weather_code": 53,
+          "vento_kmh": 6.9,
+          "rajada_kmh": 27.0,
+          "direcao_vento_graus": 279
+        },
+        {
+          "data_hora": "2026-09-05T18:00",
+          "temperatura_c": 22.0,
+          "probabilidade_chuva": 82,
+          "precipitacao_mm": 0.0,
+          "weather_code": 2,
+          "vento_kmh": 6.4,
+          "rajada_kmh": 13.0,
+          "direcao_vento_graus": 280
+        },
+        {
+          "data_hora": "2026-09-05T19:00",
+          "temperatura_c": 21.3,
+          "probabilidade_chuva": 78,
+          "precipitacao_mm": 0.0,
+          "weather_code": 2,
+          "vento_kmh": 5.0,
+          "rajada_kmh": 11.5,
+          "direcao_vento_graus": 232
+        },
+        {
+          "data_hora": "2026-09-05T20:00",
+          "temperatura_c": 20.4,
+          "probabilidade_chuva": 74,
+          "precipitacao_mm": 0.0,
+          "weather_code": 2,
+          "vento_kmh": 4.1,
+          "rajada_kmh": 8.6,
+          "direcao_vento_graus": 229
+        },
+        {
+          "data_hora": "2026-09-05T21:00",
+          "temperatura_c": 19.5,
+          "probabilidade_chuva": 71,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 5.8,
+          "rajada_kmh": 12.6,
+          "direcao_vento_graus": 214
+        },
+        {
+          "data_hora": "2026-09-05T22:00",
+          "temperatura_c": 18.9,
+          "probabilidade_chuva": 72,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 4.3,
+          "rajada_kmh": 12.2,
+          "direcao_vento_graus": 178
+        },
+        {
+          "data_hora": "2026-09-05T23:00",
+          "temperatura_c": 18.4,
+          "probabilidade_chuva": 74,
+          "precipitacao_mm": 0.0,
+          "weather_code": 2,
+          "vento_kmh": 6.9,
+          "rajada_kmh": 13.7,
+          "direcao_vento_graus": 197
+        },
+        {
+          "data_hora": "2026-09-06T00:00",
+          "temperatura_c": 18.0,
+          "probabilidade_chuva": 78,
+          "precipitacao_mm": 0.3,
+          "weather_code": 51,
+          "vento_kmh": 8.0,
+          "rajada_kmh": 17.3,
+          "direcao_vento_graus": 220
+        },
+        {
+          "data_hora": "2026-09-06T01:00",
+          "temperatura_c": 18.0,
+          "probabilidade_chuva": 84,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 9.9,
+          "rajada_kmh": 18.0,
+          "direcao_vento_graus": 235
+        },
+        {
+          "data_hora": "2026-09-06T02:00",
+          "temperatura_c": 17.9,
+          "probabilidade_chuva": 91,
+          "precipitacao_mm": 0.4,
+          "weather_code": 51,
+          "vento_kmh": 11.5,
+          "rajada_kmh": 20.9,
+          "direcao_vento_graus": 241
+        },
+        {
+          "data_hora": "2026-09-06T03:00",
+          "temperatura_c": 17.6,
+          "probabilidade_chuva": 96,
+          "precipitacao_mm": 0.2,
+          "weather_code": 51,
+          "vento_kmh": 10.3,
+          "rajada_kmh": 24.8,
+          "direcao_vento_graus": 235
+        },
+        {
+          "data_hora": "2026-09-06T04:00",
+          "temperatura_c": 17.5,
+          "probabilidade_chuva": 99,
+          "precipitacao_mm": 0.5,
+          "weather_code": 53,
+          "vento_kmh": 12.9,
+          "rajada_kmh": 22.0,
+          "direcao_vento_graus": 240
+        },
+        {
+          "data_hora": "2026-09-06T05:00",
+          "temperatura_c": 15.8,
+          "probabilidade_chuva": 100,
+          "precipitacao_mm": 0.8,
+          "weather_code": 53,
+          "vento_kmh": 20.3,
+          "rajada_kmh": 39.6,
+          "direcao_vento_graus": 228
+        },
+        {
+          "data_hora": "2026-09-06T06:00",
+          "temperatura_c": 15.6,
+          "probabilidade_chuva": 100,
+          "precipitacao_mm": 0.6,
+          "weather_code": 53,
+          "vento_kmh": 15.3,
+          "rajada_kmh": 37.1,
+          "direcao_vento_graus": 225
+        },
+        {
+          "data_hora": "2026-09-06T07:00",
+          "temperatura_c": 15.9,
+          "probabilidade_chuva": 97,
+          "precipitacao_mm": 1.1,
+          "weather_code": 55,
+          "vento_kmh": 7.5,
+          "rajada_kmh": 28.1,
+          "direcao_vento_graus": 228
+        },
+        {
+          "data_hora": "2026-09-06T08:00",
+          "temperatura_c": 16.2,
+          "probabilidade_chuva": 92,
+          "precipitacao_mm": 0.7,
+          "weather_code": 53,
+          "vento_kmh": 4.2,
+          "rajada_kmh": 15.8,
+          "direcao_vento_graus": 220
+        },
+        {
+          "data_hora": "2026-09-06T09:00",
+          "temperatura_c": 17.4,
+          "probabilidade_chuva": 88,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 7.5,
+          "rajada_kmh": 17.3,
+          "direcao_vento_graus": 132
+        },
+        {
+          "data_hora": "2026-09-06T10:00",
+          "temperatura_c": 17.6,
+          "probabilidade_chuva": 87,
+          "precipitacao_mm": 0.0,
+          "weather_code": 3,
+          "vento_kmh": 10.9,
+          "rajada_kmh": 23.8,
+          "direcao_vento_graus": 130
+        },
+        {
+          "data_hora": "2026-09-06T11:00",
+          "temperatura_c": 18.2,
+          "probabilidade_chuva": 87,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 11.2,
+          "rajada_kmh": 25.6,
+          "direcao_vento_graus": 138
+        },
+        {
+          "data_hora": "2026-09-06T12:00",
+          "temperatura_c": 17.6,
+          "probabilidade_chuva": 86,
+          "precipitacao_mm": 0.4,
+          "weather_code": 51,
+          "vento_kmh": 13.2,
+          "rajada_kmh": 28.4,
+          "direcao_vento_graus": 154
+        },
+        {
+          "data_hora": "2026-09-06T13:00",
+          "temperatura_c": 17.4,
+          "probabilidade_chuva": 84,
+          "precipitacao_mm": 0.2,
+          "weather_code": 51,
+          "vento_kmh": 12.9,
+          "rajada_kmh": 29.2,
+          "direcao_vento_graus": 162
+        },
+        {
+          "data_hora": "2026-09-06T14:00",
+          "temperatura_c": 17.0,
+          "probabilidade_chuva": 80,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 13.7,
+          "rajada_kmh": 30.6,
+          "direcao_vento_graus": 169
+        },
+        {
+          "data_hora": "2026-09-06T15:00",
+          "temperatura_c": 16.1,
+          "probabilidade_chuva": 76,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 13.1,
+          "rajada_kmh": 30.6,
+          "direcao_vento_graus": 162
+        },
+        {
+          "data_hora": "2026-09-06T16:00",
+          "temperatura_c": 15.9,
+          "probabilidade_chuva": 70,
+          "precipitacao_mm": 0.0,
+          "weather_code": 3,
+          "vento_kmh": 11.5,
+          "rajada_kmh": 28.8,
+          "direcao_vento_graus": 146
+        },
+        {
+          "data_hora": "2026-09-06T17:00",
+          "temperatura_c": 15.5,
+          "probabilidade_chuva": 62,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 11.1,
+          "rajada_kmh": 25.2,
+          "direcao_vento_graus": 140
+        },
+        {
+          "data_hora": "2026-09-06T18:00",
+          "temperatura_c": 14.8,
+          "probabilidade_chuva": 59,
+          "precipitacao_mm": 0.2,
+          "weather_code": 51,
+          "vento_kmh": 10.5,
+          "rajada_kmh": 22.7,
+          "direcao_vento_graus": 127
+        },
+        {
+          "data_hora": "2026-09-06T19:00",
+          "temperatura_c": 14.1,
+          "probabilidade_chuva": 64,
+          "precipitacao_mm": 0.4,
+          "weather_code": 51,
+          "vento_kmh": 9.7,
+          "rajada_kmh": 21.2,
+          "direcao_vento_graus": 117
+        },
+        {
+          "data_hora": "2026-09-06T20:00",
+          "temperatura_c": 14.0,
+          "probabilidade_chuva": 72,
+          "precipitacao_mm": 0.2,
+          "weather_code": 51,
+          "vento_kmh": 8.3,
+          "rajada_kmh": 17.6,
+          "direcao_vento_graus": 123
+        },
+        {
+          "data_hora": "2026-09-06T21:00",
+          "temperatura_c": 14.0,
+          "probabilidade_chuva": 78,
+          "precipitacao_mm": 0.3,
+          "weather_code": 51,
+          "vento_kmh": 8.4,
+          "rajada_kmh": 15.1,
+          "direcao_vento_graus": 127
+        },
+        {
+          "data_hora": "2026-09-06T22:00",
+          "temperatura_c": 13.9,
+          "probabilidade_chuva": 78,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 8.8,
+          "rajada_kmh": 15.5,
+          "direcao_vento_graus": 133
+        },
+        {
+          "data_hora": "2026-09-06T23:00",
+          "temperatura_c": 13.6,
+          "probabilidade_chuva": 75,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 9.2,
+          "rajada_kmh": 16.6,
+          "direcao_vento_graus": 121
+        },
+        {
+          "data_hora": "2026-09-07T00:00",
+          "temperatura_c": 13.4,
+          "probabilidade_chuva": 71,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 8.3,
+          "rajada_kmh": 16.6,
+          "direcao_vento_graus": 117
+        },
+        {
+          "data_hora": "2026-09-07T01:00",
+          "temperatura_c": 13.3,
+          "probabilidade_chuva": 65,
+          "precipitacao_mm": 0.2,
+          "weather_code": 51,
+          "vento_kmh": 8.6,
+          "rajada_kmh": 15.5,
+          "direcao_vento_graus": 120
+        },
+        {
+          "data_hora": "2026-09-07T02:00",
+          "temperatura_c": 13.0,
+          "probabilidade_chuva": 58,
+          "precipitacao_mm": 0.1,
+          "weather_code": 51,
+          "vento_kmh": 8.0,
+          "rajada_kmh": 15.5,
+          "direcao_vento_graus": 128
+        },
+        {
+          "data_hora": "2026-09-07T03:00",
+          "temperatura_c": 12.8,
+          "probabilidade_chuva": 53,
+          "precipitacao_mm": 0.4,
+          "weather_code": 51,
+          "vento_kmh": 7.6,
+          "rajada_kmh": 14.0,
+          "direcao_vento_graus": 126
+        },
+        {
+          "data_hora": "2026-09-07T04:00",
+          "temperatura_c": 12.7,
+          "probabilidade_chuva": 52,
+          "precipitacao_mm": 0.4,
+          "weather_code": 51,
+          "vento_kmh": 6.0,
+          "rajada_kmh": 12.6,
+          "direcao_vento_graus": 127
+        },
+        {
+          "data_hora": "2026-09-07T05:00",
+          "temperatura_c": 12.5,
+          "probabilidade_chuva": 52,
+          "precipitacao_mm": 0.3,
+          "weather_code": 51,
+          "vento_kmh": 6.1,
+          "rajada_kmh": 10.8,
+          "direcao_vento_graus": 135
+        },
+        {
+          "data_hora": "2026-09-07T06:00",
+          "temperatura_c": 12.4,
+          "probabilidade_chuva": 49,
+          "precipitacao_mm": 0.2,
+          "weather_code": 51,
+          "vento_kmh": 5.0,
+          "rajada_kmh": 10.8,
+          "direcao_vento_graus": 125
+        },
+        {
+          "data_hora": "2026-09-07T07:00",
+          "temperatura_c": 12.5,
+          "probabilidade_chuva": 40,
+          "precipitacao_mm": 0.0,
+          "weather_code": 3,
+          "vento_kmh": 4.0,
+          "rajada_kmh": 9.0,
+          "direcao_vento_graus": 87
+        },
+        {
+          "data_hora": "2026-09-07T08:00",
+          "temperatura_c": 13.0,
+          "probabilidade_chuva": 29,
+          "precipitacao_mm": 0.0,
+          "weather_code": 3,
+          "vento_kmh": 4.3,
+          "rajada_kmh": 10.8,
+          "direcao_vento_graus": 85
+        },
+        {
+          "data_hora": "2026-09-07T09:00",
+          "temperatura_c": 13.6,
+          "probabilidade_chuva": 20,
+          "precipitacao_mm": 0.0,
+          "weather_code": 3,
+          "vento_kmh": 6.6,
+          "rajada_kmh": 14.8,
+          "direcao_vento_graus": 103
+        }
+      ]
+    },
+    {
       "regiao": "Ribeirão Preto",
       "latitude": -21.1775,
       "longitude": -47.8103,
       "atual": {
-        "time": "2026-09-04T10:00",
+        "time": "2026-09-04T10:30",
         "interval": 900,
-        "temperature_2m": 27.2,
+        "temperature_2m": 28.4,
         "weather_code": 0,
-        "wind_speed_10m": 7.2,
-        "wind_gusts_10m": 19.4,
-        "wind_direction_10m": 338
+        "wind_speed_10m": 9.9,
+        "wind_gusts_10m": 24.8,
+        "wind_direction_10m": 333
       },
       "janelas": {
         "6h": {
@@ -2345,13 +3123,13 @@
       "latitude": -20.8113,
       "longitude": -49.3758,
       "atual": {
-        "time": "2026-09-04T10:00",
+        "time": "2026-09-04T10:30",
         "interval": 900,
-        "temperature_2m": 28.0,
+        "temperature_2m": 29.7,
         "weather_code": 0,
-        "wind_speed_10m": 10.2,
-        "wind_gusts_10m": 25.9,
-        "wind_direction_10m": 28
+        "wind_speed_10m": 11.4,
+        "wind_gusts_10m": 28.8,
+        "wind_direction_10m": 21
       },
       "janelas": {
         "6h": {
@@ -3123,13 +3901,13 @@
       "latitude": -22.3145,
       "longitude": -49.0587,
       "atual": {
-        "time": "2026-09-04T10:00",
+        "time": "2026-09-04T10:30",
         "interval": 900,
-        "temperature_2m": 24.9,
+        "temperature_2m": 26.0,
         "weather_code": 2,
-        "wind_speed_10m": 7.5,
-        "wind_gusts_10m": 21.2,
-        "wind_direction_10m": 33
+        "wind_speed_10m": 8.2,
+        "wind_gusts_10m": 23.0,
+        "wind_direction_10m": 22
       },
       "janelas": {
         "6h": {
@@ -3901,13 +4679,13 @@
       "latitude": -22.1207,
       "longitude": -51.3925,
       "atual": {
-        "time": "2026-09-04T10:00",
+        "time": "2026-09-04T10:30",
         "interval": 900,
-        "temperature_2m": 28.3,
+        "temperature_2m": 29.6,
         "weather_code": 0,
-        "wind_speed_10m": 10.7,
-        "wind_gusts_10m": 27.7,
-        "wind_direction_10m": 27
+        "wind_speed_10m": 11.5,
+        "wind_gusts_10m": 29.9,
+        "wind_direction_10m": 17
       },
       "janelas": {
         "6h": {
@@ -4679,13 +5457,13 @@
       "latitude": -21.2089,
       "longitude": -50.4328,
       "atual": {
-        "time": "2026-09-04T10:00",
+        "time": "2026-09-04T10:30",
         "interval": 900,
-        "temperature_2m": 27.0,
+        "temperature_2m": 28.6,
         "weather_code": 0,
-        "wind_speed_10m": 6.6,
-        "wind_gusts_10m": 20.5,
-        "wind_direction_10m": 41
+        "wind_speed_10m": 6.8,
+        "wind_gusts_10m": 21.2,
+        "wind_direction_10m": 29
       },
       "janelas": {
         "6h": {
@@ -5457,13 +6235,13 @@
       "latitude": -23.62,
       "longitude": -45.413,
       "atual": {
-        "time": "2026-09-04T10:00",
+        "time": "2026-09-04T10:30",
         "interval": 900,
-        "temperature_2m": 29.4,
+        "temperature_2m": 30.4,
         "weather_code": 0,
-        "wind_speed_10m": 6.9,
-        "wind_gusts_10m": 24.1,
-        "wind_direction_10m": 329
+        "wind_speed_10m": 7.2,
+        "wind_gusts_10m": 24.8,
+        "wind_direction_10m": 333
       },
       "janelas": {
         "6h": {
@@ -6235,13 +7013,13 @@
       "latitude": -23.5325,
       "longitude": -46.7917,
       "atual": {
-        "time": "2026-09-04T10:00",
+        "time": "2026-09-04T10:30",
         "interval": 900,
-        "temperature_2m": 23.2,
+        "temperature_2m": 24.0,
         "weather_code": 1,
-        "wind_speed_10m": 7.0,
-        "wind_gusts_10m": 19.8,
-        "wind_direction_10m": 314
+        "wind_speed_10m": 7.7,
+        "wind_gusts_10m": 21.2,
+        "wind_direction_10m": 319
       },
       "janelas": {
         "6h": {
@@ -7013,13 +7791,13 @@
       "latitude": -23.1857,
       "longitude": -46.8978,
       "atual": {
-        "time": "2026-09-04T10:00",
+        "time": "2026-09-04T10:30",
         "interval": 900,
-        "temperature_2m": 23.9,
+        "temperature_2m": 24.8,
         "weather_code": 0,
-        "wind_speed_10m": 7.0,
-        "wind_gusts_10m": 19.8,
-        "wind_direction_10m": 334
+        "wind_speed_10m": 8.7,
+        "wind_gusts_10m": 23.4,
+        "wind_direction_10m": 333
       },
       "janelas": {
         "6h": {
@@ -7787,10 +8565,5 @@
       ]
     }
   ],
-  "erros": [
-    {
-      "regiao": "São José dos Campos",
-      "erro": "HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=20)"
-    }
-  ]
+  "erros": []
 }
