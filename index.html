@@ -17,7 +17,7 @@
     </div>
     <div class="status"><span class="dot"></span><span id="statusText">Carregando Backbone…</span></div>
   </header>
-  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button></nav>
+  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabRibeirao" class="view-tab" type="button"><span class="tab-icon">🏙️</span><span class="tab-long">Ribeirão Fire</span><span class="tab-short">Ribeirão</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button></nav>
   <section id="importantEventStrip" class="important-event-strip" aria-label="Eventos meteorológicos importantes" aria-live="assertive" hidden>
     <div class="important-event-label"><span>🚨 EVENTO IMPORTANTE</span><strong id="importantEventLevel">URGENTE</strong></div>
     <div class="important-event-viewport"><div id="importantEventTrack" class="important-event-track"></div></div>
@@ -82,6 +82,14 @@
         <div class="layer active fire-layer"><label class="layer-toggle"><input type="checkbox" id="fireToggle" checked><span>🔥 Fire Core</span></label><b id="fireCount">carregando</b></div>
         <div class="layer active defesa-layer"><label class="layer-toggle"><input type="checkbox" id="defesaToggle" checked><span>🚨 Defesa Civil</span></label><b id="defesaCount">carregando</b></div>
         <div class="layer sites-layer"><label class="layer-toggle"><input type="checkbox" id="sitesToggle"><span>📡 Sites</span></label><b id="sitesCount">carregando</b></div>
+      </section>
+      <section class="panel fire-focus-panel ribeirao-only-panel" hidden>
+        <div class="panel-title">🏙️ Ribeirão Preto • Fire + Backbone</div>
+        <div class="fire-focus-kpis ribeirao-kpis"><div><strong id="ribeiraoRoutes">—</strong><span>rotas na cidade</span></div><div><strong id="ribeiraoActive">—</strong><span>Fire ativo</span></div></div>
+        <div id="ribeiraoNearest" class="fire-focus-nearest">Consolidando Ribeirão Preto…</div>
+        <div class="fire-history-kpis"><div><strong id="ribeiraoHistory30">—</strong><span>eventos em 30 dias</span></div><div><strong id="ribeiraoHistoryTotal">—</strong><span>histórico total</span></div></div>
+        <div class="fire-history-title">🕘 Histórico de Ribeirão Preto</div><div id="ribeiraoHistoryList" class="fire-history-list">Carregando histórico…</div>
+        <small>Recorte pela geometria oficial do município: entram rotas que atravessam Ribeirão Preto e eventos Fire localizados dentro do limite municipal.</small>
       </section>
       <section class="panel fire-focus-panel fire-only-panel" id="fireFocusPanel" hidden>
         <div class="panel-title">🔥 Fire Core • visão limpa</div>
