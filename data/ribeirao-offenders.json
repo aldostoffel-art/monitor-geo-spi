@@ -1,0 +1,84 @@
+{
+  "gerado_em": "2026-09-04T15:44:09.229402+00:00",
+  "ambiente": "DEV",
+  "municipio": "RIBEIRAO PRETO",
+  "energia": {
+    "inicio_historico": "10/08/2026",
+    "criterio": "OS únicas por área publicada pelo Energy Core",
+    "ranking": [
+      {
+        "area": "Bungavile",
+        "eventos_energia": 4
+      },
+      {
+        "area": "Jd Olhos Dagua",
+        "eventos_energia": 4
+      },
+      {
+        "area": "Olhos Dagua I",
+        "eventos_energia": 4
+      },
+      {
+        "area": "Bonfim Paulista",
+        "eventos_energia": 2
+      },
+      {
+        "area": "C 120 A Lin Faz Abaete",
+        "eventos_energia": 2
+      },
+      {
+        "area": "Ribeirao Preto",
+        "eventos_energia": 2
+      },
+      {
+        "area": "At Da Boa Vista",
+        "eventos_energia": 1
+      },
+      {
+        "area": "Bela Vista",
+        "eventos_energia": 1
+      },
+      {
+        "area": "Borda Da Mata",
+        "eventos_energia": 1
+      },
+      {
+        "area": "Borda Do Parque",
+        "eventos_energia": 1
+      }
+    ]
+  },
+  "fire": {
+    "criterio": "eventos Fire no recorte municipal; bairro somente quando confirmado",
+    "ranking": [
+      {
+        "localidade": "Residencial Liliana Tenuto Rossi",
+        "eventos_fire": 1,
+        "observacao": "bairro/localidade confirmada por geocodificação OSM"
+      },
+      {
+        "localidade": "Sem bairro confirmado",
+        "eventos_fire": 1,
+        "observacao": "ponto próximo ao limite sul municipal; não atribuído a bairro sem confirmação"
+      }
+    ]
+  },
+  "arvores": {
+    "fonte": "Prefeitura Municipal de Ribeirão Preto",
+    "evento_referencia": "Temporal de 24/07/2026",
+    "total_cidade_aproximado": 2000,
+    "pontos_identificados": [
+      {
+        "localidade": "Parque Maurílio Biagi",
+        "quedas": 63,
+        "qualificador": "mais de 63/ao menos 63 conforme balanço oficial de 17/08/2026"
+      },
+      {
+        "localidade": "Bosque/Zoo Dr. Fábio Barreto",
+        "quedas": 50,
+        "qualificador": "mais de 50 nas áreas de passeio conforme balanço oficial de 18/08/2026"
+      }
+    ],
+    "observacao": "A fonte pública localizada não fornece histórico completo de quedas por bairro; portanto não é apresentado ranking municipal por bairro sem evidência."
+  }
+}
