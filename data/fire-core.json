@@ -1,8 +1,105 @@
 {
-  "gerado_em": "2026-09-05T01:51:57.011937+00:00",
+  "gerado_em": "2026-09-05T02:03:24.621457+00:00",
   "ambiente": "DEV",
   "fonte": "FIRE CORE SPI",
-  "quantidade_eventos_fire_ativos": 1,
-  "quantidade_eventos_geo_elegiveis": 0,
-  "eventos_ativos": []
+  "quantidade_eventos_fire_ativos": 10,
+  "quantidade_eventos_geo_elegiveis": 3,
+  "eventos_ativos": [
+    {
+      "id_evento": "FIRE-20260904-066",
+      "status": "ATIVO",
+      "latitude": -20.338301,
+      "longitude": -47.606499,
+      "municipio": "Jeriquara",
+      "classificacao": "URGENTE",
+      "ultima_deteccao": "2026-09-05T00:31:00+00:00",
+      "satelite": "METOP-C, TERRA_M-T",
+      "deteccoes": 4,
+      "backbone": "JRQ.MJ-PGL.PG",
+      "id_backbone": "BB-B53800681323",
+      "cabo": "F-0272",
+      "ponta_a": {
+        "codigo": "JRQ.MJ",
+        "municipio": "JERIQUARA",
+        "latitude": -20.3099,
+        "longitude": -47.587
+      },
+      "ponta_b": {
+        "codigo": "PGL.PG",
+        "municipio": "PEDREGULHO",
+        "latitude": -20.2537,
+        "longitude": -47.4782
+      },
+      "distancia_backbone_km": 3.798,
+      "confianca_rota": "ALTA",
+      "ponto_mais_proximo": {
+        "latitude": -20.309882,
+        "longitude": -47.587136
+      }
+    },
+    {
+      "id_evento": "FIRE-20260904-067",
+      "status": "ATIVO",
+      "latitude": -20.174101,
+      "longitude": -47.394798,
+      "municipio": "Pedregulho",
+      "classificacao": "MONITORAMENTO",
+      "ultima_deteccao": "2026-09-05T00:31:00+00:00",
+      "satelite": "METOP-C, TERRA_M-T",
+      "deteccoes": 2,
+      "backbone": "CVT.FM-PGL.PG",
+      "id_backbone": "BB-C87E5E4EF11B",
+      "cabo": "F-0413",
+      "ponta_a": {
+        "codigo": "CVT.FM",
+        "municipio": "CRISTAIS PAULISTA",
+        "latitude": -20.4067,
+        "longitude": -47.4178
+      },
+      "ponta_b": {
+        "codigo": "PGL.PG",
+        "municipio": "PEDREGULHO",
+        "latitude": -20.2537,
+        "longitude": -47.4782
+      },
+      "distancia_backbone_km": 12.164,
+      "confianca_rota": "ALTA",
+      "ponto_mais_proximo": {
+        "latitude": -20.260639,
+        "longitude": -47.466557
+      }
+    },
+    {
+      "id_evento": "FIRE-20260905-002",
+      "status": "ATIVO",
+      "latitude": -20.7369,
+      "longitude": -47.145901,
+      "municipio": "Itirapuã",
+      "classificacao": "MONITORAMENTO",
+      "ultima_deteccao": "2026-09-05T00:31:00+00:00",
+      "satelite": "METOP-C",
+      "deteccoes": 2,
+      "backbone": "IYR.DR-PCP.PP",
+      "id_backbone": "BB-20718F97B5D9",
+      "cabo": "F-0270",
+      "ponta_a": {
+        "codigo": "IYR.DR",
+        "municipio": "ITIRAPUA",
+        "latitude": -20.6395,
+        "longitude": -47.2178
+      },
+      "ponta_b": {
+        "codigo": "PCP.PP",
+        "municipio": "PATROCINIO PAULISTA",
+        "latitude": -20.64,
+        "longitude": -47.2795
+      },
+      "distancia_backbone_km": 12.332,
+      "confianca_rota": "ALTA",
+      "ponto_mais_proximo": {
+        "latitude": -20.652512,
+        "longitude": -47.226287
+      }
+    }
+  ]
 }
