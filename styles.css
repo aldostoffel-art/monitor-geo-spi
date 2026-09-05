@@ -623,3 +623,9 @@ body.trajectory-map-mode .trajectory-weather-envelope,body.trajectory-map-mode .
 .nv-rank-legend{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 4px}.nv-rank-legend span{display:flex;align-items:center;gap:5px;font-size:9px;font-weight:900;color:#b9d1df}.nv-rank-legend i{width:9px;height:9px;border-radius:50%;box-shadow:0 0 0 2px rgba(255,255,255,.08)}.nv-alert-ranked{border-left-color:var(--rank)!important;background:linear-gradient(90deg,var(--rank-bg),#102b42 38%)}.nv-alert-top{display:flex;align-items:center;justify-content:space-between;gap:8px}.nv-alert-top em{font-style:normal;font-size:9px;font-weight:900;color:#fff;background:var(--rank);border-radius:5px;padding:3px 6px;white-space:nowrap}@media(max-width:800px){.nv-rank-legend{gap:6px}.nv-rank-legend span{font-size:8px}.nv-alert-top{align-items:flex-start}}
 /* TREE PANEL COMMAND INTEGRATION DEV 20260905 */
 .nv-tree-summary{display:flex;align-items:baseline;gap:8px;margin-top:8px;color:#bde4ca}.nv-tree-summary b{font-size:25px;color:#fff}.nv-tree-summary span{font-size:10px}.nv-tree-high{border-left-color:#f06a1a!important}.nv-tree-empty{margin-top:9px;padding:10px;background:#0d2b25;border-radius:8px;color:#bde4ca;font-size:11px}
+
+/* FIRST MODEL + TWO EXTRA BOXES DEV */
+.nv-extra-kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:0 0 10px;max-width:50%}
+.nv-extra-kpi{min-height:64px}
+.nv-extra-kpi small{display:block;margin-top:4px;font-size:9px;color:#91b4c8;line-height:1.25}
+@media(max-width:800px){.nv-extra-kpis{max-width:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.nv-extra-kpi strong{font-size:24px}.nv-extra-kpi span{font-size:9px}.nv-extra-kpi small{font-size:8px}}
