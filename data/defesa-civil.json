@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-06T14:30:13-03:00",
-  "fonte_coletada_em": "2026-09-06T17:30:04Z",
+  "gerado_em": "2026-09-06T14:35:11-03:00",
+  "fonte_coletada_em": "2026-09-06T17:35:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 39,
-  "alertas_ativos": 5,
+  "entradas_feed": 42,
+  "alertas_ativos": 8,
   "eventos_geo": [
     {
       "id_alerta": "189214/2026",
@@ -102,13 +102,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T17:20:00+00:00",
+        "ultimo_eco_em": "2026-09-06T17:30:00+00:00",
         "intensidade_estimada_mmh": 0.4,
         "faixa_estimada_mmh": [
           0.36,
-          1.0
+          1.15
         ],
-        "dbz_medio": 16.6,
+        "dbz_medio": 16.7,
         "pico_em": "2026-09-06T16:50:00+00:00",
         "pico_estimado_mmh": 0.82,
         "pico_dbz_medio": 21.7,
@@ -176,13 +176,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T17:10:00+00:00",
-        "intensidade_estimada_mmh": 2.93,
+        "ultimo_eco_em": "2026-09-06T17:30:00+00:00",
+        "intensidade_estimada_mmh": 0.44,
         "faixa_estimada_mmh": [
-          3.65,
-          15.38
+          0.36,
+          1.15
         ],
-        "dbz_medio": 30.5,
+        "dbz_medio": 17.3,
         "pico_em": "2026-09-06T17:10:00+00:00",
         "pico_estimado_mmh": 2.93,
         "pico_dbz_medio": 30.5,
@@ -218,16 +218,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T17:20:00+00:00",
-        "intensidade_estimada_mmh": 0.9,
+        "ultimo_eco_em": "2026-09-06T17:30:00+00:00",
+        "intensidade_estimada_mmh": 1.62,
         "faixa_estimada_mmh": [
-          1.0,
-          2.05
+          2.05,
+          3.16
         ],
-        "dbz_medio": 22.2,
-        "pico_em": "2026-09-06T17:20:00+00:00",
-        "pico_estimado_mmh": 0.9,
-        "pico_dbz_medio": 22.2,
+        "dbz_medio": 26.4,
+        "pico_em": "2026-09-06T17:30:00+00:00",
+        "pico_estimado_mmh": 1.62,
+        "pico_dbz_medio": 26.4,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -256,11 +256,21 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
+        "status": "ECO_DETECTADO",
         "fonte": "RainViewer",
-        "metodo": "Radar composto",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+        "ultimo_eco_em": "2026-09-06T17:30:00+00:00",
+        "intensidade_estimada_mmh": 0.36,
+        "faixa_estimada_mmh": [
+          0.36,
+          0.36
+        ],
+        "dbz_medio": 16.0,
+        "pico_em": "2026-09-06T17:30:00+00:00",
+        "pico_estimado_mmh": 0.36,
+        "pico_dbz_medio": 16.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
     {
@@ -292,16 +302,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T17:20:00+00:00",
-        "intensidade_estimada_mmh": 0.57,
+        "ultimo_eco_em": "2026-09-06T17:30:00+00:00",
+        "intensidade_estimada_mmh": 1.42,
         "faixa_estimada_mmh": [
-          0.56,
-          1.15
+          1.15,
+          3.16
         ],
-        "dbz_medio": 19.1,
-        "pico_em": "2026-09-06T17:10:00+00:00",
-        "pico_estimado_mmh": 1.15,
-        "pico_dbz_medio": 24.0,
+        "dbz_medio": 25.4,
+        "pico_em": "2026-09-06T17:30:00+00:00",
+        "pico_estimado_mmh": 1.42,
+        "pico_dbz_medio": 25.4,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -367,6 +377,280 @@
         "metodo": "Radar composto",
         "janela_min": 120,
         "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189249/2026",
+      "municipio": "Bocaina",
+      "latitude": -22.141342,
+      "longitude": -48.515871,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Bocaina, Jau e Dois Corregos. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "resumo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Bocaina, Jau e Dois Corregos. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "descricao": "14:30 - Chuva se espalhando pela região de Bocaina, Jaú e Dois Córregos. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T14:30:50-03:00",
+      "fim": "2026-09-06T18:15:00-03:00",
+      "vigencia": "2026-09-06T14:30:50-03:00 → 2026-09-06T18:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 2,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-06T17:30:00+00:00",
+        "intensidade_estimada_mmh": 0.4,
+        "faixa_estimada_mmh": [
+          0.36,
+          1.0
+        ],
+        "dbz_medio": 16.7,
+        "pico_em": "2026-09-06T17:20:00+00:00",
+        "pico_estimado_mmh": 0.44,
+        "pico_dbz_medio": 17.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189249/2026",
+      "municipio": "Dois Córregos",
+      "latitude": -22.371637,
+      "longitude": -48.382721,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Bocaina, Jau e Dois Corregos. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "resumo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Bocaina, Jau e Dois Corregos. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "descricao": "14:30 - Chuva se espalhando pela região de Bocaina, Jaú e Dois Córregos. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T14:30:50-03:00",
+      "fim": "2026-09-06T18:15:00-03:00",
+      "vigencia": "2026-09-06T14:30:50-03:00 → 2026-09-06T18:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 4,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189249/2026",
+      "municipio": "Jaú",
+      "latitude": -22.288392,
+      "longitude": -48.554119,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Bocaina, Jau e Dois Corregos. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "resumo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Bocaina, Jau e Dois Corregos. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "descricao": "14:30 - Chuva se espalhando pela região de Bocaina, Jaú e Dois Córregos. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T14:30:50-03:00",
+      "fim": "2026-09-06T18:15:00-03:00",
+      "vigencia": "2026-09-06T14:30:50-03:00 → 2026-09-06T18:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 19,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-06T17:30:00+00:00",
+        "intensidade_estimada_mmh": 0.95,
+        "faixa_estimada_mmh": [
+          1.0,
+          2.05
+        ],
+        "dbz_medio": 22.6,
+        "pico_em": "2026-09-06T17:20:00+00:00",
+        "pico_estimado_mmh": 1.01,
+        "pico_dbz_medio": 23.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189250/2026",
+      "municipio": "Bocaina",
+      "latitude": -22.141342,
+      "longitude": -48.515871,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Bocaina, Jau e Dois Corregos. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "resumo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Bocaina, Jau e Dois Corregos. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "descricao": "14:30 - Chuva se espalhando pela região de Bocaina, Jaú e Dois Córregos. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T14:31:37-03:00",
+      "fim": "2026-09-06T18:15:00-03:00",
+      "vigencia": "2026-09-06T14:31:37-03:00 → 2026-09-06T18:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 2,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-06T17:30:00+00:00",
+        "intensidade_estimada_mmh": 0.4,
+        "faixa_estimada_mmh": [
+          0.36,
+          1.0
+        ],
+        "dbz_medio": 16.7,
+        "pico_em": "2026-09-06T17:20:00+00:00",
+        "pico_estimado_mmh": 0.44,
+        "pico_dbz_medio": 17.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189250/2026",
+      "municipio": "Dois Córregos",
+      "latitude": -22.371637,
+      "longitude": -48.382721,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Bocaina, Jau e Dois Corregos. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "resumo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Bocaina, Jau e Dois Corregos. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "descricao": "14:30 - Chuva se espalhando pela região de Bocaina, Jaú e Dois Córregos. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T14:31:37-03:00",
+      "fim": "2026-09-06T18:15:00-03:00",
+      "vigencia": "2026-09-06T14:31:37-03:00 → 2026-09-06T18:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 4,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189250/2026",
+      "municipio": "Jaú",
+      "latitude": -22.288392,
+      "longitude": -48.554119,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Bocaina, Jau e Dois Corregos. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "resumo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Bocaina, Jau e Dois Corregos. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "descricao": "14:30 - Chuva se espalhando pela região de Bocaina, Jaú e Dois Córregos. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T14:31:37-03:00",
+      "fim": "2026-09-06T18:15:00-03:00",
+      "vigencia": "2026-09-06T14:31:37-03:00 → 2026-09-06T18:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 19,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-06T17:30:00+00:00",
+        "intensidade_estimada_mmh": 0.95,
+        "faixa_estimada_mmh": [
+          1.0,
+          2.05
+        ],
+        "dbz_medio": 22.6,
+        "pico_em": "2026-09-06T17:20:00+00:00",
+        "pico_estimado_mmh": 1.01,
+        "pico_dbz_medio": 23.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189251/2026",
+      "municipio": "Piracicaba",
+      "latitude": -22.724979,
+      "longitude": -47.649197,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Piracicaba. Tem vento e condicao para raios. Atinge municipios vizinhos. Tenha cuidado!",
+      "resumo": "Defesa Civil:14:30 - Chuva se espalhando pela regiao de Piracicaba. Tem vento e condicao para raios. Atinge municipios vizinhos. Tenha cuidado!",
+      "descricao": "14:30 - Chuva se espalhando pela região de Piracicaba. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T14:32:59-03:00",
+      "fim": "2026-09-06T19:35:00-03:00",
+      "vigencia": "2026-09-06T14:32:59-03:00 → 2026-09-06T19:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 60,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-06T17:30:00+00:00",
+        "intensidade_estimada_mmh": 0.67,
+        "faixa_estimada_mmh": [
+          0.49,
+          2.05
+        ],
+        "dbz_medio": 20.2,
+        "pico_em": "2026-09-06T17:20:00+00:00",
+        "pico_estimado_mmh": 1.0,
+        "pico_dbz_medio": 23.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
   ],
@@ -460,9 +744,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-06T17:30:14.921821+00:00",
+    "gerado_em": "2026-09-06T17:35:13.318063+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 4,
+    "eventos_com_eco": 8,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
