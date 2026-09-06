@@ -223,6 +223,7 @@ function renderCommandView(){const root=document.getElementById('commandView');i
 
 let commandNewVisionMap=null;
 let nvCommandMapFilter='real';
+let nvMapRenderSeq=0;
 let nvTreeRiskData=[];
 async function nvLoadTreeRisk(){try{const r=await fetch('./data/tree-risk-dev.json?ts='+Date.now(),{cache:'no-store'});if(r.ok){const o=await r.json();nvTreeRiskData=Array.isArray(o.municipios)?o.municipios:[]}}catch(_){nvTreeRiskData=[]}}
 function nvTreeRiskMap(){const m=new Map();for(const x of nvTreeRiskData||[])m.set(norm(x.municipio),x);return m}
@@ -273,6 +274,14 @@ function nvInmetCitySet(inmetActive){
   if(Array.isArray(e?.cidades))vals.push(...e.cidades);
   for(const v of vals){const k=norm(v);if(k&&nvCityInSpiScope(v))out.add(k)}
  }
+ // Avisos INMET muito amplos (estado/região) não devem pintar o SPI inteiro.
+ // Nesses casos, o mapa mostra somente municípios com sinal meteorológico local atual.
+ if(out.size>80){
+  const local=new Set();
+  for(const w of(weatherEvents||[]))if(w?.ameaca_ativa!==false&&nvCityInSpiScope(w?.municipio))local.add(norm(w.municipio));
+  for(const o of commandObservedAll())if(nvCityInSpiScope(o?.municipio))local.add(norm(o.municipio));
+  return new Set([...out].filter(k=>local.has(k)))
+ }
  return out
 }
 function nvTreeCityRankMap(){
@@ -306,19 +315,26 @@ function nvBindMapKpiFilters(realRanks,inmetActive){
 }
 async function nvRenderRealMap(cityRanks,inmetActive=[],filter=nvCommandMapFilter){
  const el=document.getElementById('nvRealMap');if(!el||typeof L==='undefined')return;
+ const seq=++nvMapRenderSeq;
  try{
-  await wlLoadMunicipios();if(!document.getElementById('nvRealMap'))return;
+  await wlLoadMunicipios();
+  if(seq!==nvMapRenderSeq||!document.getElementById('nvRealMap')||document.getElementById('nvRealMap')!==el)return;
   if(commandNewVisionMap){try{commandNewVisionMap.remove()}catch(_){ }commandNewVisionMap=null}
+  if(seq!==nvMapRenderSeq||!el.isConnected)return;
   const ranks=nvMapFilterRanks(filter,cityRanks||new Map(),inmetActive);
-  const m=L.map(el,{zoomControl:false,attributionControl:false,scrollWheelZoom:false,dragging:true,doubleClickZoom:false,boxZoom:false,keyboard:false,tap:false});commandNewVisionMap=m;
+  const m=L.map(el,{preferCanvas:true,zoomControl:false,attributionControl:false,scrollWheelZoom:false,dragging:true,doubleClickZoom:false,boxZoom:false,keyboard:false,tap:false});commandNewVisionMap=m;
   const layer=L.geoJSON(weatherLabMunicipios,{style:f=>{const name=norm(f?.properties?.municipio||''),r=ranks.get(name);return {color:r?r.color:'#46677a',weight:r?1.8:.45,fillColor:r?r.color:'#18394a',fillOpacity:r?.score>=4?.92:r?.score===3?.82:r?.score===2?.72:r?.score===1?.62:.18}},onEachFeature:(f,l)=>{const n=f?.properties?.municipio||'',r=ranks.get(norm(n));if(r)l.bindTooltip(n+' • '+r.label+(r.sources?.length?' • '+r.sources.join(' + '):''),{sticky:true})}}).addTo(m);
   const pointBounds=[];
   if(filter==='sites'||filter==='sites4'){
+   const renderer=L.canvas({padding:.5});
+   let nsite=0;
    for(const x of(siteEvents||[])){
+    const d=String(x.ddd??'');
+    if(d==='13'||(d==='11'&&x.escopo_spi_ddd11!==true)||(!['11','12','14','15','16','17','18','19'].includes(d)))continue;
     if(filter==='sites4'&&!siteIsCritical(x))continue;
-    if(String(x.ddd??'')==='11'&&x.escopo_spi_ddd11!==true)continue;
     const lat=Number(x.latitude),lon=Number(x.longitude);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;
-    L.circleMarker([lat,lon],{radius:filter==='sites4'?4.2:2.6,color:filter==='sites4'?'#ffce4b':'#65b9e8',weight:1,fillOpacity:.78}).bindTooltip(`${x.site||x.sigla||x.nome||'Site'}${x.municipio?' • '+x.municipio:''}${filter==='sites4'?' • ≤4h':''}`,{sticky:true}).addTo(m);pointBounds.push([lat,lon]);
+    L.circleMarker([lat,lon],{renderer,radius:filter==='sites4'?4.2:2.4,color:filter==='sites4'?'#ffce4b':'#65b9e8',weight:1,fillOpacity:.78}).bindTooltip(`${x.site||x.sigla||x.nome||'Site'}${x.municipio?' • '+x.municipio:''}${filter==='sites4'?' • ≤4h':''}`,{sticky:true}).addTo(m);pointBounds.push([lat,lon]);
+    if((++nsite%500)===0&&seq!==nvMapRenderSeq)return;
    }
   }else if(filter==='fire'){
    for(const x of(fireEvents||[])){const lat=Number(x.latitude),lon=Number(x.longitude);if(!Number.isFinite(lat)||!Number.isFinite(lon))continue;L.circleMarker([lat,lon],{radius:6,color:'#ff7043',weight:2,fillColor:'#ff3d00',fillOpacity:.9}).bindTooltip(`🔥 ${x.municipio||'Queimada'}${Number.isFinite(Number(x.distancia_backbone_km??x.distancia_km))?' • '+Number(x.distancia_backbone_km??x.distancia_km).toFixed(1)+' km do Backbone':''}`,{sticky:true}).addTo(m);pointBounds.push([lat,lon])}
@@ -389,7 +405,7 @@ async function renderCommandViewNewVision(){const root=document.getElementById('
 function renderCommandView(){return renderCommandViewNewVision()}
 function showCommandTab(){leaveRibeiraoMode();leaveTrajectoryMode();leaveMobileMode();leaveFireMode();document.body.classList.add('command-board-mobile');document.getElementById('mapView').hidden=true;document.getElementById('commandView').hidden=false;setActiveViewTab('tabComando');renderCommandView()}
 function showMapTab(){leaveRibeiraoMode();document.body.classList.remove('command-board-mobile');leaveTrajectoryMode();leaveMobileMode();leaveFireMode();document.getElementById('commandView').hidden=true;document.getElementById('mapView').hidden=false;setActiveViewTab('tabMapa');setTimeout(()=>{spiFixMapSize();map.invalidateSize()},80);renderFire()}
-document.getElementById('tabComando')?.addEventListener('click',showCommandTab);document.getElementById('tabMapa')?.addEventListener('click',showMapTab);setInterval(()=>{if(!document.getElementById('commandView')?.hidden)renderCommandView()},10000);
+document.getElementById('tabComando')?.addEventListener('click',showCommandTab);document.getElementById('tabMapa')?.addEventListener('click',showMapTab);setInterval(()=>{if(!document.getElementById('commandView')?.hidden&&nvCommandMapFilter==='real')renderCommandView()},30000);
 
 
 // Aba Fire + Backbone DEV: somente queimadas como camada operacional no mapa.
@@ -787,4 +803,4 @@ document.getElementById('fireHistoryDddFilter')?.addEventListener('change',e=>fh
 ['tabMapa','tabComando','tabFire','tabRibeirao','tabRibeiraoGeral','tabMobile','tabTrajectory'].forEach(id=>document.getElementById(id)?.addEventListener('click',leaveFireHistoryTab));
 
 // Captura automatizada do boletim DEV: ativa somente com ?capture=command.
-(()=>{try{const q=new URLSearchParams(location.search);if(q.get('capture')!=='command')return;window.addEventListener('load',()=>setTimeout(()=>{try{showCommandTab();document.body.classList.add('spi-capture-command');for(const sel of ['.topbar','.view-tabs','#importantEventStrip','#climateStrip']){const e=document.querySelector(sel);if(e)e.style.display='none';}const v=document.querySelector('#commandView');if(v){v.hidden=false;v.style.height='auto';v.style.minHeight='0';v.style.overflow='visible';v.style.margin='0';}document.body.style.margin='0';}catch(e){console.error('capture command',e)}},500));}catch(e){}})();
+(()=>{try{const q=new URLSearchParams(location.search);if(q.get('capture')!=='command')return;window.addEventListener('load',()=>setTimeout(()=>{try{const f=q.get('filter');if(f)nvCommandMapFilter=f;showCommandTab();document.body.classList.add('spi-capture-command');for(const sel of ['.topbar','.view-tabs','#importantEventStrip','#climateStrip']){const e=document.querySelector(sel);if(e)e.style.display='none';}const v=document.querySelector('#commandView');if(v){v.hidden=false;v.style.height='auto';v.style.minHeight='0';v.style.overflow='visible';v.style.margin='0';}document.body.style.margin='0';}catch(e){console.error('capture command',e)}},500));}catch(e){}})();
