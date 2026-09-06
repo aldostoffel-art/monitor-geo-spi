@@ -1,78 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-06T16:10:12-03:00",
-  "fonte_coletada_em": "2026-09-06T19:10:03Z",
+  "gerado_em": "2026-09-06T16:15:08-03:00",
+  "fonte_coletada_em": "2026-09-06T19:15:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
   "entradas_feed": 41,
   "alertas_ativos": 10,
   "eventos_geo": [
-    {
-      "id_alerta": "189214/2026",
-      "municipio": "Garça",
-      "latitude": -22.212281,
-      "longitude": -49.654873,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:04h12 Chuva na regiao de Vera Cruz e Garca. Tem ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:04h12 Chuva na regiao de Vera Cruz e Garca. Tem ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "04h12 Chuva na região de Vera Cruz e Garça. Tem ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-06T04:12:15-03:00",
-      "fim": "2026-09-13T07:00:00-03:00",
-      "vigencia": "2026-09-06T04:12:15-03:00 → 2026-09-13T07:00:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 5,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
-        "fonte": "RainViewer",
-        "metodo": "Radar composto",
-        "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
-      }
-    },
-    {
-      "id_alerta": "189214/2026",
-      "municipio": "Vera Cruz",
-      "latitude": -22.220492,
-      "longitude": -49.822611,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:04h12 Chuva na regiao de Vera Cruz e Garca. Tem ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:04h12 Chuva na regiao de Vera Cruz e Garca. Tem ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "04h12 Chuva na região de Vera Cruz e Garça. Tem ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-06T04:12:15-03:00",
-      "fim": "2026-09-13T07:00:00-03:00",
-      "vigencia": "2026-09-06T04:12:15-03:00 → 2026-09-13T07:00:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 1,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
-        "fonte": "RainViewer",
-        "metodo": "Radar composto",
-        "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
-      }
-    },
     {
       "id_alerta": "189243/2026",
       "municipio": "São José Do Rio Preto",
@@ -312,13 +248,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T19:00:00+00:00",
-        "intensidade_estimada_mmh": 1.13,
+        "ultimo_eco_em": "2026-09-06T19:10:00+00:00",
+        "intensidade_estimada_mmh": 1.15,
         "faixa_estimada_mmh": [
-          1.0,
-          6.48
+          1.15,
+          1.15
         ],
-        "dbz_medio": 23.8,
+        "dbz_medio": 24.0,
         "pico_em": "2026-09-06T18:10:00+00:00",
         "pico_estimado_mmh": 2.54,
         "pico_dbz_medio": 29.5,
@@ -350,11 +286,21 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
+        "status": "ECO_DETECTADO",
         "fonte": "RainViewer",
-        "metodo": "Radar composto",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+        "ultimo_eco_em": "2026-09-06T19:10:00+00:00",
+        "intensidade_estimada_mmh": 0.4,
+        "faixa_estimada_mmh": [
+          0.56,
+          0.56
+        ],
+        "dbz_medio": 16.7,
+        "pico_em": "2026-09-06T19:10:00+00:00",
+        "pico_estimado_mmh": 0.4,
+        "pico_dbz_medio": 16.7,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
     {
@@ -386,13 +332,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T19:00:00+00:00",
-        "intensidade_estimada_mmh": 0.56,
+        "ultimo_eco_em": "2026-09-06T19:10:00+00:00",
+        "intensidade_estimada_mmh": 0.41,
         "faixa_estimada_mmh": [
-          0.56,
+          0.36,
           0.56
         ],
-        "dbz_medio": 19.0,
+        "dbz_medio": 16.8,
         "pico_em": "2026-09-06T19:00:00+00:00",
         "pico_estimado_mmh": 0.56,
         "pico_dbz_medio": 19.0,
@@ -680,13 +626,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T19:00:00+00:00",
-        "intensidade_estimada_mmh": 0.56,
+        "ultimo_eco_em": "2026-09-06T19:10:00+00:00",
+        "intensidade_estimada_mmh": 0.35,
         "faixa_estimada_mmh": [
-          0.56,
+          0.36,
           0.56
         ],
-        "dbz_medio": 19.0,
+        "dbz_medio": 15.7,
         "pico_em": "2026-09-06T17:40:00+00:00",
         "pico_estimado_mmh": 1.13,
         "pico_dbz_medio": 23.8,
@@ -722,13 +668,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T19:00:00+00:00",
-        "intensidade_estimada_mmh": 0.96,
+        "ultimo_eco_em": "2026-09-06T19:10:00+00:00",
+        "intensidade_estimada_mmh": 0.53,
         "faixa_estimada_mmh": [
-          1.0,
-          3.65
+          0.56,
+          3.16
         ],
-        "dbz_medio": 22.8,
+        "dbz_medio": 18.6,
         "pico_em": "2026-09-06T18:40:00+00:00",
         "pico_estimado_mmh": 1.18,
         "pico_dbz_medio": 24.2,
@@ -764,16 +710,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T18:30:00+00:00",
-        "intensidade_estimada_mmh": 0.38,
+        "ultimo_eco_em": "2026-09-06T19:10:00+00:00",
+        "intensidade_estimada_mmh": 0.59,
         "faixa_estimada_mmh": [
-          0.36,
-          0.56
+          0.56,
+          1.0
         ],
-        "dbz_medio": 16.3,
-        "pico_em": "2026-09-06T18:30:00+00:00",
-        "pico_estimado_mmh": 0.38,
-        "pico_dbz_medio": 16.3,
+        "dbz_medio": 19.3,
+        "pico_em": "2026-09-06T19:10:00+00:00",
+        "pico_estimado_mmh": 0.59,
+        "pico_dbz_medio": 19.3,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -806,13 +752,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T19:00:00+00:00",
-        "intensidade_estimada_mmh": 1.61,
+        "ultimo_eco_em": "2026-09-06T19:10:00+00:00",
+        "intensidade_estimada_mmh": 0.55,
         "faixa_estimada_mmh": [
-          2.54,
-          6.48
+          0.56,
+          3.16
         ],
-        "dbz_medio": 26.3,
+        "dbz_medio": 18.9,
         "pico_em": "2026-09-06T18:40:00+00:00",
         "pico_estimado_mmh": 1.67,
         "pico_dbz_medio": 26.6,
@@ -848,16 +794,58 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T19:00:00+00:00",
-        "intensidade_estimada_mmh": 2.72,
+        "ultimo_eco_em": "2026-09-06T19:10:00+00:00",
+        "intensidade_estimada_mmh": 0.57,
         "faixa_estimada_mmh": [
-          3.16,
-          7.49
+          0.56,
+          1.0
         ],
-        "dbz_medio": 30.0,
+        "dbz_medio": 19.1,
         "pico_em": "2026-09-06T19:00:00+00:00",
         "pico_estimado_mmh": 2.72,
         "pico_dbz_medio": 30.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189255/2026",
+      "municipio": "Araraquara",
+      "latitude": -21.783634,
+      "longitude": -48.175145,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:16:00 - Chuva se espalhando pela regiao de Araraquara. Tem vento e condicao para raios. Atinge municipios vizinhos. Tenha cuidado!",
+      "resumo": "Defesa Civil:16:00 - Chuva se espalhando pela regiao de Araraquara. Tem vento e condicao para raios. Atinge municipios vizinhos. Tenha cuidado!",
+      "descricao": "16:00 - Chuva se espalhando pela região de Araraquara. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T16:12:04-03:00",
+      "fim": "2026-09-06T19:35:00-03:00",
+      "vigencia": "2026-09-06T16:12:04-03:00 → 2026-09-06T19:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 46,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-06T19:10:00+00:00",
+        "intensidade_estimada_mmh": 0.54,
+        "faixa_estimada_mmh": [
+          0.56,
+          1.0
+        ],
+        "dbz_medio": 18.7,
+        "pico_em": "2026-09-06T19:10:00+00:00",
+        "pico_estimado_mmh": 0.54,
+        "pico_dbz_medio": 18.7,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
@@ -876,9 +864,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-06T19:10:14.925699+00:00",
+    "gerado_em": "2026-09-06T19:15:10.208493+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 15,
+    "eventos_com_eco": 17,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
