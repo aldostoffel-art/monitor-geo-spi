@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788699346">
+  <link rel="stylesheet" href="styles.css?v=1788709084">
 </head>
 <body>
   <header class="topbar">
@@ -17,7 +17,7 @@
     </div>
     <div class="status"><span class="dot"></span><span id="statusText">Carregando Backbone…</span></div>
   </header>
-  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabRibeirao" class="view-tab" type="button"><span class="tab-icon">🏙️</span><span class="tab-long">Ribeirão Fire</span><span class="tab-short">Ribeirão</span></button><button id="tabRibeiraoGeral" class="view-tab" type="button"><span class="tab-icon">📊</span><span class="tab-long">Ribeirão Geral</span><span class="tab-short">Rib. Geral</span></button><button id="tabFireHistory" class="view-tab" type="button"><span class="tab-icon">🧯</span><span class="tab-long">Histórico Fire</span><span class="tab-short">Hist. Fire</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button></nav>
+  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabRibeirao" class="view-tab" type="button"><span class="tab-icon">🏙️</span><span class="tab-long">Ribeirão Fire</span><span class="tab-short">Ribeirão</span></button><button id="tabRibeiraoGeral" class="view-tab" type="button"><span class="tab-icon">📊</span><span class="tab-long">Ribeirão Geral</span><span class="tab-short">Rib. Geral</span></button><button id="tabSbc" class="view-tab" type="button"><span class="tab-icon">🏙️</span><span class="tab-long">São Bernardo</span><span class="tab-short">SBC</span></button><button id="tabFireHistory" class="view-tab" type="button"><span class="tab-icon">🧯</span><span class="tab-long">Histórico Fire</span><span class="tab-short">Hist. Fire</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button></nav>
   <section id="importantEventStrip" class="important-event-strip" aria-label="Eventos meteorológicos importantes" aria-live="assertive" hidden>
     <div class="important-event-label"><span>🚨 EVENTO IMPORTANTE</span><strong id="importantEventLevel">URGENTE</strong></div>
     <div class="important-event-viewport"><div id="importantEventTrack" class="important-event-track"></div></div>
@@ -179,6 +179,18 @@
     <section class="rp-general-footer">Recorte exclusivo de Ribeirão Preto. Falhas de energia são OS únicas observadas pelo Energy Core a partir da data explicitada no painel; eventos ativos são contabilizados sem duplicar áreas da mesma OS.</section>
   </main>
 
+  <main id="sbcView" class="sbc-view" hidden>
+    <section class="sbc-head"><div><small>SÃO BERNARDO DO CAMPO • VISÃO MUNICIPAL • DEV</small><h2>VISÃO CLIMÁTICA & OPERACIONAL — SÃO BERNARDO</h2><p>Mesmo conceito executivo do boletim WhatsApp • observado + previsão municipal</p></div><div class="sbc-status"><b id="sbcStatus">CONSOLIDANDO</b><small id="sbcUpdated">Atualizando…</small></div></section>
+    <section class="sbc-kpis"><div><small>🌧️ CHUVA 1H • CEMADEN</small><strong id="sbcRain1">—</strong><em>maior estação</em></div><div><small>🌧️ CHUVA 24H</small><strong id="sbcRain24">—</strong><em>maior estação</em></div><div><small>📍 ESTAÇÕES CEMADEN</small><strong id="sbcStations">—</strong><em>município</em></div><div><small>💨 VENTO AGORA</small><strong id="sbcWind">—</strong><em>modelo meteorológico</em></div><div><small>🌬️ RAJADA 48H</small><strong id="sbcGust">—</strong><em>pico previsto</em></div><div><small>⛈️ CHUVA 48H</small><strong id="sbcRain48">—</strong><em>acumulado previsto</em></div></section>
+    <section class="sbc-ai"><div class="sbc-ai-title">◈ IA SPI • LEITURA MUNICIPAL</div><div id="sbcAiText">Consolidando sinais observados e previstos…</div></section>
+    <section class="sbc-grid">
+      <article class="sbc-card"><header><b>AGORA • CEMADEN</b><small>pluviômetros automáticos</small></header><div id="sbcNow">Carregando observações…</div></article>
+      <article class="sbc-card"><header><b>PREVISÃO OPERACIONAL • 48H</b><small>São Bernardo do Campo</small></header><div id="sbcForecast">Carregando previsão…</div></article>
+      <article class="sbc-card sbc-wide"><header><b>ESTAÇÕES MUNICIPAIS • CHUVA OBSERVADA</b><small>CEMADEN</small></header><div id="sbcStationsList" class="sbc-stations-list">Carregando estações…</div></article>
+    </section>
+    <section class="sbc-footer">Recorte municipal experimental em DEV. Chuva observada = CEMADEN. Vento, rajada e previsão = modelo meteorológico. Os valores previstos não substituem medições ou alertas oficiais.</section>
+  </main>
+
   <main id="fireHistoryView" class="fire-history-view" hidden>
     <section class="fh-head"><div><small>SPI • HISTÓRICO OFICIAL • 2025</small><h2>🔥 QUEIMADAS 2025 • TERRITÓRIO SPI</h2><p>Cada mini 🔥 representa um foco detectado pelo satélite de referência do INPE.</p></div><div class="fh-head-side"><span>FONTE OFICIAL</span><b>INPE • Programa Queimadas</b></div></section>
     <section class="fh-kpis"><div><small>FOCOS EM 2025</small><strong id="fhTotal">—</strong></div><div><small>MUNICÍPIOS COM FOCO</small><strong id="fhCities">—</strong></div><div><small>PICO DO ANO</small><strong id="fhPeak">—</strong></div><div><small>RECORTE</small><strong>SPI</strong></div></section>
@@ -228,6 +240,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788703727"></script>
+  <script src="app.js?v=1788709084"></script>
 </body>
 </html>
