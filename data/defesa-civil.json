@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-06T14:25:10-03:00",
-  "fonte_coletada_em": "2026-09-06T17:25:05Z",
+  "gerado_em": "2026-09-06T14:30:13-03:00",
+  "fonte_coletada_em": "2026-09-06T17:30:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 37,
-  "alertas_ativos": 3,
+  "entradas_feed": 39,
+  "alertas_ativos": 5,
   "eventos_geo": [
     {
       "id_alerta": "189214/2026",
@@ -146,6 +146,228 @@
         "janela_min": 120,
         "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
+    },
+    {
+      "id_alerta": "189247/2026",
+      "municipio": "Mendonça",
+      "latitude": -21.168703,
+      "longitude": -49.597057,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Potirendaba, Mendonca e Urupes. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "resumo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Potirendaba, Mendonca e Urupes. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "descricao": "14:20 - Chuva se espalhando pela região de Potirendaba, Mendonça e Urupês. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T14:26:21-03:00",
+      "fim": "2026-09-06T19:35:00-03:00",
+      "vigencia": "2026-09-06T14:26:21-03:00 → 2026-09-06T19:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 2,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-06T17:10:00+00:00",
+        "intensidade_estimada_mmh": 2.93,
+        "faixa_estimada_mmh": [
+          3.65,
+          15.38
+        ],
+        "dbz_medio": 30.5,
+        "pico_em": "2026-09-06T17:10:00+00:00",
+        "pico_estimado_mmh": 2.93,
+        "pico_dbz_medio": 30.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189247/2026",
+      "municipio": "Potirendaba",
+      "latitude": -21.043033,
+      "longitude": -49.379078,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Potirendaba, Mendonca e Urupes. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "resumo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Potirendaba, Mendonca e Urupes. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "descricao": "14:20 - Chuva se espalhando pela região de Potirendaba, Mendonça e Urupês. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T14:26:21-03:00",
+      "fim": "2026-09-06T19:35:00-03:00",
+      "vigencia": "2026-09-06T14:26:21-03:00 → 2026-09-06T19:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-06T17:20:00+00:00",
+        "intensidade_estimada_mmh": 0.9,
+        "faixa_estimada_mmh": [
+          1.0,
+          2.05
+        ],
+        "dbz_medio": 22.2,
+        "pico_em": "2026-09-06T17:20:00+00:00",
+        "pico_estimado_mmh": 0.9,
+        "pico_dbz_medio": 22.2,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189247/2026",
+      "municipio": "Urupês",
+      "latitude": -21.191294,
+      "longitude": -49.240615,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Potirendaba, Mendonca e Urupes. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "resumo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Potirendaba, Mendonca e Urupes. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "descricao": "14:20 - Chuva se espalhando pela região de Potirendaba, Mendonça e Urupês. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T14:26:21-03:00",
+      "fim": "2026-09-06T19:35:00-03:00",
+      "vigencia": "2026-09-06T14:26:21-03:00 → 2026-09-06T19:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 2,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189248/2026",
+      "municipio": "Borborema",
+      "latitude": -21.61902,
+      "longitude": -49.10349,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:25 - Chuva se espalhando pela regiao de Borborema, Cafelandia e Iacanga. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "resumo": "Defesa Civil:14:25 - Chuva se espalhando pela regiao de Borborema, Cafelandia e Iacanga. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "descricao": "14:25 - Chuva se espalhando pela região de Borborema, Cafelândia e Iacanga. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T14:29:08-03:00",
+      "fim": "2026-09-06T18:30:00-03:00",
+      "vigencia": "2026-09-06T14:29:08-03:00 → 2026-09-06T18:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 8,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-06T17:20:00+00:00",
+        "intensidade_estimada_mmh": 0.57,
+        "faixa_estimada_mmh": [
+          0.56,
+          1.15
+        ],
+        "dbz_medio": 19.1,
+        "pico_em": "2026-09-06T17:10:00+00:00",
+        "pico_estimado_mmh": 1.15,
+        "pico_dbz_medio": 24.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189248/2026",
+      "municipio": "Cafelândia",
+      "latitude": -21.782998,
+      "longitude": -49.59355,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:25 - Chuva se espalhando pela regiao de Borborema, Cafelandia e Iacanga. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "resumo": "Defesa Civil:14:25 - Chuva se espalhando pela regiao de Borborema, Cafelandia e Iacanga. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "descricao": "14:25 - Chuva se espalhando pela região de Borborema, Cafelândia e Iacanga. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T14:29:08-03:00",
+      "fim": "2026-09-06T18:30:00-03:00",
+      "vigencia": "2026-09-06T14:29:08-03:00 → 2026-09-06T18:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 8,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189248/2026",
+      "municipio": "Iacanga",
+      "latitude": -21.933969,
+      "longitude": -49.051268,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:25 - Chuva se espalhando pela regiao de Borborema, Cafelandia e Iacanga. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "resumo": "Defesa Civil:14:25 - Chuva se espalhando pela regiao de Borborema, Cafelandia e Iacanga. Tem vento e condicao para raios. Atinge municipios vizinhos. Cuidado!",
+      "descricao": "14:25 - Chuva se espalhando pela região de Borborema, Cafelândia e Iacanga. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-06T14:29:08-03:00",
+      "fim": "2026-09-06T18:30:00-03:00",
+      "vigencia": "2026-09-06T14:29:08-03:00 → 2026-09-06T18:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 4,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
     }
   ],
   "eventos_recentes_geo": [
@@ -238,9 +460,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-06T17:25:11.909173+00:00",
+    "gerado_em": "2026-09-06T17:30:14.921821+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 1,
+    "eventos_com_eco": 4,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
