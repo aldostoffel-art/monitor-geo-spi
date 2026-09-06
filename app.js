@@ -785,3 +785,6 @@ function leaveFireHistoryTab(){const v=document.getElementById('fireHistoryView'
 document.getElementById('tabFireHistory')?.addEventListener('click',showFireHistoryTab);
 document.getElementById('fireHistoryDddFilter')?.addEventListener('change',e=>fhRenderMap(e.target.value,true));
 ['tabMapa','tabComando','tabFire','tabRibeirao','tabRibeiraoGeral','tabMobile','tabTrajectory'].forEach(id=>document.getElementById(id)?.addEventListener('click',leaveFireHistoryTab));
+
+// Captura automatizada do boletim DEV: ativa somente com ?capture=command.
+(()=>{try{const q=new URLSearchParams(location.search);if(q.get('capture')!=='command')return;window.addEventListener('load',()=>setTimeout(()=>{try{showCommandTab();document.body.classList.add('spi-capture-command');for(const sel of ['.topbar','.view-tabs','#importantEventStrip','#climateStrip']){const e=document.querySelector(sel);if(e)e.style.display='none';}const v=document.querySelector('#commandView');if(v){v.hidden=false;v.style.height='auto';v.style.minHeight='0';v.style.overflow='visible';v.style.margin='0';}document.body.style.margin='0';}catch(e){console.error('capture command',e)}},500));}catch(e){}})();
