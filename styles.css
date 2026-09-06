@@ -636,3 +636,7 @@ body.trajectory-map-mode .trajectory-weather-envelope,body.trajectory-map-mode .
 
 /* COMMAND VIEW FOOTER FIX DEV 20260905 */
 body.command-board-mobile>footer{display:none!important}
+/* COMMAND CONSISTENCY DEV 20260905 */
+.nv-kpis.nv-kpis-sources{grid-template-columns:repeat(5,minmax(0,1fr))}
+.nv-extra-kpis{max-width:none!important;grid-template-columns:repeat(3,minmax(0,1fr))!important}
+@media(max-width:800px){.nv-kpis.nv-kpis-sources{grid-template-columns:repeat(2,minmax(0,1fr))}.nv-extra-kpis{grid-template-columns:1fr!important}}
