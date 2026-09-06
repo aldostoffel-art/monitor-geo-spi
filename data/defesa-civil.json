@@ -32,7 +32,14 @@
       "sites_referencia": 5,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
     },
     {
       "id_alerta": "189214/2026",
@@ -57,7 +64,14 @@
       "sites_referencia": 1,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
     },
     {
       "id_alerta": "189237/2026",
@@ -82,7 +96,24 @@
       "sites_referencia": 2,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-06T13:30:00+00:00",
+        "intensidade_estimada_mmh": 0.12,
+        "faixa_estimada_mmh": [
+          0.13,
+          0.13
+        ],
+        "dbz_medio": 8.0,
+        "pico_em": "2026-09-06T13:00:00+00:00",
+        "pico_estimado_mmh": 5.09,
+        "pico_dbz_medio": 34.3,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189237/2026",
@@ -107,7 +138,24 @@
       "sites_referencia": 2,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-06T13:00:00+00:00",
+        "intensidade_estimada_mmh": 0.3,
+        "faixa_estimada_mmh": [
+          0.27,
+          1.0
+        ],
+        "dbz_medio": 14.7,
+        "pico_em": "2026-09-06T12:40:00+00:00",
+        "pico_estimado_mmh": 4.99,
+        "pico_dbz_medio": 34.2,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189239/2026",
@@ -132,7 +180,14 @@
       "sites_referencia": 35,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
     }
   ],
   "eventos_recentes_geo": [
@@ -247,5 +302,12 @@
         "SÃO PAULO/SP"
       ]
     }
-  ]
+  ],
+  "radar_enriquecimento": {
+    "fonte": "RainViewer",
+    "gerado_em": "2026-09-06T14:07:49.002547+00:00",
+    "janela_min": 120,
+    "eventos_com_eco": 2,
+    "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
+  }
 }
