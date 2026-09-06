@@ -1,8 +1,8 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-06T16:55:10-03:00",
-  "fonte_coletada_em": "2026-09-06T19:55:04Z",
+  "gerado_em": "2026-09-06T17:00:16-03:00",
+  "fonte_coletada_em": "2026-09-06T20:00:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
@@ -34,21 +34,11 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T18:00:00+00:00",
-        "intensidade_estimada_mmh": 0.55,
-        "faixa_estimada_mmh": [
-          0.56,
-          1.15
-        ],
-        "dbz_medio": 18.9,
-        "pico_em": "2026-09-06T18:00:00+00:00",
-        "pico_estimado_mmh": 0.55,
-        "pico_dbz_medio": 18.9,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -213,9 +203,9 @@
           0.56
         ],
         "dbz_medio": 19.0,
-        "pico_em": "2026-09-06T18:00:00+00:00",
-        "pico_estimado_mmh": 2.07,
-        "pico_dbz_medio": 28.0,
+        "pico_em": "2026-09-06T18:50:00+00:00",
+        "pico_estimado_mmh": 0.56,
+        "pico_dbz_medio": 19.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -864,9 +854,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-06T19:55:13.118597+00:00",
+    "gerado_em": "2026-09-06T20:00:19.005610+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 17,
+    "eventos_com_eco": 16,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
