@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-06T17:35:12-03:00",
-  "fonte_coletada_em": "2026-09-06T20:35:04Z",
+  "gerado_em": "2026-09-06T17:40:14-03:00",
+  "fonte_coletada_em": "2026-09-06T20:40:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
   "entradas_feed": 40,
-  "alertas_ativos": 10,
+  "alertas_ativos": 9,
   "eventos_geo": [
     {
       "id_alerta": "189243/2026",
@@ -39,48 +39,6 @@
         "metodo": "Radar composto",
         "janela_min": 120,
         "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
-      }
-    },
-    {
-      "id_alerta": "189244/2026",
-      "municipio": "Rincão",
-      "latitude": -21.602193,
-      "longitude": -48.014646,
-      "tipo": "VENDAVAL",
-      "titulo": "VENDAVAL",
-      "resumo": "OBSERVAÇÃO - 06/09 13:38 - RAJADAS DE VENTO de quadrante sul/sudeste, com intensidade MODERADA (45 a 65 km/h), para os municípios de Araranguá, Balneário Arroio do Silva, Balneário Gaivota, Balneário Rincão, Florianópolis, Garopaba, Governador Celso Ramos, Imbituba, Jaguaruna, Laguna, Palhoça, Passo de Torres, Paulo Lopes e São José nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
-      "descricao": "OBSERVAÇÃO - 06/09 13:38 - RAJADAS DE VENTO de quadrante sul/sudeste, com intensidade MODERADA (45 a 65 km/h), para os municípios de Araranguá, Balneário Arroio do Silva, Balneário Gaivota, Balneário Rincão, Florianópolis, Garopaba, Governador Celso Ramos, Imbituba, Jaguaruna, Laguna, Palhoça, Passo de Torres, Paulo Lopes e São José nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Expected",
-      "certeza": "Likely",
-      "inicio": "2026-09-06T13:40:34-03:00",
-      "fim": "2026-09-06T17:40:00-03:00",
-      "vigencia": "2026-09-06T13:40:34-03:00 → 2026-09-06T17:40:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 4,
-      "area_oficial": [
-        "SANTA CATARINA/SC"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T20:30:00+00:00",
-        "intensidade_estimada_mmh": 0.75,
-        "faixa_estimada_mmh": [
-          0.56,
-          2.05
-        ],
-        "dbz_medio": 21.0,
-        "pico_em": "2026-09-06T20:10:00+00:00",
-        "pico_estimado_mmh": 0.95,
-        "pico_dbz_medio": 22.6,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
     {
@@ -119,9 +77,9 @@
           0.36
         ],
         "dbz_medio": 14.5,
-        "pico_em": "2026-09-06T18:40:00+00:00",
-        "pico_estimado_mmh": 0.54,
-        "pico_dbz_medio": 18.7,
+        "pico_em": "2026-09-06T18:50:00+00:00",
+        "pico_estimado_mmh": 0.29,
+        "pico_dbz_medio": 14.5,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -434,21 +392,11 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T18:40:00+00:00",
-        "intensidade_estimada_mmh": 0.36,
-        "faixa_estimada_mmh": [
-          0.24,
-          1.0
-        ],
-        "dbz_medio": 15.9,
-        "pico_em": "2026-09-06T18:40:00+00:00",
-        "pico_estimado_mmh": 0.36,
-        "pico_dbz_medio": 15.9,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -550,21 +498,11 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-06T18:40:00+00:00",
-        "intensidade_estimada_mmh": 0.36,
-        "faixa_estimada_mmh": [
-          0.24,
-          1.0
-        ],
-        "dbz_medio": 15.9,
-        "pico_em": "2026-09-06T18:40:00+00:00",
-        "pico_estimado_mmh": 0.36,
-        "pico_dbz_medio": 15.9,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -729,9 +667,9 @@
           0.56
         ],
         "dbz_medio": 18.1,
-        "pico_em": "2026-09-06T18:40:00+00:00",
-        "pico_estimado_mmh": 1.67,
-        "pico_dbz_medio": 26.6,
+        "pico_em": "2026-09-06T19:00:00+00:00",
+        "pico_estimado_mmh": 1.61,
+        "pico_dbz_medio": 26.3,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -820,7 +758,33 @@
       }
     }
   ],
-  "eventos_recentes_geo": [],
+  "eventos_recentes_geo": [
+    {
+      "id_alerta": "189244/2026",
+      "municipio": "Rincão",
+      "latitude": -21.602193,
+      "longitude": -48.014646,
+      "tipo": "VENDAVAL",
+      "titulo": "VENDAVAL",
+      "resumo": "OBSERVAÇÃO - 06/09 13:38 - RAJADAS DE VENTO de quadrante sul/sudeste, com intensidade MODERADA (45 a 65 km/h), para os municípios de Araranguá, Balneário Arroio do Silva, Balneário Gaivota, Balneário Rincão, Florianópolis, Garopaba, Governador Celso Ramos, Imbituba, Jaguaruna, Laguna, Palhoça, Passo de Torres, Paulo Lopes e São José nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
+      "descricao": "OBSERVAÇÃO - 06/09 13:38 - RAJADAS DE VENTO de quadrante sul/sudeste, com intensidade MODERADA (45 a 65 km/h), para os municípios de Araranguá, Balneário Arroio do Silva, Balneário Gaivota, Balneário Rincão, Florianópolis, Garopaba, Governador Celso Ramos, Imbituba, Jaguaruna, Laguna, Palhoça, Passo de Torres, Paulo Lopes e São José nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-06T13:40:34-03:00",
+      "fim": "2026-09-06T17:40:00-03:00",
+      "vigencia": "2026-09-06T13:40:34-03:00 → 2026-09-06T17:40:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 4,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ]
+    }
+  ],
   "janela_recentes_horas": 6,
   "alertas_sp_sem_municipio_spi": [
     {
@@ -834,9 +798,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-06T20:35:14.705574+00:00",
+    "gerado_em": "2026-09-06T20:40:15.909948+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 15,
+    "eventos_com_eco": 13,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
