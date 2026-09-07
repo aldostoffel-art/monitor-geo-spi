@@ -1,8 +1,8 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-06T22:10:08-03:00",
-  "fonte_coletada_em": "2026-09-07T01:10:04Z",
+  "gerado_em": "2026-09-06T22:15:05-03:00",
+  "fonte_coletada_em": "2026-09-07T01:15:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
@@ -38,13 +38,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-07T01:00:00+00:00",
-        "intensidade_estimada_mmh": 0.83,
+        "ultimo_eco_em": "2026-09-07T01:10:00+00:00",
+        "intensidade_estimada_mmh": 0.7,
         "faixa_estimada_mmh": [
-          1.0,
+          0.7,
           1.0
         ],
-        "dbz_medio": 21.7,
+        "dbz_medio": 20.5,
         "pico_em": "2026-09-06T23:20:00+00:00",
         "pico_estimado_mmh": 9.1,
         "pico_dbz_medio": 38.4,
@@ -52,38 +52,12 @@
       }
     }
   ],
-  "eventos_recentes_geo": [
-    {
-      "id_alerta": "189255/2026",
-      "municipio": "Araraquara",
-      "latitude": -21.783634,
-      "longitude": -48.175145,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:16:00 - Chuva se espalhando pela regiao de Araraquara. Tem vento e condicao para raios. Atinge municipios vizinhos. Tenha cuidado!",
-      "resumo": "Defesa Civil:16:00 - Chuva se espalhando pela regiao de Araraquara. Tem vento e condicao para raios. Atinge municipios vizinhos. Tenha cuidado!",
-      "descricao": "16:00 - Chuva se espalhando pela região de Araraquara. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-06T16:12:04-03:00",
-      "fim": "2026-09-06T19:35:00-03:00",
-      "vigencia": "2026-09-06T16:12:04-03:00 → 2026-09-06T19:35:00-03:00",
-      "status": "RECENTE_EXPIRADO",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 46,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ]
-    }
-  ],
+  "eventos_recentes_geo": [],
   "janela_recentes_horas": 6,
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-07T01:10:11.510207+00:00",
+    "gerado_em": "2026-09-07T01:15:07.716426+00:00",
     "janela_min": 120,
     "eventos_com_eco": 1,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
