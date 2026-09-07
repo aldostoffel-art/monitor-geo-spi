@@ -697,3 +697,18 @@ body.command-board-mobile>footer{display:none!important}
 .nv-projection-inline .nv-proj-city{padding:6px 7px}
 .nv-projection-inline .nv-proj-city b{font-size:10px}.nv-projection-inline .nv-proj-city small{font-size:8px}
 @media(max-width:800px){.nv-projection-inline .nv-projection-map{height:250px}.nv-projection-inline .nv-proj-cities{grid-template-columns:1fr;max-height:220px}}
+
+/* Projection exact placement: directly under real map, compact */
+.nv-projection-inline{margin:8px 0 10px!important;padding:9px!important;background:#091b2a!important;border:1px solid #28546c!important;border-radius:10px!important}
+.nv-projection-inline .nv-proj-head{align-items:center!important}
+.nv-projection-inline .nv-proj-head .nv-muted{font-size:9px!important}
+.nv-projection-inline .nv-proj-buttons{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:5px!important;min-width:220px}
+.nv-projection-inline .nv-proj-buttons button{padding:6px 5px!important;font-size:10px!important}
+.nv-projection-inline .nv-proj-legend{margin:6px 0 4px!important;font-size:8px!important;gap:7px!important}
+.nv-projection-inline .nv-projection-map{height:210px!important;margin:6px 0!important}
+.nv-projection-inline .nv-proj-meta{padding:4px 1px 5px!important;font-size:9px!important}
+.nv-projection-inline .nv-proj-list-title{margin:2px 0 5px!important;font-size:9px!important}
+.nv-projection-inline .nv-proj-cities{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:5px!important;max-height:150px;overflow:auto}
+.nv-projection-inline .nv-proj-city{padding:6px 7px!important}
+.nv-projection-inline .nv-proj-city b{font-size:10px!important}.nv-projection-inline .nv-proj-city small{font-size:8px!important}
+@media(max-width:800px){.nv-projection-inline .nv-proj-head{display:block!important}.nv-projection-inline .nv-proj-buttons{margin-top:6px!important;min-width:0!important}.nv-projection-inline .nv-projection-map{height:200px!important}.nv-projection-inline .nv-proj-cities{grid-template-columns:1fr!important;max-height:135px}}
