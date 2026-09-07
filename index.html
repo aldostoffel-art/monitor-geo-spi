@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788802098">
+  <link rel="stylesheet" href="styles.css?v=1788819710">
 </head>
 <body>
   <header class="topbar">
@@ -17,7 +17,7 @@
     </div>
     <div class="status"><span class="dot"></span><span id="statusText">Carregando Backbone…</span></div>
   </header>
-  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabDecision" class="view-tab" type="button"><span class="tab-icon">⚡</span><span class="tab-long">Decisão Operacional</span><span class="tab-short">Decisão</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabRibeirao" class="view-tab" type="button"><span class="tab-icon">🏙️</span><span class="tab-long">Ribeirão Fire</span><span class="tab-short">Ribeirão</span></button><button id="tabRibeiraoGeral" class="view-tab" type="button"><span class="tab-icon">📊</span><span class="tab-long">Ribeirão Geral</span><span class="tab-short">Rib. Geral</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button></nav>
+  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabDecision" class="view-tab" type="button"><span class="tab-icon">⚡</span><span class="tab-long">Decisão Operacional</span><span class="tab-short">Decisão</span></button><button id="tabAlarmesP1" class="view-tab" type="button"><span class="tab-icon">🚨</span><span class="tab-long">Alarmes P1</span><span class="tab-short">P1</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabRibeirao" class="view-tab" type="button"><span class="tab-icon">🏙️</span><span class="tab-long">Ribeirão Fire</span><span class="tab-short">Ribeirão</span></button><button id="tabRibeiraoGeral" class="view-tab" type="button"><span class="tab-icon">📊</span><span class="tab-long">Ribeirão Geral</span><span class="tab-short">Rib. Geral</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button></nav>
   <section id="importantEventStrip" class="important-event-strip" aria-label="Eventos meteorológicos importantes" aria-live="assertive" hidden>
     <div class="important-event-label"><span>🚨 EVENTO IMPORTANTE</span><strong id="importantEventLevel">URGENTE</strong></div>
     <div class="important-event-viewport"><div id="importantEventTrack" class="important-event-track"></div></div>
@@ -223,6 +223,20 @@
     <section class="decision-sources"><b>FONTES E CONFIANÇA</b><div id="decisionSources">Verificando atualização das fontes…</div></section>
   </main>
 
+
+  <main id="alarmesP1View" class="p1-view" hidden>
+    <section class="p1-head"><div><span class="p1-badge">SPI • DEV • LEITURA PASSIVA</span><h2>🚨 ALARMES P1 • INTELIGÊNCIA OPERACIONAL</h2><p>Reincidência • oportunidades • localidades • leitura por CN e site</p></div><div id="p1Updated" class="p1-updated">Atualizando…</div></section>
+    <section id="p1Kpis" class="p1-kpis"></section>
+    <section class="p1-grid">
+      <article class="p1-card p1-wide"><header><b>ÚLTIMO INFORME</b><small>situação mais recente capturada no grupo</small></header><div id="p1Latest"></div></article>
+      <article class="p1-card"><header><b>REINCIDÊNCIA</b><small>sites que repetem entre ciclos</small></header><div id="p1Recurrence"></div></article>
+      <article class="p1-card"><header><b>OPORTUNIDADES</b><small>priorização por recorrência, autonomia e concentração</small></header><div id="p1Opportunity"></div></article>
+      <article class="p1-card"><header><b>LOCALIDADES</b><small>municípios com maior concentração de alarmes</small></header><div id="p1Locality"></div></article>
+      <article class="p1-card"><header><b>CNs</b><small>volume acumulado de TAs capturados</small></header><div id="p1Cn"></div></article>
+    </section>
+    <section class="p1-foot"><b>LEITURA:</b> esta aba não atribui causa automaticamente. Reincidência e oportunidade são sinais operacionais para investigação; a correlação com clima, energia, Backbone, árvore e Fire será incorporada progressivamente conforme o histórico aumenta.</section>
+  </main>
+
   <main id="weatherLabView" class="weatherlab-view" hidden>
     <section class="weatherlab-top">
       <div><div class="eyebrow">SPI • DEV • TESTE VISUAL</div><h2>Monitor Climático Operacional</h2><p>Radar observado + risco operacional SPI. Limites coloridos representam municípios afetados; a camada de radar permanece observacional.</p></div>
@@ -257,6 +271,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788802295"></script>
+  <script src="app.js?v=1788819710"></script>
 </body>
 </html>
