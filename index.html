@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788750581">
+  <link rel="stylesheet" href="styles.css?v=1788795290">
 </head>
 <body>
   <header class="topbar">
@@ -17,7 +17,7 @@
     </div>
     <div class="status"><span class="dot"></span><span id="statusText">Carregando Backbone…</span></div>
   </header>
-  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabRibeirao" class="view-tab" type="button"><span class="tab-icon">🏙️</span><span class="tab-long">Ribeirão Fire</span><span class="tab-short">Ribeirão</span></button><button id="tabRibeiraoGeral" class="view-tab" type="button"><span class="tab-icon">📊</span><span class="tab-long">Ribeirão Geral</span><span class="tab-short">Rib. Geral</span></button><button id="tabSbc" class="view-tab" type="button"><span class="tab-icon">🏙️</span><span class="tab-long">São Bernardo</span><span class="tab-short">SBC</span></button><button id="tabFireHistory" class="view-tab" type="button"><span class="tab-icon">🧯</span><span class="tab-long">Histórico Fire</span><span class="tab-short">Hist. Fire</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button></nav>
+  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabDecision" class="view-tab" type="button"><span class="tab-icon">⚡</span><span class="tab-long">Decisão Operacional</span><span class="tab-short">Decisão</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabRibeirao" class="view-tab" type="button"><span class="tab-icon">🏙️</span><span class="tab-long">Ribeirão Fire</span><span class="tab-short">Ribeirão</span></button><button id="tabRibeiraoGeral" class="view-tab" type="button"><span class="tab-icon">📊</span><span class="tab-long">Ribeirão Geral</span><span class="tab-short">Rib. Geral</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button></nav>
   <section id="importantEventStrip" class="important-event-strip" aria-label="Eventos meteorológicos importantes" aria-live="assertive" hidden>
     <div class="important-event-label"><span>🚨 EVENTO IMPORTANTE</span><strong id="importantEventLevel">URGENTE</strong></div>
     <div class="important-event-viewport"><div id="importantEventTrack" class="important-event-track"></div></div>
@@ -206,6 +206,32 @@
     <section class="command-board-footer"><div id="commandBoardLegend"><b>LEGENDA</b><span><i class="c-critical"></i>Crítico</span><span><i class="c-high"></i>Alto</span><span><i class="c-watch"></i>Atenção</span><span><i class="c-low"></i>Baixo</span></div><small>Fontes: Weather Risk SPI • Previsão SPI • Defesa Civil/INMET • Energy Core • Fire Core • Sites. A classificação operacional não substitui alerta oficial.</small></section>
   </main>
 
+  <main id="decisionView" class="decision-view" hidden>
+    <section class="decision-head">
+      <div><span class="decision-badge">SPI • DEV</span><h2>⚡ DECISÃO OPERACIONAL</h2><p>O que está acontecendo → o que vem → impacto na rede → o que fazer</p></div>
+      <div class="decision-head-status"><b id="decisionLevel">ANALISANDO</b><small id="decisionUpdated">Atualizando…</small></div>
+    </section>
+    <section class="decision-flow">
+      <article class="decision-stage decision-now">
+        <header><span>1</span><div><small>SITUAÇÃO AGORA</small><b>O que está acontecendo</b></div></header>
+        <div id="decisionNow" class="decision-content">Consolidando Defesa Civil, CEMADEN e condição atual…</div>
+      </article>
+      <article class="decision-stage decision-next">
+        <header><span>2</span><div><small>O QUE VEM</small><b>3H • 6H • 24H • 48H</b></div></header>
+        <div id="decisionNext" class="decision-content">Consolidando previsão meteorológica e alertas oficiais…</div>
+      </article>
+      <article class="decision-stage decision-network">
+        <header><span>3</span><div><small>IMPACTO NA REDE</small><b>Onde a operação está exposta</b></div></header>
+        <div id="decisionNetwork" class="decision-content">Cruzando sites ≤4h, Backbone, árvores, energia e Fire…</div>
+      </article>
+      <article class="decision-stage decision-action">
+        <header><span>4</span><div><small>AÇÃO RECOMENDADA</small><b>O que fazer agora</b></div></header>
+        <div id="decisionAction" class="decision-content">Gerando recomendação operacional…</div>
+      </article>
+    </section>
+    <section class="decision-sources"><b>FONTES E CONFIANÇA</b><div id="decisionSources">Verificando atualização das fontes…</div></section>
+  </main>
+
   <main id="weatherLabView" class="weatherlab-view" hidden>
     <section class="weatherlab-top">
       <div><div class="eyebrow">SPI • DEV • TESTE VISUAL</div><h2>Monitor Climático Operacional</h2><p>Radar observado + risco operacional SPI. Limites coloridos representam municípios afetados; a camada de radar permanece observacional.</p></div>
@@ -240,6 +266,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788791614"></script>
+  <script src="app.js?v=1788795290"></script>
 </body>
 </html>
