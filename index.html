@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788795774">
+  <link rel="stylesheet" href="styles.css?v=1788796421">
 </head>
 <body>
   <header class="topbar">
@@ -208,27 +208,18 @@
 
   <main id="decisionView" class="decision-view" hidden>
     <section class="decision-head">
-      <div><span class="decision-badge">SPI • DEV</span><h2>⚡ DECISÃO OPERACIONAL</h2><p>O que está acontecendo → o que vem → impacto na rede → o que fazer</p></div>
+      <div><span class="decision-badge">SPI • DEV</span><h2>⚡ DECISÃO OPERACIONAL</h2><p>Resumo executivo → situação atual → exposição → mapa real → risco real → projeção → previsão 48h</p></div>
       <div class="decision-head-status"><b id="decisionLevel">ANALISANDO</b><small id="decisionUpdated">Atualizando…</small></div>
     </section>
-    <section class="decision-flow">
-      <article class="decision-stage decision-now">
-        <header><span>1</span><div><small>SITUAÇÃO AGORA</small><b>O que está acontecendo</b></div></header>
-        <div id="decisionNow" class="decision-content">Consolidando Defesa Civil, CEMADEN e condição atual…</div>
-      </article>
-      <article class="decision-stage decision-next">
-        <header><span>2</span><div><small>O QUE VEM</small><b>3H • 6H • 24H • 48H</b></div></header>
-        <div id="decisionNext" class="decision-content">Consolidando previsão meteorológica e alertas oficiais…</div>
-      </article>
-      <article class="decision-stage decision-network">
-        <header><span>3</span><div><small>IMPACTO NA REDE</small><b>Onde a operação está exposta</b></div></header>
-        <div id="decisionNetwork" class="decision-content">Cruzando sites ≤4h, Backbone, árvores, energia e Fire…</div>
-      </article>
-      <article class="decision-stage decision-action">
-        <header><span>4</span><div><small>AÇÃO RECOMENDADA</small><b>O que fazer agora</b></div></header>
-        <div id="decisionAction" class="decision-content">Gerando recomendação operacional…</div>
-      </article>
+    <section id="decisionExecutive" class="decision-executive">Consolidando leitura executiva…</section>
+    <section id="decisionKpis" class="decision-kpis"></section>
+    <section class="decision-body">
+      <article class="decision-stage decision-map-stage"><header><span>1</span><div><small>SITUAÇÃO ATUAL</small><b>Mapa real • agora</b></div></header><div class="decision-content"><div id="decisionRealMap" class="decision-real-map"></div><div id="decisionMapFoot" class="decision-map-foot"></div></div></article>
+      <article class="decision-stage decision-risk-stage"><header><span>2</span><div><small>RISCO REAL</small><b>Defesa Civil + CEMADEN</b></div></header><div id="decisionRisk" class="decision-content">Consolidando municípios prioritários…</div></article>
     </section>
+    <section class="decision-stage decision-projection-stage"><header><span>3</span><div><small>PROJEÇÃO</small><b>3H • 6H • 24H • 48H</b></div></header><div id="decisionProjection" class="decision-content">Calculando projeção municipal…</div></section>
+    <section class="decision-stage decision-forecast-stage"><header><span>4</span><div><small>PREVISÃO OPERACIONAL</small><b>Próximas 48H</b></div></header><div id="decisionForecast" class="decision-content">Consolidando janelas operacionais…</div></section>
+    <section class="decision-stage decision-impact-stage"><header><span>5</span><div><small>EXPOSIÇÃO DA REDE</small><b>Sites • Backbone • árvores • Fire • energia</b></div></header><div id="decisionImpact" class="decision-content">Cruzando exposição operacional…</div></section>
     <section class="decision-sources"><b>FONTES E CONFIANÇA</b><div id="decisionSources">Verificando atualização das fontes…</div></section>
   </main>
 
@@ -266,6 +257,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788795774"></script>
+  <script src="app.js?v=1788796421"></script>
 </body>
 </html>
