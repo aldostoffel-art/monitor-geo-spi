@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788819710">
+  <link rel="stylesheet" href="styles.css?v=1788820850">
 </head>
 <body>
   <header class="topbar">
@@ -17,7 +17,7 @@
     </div>
     <div class="status"><span class="dot"></span><span id="statusText">Carregando Backbone…</span></div>
   </header>
-  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabDecision" class="view-tab" type="button"><span class="tab-icon">⚡</span><span class="tab-long">Decisão Operacional</span><span class="tab-short">Decisão</span></button><button id="tabAlarmesP1" class="view-tab" type="button"><span class="tab-icon">🚨</span><span class="tab-long">Alarmes P1</span><span class="tab-short">P1</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabRibeirao" class="view-tab" type="button"><span class="tab-icon">🏙️</span><span class="tab-long">Ribeirão Fire</span><span class="tab-short">Ribeirão</span></button><button id="tabRibeiraoGeral" class="view-tab" type="button"><span class="tab-icon">📊</span><span class="tab-long">Ribeirão Geral</span><span class="tab-short">Rib. Geral</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button></nav>
+  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabDecision" class="view-tab" type="button"><span class="tab-icon">⚡</span><span class="tab-long">Decisão Operacional</span><span class="tab-short">Decisão</span></button><button id="tabAlarmesP1" class="view-tab" type="button"><span class="tab-icon">🚨</span><span class="tab-long">Alarmes P1</span><span class="tab-short">P1</span></button><button id="tabPostes" class="view-tab" type="button"><span class="tab-icon">🪵</span><span class="tab-long">Queda de Postes</span><span class="tab-short">Postes</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabRibeirao" class="view-tab" type="button"><span class="tab-icon">🏙️</span><span class="tab-long">Ribeirão Fire</span><span class="tab-short">Ribeirão</span></button><button id="tabRibeiraoGeral" class="view-tab" type="button"><span class="tab-icon">📊</span><span class="tab-long">Ribeirão Geral</span><span class="tab-short">Rib. Geral</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button></nav>
   <section id="importantEventStrip" class="important-event-strip" aria-label="Eventos meteorológicos importantes" aria-live="assertive" hidden>
     <div class="important-event-label"><span>🚨 EVENTO IMPORTANTE</span><strong id="importantEventLevel">URGENTE</strong></div>
     <div class="important-event-viewport"><div id="importantEventTrack" class="important-event-track"></div></div>
@@ -237,6 +237,26 @@
     <section class="p1-foot"><b>LEITURA:</b> esta aba não atribui causa automaticamente. Reincidência e oportunidade são sinais operacionais para investigação; a correlação com clima, energia, Backbone, árvore e Fire será incorporada progressivamente conforme o histórico aumenta.</section>
   </main>
 
+
+  <main id="postesView" class="postes-view" hidden>
+    <section class="postes-head">
+      <div><span class="postes-badge">SPI • DEV • BASE EM CONSTRUÇÃO</span><h2>QUEDA DE POSTES • INTELIGÊNCIA DE VULNERABILIDADE</h2><p>Onde mais cai • causa • tempo de recomposição • responsável • exposição da rede</p></div>
+      <div id="postesUpdated" class="postes-updated">Atualizando…</div>
+    </section>
+    <section class="postes-period">
+      <span>PERÍODO</span><button data-postes-period="all" class="active">Desde o início</button><button data-postes-period="year">Ano</button><button data-postes-period="month">Mês</button><button data-postes-period="week">Semana</button>
+    </section>
+    <section id="postesKpis" class="postes-kpis"></section>
+    <section class="postes-grid">
+      <article class="postes-card postes-wide"><header><b>BASE E FONTES</b><small>somente dados com origem identificada</small></header><div id="postesSources"></div></article>
+      <article class="postes-card"><header><b>REGIÕES COM MAIS QUEDAS</b><small>ranking por período</small></header><div id="postesRegions"></div></article>
+      <article class="postes-card"><header><b>TEMPO DE RECOMPOSIÇÃO</b><small>média, mediana e extremos</small></header><div id="postesRecovery"></div></article>
+      <article class="postes-card"><header><b>CAUSAS E RESPONSABILIDADE</b><small>fato confirmado separado de inferência</small></header><div id="postesCauses"></div></article>
+      <article class="postes-card"><header><b>EXPOSIÇÃO DA NOSSA REDE</b><small>Backbone, troncos e sites próximos</small></header><div id="postesExposure"></div></article>
+    </section>
+    <section id="postesRules" class="postes-rules"></section>
+  </main>
+
   <main id="weatherLabView" class="weatherlab-view" hidden>
     <section class="weatherlab-top">
       <div><div class="eyebrow">SPI • DEV • TESTE VISUAL</div><h2>Monitor Climático Operacional</h2><p>Radar observado + risco operacional SPI. Limites coloridos representam municípios afetados; a camada de radar permanece observacional.</p></div>
@@ -271,6 +291,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788819710"></script>
+  <script src="app.js?v=1788820850"></script>
 </body>
 </html>
