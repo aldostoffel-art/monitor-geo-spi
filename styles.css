@@ -751,3 +751,6 @@ body.command-board-mobile>footer{display:none!important}
   .nv-body>.nv-panel:first-child .nv-projection-inline .nv-projection-map{flex:1 1 auto!important;height:auto!important;min-height:300px!important}
   .nv-body>.nv-panel:first-child .nv-weather{flex:0 0 auto}
 }
+
+/* Projeção: filtros de prioridade */
+.nv-proj-controls{display:grid;gap:5px;justify-items:end}.nv-proj-severity{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}.nv-proj-severity button{border:1px solid #315f79;background:#0d263d;color:#9fc3d9;border-radius:7px;padding:4px 7px;font-size:8px;font-weight:900}.nv-proj-severity button.active{background:#754813;border-color:#e5b62f;color:#fff}.nv-proj-severity button[data-nv-proj-severity="high"].active{background:#7b2e18;border-color:#f06427}.nv-proj-severity button[data-nv-proj-severity="critical"].active{background:#67121d;border-color:#d32f2f}@media(max-width:800px){.nv-proj-controls{justify-items:stretch}.nv-proj-severity{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap}.nv-proj-severity button{flex:0 0 auto;padding:5px 7px}}
