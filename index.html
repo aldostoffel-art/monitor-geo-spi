@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788820850">
+  <link rel="stylesheet" href="styles.css?v=1788821562">
 </head>
 <body>
   <header class="topbar">
@@ -227,8 +227,13 @@
   <main id="alarmesP1View" class="p1-view" hidden>
     <section class="p1-head"><div><span class="p1-badge">SPI • DEV • LEITURA PASSIVA</span><h2>🚨 ALARMES P1 • INTELIGÊNCIA OPERACIONAL</h2><p>Reincidência • oportunidades • localidades • leitura por CN e site</p></div><div id="p1Updated" class="p1-updated">Atualizando…</div></section>
     <section id="p1Kpis" class="p1-kpis"></section>
+    <section id="p1SlaKpis" class="p1-kpis p1-sla-kpis"></section>
     <section class="p1-grid">
       <article class="p1-card p1-wide"><header><b>ÚLTIMO INFORME</b><small>situação mais recente capturada no grupo</small></header><div id="p1Latest"></div></article>
+      <article class="p1-card p1-wide"><header><b>⏱️ SLA • ABERTOS AGORA</b><small>idade do incidente desde a primeira entrada observada</small></header><div id="p1SlaOpen"></div></article>
+      <article class="p1-card"><header><b>SLA POR CN</b><small>média de fechamento e abertos</small></header><div id="p1SlaCn"></div></article>
+      <article class="p1-card"><header><b>SLA POR MUNICÍPIO</b><small>média de fechamento e exposição atual</small></header><div id="p1SlaMunicipio"></div></article>
+      <article class="p1-card"><header><b>SLA POR SITE</b><small>incidentes, fechamentos e idade ativa</small></header><div id="p1SlaSite"></div></article>
       <article class="p1-card"><header><b>REINCIDÊNCIA</b><small>sites que repetem entre ciclos</small></header><div id="p1Recurrence"></div></article>
       <article class="p1-card"><header><b>OPORTUNIDADES</b><small>priorização por recorrência, autonomia e concentração</small></header><div id="p1Opportunity"></div></article>
       <article class="p1-card"><header><b>LOCALIDADES</b><small>municípios com maior concentração de alarmes</small></header><div id="p1Locality"></div></article>
@@ -291,6 +296,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788820850"></script>
+  <script src="app.js?v=1788821562"></script>
 </body>
 </html>
