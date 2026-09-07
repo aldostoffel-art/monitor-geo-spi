@@ -475,6 +475,22 @@ function decisionFresh(ts,limit){const a=decisionAge(ts);return a!=null&&a<=limi
 function decisionOpenCommand(filter='real',hours=null){nvCommandMapFilter=filter;leaveDecisionView();showCommandTab();if(hours!=null){nvProjectionHours=Number(hours)||6;setTimeout(()=>nvRenderProjectionMap(nvProjectionHours),180)}}
 function decisionTopObserved(){const obs=nvAllCemadenNow();return [...obs].sort((a,b)=>Math.max(Number(b.chuva1h||0),Number(b.chuva3h||0)/3)-Math.max(Number(a.chuva1h||0),Number(a.chuva3h||0)/3))[0]||null}
 function decisionSourceStatus(label,ts,limit){const a=decisionAge(ts),ok=a!=null&&a<=limit;return `<span class="decision-source ${ok?'fresh':'stale'}"><i></i><b>${esc(label)}</b><small>${a==null?'sem carimbo':a<1?'agora':Math.round(a)+' min'}</small></span>`}
+
+let decisionProjectionMap=null,decisionProjectionLayer=null;
+async function renderDecisionProjectionMap(hours=6){
+ const el=document.getElementById('decisionProjectionMap'),meta=document.getElementById('decisionProjectionMeta');if(!el||typeof L==='undefined')return;
+ try{
+  await wlLoadMunicipios();
+  const rows=nvProjectionRows(hours),ranks=new Map(rows.map(x=>[x.key,x]));
+  if(decisionProjectionMap){try{decisionProjectionMap.remove()}catch(_){ }decisionProjectionMap=null;decisionProjectionLayer=null}
+  const m=L.map(el,{preferCanvas:true,zoomControl:false,attributionControl:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,tap:false,dragging:true});decisionProjectionMap=m;
+  decisionProjectionLayer=L.geoJSON(weatherLabMunicipios,{style:f=>{const k=norm(f?.properties?.municipio||''),r=ranks.get(k);return{color:r?r.color:'#355365',weight:r?1.5:.35,fillColor:r?r.color:'#102636',fillOpacity:r?.score>=85?.94:r?.score>=70?.88:r?.score>=50?.8:r?.score>=30?.68:.04}},onEachFeature:(f,l)=>{const k=norm(f?.properties?.municipio||''),r=ranks.get(k);if(r)l.bindTooltip(`${r.municipio} • ${r.level}`,{sticky:true})}}).addTo(m);
+  m.fitBounds(decisionProjectionLayer.getBounds(),{padding:[4,4]});
+  setTimeout(()=>m.invalidateSize(),80);
+  if(meta){const top=rows.slice(0,5).map(x=>x.municipio).filter(Boolean);meta.innerHTML=rows.length?`<b>${rows.length} município(s)</b> em atenção ou superior${top.length?` • ${top.map(esc).join(' • ')}`:''}`:'Sem município relevante na projeção de 6H.'}
+ }catch(e){console.warn('Falha mapa Decisão',e);el.innerHTML='<div class="decision-empty">Mapa indisponível neste ciclo.</div>'}
+}
+
 function renderDecisionView(){
  const root=document.getElementById('decisionView');if(!root)return;
  const nowRows=commandBoardRegionRows(commandBoardWindows()[0]),h6=commandBoardRegionRows(commandBoardWindows()[1]);
@@ -492,8 +508,8 @@ function renderDecisionView(){
  }
  const next=document.getElementById('decisionNext');if(next){
    const wins=[3,6,24,48];
-   const cards=wins.map(h=>{const rows=nvProjectionRows(h),x=rows[0],crit=rows.filter(z=>String(z.level||'').includes('CRÍTICO')).length;if(!x)return `<button class="decision-window ok" data-decision-hours="${h}"><small>${h}H</small><b>SEM RISCO RELEVANTE</b><span>0 municípios</span></button>`;return `<button class="decision-window" data-decision-hours="${h}"><small>${h}H</small><b>${esc(x.level||'ATENÇÃO')} • ${esc(x.municipio||'')}</b><span>🌧 ${Number(x.rain||0).toFixed(1)} mm • 🌬 ${Number(x.gust||0).toFixed(0)} km/h</span><em>${rows.length} mun. • ${crit} crítico(s)</em></button>`}).join('');
-   next.innerHTML=`<div class="decision-windows">${cards}</div>${top6?`<div class="decision-note"><b>Próxima pressão operacional:</b> CN ${esc(top6.ddd)} • ${esc(nvCnPlace(top6))} • ${esc(nvCnLevel(top6,{id:'6h'}).label)} • ${Number(top6.rain||0).toFixed(1)} mm • raj. ${Number(top6.gust||0).toFixed(0)} km/h</div>`:''}`;
+   const cards=wins.map(h=>{const rows=nvProjectionRows(h),x=rows[0],crit=rows.filter(z=>String(z.level||'').includes('CRÍTICO')).length;if(!x)return `<button class="decision-window ok" data-decision-hours="${h}"><small>${h}H</small><b class="decision-window-level">SEM RISCO RELEVANTE</b><strong class="decision-window-city">—</strong><span>0 municípios</span></button>`;return `<button class="decision-window" data-decision-hours="${h}"><small>${h}H</small><b class="decision-window-level">${esc(x.level||'ATENÇÃO')}</b><strong class="decision-window-city">${esc(x.municipio||'')}</strong><span>🌧 ${Number(x.rain||0).toFixed(1)} mm • 🌬 ${Number(x.gust||0).toFixed(0)} km/h</span><em>${rows.length} mun. • ${crit} crítico(s)</em></button>`}).join('');
+   next.innerHTML=`<div class="decision-windows">${cards}</div>${top6?`<div class="decision-note"><b>Próxima pressão operacional:</b> CN ${esc(top6.ddd)} • ${esc(nvCnPlace(top6))} • ${esc(nvCnLevel(top6,{id:'6h'}).label)} • ${Number(top6.rain||0).toFixed(1)} mm • raj. ${Number(top6.gust||0).toFixed(0)} km/h</div>`:''}<div class="decision-map-head"><b>MAPA • PRÓXIMA PRESSÃO</b><span>6H • municípios relevantes</span></div><div id="decisionProjectionMap" class="decision-projection-map"></div><div id="decisionProjectionMeta" class="decision-map-meta"></div>`;
  }
  const network=document.getElementById('decisionNetwork');if(network){
    const sites4=(siteEvents||[]).filter(x=>siteIsCritical(x)&&['11','12','14','15','16','17','18','19'].includes(String(x.ddd??''))&&(String(x.ddd)!=='11'||x.escopo_spi_ddd11===true)).length;
@@ -518,6 +534,7 @@ function renderDecisionView(){
  root.querySelectorAll('[data-decision-filter]').forEach(b=>b.onclick=()=>decisionOpenCommand(b.dataset.decisionFilter||'real'));
  root.querySelectorAll('[data-decision-hours]').forEach(b=>b.onclick=()=>decisionOpenCommand('real',Number(b.dataset.decisionHours)||6));
  document.getElementById('decisionTrajectory')?.addEventListener('click',()=>{leaveDecisionView();showTrajectoryTab()},{once:true});
+ renderDecisionProjectionMap(6);
 }
 function leaveDecisionView(){const v=document.getElementById('decisionView');if(v)v.hidden=true;document.body.classList.remove('decision-mode')}
 function showDecisionTab(){try{leaveRibeiraoGeral();leaveRibeiraoMode();leaveTrajectoryMode();leaveMobileMode();leaveFireMode();if(typeof leaveWeatherLab==='function')leaveWeatherLab();if(typeof leaveTacticalMode==='function')leaveTacticalMode();if(typeof leaveFireHistoryTab==='function')leaveFireHistoryTab();if(typeof leaveSbcView==='function')leaveSbcView()}catch(_){ }for(const id of ['mapView','commandView','ribeiraoGeralView','weatherLabView','tacticalView','fireHistoryView','sbcView']){const x=document.getElementById(id);if(x)x.hidden=true}const v=document.getElementById('decisionView');if(v)v.hidden=false;document.body.classList.add('decision-mode');setActiveViewTab('tabDecision');Promise.all([loadCommandAiSummary(),loadNetworkIntel(),loadProjectionMunicipal()]).finally(()=>renderDecisionView())}
