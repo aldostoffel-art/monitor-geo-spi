@@ -741,3 +741,13 @@ body.command-board-mobile>footer{display:none!important}
   .nv-projection-inline .nv-proj-cityline{display:block}
   .nv-projection-inline .nv-proj-cityline>b{display:block;margin-bottom:5px}
 }
+/* Sincronia visual: coluna de mapas ocupa exatamente a mesma altura do Risco Real */
+@media(min-width:801px){
+  .nv-body{align-items:stretch!important}
+  .nv-body>.nv-panel{height:auto!important;min-height:0}
+  .nv-body>.nv-panel:first-child{display:flex!important;flex-direction:column!important}
+  .nv-body>.nv-panel:nth-child(2){height:auto!important;max-height:none!important;overflow:visible!important}
+  .nv-body>.nv-panel:first-child .nv-projection-inline{flex:1 1 auto!important;display:flex!important;flex-direction:column!important;min-height:390px}
+  .nv-body>.nv-panel:first-child .nv-projection-inline .nv-projection-map{flex:1 1 auto!important;height:auto!important;min-height:300px!important}
+  .nv-body>.nv-panel:first-child .nv-weather{flex:0 0 auto}
+}
