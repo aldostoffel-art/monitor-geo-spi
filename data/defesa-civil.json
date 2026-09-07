@@ -1,14 +1,15 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-06T22:15:05-03:00",
-  "fonte_coletada_em": "2026-09-07T01:15:04Z",
+  "gerado_em": "2026-09-06T22:25:07-03:00",
+  "fonte_coletada_em": "2026-09-07T01:25:03Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
   "entradas_feed": 27,
-  "alertas_ativos": 1,
-  "eventos_geo": [
+  "alertas_ativos": 0,
+  "eventos_geo": [],
+  "eventos_recentes_geo": [
     {
       "id_alerta": "189266/2026",
       "municipio": "Piquete",
@@ -25,41 +26,16 @@
       "inicio": "2026-09-06T20:25:14-03:00",
       "fim": "2026-09-06T22:25:00-03:00",
       "vigencia": "2026-09-06T20:25:14-03:00 → 2026-09-06T22:25:00-03:00",
-      "status": "ATIVO_OFICIAL",
+      "status": "RECENTE_EXPIRADO",
       "fonte": "Defesa Civil / IDAP-CAP",
       "sender": "CENAD-SEDEC",
       "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
       "sites_referencia": 1,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-07T01:10:00+00:00",
-        "intensidade_estimada_mmh": 0.7,
-        "faixa_estimada_mmh": [
-          0.7,
-          1.0
-        ],
-        "dbz_medio": 20.5,
-        "pico_em": "2026-09-06T23:20:00+00:00",
-        "pico_estimado_mmh": 9.1,
-        "pico_dbz_medio": 38.4,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
+      ]
     }
   ],
-  "eventos_recentes_geo": [],
   "janela_recentes_horas": 6,
-  "alertas_sp_sem_municipio_spi": [],
-  "radar_enriquecimento": {
-    "fonte": "RainViewer",
-    "gerado_em": "2026-09-07T01:15:07.716426+00:00",
-    "janela_min": 120,
-    "eventos_com_eco": 1,
-    "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
-  }
+  "alertas_sp_sem_municipio_spi": []
 }
