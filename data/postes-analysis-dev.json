@@ -1,0 +1,62 @@
+{
+  "ambiente": "DEV",
+  "gerado_em": "2026-09-07T22:40:50.034112+00:00",
+  "status": "BASE_EM_CONSTRUCAO",
+  "periodo_disponivel_oficial": "2017-2026",
+  "quedas_poste_confirmadas_carregadas": 0,
+  "municipios_com_queda_confirmada": 0,
+  "sites_spi_prontos_cruzamento": 4393,
+  "trechos_backbone_prontos_cruzamento": 1434,
+  "fontes": [
+    {
+      "nome": "ANEEL - Ocorrencias Emergenciais nas Redes de Distribuicao",
+      "status": "FONTE_OFICIAL_IDENTIFICADA",
+      "cobertura": "2017-2026",
+      "frequencia": "mensal",
+      "granularidade": "municipio/conjunto eletrico + horario da ocorrencia",
+      "uso": "base candidata para identificar ocorrencias e causas; classificacao especifica de poste ainda em validacao"
+    },
+    {
+      "nome": "ANEEL - Interrupcoes de Energia Eletrica",
+      "status": "FONTE_OFICIAL_IDENTIFICADA",
+      "cobertura": "2017-2026",
+      "frequencia": "mensal",
+      "granularidade": "interrupcao com hora/minuto/segundo",
+      "uso": "medir impacto e janela de recomposicao quando houver vinculo confiavel"
+    },
+    {
+      "nome": "ANEEL - Atendimento as Ocorrencias Emergenciais",
+      "status": "FONTE_OFICIAL_IDENTIFICADA",
+      "cobertura": "historica",
+      "frequencia": "mensal",
+      "granularidade": "conjunto eletrico",
+      "uso": "TMP/TMD/TME/TMAE para referencia de tempos de atendimento"
+    },
+    {
+      "nome": "Base SPI - sites e Backbone",
+      "status": "PRONTA_PARA_CRUZAMENTO",
+      "cobertura": "atual",
+      "frequencia": "interna DEV",
+      "granularidade": "site/trecho",
+      "uso": "proximidade e exposicao da rede, somente apos georreferencia confiavel da ocorrencia"
+    }
+  ],
+  "regras_confiabilidade": [
+    "Nao classificar queda de poste sem evidencia explicita na fonte.",
+    "Nao atribuir responsabilidade pela queda apenas pela distribuidora da area.",
+    "Tempo de recomposicao so sera calculado quando inicio e encerramento estiverem vinculados a mesma ocorrencia.",
+    "Proximidade com Backbone/site exige coordenada ou referencia geografica confiavel; municipio sozinho nao basta para dizer que o poste sustenta nosso tronco."
+  ],
+  "ranking_regioes": [],
+  "causas": [],
+  "tempos_recomposicao": [],
+  "exposicao_rede": [],
+  "proximas_etapas": [
+    "validar campos de causa da ANEEL",
+    "filtrar ocorrencias de poste/estrutura",
+    "normalizar municipio e distribuidora",
+    "calcular duracao confiavel",
+    "georreferenciar quando houver endereco/coordenada",
+    "cruzar com Backbone e sites SPI"
+  ]
+}
