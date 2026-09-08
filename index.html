@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788882204">
+  <link rel="stylesheet" href="styles.css?v=1788882575">
 </head>
 <body>
   <header class="topbar">
@@ -237,10 +237,15 @@
         <button id="p1ClearFilters" type="button">Limpar filtros</button>
       </div>
     </section>
-    <section id="p1Kpis" class="p1-kpis"></section>
-    <section id="p1SlaKpis" class="p1-kpis p1-sla-kpis"></section>
-    <section class="p1-ops-cockpit"><div class="p1-ops-title"><div><b>📊 COCKPIT OPERACIONAL P1</b><small>Ability = CN 11 • TEL = demais CNs SPI</small></div><span>ONLINE</span></div><div id="p1PartnerCards" class="p1-partner-cards"></div><div class="p1-ops-grid"><article class="p1-chart-card"><header><b>BACKLOG ATIVO POR FAIXA DE SLA</b><small>sites ainda abertos</small></header><div id="p1SlaBands"></div></article><article class="p1-chart-card"><header><b>IDADE MÉDIA DOS ATIVOS POR CN</b><small>visão online por operação</small></header><div id="p1CnChart"></div></article></div></section>
-    <section class="p1-grid">
+    <section class="p1-subnav" aria-label="Navegação Alarmes P1">
+      <button type="button" class="active" data-p1-sub="now"><b>AGORA</b><small>ativos • SLA • causa/status</small></button>
+      <button type="button" data-p1-sub="history"><b>HISTÓRICO</b><small>dias • reincidência • CN</small></button>
+      <button type="button" data-p1-sub="export"><b>EXPORTAÇÃO</b><small>CSV • JSON • bases</small></button>
+    </section>
+    <section id="p1Kpis" class="p1-kpis" data-p1-section="now"></section>
+    <section id="p1SlaKpis" class="p1-kpis p1-sla-kpis" data-p1-section="now"></section>
+    <section class="p1-ops-cockpit" data-p1-section="now"><div class="p1-ops-title"><div><b>📊 COCKPIT OPERACIONAL P1</b><small>Ability = CN 11 • TEL = demais CNs SPI</small></div><span>ONLINE</span></div><div id="p1PartnerCards" class="p1-partner-cards"></div><div class="p1-ops-grid"><article class="p1-chart-card"><header><b>BACKLOG ATIVO POR FAIXA DE SLA</b><small>sites ainda abertos</small></header><div id="p1SlaBands"></div></article><article class="p1-chart-card"><header><b>IDADE MÉDIA DOS ATIVOS POR CN</b><small>visão online por operação</small></header><div id="p1CnChart"></div></article></div></section>
+    <section class="p1-grid" data-p1-section="now">
       <article class="p1-card p1-wide"><header><b>ÚLTIMO INFORME</b><small>situação mais recente capturada no grupo</small></header><div id="p1Latest"></div></article>
       <article class="p1-card p1-wide"><header><b>🧭 CAUSA / STATUS • ATIVOS AGORA</b><small>informação mais recente localizada nos grupos responsáveis</small></header><div id="p1CurrentCauses"></div></article>
       <article class="p1-card p1-wide"><header><b>⏱️ SLA • ABERTOS AGORA</b><small>idade real quando conhecida • mínimo observado quando o histórico começou com o site ativo</small></header><div id="p1SlaOpen"></div></article>
@@ -250,7 +255,7 @@
       <article class="p1-card"><header><b>ATIVOS POR MUNICÍPIO</b><small>backlog online filtrado</small></header><div id="p1Locality"></div></article>
       <article class="p1-card"><header><b>ATIVOS POR CN</b><small>backlog online filtrado</small></header><div id="p1Cn"></div></article>
     </section>
-    <section class="p1-history-recurrence">
+    <section class="p1-history-recurrence" id="p1HistorySection" data-p1-section="history">
       <div class="p1-history-head"><div><b>🔁 HISTÓRICO • TOP 10 REINCIDENTES</b><small id="p1HistoryPeriod">desde o início da base</small></div><div id="p1HistoryPeak" class="p1-history-peak">pico —</div></div>
       <div id="p1HistoryTop10" class="p1-history-list"></div>
       <div class="p1-history-daily-head"><b>📅 MÊS ATUAL • INCIDENTES POR DIA</b><small>novas entradas x reincidências • Ability x TEL</small></div>
@@ -322,6 +327,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788882204"></script>
+  <script src="app.js?v=1788882575"></script>
 </body>
 </html>
