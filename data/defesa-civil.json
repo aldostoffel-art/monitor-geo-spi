@@ -1,8 +1,8 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-08T17:35:36-03:00",
-  "fonte_coletada_em": "2026-09-08T20:35:28Z",
+  "gerado_em": "2026-09-08T17:35:27-03:00",
+  "fonte_coletada_em": "2026-09-08T20:35:07Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
@@ -32,7 +32,14 @@
       "sites_referencia": 11,
       "area_oficial": [
         "Aparecida de Goiânia/GO, Goiânia/GO"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
     },
     {
       "id_alerta": "189328/2026",
@@ -57,10 +64,34 @@
       "sites_referencia": 11,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-08T20:30:00+00:00",
+        "intensidade_estimada_mmh": 1.85,
+        "faixa_estimada_mmh": [
+          2.05,
+          3.65
+        ],
+        "dbz_medio": 27.3,
+        "pico_em": "2026-09-08T20:10:00+00:00",
+        "pico_estimado_mmh": 2.94,
+        "pico_dbz_medio": 30.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [],
   "janela_recentes_horas": 6,
-  "alertas_sp_sem_municipio_spi": []
+  "alertas_sp_sem_municipio_spi": [],
+  "radar_enriquecimento": {
+    "fonte": "RainViewer",
+    "gerado_em": "2026-09-08T20:35:30.012724+00:00",
+    "janela_min": 120,
+    "eventos_com_eco": 1,
+    "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
+  }
 }
