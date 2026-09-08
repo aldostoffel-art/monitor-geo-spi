@@ -1,6 +1,6 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-08T19:23:45.524280-03:00",
+  "gerado_em": "2026-09-08T19:24:36.705717-03:00",
   "metodo": "correlação por sigla do site no mesmo dia em mensagens dos grupos operacionais; causa só é classificada quando há texto explícito compatível; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
   "historico_grupos_fim": "2026-09-08T22:20:28.000Z",
@@ -15878,7 +15878,7 @@
             {
               "site": "BFY",
               "reincidente": true,
-              "aberturas": 3,
+              "aberturas": 4,
               "causa": "REDE EXTERNA",
               "evidencias": [
                 {
@@ -15894,6 +15894,13 @@
                   "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
                 }
               ]
+            },
+            {
+              "site": "1JC",
+              "reincidente": false,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             },
             {
               "site": "APV",
@@ -15986,6 +15993,20 @@
               ]
             },
             {
+              "site": "ISJ",
+              "reincidente": false,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "JKB",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "JUR",
               "reincidente": true,
               "aberturas": 1,
@@ -16004,6 +16025,13 @@
                   "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
                 }
               ]
+            },
+            {
+              "site": "MCV",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             },
             {
               "site": "NS2",
@@ -16259,7 +16287,7 @@
             {
               "site": "DEG",
               "reincidente": true,
-              "aberturas": 2,
+              "aberturas": 3,
               "causa": "SEM CAUSA LOCALIZADA",
               "evidencias": []
             }
@@ -16429,6 +16457,13 @@
               "evidencias": []
             },
             {
+              "site": "MPN",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "NRT",
               "reincidente": false,
               "aberturas": 1,
@@ -16535,6 +16570,13 @@
               ]
             },
             {
+              "site": "IVA",
+              "reincidente": true,
+              "aberturas": 2,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "AYI",
               "reincidente": true,
               "aberturas": 1,
@@ -16557,13 +16599,6 @@
             },
             {
               "site": "FFN",
-              "reincidente": true,
-              "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
-            },
-            {
-              "site": "IVA",
               "reincidente": true,
               "aberturas": 1,
               "causa": "SEM CAUSA LOCALIZADA",
@@ -16623,14 +16658,20 @@
       "parceira": "ABILITY",
       "sites": [
         {
-          "site": "CIL",
-          "causa": "NORMALIZADO/OK",
+          "site": "1JC",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.07
+        },
+        {
+          "site": "BFY",
+          "causa": "REDE EXTERNA",
           "evidencias": [
             {
               "hora": "12:25",
               "grupo": "Movel N1 SPA",
-              "causa": "NORMALIZADO/OK",
-              "status": "CIL- OK tratado pelo Coran"
+              "causa": "REDE EXTERNA",
+              "status": "BFY - rede externa"
             },
             {
               "hora": "16:37",
@@ -16639,7 +16680,7 @@
               "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
             }
           ],
-          "idade_ativa_h": 8.05
+          "idade_ativa_h": 0.07
         },
         {
           "site": "IS3",
@@ -16652,7 +16693,19 @@
               "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
             }
           ],
-          "idade_ativa_h": 4.39
+          "idade_ativa_h": 4.41
+        },
+        {
+          "site": "ISJ",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.07
+        },
+        {
+          "site": "JKB",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.07
         },
         {
           "site": "JUR",
@@ -16671,26 +16724,13 @@
               "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
             }
           ],
-          "idade_ativa_h": 7.05
+          "idade_ativa_h": 7.07
         },
         {
-          "site": "OVJ",
-          "causa": "ACESSO/PROCESSO",
-          "evidencias": [
-            {
-              "hora": "14:27",
-              "grupo": "Movel N1 SPA",
-              "causa": "ACESSO/PROCESSO",
-              "status": "Ok, então o JUR, RZH, OVJ, NSR e FWL estao em deslocamento? Dw?"
-            },
-            {
-              "hora": "16:37",
-              "grupo": "Movel N1 SPA",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
-            }
-          ],
-          "idade_ativa_h": 6.0
+          "site": "MCV",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.07
         },
         {
           "site": "STF",
@@ -16709,7 +16749,7 @@
               "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
             }
           ],
-          "idade_ativa_h": 66.7
+          "idade_ativa_h": 66.72
         },
         {
           "site": "TUL",
@@ -16728,44 +16768,7 @@
               "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
             }
           ],
-          "idade_ativa_h": 10.72
-        }
-      ]
-    },
-    {
-      "cn": "12",
-      "parceira": "TEL",
-      "sites": [
-        {
-          "site": "RMC",
-          "causa": "FURTO/VANDALISMO",
-          "evidencias": [
-            {
-              "hora": "08:54",
-              "grupo": "Móvel N1 - 12",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "Bom dia pessoal como estamos com a recuperação do site: RMC @⁨Eugênio Guimarães (Geninho TEL 12)⁩ @⁨João Pedro (12 Tel)⁩ ?"
-            },
-            {
-              "hora": "10:45",
-              "grupo": "Móvel N1 - 12",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "RMC, PS5, TP4"
-            },
-            {
-              "hora": "11:17",
-              "grupo": "Móvel N1 - 12",
-              "causa": "FURTO/VANDALISMO",
-              "status": "RMC, já estamos reparando o vandalismo, vai demorar um pouquinho mais, pois estamos fazendo definitivo"
-            }
-          ],
-          "idade_ativa_h": 22.72
-        },
-        {
-          "site": "RYT",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 5.67
+          "idade_ativa_h": 10.74
         }
       ]
     },
@@ -16790,7 +16793,7 @@
               "status": "BLV normalizado , nao esta aceitando a baixa foi encaminhado email astro"
             }
           ],
-          "idade_ativa_h": 24.39
+          "idade_ativa_h": 24.41
         },
         {
           "site": "JK3",
@@ -16809,7 +16812,19 @@
               "status": "LTE JK3 normalizado"
             }
           ],
-          "idade_ativa_h": 64.39
+          "idade_ativa_h": 64.41
+        }
+      ]
+    },
+    {
+      "cn": "15",
+      "parceira": "TEL",
+      "sites": [
+        {
+          "site": "DEG",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.07
         }
       ]
     },
@@ -16821,13 +16836,7 @@
           "site": "1SX",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 5.67
-        },
-        {
-          "site": "FOO",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 14.72
+          "idade_ativa_h": 5.69
         }
       ]
     },
@@ -16839,13 +16848,19 @@
           "site": "1KB",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.72
+          "idade_ativa_h": 3.74
+        },
+        {
+          "site": "MPN",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.07
         },
         {
           "site": "U50",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 970.05
+          "idade_ativa_h": 970.07
         }
       ]
     },
@@ -16870,13 +16885,13 @@
               "status": "MMX, EGC, CVN"
             }
           ],
-          "idade_ativa_h": 44.72
+          "idade_ativa_h": 44.74
         },
         {
-          "site": "MTM",
+          "site": "IVA",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 2.72
+          "idade_ativa_h": 0.07
         }
       ]
     }
