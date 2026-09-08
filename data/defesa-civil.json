@@ -1,12 +1,12 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-07T22:05:17-03:00",
-  "fonte_coletada_em": "2026-09-08T01:05:06Z",
+  "gerado_em": "2026-09-07T22:15:05-03:00",
+  "fonte_coletada_em": "2026-09-08T01:15:03Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 22,
+  "entradas_feed": 19,
   "alertas_ativos": 2,
   "eventos_geo": [
     {
@@ -206,16 +206,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-08T01:00:00+00:00",
-        "intensidade_estimada_mmh": 0.83,
+        "ultimo_eco_em": "2026-09-08T01:10:00+00:00",
+        "intensidade_estimada_mmh": 1.78,
         "faixa_estimada_mmh": [
-          1.0,
+          2.05,
           3.16
         ],
-        "dbz_medio": 21.7,
-        "pico_em": "2026-09-08T00:50:00+00:00",
-        "pico_estimado_mmh": 1.0,
-        "pico_dbz_medio": 23.0,
+        "dbz_medio": 27.0,
+        "pico_em": "2026-09-08T01:10:00+00:00",
+        "pico_estimado_mmh": 1.78,
+        "pico_dbz_medio": 27.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -248,13 +248,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-08T01:00:00+00:00",
-        "intensidade_estimada_mmh": 2.57,
+        "ultimo_eco_em": "2026-09-08T01:10:00+00:00",
+        "intensidade_estimada_mmh": 1.63,
         "faixa_estimada_mmh": [
-          3.16,
-          31.58
+          2.05,
+          9.99
         ],
-        "dbz_medio": 29.6,
+        "dbz_medio": 26.4,
         "pico_em": "2026-09-08T01:00:00+00:00",
         "pico_estimado_mmh": 2.57,
         "pico_dbz_medio": 29.6,
@@ -326,7 +326,7 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-08T01:05:18.498742+00:00",
+    "gerado_em": "2026-09-08T01:15:07.907265+00:00",
     "janela_min": 120,
     "eventos_com_eco": 7,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
