@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-07T21:50:27-03:00",
-  "fonte_coletada_em": "2026-09-08T00:50:05Z",
+  "gerado_em": "2026-09-07T21:55:14-03:00",
+  "fonte_coletada_em": "2026-09-08T00:55:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 21,
-  "alertas_ativos": 1,
+  "entradas_feed": 22,
+  "alertas_ativos": 2,
   "eventos_geo": [
     {
       "id_alerta": "189303/2026",
@@ -176,6 +176,132 @@
         "pico_dbz_medio": 33.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
+    },
+    {
+      "id_alerta": "189307/2026",
+      "municipio": "Caraguatatuba",
+      "latitude": -23.621142,
+      "longitude": -45.408368,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:21h49 Chuva isolada na regiao de Sao Sebastiao, avancando para Ilhabela e Caraguatatuba. Tem raios. Atinge municipios vizinhos. Tome cuidado.",
+      "resumo": "Defesa Civil:21h49 Chuva isolada na regiao de Sao Sebastiao, avancando para Ilhabela e Caraguatatuba. Tem raios. Atinge municipios vizinhos. Tome cuidado.",
+      "descricao": "21h49 Chuva isolada na região de São Sebastião, avançando para Ilhabela e Caraguatatuba. Tem raios. Atinge municípios vizinhos. Tome cuidado.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-07T21:49:57-03:00",
+      "fim": "2026-09-07T23:50:00-03:00",
+      "vigencia": "2026-09-07T21:49:57-03:00 → 2026-09-07T23:50:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 40,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-08T00:50:00+00:00",
+        "intensidade_estimada_mmh": 1.0,
+        "faixa_estimada_mmh": [
+          1.0,
+          1.0
+        ],
+        "dbz_medio": 23.0,
+        "pico_em": "2026-09-08T00:50:00+00:00",
+        "pico_estimado_mmh": 1.0,
+        "pico_dbz_medio": 23.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189307/2026",
+      "municipio": "Ilhabela",
+      "latitude": -23.823272,
+      "longitude": -45.366517,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:21h49 Chuva isolada na regiao de Sao Sebastiao, avancando para Ilhabela e Caraguatatuba. Tem raios. Atinge municipios vizinhos. Tome cuidado.",
+      "resumo": "Defesa Civil:21h49 Chuva isolada na regiao de Sao Sebastiao, avancando para Ilhabela e Caraguatatuba. Tem raios. Atinge municipios vizinhos. Tome cuidado.",
+      "descricao": "21h49 Chuva isolada na região de São Sebastião, avançando para Ilhabela e Caraguatatuba. Tem raios. Atinge municípios vizinhos. Tome cuidado.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-07T21:49:57-03:00",
+      "fim": "2026-09-07T23:50:00-03:00",
+      "vigencia": "2026-09-07T21:49:57-03:00 → 2026-09-07T23:50:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 15,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-08T00:50:00+00:00",
+        "intensidade_estimada_mmh": 1.17,
+        "faixa_estimada_mmh": [
+          1.0,
+          15.38
+        ],
+        "dbz_medio": 24.1,
+        "pico_em": "2026-09-08T00:50:00+00:00",
+        "pico_estimado_mmh": 1.17,
+        "pico_dbz_medio": 24.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189307/2026",
+      "municipio": "São Sebastião",
+      "latitude": -23.7748,
+      "longitude": -45.557369,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:21h49 Chuva isolada na regiao de Sao Sebastiao, avancando para Ilhabela e Caraguatatuba. Tem raios. Atinge municipios vizinhos. Tome cuidado.",
+      "resumo": "Defesa Civil:21h49 Chuva isolada na regiao de Sao Sebastiao, avancando para Ilhabela e Caraguatatuba. Tem raios. Atinge municipios vizinhos. Tome cuidado.",
+      "descricao": "21h49 Chuva isolada na região de São Sebastião, avançando para Ilhabela e Caraguatatuba. Tem raios. Atinge municípios vizinhos. Tome cuidado.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-07T21:49:57-03:00",
+      "fim": "2026-09-07T23:50:00-03:00",
+      "vigencia": "2026-09-07T21:49:57-03:00 → 2026-09-07T23:50:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 47,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-08T00:50:00+00:00",
+        "intensidade_estimada_mmh": 4.27,
+        "faixa_estimada_mmh": [
+          3.16,
+          15.38
+        ],
+        "dbz_medio": 33.1,
+        "pico_em": "2026-09-08T00:50:00+00:00",
+        "pico_estimado_mmh": 4.27,
+        "pico_dbz_medio": 33.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [],
@@ -200,9 +326,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-08T00:50:34.215095+00:00",
+    "gerado_em": "2026-09-08T00:55:16.097717+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 4,
+    "eventos_com_eco": 7,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
