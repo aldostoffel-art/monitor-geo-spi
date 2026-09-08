@@ -1,14 +1,128 @@
 {
-  "gerado_em": "2026-09-08T08:25:16.476326+00:00",
+  "gerado_em": "2026-09-08T08:30:26.118522+00:00",
   "ambiente": "DEV",
-  "mudanca_relevante": false,
-  "fingerprint": "0ea75a26aebe4224a20bf3e958301d19ce26c808b5395e349b92e269654ea8fc",
-  "nivel": "BAIXO",
-  "agora": "Sem sinal externo relevante nos corredores monitorados",
-  "proximas_horas": "Manter varredura do entorno de SP",
-  "rede_exposta": "Sem corredor externo prioritário neste ciclo",
-  "recomendacao": "Nenhuma alteração preventiva de rota indicada neste ciclo",
-  "ameacas_externas": [],
+  "mudanca_relevante": true,
+  "fingerprint": "e255a1dbf72513a2737478168e06aa80ca4e8c8eb534a20ee7a2450e669a974c",
+  "nivel": "ATENÇÃO",
+  "agora": "Sinal externo em Extrema/MG aponta risco para o corredor BRAGANÇA/JUNDIAÍ",
+  "proximas_horas": "Potencial avanço para Bragança/Jundiaí nas próximas horas; rajada até 36 km/h e chuva horária até 2.5 mm",
+  "rede_exposta": "194 trecho(s) Backbone cruzam o corredor potencial",
+  "recomendacao": "Validar preventivamente redundância: 0/5 trechos amostrados têm caminho lógico alternativo fora do corredor",
+  "ameacas_externas": [
+    {
+      "nome": "Extrema/MG",
+      "corredor": "BRAGANÇA/JUNDIAÍ",
+      "alvo": "Bragança/Jundiaí",
+      "score": 45,
+      "tempestade": true,
+      "chuva_pico_mmh": 2.5,
+      "rajada_pico_kmh": 35.6,
+      "prob_chuva_pico": 98,
+      "eta_sinal_externo": "2026-09-08T15:00:00+00:00",
+      "backbones_no_corredor": 194,
+      "backbones_amostra": [
+        {
+          "id": "BB-3C900B7518B0",
+          "trecho": "ITA.CS-JAI.CB",
+          "cabo": null,
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "JAI.CB"
+        },
+        {
+          "id": "BB-2C51396CDA9F",
+          "trecho": "ITA.CS-JIU.DI",
+          "cabo": null,
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "JIU.DI"
+        },
+        {
+          "id": "BB-9162D38646F9",
+          "trecho": "ITA.CS-MNB.MG",
+          "cabo": null,
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "MNB.MG"
+        },
+        {
+          "id": "BB-3748FCBCA5D9",
+          "trecho": "ITA.CS-ITA.RD",
+          "cabo": "F-0171",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "ITA.RD"
+        },
+        {
+          "id": "BB-EB251B41B3B5",
+          "trecho": "ITA.CS-ITA.MD",
+          "cabo": "F-0802",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "ITA.MD"
+        },
+        {
+          "id": "BB-6EA5DE9EED94",
+          "trecho": "ITA.CS-JAI.RA",
+          "cabo": "F-0949",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "JAI.RA"
+        },
+        {
+          "id": "BB-C05A537BBE84",
+          "trecho": "BGP.DN-BGP.SC",
+          "cabo": "F-0675",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.8,
+          "ponta_a": "BGP.DN",
+          "ponta_b": "BGP.SC"
+        },
+        {
+          "id": "BB-DC8A665988EE",
+          "trecho": "BGP.AV-BGP.SC",
+          "cabo": "F-0395",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 2.6,
+          "ponta_a": "BGP.AV",
+          "ponta_b": "BGP.SC"
+        }
+      ],
+      "alternativas": [
+        {
+          "trecho": "ITA.CS-JAI.CB",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "ITA.CS-JIU.DI",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "ITA.CS-MNB.MG",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "ITA.CS-ITA.RD",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "ITA.CS-ITA.MD",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        }
+      ]
+    }
+  ],
   "chuva_observada_max_1h": 1.8,
   "alertas_dc_ativos": 0,
   "municipios_arvore_relevantes": [
