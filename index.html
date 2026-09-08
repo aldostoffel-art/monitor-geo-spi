@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788826009">
+  <link rel="stylesheet" href="styles.css?v=1788838325">
 </head>
 <body>
   <header class="topbar">
@@ -172,7 +172,7 @@
     </section>
     <section class="rp-general-grid">
       <article class="rp-card rp-weather-card"><div class="rp-card-title"><b>🌦️ PREVISÃO • PRÓXIMAS 48H</b><small id="rpForecastSource">Ribeirão Preto</small></div><div id="rpForecastSummary" class="rp-forecast-summary">Carregando previsão…</div><div id="rpForecastTimeline" class="rp-forecast-timeline"></div></article>
-      <article class="rp-card"><div class="rp-card-title"><b>⚡ ENERGIA • HISTÓRICO MUNICIPAL</b><small>Energy Core</small></div><div id="rpEnergySummary" class="rp-energy-summary">Consolidando histórico…</div><div id="rpEnergyActiveList" class="rp-active-list"></div></article><article class="rp-card"><div class="rp-card-title"><b>⚡ RAIOS • RIBEIRÃO PRETO</b><small>observado + previsão</small></div><div id="rpLightningSummary" class="rp-energy-summary">Consolidando raios…</div><div id="rpLightningForecast" class="rp-active-list"></div></article><article class="rp-card rp-offenders-card"><div class="rp-card-title"><b>📍 BAIRROS / ÁREAS OFENSORES</b><small>histórico consolidado</small></div><div class="rp-offenders-grid"><section><h4>⚡ Energia</h4><div id="rpOffendersEnergy">Consolidando…</div></section><section><h4>🔥 Queimadas</h4><div id="rpOffendersFire">Consolidando…</div></section><section><h4>🌳 Queda de árvores</h4><div id="rpOffendersTrees">Consolidando fonte pública…</div></section></div></article>
+      <article class="rp-card"><div class="rp-card-title"><b>⚡ ENERGIA • HISTÓRICO MUNICIPAL</b><small>Energy Core</small></div><div id="rpEnergySummary" class="rp-energy-summary">Consolidando histórico…</div><div id="rpEnergyActiveList" class="rp-active-list"></div></article><article class="rp-card"><div class="rp-card-title"><b>⚡ RAIOS • RIBEIRÃO PRETO</b><small>observado + previsão</small></div><div id="rpLightningSummary" class="rp-energy-summary">Consolidando raios…</div><div id="rpLightningForecast" class="rp-active-list"></div></article><article class="rp-card rp-offenders-card"><div class="rp-card-title"><b>📍 BAIRROS / ÁREAS OFENSORES</b><small>visão online filtrada</small></div><div class="rp-offenders-grid"><section><h4>⚡ Energia</h4><div id="rpOffendersEnergy">Consolidando…</div></section><section><h4>🔥 Queimadas</h4><div id="rpOffendersFire">Consolidando…</div></section><section><h4>🌳 Queda de árvores</h4><div id="rpOffendersTrees">Consolidando fonte pública…</div></section></div></article>
       <article class="rp-card"><div class="rp-card-title"><b>📡 REDE MÓVEL • AUTONOMIA</b><small>Ribeirão Preto</small></div><div id="rpSitesSummary" class="rp-sites-summary">Consolidando sites…</div><div id="rpCriticalSites" class="rp-critical-sites"></div></article>
       <article class="rp-card"><div class="rp-card-title"><b>🔥 FIRE + 🧵 BACKBONE</b><small>somente município</small></div><div id="rpFireBackboneSummary" class="rp-fire-summary">Consolidando Fire e rotas…</div></article>
     </section>
@@ -226,21 +226,30 @@
 
   <main id="alarmesP1View" class="p1-view" hidden>
     <section class="p1-head"><div><span class="p1-badge">SPI • DEV • LEITURA PASSIVA</span><h2>🚨 ALARMES P1 • INTELIGÊNCIA OPERACIONAL</h2><p>Reincidência • oportunidades • localidades • leitura por CN e site</p></div><div id="p1Updated" class="p1-updated">Atualizando…</div></section>
+    <section class="p1-online-bar">
+      <div class="p1-online-status"><i></i><b>ONLINE</b><span>dados do último estado P1 recebido</span></div>
+      <div class="p1-online-filters">
+        <label>PARCEIRA<select id="p1FilterPartner"><option value="ALL">Todas</option><option value="ABILITY">Ability</option><option value="TEL">TEL</option></select></label>
+        <label>CN<select id="p1FilterCn"><option value="ALL">Todas</option></select></label>
+        <label>SLA<select id="p1FilterSla"><option value="ALL">Todos</option><option value="0-2">&lt; 2h</option><option value="2-4">2–4h</option><option value="4-6">4–6h</option><option value="6-12">6–12h</option><option value="12-24">12–24h</option><option value="24+">&gt; 24h</option></select></label>
+        <label>MUNICÍPIO<select id="p1FilterCity"><option value="ALL">Todos</option></select></label>
+        <label class="p1-site-search">SITE<input id="p1FilterSite" type="search" placeholder="ex.: OYV"></label>
+        <button id="p1ClearFilters" type="button">Limpar filtros</button>
+      </div>
+    </section>
     <section id="p1Kpis" class="p1-kpis"></section>
     <section id="p1SlaKpis" class="p1-kpis p1-sla-kpis"></section>
-    <section class="p1-ops-cockpit"><div class="p1-ops-title"><div><b>📊 COCKPIT OPERACIONAL P1</b><small>Ability = CN 11 • TEL = demais CNs SPI</small></div><span>histórico consolidado</span></div><div id="p1PartnerCards" class="p1-partner-cards"></div><div class="p1-ops-grid"><article class="p1-chart-card"><header><b>BACKLOG ATIVO POR FAIXA DE SLA</b><small>sites ainda abertos</small></header><div id="p1SlaBands"></div></article><article class="p1-chart-card"><header><b>SLA MÉDIO DE FECHAMENTO POR CN</b><small>comparação operacional</small></header><div id="p1CnChart"></div></article></div></section>
+    <section class="p1-ops-cockpit"><div class="p1-ops-title"><div><b>📊 COCKPIT OPERACIONAL P1</b><small>Ability = CN 11 • TEL = demais CNs SPI</small></div><span>ONLINE</span></div><div id="p1PartnerCards" class="p1-partner-cards"></div><div class="p1-ops-grid"><article class="p1-chart-card"><header><b>BACKLOG ATIVO POR FAIXA DE SLA</b><small>sites ainda abertos</small></header><div id="p1SlaBands"></div></article><article class="p1-chart-card"><header><b>IDADE MÉDIA DOS ATIVOS POR CN</b><small>visão online por operação</small></header><div id="p1CnChart"></div></article></div></section>
     <section class="p1-grid">
       <article class="p1-card p1-wide"><header><b>ÚLTIMO INFORME</b><small>situação mais recente capturada no grupo</small></header><div id="p1Latest"></div></article>
       <article class="p1-card p1-wide"><header><b>⏱️ SLA • ABERTOS AGORA</b><small>idade real quando conhecida • mínimo observado quando o histórico começou com o site ativo</small></header><div id="p1SlaOpen"></div></article>
       <article class="p1-card"><header><b>SLA POR CN</b><small>média de fechamento e abertos</small></header><div id="p1SlaCn"></div></article>
       <article class="p1-card"><header><b>SLA POR MUNICÍPIO</b><small>média de fechamento e exposição atual</small></header><div id="p1SlaMunicipio"></div></article>
       <article class="p1-card"><header><b>SLA POR SITE</b><small>incidentes, fechamentos e idade ativa</small></header><div id="p1SlaSite"></div></article>
-      <article class="p1-card"><header><b>REINCIDÊNCIA</b><small>sites que repetem entre ciclos</small></header><div id="p1Recurrence"></div></article>
-      <article class="p1-card"><header><b>OPORTUNIDADES</b><small>priorização por recorrência, autonomia e concentração</small></header><div id="p1Opportunity"></div></article>
-      <article class="p1-card"><header><b>LOCALIDADES</b><small>municípios com maior concentração de alarmes</small></header><div id="p1Locality"></div></article>
-      <article class="p1-card"><header><b>CNs</b><small>volume acumulado de TAs capturados</small></header><div id="p1Cn"></div></article>
+      <article class="p1-card"><header><b>ATIVOS POR MUNICÍPIO</b><small>backlog online filtrado</small></header><div id="p1Locality"></div></article>
+      <article class="p1-card"><header><b>ATIVOS POR CN</b><small>backlog online filtrado</small></header><div id="p1Cn"></div></article>
     </section>
-    <section class="p1-foot"><b>LEITURA:</b> esta aba não atribui causa automaticamente. Reincidência e oportunidade são sinais operacionais para investigação; a correlação com clima, energia, Backbone, árvore e Fire será incorporada progressivamente conforme o histórico aumenta.</section>
+    <section class="p1-foot"><b>ONLINE:</b> todos os números, gráficos e listas desta aba representam somente os P1 atualmente ativos e respeitam os filtros selecionados. O histórico continua preservado no motor para cálculo e análise, mas não mistura o cockpit online.</section>
   </main>
 
 
@@ -297,6 +306,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788826009"></script>
+  <script src="app.js?v=1788838325"></script>
 </body>
 </html>
