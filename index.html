@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788877838">
+  <link rel="stylesheet" href="styles.css?v=1788882204">
 </head>
 <body>
   <header class="topbar">
@@ -242,6 +242,7 @@
     <section class="p1-ops-cockpit"><div class="p1-ops-title"><div><b>📊 COCKPIT OPERACIONAL P1</b><small>Ability = CN 11 • TEL = demais CNs SPI</small></div><span>ONLINE</span></div><div id="p1PartnerCards" class="p1-partner-cards"></div><div class="p1-ops-grid"><article class="p1-chart-card"><header><b>BACKLOG ATIVO POR FAIXA DE SLA</b><small>sites ainda abertos</small></header><div id="p1SlaBands"></div></article><article class="p1-chart-card"><header><b>IDADE MÉDIA DOS ATIVOS POR CN</b><small>visão online por operação</small></header><div id="p1CnChart"></div></article></div></section>
     <section class="p1-grid">
       <article class="p1-card p1-wide"><header><b>ÚLTIMO INFORME</b><small>situação mais recente capturada no grupo</small></header><div id="p1Latest"></div></article>
+      <article class="p1-card p1-wide"><header><b>🧭 CAUSA / STATUS • ATIVOS AGORA</b><small>informação mais recente localizada nos grupos responsáveis</small></header><div id="p1CurrentCauses"></div></article>
       <article class="p1-card p1-wide"><header><b>⏱️ SLA • ABERTOS AGORA</b><small>idade real quando conhecida • mínimo observado quando o histórico começou com o site ativo</small></header><div id="p1SlaOpen"></div></article>
       <article class="p1-card"><header><b>SLA POR CN</b><small>média de fechamento e abertos</small></header><div id="p1SlaCn"></div></article>
       <article class="p1-card"><header><b>SLA POR MUNICÍPIO</b><small>média de fechamento e exposição atual</small></header><div id="p1SlaMunicipio"></div></article>
@@ -321,6 +322,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788877838"></script>
+  <script src="app.js?v=1788882204"></script>
 </body>
 </html>
