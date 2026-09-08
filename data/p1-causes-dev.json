@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-08T14:40:44.746131-03:00",
+  "gerado_em": "2026-09-08T14:42:14.222153-03:00",
   "metodo": "correlação por sigla do site no mesmo dia em mensagens dos grupos operacionais; causa só é classificada quando há texto explícito compatível; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-08T17:29:51.000Z",
+  "historico_grupos_fim": "2026-09-08T17:40:45.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -15946,6 +15946,13 @@
               ]
             },
             {
+              "site": "NS2",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "NSR",
               "reincidente": false,
               "aberturas": 1,
@@ -16232,6 +16239,13 @@
           "parceira": "TEL",
           "sites": [
             {
+              "site": "BBD",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "CTG",
               "reincidente": true,
               "aberturas": 1,
@@ -16286,29 +16300,9 @@
           "parceira": "TEL",
           "sites": [
             {
-              "site": "CVN",
-              "reincidente": true,
-              "aberturas": 2,
-              "causa": "NÃO IDENTIFICADA",
-              "evidencias": [
-                {
-                  "hora": "07:46",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "MMX, EGC, JTR, CVN"
-                },
-                {
-                  "hora": "10:46",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "MMX, EGC, CVN"
-                }
-              ]
-            },
-            {
               "site": "MMX",
               "reincidente": true,
-              "aberturas": 2,
+              "aberturas": 3,
               "causa": "FURTO/VANDALISMO",
               "evidencias": [
                 {
@@ -16334,6 +16328,26 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "MMX"
+                },
+                {
+                  "hora": "10:46",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "MMX, EGC, CVN"
+                }
+              ]
+            },
+            {
+              "site": "CVN",
+              "reincidente": true,
+              "aberturas": 2,
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "07:46",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "MMX, EGC, JTR, CVN"
                 },
                 {
                   "hora": "10:46",
@@ -16409,7 +16423,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 70
+      "mensagens_grupos_no_dia": 71
     }
   ],
   "ativos_agora": [
@@ -16417,19 +16431,6 @@
       "cn": "11",
       "parceira": "ABILITY",
       "sites": [
-        {
-          "site": "BFY",
-          "causa": "REDE EXTERNA",
-          "evidencias": [
-            {
-              "hora": "12:25",
-              "grupo": "Movel N1 SPA",
-              "causa": "REDE EXTERNA",
-              "status": "BFY - rede externa"
-            }
-          ],
-          "idade_ativa_h": 1.29
-        },
         {
           "site": "CIL",
           "causa": "NORMALIZADO/OK",
@@ -16441,7 +16442,7 @@
               "status": "CIL- OK tratado pelo Coran"
             }
           ],
-          "idade_ativa_h": 3.34
+          "idade_ativa_h": 3.37
         },
         {
           "site": "CJK",
@@ -16454,7 +16455,7 @@
               "status": "CJK - sendo verificado junto ao sup. da área SPA"
             }
           ],
-          "idade_ativa_h": 22.01
+          "idade_ativa_h": 22.04
         },
         {
           "site": "FWL",
@@ -16467,7 +16468,7 @@
               "status": "Ok, então o JUR, RZH, OVJ, NSR e FWL estao em deslocamento? Dw?"
             }
           ],
-          "idade_ativa_h": 0.63
+          "idade_ativa_h": 0.65
         },
         {
           "site": "JUR",
@@ -16480,20 +16481,13 @@
               "status": "Ok, então o JUR, RZH, OVJ, NSR e FWL estao em deslocamento? Dw?"
             }
           ],
-          "idade_ativa_h": 2.34
+          "idade_ativa_h": 2.37
         },
         {
-          "site": "NSR",
-          "causa": "ACESSO/PROCESSO",
-          "evidencias": [
-            {
-              "hora": "14:27",
-              "grupo": "Movel N1 SPA",
-              "causa": "ACESSO/PROCESSO",
-              "status": "Ok, então o JUR, RZH, OVJ, NSR e FWL estao em deslocamento? Dw?"
-            }
-          ],
-          "idade_ativa_h": 0.96
+          "site": "NS2",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "OVJ",
@@ -16506,7 +16500,7 @@
               "status": "Ok, então o JUR, RZH, OVJ, NSR e FWL estao em deslocamento? Dw?"
             }
           ],
-          "idade_ativa_h": 1.29
+          "idade_ativa_h": 1.32
         },
         {
           "site": "RZH",
@@ -16519,7 +16513,7 @@
               "status": "Ok, então o JUR, RZH, OVJ, NSR e FWL estao em deslocamento? Dw?"
             }
           ],
-          "idade_ativa_h": 1.29
+          "idade_ativa_h": 1.32
         },
         {
           "site": "STF",
@@ -16532,7 +16526,7 @@
               "status": "STF - aguardando sobressalente"
             }
           ],
-          "idade_ativa_h": 61.99
+          "idade_ativa_h": 62.02
         },
         {
           "site": "TUL",
@@ -16545,7 +16539,7 @@
               "status": "TUL- tec. no local"
             }
           ],
-          "idade_ativa_h": 6.01
+          "idade_ativa_h": 6.04
         }
       ]
     },
@@ -16576,25 +16570,25 @@
               "status": "RMC, já estamos reparando o vandalismo, vai demorar um pouquinho mais, pois estamos fazendo definitivo"
             }
           ],
-          "idade_ativa_h": 18.01
+          "idade_ativa_h": 18.04
         },
         {
           "site": "RYT",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.96
+          "idade_ativa_h": 0.99
         },
         {
           "site": "SHK",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.29
+          "idade_ativa_h": 1.32
         },
         {
           "site": "USC",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.29
+          "idade_ativa_h": 1.32
         }
       ]
     },
@@ -16619,7 +16613,7 @@
               "status": "BLV normalizado , nao esta aceitando a baixa foi encaminhado email astro"
             }
           ],
-          "idade_ativa_h": 19.68
+          "idade_ativa_h": 19.7
         },
         {
           "site": "JK3",
@@ -16638,7 +16632,7 @@
               "status": "LTE JK3 normalizado"
             }
           ],
-          "idade_ativa_h": 59.68
+          "idade_ativa_h": 59.7
         }
       ]
     },
@@ -16650,13 +16644,25 @@
           "site": "1SX",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.96
+          "idade_ativa_h": 0.99
         },
         {
           "site": "FOO",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 10.01
+          "idade_ativa_h": 10.04
+        }
+      ]
+    },
+    {
+      "cn": "17",
+      "parceira": "TEL",
+      "sites": [
+        {
+          "site": "BBD",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         }
       ]
     },
@@ -16668,19 +16674,19 @@
           "site": "PUA",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 2.68
+          "idade_ativa_h": 2.7
         },
         {
           "site": "RNP",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 2.68
+          "idade_ativa_h": 2.7
         },
         {
           "site": "U50",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 965.34
+          "idade_ativa_h": 965.37
         }
       ]
     },
@@ -16688,25 +16694,6 @@
       "cn": "19",
       "parceira": "TEL",
       "sites": [
-        {
-          "site": "CVN",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "07:46",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "MMX, EGC, JTR, CVN"
-            },
-            {
-              "hora": "10:46",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "MMX, EGC, CVN"
-            }
-          ],
-          "idade_ativa_h": 0.96
-        },
         {
           "site": "EGC",
           "causa": "NÃO IDENTIFICADA",
@@ -16724,7 +16711,44 @@
               "status": "MMX, EGC, CVN"
             }
           ],
-          "idade_ativa_h": 40.01
+          "idade_ativa_h": 40.04
+        },
+        {
+          "site": "MMX",
+          "causa": "FURTO/VANDALISMO",
+          "evidencias": [
+            {
+              "hora": "07:47",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "Pessoal, fv prioritizar o MMX, Bairros"
+            },
+            {
+              "hora": "09:07",
+              "grupo": "Móvel 15 - 19",
+              "causa": "FURTO/VANDALISMO",
+              "status": "Bom dia, MMX normalizando, vandalismo qtm."
+            },
+            {
+              "hora": "09:43",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "@⁨Genildo Xavier Pereira - B2B⁩ temos 3 O.Ss de melhoria para esse site MMX, vou enviar, analisa e aprova para reduzir essas ações."
+            },
+            {
+              "hora": "10:04",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "MMX"
+            },
+            {
+              "hora": "10:46",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "MMX, EGC, CVN"
+            }
+          ],
+          "idade_ativa_h": 0.04
         }
       ]
     }
