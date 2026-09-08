@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-08T19:18:13.713840-03:00",
+  "gerado_em": "2026-09-08T19:21:38.407979-03:00",
   "metodo": "correlação por sigla do site no mesmo dia em mensagens dos grupos operacionais; causa só é classificada quando há texto explícito compatível; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-08T18:00:38.000Z",
+  "historico_grupos_fim": "2026-09-08T19:40:30.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -15886,6 +15886,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "REDE EXTERNA",
                   "status": "BFY - rede externa"
+                },
+                {
+                  "hora": "16:37",
+                  "grupo": "Movel N1 SPA",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
                 }
               ]
             },
@@ -15907,6 +15913,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NORMALIZADO/OK",
                   "status": "CIL- OK tratado pelo Coran"
+                },
+                {
+                  "hora": "16:37",
+                  "grupo": "Movel N1 SPA",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
                 }
               ]
             },
@@ -15935,8 +15947,15 @@
               "site": "IS3",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "16:37",
+                  "grupo": "Movel N1 SPA",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
+                }
+              ]
             },
             {
               "site": "JUR",
@@ -15949,6 +15968,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "ACESSO/PROCESSO",
                   "status": "Ok, então o JUR, RZH, OVJ, NSR e FWL estao em deslocamento? Dw?"
+                },
+                {
+                  "hora": "16:37",
+                  "grupo": "Movel N1 SPA",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
                 }
               ]
             },
@@ -15956,8 +15981,15 @@
               "site": "NS2",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "16:37",
+                  "grupo": "Movel N1 SPA",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
+                }
+              ]
             },
             {
               "site": "NSR",
@@ -15984,6 +16016,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "ACESSO/PROCESSO",
                   "status": "Ok, então o JUR, RZH, OVJ, NSR e FWL estao em deslocamento? Dw?"
+                },
+                {
+                  "hora": "16:37",
+                  "grupo": "Movel N1 SPA",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
                 }
               ]
             },
@@ -16040,6 +16078,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "TÉCNICO NO LOCAL",
                   "status": "TUL- tec. no local"
+                },
+                {
+                  "hora": "16:37",
+                  "grupo": "Movel N1 SPA",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
                 }
               ]
             },
@@ -16329,6 +16373,13 @@
           "parceira": "TEL",
           "sites": [
             {
+              "site": "1KB",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "BMF",
               "reincidente": false,
               "aberturas": 1,
@@ -16372,6 +16423,13 @@
             },
             {
               "site": "RNP",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "VEL",
               "reincidente": true,
               "aberturas": 1,
               "causa": "SEM CAUSA LOCALIZADA",
@@ -16514,7 +16572,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 82
+      "mensagens_grupos_no_dia": 97
     }
   ],
   "ativos_agora": [
@@ -16531,9 +16589,15 @@
               "grupo": "Movel N1 SPA",
               "causa": "NORMALIZADO/OK",
               "status": "CIL- OK tratado pelo Coran"
+            },
+            {
+              "hora": "16:37",
+              "grupo": "Movel N1 SPA",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
             }
           ],
-          "idade_ativa_h": 7.97
+          "idade_ativa_h": 8.02
         },
         {
           "site": "CJK",
@@ -16546,7 +16610,7 @@
               "status": "CJK - sendo verificado junto ao sup. da área SPA"
             }
           ],
-          "idade_ativa_h": 26.64
+          "idade_ativa_h": 26.68
         },
         {
           "site": "FWL",
@@ -16559,13 +16623,20 @@
               "status": "Ok, então o JUR, RZH, OVJ, NSR e FWL estao em deslocamento? Dw?"
             }
           ],
-          "idade_ativa_h": 5.25
+          "idade_ativa_h": 5.3
         },
         {
           "site": "IS3",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 4.3
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "16:37",
+              "grupo": "Movel N1 SPA",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
+            }
+          ],
+          "idade_ativa_h": 4.35
         },
         {
           "site": "JUR",
@@ -16576,15 +16647,28 @@
               "grupo": "Movel N1 SPA",
               "causa": "ACESSO/PROCESSO",
               "status": "Ok, então o JUR, RZH, OVJ, NSR e FWL estao em deslocamento? Dw?"
+            },
+            {
+              "hora": "16:37",
+              "grupo": "Movel N1 SPA",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
             }
           ],
-          "idade_ativa_h": 6.97
+          "idade_ativa_h": 7.02
         },
         {
           "site": "NS2",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 4.64
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "16:37",
+              "grupo": "Movel N1 SPA",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
+            }
+          ],
+          "idade_ativa_h": 4.68
         },
         {
           "site": "OVJ",
@@ -16595,22 +16679,15 @@
               "grupo": "Movel N1 SPA",
               "causa": "ACESSO/PROCESSO",
               "status": "Ok, então o JUR, RZH, OVJ, NSR e FWL estao em deslocamento? Dw?"
-            }
-          ],
-          "idade_ativa_h": 5.92
-        },
-        {
-          "site": "RZH",
-          "causa": "ACESSO/PROCESSO",
-          "evidencias": [
+            },
             {
-              "hora": "14:27",
+              "hora": "16:37",
               "grupo": "Movel N1 SPA",
-              "causa": "ACESSO/PROCESSO",
-              "status": "Ok, então o JUR, RZH, OVJ, NSR e FWL estao em deslocamento? Dw?"
+              "causa": "NÃO IDENTIFICADA",
+              "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
             }
           ],
-          "idade_ativa_h": 5.92
+          "idade_ativa_h": 5.97
         },
         {
           "site": "STF",
@@ -16621,9 +16698,15 @@
               "grupo": "Movel N1 SPA",
               "causa": "AGUARDANDO SOBRESSALENTE",
               "status": "STF - aguardando sobressalente"
+            },
+            {
+              "hora": "16:37",
+              "grupo": "Movel N1 SPA",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
             }
           ],
-          "idade_ativa_h": 66.62
+          "idade_ativa_h": 66.67
         },
         {
           "site": "TUL",
@@ -16634,9 +16717,15 @@
               "grupo": "Movel N1 SPA",
               "causa": "TÉCNICO NO LOCAL",
               "status": "TUL- tec. no local"
+            },
+            {
+              "hora": "16:37",
+              "grupo": "Movel N1 SPA",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
             }
           ],
-          "idade_ativa_h": 10.64
+          "idade_ativa_h": 10.68
         }
       ]
     },
@@ -16667,13 +16756,13 @@
               "status": "RMC, já estamos reparando o vandalismo, vai demorar um pouquinho mais, pois estamos fazendo definitivo"
             }
           ],
-          "idade_ativa_h": 22.64
+          "idade_ativa_h": 22.68
         },
         {
           "site": "RYT",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 5.59
+          "idade_ativa_h": 5.63
         }
       ]
     },
@@ -16698,7 +16787,7 @@
               "status": "BLV normalizado , nao esta aceitando a baixa foi encaminhado email astro"
             }
           ],
-          "idade_ativa_h": 24.3
+          "idade_ativa_h": 24.35
         },
         {
           "site": "JK3",
@@ -16717,7 +16806,7 @@
               "status": "LTE JK3 normalizado"
             }
           ],
-          "idade_ativa_h": 64.3
+          "idade_ativa_h": 64.35
         }
       ]
     },
@@ -16729,19 +16818,13 @@
           "site": "1SX",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 5.59
-        },
-        {
-          "site": "DOU",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 4.3
+          "idade_ativa_h": 5.63
         },
         {
           "site": "FOO",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 14.64
+          "idade_ativa_h": 14.68
         }
       ]
     },
@@ -16750,46 +16833,40 @@
       "parceira": "TEL",
       "sites": [
         {
-          "site": "BBD",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 4.64
-        },
-        {
           "site": "DIY",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.3
+          "idade_ativa_h": 4.35
         },
         {
           "site": "FLS",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.3
+          "idade_ativa_h": 4.35
         },
         {
           "site": "GTV",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.3
+          "idade_ativa_h": 4.35
         },
         {
           "site": "MCD",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.3
+          "idade_ativa_h": 4.35
         },
         {
           "site": "NLZ",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.3
+          "idade_ativa_h": 4.35
         },
         {
           "site": "SDS",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.3
+          "idade_ativa_h": 4.35
         }
       ]
     },
@@ -16798,52 +16875,52 @@
       "parceira": "TEL",
       "sites": [
         {
+          "site": "1KB",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 3.68
+        },
+        {
           "site": "BMF",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.3
+          "idade_ativa_h": 4.35
         },
         {
           "site": "LDS",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.3
+          "idade_ativa_h": 4.35
         },
         {
           "site": "NRT",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.3
+          "idade_ativa_h": 4.35
         },
         {
           "site": "PTC",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.3
-        },
-        {
-          "site": "PUA",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 7.3
-        },
-        {
-          "site": "RNP",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 7.3
+          "idade_ativa_h": 4.35
         },
         {
           "site": "U50",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 969.97
+          "idade_ativa_h": 970.02
+        },
+        {
+          "site": "VEL",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 3.68
         },
         {
           "site": "ZAC",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.3
+          "idade_ativa_h": 4.35
         }
       ]
     },
@@ -16868,44 +16945,7 @@
               "status": "MMX, EGC, CVN"
             }
           ],
-          "idade_ativa_h": 44.64
-        },
-        {
-          "site": "MMX",
-          "causa": "FURTO/VANDALISMO",
-          "evidencias": [
-            {
-              "hora": "07:47",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "Pessoal, fv prioritizar o MMX, Bairros"
-            },
-            {
-              "hora": "09:07",
-              "grupo": "Móvel 15 - 19",
-              "causa": "FURTO/VANDALISMO",
-              "status": "Bom dia, MMX normalizando, vandalismo qtm."
-            },
-            {
-              "hora": "09:43",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "@⁨Genildo Xavier Pereira - B2B⁩ temos 3 O.Ss de melhoria para esse site MMX, vou enviar, analisa e aprova para reduzir essas ações."
-            },
-            {
-              "hora": "10:04",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "MMX"
-            },
-            {
-              "hora": "10:46",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "MMX, EGC, CVN"
-            }
-          ],
-          "idade_ativa_h": 4.64
+          "idade_ativa_h": 44.68
         }
       ]
     }
