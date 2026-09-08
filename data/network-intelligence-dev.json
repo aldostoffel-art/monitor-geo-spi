@@ -1,129 +1,15 @@
 {
-  "gerado_em": "2026-09-08T16:35:27.313419+00:00",
+  "gerado_em": "2026-09-08T16:40:27.811732+00:00",
   "ambiente": "DEV",
-  "mudanca_relevante": false,
-  "fingerprint": "a65554b28fd3bd2ffa95efcbc0ebbdb7481dd93def4b376b61044afea1921e6a",
-  "nivel": "ATENÇÃO",
-  "agora": "Sinal externo em Uberaba/MG aponta risco para o corredor NORTE",
-  "proximas_horas": "Potencial avanço para Franca/Ribeirão Preto nas próximas horas; rajada até 28 km/h e chuva horária até 4.1 mm",
-  "rede_exposta": "21 trecho(s) Backbone cruzam o corredor potencial",
-  "recomendacao": "Validar preventivamente redundância: 0/5 trechos amostrados têm caminho lógico alternativo fora do corredor",
-  "ameacas_externas": [
-    {
-      "nome": "Uberaba/MG",
-      "corredor": "NORTE",
-      "alvo": "Franca/Ribeirão Preto",
-      "score": 55,
-      "tempestade": true,
-      "chuva_pico_mmh": 4.1,
-      "rajada_pico_kmh": 28.4,
-      "prob_chuva_pico": 100,
-      "eta_sinal_externo": "2026-09-08T16:00:00+00:00",
-      "backbones_no_corredor": 21,
-      "backbones_amostra": [
-        {
-          "id": "BB-6FF41472D388",
-          "trecho": "FCA.MR-FCA.RD",
-          "cabo": "F-0279",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 0.2,
-          "ponta_a": "FCA.MR",
-          "ponta_b": "FCA.RD"
-        },
-        {
-          "id": "BB-FDD9A25BEAC1",
-          "trecho": "FAC.MR-RTG.SA",
-          "cabo": "F-0227",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 0.7,
-          "ponta_a": "FAC.MR",
-          "ponta_b": "RTG.SA"
-        },
-        {
-          "id": "BB-B9225D4563A2",
-          "trecho": "IPV.RD-IPV.WR",
-          "cabo": "F-0276",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 0.8,
-          "ponta_a": "IPV.RD",
-          "ponta_b": "IPV.WR"
-        },
-        {
-          "id": "BB-921D9E5DE26B",
-          "trecho": "IPV.RD-IPV.SM",
-          "cabo": "F-0234",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 0.8,
-          "ponta_a": "IPV.RD",
-          "ponta_b": "IPV.SM"
-        },
-        {
-          "id": "BB-F47EE7B91B4E",
-          "trecho": "IPV.WR-RPO.NO",
-          "cabo": "F-0260",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 1.4,
-          "ponta_a": "IPV.WR",
-          "ponta_b": "RPO.NO"
-        },
-        {
-          "id": "BB-61CAF5F5613E",
-          "trecho": "IPV.SM-RFA.CP",
-          "cabo": "F-0278",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 1.6,
-          "ponta_a": "IPV.SM",
-          "ponta_b": "RFA.CP"
-        },
-        {
-          "id": "BB-164D94C01879",
-          "trecho": "IPV.SM-SQB.SS",
-          "cabo": "F-0260",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 1.6,
-          "ponta_a": "IPV.SM",
-          "ponta_b": "SQB.SS"
-        },
-        {
-          "id": "BB-D11A166B28EA",
-          "trecho": "FCA.RD-RTG.SA",
-          "cabo": "F-0279",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 2.0,
-          "ponta_a": "FCA.RD",
-          "ponta_b": "RTG.SA"
-        }
-      ],
-      "alternativas": [
-        {
-          "trecho": "FCA.MR-FCA.RD",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "FAC.MR-RTG.SA",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "IPV.RD-IPV.WR",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "IPV.RD-IPV.SM",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "IPV.WR-RPO.NO",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        }
-      ]
-    }
-  ],
-  "chuva_observada_max_1h": 1.6,
+  "mudanca_relevante": true,
+  "fingerprint": "2648a74932fe9964a31fb975b75ca7d135deba5bcf49e1ad563b95a19f01bfb2",
+  "nivel": "BAIXO",
+  "agora": "Sem sinal externo relevante nos corredores monitorados",
+  "proximas_horas": "Manter varredura do entorno de SP",
+  "rede_exposta": "Sem corredor externo prioritário neste ciclo",
+  "recomendacao": "Nenhuma alteração preventiva de rota indicada neste ciclo",
+  "ameacas_externas": [],
+  "chuva_observada_max_1h": 1.4,
   "alertas_dc_ativos": 0,
   "municipios_arvore_relevantes": [
     {
