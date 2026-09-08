@@ -1024,3 +1024,33 @@ function leavePostesView(){const v=document.getElementById('postesView');if(v)v.
 function showPostesTab(){try{leaveDecisionView();leaveP1View();leaveRibeiraoGeral();leaveRibeiraoMode();leaveTrajectoryMode();leaveMobileMode();leaveFireMode();if(typeof leaveWeatherLab==='function')leaveWeatherLab()}catch(_){ }for(const id of ['mapView','commandView','decisionView','alarmesP1View','ribeiraoGeralView','weatherLabView','tacticalView','fireHistoryView','sbcView']){const e=document.getElementById(id);if(e)e.hidden=true}const v=document.getElementById('postesView');if(v)v.hidden=false;document.body.classList.add('postes-mode');setActiveViewTab('tabPostes');loadPostesData().then(renderPostesView)}
 document.getElementById('tabPostes')?.addEventListener('click',showPostesTab);document.querySelectorAll('[data-postes-period]').forEach(b=>b.addEventListener('click',()=>{postesPeriod=b.dataset.postesPeriod;document.querySelectorAll('[data-postes-period]').forEach(x=>x.classList.toggle('active',x===b));renderPostesView()}));
 ['tabMapa','tabComando','tabDecision','tabAlarmesP1','tabFire','tabRibeirao','tabRibeiraoGeral','tabMobile','tabTrajectory'].forEach(id=>document.getElementById(id)?.addEventListener('click',leavePostesView));
+function p1PartnerMetrics(d){
+  const cns=d.sla_por_cn||[], opened=d.eventos_abertos||[];
+  const build=(name,ability)=>{
+    const rows=cns.filter(x=>(String(x.cn)==='11')===ability);
+    const closed=rows.reduce((a,x)=>a+Number(x.fechados||0),0);
+    const open=rows.reduce((a,x)=>a+Number(x.abertos||0),0);
+    const sla=closed?rows.reduce((a,x)=>a+Number(x.sla_medio_fechamento_h||0)*Number(x.fechados||0),0)/closed:null;
+    const ages=opened.filter(x=>(String(x.cn)==='11')===ability).map(x=>Number(x.idade_ativa_h||0));
+    return {name,open,closed,sla,over6:ages.filter(x=>x>6).length,oldest:ages.length?Math.max(...ages):0,ages};
+  };
+  return [build('ABILITY',true),build('TEL',false)];
+}
+function p1RenderCockpit(d){
+  const partners=p1PartnerMetrics(d), cards=document.getElementById('p1PartnerCards');
+  if(cards)cards.innerHTML=partners.map(p=>`<article class="p1-partner-card"><div class="p1-partner-name">${p.name}</div><div class="p1-partner-metrics"><div><b>${p.open}</b><span>ativos</span></div><div><b>${p1FmtHours(p.sla)}</b><span>SLA médio</span></div><div><b>${p.over6}</b><span>&gt;6h</span></div><div><b>${p1FmtHours(p.oldest)}</b><span>mais antigo</span></div></div></article>`).join('');
+  const labels=['<2h','2–4h','4–6h','6–12h','12–24h','>24h'], cuts=[[0,2],[2,4],[4,6],[6,12],[12,24],[24,1e9]];
+  const band=document.getElementById('p1SlaBands');
+  if(band){
+    const counts=cuts.map(([a,b])=>partners.map(p=>p.ages.filter(h=>h>=a&&h<b).length));
+    const max=Math.max(1,...counts.flat());
+    band.innerHTML=labels.map((l,i)=>`<div class="p1-band-row"><span>${l}</span><div class="p1-band-track"><i class="ability" style="width:${counts[i][0]/max*100}%"></i><i class="tel" style="width:${counts[i][1]/max*100}%"></i></div><em>A ${counts[i][0]} • T ${counts[i][1]}</em></div>`).join('')+`<div class="p1-chart-legend"><span>● Ability</span><span>● TEL</span></div>`;
+  }
+  const cn=document.getElementById('p1CnChart'), rows=(d.sla_por_cn||[]).slice().sort((a,b)=>Number(b.sla_medio_fechamento_h||0)-Number(a.sla_medio_fechamento_h||0));
+  if(cn){
+    const max=Math.max(1,...rows.map(x=>Number(x.sla_medio_fechamento_h||0)));
+    cn.innerHTML=rows.map(x=>`<div class="p1-cnbar"><span>CN ${p1Esc(x.cn)}</span><div><i style="width:${Number(x.sla_medio_fechamento_h||0)/max*100}%"></i></div><b>${p1FmtHours(x.sla_medio_fechamento_h)}</b><small>${String(x.cn)==='11'?'Ability':'TEL'} • ${Number(x.abertos||0)} ativos</small></div>`).join('');
+  }
+}
+const _renderP1ViewCockpitBase=renderP1View;
+renderP1View=function(){_renderP1ViewCockpitBase();p1RenderCockpit(p1Data||{})};
