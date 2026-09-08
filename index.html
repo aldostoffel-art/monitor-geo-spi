@@ -244,16 +244,23 @@
     </section>
     <section id="p1Kpis" class="p1-kpis" data-p1-section="now"></section>
     <section id="p1SlaKpis" class="p1-kpis p1-sla-kpis" data-p1-section="now"></section>
+    <section class="p1-cn-overview-card" data-p1-section="now">
+      <header><div><b>📍 ATUAL POR CN</b><small>grandes números + gráfico • toque no CN para abrir os sites</small></div><span>ONLINE</span></header>
+      <div id="p1CnOverview" class="p1-cn-overview"></div>
+    </section>
+    <section class="p1-pareto-card" data-p1-section="now">
+      <header><div><b>📊 PARETO • CAUSA / STATUS ATUAL</b><small>distribuição dos status/causas já identificados nos ativos</small></div><span id="p1ParetoCoverage">—</span></header>
+      <div id="p1CausePareto" class="p1-pareto"></div>
+    </section>
     <section class="p1-ops-cockpit" data-p1-section="now"><div class="p1-ops-title"><div><b>📊 COCKPIT OPERACIONAL P1</b><small>Ability = CN 11 • TEL = demais CNs SPI</small></div><span>ONLINE</span></div><div id="p1PartnerCards" class="p1-partner-cards"></div><div class="p1-ops-grid"><article class="p1-chart-card"><header><b>BACKLOG ATIVO POR FAIXA DE SLA</b><small>sites ainda abertos</small></header><div id="p1SlaBands"></div></article><article class="p1-chart-card"><header><b>IDADE MÉDIA DOS ATIVOS POR CN</b><small>visão online por operação</small></header><div id="p1CnChart"></div></article></div></section>
     <section class="p1-grid" data-p1-section="now">
-      <article class="p1-card p1-wide"><header><b>ÚLTIMO INFORME</b><small>situação mais recente capturada no grupo</small></header><div id="p1Latest"></div></article>
       <article class="p1-card p1-wide"><header><b>🧭 CAUSA / STATUS • ATIVOS AGORA</b><small>informação mais recente localizada nos grupos responsáveis</small></header><div id="p1CurrentCauses"></div></article>
-      <article class="p1-card p1-wide"><header><b>⏱️ SLA • ABERTOS AGORA</b><small>idade real quando conhecida • mínimo observado quando o histórico começou com o site ativo</small></header><div id="p1SlaOpen"></div></article>
-      <article class="p1-card"><header><b>SLA POR CN</b><small>média de fechamento e abertos</small></header><div id="p1SlaCn"></div></article>
-      <article class="p1-card"><header><b>SLA POR MUNICÍPIO</b><small>média de fechamento e exposição atual</small></header><div id="p1SlaMunicipio"></div></article>
-      <article class="p1-card"><header><b>SLA POR SITE</b><small>incidentes, fechamentos e idade ativa</small></header><div id="p1SlaSite"></div></article>
-      <article class="p1-card"><header><b>ATIVOS POR MUNICÍPIO</b><small>backlog online filtrado</small></header><div id="p1Locality"></div></article>
-      <article class="p1-card"><header><b>ATIVOS POR CN</b><small>backlog online filtrado</small></header><div id="p1Cn"></div></article>
+      <details class="p1-detail-drawer p1-wide"><summary><span><b>⏱️ SITES / SLA INDIVIDUAL</b><small>abrir somente quando precisar do detalhe por site</small></span><em>abrir</em></summary><div id="p1SlaOpen" class="p1-detail-body"></div></details>
+      <details class="p1-detail-drawer"><summary><span><b>SLA POR CN</b><small>médias por CN</small></span><em>abrir</em></summary><div id="p1SlaCn"></div></details>
+      <details class="p1-detail-drawer"><summary><span><b>SLA POR MUNICÍPIO</b><small>médias por município</small></span><em>abrir</em></summary><div id="p1SlaMunicipio"></div></details>
+      <details class="p1-detail-drawer"><summary><span><b>SLA POR SITE</b><small>detalhe por site</small></span><em>abrir</em></summary><div id="p1SlaSite"></div></details>
+      <details class="p1-detail-drawer"><summary><span><b>ATIVOS POR MUNICÍPIO</b><small>backlog por município</small></span><em>abrir</em></summary><div id="p1Locality"></div></details>
+      <details class="p1-detail-drawer"><summary><span><b>ATIVOS POR CN</b><small>backlog por CN</small></span><em>abrir</em></summary><div id="p1Cn"></div></details>
     </section>
     <section class="p1-history-recurrence" id="p1HistorySection" data-p1-section="history">
       <div class="p1-history-head"><div><b>🔁 HISTÓRICO • TOP 10 REINCIDENTES</b><small id="p1HistoryPeriod">desde o início da base</small></div><div id="p1HistoryPeak" class="p1-history-peak">pico —</div></div>
