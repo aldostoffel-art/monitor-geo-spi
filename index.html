@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788875311">
+  <link rel="stylesheet" href="styles.css?v=1788877838">
 </head>
 <body>
   <header class="topbar">
@@ -259,6 +259,10 @@
       <div class="p1-export-box"><div><b>⬇️ EXPORTAR DADOS P1</b><small>baixe a base mensal detalhada por dia, CN e site</small></div><div class="p1-export-actions"><button id="p1ExportCsv" type="button">Exportar CSV</button><button id="p1ExportJson" type="button">Exportar JSON</button></div></div>
       <div class="p1-history-daily-head"><b>📡 SITES DO MÊS • SEPARADOS POR CN</b><small>sites únicos e quantidade de incidentes no mês atual</small></div>
       <div id="p1HistorySitesCn" class="p1-history-cn-sites"></div>
+      <div class="p1-history-daily-head p1-causes-title"><b>🧭 CAUSAS INFORMADAS • P1 POR DIA</b><small>correlação com mensagens dos grupos operacionais • prioridade 04, 05, 06 e 07</small></div>
+      <div id="p1CausesStatus" class="p1-causes-status">Carregando causas…</div>
+      <div id="p1CausesDays" class="p1-causes-days"></div>
+      <div class="p1-export-box"><div><b>⬇️ EXPORTAR CAUSAS P1</b><small>dia • CN • site • causa • grupo • evidência</small></div><div class="p1-export-actions"><button id="p1CausesExportCsv" type="button">Exportar causas CSV</button><button id="p1CausesExportJson" type="button">Exportar causas JSON</button></div></div>
     </section>
     <section class="p1-foot"><b>ONLINE:</b> todos os números, gráficos e listas desta aba representam somente os P1 atualmente ativos e respeitam os filtros selecionados. O histórico continua preservado no motor para cálculo e análise, mas não mistura o cockpit online.</section>
   </main>
@@ -317,6 +321,6 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788875311"></script>
+  <script src="app.js?v=1788877838"></script>
 </body>
 </html>
