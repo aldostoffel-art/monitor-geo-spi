@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-09T10:01:50.120490-03:00",
+  "gerado_em": "2026-09-09T10:04:17.146833-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-09T13:00:53.000Z",
+  "historico_grupos_fim": "2026-09-09T13:03:29.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -16905,6 +16905,33 @@
           "parceira": "ABILITY",
           "sites": [
             {
+              "site": "BSH",
+              "reincidente": true,
+              "aberturas": 2,
+              "causa": "ACESSO/PROCESSO",
+              "evidencias": [
+                {
+                  "hora": "08:25",
+                  "grupo": "Movel N1 SPA",
+                  "causa": "ACESSO/PROCESSO",
+                  "status": "BSH em deslocamento? Qual a Previsão, Lúcio?"
+                },
+                {
+                  "hora": "08:17",
+                  "grupo": "Movel N1 SPA",
+                  "causa": "ACESSO/PROCESSO",
+                  "status": "BSH - Deslocamento"
+                }
+              ]
+            },
+            {
+              "site": "TRA",
+              "reincidente": true,
+              "aberturas": 2,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "XQA",
               "reincidente": true,
               "aberturas": 2,
@@ -16925,26 +16952,6 @@
               ]
             },
             {
-              "site": "BSH",
-              "reincidente": true,
-              "aberturas": 1,
-              "causa": "ACESSO/PROCESSO",
-              "evidencias": [
-                {
-                  "hora": "08:25",
-                  "grupo": "Movel N1 SPA",
-                  "causa": "ACESSO/PROCESSO",
-                  "status": "BSH em deslocamento? Qual a Previsão, Lúcio?"
-                },
-                {
-                  "hora": "08:17",
-                  "grupo": "Movel N1 SPA",
-                  "causa": "ACESSO/PROCESSO",
-                  "status": "BSH - Deslocamento"
-                }
-              ]
-            },
-            {
               "site": "FSC",
               "reincidente": true,
               "aberturas": 1,
@@ -16960,13 +16967,6 @@
             },
             {
               "site": "SRH",
-              "reincidente": true,
-              "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
-            },
-            {
-              "site": "TRA",
               "reincidente": true,
               "aberturas": 1,
               "causa": "SEM CAUSA LOCALIZADA",
@@ -17249,6 +17249,13 @@
               ]
             },
             {
+              "site": "IIO",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "ITE",
               "reincidente": true,
               "aberturas": 1,
@@ -17293,12 +17300,6 @@
               "causa": "INFRA",
               "evidencias": [
                 {
-                  "hora": "09:07",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "Ricardo ficou faltando o KPV e SM5"
-                },
-                {
                   "hora": "09:11",
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
@@ -17315,6 +17316,18 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "Srs, bom dia. podem enviar p Tel as ta´s ta-367992080 KPV e ta-367992211 SM5 ?"
+                },
+                {
+                  "hora": "10:03",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
+                },
+                {
+                  "hora": "10:03",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "KPV - Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
                 }
               ]
             },
@@ -17398,7 +17411,7 @@
               "site": "SM5",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "INFRA",
               "evidencias": [
                 {
                   "hora": "09:07",
@@ -17417,6 +17430,18 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "Srs, bom dia. podem enviar p Tel as ta´s ta-367992080 KPV e ta-367992211 SM5 ?"
+                },
+                {
+                  "hora": "10:03",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
+                },
+                {
+                  "hora": "10:03",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "SM5 - Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
                 }
               ]
             },
@@ -17752,7 +17777,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 137
+      "mensagens_grupos_no_dia": 138
     }
   ],
   "ativos_agora": [
@@ -17761,10 +17786,29 @@
       "parceira": "ABILITY",
       "sites": [
         {
+          "site": "BSH",
+          "causa": "ACESSO/PROCESSO",
+          "evidencias": [
+            {
+              "hora": "08:25",
+              "grupo": "Movel N1 SPA",
+              "causa": "ACESSO/PROCESSO",
+              "status": "BSH em deslocamento? Qual a Previsão, Lúcio?"
+            },
+            {
+              "hora": "08:17",
+              "grupo": "Movel N1 SPA",
+              "causa": "ACESSO/PROCESSO",
+              "status": "BSH - Deslocamento"
+            }
+          ],
+          "idade_ativa_h": 0.07
+        },
+        {
           "site": "FWL",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.98
+          "idade_ativa_h": 1.04
         },
         {
           "site": "ISJ",
@@ -17795,7 +17839,7 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 14.68
+          "idade_ativa_h": 14.74
         },
         {
           "site": "JKB",
@@ -17826,7 +17870,7 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 14.68
+          "idade_ativa_h": 14.74
         },
         {
           "site": "JUR",
@@ -17857,13 +17901,13 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 21.68
+          "idade_ativa_h": 21.74
         },
         {
           "site": "SRH",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.98
+          "idade_ativa_h": 1.04
         },
         {
           "site": "STF",
@@ -17894,7 +17938,13 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 81.33
+          "idade_ativa_h": 81.39
+        },
+        {
+          "site": "TRA",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.07
         }
       ]
     },
@@ -17906,7 +17956,7 @@
           "site": "TY1",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.68
+          "idade_ativa_h": 0.74
         }
       ]
     },
@@ -17925,7 +17975,7 @@
               "status": "JK3, BLV, TAL, BOC"
             }
           ],
-          "idade_ativa_h": 39.02
+          "idade_ativa_h": 39.07
         },
         {
           "site": "BOC",
@@ -17938,7 +17988,7 @@
               "status": "JK3, BLV, TAL, BOC"
             }
           ],
-          "idade_ativa_h": 1.35
+          "idade_ativa_h": 1.4
         },
         {
           "site": "JK3",
@@ -17951,7 +18001,7 @@
               "status": "JK3, BLV, TAL, BOC"
             }
           ],
-          "idade_ativa_h": 79.02
+          "idade_ativa_h": 79.07
         }
       ]
     },
@@ -17994,7 +18044,7 @@
               "status": "CZL, envolvido no concentrador DEG com falta de ac"
             }
           ],
-          "idade_ativa_h": 2.68
+          "idade_ativa_h": 2.74
         },
         {
           "site": "DEG",
@@ -18031,7 +18081,13 @@
               "status": "CZL, envolvido no concentrador DEG com falta de ac YBV, envolvido no concentrador DEG com falta de ac"
             }
           ],
-          "idade_ativa_h": 2.68
+          "idade_ativa_h": 2.74
+        },
+        {
+          "site": "IIO",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.07
         },
         {
           "site": "ITE",
@@ -18068,18 +18124,12 @@
               "status": "ITE, envolvido no concentrador DEG com falta de ac"
             }
           ],
-          "idade_ativa_h": 2.68
+          "idade_ativa_h": 2.74
         },
         {
           "site": "KPV",
           "causa": "INFRA",
           "evidencias": [
-            {
-              "hora": "09:07",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "Ricardo ficou faltando o KPV e SM5"
-            },
             {
               "hora": "09:11",
               "grupo": "Móvel 15 - 19",
@@ -18097,9 +18147,21 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "Srs, bom dia. podem enviar p Tel as ta´s ta-367992080 KPV e ta-367992211 SM5 ?"
+            },
+            {
+              "hora": "10:03",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
+            },
+            {
+              "hora": "10:03",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "KPV - Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
             }
           ],
-          "idade_ativa_h": 0.98
+          "idade_ativa_h": 1.04
         },
         {
           "site": "SCB",
@@ -18136,11 +18198,11 @@
               "status": "SCB, está fora devido ao rompimento de PRF.BO"
             }
           ],
-          "idade_ativa_h": 5.62
+          "idade_ativa_h": 5.67
         },
         {
           "site": "SM5",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "INFRA",
           "evidencias": [
             {
               "hora": "09:07",
@@ -18159,9 +18221,21 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "Srs, bom dia. podem enviar p Tel as ta´s ta-367992080 KPV e ta-367992211 SM5 ?"
+            },
+            {
+              "hora": "10:03",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
+            },
+            {
+              "hora": "10:03",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "SM5 - Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
             }
           ],
-          "idade_ativa_h": 0.98
+          "idade_ativa_h": 1.04
         },
         {
           "site": "TAD",
@@ -18198,7 +18272,7 @@
               "status": "TAD, envolvido no concentrador DEG com falta de ac"
             }
           ],
-          "idade_ativa_h": 2.68
+          "idade_ativa_h": 2.74
         },
         {
           "site": "YBV",
@@ -18235,7 +18309,7 @@
               "status": "YBV, envolvido no concentrador DEG com falta de ac"
             }
           ],
-          "idade_ativa_h": 2.68
+          "idade_ativa_h": 2.74
         }
       ]
     },
@@ -18260,7 +18334,7 @@
               "status": "1KB @230188956803268"
             }
           ],
-          "idade_ativa_h": 11.02
+          "idade_ativa_h": 11.07
         },
         {
           "site": "U50",
@@ -18273,7 +18347,7 @@
               "status": "U50, 1KB"
             }
           ],
-          "idade_ativa_h": 984.68
+          "idade_ativa_h": 984.74
         }
       ]
     },
@@ -18292,13 +18366,7 @@
               "status": "EGC"
             }
           ],
-          "idade_ativa_h": 59.35
-        },
-        {
-          "site": "JBE",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 0.35
+          "idade_ativa_h": 59.4
         }
       ]
     }
