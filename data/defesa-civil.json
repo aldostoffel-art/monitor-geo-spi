@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T05:35:06-03:00",
-  "fonte_coletada_em": "2026-09-09T08:35:03Z",
+  "gerado_em": "2026-09-09T05:40:08-03:00",
+  "fonte_coletada_em": "2026-09-09T08:40:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 31,
-  "alertas_ativos": 6,
+  "entradas_feed": 33,
+  "alertas_ativos": 8,
   "eventos_geo": [
     {
       "id_alerta": "189342/2026",
@@ -502,6 +502,238 @@
         "pico_dbz_medio": 29.3,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
+    },
+    {
+      "id_alerta": "189360/2026",
+      "municipio": "Buri",
+      "latitude": -23.799611,
+      "longitude": -48.599111,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h34 Chuva intensa na regiao de Itai, Paranapanema, Buri e Capao Bonito. Tem raios. Atinge areas vizinhas. Cuidado!",
+      "resumo": "Defesa Civil:05h34 Chuva intensa na regiao de Itai, Paranapanema, Buri e Capao Bonito. Tem raios. Atinge areas vizinhas. Cuidado!",
+      "descricao": "05h34 Chuva intensa na região de Itaí, Paranapanema, Buri e Capão Bonito. Tem raios. Atinge áreas vizinhas. Cuidado!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T05:35:06-03:00",
+      "fim": "2026-09-09T07:35:00-03:00",
+      "vigencia": "2026-09-09T05:35:06-03:00 → 2026-09-09T07:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 3,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T08:30:00+00:00",
+        "intensidade_estimada_mmh": 0.87,
+        "faixa_estimada_mmh": [
+          0.56,
+          3.16
+        ],
+        "dbz_medio": 22.0,
+        "pico_em": "2026-09-09T08:30:00+00:00",
+        "pico_estimado_mmh": 0.87,
+        "pico_dbz_medio": 22.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189360/2026",
+      "municipio": "Capão Bonito",
+      "latitude": -24.002269,
+      "longitude": -48.346969,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h34 Chuva intensa na regiao de Itai, Paranapanema, Buri e Capao Bonito. Tem raios. Atinge areas vizinhas. Cuidado!",
+      "resumo": "Defesa Civil:05h34 Chuva intensa na regiao de Itai, Paranapanema, Buri e Capao Bonito. Tem raios. Atinge areas vizinhas. Cuidado!",
+      "descricao": "05h34 Chuva intensa na região de Itaí, Paranapanema, Buri e Capão Bonito. Tem raios. Atinge áreas vizinhas. Cuidado!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T05:35:06-03:00",
+      "fim": "2026-09-09T07:35:00-03:00",
+      "vigencia": "2026-09-09T05:35:06-03:00 → 2026-09-09T07:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 9,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T08:30:00+00:00",
+        "intensidade_estimada_mmh": 2.22,
+        "faixa_estimada_mmh": [
+          2.05,
+          15.38
+        ],
+        "dbz_medio": 28.6,
+        "pico_em": "2026-09-09T08:30:00+00:00",
+        "pico_estimado_mmh": 2.22,
+        "pico_dbz_medio": 28.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189360/2026",
+      "municipio": "Itaí",
+      "latitude": -23.366239,
+      "longitude": -49.089518,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h34 Chuva intensa na regiao de Itai, Paranapanema, Buri e Capao Bonito. Tem raios. Atinge areas vizinhas. Cuidado!",
+      "resumo": "Defesa Civil:05h34 Chuva intensa na regiao de Itai, Paranapanema, Buri e Capao Bonito. Tem raios. Atinge areas vizinhas. Cuidado!",
+      "descricao": "05h34 Chuva intensa na região de Itaí, Paranapanema, Buri e Capão Bonito. Tem raios. Atinge áreas vizinhas. Cuidado!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T05:35:06-03:00",
+      "fim": "2026-09-09T07:35:00-03:00",
+      "vigencia": "2026-09-09T05:35:06-03:00 → 2026-09-09T07:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T08:30:00+00:00",
+        "intensidade_estimada_mmh": 2.33,
+        "faixa_estimada_mmh": [
+          2.05,
+          6.48
+        ],
+        "dbz_medio": 28.9,
+        "pico_em": "2026-09-09T08:30:00+00:00",
+        "pico_estimado_mmh": 2.33,
+        "pico_dbz_medio": 28.9,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189360/2026",
+      "municipio": "Paranapanema",
+      "latitude": -23.410977,
+      "longitude": -48.824669,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h34 Chuva intensa na regiao de Itai, Paranapanema, Buri e Capao Bonito. Tem raios. Atinge areas vizinhas. Cuidado!",
+      "resumo": "Defesa Civil:05h34 Chuva intensa na regiao de Itai, Paranapanema, Buri e Capao Bonito. Tem raios. Atinge areas vizinhas. Cuidado!",
+      "descricao": "05h34 Chuva intensa na região de Itaí, Paranapanema, Buri e Capão Bonito. Tem raios. Atinge áreas vizinhas. Cuidado!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T05:35:06-03:00",
+      "fim": "2026-09-09T07:35:00-03:00",
+      "vigencia": "2026-09-09T05:35:06-03:00 → 2026-09-09T07:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T08:30:00+00:00",
+        "intensidade_estimada_mmh": 0.59,
+        "faixa_estimada_mmh": [
+          0.56,
+          1.15
+        ],
+        "dbz_medio": 19.3,
+        "pico_em": "2026-09-09T08:20:00+00:00",
+        "pico_estimado_mmh": 0.76,
+        "pico_dbz_medio": 21.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189361/2026",
+      "municipio": "Ilhabela",
+      "latitude": -23.823272,
+      "longitude": -45.366517,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h36 Chuva avancando por Sao Sebastiao e Ilhabela. Tem raios. Atinge areas vizinhas. Cuidado!",
+      "resumo": "Defesa Civil:05h36 Chuva avancando por Sao Sebastiao e Ilhabela. Tem raios. Atinge areas vizinhas. Cuidado!",
+      "descricao": "05h36 Chuva avançando por São Sebastião e Ilhabela. Tem raios. Atinge áreas vizinhas. Cuidado!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T05:37:16-03:00",
+      "fim": "2026-09-09T07:35:00-03:00",
+      "vigencia": "2026-09-09T05:37:16-03:00 → 2026-09-09T07:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 15,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189361/2026",
+      "municipio": "São Sebastião",
+      "latitude": -23.7748,
+      "longitude": -45.557369,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h36 Chuva avancando por Sao Sebastiao e Ilhabela. Tem raios. Atinge areas vizinhas. Cuidado!",
+      "resumo": "Defesa Civil:05h36 Chuva avancando por Sao Sebastiao e Ilhabela. Tem raios. Atinge areas vizinhas. Cuidado!",
+      "descricao": "05h36 Chuva avançando por São Sebastião e Ilhabela. Tem raios. Atinge áreas vizinhas. Cuidado!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T05:37:16-03:00",
+      "fim": "2026-09-09T07:35:00-03:00",
+      "vigencia": "2026-09-09T05:37:16-03:00 → 2026-09-09T07:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 47,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
     }
   ],
   "eventos_recentes_geo": [
@@ -725,9 +957,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-09T08:35:09.403725+00:00",
+    "gerado_em": "2026-09-09T08:40:16.106557+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 10,
+    "eventos_com_eco": 14,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
