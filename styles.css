@@ -1160,3 +1160,26 @@ body.tv-mode .tv-compare{grid-template-columns:repeat(4,1fr)!important;gap:5px!i
   body.tv-mode .tv-map-panel{height:53vh!important;max-height:53vh!important}
   body.tv-mode .tv-bottom-v6{min-height:160px!important}
 }
+
+/* TV OPERACIONAL • layout perceptível v9 • DEV */
+@media(min-width:1200px){
+  body.tv-mode .tv-view{grid-template-rows:auto auto minmax(300px,45vh) minmax(190px,1fr) auto!important;gap:6px!important;padding:6px 10px 4px!important}
+  body.tv-mode .tv-map-grid{min-height:300px!important}
+  body.tv-mode .tv-map-panel{height:45vh!important;max-height:45vh!important}
+  body.tv-mode .tv-map-panel>header{padding:6px 9px!important}
+  body.tv-mode .tv-map-panel>footer{padding:4px 7px!important;font-size:11px!important;min-height:24px!important}
+  body.tv-mode .tv-side{grid-template-rows:.64fr .66fr .88fr 1.08fr!important;gap:5px!important}
+  body.tv-mode .tv-side-card{padding:8px 9px!important}
+  body.tv-mode .tv-side-card>b{font-size:20px!important}
+  body.tv-mode .tv-side-card>span{font-size:12px!important}
+  body.tv-mode .tv-side-priority>b{font-size:28px!important}
+  body.tv-mode .tv-bottom-v6{min-height:190px!important;grid-template-columns:1fr 1.35fr 1.55fr!important;gap:8px!important}
+  body.tv-mode .tv-bottom-block{padding:10px!important}
+  body.tv-mode .tv-bottom-block header b{font-size:11px!important}
+  body.tv-mode .tv-bottom-block header small{font-size:9px!important}
+}
+@media(min-width:1600px){
+  body.tv-mode .tv-view{grid-template-rows:auto auto minmax(320px,46vh) minmax(210px,1fr) auto!important}
+  body.tv-mode .tv-map-panel{height:46vh!important;max-height:46vh!important}
+  body.tv-mode .tv-bottom-v6{min-height:210px!important}
+}
