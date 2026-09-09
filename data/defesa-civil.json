@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T08:55:07-03:00",
-  "fonte_coletada_em": "2026-09-09T11:55:03Z",
+  "gerado_em": "2026-09-09T09:00:12-03:00",
+  "fonte_coletada_em": "2026-09-09T12:00:06Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 44,
-  "alertas_ativos": 4,
+  "entradas_feed": 45,
+  "alertas_ativos": 5,
   "eventos_geo": [
     {
       "id_alerta": "189367/2026",
@@ -426,6 +426,132 @@
         "pico_em": "2026-09-09T11:40:00+00:00",
         "pico_estimado_mmh": 2.53,
         "pico_dbz_medio": 29.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189381/2026",
+      "municipio": "Capivari",
+      "latitude": -22.993049,
+      "longitude": -47.487953,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:08h55 Chuva isolada na regiao de Laranjal Paulista, Capivari e Rio das Pedras. Tem raios e vento. Atinge areas vizinhas. Tome cuidado!",
+      "resumo": "Defesa Civil:08h55 Chuva isolada na regiao de Laranjal Paulista, Capivari e Rio das Pedras. Tem raios e vento. Atinge areas vizinhas. Tome cuidado!",
+      "descricao": "08h55 Chuva isolada na região de Laranjal Paulista, Capivari e Rio das Pedras. Tem raios e vento. Atinge áreas vizinhas. Tome cuidado!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T08:57:27-03:00",
+      "fim": "2026-09-09T10:50:00-03:00",
+      "vigencia": "2026-09-09T08:57:27-03:00 → 2026-09-09T10:50:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 8,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T11:50:00+00:00",
+        "intensidade_estimada_mmh": 6.51,
+        "faixa_estimada_mmh": [
+          6.48,
+          23.68
+        ],
+        "dbz_medio": 36.0,
+        "pico_em": "2026-09-09T11:50:00+00:00",
+        "pico_estimado_mmh": 6.51,
+        "pico_dbz_medio": 36.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189381/2026",
+      "municipio": "Laranjal Paulista",
+      "latitude": -23.038489,
+      "longitude": -47.860675,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:08h55 Chuva isolada na regiao de Laranjal Paulista, Capivari e Rio das Pedras. Tem raios e vento. Atinge areas vizinhas. Tome cuidado!",
+      "resumo": "Defesa Civil:08h55 Chuva isolada na regiao de Laranjal Paulista, Capivari e Rio das Pedras. Tem raios e vento. Atinge areas vizinhas. Tome cuidado!",
+      "descricao": "08h55 Chuva isolada na região de Laranjal Paulista, Capivari e Rio das Pedras. Tem raios e vento. Atinge áreas vizinhas. Tome cuidado!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T08:57:27-03:00",
+      "fim": "2026-09-09T10:50:00-03:00",
+      "vigencia": "2026-09-09T08:57:27-03:00 → 2026-09-09T10:50:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 5,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T11:50:00+00:00",
+        "intensidade_estimada_mmh": 0.94,
+        "faixa_estimada_mmh": [
+          1.0,
+          3.16
+        ],
+        "dbz_medio": 22.6,
+        "pico_em": "2026-09-09T11:40:00+00:00",
+        "pico_estimado_mmh": 1.2,
+        "pico_dbz_medio": 24.3,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189381/2026",
+      "municipio": "Rio Das Pedras",
+      "latitude": -22.843556,
+      "longitude": -47.589214,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:08h55 Chuva isolada na regiao de Laranjal Paulista, Capivari e Rio das Pedras. Tem raios e vento. Atinge areas vizinhas. Tome cuidado!",
+      "resumo": "Defesa Civil:08h55 Chuva isolada na regiao de Laranjal Paulista, Capivari e Rio das Pedras. Tem raios e vento. Atinge areas vizinhas. Tome cuidado!",
+      "descricao": "08h55 Chuva isolada na região de Laranjal Paulista, Capivari e Rio das Pedras. Tem raios e vento. Atinge áreas vizinhas. Tome cuidado!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T08:57:27-03:00",
+      "fim": "2026-09-09T10:50:00-03:00",
+      "vigencia": "2026-09-09T08:57:27-03:00 → 2026-09-09T10:50:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 4,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T11:50:00+00:00",
+        "intensidade_estimada_mmh": 0.9,
+        "faixa_estimada_mmh": [
+          1.0,
+          3.65
+        ],
+        "dbz_medio": 22.3,
+        "pico_em": "2026-09-09T11:40:00+00:00",
+        "pico_estimado_mmh": 1.59,
+        "pico_dbz_medio": 26.2,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
@@ -1110,14 +1236,6 @@
   "janela_recentes_horas": 6,
   "alertas_sp_sem_municipio_spi": [
     {
-      "id": "189346/2026",
-      "evento": "CHUVAS INTENSAS",
-      "headline": "Defesa Civil:02h58 Chuva isolada na regiao de Sete Barras, Miracatu, Juquia e Iguape. Tem raios e ventos. Atinge municipios vizinhos. Busque abrigo.",
-      "area": [
-        "SÃO PAULO/SP"
-      ]
-    },
-    {
       "id": "189348/2026",
       "evento": "CHUVAS INTENSAS",
       "headline": "Defesa Civil:03h37 Chuva forte avancando por Itanhaem e Mongagua. Tem raios e ventos. Atinge municipios vizinhos. Tome cuidado nas proximas horas.",
@@ -1184,9 +1302,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-09T11:55:11.506870+00:00",
+    "gerado_em": "2026-09-09T12:00:19.118309+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 10,
+    "eventos_com_eco": 13,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
