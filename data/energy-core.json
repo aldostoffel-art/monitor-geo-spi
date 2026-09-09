@@ -1,9 +1,9 @@
 {
   "core": "ENERGY CORE SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T04:00:03.516920+00:00",
-  "fonte_gerada_em": "2026-09-09T00:56:57-03:00",
-  "quantidade_ocorrencias_origem": 144,
+  "gerado_em": "2026-09-09T04:25:03.123301+00:00",
+  "fonte_gerada_em": "2026-09-09T01:21:46-03:00",
+  "quantidade_ocorrencias_origem": 132,
   "quantidade_regioes_sem_energia": 96,
   "sem_coordenada": [],
   "regioes": [
@@ -100,8 +100,26 @@
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1543570",
         "ELEKTRO-2026-1543177"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "JD MARCELINO",
+      "municipio": "CAIEIRAS",
+      "latitude": -23.347549,
+      "longitude": -46.760438,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "CRITICO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "em_atendimento"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1543570"
       ],
       "sem_energia": true
     },
@@ -136,7 +154,8 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1542949",
@@ -176,14 +195,12 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta",
-        "em_atendimento"
+        "em_atendimento",
+        "aberta"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1543625",
-        "ELEKTRO-2026-1543592",
-        "ELEKTRO-2026-1543149",
-        "ELEKTRO-2026-1543020"
+        "ELEKTRO-2026-1543149"
       ],
       "sem_energia": true
     },
@@ -237,7 +254,7 @@
         "PIRATININGA"
       ],
       "status": [
-        "Em Execução"
+        "Em Preparação"
       ],
       "ocorrencias": [
         "OS 1413330062"
@@ -298,6 +315,25 @@
       ],
       "ocorrencias": [
         "ENEL-3534401018"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "PQ VIADUTO",
+      "municipio": "BAURU",
+      "latitude": -22.337806,
+      "longitude": -49.110091,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "PAULISTA"
+      ],
+      "status": [
+        "Em Preparação"
+      ],
+      "ocorrencias": [
+        "OS 1413331133"
       ],
       "sem_energia": true
     },
@@ -378,25 +414,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "FRANCISCO MORATO",
-      "municipio": "FRANCISCO MORATO",
-      "latitude": -23.282077,
-      "longitude": -46.742446,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1538823"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "FRANCO DA ROCHA",
       "municipio": "FRANCO DA ROCHA",
       "latitude": -23.31288,
@@ -408,32 +425,11 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "em_atendimento",
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1543468",
         "ELEKTRO-2026-1542932",
         "ELEKTRO-2026-1542473"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "JD MORADA DO SOL",
-      "municipio": "INDAIATUBA",
-      "latitude": -23.124151,
-      "longitude": -47.240757,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ATENCAO",
-      "distribuidoras": [
-        "PIRATININGA"
-      ],
-      "status": [
-        "Em Preparação"
-      ],
-      "ocorrencias": [
-        "OS 1413331343"
       ],
       "sem_energia": true
     },
@@ -453,6 +449,25 @@
       ],
       "ocorrencias": [
         "ENEL-352250505"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "LARANJAL PAULISTA",
+      "municipio": "LARANJAL PAULISTA",
+      "latitude": -23.056683,
+      "longitude": -47.842046,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "ATENCAO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "aberta"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1543626"
       ],
       "sem_energia": true
     },
@@ -677,13 +692,13 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1543543",
         "ELEKTRO-2026-1543492",
         "ELEKTRO-2026-1543397",
-        "ELEKTRO-2026-1543298",
         "ELEKTRO-2026-1540437"
       ],
       "sem_energia": true
@@ -973,11 +988,9 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "em_atendimento",
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1543616",
         "ELEKTRO-2026-1537550"
       ],
       "sem_energia": true
@@ -1208,7 +1221,6 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta",
         "em_atendimento"
       ],
       "ocorrencias": [
@@ -1332,25 +1344,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "LARANJAL PAULISTA",
-      "municipio": "LARANJAL PAULISTA",
-      "latitude": -23.056683,
-      "longitude": -47.842046,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "aberta"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1543626"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "LIMEIRA",
       "municipio": "LIMEIRA",
       "latitude": -22.592007,
@@ -1369,7 +1362,6 @@
         "ELEKTRO-2026-1543516",
         "ELEKTRO-2026-1543494",
         "ELEKTRO-2026-1543438",
-        "ELEKTRO-2026-1543256",
         "ELEKTRO-2026-1543254",
         "ELEKTRO-2026-1543213",
         "ELEKTRO-2026-1542390",
@@ -1605,11 +1597,9 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "em_atendimento",
         "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1543310",
         "ELEKTRO-2026-1543281"
       ],
       "sem_energia": true
@@ -1688,9 +1678,7 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1543532",
-        "ELEKTRO-2026-1543053",
-        "ELEKTRO-2026-1541106",
-        "ELEKTRO-2026-1539944"
+        "ELEKTRO-2026-1541106"
       ],
       "sem_energia": true
     },
@@ -1771,21 +1759,21 @@
       "sem_energia": true
     },
     {
-      "regiao": "PINHALZINHO",
+      "regiao": "SANTO ANTONIO DO PINHAL",
       "municipio": "SANTO ANTONIO DO PINHAL",
-      "latitude": -22.815622,
-      "longitude": -45.719158,
-      "origem_coordenada": "REFERENCIA_OCORRENCIA",
-      "confianca_geografica": "FALLBACK",
+      "latitude": -22.828022,
+      "longitude": -45.699149,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
       "nivel": "MONITORAMENTO",
       "distribuidoras": [
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "em_atendimento"
+        "aberta"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1543010"
+        "ELEKTRO-2026-1543640"
       ],
       "sem_energia": true
     },
@@ -1839,13 +1827,11 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "em_atendimento",
-        "aberta"
+        "aberta",
+        "em_atendimento"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1543588",
         "ELEKTRO-2026-1542856",
-        "ELEKTRO-2026-1542351",
         "ELEKTRO-2026-1539500"
       ],
       "sem_energia": true
@@ -1862,11 +1848,9 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "em_atendimento",
-        "aberta"
+        "em_atendimento"
       ],
       "ocorrencias": [
-        "ELEKTRO-2026-1543393",
         "ELEKTRO-2026-1543351"
       ],
       "sem_energia": true
