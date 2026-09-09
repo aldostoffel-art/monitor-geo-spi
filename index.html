@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788890603">
+  <link rel="stylesheet" href="styles.css?v=1788918496">
 </head>
 <body>
   <header class="topbar">
@@ -243,6 +243,7 @@
       <button type="button" data-p1-sub="export"><b>EXPORTAÇÃO</b><small>CSV • JSON • bases</small></button>
     </section>
     <section id="p1Kpis" class="p1-kpis" data-p1-section="now"></section>
+    <section class="p1-current-recurrence" data-p1-section="now"><header><div><b>🔁 REINCIDENTES ATIVOS AGORA</b><small>sites atualmente abertos que já tiveram outro incidente na base</small></div><span id="p1CurrentRecurrenceCount">—</span></header><div id="p1CurrentRecurrence"></div></section>
     <section id="p1SlaKpis" class="p1-kpis p1-sla-kpis" data-p1-section="now"></section>
     <section class="p1-cn-overview-card" data-p1-section="now">
       <header><div><b>📍 ATUAL POR CN</b><small>grandes números + gráfico • toque no CN para abrir os sites</small></div><span>ONLINE</span></header>
@@ -334,7 +335,7 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788883559"></script>
+  <script src="app.js?v=1788918496"></script>
 </body>
 </html>
 
