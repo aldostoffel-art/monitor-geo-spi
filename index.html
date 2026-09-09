@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788952656">
+  <link rel="stylesheet" href="styles.css?v=1788966988">
 </head>
 <body>
   <header class="topbar">
@@ -17,7 +17,7 @@
     </div>
     <div class="status"><span class="dot"></span><span id="statusText">Carregando Backbone…</span></div>
   </header>
-  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabDecision" class="view-tab" type="button"><span class="tab-icon">⚡</span><span class="tab-long">Decisão Operacional</span><span class="tab-short">Decisão</span></button><button id="tabAlarmesP1" class="view-tab" type="button"><span class="tab-icon">🚨</span><span class="tab-long">Alarmes P1</span><span class="tab-short">P1</span></button><button id="tabPostes" class="view-tab" type="button"><span class="tab-icon">🪵</span><span class="tab-long">Queda de Postes</span><span class="tab-short">Postes</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabRibeirao" class="view-tab" type="button"><span class="tab-icon">🏙️</span><span class="tab-long">Ribeirão Fire</span><span class="tab-short">Ribeirão</span></button><button id="tabRibeiraoGeral" class="view-tab" type="button"><span class="tab-icon">📊</span><span class="tab-long">Ribeirão Geral</span><span class="tab-short">Rib. Geral</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button></nav>
+  <nav class="view-tabs" aria-label="Visões do Monitor GEO"><button id="tabMapa" class="view-tab active" type="button"><span class="tab-icon">🗺️</span><span class="tab-long">Mapa completo</span><span class="tab-short">Mapa</span></button><button id="tabComando" class="view-tab" type="button"><span class="tab-icon">🎯</span><span class="tab-long">Visão de Comando</span><span class="tab-short">Comando</span></button><button id="tabDecision" class="view-tab" type="button"><span class="tab-icon">⚡</span><span class="tab-long">Decisão Operacional</span><span class="tab-short">Decisão</span></button><button id="tabTv" class="view-tab" type="button"><span class="tab-icon">📺</span><span class="tab-long">TV Operacional</span><span class="tab-short">TV</span></button><button id="tabAlarmesP1" class="view-tab" type="button"><span class="tab-icon">🚨</span><span class="tab-long">Alarmes P1</span><span class="tab-short">P1</span></button><button id="tabPostes" class="view-tab" type="button"><span class="tab-icon">🪵</span><span class="tab-long">Queda de Postes</span><span class="tab-short">Postes</span></button><button id="tabFire" class="view-tab" type="button"><span class="tab-icon">🔥</span><span class="tab-long">Fire + Backbone</span><span class="tab-short">Fire</span></button><button id="tabRibeirao" class="view-tab" type="button"><span class="tab-icon">🏙️</span><span class="tab-long">Ribeirão Fire</span><span class="tab-short">Ribeirão</span></button><button id="tabRibeiraoGeral" class="view-tab" type="button"><span class="tab-icon">📊</span><span class="tab-long">Ribeirão Geral</span><span class="tab-short">Rib. Geral</span></button><button id="tabMobile" class="view-tab" type="button"><span class="tab-icon">📡</span><span class="tab-long">Móvel</span><span class="tab-short">Móvel</span></button><button id="tabTrajectory" class="view-tab" type="button"><span class="tab-icon">🧭</span><span class="tab-long">Trajetória</span><span class="tab-short">Trajeto</span></button></nav>
   <section id="importantEventStrip" class="important-event-strip" aria-label="Eventos meteorológicos importantes" aria-live="assertive" hidden>
     <div class="important-event-label"><span>🚨 EVENTO IMPORTANTE</span><strong id="importantEventLevel">URGENTE</strong></div>
     <div class="important-event-viewport"><div id="importantEventTrack" class="important-event-track"></div></div>
@@ -224,6 +224,22 @@
   </main>
 
 
+  <main id="tvView" class="tv-view" hidden>
+    <section class="tv-head">
+      <div><span class="tv-live"><i></i> SPI • TEMPO REAL</span><h2>📺 DECISÃO OPERACIONAL • TV</h2><p>Leitura executiva para sala de operação • uma tela • sem rolagem</p></div>
+      <div class="tv-head-right"><button id="tvFullscreen" type="button">⛶ TELA CHEIA</button><b id="tvLevel">ANALISANDO</b><small id="tvUpdated">Atualizando…</small></div>
+    </section>
+    <section id="tvExecutive" class="tv-executive">Consolidando cenário operacional…</section>
+    <section id="tvKpis" class="tv-kpis"></section>
+    <section class="tv-grid">
+      <article class="tv-panel tv-now"><header><span>AGORA</span><b>SITUAÇÃO OPERACIONAL</b></header><div id="tvNow"></div></article>
+      <article class="tv-panel tv-risk"><header><span>RISCO REAL</span><b>PRIORIDADES NO ESTADO</b></header><div id="tvRisk"></div></article>
+      <article class="tv-panel tv-proj"><header><span>PROJEÇÃO</span><b>6H • 24H • 48H</b></header><div id="tvProjection"></div></article>
+      <article class="tv-panel tv-network"><header><span>REDE</span><b>EXPOSIÇÃO & AÇÃO</b></header><div id="tvNetwork"></div></article>
+    </section>
+    <section class="tv-footer"><span id="tvSources">Fontes: CEMADEN • Defesa Civil • INMET • Weather/Open-Meteo • Rede SPI • Fire</span><strong id="tvClock">--:--:--</strong></section>
+  </main>
+
   <main id="alarmesP1View" class="p1-view" hidden>
     <section class="p1-head"><div><span class="p1-badge">SPI • DEV • LEITURA PASSIVA</span><h2>🚨 ALARMES P1 • INTELIGÊNCIA OPERACIONAL</h2><p>Reincidência • oportunidades • localidades • leitura por CN e site</p></div><div id="p1Updated" class="p1-updated">Atualizando…</div></section>
     <section class="p1-online-bar">
@@ -336,7 +352,7 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788952656"></script>
+  <script src="app.js?v=1788966988"></script>
 </body>
 </html>
 
