@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-09T07:58:14.328308-03:00",
+  "gerado_em": "2026-09-09T08:00:58.322543-03:00",
   "metodo": "correlação por sigla do site no mesmo dia em mensagens dos grupos operacionais; causa só é classificada quando há texto explícito compatível; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-09T10:53:33.000Z",
+  "historico_grupos_fim": "2026-09-09T11:00:04.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -16982,14 +16982,8 @@
               "site": "AJK",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "FIBRA/BACKBONE",
               "evidencias": [
-                {
-                  "hora": "07:26",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "DYA, GPA, IGO, AJK, LGE, SCB"
-                },
                 {
                   "hora": "07:26",
                   "grupo": "Movel N1 SPA",
@@ -17013,6 +17007,12 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
+                },
+                {
+                  "hora": "08:00",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "FIBRA/BACKBONE",
+                  "status": "IGO e AJK envolvido no rompimento de ARD.IP x SOC.AS"
                 }
               ]
             },
@@ -17124,14 +17124,8 @@
               "site": "IGO",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "FIBRA/BACKBONE",
               "evidencias": [
-                {
-                  "hora": "07:26",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "DYA, GPA, IGO, AJK, LGE, SCB"
-                },
                 {
                   "hora": "07:26",
                   "grupo": "Movel N1 SPA",
@@ -17155,6 +17149,12 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
+                },
+                {
+                  "hora": "08:00",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "FIBRA/BACKBONE",
+                  "status": "IGO e AJK envolvido no rompimento de ARD.IP x SOC.AS"
                 }
               ]
             },
@@ -17220,14 +17220,8 @@
               "site": "SCB",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "FIBRA/BACKBONE",
               "evidencias": [
-                {
-                  "hora": "07:26",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "DYA, GPA, IGO, AJK, LGE, SCB"
-                },
                 {
                   "hora": "07:26",
                   "grupo": "Movel N1 SPA",
@@ -17251,6 +17245,12 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
+                },
+                {
+                  "hora": "08:00",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "FIBRA/BACKBONE",
+                  "status": "SCB está fora devido ao rompimento de PRF.BO"
                 }
               ]
             },
@@ -17405,7 +17405,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 90
+      "mensagens_grupos_no_dia": 93
     }
   ],
   "ativos_agora": [
@@ -17417,7 +17417,7 @@
           "site": "BSH",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.3
+          "idade_ativa_h": 0.34
         },
         {
           "site": "ISJ",
@@ -17448,7 +17448,7 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 12.64
+          "idade_ativa_h": 12.68
         },
         {
           "site": "JKB",
@@ -17479,7 +17479,7 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 12.64
+          "idade_ativa_h": 12.68
         },
         {
           "site": "JNC",
@@ -17510,7 +17510,7 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 8.25
+          "idade_ativa_h": 8.29
         },
         {
           "site": "JUR",
@@ -17541,7 +17541,7 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 19.64
+          "idade_ativa_h": 19.68
         },
         {
           "site": "STF",
@@ -17572,7 +17572,7 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 79.29
+          "idade_ativa_h": 79.33
         }
       ]
     },
@@ -17591,7 +17591,7 @@
               "status": "JK3, BLV, TAL, BOC"
             }
           ],
-          "idade_ativa_h": 36.97
+          "idade_ativa_h": 37.01
         },
         {
           "site": "BOC",
@@ -17604,7 +17604,7 @@
               "status": "JK3, BLV, TAL, BOC"
             }
           ],
-          "idade_ativa_h": 3.24
+          "idade_ativa_h": 3.28
         },
         {
           "site": "JK3",
@@ -17617,7 +17617,7 @@
               "status": "JK3, BLV, TAL, BOC"
             }
           ],
-          "idade_ativa_h": 76.97
+          "idade_ativa_h": 77.01
         }
       ]
     },
@@ -17627,14 +17627,8 @@
       "sites": [
         {
           "site": "AJK",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "FIBRA/BACKBONE",
           "evidencias": [
-            {
-              "hora": "07:26",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "DYA, GPA, IGO, AJK, LGE, SCB"
-            },
             {
               "hora": "07:26",
               "grupo": "Movel N1 SPA",
@@ -17658,9 +17652,15 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
+            },
+            {
+              "hora": "08:00",
+              "grupo": "Móvel 15 - 19",
+              "causa": "FIBRA/BACKBONE",
+              "status": "IGO e AJK envolvido no rompimento de ARD.IP x SOC.AS"
             }
           ],
-          "idade_ativa_h": 4.64
+          "idade_ativa_h": 4.68
         },
         {
           "site": "CZL",
@@ -17679,7 +17679,7 @@
               "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
             }
           ],
-          "idade_ativa_h": 0.64
+          "idade_ativa_h": 0.68
         },
         {
           "site": "DEG",
@@ -17698,18 +17698,12 @@
               "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
             }
           ],
-          "idade_ativa_h": 0.64
+          "idade_ativa_h": 0.68
         },
         {
           "site": "IGO",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "FIBRA/BACKBONE",
           "evidencias": [
-            {
-              "hora": "07:26",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "DYA, GPA, IGO, AJK, LGE, SCB"
-            },
             {
               "hora": "07:26",
               "grupo": "Movel N1 SPA",
@@ -17733,9 +17727,15 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
+            },
+            {
+              "hora": "08:00",
+              "grupo": "Móvel 15 - 19",
+              "causa": "FIBRA/BACKBONE",
+              "status": "IGO e AJK envolvido no rompimento de ARD.IP x SOC.AS"
             }
           ],
-          "idade_ativa_h": 4.64
+          "idade_ativa_h": 4.68
         },
         {
           "site": "ITE",
@@ -17754,18 +17754,12 @@
               "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
             }
           ],
-          "idade_ativa_h": 0.64
+          "idade_ativa_h": 0.68
         },
         {
           "site": "SCB",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "FIBRA/BACKBONE",
           "evidencias": [
-            {
-              "hora": "07:26",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "DYA, GPA, IGO, AJK, LGE, SCB"
-            },
             {
               "hora": "07:26",
               "grupo": "Movel N1 SPA",
@@ -17789,9 +17783,15 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
+            },
+            {
+              "hora": "08:00",
+              "grupo": "Móvel 15 - 19",
+              "causa": "FIBRA/BACKBONE",
+              "status": "SCB está fora devido ao rompimento de PRF.BO"
             }
           ],
-          "idade_ativa_h": 3.57
+          "idade_ativa_h": 3.61
         },
         {
           "site": "TAD",
@@ -17810,7 +17810,7 @@
               "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
             }
           ],
-          "idade_ativa_h": 0.64
+          "idade_ativa_h": 0.68
         },
         {
           "site": "YBV",
@@ -17829,7 +17829,7 @@
               "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
             }
           ],
-          "idade_ativa_h": 0.64
+          "idade_ativa_h": 0.68
         }
       ]
     },
@@ -17848,7 +17848,7 @@
               "status": "RON, OTA, BC6, BC7"
             }
           ],
-          "idade_ativa_h": 3.57
+          "idade_ativa_h": 3.61
         },
         {
           "site": "BC7",
@@ -17861,7 +17861,7 @@
               "status": "RON, OTA, BC6, BC7"
             }
           ],
-          "idade_ativa_h": 3.57
+          "idade_ativa_h": 3.61
         },
         {
           "site": "OTA",
@@ -17880,7 +17880,7 @@
               "status": "OTA_Rede externa rompimento"
             }
           ],
-          "idade_ativa_h": 3.57
+          "idade_ativa_h": 3.61
         },
         {
           "site": "RON",
@@ -17899,7 +17899,7 @@
               "status": "RON_Rede externa rompimento"
             }
           ],
-          "idade_ativa_h": 3.95
+          "idade_ativa_h": 3.99
         }
       ]
     },
@@ -17924,7 +17924,7 @@
               "status": "1KB @230188956803268"
             }
           ],
-          "idade_ativa_h": 8.97
+          "idade_ativa_h": 9.01
         },
         {
           "site": "U50",
@@ -17937,7 +17937,7 @@
               "status": "U50, 1KB"
             }
           ],
-          "idade_ativa_h": 982.64
+          "idade_ativa_h": 982.68
         }
       ]
     },
@@ -17956,7 +17956,7 @@
               "status": "EGC"
             }
           ],
-          "idade_ativa_h": 57.3
+          "idade_ativa_h": 57.34
         }
       ]
     }
