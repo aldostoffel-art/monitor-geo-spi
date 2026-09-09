@@ -1167,7 +1167,7 @@ function tvRenderNowMap(cityRanks){
  const el=document.getElementById('tvNowMap');if(!el||typeof L==='undefined'||!weatherLabMunicipios)return;
  if(tvNowLeaflet){try{tvNowLeaflet.remove()}catch(_){}tvNowLeaflet=null} el.innerHTML='';
  const m=tvMapBase(el);tvNowLeaflet=m;
- const layer=L.geoJSON(weatherLabMunicipios,{style:f=>{const k=norm(f?.properties?.municipio||''),r=cityRanks.get(k),lab=r?.label||'';return{color:r?'#d7e8f4':'#274457',weight:r?1.0:.35,fillColor:r?tvRiskColor(lab):'#0b1b28',fillOpacity:r?.score>=4?.90:r?.score>=3?.78:r?.score>=2?.62:.08}}}).addTo(m);
+ const layer=L.geoJSON(weatherLabMunicipios,{style:f=>{const k=norm(f?.properties?.municipio||''),r=cityRanks.get(k),lab=r?.label||'';return{color:r?'#6f8291':'#a9b6c0',weight:r?1.45:.75,fillColor:r?tvRiskColor(lab):'#e7edf2',fillOpacity:r?.score>=4?.96:r?.score>=3?.90:r?.score>=2?.78:.34}}}).addTo(m);
  try{m.fitBounds(layer.getBounds(),{padding:[5,5]})}catch(_){} setTimeout(()=>m.invalidateSize(),80)
 }
 function tvRender48Map(rows){
@@ -1175,7 +1175,7 @@ function tvRender48Map(rows){
  if(tv48Leaflet){try{tv48Leaflet.remove()}catch(_){}tv48Leaflet=null} el.innerHTML='';
  const mapRows=new Map((rows||[]).map(x=>[norm(x.municipio||''),x]));
  const m=tvMapBase(el);tv48Leaflet=m;
- const layer=L.geoJSON(weatherLabMunicipios,{style:f=>{const x=mapRows.get(norm(f?.properties?.municipio||'')),lab=x?.level||'';return{color:x?'#d7e8f4':'#274457',weight:x?1.0:.35,fillColor:x?tvRiskColor(lab):'#0b1b28',fillOpacity:x?.level?.includes('CRÍTICO')?.92:x?.level==='ALTO'?.80:x?.level==='ATENÇÃO'?.62:.08}}}).addTo(m);
+ const layer=L.geoJSON(weatherLabMunicipios,{style:f=>{const x=mapRows.get(norm(f?.properties?.municipio||'')),lab=x?.level||'';return{color:x?'#6f8291':'#a9b6c0',weight:x?1.45:.75,fillColor:x?tvRiskColor(lab):'#e7edf2',fillOpacity:x?.level?.includes('CRÍTICO')?.97:x?.level==='ALTO'?.92:x?.level==='ATENÇÃO'?.80:.34}}}).addTo(m);
  try{m.fitBounds(layer.getBounds(),{padding:[5,5]})}catch(_){} setTimeout(()=>m.invalidateSize(),80)
 }
 function tvAiText(ranked,rows48,topObs){
