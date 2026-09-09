@@ -1102,3 +1102,16 @@ body.tv-mode .tv-compare{grid-template-columns:repeat(4,1fr)!important;gap:5px!i
   body.tv-mode .tv-map-label:before{display:none!important}
 }
 @media(min-width:1600px){body.tv-mode .tv-map-label{font-size:11px!important;padding:4px 6px!important}}
+
+/* TV MAPA EXECUTIVO v8 • referência cartográfica light */
+@media(min-width:1200px){
+  body.tv-mode .tv-map-panel{overflow:hidden!important}
+  body.tv-mode .tv-map{position:relative!important;overflow:hidden!important;background:#cdd8df!important}
+  body.tv-mode .tv-map .leaflet-container,
+  body.tv-mode .tv-map.leaflet-container{overflow:hidden!important;background:#cdd8df!important}
+  body.tv-mode .tv-map .leaflet-tooltip,
+  body.tv-mode .tv-map-label{display:none!important}
+  body.tv-mode .tv-map svg{overflow:hidden!important}
+  body.tv-mode .tv-map svg path{vector-effect:non-scaling-stroke;shape-rendering:geometricPrecision}
+  body.tv-mode .tv-map-panel>footer{position:relative!important;z-index:20!important;background:#f5f8fa!important;border-top:1px solid #b8c6cf!important}
+}
