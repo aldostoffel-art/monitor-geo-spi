@@ -1,6 +1,6 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-09T12:21:26.932541-03:00",
+  "gerado_em": "2026-09-09T12:22:38.756256-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
   "historico_grupos_fim": "2026-09-09T15:20:38.000Z",
@@ -17034,6 +17034,13 @@
               "aberturas": 1,
               "causa": "SEM CAUSA LOCALIZADA",
               "evidencias": []
+            },
+            {
+              "site": "WSE",
+              "reincidente": false,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             }
           ]
         },
@@ -17103,7 +17110,49 @@
               "evidencias": []
             },
             {
+              "site": "CRM",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "IJ2",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "IVR",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "TAY",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "TQB",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "TQS",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "TYQ",
               "reincidente": true,
               "aberturas": 1,
               "causa": "SEM CAUSA LOCALIZADA",
@@ -17115,6 +17164,44 @@
           "cn": "15",
           "parceira": "TEL",
           "sites": [
+            {
+              "site": "DEG",
+              "reincidente": true,
+              "aberturas": 2,
+              "causa": "INFRA",
+              "evidencias": [
+                {
+                  "hora": "08:13",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "ITE,TAD, CZL, YBV falta de AC no DEG"
+                },
+                {
+                  "hora": "09:06",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "ACESSO/PROCESSO",
+                  "status": "DEG falta de A/C deslocamento de 70 min, leva também ITE, TAD,CZL e YBV"
+                },
+                {
+                  "hora": "09:11",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "CZL, envolvido no concentrador DEG com falta de ac YBV, envolvido no concentrador DEG com falta de ac"
+                },
+                {
+                  "hora": "10:28",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "Técnico Luciano acoplando o GMG no Site DEG"
+                },
+                {
+                  "hora": "10:28",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "DEG - Técnico Luciano acoplando o GMG no Site DEG"
+                }
+              ]
+            },
             {
               "site": "GPA",
               "reincidente": true,
@@ -17187,6 +17274,13 @@
               ]
             },
             {
+              "site": "ANT",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "CZL",
               "reincidente": true,
               "aberturas": 1,
@@ -17221,44 +17315,6 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "CZL, envolvido no concentrador DEG com falta de ac"
-                }
-              ]
-            },
-            {
-              "site": "DEG",
-              "reincidente": true,
-              "aberturas": 1,
-              "causa": "INFRA",
-              "evidencias": [
-                {
-                  "hora": "08:13",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "ITE,TAD, CZL, YBV falta de AC no DEG"
-                },
-                {
-                  "hora": "09:06",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "ACESSO/PROCESSO",
-                  "status": "DEG falta de A/C deslocamento de 70 min, leva também ITE, TAD,CZL e YBV"
-                },
-                {
-                  "hora": "09:11",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "CZL, envolvido no concentrador DEG com falta de ac YBV, envolvido no concentrador DEG com falta de ac"
-                },
-                {
-                  "hora": "10:28",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "INFRA",
-                  "status": "Técnico Luciano acoplando o GMG no Site DEG"
-                },
-                {
-                  "hora": "10:28",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "INFRA",
-                  "status": "DEG - Técnico Luciano acoplando o GMG no Site DEG"
                 }
               ]
             },
@@ -17301,7 +17357,21 @@
               ]
             },
             {
+              "site": "DYT",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "FZV",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "IBK",
               "reincidente": true,
               "aberturas": 1,
               "causa": "SEM CAUSA LOCALIZADA",
@@ -17372,6 +17442,13 @@
                   "status": "IIO"
                 }
               ]
+            },
+            {
+              "site": "IRG",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             },
             {
               "site": "ITE",
@@ -17616,6 +17693,13 @@
               ]
             },
             {
+              "site": "WJD",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "YBV",
               "reincidente": true,
               "aberturas": 1,
@@ -17655,6 +17739,13 @@
             },
             {
               "site": "YES",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "YTU",
               "reincidente": true,
               "aberturas": 1,
               "causa": "SEM CAUSA LOCALIZADA",
@@ -18000,6 +18091,13 @@
           "parceira": "TEL",
           "sites": [
             {
+              "site": "GRM",
+              "reincidente": false,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "IEN",
               "reincidente": true,
               "aberturas": 1,
@@ -18105,7 +18203,7 @@
           "site": "AT4",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.33
+          "idade_ativa_h": 0.36
         },
         {
           "site": "BSH",
@@ -18124,25 +18222,19 @@
               "status": "BSH - Deslocamento"
             }
           ],
-          "idade_ativa_h": 2.35
-        },
-        {
-          "site": "EVR",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 0.33
+          "idade_ativa_h": 2.37
         },
         {
           "site": "FWL",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.31
+          "idade_ativa_h": 3.34
         },
         {
           "site": "JIE",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.95
+          "idade_ativa_h": 0.97
         },
         {
           "site": "JKB",
@@ -18173,25 +18265,25 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 17.01
+          "idade_ativa_h": 17.04
         },
         {
           "site": "KLG",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.95
+          "idade_ativa_h": 0.97
         },
         {
           "site": "SGJ",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.68
+          "idade_ativa_h": 0.71
         },
         {
           "site": "SRH",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.31
+          "idade_ativa_h": 3.34
         },
         {
           "site": "STF",
@@ -18222,13 +18314,19 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 83.66
+          "idade_ativa_h": 83.69
         },
         {
           "site": "TUL",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.96
+          "idade_ativa_h": 1.99
+        },
+        {
+          "site": "WSE",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         }
       ]
     },
@@ -18247,7 +18345,7 @@
               "status": "TY1, TM5"
             }
           ],
-          "idade_ativa_h": 0.68
+          "idade_ativa_h": 0.71
         },
         {
           "site": "TY1",
@@ -18260,7 +18358,7 @@
               "status": "TY1, TM5"
             }
           ],
-          "idade_ativa_h": 3.01
+          "idade_ativa_h": 3.04
         }
       ]
     },
@@ -18285,7 +18383,19 @@
               "status": "JK3, BOC"
             }
           ],
-          "idade_ativa_h": 3.68
+          "idade_ativa_h": 3.71
+        },
+        {
+          "site": "CRM",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "IVR",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "JK3",
@@ -18304,7 +18414,31 @@
               "status": "JK3, BOC"
             }
           ],
-          "idade_ativa_h": 81.35
+          "idade_ativa_h": 81.37
+        },
+        {
+          "site": "TAY",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "TQB",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "TQS",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "TYQ",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         }
       ]
     },
@@ -18313,80 +18447,65 @@
       "parceira": "TEL",
       "sites": [
         {
-          "site": "IFE",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "12:12",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "IFE"
-            }
-          ],
-          "idade_ativa_h": 1.96
+          "site": "ANT",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
-          "site": "IIO",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "12:12",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "IIO"
-            }
-          ],
-          "idade_ativa_h": 2.35
-        },
-        {
-          "site": "JKN",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "12:12",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "JKN"
-            }
-          ],
-          "idade_ativa_h": 1.96
-        },
-        {
-          "site": "KPV",
+          "site": "DEG",
           "causa": "INFRA",
           "evidencias": [
             {
-              "hora": "09:17",
-              "grupo": "Móvel 15 - 19",
-              "causa": "INFRA",
-              "status": "Técnico Osmar em deslocamento para KPV de 60 m com GMG"
-            },
-            {
-              "hora": "09:35",
+              "hora": "08:13",
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
-              "status": "Srs, bom dia. podem enviar p Tel as ta´s ta-367992080 KPV e ta-367992211 SM5 ?"
+              "status": "ITE,TAD, CZL, YBV falta de AC no DEG"
             },
             {
-              "hora": "10:03",
+              "hora": "09:06",
               "grupo": "Móvel 15 - 19",
-              "causa": "INFRA",
-              "status": "Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
+              "causa": "ACESSO/PROCESSO",
+              "status": "DEG falta de A/C deslocamento de 70 min, leva também ITE, TAD,CZL e YBV"
             },
             {
-              "hora": "12:12",
+              "hora": "09:11",
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
-              "status": "KPV"
+              "status": "CZL, envolvido no concentrador DEG com falta de ac YBV, envolvido no concentrador DEG com falta de ac"
             },
             {
-              "hora": "10:03",
+              "hora": "10:28",
               "grupo": "Móvel 15 - 19",
               "causa": "INFRA",
-              "status": "KPV - Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
+              "status": "Técnico Luciano acoplando o GMG no Site DEG"
+            },
+            {
+              "hora": "10:28",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "DEG - Técnico Luciano acoplando o GMG no Site DEG"
             }
           ],
-          "idade_ativa_h": 3.31
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "DYT",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "IBK",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "IRG",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "SCB",
@@ -18423,44 +18542,19 @@
               "status": "SCB"
             }
           ],
-          "idade_ativa_h": 7.95
+          "idade_ativa_h": 7.97
         },
         {
-          "site": "SM5",
-          "causa": "INFRA",
-          "evidencias": [
-            {
-              "hora": "09:11",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "SM5, esse envolvido no concentrador KPV"
-            },
-            {
-              "hora": "09:35",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "Srs, bom dia. podem enviar p Tel as ta´s ta-367992080 KPV e ta-367992211 SM5 ?"
-            },
-            {
-              "hora": "10:03",
-              "grupo": "Móvel 15 - 19",
-              "causa": "INFRA",
-              "status": "Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
-            },
-            {
-              "hora": "12:12",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "SM5"
-            },
-            {
-              "hora": "10:03",
-              "grupo": "Móvel 15 - 19",
-              "causa": "INFRA",
-              "status": "SM5 - Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
-            }
-          ],
-          "idade_ativa_h": 3.31
+          "site": "WJD",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "YTU",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         }
       ]
     },
@@ -18485,19 +18579,19 @@
               "status": "CTG - UCH, URD, URO e CTG possível falha no SWS de Uchôa Cidade. Pico de energia sem autonomia de bateria. Técnico Vinícius a caminho."
             }
           ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.71
         },
         {
           "site": "GTV",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.96
+          "idade_ativa_h": 1.99
         },
         {
           "site": "NLZ",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.96
+          "idade_ativa_h": 1.99
         },
         {
           "site": "UCH",
@@ -18516,7 +18610,7 @@
               "status": "UCH - UCH, URD, URO e CTG possível falha no SWS de Uchôa Cidade. Pico de energia sem autonomia de bateria. Técnico Vinícius a caminho."
             }
           ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.71
         },
         {
           "site": "URD",
@@ -18535,7 +18629,7 @@
               "status": "URD - UCH, URD, URO e CTG possível falha no SWS de Uchôa Cidade. Pico de energia sem autonomia de bateria. Técnico Vinícius a caminho."
             }
           ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.71
         },
         {
           "site": "URO",
@@ -18554,7 +18648,7 @@
               "status": "URO - UCH, URD, URO e CTG possível falha no SWS de Uchôa Cidade. Pico de energia sem autonomia de bateria. Técnico Vinícius a caminho."
             }
           ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.71
         }
       ]
     },
@@ -18573,7 +18667,7 @@
               "status": "U50, 1KB"
             }
           ],
-          "idade_ativa_h": 987.01
+          "idade_ativa_h": 987.04
         }
       ]
     },
@@ -18598,7 +18692,13 @@
               "status": "EGC"
             }
           ],
-          "idade_ativa_h": 61.68
+          "idade_ativa_h": 61.71
+        },
+        {
+          "site": "GRM",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "IEN",
@@ -18611,7 +18711,7 @@
               "status": "IEN"
             }
           ],
-          "idade_ativa_h": 0.95
+          "idade_ativa_h": 0.97
         },
         {
           "site": "IP9",
@@ -18624,7 +18724,7 @@
               "status": "IP9"
             }
           ],
-          "idade_ativa_h": 0.95
+          "idade_ativa_h": 0.97
         },
         {
           "site": "MDE",
@@ -18637,7 +18737,7 @@
               "status": "MDE"
             }
           ],
-          "idade_ativa_h": 0.95
+          "idade_ativa_h": 0.97
         },
         {
           "site": "PBC",
@@ -18650,7 +18750,7 @@
               "status": "PBC"
             }
           ],
-          "idade_ativa_h": 0.33
+          "idade_ativa_h": 0.36
         },
         {
           "site": "SFZ",
@@ -18663,7 +18763,7 @@
               "status": "SFZ"
             }
           ],
-          "idade_ativa_h": 0.95
+          "idade_ativa_h": 0.97
         },
         {
           "site": "YPE",
@@ -18676,7 +18776,7 @@
               "status": "YPE"
             }
           ],
-          "idade_ativa_h": 0.95
+          "idade_ativa_h": 0.97
         }
       ]
     }
