@@ -1,127 +1,14 @@
 {
-  "gerado_em": "2026-09-09T17:35:59.451247+00:00",
+  "gerado_em": "2026-09-09T17:40:39.023972+00:00",
   "ambiente": "DEV",
   "mudanca_relevante": true,
-  "fingerprint": "ced61bd0087a2f47d9ba8fe82c310937ea32d59da2f80265b7e2a9d89432c784",
-  "nivel": "ALTO",
-  "agora": "Sinal externo em Uberaba/MG aponta risco para o corredor NORTE",
-  "proximas_horas": "Potencial avanço para Franca/Ribeirão Preto nas próximas horas; rajada até 40 km/h e chuva horária até 4.6 mm",
-  "rede_exposta": "21 trecho(s) Backbone cruzam o corredor potencial",
+  "fingerprint": "0e77d67bbc4ecbbc6c6b84ba4a7b0d1663d9c43fd152d58393959f11303e1c73",
+  "nivel": "ATENÇÃO",
+  "agora": "Sinal externo em Extrema/MG aponta risco para o corredor BRAGANÇA/JUNDIAÍ",
+  "proximas_horas": "Potencial avanço para Bragança/Jundiaí nas próximas horas; rajada até 28 km/h e chuva horária até 3.9 mm",
+  "rede_exposta": "194 trecho(s) Backbone cruzam o corredor potencial",
   "recomendacao": "Validar preventivamente redundância: 0/5 trechos amostrados têm caminho lógico alternativo fora do corredor",
   "ameacas_externas": [
-    {
-      "nome": "Uberaba/MG",
-      "corredor": "NORTE",
-      "alvo": "Franca/Ribeirão Preto",
-      "score": 65,
-      "tempestade": true,
-      "chuva_pico_mmh": 4.6,
-      "rajada_pico_kmh": 40.3,
-      "prob_chuva_pico": 96,
-      "eta_sinal_externo": "2026-09-09T17:00:00+00:00",
-      "backbones_no_corredor": 21,
-      "backbones_amostra": [
-        {
-          "id": "BB-6FF41472D388",
-          "trecho": "FCA.MR-FCA.RD",
-          "cabo": "F-0279",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 0.2,
-          "ponta_a": "FCA.MR",
-          "ponta_b": "FCA.RD"
-        },
-        {
-          "id": "BB-FDD9A25BEAC1",
-          "trecho": "FAC.MR-RTG.SA",
-          "cabo": "F-0227",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 0.7,
-          "ponta_a": "FAC.MR",
-          "ponta_b": "RTG.SA"
-        },
-        {
-          "id": "BB-B9225D4563A2",
-          "trecho": "IPV.RD-IPV.WR",
-          "cabo": "F-0276",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 0.8,
-          "ponta_a": "IPV.RD",
-          "ponta_b": "IPV.WR"
-        },
-        {
-          "id": "BB-921D9E5DE26B",
-          "trecho": "IPV.RD-IPV.SM",
-          "cabo": "F-0234",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 0.8,
-          "ponta_a": "IPV.RD",
-          "ponta_b": "IPV.SM"
-        },
-        {
-          "id": "BB-F47EE7B91B4E",
-          "trecho": "IPV.WR-RPO.NO",
-          "cabo": "F-0260",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 1.4,
-          "ponta_a": "IPV.WR",
-          "ponta_b": "RPO.NO"
-        },
-        {
-          "id": "BB-61CAF5F5613E",
-          "trecho": "IPV.SM-RFA.CP",
-          "cabo": "F-0278",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 1.6,
-          "ponta_a": "IPV.SM",
-          "ponta_b": "RFA.CP"
-        },
-        {
-          "id": "BB-164D94C01879",
-          "trecho": "IPV.SM-SQB.SS",
-          "cabo": "F-0260",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 1.6,
-          "ponta_a": "IPV.SM",
-          "ponta_b": "SQB.SS"
-        },
-        {
-          "id": "BB-D11A166B28EA",
-          "trecho": "FCA.RD-RTG.SA",
-          "cabo": "F-0279",
-          "cluster": "RIBEIRAO PRETO",
-          "dist_corredor_km": 2.0,
-          "ponta_a": "FCA.RD",
-          "ponta_b": "RTG.SA"
-        }
-      ],
-      "alternativas": [
-        {
-          "trecho": "FCA.MR-FCA.RD",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "FAC.MR-RTG.SA",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "IPV.RD-IPV.WR",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "IPV.RD-IPV.SM",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "IPV.WR-RPO.NO",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        }
-      ]
-    },
     {
       "nome": "Extrema/MG",
       "corredor": "BRAGANÇA/JUNDIAÍ",
@@ -236,119 +123,6 @@
       ]
     },
     {
-      "nome": "Resende/RJ",
-      "corredor": "VALE DO PARAÍBA",
-      "alvo": "Cruzeiro/Lorena",
-      "score": 55,
-      "tempestade": true,
-      "chuva_pico_mmh": 5.6,
-      "rajada_pico_kmh": 23.4,
-      "prob_chuva_pico": 96,
-      "eta_sinal_externo": "2026-09-09T17:00:00+00:00",
-      "backbones_no_corredor": 23,
-      "backbones_amostra": [
-        {
-          "id": "BB-C891E952E1FA",
-          "trecho": "AYS.JC-QUZ.ME",
-          "cabo": "TR-1442",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 2.6,
-          "ponta_a": "AYS.JC",
-          "ponta_b": "QUZ.ME"
-        },
-        {
-          "id": "BB-09A56B7BB7A4",
-          "trecho": "AYS.JC-SOY.SR",
-          "cabo": "TR-1439",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 2.6,
-          "ponta_a": "AYS.JC",
-          "ponta_b": "SOY.SR"
-        },
-        {
-          "id": "BB-2010FEC498C9",
-          "trecho": "QUZ.ME-QUZ.RD",
-          "cabo": "TR-1418",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 4.3,
-          "ponta_a": "QUZ.ME",
-          "ponta_b": "QUZ.RD"
-        },
-        {
-          "id": "BB-EC69CF9EA987",
-          "trecho": "CRO.NR-LVN.CH",
-          "cabo": "F-0103",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 5.5,
-          "ponta_a": "CRO.NR",
-          "ponta_b": "LVN.CH"
-        },
-        {
-          "id": "BB-C322346DB42B",
-          "trecho": "LVN.CH-QUZ.ME",
-          "cabo": "TR-1396",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 6.1,
-          "ponta_a": "LVN.CH",
-          "ponta_b": "QUZ.ME"
-        },
-        {
-          "id": "BB-D4D8EFDAAB9C",
-          "trecho": "CHP.CD-LNA.VA",
-          "cabo": "F-0102",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 6.8,
-          "ponta_a": "CHP.CD",
-          "ponta_b": "LNA.VA"
-        },
-        {
-          "id": "BB-0FF321BEDE64",
-          "trecho": "CHP.CD-CNAS.CS",
-          "cabo": "TR-0102",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 6.8,
-          "ponta_a": "CHP.CD",
-          "ponta_b": "CNAS.CS"
-        },
-        {
-          "id": "BB-F14345B1B3F0",
-          "trecho": "CHP.CD-CRO.NR",
-          "cabo": "F-0102",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 6.8,
-          "ponta_a": "CHP.CD",
-          "ponta_b": "CRO.NR"
-        }
-      ],
-      "alternativas": [
-        {
-          "trecho": "AYS.JC-QUZ.ME",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "AYS.JC-SOY.SR",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "QUZ.ME-QUZ.RD",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "CRO.NR-LVN.CH",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "LVN.CH-QUZ.ME",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        }
-      ]
-    },
-    {
       "nome": "Maringá/PR",
       "corredor": "OESTE",
       "alvo": "Presidente Prudente/Assis",
@@ -356,7 +130,7 @@
       "tempestade": true,
       "chuva_pico_mmh": 4.6,
       "rajada_pico_kmh": 34.6,
-      "prob_chuva_pico": 78,
+      "prob_chuva_pico": 71,
       "eta_sinal_externo": "2026-09-09T20:00:00+00:00",
       "backbones_no_corredor": 8,
       "backbones_amostra": [
@@ -462,7 +236,7 @@
       ]
     }
   ],
-  "chuva_observada_max_1h": 9.8,
+  "chuva_observada_max_1h": 15.7,
   "alertas_dc_ativos": 8,
   "municipios_arvore_relevantes": [
     {
