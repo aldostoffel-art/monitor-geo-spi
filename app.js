@@ -1165,7 +1165,7 @@ function tvRiskColor(label){const s=String(label||'').toUpperCase();if(s.include
 function tvRiskStroke(label){const s=String(label||'').toUpperCase();if(s.includes('MUITO CRÍTICO'))return '#7f0a19';if(s.includes('CRÍTICO'))return '#a51f2d';if(s==='ALTO')return '#bd4d19';if(s.includes('ATEN')||s.includes('MODER'))return '#9b7416';return '#516a79'}
 function tvMapBase(el){const m=L.map(el,{preferCanvas:true,zoomControl:false,attributionControl:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,tap:false,dragging:false,fadeAnimation:false,zoomAnimation:false,zoomSnap:.25,zoomDelta:.25});return m}
 function tvFitOperationalBounds(m,geo){
- try{const all=L.geoJSON(geo);const b=all.getBounds();if(b&&b.isValid()){m.fitBounds(b,{padding:[4,4],maxZoom:6});const z=m.getZoom();m.setZoom(Math.min(7,z+1.25),{animate:false})}}catch(_){ }
+ try{const all=L.geoJSON(geo);const b=all.getBounds();if(b&&b.isValid()){m.fitBounds(b,{padding:[4,4],maxZoom:6});const z=m.getZoom();m.setZoom(Math.min(6.75,z+.75),{animate:false})}}catch(_){ }
 }
 function tvRenderNowMap(cityRanks){
  const el=document.getElementById('tvNowMap');if(!el||typeof L==='undefined'||!weatherLabMunicipios)return;
