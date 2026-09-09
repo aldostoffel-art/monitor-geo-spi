@@ -938,3 +938,40 @@ body.tv-mode .topbar,body.tv-mode .view-tabs,body.tv-mode #importantEventStrip,b
   .tv-side-card>b{font-size:27px!important}.tv-side-card>span{font-size:15px!important}.tv-side-priority>b{font-size:38px!important}
   .tv-bottom>div:first-child b{font-size:15px!important}.tv-compare b{font-size:14px!important}.tv-compare span{font-size:12px!important}
 }
+
+/* TV OPERACIONAL • contraste/clareza v3 • DEV */
+@media(min-width:1200px){
+  body.tv-mode .tv-view{background:radial-gradient(circle at 18% 0,#244a66 0,#12283a 42%,#0a1824 100%)!important;color:#f7fbff!important}
+  body.tv-mode .tv-head-map,
+  body.tv-mode .tv-ai,
+  body.tv-mode .tv-kpis-map>div,
+  body.tv-mode .tv-map-panel,
+  body.tv-mode .tv-side-card,
+  body.tv-mode .tv-bottom,
+  body.tv-mode .tv-compare>div{box-shadow:0 0 0 1px rgba(143,205,238,.08) inset!important}
+  body.tv-mode .tv-head-map{background:linear-gradient(100deg,#173a52,#1a425d 60%,#1a3448)!important;border-color:#4f7893!important}
+  body.tv-mode .tv-ai{background:linear-gradient(100deg,#15374e,#184766)!important;border-color:#4c87aa!important}
+  body.tv-mode .tv-kpis-map>div{background:linear-gradient(180deg,#183d56,#112d42)!important;border-color:#466f89!important}
+  body.tv-mode .tv-map-panel{background:#102637!important;border-color:#4b7088!important}
+  body.tv-mode .tv-map-panel>header{background:#173a52!important;border-color:#42657c!important}
+  body.tv-mode .tv-map-panel>footer{background:#153246!important;border-color:#38566c!important;color:#c4d9e6!important}
+  body.tv-mode .tv-side-card{background:linear-gradient(180deg,#183b52,#112d40)!important;border-color:#4a7188!important}
+  body.tv-mode .tv-bottom{background:#122e41!important;border-color:#466b82!important}
+  body.tv-mode .tv-compare>div{background:#17394f!important;border-color:#3f647b!important}
+  body.tv-mode .tv-title p,
+  body.tv-mode .tv-ai>small,
+  body.tv-mode .tv-side-card>span,
+  body.tv-mode .tv-map-panel>footer,
+  body.tv-mode .tv-bottom small,
+  body.tv-mode .tv-compare span{color:#c6dbe7!important}
+  body.tv-mode .tv-kpis-map span,
+  body.tv-mode .tv-side-card>small,
+  body.tv-mode .tv-map-panel>header span,
+  body.tv-mode .tv-ai>span{color:#9fdcff!important}
+  body.tv-mode .tv-title h2,
+  body.tv-mode .tv-ai>b,
+  body.tv-mode .tv-side-card>b,
+  body.tv-mode .tv-map-panel>header b,
+  body.tv-mode .tv-map-panel>header strong,
+  body.tv-mode .tv-kpis-map b{color:#ffffff!important;text-shadow:0 1px 1px rgba(0,0,0,.45)}
+}
