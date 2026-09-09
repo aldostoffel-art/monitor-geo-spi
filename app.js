@@ -1163,20 +1163,23 @@ let tvNowLeaflet=null,tv48Leaflet=null;
 function tvSeverityRank(x){const s=String(x?.level||x?.label||'').toUpperCase();return s.includes('MUITO CRÍTICO')?5:s.includes('CRÍTICO')?4:s==='ALTO'?3:s.includes('ATEN')||s.includes('MODER')?2:1}
 function tvRiskColor(label){const s=String(label||'').toUpperCase();if(s.includes('CRÍTICO'))return '#ef3340';if(s==='ALTO')return '#ff7a21';if(s.includes('ATEN')||s.includes('MODER'))return '#f7b731';return '#55758d'}
 function tvMapBase(el){const m=L.map(el,{preferCanvas:true,zoomControl:false,attributionControl:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,tap:false,dragging:false});return m}
+function tvFitOperationalBounds(m,geo,hasData){
+ try{const focus=L.geoJSON(geo,{filter:f=>hasData(norm(f?.properties?.municipio||''))});const b=focus.getBounds();if(b&&b.isValid())m.fitBounds(b,{padding:[12,12],maxZoom:7});else{const all=L.geoJSON(geo);m.fitBounds(all.getBounds(),{padding:[8,8]})}}catch(_){try{const all=L.geoJSON(geo);m.fitBounds(all.getBounds(),{padding:[8,8]})}catch(__){}}
+}
 function tvRenderNowMap(cityRanks){
  const el=document.getElementById('tvNowMap');if(!el||typeof L==='undefined'||!weatherLabMunicipios)return;
  if(tvNowLeaflet){try{tvNowLeaflet.remove()}catch(_){}tvNowLeaflet=null} el.innerHTML='';
  const m=tvMapBase(el);tvNowLeaflet=m;
- const layer=L.geoJSON(weatherLabMunicipios,{style:f=>{const k=norm(f?.properties?.municipio||''),r=cityRanks.get(k),lab=r?.label||'';return{color:r?'#6f8291':'#a9b6c0',weight:r?1.45:.75,fillColor:r?tvRiskColor(lab):'#e7edf2',fillOpacity:r?.score>=4?.96:r?.score>=3?.90:r?.score>=2?.78:.34}}}).addTo(m);
- try{m.fitBounds(layer.getBounds(),{padding:[5,5]})}catch(_){} setTimeout(()=>m.invalidateSize(),80)
+ L.geoJSON(weatherLabMunicipios,{style:f=>{const k=norm(f?.properties?.municipio||''),r=cityRanks.get(k),lab=r?.label||'';return{color:r?'#435965':'#9aa9b3',weight:r?2.1:.8,fillColor:r?tvRiskColor(lab):'#e3e9ed',fillOpacity:r?.score>=4?.96:r?.score>=3?.88:r?.score>=2?.72:.28}}}).addTo(m);
+ tvFitOperationalBounds(m,weatherLabMunicipios,k=>cityRanks.has(k));setTimeout(()=>m.invalidateSize(),80)
 }
 function tvRender48Map(rows){
  const el=document.getElementById('tv48Map');if(!el||typeof L==='undefined'||!weatherLabMunicipios)return;
  if(tv48Leaflet){try{tv48Leaflet.remove()}catch(_){}tv48Leaflet=null} el.innerHTML='';
  const mapRows=new Map((rows||[]).map(x=>[norm(x.municipio||''),x]));
  const m=tvMapBase(el);tv48Leaflet=m;
- const layer=L.geoJSON(weatherLabMunicipios,{style:f=>{const x=mapRows.get(norm(f?.properties?.municipio||'')),lab=x?.level||'';return{color:x?'#6f8291':'#a9b6c0',weight:x?1.45:.75,fillColor:x?tvRiskColor(lab):'#e7edf2',fillOpacity:x?.level?.includes('CRÍTICO')?.97:x?.level==='ALTO'?.92:x?.level==='ATENÇÃO'?.80:.34}}}).addTo(m);
- try{m.fitBounds(layer.getBounds(),{padding:[5,5]})}catch(_){} setTimeout(()=>m.invalidateSize(),80)
+ L.geoJSON(weatherLabMunicipios,{style:f=>{const x=mapRows.get(norm(f?.properties?.municipio||'')),lab=x?.level||'';return{color:x?'#435965':'#9aa9b3',weight:x?2.1:.8,fillColor:x?tvRiskColor(lab):'#e3e9ed',fillOpacity:x?.level?.includes('CRÍTICO')?.96:x?.level==='ALTO'?.88:x?.level==='ATENÇÃO'?.72:.28}}}).addTo(m);
+ tvFitOperationalBounds(m,weatherLabMunicipios,k=>mapRows.has(k));setTimeout(()=>m.invalidateSize(),80)
 }
 function tvAiText(ranked,rows48,topObs){
  const topNow=ranked[0], top48=[...(rows48||[])].sort((a,b)=>tvSeverityRank(b)-tvSeverityRank(a)||Number(b.priority_score||b.score||0)-Number(a.priority_score||a.score||0))[0];
@@ -1194,10 +1197,13 @@ function renderTvView(){
  const sites4=(siteEvents||[]).filter(x=>siteIsCritical(x)&&['11','12','14','15','16','17','18','19'].includes(String(x.ddd??''))&&(String(x.ddd)!=='11'||x.escopo_spi_ddd11===true)).length;
  const tree=nvDynamicTreeRiskRows().filter(x=>['CRÍTICO','ALTO','MODERADO'].includes(String(x.nivel||'').toUpperCase()));
  const kp=document.getElementById('tvKpis');if(kp)kp.innerHTML=`<div><b>${dc}</b><span>Defesa Civil</span></div><div><b>${inmet}</b><span>INMET</span></div><div><b>${ranked.length}</b><span>Risco real</span></div><div><b>${sites4}</b><span>Sites ≤4h</span></div><div><b>${(fireEvents||[]).length}</b><span>Fire</span></div><div><b>${(energyEvents||[]).length}</b><span>Energia</span></div>`;
- const ai=tvAiText(ranked,rows48,topObs),aih=document.getElementById('tvAiHeadline'),aid=document.getElementById('tvAiDetail');if(aih)aih.textContent=ai.headline;if(aid)aid.textContent=ai.detail;
+ const ai=tvAiText(ranked,rows48,topObs),aih=document.getElementById('tvAiHeadline'),aid=document.getElementById('tvAiDetail');if(aih)aih.textContent=ai.headline;
+ const treeTop=[...tree].sort((a,b)=>Number(b.score||0)-Number(a.score||0)).slice(0,4),crit48=rows48.filter(x=>String(x.level||'').includes('CRÍTICO')).length,high48=rows48.filter(x=>String(x.level||'')==='ALTO').length;
+ const aiDetail=[ai.detail,treeTop.length?`Árvore: ${treeTop.map(x=>`${x.municipio} ${String(x.nivel||'').toLowerCase()}`).join(' • ')}`:'Sem município MODERADO+ para árvore agora.',crit48||high48?`48h: ${crit48} crítico(s) e ${high48} alto(s).`:'48h sem crítico/alto consolidado.'].filter(Boolean).join('  |  ');if(aid)aid.textContent=aiDetail;
+ const ais=document.getElementById('tvAiSignals');if(ais)ais.innerHTML=`<span><b>${ranked.length}</b> risco real</span><span><b>${dc}</b> Defesa Civil</span><span><b>${sites4}</b> sites ≤4h</span><span><b>${tree.length}</b> árvore MOD+</span><span><b>${(fireEvents||[]).length}</b> Fire</span>`;
  tvRenderNowMap(cityRanks);tvRender48Map(rows48);
  const nowFoot=document.getElementById('tvNowFoot');if(nowFoot)nowFoot.innerHTML=`<b>${ranked.length}</b> prioridade(s) reais • chuva máx. <b>${topObs?Number(topObs.chuva1h||0).toFixed(1):'0.0'} mm/1h</b>`;
- const crit48=rows48.filter(x=>String(x.level||'').includes('CRÍTICO')).length,high48=rows48.filter(x=>String(x.level||'')==='ALTO').length,foot48=document.getElementById('tv48Foot');if(foot48)foot48.innerHTML=`<b>${rows48.length}</b> municípios relevantes • <b>${crit48}</b> crítico(s) • <b>${high48}</b> alto(s)`;
+ const foot48=document.getElementById('tv48Foot');if(foot48)foot48.innerHTML=`<b>${rows48.length}</b> municípios relevantes • <b>${crit48}</b> crítico(s) • <b>${high48}</b> alto(s)`;
  const sideRisk=document.getElementById('tvSideRisk'),sideRiskDetail=document.getElementById('tvSideRiskDetail');if(sideRisk)sideRisk.textContent=lv.label;if(sideRiskDetail)sideRiskDetail.textContent=ranked[0]?`${nvCityDisplayName(ranked[0][0])} lidera a prioridade atual`:'Sem prioridade real relevante';
  const sw=document.getElementById('tvSideWindow'),swd=document.getElementById('tvSideWindowDetail');if(sw)sw.textContent=decisionTrendLabel();if(swd)swd.textContent=decisionNextWindow();
  const sa=document.getElementById('tvSideAction');if(sa)sa.textContent=networkIntel?.recomendacao||commandAiSummary?.acao_operacional||'Manter acompanhamento preventivo.';
