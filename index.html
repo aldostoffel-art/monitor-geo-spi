@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1788966988">
+  <link rel="stylesheet" href="styles.css?v=1788967682">
 </head>
 <body>
   <header class="topbar">
@@ -225,18 +225,23 @@
 
 
   <main id="tvView" class="tv-view" hidden>
-    <section class="tv-head">
-      <div><span class="tv-live"><i></i> SPI • TEMPO REAL</span><h2>📺 DECISÃO OPERACIONAL • TV</h2><p>Leitura executiva para sala de operação • uma tela • sem rolagem</p></div>
+    <section class="tv-head tv-head-map">
+      <div class="tv-title"><span class="tv-live"><i></i> SPI • TEMPO REAL</span><h2>📺 DECISÃO OPERACIONAL • TV</h2><p>AGORA x 48H • leitura executiva para sala de operação</p></div>
+      <div class="tv-ai"><span>🧠 VISÃO IA</span><b id="tvAiHeadline">Consolidando cenário…</b><small id="tvAiDetail">Cruzando clima, alertas oficiais e exposição da rede.</small></div>
       <div class="tv-head-right"><button id="tvFullscreen" type="button">⛶ TELA CHEIA</button><b id="tvLevel">ANALISANDO</b><small id="tvUpdated">Atualizando…</small></div>
     </section>
-    <section id="tvExecutive" class="tv-executive">Consolidando cenário operacional…</section>
-    <section id="tvKpis" class="tv-kpis"></section>
-    <section class="tv-grid">
-      <article class="tv-panel tv-now"><header><span>AGORA</span><b>SITUAÇÃO OPERACIONAL</b></header><div id="tvNow"></div></article>
-      <article class="tv-panel tv-risk"><header><span>RISCO REAL</span><b>PRIORIDADES NO ESTADO</b></header><div id="tvRisk"></div></article>
-      <article class="tv-panel tv-proj"><header><span>PROJEÇÃO</span><b>6H • 24H • 48H</b></header><div id="tvProjection"></div></article>
-      <article class="tv-panel tv-network"><header><span>REDE</span><b>EXPOSIÇÃO & AÇÃO</b></header><div id="tvNetwork"></div></article>
+    <section id="tvKpis" class="tv-kpis tv-kpis-map"></section>
+    <section class="tv-map-grid">
+      <article class="tv-map-panel"><header><div><span>MAPA ATUAL</span><b>AGORA • RISCO OPERACIONAL</b></div><strong id="tvNowBadge">AGORA</strong></header><div id="tvNowMap" class="tv-map"></div><footer id="tvNowFoot">Consolidando situação atual…</footer></article>
+      <article class="tv-map-panel"><header><div><span>MAPA 48H</span><b>PROJEÇÃO • +24H → +48H</b></div><strong id="tv48Badge">48H</strong></header><div id="tv48Map" class="tv-map"></div><footer id="tv48Foot">Calculando projeção de 48h…</footer></article>
+      <aside class="tv-side">
+        <section class="tv-side-card tv-side-priority"><small>RISCO ATUAL</small><b id="tvSideRisk">—</b><span id="tvSideRiskDetail">—</span></section>
+        <section class="tv-side-card"><small>PRÓXIMA JANELA</small><b id="tvSideWindow">—</b><span id="tvSideWindowDetail">—</span></section>
+        <section class="tv-side-card"><small>AÇÃO RECOMENDADA</small><b id="tvSideAction">—</b></section>
+        <section class="tv-side-card"><small>EXPOSIÇÃO DA REDE</small><div id="tvSideNetwork" class="tv-side-network"></div></section>
+      </aside>
     </section>
+    <section class="tv-bottom"><div><b>TOP MUNICÍPIOS • AGORA x 48H</b><small>comparação rápida das maiores prioridades</small></div><div id="tvCompare" class="tv-compare"></div></section>
     <section class="tv-footer"><span id="tvSources">Fontes: CEMADEN • Defesa Civil • INMET • Weather/Open-Meteo • Rede SPI • Fire</span><strong id="tvClock">--:--:--</strong></section>
   </main>
 
@@ -352,7 +357,7 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1788966988"></script>
+  <script src="app.js?v=1788967682"></script>
 </body>
 </html>
 
