@@ -1377,15 +1377,10 @@ body.tv-mode .tv-view{height:calc(100vh - 40px)!important;min-height:calc(100vh 
   body.tv-mode .tv-map-panel:nth-child(2){box-shadow:0 5px 16px rgba(24,47,61,.18),inset 5px 0 0 #e07a1f!important}
 }
 
-/* TV OPERACIONAL • conceito hotspot v13 • DEV */
+/* TV OPERACIONAL • polígonos com destaque executivo v14 • DEV */
 @media(min-width:1200px){
-  body.tv-mode .tv-map,
-  body.tv-mode .tv-map .leaflet-container,
-  body.tv-mode .tv-map.leaflet-container{background:linear-gradient(180deg,#d8e2e8 0%,#cbd7df 100%)!important}
-  body.tv-mode .tv-map-panel{border:2px solid #7897aa!important;box-shadow:0 6px 18px rgba(19,45,61,.16)!important}
-  body.tv-mode .tv-map-panel>header{background:linear-gradient(90deg,#d9eaf4 0%,#edf5f9 100%)!important;border-bottom:1px solid #92adbd!important}
-  body.tv-mode .tv-map-panel>header b{color:#123a54!important;font-weight:950!important}
-  body.tv-mode .tv-map-panel>header strong{color:#0b6d9f!important;font-weight:950!important}
-  body.tv-mode .tv-hotspot-halo{filter:drop-shadow(0 0 8px rgba(20,39,51,.16))}
-  body.tv-mode .tv-hotspot-core{filter:drop-shadow(0 2px 4px rgba(22,38,48,.26))}
+  body.tv-mode .tv-map svg path.tv-risk-poly{transition:none!important}
+  body.tv-mode .tv-map svg path.tv-risk-critical{filter:drop-shadow(0 0 4px rgba(182,24,40,.38))}
+  body.tv-mode .tv-map svg path.tv-risk-high{filter:drop-shadow(0 0 3px rgba(236,92,24,.28))}
+  body.tv-mode .tv-map svg path.tv-risk-watch{filter:drop-shadow(0 0 2px rgba(218,160,17,.20))}
 }
