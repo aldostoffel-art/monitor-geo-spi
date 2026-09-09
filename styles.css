@@ -1115,3 +1115,48 @@ body.tv-mode .tv-compare{grid-template-columns:repeat(4,1fr)!important;gap:5px!i
   body.tv-mode .tv-map svg path{vector-effect:non-scaling-stroke;shape-rendering:geometricPrecision}
   body.tv-mode .tv-map-panel>footer{position:relative!important;z-index:20!important;background:#f5f8fa!important;border-top:1px solid #b8c6cf!important}
 }
+
+/* TV OPERACIONAL • proporção mapa/rodapé v8 • DEV */
+@media(min-width:1200px){
+  body.tv-mode .tv-view{grid-template-rows:auto auto minmax(330px,52vh) minmax(150px,1fr) auto!important;gap:7px!important;padding:7px 11px 5px!important}
+  body.tv-mode .tv-map-grid{min-height:330px!important;align-items:stretch!important}
+  body.tv-mode .tv-map-panel{height:52vh!important;max-height:52vh!important;border-radius:10px!important}
+  body.tv-mode .tv-map-panel>header{padding:7px 10px!important}
+  body.tv-mode .tv-map-panel>header span{font-size:10px!important}
+  body.tv-mode .tv-map-panel>header b{font-size:16px!important}
+  body.tv-mode .tv-map-panel>header strong{font-size:18px!important}
+  body.tv-mode .tv-map-panel>footer{padding:5px 8px!important;font-size:12px!important;line-height:1.15!important;min-height:27px!important}
+  body.tv-mode .tv-side{grid-template-rows:.70fr .72fr .96fr 1.18fr!important;gap:6px!important;min-height:0!important}
+  body.tv-mode .tv-side-card{padding:9px 10px!important;overflow:hidden!important}
+  body.tv-mode .tv-side-card>small{font-size:10px!important}
+  body.tv-mode .tv-side-card>b{font-size:22px!important;line-height:1.03!important}
+  body.tv-mode .tv-side-card>span{font-size:13px!important;line-height:1.25!important}
+  body.tv-mode .tv-side-priority>b{font-size:31px!important}
+  body.tv-mode .tv-side-network{gap:5px!important;margin-top:6px!important}
+  body.tv-mode .tv-side-network>div{padding:6px 7px!important}
+  body.tv-mode .tv-side-network b{font-size:20px!important}
+  body.tv-mode .tv-side-network span{font-size:9px!important}
+  body.tv-mode .tv-bottom-v6{min-height:150px!important;grid-template-columns:1.05fr 1.25fr 1.5fr!important;gap:7px!important}
+  body.tv-mode .tv-bottom-block{padding:8px 9px!important;min-height:0!important}
+  body.tv-mode .tv-bottom-block header{margin-bottom:5px!important;padding-bottom:4px!important}
+  body.tv-mode .tv-bottom-block header b{font-size:10px!important}
+  body.tv-mode .tv-bottom-block header small{font-size:8px!important}
+  body.tv-mode .tv-event-cities{gap:4px!important}
+  body.tv-mode .tv-event-cities span{padding:4px 6px!important}
+  body.tv-mode .tv-event-cities b{font-size:9px!important}
+  body.tv-mode .tv-event-cities em{font-size:8px!important}
+  body.tv-mode .tv-tree-cities{gap:4px!important}
+  body.tv-mode .tv-tree-cities>div{padding:4px 5px!important}
+  body.tv-mode .tv-tree-cities b{font-size:9px!important}
+  body.tv-mode .tv-tree-cities small{font-size:7px!important}
+  body.tv-mode .tv-tree-cities em{font-size:8px!important}
+  body.tv-mode .tv-compare{grid-template-columns:repeat(4,1fr)!important;gap:5px!important}
+  body.tv-mode .tv-compare>div{padding:5px 6px!important}
+  body.tv-mode .tv-compare b{font-size:9px!important}
+  body.tv-mode .tv-compare span{font-size:8px!important}
+}
+@media(min-width:1600px){
+  body.tv-mode .tv-view{grid-template-rows:auto auto minmax(360px,53vh) minmax(160px,1fr) auto!important}
+  body.tv-mode .tv-map-panel{height:53vh!important;max-height:53vh!important}
+  body.tv-mode .tv-bottom-v6{min-height:160px!important}
+}
