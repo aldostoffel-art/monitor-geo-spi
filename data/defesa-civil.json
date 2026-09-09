@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T20:45:21-03:00",
-  "fonte_coletada_em": "2026-09-09T23:45:07Z",
+  "gerado_em": "2026-09-09T20:50:45-03:00",
+  "fonte_coletada_em": "2026-09-09T23:50:10Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
   "entradas_feed": 107,
-  "alertas_ativos": 15,
+  "alertas_ativos": 16,
   "eventos_geo": [
     {
       "id_alerta": "189404/2026",
@@ -45,9 +45,9 @@
           3.16
         ],
         "dbz_medio": 20.2,
-        "pico_em": "2026-09-09T21:50:00+00:00",
-        "pico_estimado_mmh": 0.68,
-        "pico_dbz_medio": 20.3,
+        "pico_em": "2026-09-09T23:00:00+00:00",
+        "pico_estimado_mmh": 0.67,
+        "pico_dbz_medio": 20.2,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -204,21 +204,11 @@
         "SANTA CATARINA/SC"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T21:50:00+00:00",
-        "intensidade_estimada_mmh": 0.96,
-        "faixa_estimada_mmh": [
-          0.56,
-          3.65
-        ],
-        "dbz_medio": 22.8,
-        "pico_em": "2026-09-09T21:50:00+00:00",
-        "pico_estimado_mmh": 0.96,
-        "pico_dbz_medio": 22.8,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -906,13 +896,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T23:40:00+00:00",
-        "intensidade_estimada_mmh": 0.79,
+        "ultimo_eco_em": "2026-09-09T23:50:00+00:00",
+        "intensidade_estimada_mmh": 0.77,
         "faixa_estimada_mmh": [
-          1.0,
+          0.49,
           2.05
         ],
-        "dbz_medio": 21.4,
+        "dbz_medio": 21.2,
         "pico_em": "2026-09-09T23:40:00+00:00",
         "pico_estimado_mmh": 0.79,
         "pico_dbz_medio": 21.4,
@@ -1134,6 +1124,38 @@
       "sites_referencia": 1,
       "area_oficial": [
         "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189488/2026",
+      "municipio": "Andradina",
+      "latitude": -20.898863,
+      "longitude": -51.376042,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:20h45 Chuva se deslocando em direcao a regiao de Andradina e cidades vizinhas. Tem raios e ventos. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:20h45 Chuva se deslocando em direcao a regiao de Andradina e cidades vizinhas. Tem raios e ventos. Tome cuidado nas proximas horas.",
+      "descricao": "20h45 Chuva se deslocando em direção à região de Andradina e cidades vizinhas. Tem raios e ventos. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T20:45:32-03:00",
+      "fim": "2026-09-09T22:30:00-03:00",
+      "vigencia": "2026-09-09T20:45:32-03:00 → 2026-09-09T22:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
         "status": "SEM_ECO_NO_PONTO",
@@ -1625,9 +1647,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-09T23:45:23.502806+00:00",
+    "gerado_em": "2026-09-09T23:50:55.516262+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 6,
+    "eventos_com_eco": 5,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
