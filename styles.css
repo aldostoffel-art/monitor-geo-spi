@@ -905,3 +905,36 @@ body.tv-mode .topbar,body.tv-mode .view-tabs,body.tv-mode #importantEventStrip,b
   .tv-kpis-map b{font-size:34px}
   .tv-side-card>b{font-size:24px}.tv-side-priority>b{font-size:34px}
 }
+
+
+/* TV OPERACIONAL • leitura à distância v2 • DEV */
+@media(min-width:1200px){
+  body.tv-mode .tv-view{grid-template-rows:auto auto minmax(340px,56vh) auto auto;gap:9px;padding:9px 14px 7px}
+  .tv-head-map{grid-template-columns:.9fr 1.15fr auto;padding:10px 13px}
+  .tv-title h2{font-size:32px!important;line-height:1.05}
+  .tv-title p{font-size:14px!important}.tv-live{font-size:13px!important}
+  .tv-ai>span{font-size:11px!important}.tv-ai>b{font-size:19px!important}.tv-ai>small{font-size:13px!important;white-space:normal;line-height:1.2}
+  .tv-head-right button{font-size:12px!important}.tv-head-right b{font-size:24px!important}.tv-head-right small{font-size:12px!important}
+  .tv-kpis-map b{font-size:34px!important}.tv-kpis-map span{font-size:12px!important;font-weight:800}
+  .tv-map-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(300px,.72fr);min-height:340px}
+  .tv-map-panel{height:56vh;max-height:56vh}
+  .tv-map-panel>header span{font-size:10px!important}.tv-map-panel>header b{font-size:16px!important}.tv-map-panel>header strong{font-size:20px!important}
+  .tv-map{min-height:290px!important;height:100%!important;display:block!important;visibility:visible!important}
+  .tv-map .leaflet-container,.tv-map.leaflet-container{background:#07131d!important}
+  .tv-map-panel>footer{font-size:13px!important;line-height:1.25}
+  .tv-side-card{padding:12px 13px!important}.tv-side-card>small{font-size:11px!important}.tv-side-card>b{font-size:24px!important}.tv-side-card>span{font-size:14px!important;line-height:1.35!important}.tv-side-priority>b{font-size:34px!important}
+  .tv-side-network b{font-size:23px!important}.tv-side-network span{font-size:11px!important}
+  .tv-bottom{grid-template-columns:240px 1fr;padding:9px 11px!important}.tv-bottom>div:first-child b{font-size:14px!important}.tv-bottom>div:first-child small{font-size:11px!important}
+  .tv-compare b{font-size:13px!important}.tv-compare span{font-size:11px!important}.tv-compare em{font-size:11px!important}
+  .tv-footer{font-size:11px!important}.tv-footer strong{font-size:24px!important}
+}
+@media(min-width:1600px){
+  body.tv-mode .tv-view{grid-template-rows:auto auto minmax(380px,58vh) auto auto}
+  .tv-map-panel{height:58vh;max-height:58vh}
+  .tv-title h2{font-size:38px!important}.tv-title p{font-size:16px!important}
+  .tv-ai>b{font-size:22px!important}.tv-ai>small{font-size:14px!important}
+  .tv-kpis-map b{font-size:40px!important}.tv-kpis-map span{font-size:13px!important}
+  .tv-map-panel>header b{font-size:18px!important}.tv-map-panel>header span{font-size:11px!important}.tv-map-panel>footer{font-size:14px!important}
+  .tv-side-card>b{font-size:27px!important}.tv-side-card>span{font-size:15px!important}.tv-side-priority>b{font-size:38px!important}
+  .tv-bottom>div:first-child b{font-size:15px!important}.tv-compare b{font-size:14px!important}.tv-compare span{font-size:12px!important}
+}
