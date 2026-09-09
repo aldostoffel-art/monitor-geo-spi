@@ -1161,8 +1161,8 @@ function p1RenderCompactNow(rows){
 // TV OPERACIONAL • DEV • MAPAS AGORA x 48H
 let tvNowLeaflet=null,tv48Leaflet=null;
 function tvSeverityRank(x){const s=String(x?.level||x?.label||'').toUpperCase();return s.includes('MUITO CRÍTICO')?5:s.includes('CRÍTICO')?4:s==='ALTO'?3:s.includes('ATEN')||s.includes('MODER')?2:1}
-function tvRiskColor(label){const s=String(label||'').toUpperCase();if(s.includes('MUITO CRÍTICO'))return '#b11226';if(s.includes('CRÍTICO'))return '#d9363e';if(s==='ALTO')return '#f06a2b';if(s.includes('ATEN')||s.includes('MODER'))return '#e4ad2d';return '#6f8796'}
-function tvRiskStroke(label){const s=String(label||'').toUpperCase();if(s.includes('MUITO CRÍTICO'))return '#7f0a19';if(s.includes('CRÍTICO'))return '#a51f2d';if(s==='ALTO')return '#bd4d19';if(s.includes('ATEN')||s.includes('MODER'))return '#9b7416';return '#516a79'}
+function tvRiskColor(label){const s=String(label||'').toUpperCase();if(s.includes('MUITO CRÍTICO'))return '#9f1024';if(s.includes('CRÍTICO'))return '#e02632';if(s==='ALTO')return '#ff6a1f';if(s.includes('ATEN')||s.includes('MODER'))return '#f1b521';return '#688392'}
+function tvRiskStroke(label){const s=String(label||'').toUpperCase();if(s.includes('MUITO CRÍTICO'))return '#6d0716';if(s.includes('CRÍTICO'))return '#8f1723';if(s==='ALTO')return '#a94010';if(s.includes('ATEN')||s.includes('MODER'))return '#86600a';return '#3f5e6e'}
 function tvMapBase(el){const m=L.map(el,{preferCanvas:true,zoomControl:false,attributionControl:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,tap:false,dragging:false,fadeAnimation:false,zoomAnimation:false,zoomSnap:.25,zoomDelta:.25});return m}
 function tvFitOperationalBounds(m,geo){
  try{const all=L.geoJSON(geo);const b=all.getBounds();if(b&&b.isValid()){m.fitBounds(b,{padding:[4,4],maxZoom:6});const z=m.getZoom();m.setZoom(Math.min(6.5,z+.35),{animate:false})}}catch(_){ }
@@ -1172,7 +1172,7 @@ function tvRenderNowMap(cityRanks){
  if(tvNowLeaflet){try{tvNowLeaflet.remove()}catch(_){}tvNowLeaflet=null} el.innerHTML='';
  const m=tvMapBase(el);tvNowLeaflet=m;
  L.geoJSON(weatherLabMunicipios,{interactive:false,style:{color:'#edf2f5',weight:0,opacity:0,fillColor:'#edf2f5',fillOpacity:1}}).addTo(m);
- L.geoJSON(weatherLabMunicipios,{filter:f=>cityRanks.has(norm(f?.properties?.municipio||'')),interactive:false,style:f=>{const k=norm(f?.properties?.municipio||''),r=cityRanks.get(k),lab=r?.label||'';return{color:tvRiskStroke(lab),weight:r?.score>=4?3.2:r?.score>=3?2.7:2.15,opacity:1,fillColor:tvRiskColor(lab),fillOpacity:r?.score>=4?.97:r?.score>=3?.92:.84}}}).addTo(m);
+ L.geoJSON(weatherLabMunicipios,{filter:f=>cityRanks.has(norm(f?.properties?.municipio||'')),interactive:false,style:f=>{const k=norm(f?.properties?.municipio||''),r=cityRanks.get(k),lab=r?.label||'';return{color:tvRiskStroke(lab),weight:r?.score>=4?4.1:r?.score>=3?3.4:2.7,opacity:1,fillColor:tvRiskColor(lab),fillOpacity:r?.score>=4?.97:r?.score>=3?.92:.84}}}).addTo(m);
  tvFitOperationalBounds(m,weatherLabMunicipios);setTimeout(()=>m.invalidateSize(),80)
 }
 function tvRender48Map(rows){
@@ -1181,7 +1181,7 @@ function tvRender48Map(rows){
  const mapRows=new Map((rows||[]).map(x=>[norm(x.municipio||''),x]));
  const m=tvMapBase(el);tv48Leaflet=m;
  L.geoJSON(weatherLabMunicipios,{interactive:false,style:{color:'#edf2f5',weight:0,opacity:0,fillColor:'#edf2f5',fillOpacity:1}}).addTo(m);
- L.geoJSON(weatherLabMunicipios,{filter:f=>mapRows.has(norm(f?.properties?.municipio||'')),interactive:false,style:f=>{const x=mapRows.get(norm(f?.properties?.municipio||'')),lab=x?.level||'';return{color:tvRiskStroke(lab),weight:String(lab).includes('CRÍTICO')?3.2:lab==='ALTO'?2.7:2.15,opacity:1,fillColor:tvRiskColor(lab),fillOpacity:String(lab).includes('CRÍTICO')?.97:lab==='ALTO'?.92:.84}}}).addTo(m);
+ L.geoJSON(weatherLabMunicipios,{filter:f=>mapRows.has(norm(f?.properties?.municipio||'')),interactive:false,style:f=>{const x=mapRows.get(norm(f?.properties?.municipio||'')),lab=x?.level||'';return{color:tvRiskStroke(lab),weight:String(lab).includes('CRÍTICO')?4.1:lab==='ALTO'?3.4:2.7,opacity:1,fillColor:tvRiskColor(lab),fillOpacity:String(lab).includes('CRÍTICO')?.97:lab==='ALTO'?.92:.84}}}).addTo(m);
  tvFitOperationalBounds(m,weatherLabMunicipios);setTimeout(()=>m.invalidateSize(),80)
 }
 function tvAiText(ranked,rows48,topObs){
