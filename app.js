@@ -1163,9 +1163,9 @@ let tvNowLeaflet=null,tv48Leaflet=null;
 function tvSeverityRank(x){const s=String(x?.level||x?.label||'').toUpperCase();return s.includes('MUITO CRÍTICO')?5:s.includes('CRÍTICO')?4:s==='ALTO'?3:s.includes('ATEN')||s.includes('MODER')?2:1}
 function tvRiskColor(label){const s=String(label||'').toUpperCase();if(s.includes('MUITO CRÍTICO'))return '#b11226';if(s.includes('CRÍTICO'))return '#d9363e';if(s==='ALTO')return '#f06a2b';if(s.includes('ATEN')||s.includes('MODER'))return '#e4ad2d';return '#6f8796'}
 function tvRiskStroke(label){const s=String(label||'').toUpperCase();if(s.includes('MUITO CRÍTICO'))return '#7f0a19';if(s.includes('CRÍTICO'))return '#a51f2d';if(s==='ALTO')return '#bd4d19';if(s.includes('ATEN')||s.includes('MODER'))return '#9b7416';return '#516a79'}
-function tvMapBase(el){const m=L.map(el,{preferCanvas:true,zoomControl:false,attributionControl:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,tap:false,dragging:false,fadeAnimation:false,zoomAnimation:false});return m}
+function tvMapBase(el){const m=L.map(el,{preferCanvas:true,zoomControl:false,attributionControl:false,scrollWheelZoom:false,doubleClickZoom:false,boxZoom:false,keyboard:false,tap:false,dragging:false,fadeAnimation:false,zoomAnimation:false,zoomSnap:.25,zoomDelta:.25});return m}
 function tvFitOperationalBounds(m,geo){
- try{const all=L.geoJSON(geo);const b=all.getBounds();if(b&&b.isValid())m.fitBounds(b,{padding:[18,18],maxZoom:6})}catch(_){ }
+ try{const all=L.geoJSON(geo);const b=all.getBounds();if(b&&b.isValid()){m.fitBounds(b,{padding:[10,10],maxZoom:6});const z=m.getZoom();m.setZoom(Math.min(6.25,z+.5),{animate:false})}}catch(_){ }
 }
 function tvRenderNowMap(cityRanks){
  const el=document.getElementById('tvNowMap');if(!el||typeof L==='undefined'||!weatherLabMunicipios)return;
