@@ -1,8 +1,8 @@
 {
-  "gerado_em": "2026-09-09T11:25:18.089092+00:00",
+  "gerado_em": "2026-09-09T11:30:40.827154+00:00",
   "ambiente": "DEV",
-  "mudanca_relevante": false,
-  "fingerprint": "29aa8313101653bed5af8d6fdf7b204b799e66acb18971d93cf7697eab0c0d30",
+  "mudanca_relevante": true,
+  "fingerprint": "e3aa3c6865b465af1c3c708f3fb6a9ca43a2350a32dc0f17f7e9e817518f255f",
   "nivel": "ATENÇÃO",
   "agora": "Sinal externo em Itajubá/MG aponta risco para o corredor VALE DO PARAÍBA",
   "proximas_horas": "Potencial avanço para Piquete/Lorena/Guaratinguetá nas próximas horas; rajada até 23 km/h e chuva horária até 5.3 mm",
@@ -236,6 +236,119 @@
       ]
     },
     {
+      "nome": "Uberaba/MG",
+      "corredor": "NORTE",
+      "alvo": "Franca/Ribeirão Preto",
+      "score": 55,
+      "tempestade": true,
+      "chuva_pico_mmh": 5.4,
+      "rajada_pico_kmh": 39.2,
+      "prob_chuva_pico": 86,
+      "eta_sinal_externo": "2026-09-09T18:00:00+00:00",
+      "backbones_no_corredor": 21,
+      "backbones_amostra": [
+        {
+          "id": "BB-6FF41472D388",
+          "trecho": "FCA.MR-FCA.RD",
+          "cabo": "F-0279",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 0.2,
+          "ponta_a": "FCA.MR",
+          "ponta_b": "FCA.RD"
+        },
+        {
+          "id": "BB-FDD9A25BEAC1",
+          "trecho": "FAC.MR-RTG.SA",
+          "cabo": "F-0227",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 0.7,
+          "ponta_a": "FAC.MR",
+          "ponta_b": "RTG.SA"
+        },
+        {
+          "id": "BB-B9225D4563A2",
+          "trecho": "IPV.RD-IPV.WR",
+          "cabo": "F-0276",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 0.8,
+          "ponta_a": "IPV.RD",
+          "ponta_b": "IPV.WR"
+        },
+        {
+          "id": "BB-921D9E5DE26B",
+          "trecho": "IPV.RD-IPV.SM",
+          "cabo": "F-0234",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 0.8,
+          "ponta_a": "IPV.RD",
+          "ponta_b": "IPV.SM"
+        },
+        {
+          "id": "BB-F47EE7B91B4E",
+          "trecho": "IPV.WR-RPO.NO",
+          "cabo": "F-0260",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 1.4,
+          "ponta_a": "IPV.WR",
+          "ponta_b": "RPO.NO"
+        },
+        {
+          "id": "BB-61CAF5F5613E",
+          "trecho": "IPV.SM-RFA.CP",
+          "cabo": "F-0278",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 1.6,
+          "ponta_a": "IPV.SM",
+          "ponta_b": "RFA.CP"
+        },
+        {
+          "id": "BB-164D94C01879",
+          "trecho": "IPV.SM-SQB.SS",
+          "cabo": "F-0260",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 1.6,
+          "ponta_a": "IPV.SM",
+          "ponta_b": "SQB.SS"
+        },
+        {
+          "id": "BB-D11A166B28EA",
+          "trecho": "FCA.RD-RTG.SA",
+          "cabo": "F-0279",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 2.0,
+          "ponta_a": "FCA.RD",
+          "ponta_b": "RTG.SA"
+        }
+      ],
+      "alternativas": [
+        {
+          "trecho": "FCA.MR-FCA.RD",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "FAC.MR-RTG.SA",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "IPV.RD-IPV.WR",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "IPV.RD-IPV.SM",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "IPV.WR-RPO.NO",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        }
+      ]
+    },
+    {
       "nome": "Extrema/MG",
       "corredor": "BRAGANÇA/JUNDIAÍ",
       "alvo": "Bragança/Jundiaí",
@@ -347,123 +460,10 @@
           "caminho_potencial": []
         }
       ]
-    },
-    {
-      "nome": "Londrina/PR",
-      "corredor": "SUDOESTE/OESTE",
-      "alvo": "Ourinhos/Assis",
-      "score": 45,
-      "tempestade": true,
-      "chuva_pico_mmh": 1.4,
-      "rajada_pico_kmh": 33.8,
-      "prob_chuva_pico": 100,
-      "eta_sinal_externo": "2026-09-09T13:00:00+00:00",
-      "backbones_no_corredor": 21,
-      "backbones_amostra": [
-        {
-          "id": "BB-1442A626E78F",
-          "trecho": "ASI.RP-ORN.MP",
-          "cabo": "F-0315-00",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 0.3,
-          "ponta_a": "ASI.RP",
-          "ponta_b": "ORN.MP"
-        },
-        {
-          "id": "BB-529DD1082047",
-          "trecho": "MIA.JA-ORN.MP",
-          "cabo": "F-0302",
-          "cluster": "BAURU",
-          "dist_corredor_km": 0.3,
-          "ponta_a": "MIA.JA",
-          "ponta_b": "ORN.MP"
-        },
-        {
-          "id": "BB-63F28956C798",
-          "trecho": "MIA.SR-ORN.MP",
-          "cabo": "F-0343",
-          "cluster": "BAURU",
-          "dist_corredor_km": 0.3,
-          "ponta_a": "MIA.SR",
-          "ponta_b": "ORN.MP"
-        },
-        {
-          "id": "BB-5FA3FD176DB1",
-          "trecho": "ORN.MP-SCP.MB",
-          "cabo": "F-0330",
-          "cluster": "BAURU",
-          "dist_corredor_km": 0.3,
-          "ponta_a": "ORN.MP",
-          "ponta_b": "SCP.MB"
-        },
-        {
-          "id": "BB-A2F87EF6628F",
-          "trecho": "ORN.MP-STG.PP",
-          "cabo": "F-0315-01",
-          "cluster": "BAURU",
-          "dist_corredor_km": 0.3,
-          "ponta_a": "ORN.MP",
-          "ponta_b": "STG.PP"
-        },
-        {
-          "id": "BB-7545FD648DAE",
-          "trecho": "ORN.MP-RBD.AP",
-          "cabo": "F-0305-00",
-          "cluster": "BAURU",
-          "dist_corredor_km": 0.3,
-          "ponta_a": "ORN.MP",
-          "ponta_b": "RBD.AP"
-        },
-        {
-          "id": "BB-54E5BA163CCD",
-          "trecho": "CANR.CT-ORN.MP",
-          "cabo": "F-0334",
-          "cluster": "BAURU",
-          "dist_corredor_km": 9.4,
-          "ponta_a": "CANR.CT",
-          "ponta_b": "ORN.MP"
-        },
-        {
-          "id": "BB-D64EF5C5E7B2",
-          "trecho": "CHV.CG-IAC.SC",
-          "cabo": "F-0324-00",
-          "cluster": "BAURU",
-          "dist_corredor_km": 18.0,
-          "ponta_a": "CHV.CG",
-          "ponta_b": "IAC.SC"
-        }
-      ],
-      "alternativas": [
-        {
-          "trecho": "ASI.RP-ORN.MP",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "MIA.JA-ORN.MP",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "MIA.SR-ORN.MP",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "ORN.MP-SCP.MB",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "ORN.MP-STG.PP",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        }
-      ]
     }
   ],
   "chuva_observada_max_1h": 24.8,
-  "alertas_dc_ativos": 9,
+  "alertas_dc_ativos": 7,
   "municipios_arvore_relevantes": [
     {
       "municipio": "São José do Rio Preto",
