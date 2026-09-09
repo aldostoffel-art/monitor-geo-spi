@@ -1314,3 +1314,35 @@ body.tv-mode .tv-compare{grid-template-columns:repeat(4,1fr)!important;gap:5px!i
   body.tv-mode .tv-event-cities b,body.tv-mode .tv-tree-cities b,body.tv-mode .tv-compare b{font-size:11px!important}
   body.tv-mode .tv-tree-cities small,body.tv-mode .tv-event-cities em,body.tv-mode .tv-tree-cities em,body.tv-mode .tv-compare span,body.tv-mode .tv-compare em{font-size:9px!important}
 }
+
+/* TV OPERACIONAL • navegação compacta visível v12 • DEV */
+body.tv-mode .view-tabs{
+  display:flex!important;
+  position:relative!important;
+  z-index:120!important;
+  gap:5px!important;
+  margin:0!important;
+  padding:5px 8px!important;
+  min-height:40px!important;
+  overflow-x:auto!important;
+  overflow-y:hidden!important;
+  white-space:nowrap!important;
+  background:#eef3f6!important;
+  border-bottom:1px solid #c9d4dc!important;
+  box-shadow:0 1px 5px rgba(25,45,58,.10)!important;
+  scrollbar-width:thin!important;
+}
+body.tv-mode .view-tabs .view-tab{
+  flex:0 0 auto!important;
+  min-width:auto!important;
+  padding:6px 9px!important;
+  border-radius:8px!important;
+  font-size:11px!important;
+  line-height:1!important;
+}
+body.tv-mode .view-tabs .tab-icon{font-size:13px!important}
+body.tv-mode .view-tabs .tab-long{display:none!important}
+body.tv-mode .view-tabs .tab-short{display:inline!important;font-size:11px!important;font-weight:800!important}
+body.tv-mode .view-tabs #tabTv{background:#dcecf5!important;border-color:#7da8c2!important;color:#0f4d73!important}
+body.tv-mode .tv-view{height:calc(100vh - 40px)!important;min-height:calc(100vh - 40px)!important}
+@media(max-height:820px){body.tv-mode .view-tabs{min-height:36px!important;padding:4px 7px!important}body.tv-mode .view-tabs .view-tab{padding:5px 8px!important}body.tv-mode .tv-view{height:calc(100vh - 36px)!important;min-height:calc(100vh - 36px)!important}}
