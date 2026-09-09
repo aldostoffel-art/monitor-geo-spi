@@ -1,12 +1,12 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T14:10:35-03:00",
-  "fonte_coletada_em": "2026-09-09T17:10:07Z",
+  "gerado_em": "2026-09-09T14:25:29-03:00",
+  "fonte_coletada_em": "2026-09-09T17:25:09Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 78,
+  "entradas_feed": 80,
   "alertas_ativos": 4,
   "eventos_geo": [
     {
@@ -38,13 +38,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T17:10:00+00:00",
-        "intensidade_estimada_mmh": 0.6,
+        "ultimo_eco_em": "2026-09-09T17:20:00+00:00",
+        "intensidade_estimada_mmh": 0.57,
         "faixa_estimada_mmh": [
           0.56,
           1.0
         ],
-        "dbz_medio": 19.5,
+        "dbz_medio": 19.1,
         "pico_em": "2026-09-09T16:30:00+00:00",
         "pico_estimado_mmh": 0.94,
         "pico_dbz_medio": 22.6,
@@ -80,16 +80,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T17:00:00+00:00",
-        "intensidade_estimada_mmh": 3.36,
+        "ultimo_eco_em": "2026-09-09T17:20:00+00:00",
+        "intensidade_estimada_mmh": 4.42,
         "faixa_estimada_mmh": [
           3.65,
-          8.65
+          15.38
         ],
-        "dbz_medio": 31.4,
-        "pico_em": "2026-09-09T17:00:00+00:00",
-        "pico_estimado_mmh": 3.36,
-        "pico_dbz_medio": 31.4,
+        "dbz_medio": 33.3,
+        "pico_em": "2026-09-09T17:20:00+00:00",
+        "pico_estimado_mmh": 4.42,
+        "pico_dbz_medio": 33.3,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -122,13 +122,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T17:10:00+00:00",
-        "intensidade_estimada_mmh": 0.77,
+        "ultimo_eco_em": "2026-09-09T17:20:00+00:00",
+        "intensidade_estimada_mmh": 0.75,
         "faixa_estimada_mmh": [
           1.0,
-          3.16
+          2.05
         ],
-        "dbz_medio": 21.2,
+        "dbz_medio": 21.0,
         "pico_em": "2026-09-09T16:40:00+00:00",
         "pico_estimado_mmh": 6.25,
         "pico_dbz_medio": 35.7,
@@ -164,16 +164,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T17:10:00+00:00",
-        "intensidade_estimada_mmh": 0.64,
+        "ultimo_eco_em": "2026-09-09T17:20:00+00:00",
+        "intensidade_estimada_mmh": 0.67,
         "faixa_estimada_mmh": [
-          1.0,
+          0.56,
           1.15
         ],
-        "dbz_medio": 19.9,
-        "pico_em": "2026-09-09T17:10:00+00:00",
-        "pico_estimado_mmh": 0.64,
-        "pico_dbz_medio": 19.9,
+        "dbz_medio": 20.2,
+        "pico_em": "2026-09-09T17:20:00+00:00",
+        "pico_estimado_mmh": 0.67,
+        "pico_dbz_medio": 20.2,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -206,16 +206,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T17:10:00+00:00",
-        "intensidade_estimada_mmh": 2.15,
+        "ultimo_eco_em": "2026-09-09T17:20:00+00:00",
+        "intensidade_estimada_mmh": 3.78,
         "faixa_estimada_mmh": [
-          2.05,
-          6.48
+          3.65,
+          8.65
         ],
-        "dbz_medio": 28.3,
-        "pico_em": "2026-09-09T16:40:00+00:00",
-        "pico_estimado_mmh": 3.57,
-        "pico_dbz_medio": 31.9,
+        "dbz_medio": 32.3,
+        "pico_em": "2026-09-09T17:20:00+00:00",
+        "pico_estimado_mmh": 3.78,
+        "pico_dbz_medio": 32.3,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -244,11 +244,21 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
+        "status": "ECO_DETECTADO",
         "fonte": "RainViewer",
-        "metodo": "Radar composto",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+        "ultimo_eco_em": "2026-09-09T17:20:00+00:00",
+        "intensidade_estimada_mmh": 0.98,
+        "faixa_estimada_mmh": [
+          1.0,
+          3.16
+        ],
+        "dbz_medio": 22.9,
+        "pico_em": "2026-09-09T17:20:00+00:00",
+        "pico_estimado_mmh": 0.98,
+        "pico_dbz_medio": 22.9,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
   ],
@@ -840,9 +850,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-09T17:10:42.004053+00:00",
+    "gerado_em": "2026-09-09T17:25:31.747842+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 5,
+    "eventos_com_eco": 6,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
