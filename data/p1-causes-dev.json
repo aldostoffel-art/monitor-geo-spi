@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-09T10:26:16.308861-03:00",
+  "gerado_em": "2026-09-09T10:28:14.946254-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-09T13:23:23.000Z",
+  "historico_grupos_fim": "2026-09-09T13:28:07.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -17145,20 +17145,8 @@
               "site": "DEG",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "ACESSO/PROCESSO",
+              "causa": "INFRA",
               "evidencias": [
-                {
-                  "hora": "07:41",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
-                },
-                {
-                  "hora": "08:12",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "DEG falta de ac"
-                },
                 {
                   "hora": "08:13",
                   "grupo": "Móvel 15 - 19",
@@ -17176,6 +17164,18 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "CZL, envolvido no concentrador DEG com falta de ac YBV, envolvido no concentrador DEG com falta de ac"
+                },
+                {
+                  "hora": "10:28",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "Técnico Luciano acoplando o GMG no Site DEG"
+                },
+                {
+                  "hora": "10:28",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "DEG - Técnico Luciano acoplando o GMG no Site DEG"
                 }
               ]
             },
@@ -17825,7 +17825,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 142
+      "mensagens_grupos_no_dia": 143
     }
   ],
   "ativos_agora": [
@@ -17850,13 +17850,13 @@
               "status": "BSH - Deslocamento"
             }
           ],
-          "idade_ativa_h": 0.44
+          "idade_ativa_h": 0.47
         },
         {
           "site": "FWL",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.4
+          "idade_ativa_h": 1.44
         },
         {
           "site": "ISJ",
@@ -17887,7 +17887,7 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 15.1
+          "idade_ativa_h": 15.14
         },
         {
           "site": "JKB",
@@ -17918,7 +17918,7 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 15.1
+          "idade_ativa_h": 15.14
         },
         {
           "site": "JUR",
@@ -17949,13 +17949,13 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 22.1
+          "idade_ativa_h": 22.14
         },
         {
           "site": "SRH",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.4
+          "idade_ativa_h": 1.44
         },
         {
           "site": "STF",
@@ -17986,19 +17986,19 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 81.75
+          "idade_ativa_h": 81.79
         },
         {
           "site": "TRA",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.44
+          "idade_ativa_h": 0.47
         },
         {
           "site": "TUL",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.05
+          "idade_ativa_h": 0.09
         }
       ]
     },
@@ -18010,7 +18010,7 @@
           "site": "TY1",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.1
+          "idade_ativa_h": 1.14
         }
       ]
     },
@@ -18029,7 +18029,7 @@
               "status": "JK3, BLV, TAL, BOC"
             }
           ],
-          "idade_ativa_h": 1.77
+          "idade_ativa_h": 1.8
         },
         {
           "site": "JK3",
@@ -18042,7 +18042,7 @@
               "status": "JK3, BLV, TAL, BOC"
             }
           ],
-          "idade_ativa_h": 79.44
+          "idade_ativa_h": 79.47
         }
       ]
     },
@@ -18085,24 +18085,12 @@
               "status": "CZL, envolvido no concentrador DEG com falta de ac"
             }
           ],
-          "idade_ativa_h": 3.1
+          "idade_ativa_h": 3.14
         },
         {
           "site": "DEG",
-          "causa": "ACESSO/PROCESSO",
+          "causa": "INFRA",
           "evidencias": [
-            {
-              "hora": "07:41",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
-            },
-            {
-              "hora": "08:12",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "DEG falta de ac"
-            },
             {
               "hora": "08:13",
               "grupo": "Móvel 15 - 19",
@@ -18120,27 +18108,39 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "CZL, envolvido no concentrador DEG com falta de ac YBV, envolvido no concentrador DEG com falta de ac"
+            },
+            {
+              "hora": "10:28",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "Técnico Luciano acoplando o GMG no Site DEG"
+            },
+            {
+              "hora": "10:28",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "DEG - Técnico Luciano acoplando o GMG no Site DEG"
             }
           ],
-          "idade_ativa_h": 3.1
+          "idade_ativa_h": 3.14
         },
         {
           "site": "FZV",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.05
+          "idade_ativa_h": 0.09
         },
         {
           "site": "IFE",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.05
+          "idade_ativa_h": 0.09
         },
         {
           "site": "IIO",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.44
+          "idade_ativa_h": 0.47
         },
         {
           "site": "ITE",
@@ -18177,13 +18177,13 @@
               "status": "ITE, envolvido no concentrador DEG com falta de ac"
             }
           ],
-          "idade_ativa_h": 3.1
+          "idade_ativa_h": 3.14
         },
         {
           "site": "JKN",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.05
+          "idade_ativa_h": 0.09
         },
         {
           "site": "KPV",
@@ -18220,7 +18220,7 @@
               "status": "KPV - Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
             }
           ],
-          "idade_ativa_h": 1.4
+          "idade_ativa_h": 1.44
         },
         {
           "site": "SCB",
@@ -18257,7 +18257,7 @@
               "status": "SCB, está fora devido ao rompimento de PRF.BO"
             }
           ],
-          "idade_ativa_h": 6.04
+          "idade_ativa_h": 6.07
         },
         {
           "site": "SM5",
@@ -18294,7 +18294,7 @@
               "status": "SM5 - Técnico Osmar em deslocamento para KPV e SM5 45 minutos com GMG"
             }
           ],
-          "idade_ativa_h": 1.4
+          "idade_ativa_h": 1.44
         },
         {
           "site": "TAD",
@@ -18331,7 +18331,7 @@
               "status": "TAD, envolvido no concentrador DEG com falta de ac"
             }
           ],
-          "idade_ativa_h": 3.1
+          "idade_ativa_h": 3.14
         },
         {
           "site": "YBV",
@@ -18368,7 +18368,7 @@
               "status": "YBV, envolvido no concentrador DEG com falta de ac"
             }
           ],
-          "idade_ativa_h": 3.1
+          "idade_ativa_h": 3.14
         }
       ]
     },
@@ -18380,13 +18380,13 @@
           "site": "GTV",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.05
+          "idade_ativa_h": 0.09
         },
         {
           "site": "NLZ",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.05
+          "idade_ativa_h": 0.09
         }
       ]
     },
@@ -18411,7 +18411,7 @@
               "status": "1KB @230188956803268"
             }
           ],
-          "idade_ativa_h": 11.44
+          "idade_ativa_h": 11.47
         },
         {
           "site": "U50",
@@ -18424,7 +18424,7 @@
               "status": "U50, 1KB"
             }
           ],
-          "idade_ativa_h": 985.1
+          "idade_ativa_h": 985.14
         }
       ]
     },
@@ -18443,7 +18443,7 @@
               "status": "EGC"
             }
           ],
-          "idade_ativa_h": 59.77
+          "idade_ativa_h": 59.8
         }
       ]
     }
