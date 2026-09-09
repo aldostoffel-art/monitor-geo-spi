@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T14:40:39-03:00",
-  "fonte_coletada_em": "2026-09-09T17:40:10Z",
+  "gerado_em": "2026-09-09T14:45:19-03:00",
+  "fonte_coletada_em": "2026-09-09T17:45:07Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 85,
-  "alertas_ativos": 6,
+  "entradas_feed": 86,
+  "alertas_ativos": 7,
   "eventos_geo": [
     {
       "id_alerta": "189404/2026",
@@ -375,6 +375,122 @@
         "metodo": "Radar composto",
         "janela_min": 120,
         "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189432/2026",
+      "municipio": "Casa Branca",
+      "latitude": -21.779978,
+      "longitude": -47.07411,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14h35 Chuva isolada na regiao de Casa Branca, Mococa e Divinolandia. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado!",
+      "resumo": "Defesa Civil:14h35 Chuva isolada na regiao de Casa Branca, Mococa e Divinolandia. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado!",
+      "descricao": "14h35 Chuva isolada na região de Casa Branca, Mococa e Divinolândia. Tem raios e vento. Atinge municípios vizinhos. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T14:40:29-03:00",
+      "fim": "2026-09-09T16:30:00-03:00",
+      "vigencia": "2026-09-09T14:40:29-03:00 → 2026-09-09T16:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 10,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189432/2026",
+      "municipio": "Divinolândia",
+      "latitude": -21.672336,
+      "longitude": -46.678761,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14h35 Chuva isolada na regiao de Casa Branca, Mococa e Divinolandia. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado!",
+      "resumo": "Defesa Civil:14h35 Chuva isolada na regiao de Casa Branca, Mococa e Divinolandia. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado!",
+      "descricao": "14h35 Chuva isolada na região de Casa Branca, Mococa e Divinolândia. Tem raios e vento. Atinge municípios vizinhos. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T14:40:29-03:00",
+      "fim": "2026-09-09T16:30:00-03:00",
+      "vigencia": "2026-09-09T14:40:29-03:00 → 2026-09-09T16:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 5,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T17:40:00+00:00",
+        "intensidade_estimada_mmh": 0.5,
+        "faixa_estimada_mmh": [
+          0.56,
+          1.0
+        ],
+        "dbz_medio": 18.2,
+        "pico_em": "2026-09-09T17:40:00+00:00",
+        "pico_estimado_mmh": 0.5,
+        "pico_dbz_medio": 18.2,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189432/2026",
+      "municipio": "Mococa",
+      "latitude": -21.463949,
+      "longitude": -47.028289,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14h35 Chuva isolada na regiao de Casa Branca, Mococa e Divinolandia. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado!",
+      "resumo": "Defesa Civil:14h35 Chuva isolada na regiao de Casa Branca, Mococa e Divinolandia. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado!",
+      "descricao": "14h35 Chuva isolada na região de Casa Branca, Mococa e Divinolândia. Tem raios e vento. Atinge municípios vizinhos. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T14:40:29-03:00",
+      "fim": "2026-09-09T16:30:00-03:00",
+      "vigencia": "2026-09-09T14:40:29-03:00 → 2026-09-09T16:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 7,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T17:40:00+00:00",
+        "intensidade_estimada_mmh": 5.08,
+        "faixa_estimada_mmh": [
+          3.65,
+          17.76
+        ],
+        "dbz_medio": 34.3,
+        "pico_em": "2026-09-09T17:40:00+00:00",
+        "pico_estimado_mmh": 5.08,
+        "pico_dbz_medio": 34.3,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
   ],
@@ -974,9 +1090,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-09T17:40:44.715173+00:00",
+    "gerado_em": "2026-09-09T17:45:21.141475+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 8,
+    "eventos_com_eco": 10,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
