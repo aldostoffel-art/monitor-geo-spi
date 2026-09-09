@@ -1,15 +1,55 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T01:05:30-03:00",
-  "fonte_coletada_em": "2026-09-09T04:05:28Z",
+  "gerado_em": "2026-09-09T01:25:09-03:00",
+  "fonte_coletada_em": "2026-09-09T04:25:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 21,
-  "alertas_ativos": 0,
-  "eventos_geo": [],
+  "entradas_feed": 23,
+  "alertas_ativos": 1,
+  "eventos_geo": [
+    {
+      "id_alerta": "189342/2026",
+      "municipio": "Aparecida",
+      "latitude": -22.851245,
+      "longitude": -45.232092,
+      "tipo": "ALAGAMENTOS",
+      "titulo": "Defesa Civil:Alerta em Aparecida de Goiania de risco ALTO de alagamentos. EVITE riscos. NAO TRANSITE em area alagada. Emergencia 193",
+      "resumo": "Defesa Civil:Alerta em Aparecida de Goiania de risco ALTO de alagamentos. EVITE riscos. NAO TRANSITE em area alagada. Emergencia 193",
+      "descricao": "Alerta em Aparecida de Goiânia de risco ALTO de alagamentos.",
+      "instrucao": "EVITE transitar em áreas de risco, como margens de rios, córregos, encostas e pontes; CONHEÇA os pontos de risco e busque rotas alternativas; DESLIGUE energia, gás e aparelhos em caso de alagamento; NÃO entre em água corrente ou áreas inundadas, pois podem esconder perigos como buracos, correntes fortes e estar contaminada, com risco de doenças; NÃO atravesse áreas alagadas de carro; Se estiver dirigindo e se encontrar em perigo, procure área elevada e aguarde resgate; Em caso de emergência 193.",
+      "gravidade": "Severe",
+      "urgencia": "Immediate",
+      "certeza": "Likely",
+      "inicio": "2026-09-09T01:23:09-03:00",
+      "fim": "2026-09-09T06:00:00-03:00",
+      "vigencia": "2026-09-09T01:23:09-03:00 → 2026-09-09T06:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 11,
+      "area_oficial": [
+        "Aparecida de Goiânia/GO"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    }
+  ],
   "eventos_recentes_geo": [],
   "janela_recentes_horas": 6,
-  "alertas_sp_sem_municipio_spi": []
+  "alertas_sp_sem_municipio_spi": [],
+  "radar_enriquecimento": {
+    "fonte": "RainViewer",
+    "gerado_em": "2026-09-09T04:25:11.629273+00:00",
+    "janela_min": 120,
+    "eventos_com_eco": 0,
+    "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
+  }
 }
