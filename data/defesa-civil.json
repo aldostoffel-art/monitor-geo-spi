@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T16:20:33-03:00",
-  "fonte_coletada_em": "2026-09-09T19:20:08Z",
+  "gerado_em": "2026-09-09T16:25:18-03:00",
+  "fonte_coletada_em": "2026-09-09T19:25:07Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 97,
-  "alertas_ativos": 13,
+  "entradas_feed": 98,
+  "alertas_ativos": 14,
   "eventos_geo": [
     {
       "id_alerta": "189404/2026",
@@ -870,6 +870,90 @@
         "janela_min": 120,
         "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
+    },
+    {
+      "id_alerta": "189449/2026",
+      "municipio": "Morro Agudo",
+      "latitude": -20.728219,
+      "longitude": -48.061245,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:16h20 Chuva isolada na regiao de  Morro Agudo e Orlandia. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:16h20 Chuva isolada na regiao de  Morro Agudo e Orlandia. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado nas proximas horas.",
+      "descricao": "16h20 Chuva isolada na região de  Morro Agudo e Orlândia. Tem raios e vento. Atinge municípios vizinhos. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T16:22:56-03:00",
+      "fim": "2026-09-09T17:30:00-03:00",
+      "vigencia": "2026-09-09T16:22:56-03:00 → 2026-09-09T17:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 2,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T19:20:00+00:00",
+        "intensidade_estimada_mmh": 1.81,
+        "faixa_estimada_mmh": [
+          2.05,
+          15.38
+        ],
+        "dbz_medio": 27.1,
+        "pico_em": "2026-09-09T19:20:00+00:00",
+        "pico_estimado_mmh": 1.81,
+        "pico_dbz_medio": 27.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189449/2026",
+      "municipio": "Orlândia",
+      "latitude": -20.713875,
+      "longitude": -47.885101,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:16h20 Chuva isolada na regiao de  Morro Agudo e Orlandia. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:16h20 Chuva isolada na regiao de  Morro Agudo e Orlandia. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado nas proximas horas.",
+      "descricao": "16h20 Chuva isolada na região de  Morro Agudo e Orlândia. Tem raios e vento. Atinge municípios vizinhos. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T16:22:56-03:00",
+      "fim": "2026-09-09T17:30:00-03:00",
+      "vigencia": "2026-09-09T16:22:56-03:00 → 2026-09-09T17:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T19:20:00+00:00",
+        "intensidade_estimada_mmh": 3.87,
+        "faixa_estimada_mmh": [
+          3.65,
+          15.38
+        ],
+        "dbz_medio": 32.4,
+        "pico_em": "2026-09-09T19:20:00+00:00",
+        "pico_estimado_mmh": 3.87,
+        "pico_dbz_medio": 32.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [
@@ -1143,9 +1227,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-09T19:20:37.625504+00:00",
+    "gerado_em": "2026-09-09T19:25:19.813703+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 17,
+    "eventos_com_eco": 19,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
