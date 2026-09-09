@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T02:15:08-03:00",
-  "fonte_coletada_em": "2026-09-09T05:15:04Z",
+  "gerado_em": "2026-09-09T02:20:12-03:00",
+  "fonte_coletada_em": "2026-09-09T05:20:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 24,
-  "alertas_ativos": 2,
+  "entradas_feed": 25,
+  "alertas_ativos": 3,
   "eventos_geo": [
     {
       "id_alerta": "189342/2026",
@@ -166,6 +166,90 @@
         "pico_dbz_medio": 31.5,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
+    },
+    {
+      "id_alerta": "189345/2026",
+      "municipio": "Barra Do Turvo",
+      "latitude": -24.795844,
+      "longitude": -48.498789,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:02h19 Chuva isolada na regiao de Barra do Turvo, Cajati, Eldorado e Iporanga. Tem raios e ventos. Atinge municipios vizinhos. Busque abrigo.",
+      "resumo": "Defesa Civil:02h19 Chuva isolada na regiao de Barra do Turvo, Cajati, Eldorado e Iporanga. Tem raios e ventos. Atinge municipios vizinhos. Busque abrigo.",
+      "descricao": "02h19 Chuva isolada na região de Barra do Turvo, Cajati, Eldorado e Iporanga. Tem raios e ventos. Atinge municípios vizinhos. Busque abrigo.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T02:18:53-03:00",
+      "fim": "2026-09-09T04:15:00-03:00",
+      "vigencia": "2026-09-09T02:18:53-03:00 → 2026-09-09T04:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 3,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T05:10:00+00:00",
+        "intensidade_estimada_mmh": 0.33,
+        "faixa_estimada_mmh": [
+          0.36,
+          0.86
+        ],
+        "dbz_medio": 15.3,
+        "pico_em": "2026-09-09T05:00:00+00:00",
+        "pico_estimado_mmh": 0.98,
+        "pico_dbz_medio": 22.9,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189345/2026",
+      "municipio": "Iporanga",
+      "latitude": -24.585111,
+      "longitude": -48.599072,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:02h19 Chuva isolada na regiao de Barra do Turvo, Cajati, Eldorado e Iporanga. Tem raios e ventos. Atinge municipios vizinhos. Busque abrigo.",
+      "resumo": "Defesa Civil:02h19 Chuva isolada na regiao de Barra do Turvo, Cajati, Eldorado e Iporanga. Tem raios e ventos. Atinge municipios vizinhos. Busque abrigo.",
+      "descricao": "02h19 Chuva isolada na região de Barra do Turvo, Cajati, Eldorado e Iporanga. Tem raios e ventos. Atinge municípios vizinhos. Busque abrigo.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T02:18:53-03:00",
+      "fim": "2026-09-09T04:15:00-03:00",
+      "vigencia": "2026-09-09T02:18:53-03:00 → 2026-09-09T04:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 3,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T05:10:00+00:00",
+        "intensidade_estimada_mmh": 1.52,
+        "faixa_estimada_mmh": [
+          1.54,
+          2.73
+        ],
+        "dbz_medio": 25.9,
+        "pico_em": "2026-09-09T05:00:00+00:00",
+        "pico_estimado_mmh": 2.14,
+        "pico_dbz_medio": 28.3,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [],
@@ -173,9 +257,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-09T05:15:10.020367+00:00",
+    "gerado_em": "2026-09-09T05:20:16.214128+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 3,
+    "eventos_com_eco": 5,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
