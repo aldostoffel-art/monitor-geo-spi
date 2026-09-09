@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T20:15:28-03:00",
-  "fonte_coletada_em": "2026-09-09T23:15:09Z",
+  "gerado_em": "2026-09-09T20:20:42-03:00",
+  "fonte_coletada_em": "2026-09-09T23:20:07Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 101,
-  "alertas_ativos": 12,
+  "entradas_feed": 102,
+  "alertas_ativos": 13,
   "eventos_geo": [
     {
       "id_alerta": "189404/2026",
@@ -129,9 +129,9 @@
           1.0
         ],
         "dbz_medio": 18.5,
-        "pico_em": "2026-09-09T21:20:00+00:00",
-        "pico_estimado_mmh": 0.97,
-        "pico_dbz_medio": 22.8,
+        "pico_em": "2026-09-09T22:00:00+00:00",
+        "pico_estimado_mmh": 0.94,
+        "pico_dbz_medio": 22.6,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -245,9 +245,9 @@
           1.0
         ],
         "dbz_medio": 15.8,
-        "pico_em": "2026-09-09T21:20:00+00:00",
-        "pico_estimado_mmh": 5.84,
-        "pico_dbz_medio": 35.3,
+        "pico_em": "2026-09-09T21:30:00+00:00",
+        "pico_estimado_mmh": 3.48,
+        "pico_dbz_medio": 31.7,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -711,9 +711,9 @@
           1.0
         ],
         "dbz_medio": 15.8,
-        "pico_em": "2026-09-09T21:20:00+00:00",
-        "pico_estimado_mmh": 5.84,
-        "pico_dbz_medio": 35.3,
+        "pico_em": "2026-09-09T21:30:00+00:00",
+        "pico_estimado_mmh": 3.48,
+        "pico_dbz_medio": 31.7,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -869,9 +869,9 @@
           1.0
         ],
         "dbz_medio": 15.8,
-        "pico_em": "2026-09-09T21:20:00+00:00",
-        "pico_estimado_mmh": 5.84,
-        "pico_dbz_medio": 35.3,
+        "pico_em": "2026-09-09T21:30:00+00:00",
+        "pico_estimado_mmh": 3.48,
+        "pico_dbz_medio": 31.7,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -965,6 +965,80 @@
       "inicio": "2026-09-09T20:10:49-03:00",
       "fim": "2026-09-09T22:10:00-03:00",
       "vigencia": "2026-09-09T20:10:49-03:00 → 2026-09-09T22:10:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T23:00:00+00:00",
+        "intensidade_estimada_mmh": 0.56,
+        "faixa_estimada_mmh": [
+          0.56,
+          0.56
+        ],
+        "dbz_medio": 19.0,
+        "pico_em": "2026-09-09T23:00:00+00:00",
+        "pico_estimado_mmh": 0.56,
+        "pico_dbz_medio": 19.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189481/2026",
+      "municipio": "Novo Horizonte",
+      "latitude": -21.478241,
+      "longitude": -49.234835,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:SDC: ALERTA de tempestade com chuva intensa e vendaval na proxima hora. BUSQUE ABRIGO e nao atravesse areas alagadas. Emerg 199/193.",
+      "resumo": "Defesa Civil:SDC: ALERTA de tempestade com chuva intensa e vendaval na proxima hora. BUSQUE ABRIGO e nao atravesse areas alagadas. Emerg 199/193.",
+      "descricao": "ALERTA - 09/09 20:13 - TEMPESTADE SEVERA com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS para os municípios de Bom Jesus do Oeste, Campo Erê, Irati, Novo Horizonte, Saltinho, Santa Terezinha do Progresso, Serra Alta, Sul Brasil, São Bernardino, São Lourenço do Oeste e Tigrinhos na próxima hora. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T20:14:59-03:00",
+      "fim": "2026-09-09T21:15:00-03:00",
+      "vigencia": "2026-09-09T20:14:59-03:00 → 2026-09-09T21:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 8,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189481/2026",
+      "municipio": "Saltinho",
+      "latitude": -22.841862,
+      "longitude": -47.67662,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:SDC: ALERTA de tempestade com chuva intensa e vendaval na proxima hora. BUSQUE ABRIGO e nao atravesse areas alagadas. Emerg 199/193.",
+      "resumo": "Defesa Civil:SDC: ALERTA de tempestade com chuva intensa e vendaval na proxima hora. BUSQUE ABRIGO e nao atravesse areas alagadas. Emerg 199/193.",
+      "descricao": "ALERTA - 09/09 20:13 - TEMPESTADE SEVERA com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS para os municípios de Bom Jesus do Oeste, Campo Erê, Irati, Novo Horizonte, Saltinho, Santa Terezinha do Progresso, Serra Alta, Sul Brasil, São Bernardino, São Lourenço do Oeste e Tigrinhos na próxima hora. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T20:14:59-03:00",
+      "fim": "2026-09-09T21:15:00-03:00",
+      "vigencia": "2026-09-09T20:14:59-03:00 → 2026-09-09T21:15:00-03:00",
       "status": "ATIVO_OFICIAL",
       "fonte": "Defesa Civil / IDAP-CAP",
       "sender": "CENAD-SEDEC",
@@ -1457,7 +1531,7 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-09T23:15:30.611417+00:00",
+    "gerado_em": "2026-09-09T23:20:51.216305+00:00",
     "janela_min": 120,
     "eventos_com_eco": 11,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
