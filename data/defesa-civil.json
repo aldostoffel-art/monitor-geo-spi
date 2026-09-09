@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T19:35:31-03:00",
-  "fonte_coletada_em": "2026-09-09T22:35:20Z",
+  "gerado_em": "2026-09-09T19:40:46-03:00",
+  "fonte_coletada_em": "2026-09-09T22:40:09Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 96,
-  "alertas_ativos": 9,
+  "entradas_feed": 98,
+  "alertas_ativos": 10,
   "eventos_geo": [
     {
       "id_alerta": "189404/2026",
@@ -119,9 +119,9 @@
           0.56
         ],
         "dbz_medio": 18.0,
-        "pico_em": "2026-09-09T20:40:00+00:00",
-        "pico_estimado_mmh": 1.55,
-        "pico_dbz_medio": 26.1,
+        "pico_em": "2026-09-09T20:50:00+00:00",
+        "pico_estimado_mmh": 0.94,
+        "pico_dbz_medio": 22.6,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -154,13 +154,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T22:30:00+00:00",
-        "intensidade_estimada_mmh": 0.46,
+        "ultimo_eco_em": "2026-09-09T22:40:00+00:00",
+        "intensidade_estimada_mmh": 0.52,
         "faixa_estimada_mmh": [
           0.56,
           0.56
         ],
-        "dbz_medio": 17.6,
+        "dbz_medio": 18.5,
         "pico_em": "2026-09-09T20:50:00+00:00",
         "pico_estimado_mmh": 2.73,
         "pico_dbz_medio": 30.0,
@@ -228,11 +228,11 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T22:30:00+00:00",
+        "ultimo_eco_em": "2026-09-09T22:40:00+00:00",
         "intensidade_estimada_mmh": 0.56,
         "faixa_estimada_mmh": [
           0.56,
-          1.0
+          0.56
         ],
         "dbz_medio": 19.0,
         "pico_em": "2026-09-09T20:50:00+00:00",
@@ -270,13 +270,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T22:30:00+00:00",
-        "intensidade_estimada_mmh": 0.24,
+        "ultimo_eco_em": "2026-09-09T22:40:00+00:00",
+        "intensidade_estimada_mmh": 0.36,
         "faixa_estimada_mmh": [
-          0.24,
-          0.24
+          0.36,
+          1.0
         ],
-        "dbz_medio": 13.0,
+        "dbz_medio": 15.8,
         "pico_em": "2026-09-09T21:00:00+00:00",
         "pico_estimado_mmh": 7.08,
         "pico_dbz_medio": 36.6,
@@ -641,6 +641,48 @@
         "metodo": "Radar composto",
         "janela_min": 120,
         "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189468/2026",
+      "municipio": "Lindóia",
+      "latitude": -22.530885,
+      "longitude": -46.631478,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:ATENCAO - 09/09 19:33 - TEMPORAIS com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS nas proximas 2 horas. Ocorrencias ligue 199 ou 193.",
+      "resumo": "Defesa Civil:ATENCAO - 09/09 19:33 - TEMPORAIS com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS nas proximas 2 horas. Ocorrencias ligue 199 ou 193.",
+      "descricao": "ATENÇÃO - 09/09 19:33 - TEMPORAIS com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS para os municípios de Arabutã, Arvoredo, Chapecó, Concórdia, Cordilheira Alta, Ipumirim, Itá, Lindóia do Sul, Paial, Seara, Xanxerê, Xavantina e Xaxim nas próximas 2 horas. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T19:35:54-03:00",
+      "fim": "2026-09-09T21:35:00-03:00",
+      "vigencia": "2026-09-09T19:35:54-03:00 → 2026-09-09T21:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 2,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T22:40:00+00:00",
+        "intensidade_estimada_mmh": 1.0,
+        "faixa_estimada_mmh": [
+          1.0,
+          3.16
+        ],
+        "dbz_medio": 23.0,
+        "pico_em": "2026-09-09T22:30:00+00:00",
+        "pico_estimado_mmh": 1.46,
+        "pico_dbz_medio": 25.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
   ],
@@ -1224,9 +1266,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-09T22:35:33.121605+00:00",
+    "gerado_em": "2026-09-09T22:40:59.218504+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 9,
+    "eventos_com_eco": 10,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
