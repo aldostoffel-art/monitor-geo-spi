@@ -1167,14 +1167,12 @@ function tvMapBase(el){const m=L.map(el,{preferCanvas:true,zoomControl:false,att
 function tvFitOperationalBounds(m,geo){
  try{const all=L.geoJSON(geo);const b=all.getBounds();if(b&&b.isValid()){m.fitBounds(b,{padding:[4,4],maxZoom:6});const z=m.getZoom();m.setZoom(Math.min(6.5,z+.35),{animate:false})}}catch(_){ }
 }
-function tvHotspotRadius(rank){return rank>=5?22:rank>=4?19:rank>=3?16:rank>=2?13:10}
-function tvAddHotspot(m,layer,color,rank){try{const c=layer.getBounds().getCenter(),r=tvHotspotRadius(rank);L.circleMarker(c,{radius:r+8,color,weight:1.2,opacity:.22,fillColor:color,fillOpacity:.12,interactive:false,className:'tv-hotspot-halo'}).addTo(m);L.circleMarker(c,{radius:r,color:'#ffffff',weight:3,opacity:1,fillColor:color,fillOpacity:.97,interactive:false,className:'tv-hotspot-core'}).addTo(m)}catch(_){}}
 function tvRenderNowMap(cityRanks){
  const el=document.getElementById('tvNowMap');if(!el||typeof L==='undefined'||!weatherLabMunicipios)return;
  if(tvNowLeaflet){try{tvNowLeaflet.remove()}catch(_){}tvNowLeaflet=null} el.innerHTML='';
  const m=tvMapBase(el);tvNowLeaflet=m;
- L.geoJSON(weatherLabMunicipios,{interactive:false,style:{color:'#c8d3da',weight:.55,opacity:.42,fillColor:'#f5f8fa',fillOpacity:.98}}).addTo(m);
- L.geoJSON(weatherLabMunicipios,{filter:f=>cityRanks.has(norm(f?.properties?.municipio||'')),interactive:false,style:f=>{const k=norm(f?.properties?.municipio||''),r=cityRanks.get(k),lab=r?.label||'';return{color:tvRiskStroke(lab),weight:1.5,opacity:.82,fillColor:tvRiskColor(lab),fillOpacity:.18}},onEachFeature:(f,l)=>{const k=norm(f?.properties?.municipio||''),r=cityRanks.get(k);if(r)tvAddHotspot(m,l,tvRiskColor(r.label||''),tvSeverityRank(r))}}).addTo(m);
+ L.geoJSON(weatherLabMunicipios,{interactive:false,style:{color:'#edf2f5',weight:0,opacity:0,fillColor:'#edf2f5',fillOpacity:1}}).addTo(m);
+ L.geoJSON(weatherLabMunicipios,{filter:f=>cityRanks.has(norm(f?.properties?.municipio||'')),interactive:false,style:f=>{const k=norm(f?.properties?.municipio||''),r=cityRanks.get(k),lab=r?.label||'';return{className:'tv-risk-poly '+(r?.score>=4?'tv-risk-critical':r?.score>=3?'tv-risk-high':'tv-risk-watch'),color:tvRiskStroke(lab),weight:r?.score>=4?3.6:r?.score>=3?3.0:2.3,opacity:1,fillColor:tvRiskColor(lab),fillOpacity:r?.score>=4?.94:r?.score>=3?.88:.78}}}).addTo(m);
  tvFitOperationalBounds(m,weatherLabMunicipios);setTimeout(()=>m.invalidateSize(),80)
 }
 function tvRender48Map(rows){
@@ -1182,8 +1180,8 @@ function tvRender48Map(rows){
  if(tv48Leaflet){try{tv48Leaflet.remove()}catch(_){}tv48Leaflet=null} el.innerHTML='';
  const mapRows=new Map((rows||[]).map(x=>[norm(x.municipio||''),x]));
  const m=tvMapBase(el);tv48Leaflet=m;
- L.geoJSON(weatherLabMunicipios,{interactive:false,style:{color:'#c8d3da',weight:.55,opacity:.42,fillColor:'#f5f8fa',fillOpacity:.98}}).addTo(m);
- L.geoJSON(weatherLabMunicipios,{filter:f=>mapRows.has(norm(f?.properties?.municipio||'')),interactive:false,style:f=>{const x=mapRows.get(norm(f?.properties?.municipio||'')),lab=x?.level||'';return{color:tvRiskStroke(lab),weight:1.5,opacity:.82,fillColor:tvRiskColor(lab),fillOpacity:.18}},onEachFeature:(f,l)=>{const x=mapRows.get(norm(f?.properties?.municipio||''));if(x)tvAddHotspot(m,l,tvRiskColor(x.level||''),tvSeverityRank(x))}}).addTo(m);
+ L.geoJSON(weatherLabMunicipios,{interactive:false,style:{color:'#edf2f5',weight:0,opacity:0,fillColor:'#edf2f5',fillOpacity:1}}).addTo(m);
+ L.geoJSON(weatherLabMunicipios,{filter:f=>mapRows.has(norm(f?.properties?.municipio||'')),interactive:false,style:f=>{const x=mapRows.get(norm(f?.properties?.municipio||'')),lab=x?.level||'';return{className:'tv-risk-poly '+(String(lab).includes('CRÍTICO')?'tv-risk-critical':lab==='ALTO'?'tv-risk-high':'tv-risk-watch'),color:tvRiskStroke(lab),weight:String(lab).includes('CRÍTICO')?3.6:lab==='ALTO'?3.0:2.3,opacity:1,fillColor:tvRiskColor(lab),fillOpacity:String(lab).includes('CRÍTICO')?.94:lab==='ALTO'?.88:.78}}}).addTo(m);
  tvFitOperationalBounds(m,weatherLabMunicipios);setTimeout(()=>m.invalidateSize(),80)
 }
 function tvAiText(ranked,rows48,topObs){
