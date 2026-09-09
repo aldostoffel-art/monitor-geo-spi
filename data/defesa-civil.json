@@ -1,12 +1,12 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T19:20:38-03:00",
-  "fonte_coletada_em": "2026-09-09T22:20:09Z",
+  "gerado_em": "2026-09-09T19:30:39-03:00",
+  "fonte_coletada_em": "2026-09-09T22:30:08Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 96,
+  "entradas_feed": 97,
   "alertas_ativos": 14,
   "eventos_geo": [
     {
@@ -38,13 +38,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T22:20:00+00:00",
-        "intensidade_estimada_mmh": 0.4,
+        "ultimo_eco_em": "2026-09-09T22:30:00+00:00",
+        "intensidade_estimada_mmh": 0.42,
         "faixa_estimada_mmh": [
-          0.49,
-          0.86
+          0.42,
+          0.56
         ],
-        "dbz_medio": 16.7,
+        "dbz_medio": 17.0,
         "pico_em": "2026-09-09T20:50:00+00:00",
         "pico_estimado_mmh": 0.85,
         "pico_dbz_medio": 21.9,
@@ -80,16 +80,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T22:20:00+00:00",
-        "intensidade_estimada_mmh": 0.5,
+        "ultimo_eco_em": "2026-09-09T22:30:00+00:00",
+        "intensidade_estimada_mmh": 1.15,
         "faixa_estimada_mmh": [
-          0.56,
-          0.56
+          1.15,
+          1.15
         ],
-        "dbz_medio": 18.2,
-        "pico_em": "2026-09-09T21:40:00+00:00",
-        "pico_estimado_mmh": 0.85,
-        "pico_dbz_medio": 21.9,
+        "dbz_medio": 24.0,
+        "pico_em": "2026-09-09T22:30:00+00:00",
+        "pico_estimado_mmh": 1.15,
+        "pico_dbz_medio": 24.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -122,81 +122,17 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T22:20:00+00:00",
-        "intensidade_estimada_mmh": 0.71,
+        "ultimo_eco_em": "2026-09-09T22:30:00+00:00",
+        "intensidade_estimada_mmh": 0.46,
         "faixa_estimada_mmh": [
-          1.0,
-          2.05
+          0.56,
+          0.56
         ],
-        "dbz_medio": 20.6,
+        "dbz_medio": 17.6,
         "pico_em": "2026-09-09T21:40:00+00:00",
         "pico_estimado_mmh": 2.88,
         "pico_dbz_medio": 30.4,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189427/2026",
-      "municipio": "Cravinhos",
-      "latitude": -21.346878,
-      "longitude": -47.737711,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Cravinhos e Sao Simao. Tem raios, vento e condilcao para granizo. Atinge areas vizinhas. Tenha cuidado.",
-      "resumo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Cravinhos e Sao Simao. Tem raios, vento e condilcao para granizo. Atinge areas vizinhas. Tenha cuidado.",
-      "descricao": "14:20 - Chuva se espalhando pela região de Cravinhos e São Simão. Tem raios, vento e condilção para granizo. Atinge áreas vizinhas. Tenha cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-09T14:25:01-03:00",
-      "fim": "2026-09-09T19:30:00-03:00",
-      "vigencia": "2026-09-09T14:25:01-03:00 → 2026-09-09T19:30:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 5,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
-        "fonte": "RainViewer",
-        "metodo": "Radar composto",
-        "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
-      }
-    },
-    {
-      "id_alerta": "189427/2026",
-      "municipio": "São Simão",
-      "latitude": -21.474102,
-      "longitude": -47.577731,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Cravinhos e Sao Simao. Tem raios, vento e condilcao para granizo. Atinge areas vizinhas. Tenha cuidado.",
-      "resumo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Cravinhos e Sao Simao. Tem raios, vento e condilcao para granizo. Atinge areas vizinhas. Tenha cuidado.",
-      "descricao": "14:20 - Chuva se espalhando pela região de Cravinhos e São Simão. Tem raios, vento e condilção para granizo. Atinge áreas vizinhas. Tenha cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-09T14:25:01-03:00",
-      "fim": "2026-09-09T19:30:00-03:00",
-      "vigencia": "2026-09-09T14:25:01-03:00 → 2026-09-09T19:30:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 4,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
-        "fonte": "RainViewer",
-        "metodo": "Radar composto",
-        "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -270,13 +206,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T22:20:00+00:00",
-        "intensidade_estimada_mmh": 0.52,
+        "ultimo_eco_em": "2026-09-09T22:30:00+00:00",
+        "intensidade_estimada_mmh": 0.48,
         "faixa_estimada_mmh": [
           0.56,
-          1.15
+          1.0
         ],
-        "dbz_medio": 18.4,
+        "dbz_medio": 17.9,
         "pico_em": "2026-09-09T21:50:00+00:00",
         "pico_estimado_mmh": 0.62,
         "pico_dbz_medio": 19.6,
@@ -383,9 +319,9 @@
           0.56
         ],
         "dbz_medio": 18.0,
-        "pico_em": "2026-09-09T20:30:00+00:00",
-        "pico_estimado_mmh": 3.37,
-        "pico_dbz_medio": 31.5,
+        "pico_em": "2026-09-09T20:40:00+00:00",
+        "pico_estimado_mmh": 1.55,
+        "pico_dbz_medio": 26.1,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -418,13 +354,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T22:20:00+00:00",
-        "intensidade_estimada_mmh": 0.52,
+        "ultimo_eco_em": "2026-09-09T22:30:00+00:00",
+        "intensidade_estimada_mmh": 0.46,
         "faixa_estimada_mmh": [
           0.56,
-          1.0
+          0.56
         ],
-        "dbz_medio": 18.5,
+        "dbz_medio": 17.6,
         "pico_em": "2026-09-09T20:50:00+00:00",
         "pico_estimado_mmh": 2.73,
         "pico_dbz_medio": 30.0,
@@ -492,13 +428,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T22:20:00+00:00",
-        "intensidade_estimada_mmh": 0.51,
+        "ultimo_eco_em": "2026-09-09T22:30:00+00:00",
+        "intensidade_estimada_mmh": 0.56,
         "faixa_estimada_mmh": [
           0.56,
-          0.56
+          1.0
         ],
-        "dbz_medio": 18.3,
+        "dbz_medio": 19.0,
         "pico_em": "2026-09-09T20:50:00+00:00",
         "pico_estimado_mmh": 1.14,
         "pico_dbz_medio": 23.9,
@@ -534,13 +470,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T21:50:00+00:00",
-        "intensidade_estimada_mmh": 1.42,
+        "ultimo_eco_em": "2026-09-09T22:30:00+00:00",
+        "intensidade_estimada_mmh": 0.24,
         "faixa_estimada_mmh": [
-          1.33,
-          2.73
+          0.24,
+          0.24
         ],
-        "dbz_medio": 25.4,
+        "dbz_medio": 13.0,
         "pico_em": "2026-09-09T21:00:00+00:00",
         "pico_estimado_mmh": 7.08,
         "pico_dbz_medio": 36.6,
@@ -576,13 +512,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T22:20:00+00:00",
-        "intensidade_estimada_mmh": 1.16,
+        "ultimo_eco_em": "2026-09-09T22:30:00+00:00",
+        "intensidade_estimada_mmh": 0.84,
         "faixa_estimada_mmh": [
-          1.0,
+          0.56,
           3.65
         ],
-        "dbz_medio": 24.0,
+        "dbz_medio": 21.8,
         "pico_em": "2026-09-09T22:10:00+00:00",
         "pico_estimado_mmh": 1.28,
         "pico_dbz_medio": 24.7,
@@ -724,13 +660,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T22:20:00+00:00",
-        "intensidade_estimada_mmh": 0.71,
+        "ultimo_eco_em": "2026-09-09T22:30:00+00:00",
+        "intensidade_estimada_mmh": 0.46,
         "faixa_estimada_mmh": [
-          1.0,
-          2.05
+          0.56,
+          0.56
         ],
-        "dbz_medio": 20.6,
+        "dbz_medio": 17.6,
         "pico_em": "2026-09-09T21:40:00+00:00",
         "pico_estimado_mmh": 2.88,
         "pico_dbz_medio": 30.4,
@@ -842,6 +778,70 @@
         "pico_dbz_medio": 22.8,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
+    },
+    {
+      "id_alerta": "189467/2026",
+      "municipio": "Barra Bonita",
+      "latitude": -22.488945,
+      "longitude": -48.559825,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:ATENCAO - 09/09 19:28 - TEMPORAIS com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS nas proximas 2 horas. Ocorrencias ligue 199 ou 193.",
+      "resumo": "Defesa Civil:ATENCAO - 09/09 19:28 - TEMPORAIS com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS nas proximas 2 horas. Ocorrencias ligue 199 ou 193.",
+      "descricao": "ATENÇÃO - 09/09 19:28 - TEMPORAIS com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS para os municípios de Anchieta, Bandeirante, Barra Bonita, Campo Erê, Dionísio Cerqueira, Guaraciaba, Guarujá do Sul, Palma Sola, Paraíso, Princesa, Romelândia, São José do Cedro e São Miguel do Oeste nas próximas 2 horas. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T19:29:28-03:00",
+      "fim": "2026-09-09T21:30:00-03:00",
+      "vigencia": "2026-09-09T19:29:28-03:00 → 2026-09-09T21:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 5,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189467/2026",
+      "municipio": "Paraíso",
+      "latitude": -21.017664,
+      "longitude": -48.774225,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:ATENCAO - 09/09 19:28 - TEMPORAIS com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS nas proximas 2 horas. Ocorrencias ligue 199 ou 193.",
+      "resumo": "Defesa Civil:ATENCAO - 09/09 19:28 - TEMPORAIS com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS nas proximas 2 horas. Ocorrencias ligue 199 ou 193.",
+      "descricao": "ATENÇÃO - 09/09 19:28 - TEMPORAIS com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS para os municípios de Anchieta, Bandeirante, Barra Bonita, Campo Erê, Dionísio Cerqueira, Guaraciaba, Guarujá do Sul, Palma Sola, Paraíso, Princesa, Romelândia, São José do Cedro e São Miguel do Oeste nas próximas 2 horas. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T19:29:28-03:00",
+      "fim": "2026-09-09T21:30:00-03:00",
+      "vigencia": "2026-09-09T19:29:28-03:00 → 2026-09-09T21:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
     }
   ],
   "eventos_recentes_geo": [
@@ -916,6 +916,56 @@
       "sender": "CENAD-SEDEC",
       "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
       "sites_referencia": 99,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
+    },
+    {
+      "id_alerta": "189427/2026",
+      "municipio": "Cravinhos",
+      "latitude": -21.346878,
+      "longitude": -47.737711,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Cravinhos e Sao Simao. Tem raios, vento e condilcao para granizo. Atinge areas vizinhas. Tenha cuidado.",
+      "resumo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Cravinhos e Sao Simao. Tem raios, vento e condilcao para granizo. Atinge areas vizinhas. Tenha cuidado.",
+      "descricao": "14:20 - Chuva se espalhando pela região de Cravinhos e São Simão. Tem raios, vento e condilção para granizo. Atinge áreas vizinhas. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T14:25:01-03:00",
+      "fim": "2026-09-09T19:30:00-03:00",
+      "vigencia": "2026-09-09T14:25:01-03:00 → 2026-09-09T19:30:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 5,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
+    },
+    {
+      "id_alerta": "189427/2026",
+      "municipio": "São Simão",
+      "latitude": -21.474102,
+      "longitude": -47.577731,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Cravinhos e Sao Simao. Tem raios, vento e condilcao para granizo. Atinge areas vizinhas. Tenha cuidado.",
+      "resumo": "Defesa Civil:14:20 - Chuva se espalhando pela regiao de Cravinhos e Sao Simao. Tem raios, vento e condilcao para granizo. Atinge areas vizinhas. Tenha cuidado.",
+      "descricao": "14:20 - Chuva se espalhando pela região de Cravinhos e São Simão. Tem raios, vento e condilção para granizo. Atinge áreas vizinhas. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T14:25:01-03:00",
+      "fim": "2026-09-09T19:30:00-03:00",
+      "vigencia": "2026-09-09T14:25:01-03:00 → 2026-09-09T19:30:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 4,
       "area_oficial": [
         "SÃO PAULO/SP"
       ]
@@ -1257,7 +1307,7 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-09T22:20:45.917733+00:00",
+    "gerado_em": "2026-09-09T22:30:45.413196+00:00",
     "janela_min": 120,
     "eventos_com_eco": 12,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
