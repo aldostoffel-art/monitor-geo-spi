@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-09T12:40:53.923372-03:00",
+  "gerado_em": "2026-09-09T12:42:15.121874-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-09T15:40:04.000Z",
+  "historico_grupos_fim": "2026-09-09T15:41:17.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -17109,6 +17109,13 @@
               ]
             },
             {
+              "site": "4AI",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "4IC",
               "reincidente": true,
               "aberturas": 1,
@@ -17179,6 +17186,13 @@
               ]
             },
             {
+              "site": "TQO",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "TQS",
               "reincidente": true,
               "aberturas": 1,
@@ -17191,6 +17205,13 @@
                   "status": "JK3, BOC, TQS, TAY, CRM, TYQ, TQB, IVR"
                 }
               ]
+            },
+            {
+              "site": "TSV",
+              "reincidente": false,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             },
             {
               "site": "TYQ",
@@ -17273,6 +17294,44 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "DYA, GPA, IGO, AJK, LGE, SCB, DEG, TAD, ITE, CZL, YBV"
+                }
+              ]
+            },
+            {
+              "site": "IGO",
+              "reincidente": true,
+              "aberturas": 2,
+              "causa": "FIBRA/BACKBONE",
+              "evidencias": [
+                {
+                  "hora": "07:41",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
+                },
+                {
+                  "hora": "08:00",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "FIBRA/BACKBONE",
+                  "status": "IGO e AJK envolvido no rompimento de ARD.IP x SOC.AS"
+                },
+                {
+                  "hora": "09:04",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "FIBRA/BACKBONE",
+                  "status": "Ricardo já temos TA de RE para o rompimento do IGO e AJK ?"
+                },
+                {
+                  "hora": "09:11",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "FIBRA/BACKBONE",
+                  "status": "IGO, envolvido no rompimento de ARD.IP x SOC.AS"
+                },
+                {
+                  "hora": "09:04",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "FIBRA/BACKBONE",
+                  "status": "IGO - Ricardo já temos TA de RE para o rompimento do IGO e AJK ?"
                 }
               ]
             },
@@ -17447,6 +17506,13 @@
               ]
             },
             {
+              "site": "IDO",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "IFE",
               "reincidente": true,
               "aberturas": 1,
@@ -17457,44 +17523,6 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "IFE"
-                }
-              ]
-            },
-            {
-              "site": "IGO",
-              "reincidente": true,
-              "aberturas": 1,
-              "causa": "FIBRA/BACKBONE",
-              "evidencias": [
-                {
-                  "hora": "07:41",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
-                },
-                {
-                  "hora": "08:00",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "FIBRA/BACKBONE",
-                  "status": "IGO e AJK envolvido no rompimento de ARD.IP x SOC.AS"
-                },
-                {
-                  "hora": "09:04",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "FIBRA/BACKBONE",
-                  "status": "Ricardo já temos TA de RE para o rompimento do IGO e AJK ?"
-                },
-                {
-                  "hora": "09:11",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "FIBRA/BACKBONE",
-                  "status": "IGO, envolvido no rompimento de ARD.IP x SOC.AS"
-                },
-                {
-                  "hora": "09:04",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "FIBRA/BACKBONE",
-                  "status": "IGO - Ricardo já temos TA de RE para o rompimento do IGO e AJK ?"
                 }
               ]
             },
@@ -17511,6 +17539,20 @@
                   "status": "IIO"
                 }
               ]
+            },
+            {
+              "site": "IOR",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "IOS",
+              "reincidente": false,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             },
             {
               "site": "IRG",
@@ -17653,6 +17695,13 @@
                   "status": "LGE está ok"
                 }
               ]
+            },
+            {
+              "site": "RRL",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             },
             {
               "site": "SCB",
@@ -18211,6 +18260,13 @@
               "aberturas": 1,
               "causa": "SEM CAUSA LOCALIZADA",
               "evidencias": []
+            },
+            {
+              "site": "RRD",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             }
           ]
         },
@@ -18283,6 +18339,13 @@
                   "status": "IP9"
                 }
               ]
+            },
+            {
+              "site": "IVA",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             },
             {
               "site": "JBE",
@@ -18392,7 +18455,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 185
+      "mensagens_grupos_no_dia": 188
     }
   ],
   "ativos_agora": [
@@ -18404,7 +18467,7 @@
           "site": "AT4",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.66
+          "idade_ativa_h": 0.69
         },
         {
           "site": "BSH",
@@ -18423,19 +18486,19 @@
               "status": "BSH - Deslocamento"
             }
           ],
-          "idade_ativa_h": 2.67
+          "idade_ativa_h": 2.7
         },
         {
           "site": "FWL",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.64
+          "idade_ativa_h": 3.67
         },
         {
           "site": "JIE",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.27
+          "idade_ativa_h": 1.3
         },
         {
           "site": "JKB",
@@ -18466,25 +18529,25 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 17.34
+          "idade_ativa_h": 17.37
         },
         {
           "site": "KLG",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.27
+          "idade_ativa_h": 1.3
         },
         {
           "site": "SGJ",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.04
         },
         {
           "site": "SRH",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.64
+          "idade_ativa_h": 3.67
         },
         {
           "site": "STF",
@@ -18515,19 +18578,19 @@
               "status": "STF, JUR, ISJ, JKB, JNC"
             }
           ],
-          "idade_ativa_h": 83.99
+          "idade_ativa_h": 84.02
         },
         {
           "site": "TUL",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 2.29
+          "idade_ativa_h": 2.32
         },
         {
           "site": "WSE",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
         }
       ]
     },
@@ -18546,7 +18609,7 @@
               "status": "TY1, TM5"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.04
         },
         {
           "site": "TY1",
@@ -18559,7 +18622,7 @@
               "status": "TY1, TM5"
             }
           ],
-          "idade_ativa_h": 3.34
+          "idade_ativa_h": 3.37
         }
       ]
     },
@@ -18567,6 +18630,12 @@
       "cn": "14",
       "parceira": "TEL",
       "sites": [
+        {
+          "site": "4AI",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
         {
           "site": "BOC",
           "causa": "NÃO IDENTIFICADA",
@@ -18590,7 +18659,7 @@
               "status": "JK3, BOC, TQS, TAY, CRM, TYQ, TQB, IVR"
             }
           ],
-          "idade_ativa_h": 4.01
+          "idade_ativa_h": 4.04
         },
         {
           "site": "CRM",
@@ -18603,7 +18672,7 @@
               "status": "JK3, BOC, TQS, TAY, CRM, TYQ, TQB, IVR"
             }
           ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
         },
         {
           "site": "IVR",
@@ -18616,7 +18685,7 @@
               "status": "JK3, BOC, TQS, TAY, CRM, TYQ, TQB, IVR"
             }
           ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
         },
         {
           "site": "JK3",
@@ -18641,7 +18710,7 @@
               "status": "JK3, BOC, TQS, TAY, CRM, TYQ, TQB, IVR"
             }
           ],
-          "idade_ativa_h": 81.67
+          "idade_ativa_h": 81.7
         },
         {
           "site": "TAY",
@@ -18654,7 +18723,7 @@
               "status": "JK3, BOC, TQS, TAY, CRM, TYQ, TQB, IVR"
             }
           ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
         },
         {
           "site": "TQB",
@@ -18667,7 +18736,13 @@
               "status": "JK3, BOC, TQS, TAY, CRM, TYQ, TQB, IVR"
             }
           ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
+        },
+        {
+          "site": "TQO",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "TQS",
@@ -18680,7 +18755,13 @@
               "status": "JK3, BOC, TQS, TAY, CRM, TYQ, TQB, IVR"
             }
           ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
+        },
+        {
+          "site": "TSV",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "TYQ",
@@ -18693,7 +18774,7 @@
               "status": "JK3, BOC, TQS, TAY, CRM, TYQ, TQB, IVR"
             }
           ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
         }
       ]
     },
@@ -18712,7 +18793,7 @@
               "status": "SCB, IRG, IBK, DYT, ANT, YTU, DEG, WJD"
             }
           ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
         },
         {
           "site": "DEG",
@@ -18749,7 +18830,7 @@
               "status": "DEG - Técnico Luciano acoplando o GMG no Site DEG"
             }
           ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
         },
         {
           "site": "DYT",
@@ -18762,7 +18843,7 @@
               "status": "SCB, IRG, IBK, DYT, ANT, YTU, DEG, WJD"
             }
           ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
         },
         {
           "site": "IBK",
@@ -18775,7 +18856,62 @@
               "status": "SCB, IRG, IBK, DYT, ANT, YTU, DEG, WJD"
             }
           ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
+        },
+        {
+          "site": "IDO",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "IGO",
+          "causa": "FIBRA/BACKBONE",
+          "evidencias": [
+            {
+              "hora": "07:41",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "IGO, AJK, SCB, DEG, TAD, ITE, CZL, YBV"
+            },
+            {
+              "hora": "08:00",
+              "grupo": "Móvel 15 - 19",
+              "causa": "FIBRA/BACKBONE",
+              "status": "IGO e AJK envolvido no rompimento de ARD.IP x SOC.AS"
+            },
+            {
+              "hora": "09:04",
+              "grupo": "Móvel 15 - 19",
+              "causa": "FIBRA/BACKBONE",
+              "status": "Ricardo já temos TA de RE para o rompimento do IGO e AJK ?"
+            },
+            {
+              "hora": "09:11",
+              "grupo": "Móvel 15 - 19",
+              "causa": "FIBRA/BACKBONE",
+              "status": "IGO, envolvido no rompimento de ARD.IP x SOC.AS"
+            },
+            {
+              "hora": "09:04",
+              "grupo": "Móvel 15 - 19",
+              "causa": "FIBRA/BACKBONE",
+              "status": "IGO - Ricardo já temos TA de RE para o rompimento do IGO e AJK ?"
+            }
+          ],
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "IOR",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "IOS",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "IRG",
@@ -18788,7 +18924,13 @@
               "status": "SCB, IRG, IBK, DYT, ANT, YTU, DEG, WJD"
             }
           ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
+        },
+        {
+          "site": "RRL",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "SCB",
@@ -18825,7 +18967,7 @@
               "status": "SCB, IRG, IBK, DYT, ANT, YTU, DEG, WJD"
             }
           ],
-          "idade_ativa_h": 8.27
+          "idade_ativa_h": 8.3
         },
         {
           "site": "WJD",
@@ -18838,7 +18980,7 @@
               "status": "SCB, IRG, IBK, DYT, ANT, YTU, DEG, WJD"
             }
           ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
         },
         {
           "site": "YTU",
@@ -18851,7 +18993,7 @@
               "status": "SCB, IRG, IBK, DYT, ANT, YTU, DEG, WJD"
             }
           ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.37
         }
       ]
     },
@@ -18882,7 +19024,7 @@
               "status": "CTG - UCH, URD, URO e CTG possível falha no SWS de Uchôa Cidade. Pico de energia sem autonomia de bateria. Técnico Vinícius a caminho."
             }
           ],
-          "idade_ativa_h": 2.01
+          "idade_ativa_h": 2.04
         },
         {
           "site": "GTV",
@@ -18895,7 +19037,7 @@
               "status": "NLZ, GTV, URD, URO, CTG, UCH"
             }
           ],
-          "idade_ativa_h": 2.29
+          "idade_ativa_h": 2.32
         },
         {
           "site": "NLZ",
@@ -18908,7 +19050,7 @@
               "status": "NLZ, GTV, URD, URO, CTG, UCH"
             }
           ],
-          "idade_ativa_h": 2.29
+          "idade_ativa_h": 2.32
         },
         {
           "site": "UCH",
@@ -18933,7 +19075,7 @@
               "status": "UCH - UCH, URD, URO e CTG possível falha no SWS de Uchôa Cidade. Pico de energia sem autonomia de bateria. Técnico Vinícius a caminho."
             }
           ],
-          "idade_ativa_h": 2.01
+          "idade_ativa_h": 2.04
         },
         {
           "site": "URD",
@@ -18958,7 +19100,7 @@
               "status": "URD - UCH, URD, URO e CTG possível falha no SWS de Uchôa Cidade. Pico de energia sem autonomia de bateria. Técnico Vinícius a caminho."
             }
           ],
-          "idade_ativa_h": 2.01
+          "idade_ativa_h": 2.04
         },
         {
           "site": "URO",
@@ -18983,7 +19125,7 @@
               "status": "URO - UCH, URD, URO e CTG possível falha no SWS de Uchôa Cidade. Pico de energia sem autonomia de bateria. Técnico Vinícius a caminho."
             }
           ],
-          "idade_ativa_h": 2.01
+          "idade_ativa_h": 2.04
         }
       ]
     },
@@ -18991,6 +19133,12 @@
       "cn": "18",
       "parceira": "TEL",
       "sites": [
+        {
+          "site": "RRD",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
         {
           "site": "U50",
           "causa": "NÃO IDENTIFICADA",
@@ -19002,7 +19150,7 @@
               "status": "U50, 1KB"
             }
           ],
-          "idade_ativa_h": 987.34
+          "idade_ativa_h": 987.37
         }
       ]
     },
@@ -19033,20 +19181,7 @@
               "status": "EGC, YPE, IEN, MDE, IP9, SFZ, PBC, GRM"
             }
           ],
-          "idade_ativa_h": 62.01
-        },
-        {
-          "site": "GRM",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "12:29",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "EGC, YPE, IEN, MDE, IP9, SFZ, PBC, GRM"
-            }
-          ],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 62.04
         },
         {
           "site": "IEN",
@@ -19071,7 +19206,7 @@
               "status": "IEN"
             }
           ],
-          "idade_ativa_h": 1.27
+          "idade_ativa_h": 1.3
         },
         {
           "site": "IP9",
@@ -19096,7 +19231,13 @@
               "status": "IP9"
             }
           ],
-          "idade_ativa_h": 1.27
+          "idade_ativa_h": 1.3
+        },
+        {
+          "site": "IVA",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "MDE",
@@ -19115,7 +19256,7 @@
               "status": "EGC, YPE, IEN, MDE, IP9, SFZ, PBC, GRM"
             }
           ],
-          "idade_ativa_h": 1.27
+          "idade_ativa_h": 1.3
         },
         {
           "site": "PBC",
@@ -19140,7 +19281,7 @@
               "status": "Sabe qual a TA do PBC?"
             }
           ],
-          "idade_ativa_h": 0.66
+          "idade_ativa_h": 0.69
         },
         {
           "site": "SFZ",
@@ -19165,7 +19306,7 @@
               "status": "SFZ troca ODU E IDU"
             }
           ],
-          "idade_ativa_h": 1.27
+          "idade_ativa_h": 1.3
         },
         {
           "site": "YPE",
@@ -19190,7 +19331,7 @@
               "status": "YPE rompimento de RCO.AD X IIEN.AT"
             }
           ],
-          "idade_ativa_h": 1.27
+          "idade_ativa_h": 1.3
         }
       ]
     }
