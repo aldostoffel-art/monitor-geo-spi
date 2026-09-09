@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-08T21:01:01.130268-03:00",
+  "gerado_em": "2026-09-08T21:03:19.611273-03:00",
   "metodo": "correlação por sigla do site no mesmo dia em mensagens dos grupos operacionais; causa só é classificada quando há texto explícito compatível; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-08T23:40:28.000Z",
+  "historico_grupos_fim": "2026-09-09T00:01:19.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -16053,6 +16053,13 @@
               ]
             },
             {
+              "site": "KUR",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "MCV",
               "reincidente": true,
               "aberturas": 1,
@@ -16703,7 +16710,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 113
+      "mensagens_grupos_no_dia": 115
     }
   ],
   "ativos_agora": [
@@ -16728,7 +16735,7 @@
               "status": "IS3 - REDE"
             }
           ],
-          "idade_ativa_h": 6.01
+          "idade_ativa_h": 6.04
         },
         {
           "site": "ISJ",
@@ -16741,7 +16748,7 @@
               "status": "ISJ - Técnico chegando ao local JKB - Técnico ira verifficar após o ISJ"
             }
           ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.71
         },
         {
           "site": "JKB",
@@ -16754,7 +16761,7 @@
               "status": "JKB - Técnico ira verifficar após o ISJ"
             }
           ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.71
         },
         {
           "site": "JUR",
@@ -16779,7 +16786,13 @@
               "status": "JUR - IMPLANTAÇÃO"
             }
           ],
-          "idade_ativa_h": 8.68
+          "idade_ativa_h": 8.71
+        },
+        {
+          "site": "KUR",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.03
         },
         {
           "site": "STF",
@@ -16798,26 +16811,7 @@
               "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
             }
           ],
-          "idade_ativa_h": 68.33
-        },
-        {
-          "site": "TUL",
-          "causa": "TÉCNICO NO LOCAL",
-          "evidencias": [
-            {
-              "hora": "12:25",
-              "grupo": "Movel N1 SPA",
-              "causa": "TÉCNICO NO LOCAL",
-              "status": "TUL- tec. no local"
-            },
-            {
-              "hora": "16:37",
-              "grupo": "Movel N1 SPA",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "STF, JUR, TUL, CIL, OVJ, NS2, IS3, FAR, BFY, WZ2"
-            }
-          ],
-          "idade_ativa_h": 12.34
+          "idade_ativa_h": 68.36
         }
       ]
     },
@@ -16829,13 +16823,13 @@
           "site": "RZP",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.34
+          "idade_ativa_h": 0.38
         },
         {
           "site": "TSF",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.66
+          "idade_ativa_h": 0.69
         }
       ]
     },
@@ -16860,7 +16854,7 @@
               "status": "BLV normalizado , nao esta aceitando a baixa foi encaminhado email astro"
             }
           ],
-          "idade_ativa_h": 26.01
+          "idade_ativa_h": 26.04
         },
         {
           "site": "JK3",
@@ -16879,19 +16873,7 @@
               "status": "LTE JK3 normalizado"
             }
           ],
-          "idade_ativa_h": 66.01
-        }
-      ]
-    },
-    {
-      "cn": "15",
-      "parceira": "TEL",
-      "sites": [
-        {
-          "site": "SXW",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 0.66
+          "idade_ativa_h": 66.04
         }
       ]
     },
@@ -16903,7 +16885,7 @@
           "site": "1SX",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 7.29
+          "idade_ativa_h": 7.33
         }
       ]
     },
@@ -16915,13 +16897,13 @@
           "site": "MPN",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.71
         },
         {
           "site": "U50",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 971.68
+          "idade_ativa_h": 971.71
         }
       ]
     },
@@ -16946,7 +16928,7 @@
               "status": "MMX, EGC, CVN"
             }
           ],
-          "idade_ativa_h": 46.34
+          "idade_ativa_h": 46.38
         }
       ]
     }
