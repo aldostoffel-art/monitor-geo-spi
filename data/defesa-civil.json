@@ -1,12 +1,12 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T04:15:08-03:00",
-  "fonte_coletada_em": "2026-09-09T07:15:04Z",
+  "gerado_em": "2026-09-09T04:25:06-03:00",
+  "fonte_coletada_em": "2026-09-09T07:25:03Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 26,
+  "entradas_feed": 25,
   "alertas_ativos": 4,
   "eventos_geo": [
     {
@@ -70,13 +70,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T07:10:00+00:00",
-        "intensidade_estimada_mmh": 1.75,
+        "ultimo_eco_em": "2026-09-09T07:20:00+00:00",
+        "intensidade_estimada_mmh": 0.97,
         "faixa_estimada_mmh": [
-          2.05,
+          1.0,
           4.86
         ],
-        "dbz_medio": 26.9,
+        "dbz_medio": 22.8,
         "pico_em": "2026-09-09T06:50:00+00:00",
         "pico_estimado_mmh": 29.1,
         "pico_dbz_medio": 46.4,
@@ -112,13 +112,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T07:10:00+00:00",
-        "intensidade_estimada_mmh": 4.03,
+        "ultimo_eco_em": "2026-09-09T07:20:00+00:00",
+        "intensidade_estimada_mmh": 1.27,
         "faixa_estimada_mmh": [
-          3.16,
-          23.68
+          2.05,
+          2.05
         ],
-        "dbz_medio": 32.7,
+        "dbz_medio": 24.7,
         "pico_em": "2026-09-09T07:10:00+00:00",
         "pico_estimado_mmh": 4.03,
         "pico_dbz_medio": 32.7,
@@ -150,11 +150,21 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
+        "status": "ECO_DETECTADO",
         "fonte": "RainViewer",
-        "metodo": "Radar composto",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+        "ultimo_eco_em": "2026-09-09T07:20:00+00:00",
+        "intensidade_estimada_mmh": 0.45,
+        "faixa_estimada_mmh": [
+          0.56,
+          0.56
+        ],
+        "dbz_medio": 17.5,
+        "pico_em": "2026-09-09T07:20:00+00:00",
+        "pico_estimado_mmh": 0.45,
+        "pico_dbz_medio": 17.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
     {
@@ -186,16 +196,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T07:10:00+00:00",
-        "intensidade_estimada_mmh": 1.48,
+        "ultimo_eco_em": "2026-09-09T07:20:00+00:00",
+        "intensidade_estimada_mmh": 3.89,
         "faixa_estimada_mmh": [
-          1.15,
-          6.48
+          3.16,
+          48.62
         ],
-        "dbz_medio": 25.7,
-        "pico_em": "2026-09-09T07:10:00+00:00",
-        "pico_estimado_mmh": 1.48,
-        "pico_dbz_medio": 25.7,
+        "dbz_medio": 32.4,
+        "pico_em": "2026-09-09T07:20:00+00:00",
+        "pico_estimado_mmh": 3.89,
+        "pico_dbz_medio": 32.4,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -228,13 +238,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T07:10:00+00:00",
+        "ultimo_eco_em": "2026-09-09T07:20:00+00:00",
         "intensidade_estimada_mmh": 0.5,
         "faixa_estimada_mmh": [
           0.56,
-          0.56
+          3.16
         ],
-        "dbz_medio": 18.2,
+        "dbz_medio": 18.3,
         "pico_em": "2026-09-09T07:10:00+00:00",
         "pico_estimado_mmh": 0.5,
         "pico_dbz_medio": 18.2,
@@ -390,9 +400,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-09T07:15:10.703571+00:00",
+    "gerado_em": "2026-09-09T07:25:08.405127+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 4,
+    "eventos_com_eco": 5,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
