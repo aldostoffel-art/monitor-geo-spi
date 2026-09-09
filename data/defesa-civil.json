@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T01:35:31-03:00",
-  "fonte_coletada_em": "2026-09-09T04:35:29Z",
+  "gerado_em": "2026-09-09T01:45:07-03:00",
+  "fonte_coletada_em": "2026-09-09T04:45:03Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 23,
-  "alertas_ativos": 1,
+  "entradas_feed": 24,
+  "alertas_ativos": 2,
   "eventos_geo": [
     {
       "id_alerta": "189342/2026",
@@ -32,10 +32,150 @@
       "sites_referencia": 11,
       "area_oficial": [
         "Aparecida de Goiânia/GO"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189343/2026",
+      "municipio": "Apiaí",
+      "latitude": -24.418743,
+      "longitude": -48.896832,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:01h41 Chuva isolada na regiao de Barra do Chapeu, Apiai e Ribeirao Branco. Tem raios e ventos. Atinge municipios vizinhos. Busque abrigo.",
+      "resumo": "Defesa Civil:01h41 Chuva isolada na regiao de Barra do Chapeu, Apiai e Ribeirao Branco. Tem raios e ventos. Atinge municipios vizinhos. Busque abrigo.",
+      "descricao": "01h41 Chuva isolada na região de Barra do Chapéu, Apiaí e Ribeirão Branco. Tem raios e ventos. Atinge municípios vizinhos. Busque abrigo.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T01:41:35-03:00",
+      "fim": "2026-09-09T03:35:00-03:00",
+      "vigencia": "2026-09-09T01:41:35-03:00 → 2026-09-09T03:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 8,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T04:40:00+00:00",
+        "intensidade_estimada_mmh": 0.86,
+        "faixa_estimada_mmh": [
+          1.0,
+          2.05
+        ],
+        "dbz_medio": 22.0,
+        "pico_em": "2026-09-09T04:30:00+00:00",
+        "pico_estimado_mmh": 1.13,
+        "pico_dbz_medio": 23.9,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189343/2026",
+      "municipio": "Barra Do Chapéu",
+      "latitude": -24.477699,
+      "longitude": -49.0225,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:01h41 Chuva isolada na regiao de Barra do Chapeu, Apiai e Ribeirao Branco. Tem raios e ventos. Atinge municipios vizinhos. Busque abrigo.",
+      "resumo": "Defesa Civil:01h41 Chuva isolada na regiao de Barra do Chapeu, Apiai e Ribeirao Branco. Tem raios e ventos. Atinge municipios vizinhos. Busque abrigo.",
+      "descricao": "01h41 Chuva isolada na região de Barra do Chapéu, Apiaí e Ribeirão Branco. Tem raios e ventos. Atinge municípios vizinhos. Busque abrigo.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T01:41:35-03:00",
+      "fim": "2026-09-09T03:35:00-03:00",
+      "vigencia": "2026-09-09T01:41:35-03:00 → 2026-09-09T03:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 3,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T04:40:00+00:00",
+        "intensidade_estimada_mmh": 2.18,
+        "faixa_estimada_mmh": [
+          2.37,
+          8.65
+        ],
+        "dbz_medio": 28.4,
+        "pico_em": "2026-09-09T04:40:00+00:00",
+        "pico_estimado_mmh": 2.18,
+        "pico_dbz_medio": 28.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189343/2026",
+      "municipio": "Ribeirão Branco",
+      "latitude": -24.277251,
+      "longitude": -48.831682,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:01h41 Chuva isolada na regiao de Barra do Chapeu, Apiai e Ribeirao Branco. Tem raios e ventos. Atinge municipios vizinhos. Busque abrigo.",
+      "resumo": "Defesa Civil:01h41 Chuva isolada na regiao de Barra do Chapeu, Apiai e Ribeirao Branco. Tem raios e ventos. Atinge municipios vizinhos. Busque abrigo.",
+      "descricao": "01h41 Chuva isolada na região de Barra do Chapéu, Apiaí e Ribeirão Branco. Tem raios e ventos. Atinge municípios vizinhos. Busque abrigo.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T01:41:35-03:00",
+      "fim": "2026-09-09T03:35:00-03:00",
+      "vigencia": "2026-09-09T01:41:35-03:00 → 2026-09-09T03:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-09T04:40:00+00:00",
+        "intensidade_estimada_mmh": 3.19,
+        "faixa_estimada_mmh": [
+          3.16,
+          8.65
+        ],
+        "dbz_medio": 31.1,
+        "pico_em": "2026-09-09T04:40:00+00:00",
+        "pico_estimado_mmh": 3.19,
+        "pico_dbz_medio": 31.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [],
   "janela_recentes_horas": 6,
-  "alertas_sp_sem_municipio_spi": []
+  "alertas_sp_sem_municipio_spi": [],
+  "radar_enriquecimento": {
+    "fonte": "RainViewer",
+    "gerado_em": "2026-09-09T04:45:08.929115+00:00",
+    "janela_min": 120,
+    "eventos_com_eco": 3,
+    "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
+  }
 }
