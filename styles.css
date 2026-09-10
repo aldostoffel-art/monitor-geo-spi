@@ -1518,3 +1518,13 @@ body.tv-mode .tv-ai>small{font-size:11px!important;line-height:1.16!important}
   body.tv-mode .tv-risk-high{filter:drop-shadow(0 0 4px rgba(255,112,35,.58))!important}
   body.tv-mode .tv-risk-watch{filter:drop-shadow(0 0 3px rgba(244,186,40,.40))!important}
 }
+/* TV OPERACIONAL • somente SP no mapa v18 • DEV */
+@media(min-width:1200px){
+  body.tv-mode .tv-map,
+  body.tv-mode .tv-map.leaflet-container,
+  body.tv-mode .tv-map .leaflet-container{
+    background:#eef2f4!important;
+  }
+  body.tv-mode .tv-map .leaflet-tile-pane,
+  body.tv-mode .tv-map .leaflet-control-container{display:none!important}
+}
