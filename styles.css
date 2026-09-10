@@ -1481,3 +1481,27 @@ body.tv-mode .tv-ai{padding:7px 10px!important}
 body.tv-mode .tv-ai>b{font-size:20px!important;line-height:1.1!important}
 body.tv-mode .tv-ai>small{font-size:11px!important;line-height:1.16!important}
 }
+
+/* TV OPERACIONAL • base cartográfica real v16 • DEV */
+@media(min-width:1200px){
+  body.tv-mode .tv-map,
+  body.tv-mode .tv-map .leaflet-container,
+  body.tv-mode .tv-map.leaflet-container{
+    background:#91a8b5!important;
+  }
+  body.tv-mode .tv-map .leaflet-tile-pane{filter:saturate(.92) contrast(1.04) brightness(.96)!important}
+  body.tv-mode .tv-map .leaflet-overlay-pane svg{filter:none!important}
+  body.tv-mode .tv-map-panel>footer{
+    min-height:17px!important;
+    padding:1px 6px!important;
+    font-size:9px!important;
+    line-height:1.05!important;
+    opacity:.88!important;
+  }
+  body.tv-mode .tv-risk-critical{filter:drop-shadow(0 0 5px rgba(129,7,21,.55))!important}
+  body.tv-mode .tv-risk-high{filter:drop-shadow(0 0 4px rgba(196,70,9,.40))!important}
+  body.tv-mode .tv-risk-watch{filter:drop-shadow(0 0 2px rgba(140,105,8,.22))!important}
+}
+@media(min-width:1200px) and (max-height:820px){
+  body.tv-mode .tv-map-panel>footer{display:none!important}
+}
