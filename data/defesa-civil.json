@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T08:25:18-03:00",
-  "fonte_coletada_em": "2026-09-10T11:25:05Z",
+  "gerado_em": "2026-09-10T08:30:19-03:00",
+  "fonte_coletada_em": "2026-09-10T11:30:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
   "entradas_feed": 101,
-  "alertas_ativos": 8,
+  "alertas_ativos": 6,
   "eventos_geo": [
     {
       "id_alerta": "189563/2026",
@@ -34,21 +34,11 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T09:30:00+00:00",
-        "intensidade_estimada_mmh": 0.55,
-        "faixa_estimada_mmh": [
-          0.56,
-          0.56
-        ],
-        "dbz_medio": 18.8,
-        "pico_em": "2026-09-10T09:30:00+00:00",
-        "pico_estimado_mmh": 0.55,
-        "pico_dbz_medio": 18.8,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -87,7 +77,7 @@
           1.33
         ],
         "dbz_medio": 23.3,
-        "pico_em": "2026-09-10T09:30:00+00:00",
+        "pico_em": "2026-09-10T09:40:00+00:00",
         "pico_estimado_mmh": 1.04,
         "pico_dbz_medio": 23.3,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
@@ -129,177 +119,9 @@
           0.56
         ],
         "dbz_medio": 18.4,
-        "pico_em": "2026-09-10T09:30:00+00:00",
-        "pico_estimado_mmh": 0.77,
-        "pico_dbz_medio": 21.2,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189564/2026",
-      "municipio": "Rosana",
-      "latitude": -22.555282,
-      "longitude": -53.002195,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:05h43 Chuva forte em Rosana. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:05h43 Chuva forte em Rosana. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "05h43 Chuva forte em Rosana. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Severe",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T05:43:30-03:00",
-      "fim": "2026-09-10T08:30:00-03:00",
-      "vigencia": "2026-09-10T05:43:30-03:00 → 2026-09-10T08:30:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 2,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T10:40:00+00:00",
-        "intensidade_estimada_mmh": 0.13,
-        "faixa_estimada_mmh": [
-          0.12,
-          0.21
-        ],
-        "dbz_medio": 9.0,
-        "pico_em": "2026-09-10T09:30:00+00:00",
-        "pico_estimado_mmh": 10.35,
-        "pico_dbz_medio": 39.2,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189565/2026",
-      "municipio": "Itaporanga",
-      "latitude": -23.708333,
-      "longitude": -49.46758,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:05h47 Chuva na regiao de Itaporanga, Taquarituba e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:05h47 Chuva na regiao de Itaporanga, Taquarituba e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "05h47 Chuva na região de Itaporanga, Taquarituba e Taguaí. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T05:47:36-03:00",
-      "fim": "2026-09-10T08:30:00-03:00",
-      "vigencia": "2026-09-10T05:47:36-03:00 → 2026-09-10T08:30:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 3,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T11:20:00+00:00",
-        "intensidade_estimada_mmh": 1.35,
-        "faixa_estimada_mmh": [
-          1.15,
-          3.65
-        ],
-        "dbz_medio": 25.1,
-        "pico_em": "2026-09-10T10:00:00+00:00",
-        "pico_estimado_mmh": 3.06,
-        "pico_dbz_medio": 30.8,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189565/2026",
-      "municipio": "Taguaí",
-      "latitude": -23.454727,
-      "longitude": -49.399856,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:05h47 Chuva na regiao de Itaporanga, Taquarituba e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:05h47 Chuva na regiao de Itaporanga, Taquarituba e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "05h47 Chuva na região de Itaporanga, Taquarituba e Taguaí. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T05:47:36-03:00",
-      "fim": "2026-09-10T08:30:00-03:00",
-      "vigencia": "2026-09-10T05:47:36-03:00 → 2026-09-10T08:30:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 1,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T11:20:00+00:00",
-        "intensidade_estimada_mmh": 0.8,
-        "faixa_estimada_mmh": [
-          1.0,
-          2.05
-        ],
-        "dbz_medio": 21.4,
-        "pico_em": "2026-09-10T10:20:00+00:00",
-        "pico_estimado_mmh": 4.56,
-        "pico_dbz_medio": 33.6,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189565/2026",
-      "municipio": "Taquarituba",
-      "latitude": -23.525534,
-      "longitude": -49.243007,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:05h47 Chuva na regiao de Itaporanga, Taquarituba e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:05h47 Chuva na regiao de Itaporanga, Taquarituba e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "05h47 Chuva na região de Itaporanga, Taquarituba e Taguaí. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T05:47:36-03:00",
-      "fim": "2026-09-10T08:30:00-03:00",
-      "vigencia": "2026-09-10T05:47:36-03:00 → 2026-09-10T08:30:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 6,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T11:20:00+00:00",
-        "intensidade_estimada_mmh": 1.29,
-        "faixa_estimada_mmh": [
-          1.15,
-          3.16
-        ],
-        "dbz_medio": 24.8,
-        "pico_em": "2026-09-10T10:40:00+00:00",
-        "pico_estimado_mmh": 3.07,
-        "pico_dbz_medio": 30.8,
+        "pico_em": "2026-09-10T09:50:00+00:00",
+        "pico_estimado_mmh": 0.52,
+        "pico_dbz_medio": 18.4,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -381,9 +203,9 @@
           1.0
         ],
         "dbz_medio": 18.4,
-        "pico_em": "2026-09-10T09:30:00+00:00",
-        "pico_estimado_mmh": 3.83,
-        "pico_dbz_medio": 32.3,
+        "pico_em": "2026-09-10T09:40:00+00:00",
+        "pico_estimado_mmh": 3.74,
+        "pico_dbz_medio": 32.2,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -465,9 +287,9 @@
           1.33
         ],
         "dbz_medio": 23.3,
-        "pico_em": "2026-09-10T09:30:00+00:00",
-        "pico_estimado_mmh": 4.95,
-        "pico_dbz_medio": 34.1,
+        "pico_em": "2026-09-10T09:40:00+00:00",
+        "pico_estimado_mmh": 3.84,
+        "pico_dbz_medio": 32.4,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -591,9 +413,9 @@
           3.65
         ],
         "dbz_medio": 27.0,
-        "pico_em": "2026-09-10T09:30:00+00:00",
-        "pico_estimado_mmh": 1.82,
-        "pico_dbz_medio": 27.2,
+        "pico_em": "2026-09-10T11:20:00+00:00",
+        "pico_estimado_mmh": 1.78,
+        "pico_dbz_medio": 27.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -1191,6 +1013,106 @@
       ]
     },
     {
+      "id_alerta": "189564/2026",
+      "municipio": "Rosana",
+      "latitude": -22.555282,
+      "longitude": -53.002195,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h43 Chuva forte em Rosana. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:05h43 Chuva forte em Rosana. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "05h43 Chuva forte em Rosana. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T05:43:30-03:00",
+      "fim": "2026-09-10T08:30:00-03:00",
+      "vigencia": "2026-09-10T05:43:30-03:00 → 2026-09-10T08:30:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 2,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
+    },
+    {
+      "id_alerta": "189565/2026",
+      "municipio": "Itaporanga",
+      "latitude": -23.708333,
+      "longitude": -49.46758,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h47 Chuva na regiao de Itaporanga, Taquarituba e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:05h47 Chuva na regiao de Itaporanga, Taquarituba e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "05h47 Chuva na região de Itaporanga, Taquarituba e Taguaí. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T05:47:36-03:00",
+      "fim": "2026-09-10T08:30:00-03:00",
+      "vigencia": "2026-09-10T05:47:36-03:00 → 2026-09-10T08:30:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 3,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
+    },
+    {
+      "id_alerta": "189565/2026",
+      "municipio": "Taguaí",
+      "latitude": -23.454727,
+      "longitude": -49.399856,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h47 Chuva na regiao de Itaporanga, Taquarituba e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:05h47 Chuva na regiao de Itaporanga, Taquarituba e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "05h47 Chuva na região de Itaporanga, Taquarituba e Taguaí. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T05:47:36-03:00",
+      "fim": "2026-09-10T08:30:00-03:00",
+      "vigencia": "2026-09-10T05:47:36-03:00 → 2026-09-10T08:30:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
+    },
+    {
+      "id_alerta": "189565/2026",
+      "municipio": "Taquarituba",
+      "latitude": -23.525534,
+      "longitude": -49.243007,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h47 Chuva na regiao de Itaporanga, Taquarituba e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:05h47 Chuva na regiao de Itaporanga, Taquarituba e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "05h47 Chuva na região de Itaporanga, Taquarituba e Taguaí. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T05:47:36-03:00",
+      "fim": "2026-09-10T08:30:00-03:00",
+      "vigencia": "2026-09-10T05:47:36-03:00 → 2026-09-10T08:30:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
+    },
+    {
       "id_alerta": "189567/2026",
       "municipio": "Planalto",
       "latitude": -21.033837,
@@ -1295,9 +1217,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T11:25:22.220258+00:00",
+    "gerado_em": "2026-09-10T11:30:24.512233+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 16,
+    "eventos_com_eco": 11,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
