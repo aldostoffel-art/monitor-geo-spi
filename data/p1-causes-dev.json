@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-10T20:20:52.608390-03:00",
+  "gerado_em": "2026-09-10T20:22:16.263022-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-10T23:20:30.000Z",
+  "historico_grupos_fim": "2026-09-10T23:20:36.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -19072,6 +19072,13 @@
               ]
             },
             {
+              "site": "ISZ",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "ITT",
               "reincidente": false,
               "aberturas": 1,
@@ -20026,6 +20033,13 @@
           "parceira": "TEL",
           "sites": [
             {
+              "site": "J95",
+              "reincidente": true,
+              "aberturas": 2,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "MWS",
               "reincidente": true,
               "aberturas": 2,
@@ -20062,6 +20076,13 @@
                   "status": "MWS, DCM, RNR"
                 }
               ]
+            },
+            {
+              "site": "ORN",
+              "reincidente": true,
+              "aberturas": 2,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             },
             {
               "site": "RNR",
@@ -20153,6 +20174,13 @@
                   "status": "DSI, DBK, LN2, LN3, BRD, USJ, DVG, LRD, MWS, DCM, CRY, RNR, IPY"
                 }
               ]
+            },
+            {
+              "site": "BST",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             },
             {
               "site": "CRY",
@@ -20360,6 +20388,13 @@
               "evidencias": []
             },
             {
+              "site": "IPU",
+              "reincidente": false,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "IPY",
               "reincidente": true,
               "aberturas": 1,
@@ -20372,13 +20407,6 @@
                   "status": "DSI, DBK, LN2, LN3, BRD, USJ, DVG, LRD, MWS, DCM, CRY, RNR, IPY"
                 }
               ]
-            },
-            {
-              "site": "J95",
-              "reincidente": false,
-              "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
             },
             {
               "site": "KFB",
@@ -20503,13 +20531,6 @@
             },
             {
               "site": "OMI",
-              "reincidente": false,
-              "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
-            },
-            {
-              "site": "ORN",
               "reincidente": false,
               "aberturas": 1,
               "causa": "SEM CAUSA LOCALIZADA",
@@ -21316,6 +21337,20 @@
               ]
             },
             {
+              "site": "RXC",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "20:09",
+                  "grupo": "Móvel 16 - 17",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "Site RXC"
+                }
+              ]
+            },
+            {
               "site": "RY2",
               "reincidente": false,
               "aberturas": 1,
@@ -21802,6 +21837,20 @@
                   "status": "RCP, PQI, RJT, AC0, SFZ, DVN, MGR, ETG, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, DCS, FZS, EG0, MFZ, RPW, MMN, LND"
                 }
               ]
+            },
+            {
+              "site": "IIN",
+              "reincidente": true,
+              "aberturas": 2,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "IIR",
+              "reincidente": true,
+              "aberturas": 2,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             },
             {
               "site": "RJT",
@@ -22599,20 +22648,6 @@
                   "status": "RJT, ICL, SFZ, DVN, TPT, MGR, ETG, MYG, NAP, RCP, RAG, SIT, RC3, RZF, PXZ, UN2, RKC, ATA, LR4, MMI, SPO, DMF, VLW, MMV, EJT, MMD, AUW, RMA, BP9, LM9, RLR, 5AP, CR9, 0IV, AGP, CFP"
                 }
               ]
-            },
-            {
-              "site": "IIN",
-              "reincidente": true,
-              "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
-            },
-            {
-              "site": "IIR",
-              "reincidente": true,
-              "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
             },
             {
               "site": "IUA",
@@ -23547,7 +23582,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 234
+      "mensagens_grupos_no_dia": 235
     }
   ],
   "ativos_agora": [
@@ -23555,31 +23590,6 @@
       "cn": "11",
       "parceira": "ABILITY",
       "sites": [
-        {
-          "site": "BSH",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "16:34",
-              "grupo": "Móvel 16 - 17",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "STF, MAB, IFS, IOO, IZM, IJZ, PNT, MNN, BSH, IRE"
-            },
-            {
-              "hora": "16:34",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "STF, MAB, IFS, IOO, IZM, IJZ, PNT, MNN, BSH, IRE"
-            },
-            {
-              "hora": "16:34",
-              "grupo": "Movel N1 SPA",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "STF, MAB, IFS, IOO, IZM, IJZ, PNT, MNN, BSH, IRE"
-            }
-          ],
-          "idade_ativa_h": 0.32
-        },
         {
           "site": "IFS",
           "causa": "NÃO IDENTIFICADA",
@@ -23615,7 +23625,7 @@
               "status": "STF, RZH, MFY, IFS, IJZ"
             }
           ],
-          "idade_ativa_h": 7.67
+          "idade_ativa_h": 7.7
         },
         {
           "site": "IJZ",
@@ -23652,7 +23662,13 @@
               "status": "STF, RZH, MFY, IFS, IJZ"
             }
           ],
-          "idade_ativa_h": 6.01
+          "idade_ativa_h": 6.04
+        },
+        {
+          "site": "ISZ",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "MFY",
@@ -23689,7 +23705,7 @@
               "status": "STF, RZH, MFY, IFS, IJZ"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.04
         },
         {
           "site": "RZH",
@@ -23726,7 +23742,7 @@
               "status": "STF, RZH, MFY, IFS, IJZ"
             }
           ],
-          "idade_ativa_h": 2.34
+          "idade_ativa_h": 2.37
         },
         {
           "site": "STF",
@@ -23763,7 +23779,7 @@
               "status": "STF, RZH, MFY, IFS, IJZ"
             }
           ],
-          "idade_ativa_h": 115.66
+          "idade_ativa_h": 115.69
         }
       ]
     },
@@ -23794,7 +23810,7 @@
               "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
             }
           ],
-          "idade_ativa_h": 2.01
+          "idade_ativa_h": 2.04
         },
         {
           "site": "BN1",
@@ -23819,7 +23835,7 @@
               "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
             }
           ],
-          "idade_ativa_h": 2.01
+          "idade_ativa_h": 2.04
         },
         {
           "site": "C2J",
@@ -23844,7 +23860,7 @@
               "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.04
         },
         {
           "site": "CJY",
@@ -23869,7 +23885,7 @@
               "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
             }
           ],
-          "idade_ativa_h": 2.34
+          "idade_ativa_h": 2.37
         },
         {
           "site": "CPR",
@@ -23894,7 +23910,7 @@
               "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.04
         },
         {
           "site": "CRR",
@@ -23919,7 +23935,7 @@
               "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
             }
           ],
-          "idade_ativa_h": 0.67
+          "idade_ativa_h": 0.7
         },
         {
           "site": "OEP",
@@ -23956,7 +23972,7 @@
               "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
             }
           ],
-          "idade_ativa_h": 6.67
+          "idade_ativa_h": 6.7
         },
         {
           "site": "OP9",
@@ -23981,7 +23997,7 @@
               "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
             }
           ],
-          "idade_ativa_h": 0.67
+          "idade_ativa_h": 0.7
         },
         {
           "site": "PHM",
@@ -24012,7 +24028,7 @@
               "status": "Tem falha em PHM, estamos já em deslocamento para o local"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.04
         },
         {
           "site": "PHR",
@@ -24037,7 +24053,7 @@
               "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.04
         },
         {
           "site": "PMP",
@@ -24062,32 +24078,7 @@
               "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
             }
           ],
-          "idade_ativa_h": 0.67
-        },
-        {
-          "site": "S3Q",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "19:55",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
-            }
-          ],
-          "idade_ativa_h": 4.01
+          "idade_ativa_h": 0.7
         },
         {
           "site": "SBP",
@@ -24112,7 +24103,7 @@
               "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
             }
           ],
-          "idade_ativa_h": 0.67
+          "idade_ativa_h": 0.7
         },
         {
           "site": "TVM",
@@ -24137,7 +24128,7 @@
               "status": "OEP, S3Q, CJY, APY, BN1, CRR, C2J, TVM, PHR, PHM, CPR, OP9, SBP, PMP"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.04
         }
       ]
     },
@@ -24145,6 +24136,12 @@
       "cn": "14",
       "parceira": "TEL",
       "sites": [
+        {
+          "site": "BST",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
         {
           "site": "DCM",
           "causa": "NÃO IDENTIFICADA",
@@ -24180,44 +24177,25 @@
               "status": "MWS, DCM, RNR"
             }
           ],
-          "idade_ativa_h": 7.67
+          "idade_ativa_h": 7.7
         },
         {
-          "site": "MWS",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "12:43",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "DSI, DBK, LN2, LN3, BRD, USJ, DVG, LRD, MWS, DCM, CRY"
-            },
-            {
-              "hora": "13:44",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "DSI, DBK, LN2, LN3, BRD, USJ, DVG, LRD, MWS, DCM, CRY, RNR, IPY"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "MWS, DCM, RNR"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "MWS, DCM, RNR"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "MWS, DCM, RNR"
-            }
-          ],
-          "idade_ativa_h": 2.67
+          "site": "IPU",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "J95",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "ORN",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         }
       ]
     },
@@ -24229,7 +24207,7 @@
           "site": "CHH",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.32
+          "idade_ativa_h": 0.35
         }
       ]
     },
@@ -24272,7 +24250,7 @@
               "status": "IFG, FKS, IFM, ANP"
             }
           ],
-          "idade_ativa_h": 4.01
+          "idade_ativa_h": 4.04
         },
         {
           "site": "FKS",
@@ -24309,7 +24287,7 @@
               "status": "IFG, FKS, IFM, ANP"
             }
           ],
-          "idade_ativa_h": 4.01
+          "idade_ativa_h": 4.04
         },
         {
           "site": "IFG",
@@ -24346,7 +24324,7 @@
               "status": "IFG, FKS, IFM, ANP"
             }
           ],
-          "idade_ativa_h": 6.67
+          "idade_ativa_h": 6.7
         },
         {
           "site": "IFM",
@@ -24383,7 +24361,20 @@
               "status": "IFG, FKS, IFM, ANP"
             }
           ],
-          "idade_ativa_h": 4.01
+          "idade_ativa_h": 4.04
+        },
+        {
+          "site": "RXC",
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "20:09",
+              "grupo": "Móvel 16 - 17",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "Site RXC"
+            }
+          ],
+          "idade_ativa_h": 0.04
         }
       ]
     },
@@ -24391,37 +24382,6 @@
       "cn": "18",
       "parceira": "TEL",
       "sites": [
-        {
-          "site": "AG3",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "19:14",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT, AHU"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT, AHU"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT, AHU"
-            }
-          ],
-          "idade_ativa_h": 1.67
-        },
         {
           "site": "AHU",
           "causa": "NÃO IDENTIFICADA",
@@ -24445,38 +24405,7 @@
               "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT, AHU"
             }
           ],
-          "idade_ativa_h": 0.67
-        },
-        {
-          "site": "DKN",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "19:14",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT, AHU"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT, AHU"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT, AHU"
-            }
-          ],
-          "idade_ativa_h": 1.67
+          "idade_ativa_h": 0.7
         },
         {
           "site": "DMX",
@@ -24513,7 +24442,7 @@
               "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT, AHU"
             }
           ],
-          "idade_ativa_h": 4.01
+          "idade_ativa_h": 4.04
         },
         {
           "site": "EPT",
@@ -24544,38 +24473,7 @@
               "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT, AHU"
             }
           ],
-          "idade_ativa_h": 1.31
-        },
-        {
-          "site": "PC4",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "19:14",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT, AHU"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT, AHU"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT, AHU"
-            }
-          ],
-          "idade_ativa_h": 1.31
+          "idade_ativa_h": 1.34
         },
         {
           "site": "U50",
@@ -24612,7 +24510,7 @@
               "status": "U50, DMX, PIT, AG3, DKN, PC4, EPT, AHU"
             }
           ],
-          "idade_ativa_h": 1019.01
+          "idade_ativa_h": 1019.04
         }
       ]
     },
@@ -24643,7 +24541,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 0.67
+          "idade_ativa_h": 0.7
         },
         {
           "site": "AC0",
@@ -24680,7 +24578,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 5.67
+          "idade_ativa_h": 5.7
         },
         {
           "site": "AGP",
@@ -24717,7 +24615,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 6.01
+          "idade_ativa_h": 6.04
         },
         {
           "site": "AUW",
@@ -24754,7 +24652,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 6.01
+          "idade_ativa_h": 6.04
         },
         {
           "site": "CFP",
@@ -24791,7 +24689,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 6.01
+          "idade_ativa_h": 6.04
         },
         {
           "site": "CR9",
@@ -24828,7 +24726,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 6.01
+          "idade_ativa_h": 6.04
         },
         {
           "site": "DMF",
@@ -24865,7 +24763,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 6.01
+          "idade_ativa_h": 6.04
         },
         {
           "site": "DVN",
@@ -24902,7 +24800,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 8.01
+          "idade_ativa_h": 8.04
         },
         {
           "site": "EG0",
@@ -24939,7 +24837,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 3.67
+          "idade_ativa_h": 3.7
         },
         {
           "site": "EJT",
@@ -24976,7 +24874,19 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 6.01
+          "idade_ativa_h": 6.04
+        },
+        {
+          "site": "IIN",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
+        },
+        {
+          "site": "IIR",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "LR4",
@@ -25013,7 +24923,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 6.01
+          "idade_ativa_h": 6.04
         },
         {
           "site": "MMI",
@@ -25050,44 +24960,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 6.01
-        },
-        {
-          "site": "MMN",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "18:47",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "RCP, PQI, RJT, AC0, SFZ, DVN, MGR, ETG, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, 0IV, AGP, CFP, DCS, FZS, EG0, MFZ, RPW, MMN, LND"
-            },
-            {
-              "hora": "19:14",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "RCP, PQI, RJT, AC0, SFZ, DVN, MGR, ETG, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, DCS, FZS, EG0, MFZ, RPW, MMN, LND"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
-            }
-          ],
-          "idade_ativa_h": 2.01
+          "idade_ativa_h": 6.04
         },
         {
           "site": "PQI",
@@ -25124,44 +24997,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 4.01
-        },
-        {
-          "site": "RJT",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "18:47",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "RCP, PQI, RJT, AC0, SFZ, DVN, MGR, ETG, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, 0IV, AGP, CFP, DCS, FZS, EG0, MFZ, RPW, MMN, LND"
-            },
-            {
-              "hora": "19:14",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "RCP, PQI, RJT, AC0, SFZ, DVN, MGR, ETG, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, DCS, FZS, EG0, MFZ, RPW, MMN, LND"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
-            }
-          ],
-          "idade_ativa_h": 2.34
+          "idade_ativa_h": 4.04
         },
         {
           "site": "RKC",
@@ -25198,44 +25034,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 6.01
-        },
-        {
-          "site": "RPW",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "18:47",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "RCP, PQI, RJT, AC0, SFZ, DVN, MGR, ETG, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, 0IV, AGP, CFP, DCS, FZS, EG0, MFZ, RPW, MMN, LND"
-            },
-            {
-              "hora": "19:14",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "RCP, PQI, RJT, AC0, SFZ, DVN, MGR, ETG, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, DCS, FZS, EG0, MFZ, RPW, MMN, LND"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
-            },
-            {
-              "hora": "19:55",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
-            }
-          ],
-          "idade_ativa_h": 2.34
+          "idade_ativa_h": 6.04
         },
         {
           "site": "RZF",
@@ -25272,7 +25071,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 6.01
+          "idade_ativa_h": 6.04
         },
         {
           "site": "SFZ",
@@ -25309,7 +25108,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 6.01
+          "idade_ativa_h": 6.04
         },
         {
           "site": "SPO",
@@ -25346,7 +25145,7 @@
               "status": "PQI, RJT, AC0, SFZ, DVN, RKC, LR4, RZF, MMI, SPO, DMF, EJT, AUW, CR9, AGP, CFP, FZS, EG0, RPW, MMN, 1JU"
             }
           ],
-          "idade_ativa_h": 6.01
+          "idade_ativa_h": 6.04
         }
       ]
     }
