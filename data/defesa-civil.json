@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T01:10:24-03:00",
-  "fonte_coletada_em": "2026-09-10T04:10:06Z",
+  "gerado_em": "2026-09-10T01:15:16-03:00",
+  "fonte_coletada_em": "2026-09-10T04:15:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 119,
-  "alertas_ativos": 13,
+  "entradas_feed": 120,
+  "alertas_ativos": 14,
   "eventos_geo": [
     {
       "id_alerta": "189503/2026",
@@ -823,6 +823,48 @@
       "inicio": "2026-09-10T01:02:38-03:00",
       "fim": "2026-09-10T03:00:00-03:00",
       "vigencia": "2026-09-10T01:02:38-03:00 → 2026-09-10T03:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T04:00:00+00:00",
+        "intensidade_estimada_mmh": 1.92,
+        "faixa_estimada_mmh": [
+          2.05,
+          3.16
+        ],
+        "dbz_medio": 27.5,
+        "pico_em": "2026-09-10T03:20:00+00:00",
+        "pico_estimado_mmh": 3.34,
+        "pico_dbz_medio": 31.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189533/2026",
+      "municipio": "Planalto",
+      "latitude": -21.033837,
+      "longitude": -49.929461,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "resumo": "OBSERVAÇÃO - 10/09 01:08 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para áreas das regiões do Planalto Sul e Litoral Sul nas próximas 3 horas. Ocorrências ligue 199 ou 193.",
+      "descricao": "OBSERVAÇÃO - 10/09 01:08 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para áreas das regiões do Planalto Sul e Litoral Sul nas próximas 3 horas. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T01:11:03-03:00",
+      "fim": "2026-09-10T04:10:00-03:00",
+      "vigencia": "2026-09-10T01:11:03-03:00 → 2026-09-10T04:10:00-03:00",
       "status": "ATIVO_OFICIAL",
       "fonte": "Defesa Civil / IDAP-CAP",
       "sender": "CENAD-SEDEC",
@@ -1681,7 +1723,7 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T04:10:30.615215+00:00",
+    "gerado_em": "2026-09-10T04:15:18.837967+00:00",
     "janela_min": 120,
     "eventos_com_eco": 13,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
