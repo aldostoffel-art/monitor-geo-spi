@@ -1,22 +1,135 @@
 {
-  "gerado_em": "2026-09-10T12:20:37.822471+00:00",
+  "gerado_em": "2026-09-10T12:25:19.334260+00:00",
   "ambiente": "DEV",
-  "mudanca_relevante": false,
-  "fingerprint": "d9cafe299720f5b78865c219b34667eea742c77d0dfb997d8caf8d9c62ded0ae",
+  "mudanca_relevante": true,
+  "fingerprint": "6099041bdbf1546edebc1643543a201a84a9a3a7cc488deaf82f9dcf7c1657f9",
   "nivel": "ALTO",
-  "agora": "Sinal externo em Poços de Caldas/MG aponta risco para o corredor MOGI/CAMPINAS",
-  "proximas_horas": "Potencial avanço para Mogi Mirim/Campinas nas próximas horas; rajada até 42 km/h e chuva horária até 7.1 mm",
-  "rede_exposta": "173 trecho(s) Backbone cruzam o corredor potencial",
+  "agora": "Sinal externo em Extrema/MG aponta risco para o corredor BRAGANÇA/JUNDIAÍ",
+  "proximas_horas": "Potencial avanço para Bragança/Jundiaí nas próximas horas; rajada até 40 km/h e chuva horária até 3.9 mm",
+  "rede_exposta": "194 trecho(s) Backbone cruzam o corredor potencial",
   "recomendacao": "Validar preventivamente redundância: 0/5 trechos amostrados têm caminho lógico alternativo fora do corredor",
   "ameacas_externas": [
+    {
+      "nome": "Extrema/MG",
+      "corredor": "BRAGANÇA/JUNDIAÍ",
+      "alvo": "Bragança/Jundiaí",
+      "score": 65,
+      "tempestade": true,
+      "chuva_pico_mmh": 3.9,
+      "rajada_pico_kmh": 40.3,
+      "prob_chuva_pico": 100,
+      "eta_sinal_externo": "2026-09-10T12:00:00+00:00",
+      "backbones_no_corredor": 194,
+      "backbones_amostra": [
+        {
+          "id": "BB-3C900B7518B0",
+          "trecho": "ITA.CS-JAI.CB",
+          "cabo": null,
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "JAI.CB"
+        },
+        {
+          "id": "BB-2C51396CDA9F",
+          "trecho": "ITA.CS-JIU.DI",
+          "cabo": null,
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "JIU.DI"
+        },
+        {
+          "id": "BB-9162D38646F9",
+          "trecho": "ITA.CS-MNB.MG",
+          "cabo": null,
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "MNB.MG"
+        },
+        {
+          "id": "BB-3748FCBCA5D9",
+          "trecho": "ITA.CS-ITA.RD",
+          "cabo": "F-0171",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "ITA.RD"
+        },
+        {
+          "id": "BB-EB251B41B3B5",
+          "trecho": "ITA.CS-ITA.MD",
+          "cabo": "F-0802",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "ITA.MD"
+        },
+        {
+          "id": "BB-6EA5DE9EED94",
+          "trecho": "ITA.CS-JAI.RA",
+          "cabo": "F-0949",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "JAI.RA"
+        },
+        {
+          "id": "BB-C05A537BBE84",
+          "trecho": "BGP.DN-BGP.SC",
+          "cabo": "F-0675",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.8,
+          "ponta_a": "BGP.DN",
+          "ponta_b": "BGP.SC"
+        },
+        {
+          "id": "BB-DC8A665988EE",
+          "trecho": "BGP.AV-BGP.SC",
+          "cabo": "F-0395",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 2.6,
+          "ponta_a": "BGP.AV",
+          "ponta_b": "BGP.SC"
+        }
+      ],
+      "alternativas": [
+        {
+          "trecho": "ITA.CS-JAI.CB",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "ITA.CS-JIU.DI",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "ITA.CS-MNB.MG",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "ITA.CS-ITA.RD",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "ITA.CS-ITA.MD",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        }
+      ]
+    },
     {
       "nome": "Poços de Caldas/MG",
       "corredor": "MOGI/CAMPINAS",
       "alvo": "Mogi Mirim/Campinas",
       "score": 65,
       "tempestade": true,
-      "chuva_pico_mmh": 7.1,
-      "rajada_pico_kmh": 41.8,
+      "chuva_pico_mmh": 3.8,
+      "rajada_pico_kmh": 40.0,
       "prob_chuva_pico": 98,
       "eta_sinal_externo": "2026-09-10T13:00:00+00:00",
       "backbones_no_corredor": 173,
@@ -123,339 +236,226 @@
       ]
     },
     {
-      "nome": "Extrema/MG",
-      "corredor": "BRAGANÇA/JUNDIAÍ",
-      "alvo": "Bragança/Jundiaí",
-      "score": 55,
-      "tempestade": true,
-      "chuva_pico_mmh": 4.6,
-      "rajada_pico_kmh": 33.5,
-      "prob_chuva_pico": 100,
-      "eta_sinal_externo": "2026-09-10T13:00:00+00:00",
-      "backbones_no_corredor": 194,
-      "backbones_amostra": [
-        {
-          "id": "BB-3C900B7518B0",
-          "trecho": "ITA.CS-JAI.CB",
-          "cabo": null,
-          "cluster": "JUNDIAI",
-          "dist_corredor_km": 1.7,
-          "ponta_a": "ITA.CS",
-          "ponta_b": "JAI.CB"
-        },
-        {
-          "id": "BB-2C51396CDA9F",
-          "trecho": "ITA.CS-JIU.DI",
-          "cabo": null,
-          "cluster": "JUNDIAI",
-          "dist_corredor_km": 1.7,
-          "ponta_a": "ITA.CS",
-          "ponta_b": "JIU.DI"
-        },
-        {
-          "id": "BB-9162D38646F9",
-          "trecho": "ITA.CS-MNB.MG",
-          "cabo": null,
-          "cluster": "JUNDIAI",
-          "dist_corredor_km": 1.7,
-          "ponta_a": "ITA.CS",
-          "ponta_b": "MNB.MG"
-        },
-        {
-          "id": "BB-3748FCBCA5D9",
-          "trecho": "ITA.CS-ITA.RD",
-          "cabo": "F-0171",
-          "cluster": "JUNDIAI",
-          "dist_corredor_km": 1.7,
-          "ponta_a": "ITA.CS",
-          "ponta_b": "ITA.RD"
-        },
-        {
-          "id": "BB-EB251B41B3B5",
-          "trecho": "ITA.CS-ITA.MD",
-          "cabo": "F-0802",
-          "cluster": "JUNDIAI",
-          "dist_corredor_km": 1.7,
-          "ponta_a": "ITA.CS",
-          "ponta_b": "ITA.MD"
-        },
-        {
-          "id": "BB-6EA5DE9EED94",
-          "trecho": "ITA.CS-JAI.RA",
-          "cabo": "F-0949",
-          "cluster": "JUNDIAI",
-          "dist_corredor_km": 1.7,
-          "ponta_a": "ITA.CS",
-          "ponta_b": "JAI.RA"
-        },
-        {
-          "id": "BB-C05A537BBE84",
-          "trecho": "BGP.DN-BGP.SC",
-          "cabo": "F-0675",
-          "cluster": "JUNDIAI",
-          "dist_corredor_km": 1.8,
-          "ponta_a": "BGP.DN",
-          "ponta_b": "BGP.SC"
-        },
-        {
-          "id": "BB-DC8A665988EE",
-          "trecho": "BGP.AV-BGP.SC",
-          "cabo": "F-0395",
-          "cluster": "JUNDIAI",
-          "dist_corredor_km": 2.6,
-          "ponta_a": "BGP.AV",
-          "ponta_b": "BGP.SC"
-        }
-      ],
-      "alternativas": [
-        {
-          "trecho": "ITA.CS-JAI.CB",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "ITA.CS-JIU.DI",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "ITA.CS-MNB.MG",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "ITA.CS-ITA.RD",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "ITA.CS-ITA.MD",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        }
-      ]
-    },
-    {
-      "nome": "Itajubá/MG",
-      "corredor": "VALE DO PARAÍBA",
-      "alvo": "Piquete/Lorena/Guaratinguetá",
-      "score": 55,
+      "nome": "Uberaba/MG",
+      "corredor": "NORTE",
+      "alvo": "Franca/Ribeirão Preto",
+      "score": 65,
       "tempestade": true,
       "chuva_pico_mmh": 5.7,
-      "rajada_pico_kmh": 30.6,
-      "prob_chuva_pico": 100,
-      "eta_sinal_externo": "2026-09-10T12:00:00+00:00",
-      "backbones_no_corredor": 24,
+      "rajada_pico_kmh": 46.8,
+      "prob_chuva_pico": 73,
+      "eta_sinal_externo": "2026-09-10T18:00:00+00:00",
+      "backbones_no_corredor": 21,
       "backbones_amostra": [
         {
-          "id": "BB-40A6669129DA",
-          "trecho": "CUH.PG-GTA.MF",
-          "cabo": "F-0161",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 10.6,
-          "ponta_a": "CUH.PG",
-          "ponta_b": "GTA.MF"
+          "id": "BB-6FF41472D388",
+          "trecho": "FCA.MR-FCA.RD",
+          "cabo": "F-0279",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 0.2,
+          "ponta_a": "FCA.MR",
+          "ponta_b": "FCA.RD"
         },
         {
-          "id": "BB-9A1B2BF056E7",
-          "trecho": "GTA.MF-QUZ.BD",
-          "cabo": "F-0934",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 10.6,
-          "ponta_a": "GTA.MF",
-          "ponta_b": "QUZ.BD"
+          "id": "BB-FDD9A25BEAC1",
+          "trecho": "FAC.MR-RTG.SA",
+          "cabo": "F-0227",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 0.7,
+          "ponta_a": "FAC.MR",
+          "ponta_b": "RTG.SA"
         },
         {
-          "id": "BB-28B7B0A33C51",
-          "trecho": "GTA.MF-LNA.VA",
-          "cabo": "F-0105",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 10.6,
-          "ponta_a": "GTA.MF",
-          "ponta_b": "LNA.VA"
+          "id": "BB-B9225D4563A2",
+          "trecho": "IPV.RD-IPV.WR",
+          "cabo": "F-0276",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 0.8,
+          "ponta_a": "IPV.RD",
+          "ponta_b": "IPV.WR"
         },
         {
-          "id": "BB-825A1B0C56F7",
-          "trecho": "GTA.MF-GTA.RC",
-          "cabo": "F-0107",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 10.6,
-          "ponta_a": "GTA.MF",
-          "ponta_b": "GTA.RC"
+          "id": "BB-921D9E5DE26B",
+          "trecho": "IPV.RD-IPV.SM",
+          "cabo": "F-0234",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 0.8,
+          "ponta_a": "IPV.RD",
+          "ponta_b": "IPV.SM"
         },
         {
-          "id": "BB-B43151E51873",
-          "trecho": "GTA.MF-GTA.NG",
-          "cabo": "F-0104",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 10.6,
-          "ponta_a": "GTA.MF",
-          "ponta_b": "GTA.NG"
+          "id": "BB-F47EE7B91B4E",
+          "trecho": "IPV.WR-RPO.NO",
+          "cabo": "F-0260",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 1.4,
+          "ponta_a": "IPV.WR",
+          "ponta_b": "RPO.NO"
         },
         {
-          "id": "BB-1131EFC2E3A2",
-          "trecho": "GTA.MF-POTM.PO",
-          "cabo": "F-0103",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 10.6,
-          "ponta_a": "GTA.MF",
-          "ponta_b": "POTM.PO"
+          "id": "BB-61CAF5F5613E",
+          "trecho": "IPV.SM-RFA.CP",
+          "cabo": "F-0278",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 1.6,
+          "ponta_a": "IPV.SM",
+          "ponta_b": "RFA.CP"
         },
         {
-          "id": "BB-28F002053BFB",
-          "trecho": "ADA.CT-GTA.MF",
-          "cabo": "F-0101",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 13.9,
-          "ponta_a": "ADA.CT",
-          "ponta_b": "GTA.MF"
+          "id": "BB-164D94C01879",
+          "trecho": "IPV.SM-SQB.SS",
+          "cabo": "F-0260",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 1.6,
+          "ponta_a": "IPV.SM",
+          "ponta_b": "SQB.SS"
         },
         {
-          "id": "BB-DEE383CEDD39",
-          "trecho": "ADA.CT-RSA.DE",
-          "cabo": "F-0101",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 13.9,
-          "ponta_a": "ADA.CT",
-          "ponta_b": "RSA.DE"
+          "id": "BB-D11A166B28EA",
+          "trecho": "FCA.RD-RTG.SA",
+          "cabo": "F-0279",
+          "cluster": "RIBEIRAO PRETO",
+          "dist_corredor_km": 2.0,
+          "ponta_a": "FCA.RD",
+          "ponta_b": "RTG.SA"
         }
       ],
       "alternativas": [
         {
-          "trecho": "CUH.PG-GTA.MF",
+          "trecho": "FCA.MR-FCA.RD",
           "alternativa_logica": false,
           "caminho_potencial": []
         },
         {
-          "trecho": "GTA.MF-QUZ.BD",
+          "trecho": "FAC.MR-RTG.SA",
           "alternativa_logica": false,
           "caminho_potencial": []
         },
         {
-          "trecho": "GTA.MF-LNA.VA",
+          "trecho": "IPV.RD-IPV.WR",
           "alternativa_logica": false,
           "caminho_potencial": []
         },
         {
-          "trecho": "GTA.MF-GTA.RC",
+          "trecho": "IPV.RD-IPV.SM",
           "alternativa_logica": false,
           "caminho_potencial": []
         },
         {
-          "trecho": "GTA.MF-GTA.NG",
+          "trecho": "IPV.WR-RPO.NO",
           "alternativa_logica": false,
           "caminho_potencial": []
         }
       ]
     },
     {
-      "nome": "Três Lagoas/MS",
-      "corredor": "NOROESTE",
-      "alvo": "Andradina/Araçatuba",
-      "score": 45,
+      "nome": "Maringá/PR",
+      "corredor": "OESTE",
+      "alvo": "Presidente Prudente/Assis",
+      "score": 65,
       "tempestade": true,
-      "chuva_pico_mmh": 2.5,
-      "rajada_pico_kmh": 33.8,
-      "prob_chuva_pico": 84,
-      "eta_sinal_externo": "2026-09-10T15:00:00+00:00",
-      "backbones_no_corredor": 53,
+      "chuva_pico_mmh": 4.9,
+      "rajada_pico_kmh": 43.2,
+      "prob_chuva_pico": 98,
+      "eta_sinal_externo": "2026-09-10T14:00:00+00:00",
+      "backbones_no_corredor": 8,
       "backbones_amostra": [
         {
-          "id": "BB-6B37098846A7",
-          "trecho": "BTA.FP-TUB.SG",
-          "cabo": "F-0019",
+          "id": "BB-8C8ED3016579",
+          "trecho": "AHU.RJ-RGF.MF",
+          "cabo": "F-0103.2",
           "cluster": "ARACATUBA",
-          "dist_corredor_km": 1.6,
-          "ponta_a": "BTA.FP",
-          "ponta_b": "TUB.SG"
+          "dist_corredor_km": 22.7,
+          "ponta_a": "AHU.RJ",
+          "ponta_b": "RGF.MF"
         },
         {
-          "id": "BB-B89104A69BEE",
-          "trecho": "BTA.FP-ZACA.ZA",
-          "cabo": "F-0020",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 1.6,
-          "ponta_a": "BTA.FP",
-          "ponta_b": "ZACA.ZA"
-        },
-        {
-          "id": "BB-74F823228CD7",
-          "trecho": "BTA.FP-LUDS.LD",
-          "cabo": "F-0043",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 1.6,
-          "ponta_a": "BTA.FP",
-          "ponta_b": "LUDS.LD"
-        },
-        {
-          "id": "BB-D1A347491F82",
-          "trecho": "STAR.AG-VNOO.VN",
-          "cabo": "F-0101",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 5.1,
-          "ponta_a": "STAR.AG",
-          "ponta_b": "VNOO.VN"
-        },
-        {
-          "id": "BB-D0014919493A",
-          "trecho": "STAR.AG-STAR.MJ",
+          "id": "BB-945CFE97CA5B",
+          "trecho": "PPZ.JA-TAR.SS",
           "cabo": "F-0102",
           "cluster": "ARACATUBA",
-          "dist_corredor_km": 5.1,
-          "ponta_a": "STAR.AG",
-          "ponta_b": "STAR.MJ"
+          "dist_corredor_km": 29.2,
+          "ponta_a": "PPZ.JA",
+          "ponta_b": "TAR.SS"
         },
         {
-          "id": "BB-4CEAC78AEC7A",
-          "trecho": "LUDS.LD-NLZ.TM",
-          "cabo": "TR-0247",
+          "id": "BB-2BCE0DD8FE86",
+          "trecho": "PPZ.JA-PPZ.RD",
+          "cabo": "F-0101",
           "cluster": "ARACATUBA",
-          "dist_corredor_km": 7.2,
-          "ponta_a": "LUDS.LD",
-          "ponta_b": "NLZ.TM"
+          "dist_corredor_km": 29.2,
+          "ponta_a": "PPZ.JA",
+          "ponta_b": "PPZ.RD"
         },
         {
-          "id": "BB-5B9FD2B1D073",
-          "trecho": "CTH.SM-ILHS.IS",
-          "cabo": "TR-0250",
+          "id": "BB-7A94C061DEE4",
+          "trecho": "RGF.MF-TCI.FT",
+          "cabo": "F-0103",
           "cluster": "ARACATUBA",
-          "dist_corredor_km": 8.7,
-          "ponta_a": "CTH.SM",
-          "ponta_b": "ILHS.IS"
+          "dist_corredor_km": 31.4,
+          "ponta_a": "RGF.MF",
+          "ponta_b": "TCI.FT"
         },
         {
-          "id": "BB-A82F5056FD9F",
-          "trecho": "ADD.AD-DRA.RB",
-          "cabo": "F-0239",
+          "id": "BB-0C4F92D97003",
+          "trecho": "IDI.CW-RGF.MF",
+          "cabo": "F-0101",
           "cluster": "ARACATUBA",
-          "dist_corredor_km": 9.5,
-          "ponta_a": "ADD.AD",
-          "ponta_b": "DRA.RB"
+          "dist_corredor_km": 37.1,
+          "ponta_a": "IDI.CW",
+          "ponta_b": "RGF.MF"
+        },
+        {
+          "id": "BB-B057C8D20161",
+          "trecho": "IDI.CW-MPO.PJ",
+          "cabo": "F-0111",
+          "cluster": "ARACATUBA",
+          "dist_corredor_km": 37.1,
+          "ponta_a": "IDI.CW",
+          "ponta_b": "MPO.PJ"
+        },
+        {
+          "id": "BB-8087B20528E9",
+          "trecho": "PPE.RB-RGF.MF",
+          "cabo": "F-0107",
+          "cluster": "ARACATUBA",
+          "dist_corredor_km": 37.8,
+          "ponta_a": "PPE.RB",
+          "ponta_b": "RGF.MF"
+        },
+        {
+          "id": "BB-0F44F74448D9",
+          "trecho": "PPE.RB-PPZ.JA",
+          "cabo": "F-0109",
+          "cluster": "ARACATUBA",
+          "dist_corredor_km": 37.9,
+          "ponta_a": "PPE.RB",
+          "ponta_b": "PPZ.JA"
         }
       ],
       "alternativas": [
         {
-          "trecho": "BTA.FP-TUB.SG",
+          "trecho": "AHU.RJ-RGF.MF",
           "alternativa_logica": false,
           "caminho_potencial": []
         },
         {
-          "trecho": "BTA.FP-ZACA.ZA",
+          "trecho": "PPZ.JA-TAR.SS",
           "alternativa_logica": false,
           "caminho_potencial": []
         },
         {
-          "trecho": "BTA.FP-LUDS.LD",
+          "trecho": "PPZ.JA-PPZ.RD",
           "alternativa_logica": false,
           "caminho_potencial": []
         },
         {
-          "trecho": "STAR.AG-VNOO.VN",
+          "trecho": "RGF.MF-TCI.FT",
           "alternativa_logica": false,
           "caminho_potencial": []
         },
         {
-          "trecho": "STAR.AG-STAR.MJ",
+          "trecho": "IDI.CW-RGF.MF",
           "alternativa_logica": false,
           "caminho_potencial": []
         }
