@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T10:45:22-03:00",
-  "fonte_coletada_em": "2026-09-10T13:45:08Z",
+  "gerado_em": "2026-09-10T10:55:24-03:00",
+  "fonte_coletada_em": "2026-09-10T13:55:07Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 123,
-  "alertas_ativos": 13,
+  "entradas_feed": 122,
+  "alertas_ativos": 9,
   "eventos_geo": [
     {
       "id_alerta": "189583/2026",
@@ -39,90 +39,6 @@
         "metodo": "Radar composto",
         "janela_min": 120,
         "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
-      }
-    },
-    {
-      "id_alerta": "189587/2026",
-      "municipio": "Assis",
-      "latitude": -22.655889,
-      "longitude": -50.420681,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:08h30 Chuva intensa na regiao de Assis e Ourinhos. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:08h30 Chuva intensa na regiao de Assis e Ourinhos. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "08h30 Chuva intensa na região de Assis e Ourinhos. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Severe",
-      "urgencia": "Expected",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T08:34:08-03:00",
-      "fim": "2026-09-10T10:55:00-03:00",
-      "vigencia": "2026-09-10T08:34:08-03:00 → 2026-09-10T10:55:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 15,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 0.28,
-        "faixa_estimada_mmh": [
-          0.27,
-          0.49
-        ],
-        "dbz_medio": 14.2,
-        "pico_em": "2026-09-10T12:20:00+00:00",
-        "pico_estimado_mmh": 10.4,
-        "pico_dbz_medio": 39.3,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189587/2026",
-      "municipio": "Ourinhos",
-      "latitude": -22.976534,
-      "longitude": -49.878119,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:08h30 Chuva intensa na regiao de Assis e Ourinhos. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:08h30 Chuva intensa na regiao de Assis e Ourinhos. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "08h30 Chuva intensa na região de Assis e Ourinhos. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Severe",
-      "urgencia": "Expected",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T08:34:08-03:00",
-      "fim": "2026-09-10T10:55:00-03:00",
-      "vigencia": "2026-09-10T08:34:08-03:00 → 2026-09-10T10:55:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 19,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 4.3,
-        "faixa_estimada_mmh": [
-          3.65,
-          8.65
-        ],
-        "dbz_medio": 33.1,
-        "pico_em": "2026-09-10T12:00:00+00:00",
-        "pico_estimado_mmh": 14.79,
-        "pico_dbz_medio": 41.7,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
     {
@@ -260,268 +176,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 1.19,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 0.97,
         "faixa_estimada_mmh": [
-          1.15,
+          1.0,
           2.05
         ],
-        "dbz_medio": 24.2,
+        "dbz_medio": 22.8,
         "pico_em": "2026-09-10T13:10:00+00:00",
         "pico_estimado_mmh": 1.4,
         "pico_dbz_medio": 25.4,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189594/2026",
-      "municipio": "Juquitiba",
-      "latitude": -23.94305,
-      "longitude": -47.068458,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:08h50 Chuva persistente na regiao de Itanhaem, Baixada Santista e Juquitiba. Tem ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:08h50 Chuva persistente na regiao de Itanhaem, Baixada Santista e Juquitiba. Tem ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "08h50 Chuva persistente na região de Itanhaém, Baixada Santista e Juquitiba. Tem ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Expected",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T08:53:26-03:00",
-      "fim": "2026-09-10T10:50:00-03:00",
-      "vigencia": "2026-09-10T08:53:26-03:00 → 2026-09-10T10:50:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 10,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 5.74,
-        "faixa_estimada_mmh": [
-          4.86,
-          48.62
-        ],
-        "dbz_medio": 35.1,
-        "pico_em": "2026-09-10T13:10:00+00:00",
-        "pico_estimado_mmh": 19.72,
-        "pico_dbz_medio": 43.7,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189595/2026",
-      "municipio": "Apiaí",
-      "latitude": -24.418743,
-      "longitude": -48.896832,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:08h55 Chuva persistente na regiao de Apiai, Barra do Turvo e Cajati. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:08h55 Chuva persistente na regiao de Apiai, Barra do Turvo e Cajati. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "08h55 Chuva persistente na região de Apiaí, Barra do Turvo e Cajati. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Expected",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T08:57:06-03:00",
-      "fim": "2026-09-10T10:55:00-03:00",
-      "vigencia": "2026-09-10T08:57:06-03:00 → 2026-09-10T10:55:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 8,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 1.09,
-        "faixa_estimada_mmh": [
-          1.15,
-          1.15
-        ],
-        "dbz_medio": 23.6,
-        "pico_em": "2026-09-10T12:40:00+00:00",
-        "pico_estimado_mmh": 1.55,
-        "pico_dbz_medio": 26.0,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189595/2026",
-      "municipio": "Barra Do Turvo",
-      "latitude": -24.795844,
-      "longitude": -48.498789,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:08h55 Chuva persistente na regiao de Apiai, Barra do Turvo e Cajati. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:08h55 Chuva persistente na regiao de Apiai, Barra do Turvo e Cajati. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "08h55 Chuva persistente na região de Apiaí, Barra do Turvo e Cajati. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Expected",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T08:57:06-03:00",
-      "fim": "2026-09-10T10:55:00-03:00",
-      "vigencia": "2026-09-10T08:57:06-03:00 → 2026-09-10T10:55:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 3,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 0.79,
-        "faixa_estimada_mmh": [
-          0.86,
-          1.15
-        ],
-        "dbz_medio": 21.3,
-        "pico_em": "2026-09-10T12:20:00+00:00",
-        "pico_estimado_mmh": 2.37,
-        "pico_dbz_medio": 29.0,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189597/2026",
-      "municipio": "Itaberá",
-      "latitude": -23.814181,
-      "longitude": -49.22149,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "09h05 Chuva intensa na região de Itararé, Itaberá e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Severe",
-      "urgencia": "Expected",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T09:06:25-03:00",
-      "fim": "2026-09-10T10:55:00-03:00",
-      "vigencia": "2026-09-10T09:06:25-03:00 → 2026-09-10T10:55:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 5,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 0.76,
-        "faixa_estimada_mmh": [
-          0.75,
-          1.0
-        ],
-        "dbz_medio": 21.1,
-        "pico_em": "2026-09-10T12:00:00+00:00",
-        "pico_estimado_mmh": 5.72,
-        "pico_dbz_medio": 35.1,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189597/2026",
-      "municipio": "Itapeva",
-      "latitude": -23.985005,
-      "longitude": -48.875671,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "09h05 Chuva intensa na região de Itararé, Itaberá e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Severe",
-      "urgencia": "Expected",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T09:06:25-03:00",
-      "fim": "2026-09-10T10:55:00-03:00",
-      "vigencia": "2026-09-10T09:06:25-03:00 → 2026-09-10T10:55:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 16,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 2.09,
-        "faixa_estimada_mmh": [
-          2.05,
-          3.65
-        ],
-        "dbz_medio": 28.1,
-        "pico_em": "2026-09-10T12:10:00+00:00",
-        "pico_estimado_mmh": 4.24,
-        "pico_dbz_medio": 33.0,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189597/2026",
-      "municipio": "Itararé",
-      "latitude": -24.040363,
-      "longitude": -49.340034,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "09h05 Chuva intensa na região de Itararé, Itaberá e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Severe",
-      "urgencia": "Expected",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T09:06:25-03:00",
-      "fim": "2026-09-10T10:55:00-03:00",
-      "vigencia": "2026-09-10T09:06:25-03:00 → 2026-09-10T10:55:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 6,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 1.62,
-        "faixa_estimada_mmh": [
-          2.05,
-          2.05
-        ],
-        "dbz_medio": 26.4,
-        "pico_em": "2026-09-10T12:50:00+00:00",
-        "pico_estimado_mmh": 3.5,
-        "pico_dbz_medio": 31.7,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -670,13 +334,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 12.74,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 8.32,
         "faixa_estimada_mmh": [
-          15.38,
-          17.76
+          8.65,
+          15.38
         ],
-        "dbz_medio": 40.7,
+        "dbz_medio": 37.7,
         "pico_em": "2026-09-10T13:30:00+00:00",
         "pico_estimado_mmh": 15.62,
         "pico_dbz_medio": 42.1,
@@ -712,13 +376,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 5.14,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 2.55,
         "faixa_estimada_mmh": [
-          6.48,
-          8.65
+          2.37,
+          3.65
         ],
-        "dbz_medio": 34.4,
+        "dbz_medio": 29.5,
         "pico_em": "2026-09-10T13:10:00+00:00",
         "pico_estimado_mmh": 14.92,
         "pico_dbz_medio": 41.8,
@@ -754,13 +418,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 2.64,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 2.37,
         "faixa_estimada_mmh": [
           3.16,
-          3.65
+          6.48
         ],
-        "dbz_medio": 29.8,
+        "dbz_medio": 29.0,
         "pico_em": "2026-09-10T13:20:00+00:00",
         "pico_estimado_mmh": 8.4,
         "pico_dbz_medio": 37.8,
@@ -796,13 +460,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 4.68,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 3.32,
         "faixa_estimada_mmh": [
           3.65,
-          8.65
+          3.65
         ],
-        "dbz_medio": 33.7,
+        "dbz_medio": 31.4,
         "pico_em": "2026-09-10T13:10:00+00:00",
         "pico_estimado_mmh": 8.66,
         "pico_dbz_medio": 38.0,
@@ -838,13 +502,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 2.51,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 1.55,
         "faixa_estimada_mmh": [
-          2.73,
-          8.65
+          1.15,
+          3.65
         ],
-        "dbz_medio": 29.4,
+        "dbz_medio": 26.0,
         "pico_em": "2026-09-10T13:20:00+00:00",
         "pico_estimado_mmh": 4.09,
         "pico_dbz_medio": 32.8,
@@ -880,13 +544,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 2.83,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 3.11,
         "faixa_estimada_mmh": [
           3.16,
-          7.49
+          8.65
         ],
-        "dbz_medio": 30.2,
+        "dbz_medio": 30.9,
         "pico_em": "2026-09-10T13:30:00+00:00",
         "pico_estimado_mmh": 4.6,
         "pico_dbz_medio": 33.6,
@@ -922,16 +586,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 0.11,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 6.28,
         "faixa_estimada_mmh": [
-          0.12,
-          0.13
+          8.65,
+          15.38
         ],
-        "dbz_medio": 7.9,
-        "pico_em": "2026-09-10T13:30:00+00:00",
-        "pico_estimado_mmh": 4.97,
-        "pico_dbz_medio": 34.2,
+        "dbz_medio": 35.8,
+        "pico_em": "2026-09-10T13:50:00+00:00",
+        "pico_estimado_mmh": 6.28,
+        "pico_dbz_medio": 35.8,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -964,13 +628,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 0.92,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 1.47,
         "faixa_estimada_mmh": [
-          1.0,
-          2.05
+          1.15,
+          15.38
         ],
-        "dbz_medio": 22.4,
+        "dbz_medio": 25.7,
         "pico_em": "2026-09-10T13:20:00+00:00",
         "pico_estimado_mmh": 7.2,
         "pico_dbz_medio": 36.7,
@@ -1006,13 +670,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 0.8,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 1.06,
         "faixa_estimada_mmh": [
-          1.0,
-          1.15
+          1.15,
+          2.05
         ],
-        "dbz_medio": 21.5,
+        "dbz_medio": 23.4,
         "pico_em": "2026-09-10T13:10:00+00:00",
         "pico_estimado_mmh": 3.59,
         "pico_dbz_medio": 31.9,
@@ -1048,16 +712,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 0.11,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 6.28,
         "faixa_estimada_mmh": [
-          0.12,
-          0.13
+          8.65,
+          15.38
         ],
-        "dbz_medio": 7.9,
-        "pico_em": "2026-09-10T13:30:00+00:00",
-        "pico_estimado_mmh": 4.97,
-        "pico_dbz_medio": 34.2,
+        "dbz_medio": 35.8,
+        "pico_em": "2026-09-10T13:50:00+00:00",
+        "pico_estimado_mmh": 6.28,
+        "pico_dbz_medio": 35.8,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -1090,16 +754,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 1.55,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 21.55,
         "faixa_estimada_mmh": [
-          1.43,
-          15.38
+          23.68,
+          42.11
         ],
-        "dbz_medio": 26.1,
-        "pico_em": "2026-09-10T13:30:00+00:00",
-        "pico_estimado_mmh": 2.51,
-        "pico_dbz_medio": 29.4,
+        "dbz_medio": 44.3,
+        "pico_em": "2026-09-10T13:50:00+00:00",
+        "pico_estimado_mmh": 21.55,
+        "pico_dbz_medio": 44.3,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -1132,16 +796,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 22.33,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 24.54,
         "faixa_estimada_mmh": [
           31.58,
           48.62
         ],
-        "dbz_medio": 44.6,
-        "pico_em": "2026-09-10T13:40:00+00:00",
-        "pico_estimado_mmh": 22.33,
-        "pico_dbz_medio": 44.6,
+        "dbz_medio": 45.2,
+        "pico_em": "2026-09-10T13:50:00+00:00",
+        "pico_estimado_mmh": 24.54,
+        "pico_dbz_medio": 45.2,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -1174,13 +838,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 11.59,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 7.19,
         "faixa_estimada_mmh": [
-          20.5,
-          48.62
+          7.49,
+          23.68
         ],
-        "dbz_medio": 40.0,
+        "dbz_medio": 36.7,
         "pico_em": "2026-09-10T13:30:00+00:00",
         "pico_estimado_mmh": 22.57,
         "pico_dbz_medio": 44.7,
@@ -1216,13 +880,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 5.74,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 5.26,
         "faixa_estimada_mmh": [
           4.86,
-          48.62
+          42.11
         ],
-        "dbz_medio": 35.1,
+        "dbz_medio": 34.5,
         "pico_em": "2026-09-10T13:10:00+00:00",
         "pico_estimado_mmh": 19.72,
         "pico_dbz_medio": 43.7,
@@ -1254,11 +918,21 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
+        "status": "ECO_DETECTADO",
         "fonte": "RainViewer",
-        "metodo": "Radar composto",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 0.7,
+        "faixa_estimada_mmh": [
+          0.7,
+          2.05
+        ],
+        "dbz_medio": 20.5,
+        "pico_em": "2026-09-10T13:50:00+00:00",
+        "pico_estimado_mmh": 0.7,
+        "pico_dbz_medio": 20.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
     {
@@ -1286,11 +960,21 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
+        "status": "ECO_DETECTADO",
         "fonte": "RainViewer",
-        "metodo": "Radar composto",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 0.34,
+        "faixa_estimada_mmh": [
+          0.36,
+          0.36
+        ],
+        "dbz_medio": 15.6,
+        "pico_em": "2026-09-10T13:50:00+00:00",
+        "pico_estimado_mmh": 0.34,
+        "pico_dbz_medio": 15.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
     {
@@ -1322,13 +1006,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T13:40:00+00:00",
-        "intensidade_estimada_mmh": 3.31,
+        "ultimo_eco_em": "2026-09-10T13:50:00+00:00",
+        "intensidade_estimada_mmh": 0.14,
         "faixa_estimada_mmh": [
-          3.16,
-          3.65
+          0.1,
+          0.36
         ],
-        "dbz_medio": 31.3,
+        "dbz_medio": 9.1,
         "pico_em": "2026-09-10T13:30:00+00:00",
         "pico_estimado_mmh": 4.21,
         "pico_dbz_medio": 33.0,
@@ -1337,31 +1021,6 @@
     }
   ],
   "eventos_recentes_geo": [
-    {
-      "id_alerta": "189558/2026",
-      "municipio": "Juquitiba",
-      "latitude": -23.94305,
-      "longitude": -47.068458,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:04h48 Chuva se espalhando por Juquitiba e Sao Paulo. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:04h48 Chuva se espalhando por Juquitiba e Sao Paulo. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
-      "descricao": "04h48 Chuva se espalhando por Juquitiba e São Paulo. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T04:48:27-03:00",
-      "fim": "2026-09-10T08:00:00-03:00",
-      "vigencia": "2026-09-10T04:48:27-03:00 → 2026-09-10T08:00:00-03:00",
-      "status": "RECENTE_EXPIRADO",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 10,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ]
-    },
     {
       "id_alerta": "189559/2026",
       "municipio": "Rosana",
@@ -1913,6 +1572,56 @@
       ]
     },
     {
+      "id_alerta": "189587/2026",
+      "municipio": "Assis",
+      "latitude": -22.655889,
+      "longitude": -50.420681,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:08h30 Chuva intensa na regiao de Assis e Ourinhos. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:08h30 Chuva intensa na regiao de Assis e Ourinhos. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "08h30 Chuva intensa na região de Assis e Ourinhos. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T08:34:08-03:00",
+      "fim": "2026-09-10T10:55:00-03:00",
+      "vigencia": "2026-09-10T08:34:08-03:00 → 2026-09-10T10:55:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 15,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
+    },
+    {
+      "id_alerta": "189587/2026",
+      "municipio": "Ourinhos",
+      "latitude": -22.976534,
+      "longitude": -49.878119,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:08h30 Chuva intensa na regiao de Assis e Ourinhos. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:08h30 Chuva intensa na regiao de Assis e Ourinhos. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "08h30 Chuva intensa na região de Assis e Ourinhos. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T08:34:08-03:00",
+      "fim": "2026-09-10T10:55:00-03:00",
+      "vigencia": "2026-09-10T08:34:08-03:00 → 2026-09-10T10:55:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 19,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
+    },
+    {
       "id_alerta": "189588/2026",
       "municipio": "Fartura",
       "latitude": -23.391281,
@@ -2136,15 +1845,165 @@
       "area_oficial": [
         "SÃO PAULO/SP"
       ]
+    },
+    {
+      "id_alerta": "189594/2026",
+      "municipio": "Juquitiba",
+      "latitude": -23.94305,
+      "longitude": -47.068458,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:08h50 Chuva persistente na regiao de Itanhaem, Baixada Santista e Juquitiba. Tem ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:08h50 Chuva persistente na regiao de Itanhaem, Baixada Santista e Juquitiba. Tem ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "08h50 Chuva persistente na região de Itanhaém, Baixada Santista e Juquitiba. Tem ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T08:53:26-03:00",
+      "fim": "2026-09-10T10:50:00-03:00",
+      "vigencia": "2026-09-10T08:53:26-03:00 → 2026-09-10T10:50:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 10,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
+    },
+    {
+      "id_alerta": "189595/2026",
+      "municipio": "Apiaí",
+      "latitude": -24.418743,
+      "longitude": -48.896832,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:08h55 Chuva persistente na regiao de Apiai, Barra do Turvo e Cajati. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:08h55 Chuva persistente na regiao de Apiai, Barra do Turvo e Cajati. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "08h55 Chuva persistente na região de Apiaí, Barra do Turvo e Cajati. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T08:57:06-03:00",
+      "fim": "2026-09-10T10:55:00-03:00",
+      "vigencia": "2026-09-10T08:57:06-03:00 → 2026-09-10T10:55:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 8,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
+    },
+    {
+      "id_alerta": "189595/2026",
+      "municipio": "Barra Do Turvo",
+      "latitude": -24.795844,
+      "longitude": -48.498789,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:08h55 Chuva persistente na regiao de Apiai, Barra do Turvo e Cajati. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:08h55 Chuva persistente na regiao de Apiai, Barra do Turvo e Cajati. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "08h55 Chuva persistente na região de Apiaí, Barra do Turvo e Cajati. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T08:57:06-03:00",
+      "fim": "2026-09-10T10:55:00-03:00",
+      "vigencia": "2026-09-10T08:57:06-03:00 → 2026-09-10T10:55:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 3,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
+    },
+    {
+      "id_alerta": "189597/2026",
+      "municipio": "Itaberá",
+      "latitude": -23.814181,
+      "longitude": -49.22149,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "09h05 Chuva intensa na região de Itararé, Itaberá e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T09:06:25-03:00",
+      "fim": "2026-09-10T10:55:00-03:00",
+      "vigencia": "2026-09-10T09:06:25-03:00 → 2026-09-10T10:55:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 5,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
+    },
+    {
+      "id_alerta": "189597/2026",
+      "municipio": "Itapeva",
+      "latitude": -23.985005,
+      "longitude": -48.875671,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "09h05 Chuva intensa na região de Itararé, Itaberá e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T09:06:25-03:00",
+      "fim": "2026-09-10T10:55:00-03:00",
+      "vigencia": "2026-09-10T09:06:25-03:00 → 2026-09-10T10:55:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 16,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
+    },
+    {
+      "id_alerta": "189597/2026",
+      "municipio": "Itararé",
+      "latitude": -24.040363,
+      "longitude": -49.340034,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "09h05 Chuva intensa na região de Itararé, Itaberá e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T09:06:25-03:00",
+      "fim": "2026-09-10T10:55:00-03:00",
+      "vigencia": "2026-09-10T09:06:25-03:00 → 2026-09-10T10:55:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ]
     }
   ],
   "janela_recentes_horas": 6,
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T13:45:24.230659+00:00",
+    "gerado_em": "2026-09-10T13:55:25.681730+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 24,
+    "eventos_com_eco": 19,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
