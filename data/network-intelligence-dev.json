@@ -1,14 +1,127 @@
 {
-  "gerado_em": "2026-09-10T15:25:14.792052+00:00",
+  "gerado_em": "2026-09-10T15:30:45.910913+00:00",
   "ambiente": "DEV",
-  "mudanca_relevante": false,
-  "fingerprint": "fd4f6560550ddfff611df0b383d08299ccddbf9876ead86a40067e959e870128",
+  "mudanca_relevante": true,
+  "fingerprint": "49fb22d93d4bbf050be6e8b1d48ab006d87d0dfa9dd8decf2fb0ac5467c409ae",
   "nivel": "ALTO",
-  "agora": "Sinal externo em Uberaba/MG aponta risco para o corredor NORTE",
-  "proximas_horas": "Potencial avanço para Franca/Ribeirão Preto nas próximas horas; rajada até 46 km/h e chuva horária até 5.7 mm",
-  "rede_exposta": "21 trecho(s) Backbone cruzam o corredor potencial",
+  "agora": "Sinal externo em Maringá/PR aponta risco para o corredor OESTE",
+  "proximas_horas": "Potencial avanço para Presidente Prudente/Assis nas próximas horas; rajada até 42 km/h e chuva horária até 11.6 mm",
+  "rede_exposta": "8 trecho(s) Backbone cruzam o corredor potencial",
   "recomendacao": "Validar preventivamente redundância: 0/5 trechos amostrados têm caminho lógico alternativo fora do corredor",
   "ameacas_externas": [
+    {
+      "nome": "Maringá/PR",
+      "corredor": "OESTE",
+      "alvo": "Presidente Prudente/Assis",
+      "score": 73,
+      "tempestade": true,
+      "chuva_pico_mmh": 11.6,
+      "rajada_pico_kmh": 42.5,
+      "prob_chuva_pico": 100,
+      "eta_sinal_externo": "2026-09-10T15:00:00+00:00",
+      "backbones_no_corredor": 8,
+      "backbones_amostra": [
+        {
+          "id": "BB-8C8ED3016579",
+          "trecho": "AHU.RJ-RGF.MF",
+          "cabo": "F-0103.2",
+          "cluster": "ARACATUBA",
+          "dist_corredor_km": 22.7,
+          "ponta_a": "AHU.RJ",
+          "ponta_b": "RGF.MF"
+        },
+        {
+          "id": "BB-945CFE97CA5B",
+          "trecho": "PPZ.JA-TAR.SS",
+          "cabo": "F-0102",
+          "cluster": "ARACATUBA",
+          "dist_corredor_km": 29.2,
+          "ponta_a": "PPZ.JA",
+          "ponta_b": "TAR.SS"
+        },
+        {
+          "id": "BB-2BCE0DD8FE86",
+          "trecho": "PPZ.JA-PPZ.RD",
+          "cabo": "F-0101",
+          "cluster": "ARACATUBA",
+          "dist_corredor_km": 29.2,
+          "ponta_a": "PPZ.JA",
+          "ponta_b": "PPZ.RD"
+        },
+        {
+          "id": "BB-7A94C061DEE4",
+          "trecho": "RGF.MF-TCI.FT",
+          "cabo": "F-0103",
+          "cluster": "ARACATUBA",
+          "dist_corredor_km": 31.4,
+          "ponta_a": "RGF.MF",
+          "ponta_b": "TCI.FT"
+        },
+        {
+          "id": "BB-0C4F92D97003",
+          "trecho": "IDI.CW-RGF.MF",
+          "cabo": "F-0101",
+          "cluster": "ARACATUBA",
+          "dist_corredor_km": 37.1,
+          "ponta_a": "IDI.CW",
+          "ponta_b": "RGF.MF"
+        },
+        {
+          "id": "BB-B057C8D20161",
+          "trecho": "IDI.CW-MPO.PJ",
+          "cabo": "F-0111",
+          "cluster": "ARACATUBA",
+          "dist_corredor_km": 37.1,
+          "ponta_a": "IDI.CW",
+          "ponta_b": "MPO.PJ"
+        },
+        {
+          "id": "BB-8087B20528E9",
+          "trecho": "PPE.RB-RGF.MF",
+          "cabo": "F-0107",
+          "cluster": "ARACATUBA",
+          "dist_corredor_km": 37.8,
+          "ponta_a": "PPE.RB",
+          "ponta_b": "RGF.MF"
+        },
+        {
+          "id": "BB-0F44F74448D9",
+          "trecho": "PPE.RB-PPZ.JA",
+          "cabo": "F-0109",
+          "cluster": "ARACATUBA",
+          "dist_corredor_km": 37.9,
+          "ponta_a": "PPE.RB",
+          "ponta_b": "PPZ.JA"
+        }
+      ],
+      "alternativas": [
+        {
+          "trecho": "AHU.RJ-RGF.MF",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "PPZ.JA-TAR.SS",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "PPZ.JA-PPZ.RD",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "RGF.MF-TCI.FT",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "IDI.CW-RGF.MF",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        }
+      ]
+    },
     {
       "nome": "Uberaba/MG",
       "corredor": "NORTE",
@@ -117,119 +230,6 @@
         },
         {
           "trecho": "IPV.WR-RPO.NO",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        }
-      ]
-    },
-    {
-      "nome": "Maringá/PR",
-      "corredor": "OESTE",
-      "alvo": "Presidente Prudente/Assis",
-      "score": 65,
-      "tempestade": true,
-      "chuva_pico_mmh": 4.9,
-      "rajada_pico_kmh": 42.5,
-      "prob_chuva_pico": 100,
-      "eta_sinal_externo": "2026-09-10T15:00:00+00:00",
-      "backbones_no_corredor": 8,
-      "backbones_amostra": [
-        {
-          "id": "BB-8C8ED3016579",
-          "trecho": "AHU.RJ-RGF.MF",
-          "cabo": "F-0103.2",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 22.7,
-          "ponta_a": "AHU.RJ",
-          "ponta_b": "RGF.MF"
-        },
-        {
-          "id": "BB-945CFE97CA5B",
-          "trecho": "PPZ.JA-TAR.SS",
-          "cabo": "F-0102",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 29.2,
-          "ponta_a": "PPZ.JA",
-          "ponta_b": "TAR.SS"
-        },
-        {
-          "id": "BB-2BCE0DD8FE86",
-          "trecho": "PPZ.JA-PPZ.RD",
-          "cabo": "F-0101",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 29.2,
-          "ponta_a": "PPZ.JA",
-          "ponta_b": "PPZ.RD"
-        },
-        {
-          "id": "BB-7A94C061DEE4",
-          "trecho": "RGF.MF-TCI.FT",
-          "cabo": "F-0103",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 31.4,
-          "ponta_a": "RGF.MF",
-          "ponta_b": "TCI.FT"
-        },
-        {
-          "id": "BB-0C4F92D97003",
-          "trecho": "IDI.CW-RGF.MF",
-          "cabo": "F-0101",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 37.1,
-          "ponta_a": "IDI.CW",
-          "ponta_b": "RGF.MF"
-        },
-        {
-          "id": "BB-B057C8D20161",
-          "trecho": "IDI.CW-MPO.PJ",
-          "cabo": "F-0111",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 37.1,
-          "ponta_a": "IDI.CW",
-          "ponta_b": "MPO.PJ"
-        },
-        {
-          "id": "BB-8087B20528E9",
-          "trecho": "PPE.RB-RGF.MF",
-          "cabo": "F-0107",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 37.8,
-          "ponta_a": "PPE.RB",
-          "ponta_b": "RGF.MF"
-        },
-        {
-          "id": "BB-0F44F74448D9",
-          "trecho": "PPE.RB-PPZ.JA",
-          "cabo": "F-0109",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 37.9,
-          "ponta_a": "PPE.RB",
-          "ponta_b": "PPZ.JA"
-        }
-      ],
-      "alternativas": [
-        {
-          "trecho": "AHU.RJ-RGF.MF",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "PPZ.JA-TAR.SS",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "PPZ.JA-PPZ.RD",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "RGF.MF-TCI.FT",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "IDI.CW-RGF.MF",
           "alternativa_logica": false,
           "caminho_potencial": []
         }
