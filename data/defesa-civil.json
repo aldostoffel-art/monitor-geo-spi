@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T06:10:25-03:00",
-  "fonte_coletada_em": "2026-09-10T09:10:09Z",
+  "gerado_em": "2026-09-10T06:15:18-03:00",
+  "fonte_coletada_em": "2026-09-10T09:15:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 109,
-  "alertas_ativos": 12,
+  "entradas_feed": 111,
+  "alertas_ativos": 13,
   "eventos_geo": [
     {
       "id_alerta": "189553/2026",
@@ -1122,6 +1122,122 @@
         "janela_min": 120,
         "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
+    },
+    {
+      "id_alerta": "189569/2026",
+      "municipio": "Lindóia",
+      "latitude": -22.530885,
+      "longitude": -46.631478,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:ATENCAO - 10/09 06:12 - CHUVA PERSISTENTE de intensidade forte com RAIOS, ALAGAMENTOS e risco de ENXURRADAS na proxima 1h. Ocorrencias ligue 199 o",
+      "resumo": "Defesa Civil:ATENCAO - 10/09 06:12 - CHUVA PERSISTENTE de intensidade forte com RAIOS, ALAGAMENTOS e risco de ENXURRADAS na proxima 1h. Ocorrencias ligue 199 o",
+      "descricao": "ATENÇÃO - 10/09 06:12 - CHUVA PERSISTENTE de intensidade forte com RAIOS, ALAGAMENTOS e risco de ENXURRADAS para os municípios de Abelardo Luz, Arabutã, Bom Jesus, Catanduvas, Concórdia, Entre Rios, Faxinal dos Guedes, Ipuaçu, Ipumirim, Irani, Jaborá, Lajeado Grande, Lindóia do Sul, Marema, Ouro Verde, Passos Maia, Ponte Serrada, Quilombo, Seara, São Domingos, Treze Tílias, Vargem Bonita, Vargeão, Xanxerê, Xavantina, Xaxim e Água Doce na próxima hora. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-10T06:14:33-03:00",
+      "fim": "2026-09-10T07:15:00-03:00",
+      "vigencia": "2026-09-10T06:14:33-03:00 → 2026-09-10T07:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 2,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T09:10:00+00:00",
+        "intensidade_estimada_mmh": 12.16,
+        "faixa_estimada_mmh": [
+          15.38,
+          48.62
+        ],
+        "dbz_medio": 40.4,
+        "pico_em": "2026-09-10T09:00:00+00:00",
+        "pico_estimado_mmh": 12.45,
+        "pico_dbz_medio": 40.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189569/2026",
+      "municipio": "Ouro Verde",
+      "latitude": -21.489722,
+      "longitude": -51.701389,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:ATENCAO - 10/09 06:12 - CHUVA PERSISTENTE de intensidade forte com RAIOS, ALAGAMENTOS e risco de ENXURRADAS na proxima 1h. Ocorrencias ligue 199 o",
+      "resumo": "Defesa Civil:ATENCAO - 10/09 06:12 - CHUVA PERSISTENTE de intensidade forte com RAIOS, ALAGAMENTOS e risco de ENXURRADAS na proxima 1h. Ocorrencias ligue 199 o",
+      "descricao": "ATENÇÃO - 10/09 06:12 - CHUVA PERSISTENTE de intensidade forte com RAIOS, ALAGAMENTOS e risco de ENXURRADAS para os municípios de Abelardo Luz, Arabutã, Bom Jesus, Catanduvas, Concórdia, Entre Rios, Faxinal dos Guedes, Ipuaçu, Ipumirim, Irani, Jaborá, Lajeado Grande, Lindóia do Sul, Marema, Ouro Verde, Passos Maia, Ponte Serrada, Quilombo, Seara, São Domingos, Treze Tílias, Vargem Bonita, Vargeão, Xanxerê, Xavantina, Xaxim e Água Doce na próxima hora. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-10T06:14:33-03:00",
+      "fim": "2026-09-10T07:15:00-03:00",
+      "vigencia": "2026-09-10T06:14:33-03:00 → 2026-09-10T07:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189569/2026",
+      "municipio": "Vargem",
+      "latitude": -22.898342,
+      "longitude": -46.415633,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:ATENCAO - 10/09 06:12 - CHUVA PERSISTENTE de intensidade forte com RAIOS, ALAGAMENTOS e risco de ENXURRADAS na proxima 1h. Ocorrencias ligue 199 o",
+      "resumo": "Defesa Civil:ATENCAO - 10/09 06:12 - CHUVA PERSISTENTE de intensidade forte com RAIOS, ALAGAMENTOS e risco de ENXURRADAS na proxima 1h. Ocorrencias ligue 199 o",
+      "descricao": "ATENÇÃO - 10/09 06:12 - CHUVA PERSISTENTE de intensidade forte com RAIOS, ALAGAMENTOS e risco de ENXURRADAS para os municípios de Abelardo Luz, Arabutã, Bom Jesus, Catanduvas, Concórdia, Entre Rios, Faxinal dos Guedes, Ipuaçu, Ipumirim, Irani, Jaborá, Lajeado Grande, Lindóia do Sul, Marema, Ouro Verde, Passos Maia, Ponte Serrada, Quilombo, Seara, São Domingos, Treze Tílias, Vargem Bonita, Vargeão, Xanxerê, Xavantina, Xaxim e Água Doce na próxima hora. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-10T06:14:33-03:00",
+      "fim": "2026-09-10T07:15:00-03:00",
+      "vigencia": "2026-09-10T06:14:33-03:00 → 2026-09-10T07:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 3,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T09:10:00+00:00",
+        "intensidade_estimada_mmh": 6.44,
+        "faixa_estimada_mmh": [
+          5.62,
+          23.68
+        ],
+        "dbz_medio": 36.0,
+        "pico_em": "2026-09-10T09:00:00+00:00",
+        "pico_estimado_mmh": 10.13,
+        "pico_dbz_medio": 39.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [
@@ -1605,9 +1721,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T09:10:31.416880+00:00",
+    "gerado_em": "2026-09-10T09:15:24.613619+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 24,
+    "eventos_com_eco": 26,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
