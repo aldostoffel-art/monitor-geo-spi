@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T04:05:17-03:00",
-  "fonte_coletada_em": "2026-09-10T07:05:05Z",
+  "gerado_em": "2026-09-10T04:10:19-03:00",
+  "fonte_coletada_em": "2026-09-10T07:10:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
   "entradas_feed": 104,
-  "alertas_ativos": 10,
+  "alertas_ativos": 9,
   "eventos_geo": [
     {
       "id_alerta": "189530/2026",
@@ -25,48 +25,6 @@
       "inicio": "2026-09-10T00:47:35-03:00",
       "fim": "2026-09-10T04:45:00-03:00",
       "vigencia": "2026-09-10T00:47:35-03:00 → 2026-09-10T04:45:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 1,
-      "area_oficial": [
-        "SANTA CATARINA/SC"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T05:50:00+00:00",
-        "intensidade_estimada_mmh": 0.56,
-        "faixa_estimada_mmh": [
-          0.56,
-          0.56
-        ],
-        "dbz_medio": 19.0,
-        "pico_em": "2026-09-10T05:50:00+00:00",
-        "pico_estimado_mmh": 0.56,
-        "pico_dbz_medio": 19.0,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189533/2026",
-      "municipio": "Planalto",
-      "latitude": -21.033837,
-      "longitude": -49.929461,
-      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
-      "titulo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
-      "resumo": "OBSERVAÇÃO - 10/09 01:08 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para áreas das regiões do Planalto Sul e Litoral Sul nas próximas 3 horas. Ocorrências ligue 199 ou 193.",
-      "descricao": "OBSERVAÇÃO - 10/09 01:08 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para áreas das regiões do Planalto Sul e Litoral Sul nas próximas 3 horas. Ocorrências ligue 199 ou 193.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Expected",
-      "certeza": "Observed",
-      "inicio": "2026-09-10T01:11:03-03:00",
-      "fim": "2026-09-10T04:10:00-03:00",
-      "vigencia": "2026-09-10T01:11:03-03:00 → 2026-09-10T04:10:00-03:00",
       "status": "ATIVO_OFICIAL",
       "fonte": "Defesa Civil / IDAP-CAP",
       "sender": "CENAD-SEDEC",
@@ -129,9 +87,9 @@
           1.0
         ],
         "dbz_medio": 16.3,
-        "pico_em": "2026-09-10T05:10:00+00:00",
-        "pico_estimado_mmh": 1.11,
-        "pico_dbz_medio": 23.7,
+        "pico_em": "2026-09-10T05:30:00+00:00",
+        "pico_estimado_mmh": 0.75,
+        "pico_dbz_medio": 21.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -171,9 +129,9 @@
           1.0
         ],
         "dbz_medio": 16.3,
-        "pico_em": "2026-09-10T05:10:00+00:00",
-        "pico_estimado_mmh": 1.11,
-        "pico_dbz_medio": 23.7,
+        "pico_em": "2026-09-10T05:30:00+00:00",
+        "pico_estimado_mmh": 0.75,
+        "pico_dbz_medio": 21.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -202,21 +160,11 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T05:10:00+00:00",
-        "intensidade_estimada_mmh": 0.63,
-        "faixa_estimada_mmh": [
-          0.65,
-          0.65
-        ],
-        "dbz_medio": 19.8,
-        "pico_em": "2026-09-10T05:10:00+00:00",
-        "pico_estimado_mmh": 0.63,
-        "pico_dbz_medio": 19.8,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -255,9 +203,9 @@
           0.56
         ],
         "dbz_medio": 19.0,
-        "pico_em": "2026-09-10T05:10:00+00:00",
-        "pico_estimado_mmh": 0.72,
-        "pico_dbz_medio": 20.7,
+        "pico_em": "2026-09-10T05:50:00+00:00",
+        "pico_estimado_mmh": 0.71,
+        "pico_dbz_medio": 20.6,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -339,9 +287,9 @@
           1.0
         ],
         "dbz_medio": 19.6,
-        "pico_em": "2026-09-10T05:10:00+00:00",
-        "pico_estimado_mmh": 9.07,
-        "pico_dbz_medio": 38.3,
+        "pico_em": "2026-09-10T05:20:00+00:00",
+        "pico_estimado_mmh": 7.73,
+        "pico_dbz_medio": 37.2,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -381,9 +329,9 @@
           1.0
         ],
         "dbz_medio": 16.3,
-        "pico_em": "2026-09-10T05:10:00+00:00",
-        "pico_estimado_mmh": 1.11,
-        "pico_dbz_medio": 23.7,
+        "pico_em": "2026-09-10T05:30:00+00:00",
+        "pico_estimado_mmh": 0.75,
+        "pico_dbz_medio": 21.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -978,6 +926,31 @@
       ]
     },
     {
+      "id_alerta": "189533/2026",
+      "municipio": "Planalto",
+      "latitude": -21.033837,
+      "longitude": -49.929461,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "resumo": "OBSERVAÇÃO - 10/09 01:08 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para áreas das regiões do Planalto Sul e Litoral Sul nas próximas 3 horas. Ocorrências ligue 199 ou 193.",
+      "descricao": "OBSERVAÇÃO - 10/09 01:08 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para áreas das regiões do Planalto Sul e Litoral Sul nas próximas 3 horas. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T01:11:03-03:00",
+      "fim": "2026-09-10T04:10:00-03:00",
+      "vigencia": "2026-09-10T01:11:03-03:00 → 2026-09-10T04:10:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ]
+    },
+    {
       "id_alerta": "189536/2026",
       "municipio": "Cafelândia",
       "latitude": -21.782998,
@@ -1032,9 +1005,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T07:05:21.732576+00:00",
+    "gerado_em": "2026-09-10T07:10:24.810220+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 6,
+    "eventos_com_eco": 5,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
