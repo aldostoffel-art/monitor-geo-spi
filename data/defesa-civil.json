@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T08:35:18-03:00",
-  "fonte_coletada_em": "2026-09-10T11:35:05Z",
+  "gerado_em": "2026-09-10T08:40:19-03:00",
+  "fonte_coletada_em": "2026-09-10T11:40:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 101,
-  "alertas_ativos": 7,
+  "entradas_feed": 102,
+  "alertas_ativos": 8,
   "eventos_geo": [
     {
       "id_alerta": "189563/2026",
@@ -66,21 +66,11 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T09:40:00+00:00",
-        "intensidade_estimada_mmh": 1.04,
-        "faixa_estimada_mmh": [
-          1.0,
-          1.33
-        ],
-        "dbz_medio": 23.3,
-        "pico_em": "2026-09-10T09:40:00+00:00",
-        "pico_estimado_mmh": 1.04,
-        "pico_dbz_medio": 23.3,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -150,21 +140,11 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T09:40:00+00:00",
-        "intensidade_estimada_mmh": 0.74,
-        "faixa_estimada_mmh": [
-          0.7,
-          1.33
-        ],
-        "dbz_medio": 20.9,
-        "pico_em": "2026-09-10T09:40:00+00:00",
-        "pico_estimado_mmh": 0.74,
-        "pico_dbz_medio": 20.9,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -203,9 +183,9 @@
           1.0
         ],
         "dbz_medio": 18.4,
-        "pico_em": "2026-09-10T09:40:00+00:00",
-        "pico_estimado_mmh": 3.74,
-        "pico_dbz_medio": 32.2,
+        "pico_em": "2026-09-10T09:50:00+00:00",
+        "pico_estimado_mmh": 0.9,
+        "pico_dbz_medio": 22.3,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -287,9 +267,9 @@
           1.33
         ],
         "dbz_medio": 23.3,
-        "pico_em": "2026-09-10T09:40:00+00:00",
-        "pico_estimado_mmh": 3.84,
-        "pico_dbz_medio": 32.4,
+        "pico_em": "2026-09-10T10:00:00+00:00",
+        "pico_estimado_mmh": 3.83,
+        "pico_dbz_medio": 32.3,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -364,13 +344,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T11:30:00+00:00",
-        "intensidade_estimada_mmh": 6.04,
+        "ultimo_eco_em": "2026-09-10T11:40:00+00:00",
+        "intensidade_estimada_mmh": 2.5,
         "faixa_estimada_mmh": [
-          6.48,
+          2.05,
           15.38
         ],
-        "dbz_medio": 35.5,
+        "dbz_medio": 29.4,
         "pico_em": "2026-09-10T10:40:00+00:00",
         "pico_estimado_mmh": 7.14,
         "pico_dbz_medio": 36.7,
@@ -406,13 +386,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T11:30:00+00:00",
-        "intensidade_estimada_mmh": 2.31,
+        "ultimo_eco_em": "2026-09-10T11:40:00+00:00",
+        "intensidade_estimada_mmh": 1.71,
         "faixa_estimada_mmh": [
-          3.16,
+          2.05,
           6.48
         ],
-        "dbz_medio": 28.8,
+        "dbz_medio": 26.7,
         "pico_em": "2026-09-10T11:30:00+00:00",
         "pico_estimado_mmh": 2.31,
         "pico_dbz_medio": 28.8,
@@ -448,13 +428,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T11:30:00+00:00",
-        "intensidade_estimada_mmh": 3.28,
+        "ultimo_eco_em": "2026-09-10T11:40:00+00:00",
+        "intensidade_estimada_mmh": 2.4,
         "faixa_estimada_mmh": [
-          3.16,
-          15.38
+          2.05,
+          3.65
         ],
-        "dbz_medio": 31.3,
+        "dbz_medio": 29.1,
         "pico_em": "2026-09-10T10:40:00+00:00",
         "pico_estimado_mmh": 7.83,
         "pico_dbz_medio": 37.3,
@@ -490,13 +470,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T11:30:00+00:00",
-        "intensidade_estimada_mmh": 3.14,
+        "ultimo_eco_em": "2026-09-10T11:40:00+00:00",
+        "intensidade_estimada_mmh": 1.66,
         "faixa_estimada_mmh": [
-          3.16,
-          8.65
+          2.05,
+          3.16
         ],
-        "dbz_medio": 31.0,
+        "dbz_medio": 26.5,
         "pico_em": "2026-09-10T11:00:00+00:00",
         "pico_estimado_mmh": 9.3,
         "pico_dbz_medio": 38.5,
@@ -564,13 +544,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T11:30:00+00:00",
-        "intensidade_estimada_mmh": 1.94,
+        "ultimo_eco_em": "2026-09-10T11:40:00+00:00",
+        "intensidade_estimada_mmh": 3.43,
         "faixa_estimada_mmh": [
-          2.05,
-          6.48
+          3.65,
+          3.65
         ],
-        "dbz_medio": 27.6,
+        "dbz_medio": 31.6,
         "pico_em": "2026-09-10T11:20:00+00:00",
         "pico_estimado_mmh": 7.02,
         "pico_dbz_medio": 36.6,
@@ -606,16 +586,142 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T11:30:00+00:00",
-        "intensidade_estimada_mmh": 0.53,
+        "ultimo_eco_em": "2026-09-10T11:40:00+00:00",
+        "intensidade_estimada_mmh": 3.0,
         "faixa_estimada_mmh": [
-          0.56,
-          8.65
+          3.16,
+          17.76
         ],
-        "dbz_medio": 18.6,
-        "pico_em": "2026-09-10T11:20:00+00:00",
-        "pico_estimado_mmh": 0.65,
-        "pico_dbz_medio": 20.1,
+        "dbz_medio": 30.6,
+        "pico_em": "2026-09-10T11:40:00+00:00",
+        "pico_estimado_mmh": 3.0,
+        "pico_dbz_medio": 30.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189588/2026",
+      "municipio": "Fartura",
+      "latitude": -23.391281,
+      "longitude": -49.510894,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:08h35 Chuva intensa na regiao de Fartura, Itaporanga e Piraju. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:08h35 Chuva intensa na regiao de Fartura, Itaporanga e Piraju. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "08h35 Chuva intensa na região de Fartura, Itaporanga e Piraju. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T08:37:38-03:00",
+      "fim": "2026-09-10T10:40:00-03:00",
+      "vigencia": "2026-09-10T08:37:38-03:00 → 2026-09-10T10:40:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T11:40:00+00:00",
+        "intensidade_estimada_mmh": 2.77,
+        "faixa_estimada_mmh": [
+          3.16,
+          15.38
+        ],
+        "dbz_medio": 30.1,
+        "pico_em": "2026-09-10T11:40:00+00:00",
+        "pico_estimado_mmh": 2.77,
+        "pico_dbz_medio": 30.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189588/2026",
+      "municipio": "Itaporanga",
+      "latitude": -23.708333,
+      "longitude": -49.46758,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:08h35 Chuva intensa na regiao de Fartura, Itaporanga e Piraju. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:08h35 Chuva intensa na regiao de Fartura, Itaporanga e Piraju. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "08h35 Chuva intensa na região de Fartura, Itaporanga e Piraju. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T08:37:38-03:00",
+      "fim": "2026-09-10T10:40:00-03:00",
+      "vigencia": "2026-09-10T08:37:38-03:00 → 2026-09-10T10:40:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 3,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T11:40:00+00:00",
+        "intensidade_estimada_mmh": 4.13,
+        "faixa_estimada_mmh": [
+          3.65,
+          6.48
+        ],
+        "dbz_medio": 32.9,
+        "pico_em": "2026-09-10T11:30:00+00:00",
+        "pico_estimado_mmh": 5.91,
+        "pico_dbz_medio": 35.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189588/2026",
+      "municipio": "Piraju",
+      "latitude": -23.186985,
+      "longitude": -49.382018,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:08h35 Chuva intensa na regiao de Fartura, Itaporanga e Piraju. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:08h35 Chuva intensa na regiao de Fartura, Itaporanga e Piraju. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "08h35 Chuva intensa na região de Fartura, Itaporanga e Piraju. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T08:37:38-03:00",
+      "fim": "2026-09-10T10:40:00-03:00",
+      "vigencia": "2026-09-10T08:37:38-03:00 → 2026-09-10T10:40:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T11:40:00+00:00",
+        "intensidade_estimada_mmh": 4.3,
+        "faixa_estimada_mmh": [
+          3.65,
+          15.38
+        ],
+        "dbz_medio": 33.1,
+        "pico_em": "2026-09-10T11:40:00+00:00",
+        "pico_estimado_mmh": 4.3,
+        "pico_dbz_medio": 33.1,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
@@ -1301,9 +1407,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T11:35:22.808436+00:00",
+    "gerado_em": "2026-09-10T11:40:27.222439+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 13,
+    "eventos_com_eco": 14,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
