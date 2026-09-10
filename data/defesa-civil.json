@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T21:40:36-03:00",
-  "fonte_coletada_em": "2026-09-10T00:40:07Z",
+  "gerado_em": "2026-09-09T21:45:20-03:00",
+  "fonte_coletada_em": "2026-09-10T00:45:06Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
   "entradas_feed": 112,
-  "alertas_ativos": 10,
+  "alertas_ativos": 11,
   "eventos_geo": [
     {
       "id_alerta": "189404/2026",
@@ -738,6 +738,48 @@
         "janela_min": 120,
         "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
+    },
+    {
+      "id_alerta": "189500/2026",
+      "municipio": "Ouro Verde",
+      "latitude": -21.489722,
+      "longitude": -51.701389,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:SDC: ALERTA de tempestade com chuva intensa, granizo e vendaval na proxima hora. BUSQUE ABRIGO e nao atravesse areas alagadas. Emerg 199/193.",
+      "resumo": "Defesa Civil:SDC: ALERTA de tempestade com chuva intensa, granizo e vendaval na proxima hora. BUSQUE ABRIGO e nao atravesse areas alagadas. Emerg 199/193.",
+      "descricao": "ALERTA - 09/09 21:42 - TEMPESTADE SEVERA com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS para os municípios de Abelardo Luz, Bom Jesus, Coronel Martins, Entre Rios, Ipuaçu, Ouro Verde, Quilombo, Santiago do Sul e São Domingos na próxima hora. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T21:44:15-03:00",
+      "fim": "2026-09-09T22:45:00-03:00",
+      "vigencia": "2026-09-09T21:44:15-03:00 → 2026-09-09T22:45:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T00:40:00+00:00",
+        "intensidade_estimada_mmh": 0.95,
+        "faixa_estimada_mmh": [
+          0.56,
+          6.48
+        ],
+        "dbz_medio": 22.6,
+        "pico_em": "2026-09-10T00:40:00+00:00",
+        "pico_estimado_mmh": 0.95,
+        "pico_dbz_medio": 22.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [
@@ -1421,7 +1463,7 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T00:40:41.509240+00:00",
+    "gerado_em": "2026-09-10T00:45:22.918053+00:00",
     "janela_min": 120,
     "eventos_com_eco": 6,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
