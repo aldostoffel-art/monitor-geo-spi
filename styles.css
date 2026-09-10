@@ -1639,3 +1639,71 @@ body.tv-mode .tv-ai>small{font-size:11px!important;line-height:1.16!important}
   body.tv-mode .tv-event-cities b,body.tv-mode .tv-tree-cities b,body.tv-mode .tv-compare b{font-size:12px!important}
   body.tv-mode .tv-event-cities em,body.tv-mode .tv-tree-cities em,body.tv-mode .tv-tree-cities small,body.tv-mode .tv-compare span{font-size:10px!important}
 }
+
+/* TV OPERACIONAL • legibilidade inferior + lateral estável v22 • DEV */
+@media(min-width:1200px){
+  body.tv-mode .tv-side{
+    display:grid!important;
+    grid-template-rows:auto auto minmax(74px,1fr) auto!important;
+    gap:6px!important;
+    align-content:stretch!important;
+    min-width:270px!important;
+  }
+  body.tv-mode .tv-side-card{
+    min-height:0!important;
+    overflow:hidden!important;
+    padding:8px 10px!important;
+  }
+  body.tv-mode .tv-side-card>small{font-size:11px!important;line-height:1!important}
+  body.tv-mode .tv-side-card>b{font-size:24px!important;line-height:1.05!important;white-space:normal!important;overflow-wrap:break-word!important}
+  body.tv-mode .tv-side-card>span{font-size:14px!important;line-height:1.2!important;white-space:normal!important;overflow-wrap:break-word!important}
+  body.tv-mode .tv-side-priority>b{font-size:33px!important}
+  body.tv-mode #tvSideAction{
+    font-size:15px!important;
+    line-height:1.2!important;
+    display:-webkit-box!important;
+    -webkit-line-clamp:3!important;
+    -webkit-box-orient:vertical!important;
+    overflow:hidden!important;
+  }
+  body.tv-mode .tv-side-network{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:5px!important;margin-top:5px!important}
+  body.tv-mode .tv-side-network>div{padding:5px 6px!important;min-width:0!important}
+  body.tv-mode .tv-side-network b{font-size:20px!important}
+  body.tv-mode .tv-side-network span{font-size:10px!important;line-height:1.05!important}
+
+  body.tv-mode .tv-bottom-v6{grid-template-columns:1fr 1.18fr 1.55fr!important;gap:7px!important}
+  body.tv-mode .tv-bottom-block{padding:9px 10px!important;overflow:hidden!important}
+  body.tv-mode .tv-bottom-block header small{display:none!important}
+  body.tv-mode .tv-bottom-block header b{font-size:15px!important;line-height:1.1!important}
+  body.tv-mode .tv-event-cities{gap:6px!important}
+  body.tv-mode .tv-event-cities b{font-size:13px!important}
+  body.tv-mode .tv-event-cities em{font-size:11px!important}
+  body.tv-mode .tv-tree-cities{grid-template-columns:1fr!important;gap:5px!important}
+  body.tv-mode .tv-tree-cities b{font-size:13px!important}
+  body.tv-mode .tv-tree-cities small{font-size:11px!important;line-height:1.15!important}
+  body.tv-mode .tv-tree-cities em{font-size:11px!important}
+
+  body.tv-mode .tv-compare{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:6px!important}
+  body.tv-mode .tv-compare>div{padding:7px 8px!important;min-height:58px!important;position:relative!important}
+  body.tv-mode .tv-compare b{font-size:14px!important;line-height:1.05!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}
+  body.tv-mode .tv-compare span{font-size:12px!important;line-height:1.15!important;margin-top:4px!important}
+  body.tv-mode .tv-compare span em{font-size:12px!important}
+  body.tv-mode .tv-compare-newcritical{border:2px solid #cf3342!important;background:#fff0f1!important;box-shadow:inset 4px 0 0 #cf3342!important}
+  body.tv-mode .tv-compare-newcritical>strong{display:block!important;margin-top:4px!important;font-size:10px!important;line-height:1!important;color:#a71928!important;letter-spacing:.04em!important}
+}
+@media(min-width:1200px) and (max-height:820px){
+  body.tv-mode .tv-view{grid-template-rows:auto auto 246px 60px 196px auto!important;gap:5px!important}
+  body.tv-mode .tv-map-panel{height:246px!important;max-height:246px!important}
+  body.tv-mode .tv-bottom-v6{height:196px!important;min-height:196px!important}
+  body.tv-mode .tv-side{grid-template-rows:auto auto minmax(70px,1fr) auto!important;min-width:265px!important}
+  body.tv-mode .tv-side-card>small{font-size:10px!important}
+  body.tv-mode .tv-side-card>b{font-size:22px!important}
+  body.tv-mode .tv-side-card>span{font-size:13px!important}
+  body.tv-mode .tv-side-priority>b{font-size:31px!important}
+  body.tv-mode #tvSideAction{font-size:14px!important;-webkit-line-clamp:3!important}
+  body.tv-mode .tv-bottom-block header b{font-size:14px!important}
+  body.tv-mode .tv-event-cities b,body.tv-mode .tv-tree-cities b{font-size:12px!important}
+  body.tv-mode .tv-event-cities em,body.tv-mode .tv-tree-cities small,body.tv-mode .tv-tree-cities em{font-size:10px!important}
+  body.tv-mode .tv-compare b{font-size:13px!important}
+  body.tv-mode .tv-compare span,body.tv-mode .tv-compare span em{font-size:11px!important}
+}
