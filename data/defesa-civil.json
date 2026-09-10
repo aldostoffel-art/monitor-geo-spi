@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T00:40:23-03:00",
-  "fonte_coletada_em": "2026-09-10T03:40:06Z",
+  "gerado_em": "2026-09-10T00:45:19-03:00",
+  "fonte_coletada_em": "2026-09-10T03:45:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 117,
-  "alertas_ativos": 10,
+  "entradas_feed": 118,
+  "alertas_ativos": 11,
   "eventos_geo": [
     {
       "id_alerta": "189501/2026",
@@ -697,6 +697,48 @@
       "inicio": "2026-09-10T00:05:44-03:00",
       "fim": "2026-09-10T02:05:00-03:00",
       "vigencia": "2026-09-10T00:05:44-03:00 → 2026-09-10T02:05:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T03:40:00+00:00",
+        "intensidade_estimada_mmh": 3.12,
+        "faixa_estimada_mmh": [
+          3.16,
+          3.65
+        ],
+        "dbz_medio": 30.9,
+        "pico_em": "2026-09-10T03:20:00+00:00",
+        "pico_estimado_mmh": 3.34,
+        "pico_dbz_medio": 31.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189528/2026",
+      "municipio": "Planalto",
+      "latitude": -21.033837,
+      "longitude": -49.929461,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:ATENCAO - 10/09 00:41 - TEMPORAIS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS nas proximas 3 horas. Ocorrencias ligue 199 ou 193.",
+      "resumo": "Defesa Civil:ATENCAO - 10/09 00:41 - TEMPORAIS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS nas proximas 3 horas. Ocorrencias ligue 199 ou 193.",
+      "descricao": "ATENÇÃO - 10/09 00:41 - TEMPORAIS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS para áreas das regiões do Meio-Oeste, Planalto Norte, Médio e Alto Vale do Itajaí nas próximas 3 horas. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T00:43:03-03:00",
+      "fim": "2026-09-10T03:40:00-03:00",
+      "vigencia": "2026-09-10T00:43:03-03:00 → 2026-09-10T03:40:00-03:00",
       "status": "ATIVO_OFICIAL",
       "fonte": "Defesa Civil / IDAP-CAP",
       "sender": "CENAD-SEDEC",
@@ -1605,7 +1647,7 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T03:40:28.207020+00:00",
+    "gerado_em": "2026-09-10T03:45:21.034135+00:00",
     "janela_min": 120,
     "eventos_com_eco": 13,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
