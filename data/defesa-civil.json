@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T06:40:22-03:00",
-  "fonte_coletada_em": "2026-09-10T09:40:07Z",
+  "gerado_em": "2026-09-10T06:45:14-03:00",
+  "fonte_coletada_em": "2026-09-10T09:45:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 111,
-  "alertas_ativos": 14,
+  "entradas_feed": 112,
+  "alertas_ativos": 15,
   "eventos_geo": [
     {
       "id_alerta": "189553/2026",
@@ -1322,34 +1322,93 @@
         "pico_dbz_medio": 32.8,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
-    }
-  ],
-  "eventos_recentes_geo": [
+    },
     {
-      "id_alerta": "189528/2026",
-      "municipio": "Planalto",
-      "latitude": -21.033837,
-      "longitude": -49.929461,
-      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:ATENCAO - 10/09 00:41 - TEMPORAIS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS nas proximas 3 horas. Ocorrencias ligue 199 ou 193.",
-      "resumo": "Defesa Civil:ATENCAO - 10/09 00:41 - TEMPORAIS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS nas proximas 3 horas. Ocorrencias ligue 199 ou 193.",
-      "descricao": "ATENÇÃO - 10/09 00:41 - TEMPORAIS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS para áreas das regiões do Meio-Oeste, Planalto Norte, Médio e Alto Vale do Itajaí nas próximas 3 horas. Ocorrências ligue 199 ou 193.",
+      "id_alerta": "189571/2026",
+      "municipio": "Mirante Do Paranapanema",
+      "latitude": -22.291503,
+      "longitude": -52.004329,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:06h43 Chuva isolada na regiao de Mirante do Paranapanema. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:06h43 Chuva isolada na regiao de Mirante do Paranapanema. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado nas proximas horas.",
+      "descricao": "06h43 Chuva isolada na região de Mirante do Paranapanema. Tem raios e vento. Atinge municípios vizinhos. Tome cuidado nas próximas horas.",
       "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Severe",
-      "urgencia": "Expected",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
       "certeza": "Observed",
-      "inicio": "2026-09-10T00:43:03-03:00",
-      "fim": "2026-09-10T03:40:00-03:00",
-      "vigencia": "2026-09-10T00:43:03-03:00 → 2026-09-10T03:40:00-03:00",
-      "status": "RECENTE_EXPIRADO",
+      "inicio": "2026-09-10T06:43:51-03:00",
+      "fim": "2026-09-10T10:00:00-03:00",
+      "vigencia": "2026-09-10T06:43:51-03:00 → 2026-09-10T10:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
       "fonte": "Defesa Civil / IDAP-CAP",
       "sender": "CENAD-SEDEC",
       "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 1,
+      "sites_referencia": 4,
       "area_oficial": [
-        "SANTA CATARINA/SC"
-      ]
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T09:40:00+00:00",
+        "intensidade_estimada_mmh": 1.53,
+        "faixa_estimada_mmh": [
+          1.15,
+          6.48
+        ],
+        "dbz_medio": 26.0,
+        "pico_em": "2026-09-10T09:40:00+00:00",
+        "pico_estimado_mmh": 1.53,
+        "pico_dbz_medio": 26.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
+    {
+      "id_alerta": "189571/2026",
+      "municipio": "Paranapanema",
+      "latitude": -23.410977,
+      "longitude": -48.824669,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:06h43 Chuva isolada na regiao de Mirante do Paranapanema. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:06h43 Chuva isolada na regiao de Mirante do Paranapanema. Tem raios e vento. Atinge municipios vizinhos. Tome cuidado nas proximas horas.",
+      "descricao": "06h43 Chuva isolada na região de Mirante do Paranapanema. Tem raios e vento. Atinge municípios vizinhos. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T06:43:51-03:00",
+      "fim": "2026-09-10T10:00:00-03:00",
+      "vigencia": "2026-09-10T06:43:51-03:00 → 2026-09-10T10:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T09:40:00+00:00",
+        "intensidade_estimada_mmh": 1.2,
+        "faixa_estimada_mmh": [
+          1.15,
+          6.48
+        ],
+        "dbz_medio": 24.3,
+        "pico_em": "2026-09-10T09:30:00+00:00",
+        "pico_estimado_mmh": 1.82,
+        "pico_dbz_medio": 27.2,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    }
+  ],
+  "eventos_recentes_geo": [
     {
       "id_alerta": "189529/2026",
       "municipio": "Getulina",
@@ -1805,9 +1864,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T09:40:28.717140+00:00",
+    "gerado_em": "2026-09-10T09:45:16.332461+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 28,
+    "eventos_com_eco": 30,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
