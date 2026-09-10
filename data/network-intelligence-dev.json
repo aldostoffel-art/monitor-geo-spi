@@ -1,8 +1,8 @@
 {
-  "gerado_em": "2026-09-10T05:25:19.719142+00:00",
+  "gerado_em": "2026-09-10T05:31:02.124206+00:00",
   "ambiente": "DEV",
-  "mudanca_relevante": false,
-  "fingerprint": "10acb8cfafd7e683f7c42bae3e9abaf976f72b995f3e1c1c7d13a12e21308ee4",
+  "mudanca_relevante": true,
+  "fingerprint": "a61453ad984965798f5df51317f4048c4d8995d9b87b41cb86d22ecf9464ae35",
   "nivel": "ATENÇÃO",
   "agora": "Sinal externo em Londrina/PR aponta risco para o corredor SUDOESTE/OESTE",
   "proximas_horas": "Potencial avanço para Ourinhos/Assis nas próximas horas; rajada até 37 km/h e chuva horária até 3.3 mm",
@@ -17,7 +17,7 @@
       "tempestade": true,
       "chuva_pico_mmh": 3.3,
       "rajada_pico_kmh": 37.1,
-      "prob_chuva_pico": 89,
+      "prob_chuva_pico": 90,
       "eta_sinal_externo": "2026-09-10T09:00:00+00:00",
       "backbones_no_corredor": 21,
       "backbones_amostra": [
@@ -129,8 +129,8 @@
       "score": 55,
       "tempestade": true,
       "chuva_pico_mmh": 5.3,
-      "rajada_pico_kmh": 37.4,
-      "prob_chuva_pico": 96,
+      "rajada_pico_kmh": 38.2,
+      "prob_chuva_pico": 98,
       "eta_sinal_externo": "2026-09-10T08:00:00+00:00",
       "backbones_no_corredor": 8,
       "backbones_amostra": [
@@ -234,10 +234,123 @@
           "caminho_potencial": []
         }
       ]
+    },
+    {
+      "nome": "Extrema/MG",
+      "corredor": "BRAGANÇA/JUNDIAÍ",
+      "alvo": "Bragança/Jundiaí",
+      "score": 50,
+      "tempestade": true,
+      "chuva_pico_mmh": 1.5,
+      "rajada_pico_kmh": 45.7,
+      "prob_chuva_pico": 69,
+      "eta_sinal_externo": "2026-09-10T12:00:00+00:00",
+      "backbones_no_corredor": 194,
+      "backbones_amostra": [
+        {
+          "id": "BB-3C900B7518B0",
+          "trecho": "ITA.CS-JAI.CB",
+          "cabo": null,
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "JAI.CB"
+        },
+        {
+          "id": "BB-2C51396CDA9F",
+          "trecho": "ITA.CS-JIU.DI",
+          "cabo": null,
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "JIU.DI"
+        },
+        {
+          "id": "BB-9162D38646F9",
+          "trecho": "ITA.CS-MNB.MG",
+          "cabo": null,
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "MNB.MG"
+        },
+        {
+          "id": "BB-3748FCBCA5D9",
+          "trecho": "ITA.CS-ITA.RD",
+          "cabo": "F-0171",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "ITA.RD"
+        },
+        {
+          "id": "BB-EB251B41B3B5",
+          "trecho": "ITA.CS-ITA.MD",
+          "cabo": "F-0802",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "ITA.MD"
+        },
+        {
+          "id": "BB-6EA5DE9EED94",
+          "trecho": "ITA.CS-JAI.RA",
+          "cabo": "F-0949",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.7,
+          "ponta_a": "ITA.CS",
+          "ponta_b": "JAI.RA"
+        },
+        {
+          "id": "BB-C05A537BBE84",
+          "trecho": "BGP.DN-BGP.SC",
+          "cabo": "F-0675",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 1.8,
+          "ponta_a": "BGP.DN",
+          "ponta_b": "BGP.SC"
+        },
+        {
+          "id": "BB-DC8A665988EE",
+          "trecho": "BGP.AV-BGP.SC",
+          "cabo": "F-0395",
+          "cluster": "JUNDIAI",
+          "dist_corredor_km": 2.6,
+          "ponta_a": "BGP.AV",
+          "ponta_b": "BGP.SC"
+        }
+      ],
+      "alternativas": [
+        {
+          "trecho": "ITA.CS-JAI.CB",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "ITA.CS-JIU.DI",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "ITA.CS-MNB.MG",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "ITA.CS-ITA.RD",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "ITA.CS-ITA.MD",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        }
+      ]
     }
   ],
   "chuva_observada_max_1h": 14.8,
-  "alertas_dc_ativos": 22,
+  "alertas_dc_ativos": 20,
   "municipios_arvore_relevantes": [
     {
       "municipio": "São José do Rio Preto",
