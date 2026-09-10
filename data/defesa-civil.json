@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T13:40:45-03:00",
-  "fonte_coletada_em": "2026-09-10T16:40:09Z",
+  "gerado_em": "2026-09-10T13:45:25-03:00",
+  "fonte_coletada_em": "2026-09-10T16:45:09Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 133,
-  "alertas_ativos": 14,
+  "entradas_feed": 132,
+  "alertas_ativos": 15,
   "eventos_geo": [
     {
       "id_alerta": "189647/2026",
@@ -1300,6 +1300,48 @@
         "pico_dbz_medio": 32.1,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
+    },
+    {
+      "id_alerta": "189673/2026",
+      "municipio": "Mogi Guaçu",
+      "latitude": -22.3452,
+      "longitude": -46.943628,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva forte se deslocando em direcao a Mogi Guacu e Mogi Mirim. Tem raios, vento e condicao para granizo. Atinge areas vizinhas. Abrigue-se!",
+      "resumo": "Defesa Civil:Chuva forte se deslocando em direcao a Mogi Guacu e Mogi Mirim. Tem raios, vento e condicao para granizo. Atinge areas vizinhas. Abrigue-se!",
+      "descricao": "Chuva forte se deslocando em direção à Mogi Guaçu e Mogi Mirim. Tem raios, vento e condição para granizo. Atinge áreas vizinhas. Abrigue-se!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-10T13:42:02-03:00",
+      "fim": "2026-09-10T19:30:00-03:00",
+      "vigencia": "2026-09-10T13:42:02-03:00 → 2026-09-10T19:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 19,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T16:40:00+00:00",
+        "intensidade_estimada_mmh": 1.64,
+        "faixa_estimada_mmh": [
+          1.15,
+          6.48
+        ],
+        "dbz_medio": 26.5,
+        "pico_em": "2026-09-10T16:20:00+00:00",
+        "pico_estimado_mmh": 3.72,
+        "pico_dbz_medio": 32.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [
@@ -2558,7 +2600,7 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T16:40:51.106465+00:00",
+    "gerado_em": "2026-09-10T16:45:27.215213+00:00",
     "janela_min": 120,
     "eventos_com_eco": 23,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
