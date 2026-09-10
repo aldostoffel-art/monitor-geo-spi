@@ -1,46 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T23:40:27-03:00",
-  "fonte_coletada_em": "2026-09-10T02:40:08Z",
+  "gerado_em": "2026-09-09T23:55:17-03:00",
+  "fonte_coletada_em": "2026-09-10T02:55:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 112,
+  "entradas_feed": 114,
   "alertas_ativos": 10,
   "eventos_geo": [
-    {
-      "id_alerta": "189404/2026",
-      "municipio": "Rafard",
-      "latitude": -23.019664,
-      "longitude": -47.528767,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:RAFARD/SP - Alerta para possiveis chuvas intensas nas proximas horas. Mantenha-se em local seguro, evite ficar proximo a arvores e redes eletricas",
-      "resumo": "Defesa Civil:RAFARD/SP - Alerta para possiveis chuvas intensas nas proximas horas. Mantenha-se em local seguro, evite ficar proximo a arvores e redes eletricas",
-      "descricao": "Alerta para possíveis chuvas intensas nas próximas horas. Mantenha-se em local seguro, evite ficar próximo a àrvores e redes elétricas.",
-      "instrucao": "RAFARD/SP - Alerta para possíveis chuvas intensas nas próximas horas. Mantenha-se em local seguro, evite ficar próximo a àrvores e redes elétricas.",
-      "gravidade": "Severe",
-      "urgencia": "Immediate",
-      "certeza": "Likely",
-      "inicio": "2026-09-09T12:40:00-03:00",
-      "fim": "2026-09-09T23:55:00-03:00",
-      "vigencia": "2026-09-09T12:40:00-03:00 → 2026-09-09T23:55:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 1,
-      "area_oficial": [
-        "Rafard/SP"
-      ],
-      "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
-        "fonte": "RainViewer",
-        "metodo": "Radar composto",
-        "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
-      }
-    },
     {
       "id_alerta": "189486/2026",
       "municipio": "Planalto",
@@ -70,13 +38,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T02:40:00+00:00",
-        "intensidade_estimada_mmh": 0.56,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 0.53,
         "faixa_estimada_mmh": [
           0.56,
-          0.56
+          1.0
         ],
-        "dbz_medio": 19.0,
+        "dbz_medio": 18.6,
         "pico_em": "2026-09-10T02:40:00+00:00",
         "pico_estimado_mmh": 0.56,
         "pico_dbz_medio": 19.0,
@@ -112,13 +80,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T02:30:00+00:00",
-        "intensidade_estimada_mmh": 1.02,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 0.56,
         "faixa_estimada_mmh": [
-          1.15,
-          3.65
+          0.56,
+          0.56
         ],
-        "dbz_medio": 23.2,
+        "dbz_medio": 19.0,
         "pico_em": "2026-09-10T02:10:00+00:00",
         "pico_estimado_mmh": 3.35,
         "pico_dbz_medio": 31.4,
@@ -154,16 +122,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T02:40:00+00:00",
-        "intensidade_estimada_mmh": 0.5,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 0.44,
         "faixa_estimada_mmh": [
           0.56,
           0.56
         ],
-        "dbz_medio": 18.2,
-        "pico_em": "2026-09-10T00:50:00+00:00",
-        "pico_estimado_mmh": 4.21,
-        "pico_dbz_medio": 33.0,
+        "dbz_medio": 17.3,
+        "pico_em": "2026-09-10T01:00:00+00:00",
+        "pico_estimado_mmh": 1.33,
+        "pico_dbz_medio": 25.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -196,13 +164,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T02:40:00+00:00",
-        "intensidade_estimada_mmh": 0.62,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 0.56,
         "faixa_estimada_mmh": [
           0.56,
           1.15
         ],
-        "dbz_medio": 19.7,
+        "dbz_medio": 19.0,
         "pico_em": "2026-09-10T01:20:00+00:00",
         "pico_estimado_mmh": 6.71,
         "pico_dbz_medio": 36.2,
@@ -245,9 +213,9 @@
           0.56
         ],
         "dbz_medio": 18.1,
-        "pico_em": "2026-09-10T00:50:00+00:00",
-        "pico_estimado_mmh": 9.62,
-        "pico_dbz_medio": 38.7,
+        "pico_em": "2026-09-10T01:00:00+00:00",
+        "pico_estimado_mmh": 8.93,
+        "pico_dbz_medio": 38.2,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -280,13 +248,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T02:40:00+00:00",
-        "intensidade_estimada_mmh": 0.56,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 0.53,
         "faixa_estimada_mmh": [
           0.56,
-          0.56
+          1.0
         ],
-        "dbz_medio": 19.0,
+        "dbz_medio": 18.6,
         "pico_em": "2026-09-10T02:40:00+00:00",
         "pico_estimado_mmh": 0.56,
         "pico_dbz_medio": 19.0,
@@ -364,13 +332,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T02:40:00+00:00",
-        "intensidade_estimada_mmh": 2.12,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 2.24,
         "faixa_estimada_mmh": [
           2.05,
-          6.48
+          3.16
         ],
-        "dbz_medio": 28.2,
+        "dbz_medio": 28.6,
         "pico_em": "2026-09-10T02:20:00+00:00",
         "pico_estimado_mmh": 10.11,
         "pico_dbz_medio": 39.1,
@@ -406,13 +374,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T02:40:00+00:00",
-        "intensidade_estimada_mmh": 1.04,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 1.29,
         "faixa_estimada_mmh": [
           1.15,
           3.16
         ],
-        "dbz_medio": 23.3,
+        "dbz_medio": 24.8,
         "pico_em": "2026-09-10T02:00:00+00:00",
         "pico_estimado_mmh": 7.54,
         "pico_dbz_medio": 37.0,
@@ -448,13 +416,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T02:40:00+00:00",
-        "intensidade_estimada_mmh": 0.56,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 0.53,
         "faixa_estimada_mmh": [
           0.56,
-          0.56
+          1.0
         ],
-        "dbz_medio": 19.0,
+        "dbz_medio": 18.6,
         "pico_em": "2026-09-10T02:40:00+00:00",
         "pico_estimado_mmh": 0.56,
         "pico_dbz_medio": 19.0,
@@ -490,13 +458,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T02:40:00+00:00",
-        "intensidade_estimada_mmh": 2.52,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 1.18,
         "faixa_estimada_mmh": [
-          2.05,
-          6.48
+          1.15,
+          3.16
         ],
-        "dbz_medio": 29.4,
+        "dbz_medio": 24.2,
         "pico_em": "2026-09-10T01:40:00+00:00",
         "pico_estimado_mmh": 7.98,
         "pico_dbz_medio": 37.4,
@@ -532,13 +500,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T02:40:00+00:00",
-        "intensidade_estimada_mmh": 0.56,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 0.53,
         "faixa_estimada_mmh": [
           0.56,
-          0.56
+          1.0
         ],
-        "dbz_medio": 19.0,
+        "dbz_medio": 18.6,
         "pico_em": "2026-09-10T02:40:00+00:00",
         "pico_estimado_mmh": 0.56,
         "pico_dbz_medio": 19.0,
@@ -574,13 +542,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T02:40:00+00:00",
-        "intensidade_estimada_mmh": 9.1,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 2.13,
         "faixa_estimada_mmh": [
-          8.65,
-          27.34
+          2.05,
+          8.65
         ],
-        "dbz_medio": 38.4,
+        "dbz_medio": 28.3,
         "pico_em": "2026-09-10T02:40:00+00:00",
         "pico_estimado_mmh": 9.1,
         "pico_dbz_medio": 38.4,
@@ -616,16 +584,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T02:40:00+00:00",
-        "intensidade_estimada_mmh": 1.41,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 9.6,
         "faixa_estimada_mmh": [
-          1.15,
-          15.38
+          11.53,
+          27.34
         ],
-        "dbz_medio": 25.4,
-        "pico_em": "2026-09-10T02:40:00+00:00",
-        "pico_estimado_mmh": 1.41,
-        "pico_dbz_medio": 25.4,
+        "dbz_medio": 38.7,
+        "pico_em": "2026-09-10T02:50:00+00:00",
+        "pico_estimado_mmh": 9.6,
+        "pico_dbz_medio": 38.7,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -658,46 +626,147 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T02:40:00+00:00",
-        "intensidade_estimada_mmh": 0.88,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 0.46,
         "faixa_estimada_mmh": [
-          1.0,
-          3.16
+          0.56,
+          1.0
         ],
-        "dbz_medio": 22.1,
+        "dbz_medio": 17.6,
         "pico_em": "2026-09-10T02:10:00+00:00",
         "pico_estimado_mmh": 2.62,
         "pico_dbz_medio": 29.7,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
-    }
-  ],
-  "eventos_recentes_geo": [
+    },
     {
-      "id_alerta": "189456/2026",
-      "municipio": "Planalto",
-      "latitude": -21.033837,
-      "longitude": -49.929461,
-      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
-      "titulo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
-      "resumo": "OBSERVAÇÃO - 09/09 17:50 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para as regiões do Planalto Norte, Litoral Norte, Grande Florianópolis, Baixo, Médio e Alto Vale do Itajaí nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
-      "descricao": "OBSERVAÇÃO - 09/09 17:50 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para as regiões do Planalto Norte, Litoral Norte, Grande Florianópolis, Baixo, Médio e Alto Vale do Itajaí nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
+      "id_alerta": "189520/2026",
+      "municipio": "Bastos",
+      "latitude": -21.92605,
+      "longitude": -50.734017,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:23h47 Chuva na regiao de Osvaldo Cruz e Bastos, se deslocando na direcao a Tupa. Tem raios e ventos. Atinge cidades vizinhas.",
+      "resumo": "Defesa Civil:23h47 Chuva na regiao de Osvaldo Cruz e Bastos, se deslocando na direcao a Tupa. Tem raios e ventos. Atinge cidades vizinhas.",
+      "descricao": "23h47 Chuva na região de Osvaldo Cruz e Bastos, se deslocando na direção à Tupã. Tem raios e ventos. Atinge cidades vizinhas.",
       "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
       "gravidade": "Moderate",
-      "urgencia": "Expected",
+      "urgencia": "Immediate",
       "certeza": "Observed",
-      "inicio": "2026-09-09T17:52:26-03:00",
-      "fim": "2026-09-09T21:50:00-03:00",
-      "vigencia": "2026-09-09T17:52:26-03:00 → 2026-09-09T21:50:00-03:00",
-      "status": "RECENTE_EXPIRADO",
+      "inicio": "2026-09-09T23:47:10-03:00",
+      "fim": "2026-09-10T03:30:00-03:00",
+      "vigencia": "2026-09-09T23:47:10-03:00 → 2026-09-10T03:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
       "fonte": "Defesa Civil / IDAP-CAP",
       "sender": "CENAD-SEDEC",
       "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 1,
+      "sites_referencia": 3,
       "area_oficial": [
-        "SANTA CATARINA/SC"
-      ]
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 5.67,
+        "faixa_estimada_mmh": [
+          3.65,
+          15.38
+        ],
+        "dbz_medio": 35.1,
+        "pico_em": "2026-09-10T02:50:00+00:00",
+        "pico_estimado_mmh": 5.67,
+        "pico_dbz_medio": 35.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
+    {
+      "id_alerta": "189520/2026",
+      "municipio": "Osvaldo Cruz",
+      "latitude": -21.782159,
+      "longitude": -50.875858,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:23h47 Chuva na regiao de Osvaldo Cruz e Bastos, se deslocando na direcao a Tupa. Tem raios e ventos. Atinge cidades vizinhas.",
+      "resumo": "Defesa Civil:23h47 Chuva na regiao de Osvaldo Cruz e Bastos, se deslocando na direcao a Tupa. Tem raios e ventos. Atinge cidades vizinhas.",
+      "descricao": "23h47 Chuva na região de Osvaldo Cruz e Bastos, se deslocando na direção à Tupã. Tem raios e ventos. Atinge cidades vizinhas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T23:47:10-03:00",
+      "fim": "2026-09-10T03:30:00-03:00",
+      "vigencia": "2026-09-09T23:47:10-03:00 → 2026-09-10T03:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 4,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 16.1,
+        "faixa_estimada_mmh": [
+          15.38,
+          27.34
+        ],
+        "dbz_medio": 42.3,
+        "pico_em": "2026-09-10T02:50:00+00:00",
+        "pico_estimado_mmh": 16.1,
+        "pico_dbz_medio": 42.3,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189520/2026",
+      "municipio": "Tupã",
+      "latitude": -21.93318,
+      "longitude": -50.514098,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:23h47 Chuva na regiao de Osvaldo Cruz e Bastos, se deslocando na direcao a Tupa. Tem raios e ventos. Atinge cidades vizinhas.",
+      "resumo": "Defesa Civil:23h47 Chuva na regiao de Osvaldo Cruz e Bastos, se deslocando na direcao a Tupa. Tem raios e ventos. Atinge cidades vizinhas.",
+      "descricao": "23h47 Chuva na região de Osvaldo Cruz e Bastos, se deslocando na direção à Tupã. Tem raios e ventos. Atinge cidades vizinhas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T23:47:10-03:00",
+      "fim": "2026-09-10T03:30:00-03:00",
+      "vigencia": "2026-09-09T23:47:10-03:00 → 2026-09-10T03:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 10,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T02:50:00+00:00",
+        "intensidade_estimada_mmh": 2.83,
+        "faixa_estimada_mmh": [
+          3.16,
+          8.65
+        ],
+        "dbz_medio": 30.2,
+        "pico_em": "2026-09-10T02:50:00+00:00",
+        "pico_estimado_mmh": 2.83,
+        "pico_dbz_medio": 30.2,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    }
+  ],
+  "eventos_recentes_geo": [
     {
       "id_alerta": "189458/2026",
       "municipio": "Planalto",
@@ -1528,9 +1597,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T02:40:34.008073+00:00",
+    "gerado_em": "2026-09-10T02:55:19.981615+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 12,
+    "eventos_com_eco": 15,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
