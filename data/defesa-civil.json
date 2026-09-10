@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T14:05:58-03:00",
-  "fonte_coletada_em": "2026-09-10T17:05:45Z",
+  "gerado_em": "2026-09-10T14:15:24-03:00",
+  "fonte_coletada_em": "2026-09-10T17:15:09Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 136,
-  "alertas_ativos": 17,
+  "entradas_feed": 134,
+  "alertas_ativos": 18,
   "eventos_geo": [
     {
       "id_alerta": "189647/2026",
@@ -32,7 +32,14 @@
       "sites_referencia": 1,
       "area_oficial": [
         "SANTA CATARINA/SC"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
     },
     {
       "id_alerta": "189650/2026",
@@ -57,7 +64,24 @@
       "sites_referencia": 8,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.24,
+        "faixa_estimada_mmh": [
+          1.15,
+          2.37
+        ],
+        "dbz_medio": 24.5,
+        "pico_em": "2026-09-10T15:40:00+00:00",
+        "pico_estimado_mmh": 5.27,
+        "pico_dbz_medio": 34.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189654/2026",
@@ -82,7 +106,24 @@
       "sites_referencia": 6,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 4.75,
+        "faixa_estimada_mmh": [
+          3.65,
+          15.38
+        ],
+        "dbz_medio": 33.8,
+        "pico_em": "2026-09-10T15:20:00+00:00",
+        "pico_estimado_mmh": 5.17,
+        "pico_dbz_medio": 34.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189654/2026",
@@ -107,7 +148,24 @@
       "sites_referencia": 60,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 0.71,
+        "faixa_estimada_mmh": [
+          1.0,
+          1.15
+        ],
+        "dbz_medio": 20.6,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 7.66,
+        "pico_dbz_medio": 37.2,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189654/2026",
@@ -132,7 +190,24 @@
       "sites_referencia": 5,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 3.09,
+        "faixa_estimada_mmh": [
+          3.16,
+          3.65
+        ],
+        "dbz_medio": 30.9,
+        "pico_em": "2026-09-10T15:50:00+00:00",
+        "pico_estimado_mmh": 11.33,
+        "pico_dbz_medio": 39.9,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189655/2026",
@@ -157,7 +232,24 @@
       "sites_referencia": 46,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 6.3,
+        "faixa_estimada_mmh": [
+          7.49,
+          15.38
+        ],
+        "dbz_medio": 35.8,
+        "pico_em": "2026-09-10T16:20:00+00:00",
+        "pico_estimado_mmh": 9.26,
+        "pico_dbz_medio": 38.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189655/2026",
@@ -182,7 +274,24 @@
       "sites_referencia": 16,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 2.33,
+        "faixa_estimada_mmh": [
+          3.16,
+          9.99
+        ],
+        "dbz_medio": 28.9,
+        "pico_em": "2026-09-10T16:40:00+00:00",
+        "pico_estimado_mmh": 6.86,
+        "pico_dbz_medio": 36.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189655/2026",
@@ -207,7 +316,24 @@
       "sites_referencia": 35,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 2.16,
+        "faixa_estimada_mmh": [
+          2.05,
+          6.48
+        ],
+        "dbz_medio": 28.4,
+        "pico_em": "2026-09-10T16:30:00+00:00",
+        "pico_estimado_mmh": 14.53,
+        "pico_dbz_medio": 41.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189656/2026",
@@ -232,7 +358,24 @@
       "sites_referencia": 60,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 0.71,
+        "faixa_estimada_mmh": [
+          1.0,
+          1.15
+        ],
+        "dbz_medio": 20.6,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 7.66,
+        "pico_dbz_medio": 37.2,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189660/2026",
@@ -257,7 +400,24 @@
       "sites_referencia": 60,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 0.71,
+        "faixa_estimada_mmh": [
+          1.0,
+          1.15
+        ],
+        "dbz_medio": 20.6,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 7.66,
+        "pico_dbz_medio": 37.2,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189662/2026",
@@ -282,7 +442,24 @@
       "sites_referencia": 46,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 6.3,
+        "faixa_estimada_mmh": [
+          7.49,
+          15.38
+        ],
+        "dbz_medio": 35.8,
+        "pico_em": "2026-09-10T16:20:00+00:00",
+        "pico_estimado_mmh": 9.26,
+        "pico_dbz_medio": 38.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189662/2026",
@@ -307,7 +484,24 @@
       "sites_referencia": 22,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.24,
+        "faixa_estimada_mmh": [
+          1.15,
+          3.16
+        ],
+        "dbz_medio": 24.5,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 14.66,
+        "pico_dbz_medio": 41.7,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189662/2026",
@@ -332,7 +526,24 @@
       "sites_referencia": 35,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 2.16,
+        "faixa_estimada_mmh": [
+          2.05,
+          6.48
+        ],
+        "dbz_medio": 28.4,
+        "pico_em": "2026-09-10T16:30:00+00:00",
+        "pico_estimado_mmh": 14.53,
+        "pico_dbz_medio": 41.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189664/2026",
@@ -357,7 +568,24 @@
       "sites_referencia": 200,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 3.01,
+        "faixa_estimada_mmh": [
+          3.16,
+          8.65
+        ],
+        "dbz_medio": 30.7,
+        "pico_em": "2026-09-10T16:30:00+00:00",
+        "pico_estimado_mmh": 6.16,
+        "pico_dbz_medio": 35.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189665/2026",
@@ -382,7 +610,24 @@
       "sites_referencia": 45,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.37,
+        "faixa_estimada_mmh": [
+          1.15,
+          3.16
+        ],
+        "dbz_medio": 25.2,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 2.2,
+        "pico_dbz_medio": 28.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189665/2026",
@@ -407,7 +652,24 @@
       "sites_referencia": 25,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 0.57,
+        "faixa_estimada_mmh": [
+          0.56,
+          1.15
+        ],
+        "dbz_medio": 19.1,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 1.05,
+        "pico_dbz_medio": 23.3,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189665/2026",
@@ -432,7 +694,24 @@
       "sites_referencia": 108,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 0.98,
+        "faixa_estimada_mmh": [
+          1.0,
+          2.05
+        ],
+        "dbz_medio": 22.9,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 0.99,
+        "pico_dbz_medio": 23.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189666/2026",
@@ -457,7 +736,24 @@
       "sites_referencia": 8,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:00:00+00:00",
+        "intensidade_estimada_mmh": 1.26,
+        "faixa_estimada_mmh": [
+          1.15,
+          6.48
+        ],
+        "dbz_medio": 24.6,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 7.23,
+        "pico_dbz_medio": 36.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189666/2026",
@@ -482,7 +778,24 @@
       "sites_referencia": 8,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.92,
+        "faixa_estimada_mmh": [
+          1.15,
+          8.65
+        ],
+        "dbz_medio": 27.6,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 7.11,
+        "pico_dbz_medio": 36.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189666/2026",
@@ -507,7 +820,24 @@
       "sites_referencia": 8,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T16:50:00+00:00",
+        "intensidade_estimada_mmh": 0.68,
+        "faixa_estimada_mmh": [
+          0.56,
+          1.0
+        ],
+        "dbz_medio": 20.3,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 11.38,
+        "pico_dbz_medio": 39.9,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189667/2026",
@@ -532,7 +862,24 @@
       "sites_referencia": 34,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.99,
+        "faixa_estimada_mmh": [
+          2.05,
+          3.16
+        ],
+        "dbz_medio": 27.8,
+        "pico_em": "2026-09-10T16:40:00+00:00",
+        "pico_estimado_mmh": 12.94,
+        "pico_dbz_medio": 40.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189667/2026",
@@ -557,7 +904,24 @@
       "sites_referencia": 22,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.24,
+        "faixa_estimada_mmh": [
+          1.15,
+          3.16
+        ],
+        "dbz_medio": 24.5,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 14.66,
+        "pico_dbz_medio": 41.7,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189668/2026",
@@ -582,7 +946,24 @@
       "sites_referencia": 22,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 0.99,
+        "faixa_estimada_mmh": [
+          1.15,
+          2.05
+        ],
+        "dbz_medio": 22.9,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 3.17,
+        "pico_dbz_medio": 31.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189668/2026",
@@ -607,7 +988,24 @@
       "sites_referencia": 34,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.99,
+        "faixa_estimada_mmh": [
+          2.05,
+          3.16
+        ],
+        "dbz_medio": 27.8,
+        "pico_em": "2026-09-10T16:40:00+00:00",
+        "pico_estimado_mmh": 12.94,
+        "pico_dbz_medio": 40.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189668/2026",
@@ -632,7 +1030,24 @@
       "sites_referencia": 19,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 3.28,
+        "faixa_estimada_mmh": [
+          3.16,
+          7.49
+        ],
+        "dbz_medio": 31.3,
+        "pico_em": "2026-09-10T16:40:00+00:00",
+        "pico_estimado_mmh": 5.68,
+        "pico_dbz_medio": 35.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189668/2026",
@@ -657,7 +1072,24 @@
       "sites_referencia": 22,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.24,
+        "faixa_estimada_mmh": [
+          1.15,
+          3.16
+        ],
+        "dbz_medio": 24.5,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 14.66,
+        "pico_dbz_medio": 41.7,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189668/2026",
@@ -682,7 +1114,24 @@
       "sites_referencia": 27,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.72,
+        "faixa_estimada_mmh": [
+          1.33,
+          7.49
+        ],
+        "dbz_medio": 26.8,
+        "pico_em": "2026-09-10T16:10:00+00:00",
+        "pico_estimado_mmh": 5.63,
+        "pico_dbz_medio": 35.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189670/2026",
@@ -707,7 +1156,24 @@
       "sites_referencia": 19,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 5.26,
+        "faixa_estimada_mmh": [
+          6.48,
+          8.65
+        ],
+        "dbz_medio": 34.5,
+        "pico_em": "2026-09-10T17:10:00+00:00",
+        "pico_estimado_mmh": 5.26,
+        "pico_dbz_medio": 34.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189673/2026",
@@ -732,7 +1198,24 @@
       "sites_referencia": 19,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 5.26,
+        "faixa_estimada_mmh": [
+          6.48,
+          8.65
+        ],
+        "dbz_medio": 34.5,
+        "pico_em": "2026-09-10T17:10:00+00:00",
+        "pico_estimado_mmh": 5.26,
+        "pico_dbz_medio": 34.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189675/2026",
@@ -757,7 +1240,24 @@
       "sites_referencia": 13,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 6.25,
+        "faixa_estimada_mmh": [
+          6.48,
+          8.65
+        ],
+        "dbz_medio": 35.7,
+        "pico_em": "2026-09-10T17:10:00+00:00",
+        "pico_estimado_mmh": 6.25,
+        "pico_dbz_medio": 35.7,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189676/2026",
@@ -782,7 +1282,24 @@
       "sites_referencia": 37,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 3.51,
+        "faixa_estimada_mmh": [
+          2.73,
+          11.53
+        ],
+        "dbz_medio": 31.7,
+        "pico_em": "2026-09-10T16:50:00+00:00",
+        "pico_estimado_mmh": 4.48,
+        "pico_dbz_medio": 33.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "189679/2026",
@@ -807,35 +1324,111 @@
       "sites_referencia": 5,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
-    }
-  ],
-  "eventos_recentes_geo": [
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 7.57,
+        "faixa_estimada_mmh": [
+          8.65,
+          17.76
+        ],
+        "dbz_medio": 37.1,
+        "pico_em": "2026-09-10T17:00:00+00:00",
+        "pico_estimado_mmh": 12.27,
+        "pico_dbz_medio": 40.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
     {
-      "id_alerta": "189583/2026",
-      "municipio": "Planalto",
-      "latitude": -21.033837,
-      "longitude": -49.929461,
-      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
-      "titulo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
-      "resumo": "OBSERVAÇÃO - 10/09 08:10 - CHUVA PERSISTENTE de intensidade moderada a forte com RAIOS e ALAGAMENTOS pontuais para as regiões do Meio-Oeste, Planalto Norte, Litoral Norte, Baixo, Médio e Alto Vale do Itajaí nas próximas 3 horas. Ocorrências ligue 199 ou 193.",
-      "descricao": "OBSERVAÇÃO - 10/09 08:10 - CHUVA PERSISTENTE de intensidade moderada a forte com RAIOS e ALAGAMENTOS pontuais para as regiões do Meio-Oeste, Planalto Norte, Litoral Norte, Baixo, Médio e Alto Vale do Itajaí nas próximas 3 horas. Ocorrências ligue 199 ou 193.",
+      "id_alerta": "189680/2026",
+      "municipio": "Mendonça",
+      "latitude": -21.168703,
+      "longitude": -49.597057,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:10 - Chuva na regiao de Mendonca e Urupes. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:14:10 - Chuva na regiao de Mendonca e Urupes. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "14:10 - Chuva na região de Mendonça e Urupês. Tem raios e vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
       "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
       "gravidade": "Moderate",
-      "urgencia": "Expected",
-      "certeza": "Likely",
-      "inicio": "2026-09-10T08:13:03-03:00",
-      "fim": "2026-09-10T11:10:00-03:00",
-      "vigencia": "2026-09-10T08:13:03-03:00 → 2026-09-10T11:10:00-03:00",
-      "status": "RECENTE_EXPIRADO",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T14:11:23-03:00",
+      "fim": "2026-09-10T18:30:00-03:00",
+      "vigencia": "2026-09-10T14:11:23-03:00 → 2026-09-10T18:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
       "fonte": "Defesa Civil / IDAP-CAP",
       "sender": "CENAD-SEDEC",
       "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 1,
+      "sites_referencia": 2,
       "area_oficial": [
-        "SANTA CATARINA/SC"
-      ]
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.01,
+        "faixa_estimada_mmh": [
+          1.0,
+          2.05
+        ],
+        "dbz_medio": 23.1,
+        "pico_em": "2026-09-10T17:00:00+00:00",
+        "pico_estimado_mmh": 2.92,
+        "pico_dbz_medio": 30.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
+    {
+      "id_alerta": "189680/2026",
+      "municipio": "Urupês",
+      "latitude": -21.191294,
+      "longitude": -49.240615,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14:10 - Chuva na regiao de Mendonca e Urupes. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:14:10 - Chuva na regiao de Mendonca e Urupes. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "14:10 - Chuva na região de Mendonça e Urupês. Tem raios e vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T14:11:23-03:00",
+      "fim": "2026-09-10T18:30:00-03:00",
+      "vigencia": "2026-09-10T14:11:23-03:00 → 2026-09-10T18:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 2,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.97,
+        "faixa_estimada_mmh": [
+          2.05,
+          8.65
+        ],
+        "dbz_medio": 27.7,
+        "pico_em": "2026-09-10T17:10:00+00:00",
+        "pico_estimado_mmh": 1.97,
+        "pico_dbz_medio": 27.7,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    }
+  ],
+  "eventos_recentes_geo": [
     {
       "id_alerta": "189587/2026",
       "municipio": "Assis",
@@ -2138,5 +2731,12 @@
         "SÃO PAULO/SP"
       ]
     }
-  ]
+  ],
+  "radar_enriquecimento": {
+    "fonte": "RainViewer",
+    "gerado_em": "2026-09-10T17:15:26.408295+00:00",
+    "janela_min": 120,
+    "eventos_com_eco": 25,
+    "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
+  }
 }
