@@ -1528,3 +1528,18 @@ body.tv-mode .tv-ai>small{font-size:11px!important;line-height:1.16!important}
   body.tv-mode .tv-map .leaflet-tile-pane,
   body.tv-mode .tv-map .leaflet-control-container{display:none!important}
 }
+
+/* TV OPERACIONAL • cabeçalho mínimo do mapa v19 • DEV */
+@media(min-width:1200px){
+  body.tv-mode .tv-map-panel{grid-template-rows:24px 1fr auto!important}
+  body.tv-mode .tv-map-panel>header{min-height:24px!important;height:24px!important;padding:2px 7px!important;align-items:center!important;background:#315e78!important;border-bottom:1px solid #274d63!important}
+  body.tv-mode .tv-map-panel>header div{display:flex!important;align-items:center!important;gap:6px!important;min-width:0!important}
+  body.tv-mode .tv-map-panel>header span{display:none!important}
+  body.tv-mode .tv-map-panel>header b{margin:0!important;font-size:11px!important;line-height:1!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;color:#fff!important}
+  body.tv-mode .tv-map-panel>header strong{font-size:11px!important;line-height:1!important;color:#dff4ff!important;white-space:nowrap!important}
+}
+@media(min-width:1200px) and (max-height:820px){
+  body.tv-mode .tv-map-panel{grid-template-rows:20px 1fr!important}
+  body.tv-mode .tv-map-panel>header{min-height:20px!important;height:20px!important;padding:1px 6px!important}
+  body.tv-mode .tv-map-panel>header b,body.tv-mode .tv-map-panel>header strong{font-size:10px!important}
+}
