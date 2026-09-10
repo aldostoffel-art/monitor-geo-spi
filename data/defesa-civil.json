@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T10:10:41-03:00",
-  "fonte_coletada_em": "2026-09-10T13:10:10Z",
+  "gerado_em": "2026-09-10T10:15:19-03:00",
+  "fonte_coletada_em": "2026-09-10T13:15:08Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 109,
-  "alertas_ativos": 12,
+  "entradas_feed": 113,
+  "alertas_ativos": 13,
   "eventos_geo": [
     {
       "id_alerta": "189583/2026",
@@ -1270,34 +1270,135 @@
         "pico_dbz_medio": 31.3,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
-    }
-  ],
-  "eventos_recentes_geo": [
+    },
     {
-      "id_alerta": "189553/2026",
-      "municipio": "Planalto",
-      "latitude": -21.033837,
-      "longitude": -49.929461,
-      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
-      "titulo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
-      "resumo": "OBSERVAÇÃO - 10/09 04:10 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS pontuais para as regiões do Extremo Oeste, Oeste, Meio-Oeste e Planalto Norte nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
-      "descricao": "OBSERVAÇÃO - 10/09 04:10 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO, GRANIZO e ALAGAMENTOS pontuais para as regiões do Extremo Oeste, Oeste, Meio-Oeste e Planalto Norte nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
+      "id_alerta": "189618/2026",
+      "municipio": "Marília",
+      "latitude": -22.215435,
+      "longitude": -49.951103,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:10h15 Chuva intensa na regiao de Rancharia, Quata e Marilia. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:10h15 Chuva intensa na regiao de Rancharia, Quata e Marilia. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "10h15 Chuva intensa na região de Rancharia, Quatá e Marília. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
       "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
+      "gravidade": "Severe",
       "urgencia": "Expected",
-      "certeza": "Likely",
-      "inicio": "2026-09-10T04:12:12-03:00",
-      "fim": "2026-09-10T08:15:00-03:00",
-      "vigencia": "2026-09-10T04:12:12-03:00 → 2026-09-10T08:15:00-03:00",
-      "status": "RECENTE_EXPIRADO",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T10:14:18-03:00",
+      "fim": "2026-09-10T12:15:00-03:00",
+      "vigencia": "2026-09-10T10:14:18-03:00 → 2026-09-10T12:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
       "fonte": "Defesa Civil / IDAP-CAP",
       "sender": "CENAD-SEDEC",
       "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 1,
+      "sites_referencia": 40,
       "area_oficial": [
-        "SANTA CATARINA/SC"
-      ]
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T13:10:00+00:00",
+        "intensidade_estimada_mmh": 1.9,
+        "faixa_estimada_mmh": [
+          2.05,
+          15.38
+        ],
+        "dbz_medio": 27.5,
+        "pico_em": "2026-09-10T13:10:00+00:00",
+        "pico_estimado_mmh": 1.9,
+        "pico_dbz_medio": 27.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
+    {
+      "id_alerta": "189618/2026",
+      "municipio": "Quatá",
+      "latitude": -22.244765,
+      "longitude": -50.675442,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:10h15 Chuva intensa na regiao de Rancharia, Quata e Marilia. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:10h15 Chuva intensa na regiao de Rancharia, Quata e Marilia. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "10h15 Chuva intensa na região de Rancharia, Quatá e Marília. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T10:14:18-03:00",
+      "fim": "2026-09-10T12:15:00-03:00",
+      "vigencia": "2026-09-10T10:14:18-03:00 → 2026-09-10T12:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 4,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T13:10:00+00:00",
+        "intensidade_estimada_mmh": 2.67,
+        "faixa_estimada_mmh": [
+          2.05,
+          8.65
+        ],
+        "dbz_medio": 29.8,
+        "pico_em": "2026-09-10T13:10:00+00:00",
+        "pico_estimado_mmh": 2.67,
+        "pico_dbz_medio": 29.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189618/2026",
+      "municipio": "Rancharia",
+      "latitude": -22.428876,
+      "longitude": -50.907071,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:10h15 Chuva intensa na regiao de Rancharia, Quata e Marilia. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:10h15 Chuva intensa na regiao de Rancharia, Quata e Marilia. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "10h15 Chuva intensa na região de Rancharia, Quatá e Marília. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T10:14:18-03:00",
+      "fim": "2026-09-10T12:15:00-03:00",
+      "vigencia": "2026-09-10T10:14:18-03:00 → 2026-09-10T12:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 9,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T13:10:00+00:00",
+        "intensidade_estimada_mmh": 3.59,
+        "faixa_estimada_mmh": [
+          3.16,
+          8.65
+        ],
+        "dbz_medio": 31.9,
+        "pico_em": "2026-09-10T13:10:00+00:00",
+        "pico_estimado_mmh": 3.59,
+        "pico_dbz_medio": 31.9,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    }
+  ],
+  "eventos_recentes_geo": [
     {
       "id_alerta": "189554/2026",
       "municipio": "Araraquara",
@@ -2178,9 +2279,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T13:10:47.915571+00:00",
+    "gerado_em": "2026-09-10T13:15:20.943169+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 25,
+    "eventos_com_eco": 28,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
