@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T03:10:20-03:00",
-  "fonte_coletada_em": "2026-09-10T06:10:05Z",
+  "gerado_em": "2026-09-10T03:15:17-03:00",
+  "fonte_coletada_em": "2026-09-10T06:15:06Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 107,
-  "alertas_ativos": 12,
+  "entradas_feed": 108,
+  "alertas_ativos": 13,
   "eventos_geo": [
     {
       "id_alerta": "189520/2026",
@@ -406,13 +406,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T06:00:00+00:00",
-        "intensidade_estimada_mmh": 0.58,
+        "ultimo_eco_em": "2026-09-10T06:10:00+00:00",
+        "intensidade_estimada_mmh": 0.56,
         "faixa_estimada_mmh": [
           0.56,
-          1.15
+          0.56
         ],
-        "dbz_medio": 19.3,
+        "dbz_medio": 19.0,
         "pico_em": "2026-09-10T04:40:00+00:00",
         "pico_estimado_mmh": 3.11,
         "pico_dbz_medio": 30.9,
@@ -574,13 +574,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T06:00:00+00:00",
-        "intensidade_estimada_mmh": 0.65,
+        "ultimo_eco_em": "2026-09-10T06:10:00+00:00",
+        "intensidade_estimada_mmh": 0.42,
         "faixa_estimada_mmh": [
-          1.0,
-          3.16
+          0.36,
+          1.0
         ],
-        "dbz_medio": 20.0,
+        "dbz_medio": 17.0,
         "pico_em": "2026-09-10T05:00:00+00:00",
         "pico_estimado_mmh": 0.73,
         "pico_dbz_medio": 20.8,
@@ -616,13 +616,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T06:00:00+00:00",
-        "intensidade_estimada_mmh": 1.21,
+        "ultimo_eco_em": "2026-09-10T06:10:00+00:00",
+        "intensidade_estimada_mmh": 1.12,
         "faixa_estimada_mmh": [
           1.15,
-          3.16
+          2.05
         ],
-        "dbz_medio": 24.4,
+        "dbz_medio": 23.8,
         "pico_em": "2026-09-10T05:30:00+00:00",
         "pico_estimado_mmh": 1.34,
         "pico_dbz_medio": 25.0,
@@ -658,13 +658,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T06:00:00+00:00",
-        "intensidade_estimada_mmh": 1.19,
+        "ultimo_eco_em": "2026-09-10T06:10:00+00:00",
+        "intensidade_estimada_mmh": 0.47,
         "faixa_estimada_mmh": [
-          1.15,
-          2.05
+          0.56,
+          1.0
         ],
-        "dbz_medio": 24.2,
+        "dbz_medio": 17.8,
         "pico_em": "2026-09-10T05:10:00+00:00",
         "pico_estimado_mmh": 9.07,
         "pico_dbz_medio": 38.3,
@@ -744,59 +744,73 @@
         "janela_min": 120,
         "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
-    }
-  ],
-  "eventos_recentes_geo": [
-    {
-      "id_alerta": "189493/2026",
-      "municipio": "Jales",
-      "latitude": -20.273928,
-      "longitude": -50.543757,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:21h13 Chuva na regiao de Santa Fe do Sul, se deslocando na direcao de Jales. Tem raios e ventos. Atinge cidades vizinhas.",
-      "resumo": "Defesa Civil:21h13 Chuva na regiao de Santa Fe do Sul, se deslocando na direcao de Jales. Tem raios e ventos. Atinge cidades vizinhas.",
-      "descricao": "21h13 Chuva na região de Santa Fé do Sul, se deslocando na direção de Jales. Tem raios e ventos. Atinge cidades vizinhas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Severe",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-09T21:13:52-03:00",
-      "fim": "2026-09-10T00:30:00-03:00",
-      "vigencia": "2026-09-09T21:13:52-03:00 → 2026-09-10T00:30:00-03:00",
-      "status": "RECENTE_EXPIRADO",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 8,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ]
     },
     {
-      "id_alerta": "189493/2026",
-      "municipio": "Santa Fé Do Sul",
-      "latitude": -20.227967,
-      "longitude": -50.954192,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:21h13 Chuva na regiao de Santa Fe do Sul, se deslocando na direcao de Jales. Tem raios e ventos. Atinge cidades vizinhas.",
-      "resumo": "Defesa Civil:21h13 Chuva na regiao de Santa Fe do Sul, se deslocando na direcao de Jales. Tem raios e ventos. Atinge cidades vizinhas.",
-      "descricao": "21h13 Chuva na região de Santa Fé do Sul, se deslocando na direção de Jales. Tem raios e ventos. Atinge cidades vizinhas.",
+      "id_alerta": "189547/2026",
+      "municipio": "Jardinópolis",
+      "latitude": -21.036106,
+      "longitude": -47.774323,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:ATENCAO - 10/09 03:08 - TEMPORAIS com RAIOS, GRANIZO, RAJADAS DE VENTO e ALAGAMENTOS na proxima 1h30. Ocorrencias ligue 199 ou 193.",
+      "resumo": "Defesa Civil:ATENCAO - 10/09 03:08 - TEMPORAIS com RAIOS, GRANIZO, RAJADAS DE VENTO e ALAGAMENTOS na proxima 1h30. Ocorrencias ligue 199 ou 193.",
+      "descricao": "ATENÇÃO - 10/09 03:08 - TEMPORAIS com RAIOS, GRANIZO, RAJADAS DE VENTO e ALAGAMENTOS para os municípios de Abelardo Luz, Bom Jesus, Coronel Freitas, Coronel Martins, Entre Rios, Faxinal dos Guedes, Formosa do Sul, Ipuaçu, Jardinópolis, Lajeado Grande, Marema, Ouro Verde, Quilombo, Santiago do Sul, São Domingos, União do Oeste, Xanxerê, Xavantina, Xaxim e Águas Frias na próxima hora. Ocorrências ligue 199 ou 193.",
       "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
       "gravidade": "Severe",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-09T21:13:52-03:00",
-      "fim": "2026-09-10T00:30:00-03:00",
-      "vigencia": "2026-09-09T21:13:52-03:00 → 2026-09-10T00:30:00-03:00",
-      "status": "RECENTE_EXPIRADO",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-10T03:10:37-03:00",
+      "fim": "2026-09-10T04:40:00-03:00",
+      "vigencia": "2026-09-10T03:10:37-03:00 → 2026-09-10T04:40:00-03:00",
+      "status": "ATIVO_OFICIAL",
       "fonte": "Defesa Civil / IDAP-CAP",
       "sender": "CENAD-SEDEC",
       "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
       "sites_referencia": 6,
       "area_oficial": [
-        "SÃO PAULO/SP"
-      ]
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
     },
+    {
+      "id_alerta": "189547/2026",
+      "municipio": "Ouro Verde",
+      "latitude": -21.489722,
+      "longitude": -51.701389,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:ATENCAO - 10/09 03:08 - TEMPORAIS com RAIOS, GRANIZO, RAJADAS DE VENTO e ALAGAMENTOS na proxima 1h30. Ocorrencias ligue 199 ou 193.",
+      "resumo": "Defesa Civil:ATENCAO - 10/09 03:08 - TEMPORAIS com RAIOS, GRANIZO, RAJADAS DE VENTO e ALAGAMENTOS na proxima 1h30. Ocorrencias ligue 199 ou 193.",
+      "descricao": "ATENÇÃO - 10/09 03:08 - TEMPORAIS com RAIOS, GRANIZO, RAJADAS DE VENTO e ALAGAMENTOS para os municípios de Abelardo Luz, Bom Jesus, Coronel Freitas, Coronel Martins, Entre Rios, Faxinal dos Guedes, Formosa do Sul, Ipuaçu, Jardinópolis, Lajeado Grande, Marema, Ouro Verde, Quilombo, Santiago do Sul, São Domingos, União do Oeste, Xanxerê, Xavantina, Xaxim e Águas Frias na próxima hora. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-10T03:10:37-03:00",
+      "fim": "2026-09-10T04:40:00-03:00",
+      "vigencia": "2026-09-10T03:10:37-03:00 → 2026-09-10T04:40:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    }
+  ],
+  "eventos_recentes_geo": [
     {
       "id_alerta": "189495/2026",
       "municipio": "Limeira",
@@ -1227,7 +1241,7 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T06:10:25.911125+00:00",
+    "gerado_em": "2026-09-10T06:15:18.918839+00:00",
     "janela_min": 120,
     "eventos_com_eco": 12,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
