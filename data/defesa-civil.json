@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T09:05:17-03:00",
-  "fonte_coletada_em": "2026-09-10T12:05:05Z",
+  "gerado_em": "2026-09-10T09:10:19-03:00",
+  "fonte_coletada_em": "2026-09-10T12:10:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 107,
-  "alertas_ativos": 11,
+  "entradas_feed": 108,
+  "alertas_ativos": 12,
   "eventos_geo": [
     {
       "id_alerta": "189570/2026",
@@ -45,9 +45,9 @@
           1.33
         ],
         "dbz_medio": 23.3,
-        "pico_em": "2026-09-10T10:10:00+00:00",
-        "pico_estimado_mmh": 3.06,
-        "pico_dbz_medio": 30.8,
+        "pico_em": "2026-09-10T10:20:00+00:00",
+        "pico_estimado_mmh": 2.24,
+        "pico_dbz_medio": 28.6,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -998,6 +998,132 @@
         "pico_dbz_medio": 23.8,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
+    },
+    {
+      "id_alerta": "189597/2026",
+      "municipio": "Itaberá",
+      "latitude": -23.814181,
+      "longitude": -49.22149,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "09h05 Chuva intensa na região de Itararé, Itaberá e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T09:06:25-03:00",
+      "fim": "2026-09-10T10:55:00-03:00",
+      "vigencia": "2026-09-10T09:06:25-03:00 → 2026-09-10T10:55:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 5,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T12:00:00+00:00",
+        "intensidade_estimada_mmh": 5.72,
+        "faixa_estimada_mmh": [
+          3.65,
+          17.76
+        ],
+        "dbz_medio": 35.1,
+        "pico_em": "2026-09-10T12:00:00+00:00",
+        "pico_estimado_mmh": 5.72,
+        "pico_dbz_medio": 35.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189597/2026",
+      "municipio": "Itapeva",
+      "latitude": -23.985005,
+      "longitude": -48.875671,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "09h05 Chuva intensa na região de Itararé, Itaberá e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T09:06:25-03:00",
+      "fim": "2026-09-10T10:55:00-03:00",
+      "vigencia": "2026-09-10T09:06:25-03:00 → 2026-09-10T10:55:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 16,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T12:00:00+00:00",
+        "intensidade_estimada_mmh": 2.0,
+        "faixa_estimada_mmh": [
+          2.05,
+          3.65
+        ],
+        "dbz_medio": 27.8,
+        "pico_em": "2026-09-10T12:00:00+00:00",
+        "pico_estimado_mmh": 2.0,
+        "pico_dbz_medio": 27.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189597/2026",
+      "municipio": "Itararé",
+      "latitude": -24.040363,
+      "longitude": -49.340034,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:09h05 Chuva intensa na regiao de Itarare, Itabera e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "09h05 Chuva intensa na região de Itararé, Itaberá e Itapeva. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T09:06:25-03:00",
+      "fim": "2026-09-10T10:55:00-03:00",
+      "vigencia": "2026-09-10T09:06:25-03:00 → 2026-09-10T10:55:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T12:00:00+00:00",
+        "intensidade_estimada_mmh": 1.71,
+        "faixa_estimada_mmh": [
+          1.78,
+          5.62
+        ],
+        "dbz_medio": 26.7,
+        "pico_em": "2026-09-10T11:50:00+00:00",
+        "pico_estimado_mmh": 2.01,
+        "pico_dbz_medio": 27.9,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [
@@ -1831,9 +1957,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T12:05:20.902732+00:00",
+    "gerado_em": "2026-09-10T12:10:24.823947+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 19,
+    "eventos_com_eco": 22,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
