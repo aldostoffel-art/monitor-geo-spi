@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T22:45:27-03:00",
-  "fonte_coletada_em": "2026-09-10T01:45:06Z",
+  "gerado_em": "2026-09-09T22:55:16-03:00",
+  "fonte_coletada_em": "2026-09-10T01:55:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 107,
-  "alertas_ativos": 6,
+  "entradas_feed": 109,
+  "alertas_ativos": 8,
   "eventos_geo": [
     {
       "id_alerta": "189404/2026",
@@ -102,13 +102,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T01:40:00+00:00",
-        "intensidade_estimada_mmh": 2.38,
+        "ultimo_eco_em": "2026-09-10T01:50:00+00:00",
+        "intensidade_estimada_mmh": 1.34,
         "faixa_estimada_mmh": [
-          2.05,
-          6.48
+          1.15,
+          3.16
         ],
-        "dbz_medio": 29.0,
+        "dbz_medio": 25.0,
         "pico_em": "2026-09-10T01:40:00+00:00",
         "pico_estimado_mmh": 2.38,
         "pico_dbz_medio": 29.0,
@@ -186,16 +186,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T01:40:00+00:00",
-        "intensidade_estimada_mmh": 0.63,
+        "ultimo_eco_em": "2026-09-10T01:50:00+00:00",
+        "intensidade_estimada_mmh": 0.67,
         "faixa_estimada_mmh": [
-          0.56,
+          0.75,
           1.15
         ],
-        "dbz_medio": 19.8,
-        "pico_em": "2026-09-10T01:40:00+00:00",
-        "pico_estimado_mmh": 0.63,
-        "pico_dbz_medio": 19.8,
+        "dbz_medio": 20.2,
+        "pico_em": "2026-09-10T01:50:00+00:00",
+        "pico_estimado_mmh": 0.67,
+        "pico_dbz_medio": 20.2,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -228,13 +228,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T01:40:00+00:00",
-        "intensidade_estimada_mmh": 2.72,
+        "ultimo_eco_em": "2026-09-10T01:50:00+00:00",
+        "intensidade_estimada_mmh": 2.34,
         "faixa_estimada_mmh": [
-          3.16,
-          8.65
+          2.05,
+          6.48
         ],
-        "dbz_medio": 30.0,
+        "dbz_medio": 28.9,
         "pico_em": "2026-09-10T01:20:00+00:00",
         "pico_estimado_mmh": 6.71,
         "pico_dbz_medio": 36.2,
@@ -270,13 +270,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T01:40:00+00:00",
-        "intensidade_estimada_mmh": 2.29,
+        "ultimo_eco_em": "2026-09-10T01:50:00+00:00",
+        "intensidade_estimada_mmh": 1.4,
         "faixa_estimada_mmh": [
-          2.05,
+          1.15,
           3.16
         ],
-        "dbz_medio": 28.8,
+        "dbz_medio": 25.4,
         "pico_em": "2026-09-10T00:50:00+00:00",
         "pico_estimado_mmh": 9.62,
         "pico_dbz_medio": 38.7,
@@ -299,6 +299,164 @@
       "inicio": "2026-09-09T21:57:17-03:00",
       "fim": "2026-09-10T01:55:00-03:00",
       "vigencia": "2026-09-09T21:57:17-03:00 → 2026-09-10T01:55:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "189508/2026",
+      "municipio": "Emilianópolis",
+      "latitude": -21.831389,
+      "longitude": -51.483056,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:22h44 Chuva intensa na regiao de Pacaembu e Emilianopolis, se deslocando na direcao a Mariapolis. Tem raios e ventos. Atinge cidades vizinhas.",
+      "resumo": "Defesa Civil:22h44 Chuva intensa na regiao de Pacaembu e Emilianopolis, se deslocando na direcao a Mariapolis. Tem raios e ventos. Atinge cidades vizinhas.",
+      "descricao": "22h44 Chuva intensa na região de Pacaembu e Emilianópolis, se deslocando na direção à Mariápolis. Tem raios e ventos. Atinge cidades vizinhas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T22:45:00-03:00",
+      "fim": "2026-09-10T01:30:00-03:00",
+      "vigencia": "2026-09-09T22:45:00-03:00 → 2026-09-10T01:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T01:50:00+00:00",
+        "intensidade_estimada_mmh": 3.35,
+        "faixa_estimada_mmh": [
+          3.65,
+          15.38
+        ],
+        "dbz_medio": 31.4,
+        "pico_em": "2026-09-10T01:40:00+00:00",
+        "pico_estimado_mmh": 7.04,
+        "pico_dbz_medio": 36.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189508/2026",
+      "municipio": "Mariápolis",
+      "latitude": -21.760764,
+      "longitude": -51.180102,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:22h44 Chuva intensa na regiao de Pacaembu e Emilianopolis, se deslocando na direcao a Mariapolis. Tem raios e ventos. Atinge cidades vizinhas.",
+      "resumo": "Defesa Civil:22h44 Chuva intensa na regiao de Pacaembu e Emilianopolis, se deslocando na direcao a Mariapolis. Tem raios e ventos. Atinge cidades vizinhas.",
+      "descricao": "22h44 Chuva intensa na região de Pacaembu e Emilianópolis, se deslocando na direção à Mariápolis. Tem raios e ventos. Atinge cidades vizinhas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T22:45:00-03:00",
+      "fim": "2026-09-10T01:30:00-03:00",
+      "vigencia": "2026-09-09T22:45:00-03:00 → 2026-09-10T01:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 2,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T01:50:00+00:00",
+        "intensidade_estimada_mmh": 0.54,
+        "faixa_estimada_mmh": [
+          0.56,
+          0.56
+        ],
+        "dbz_medio": 18.7,
+        "pico_em": "2026-09-10T01:40:00+00:00",
+        "pico_estimado_mmh": 0.56,
+        "pico_dbz_medio": 19.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189508/2026",
+      "municipio": "Pacaembu",
+      "latitude": -21.563079,
+      "longitude": -51.263733,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:22h44 Chuva intensa na regiao de Pacaembu e Emilianopolis, se deslocando na direcao a Mariapolis. Tem raios e ventos. Atinge cidades vizinhas.",
+      "resumo": "Defesa Civil:22h44 Chuva intensa na regiao de Pacaembu e Emilianopolis, se deslocando na direcao a Mariapolis. Tem raios e ventos. Atinge cidades vizinhas.",
+      "descricao": "22h44 Chuva intensa na região de Pacaembu e Emilianópolis, se deslocando na direção à Mariápolis. Tem raios e ventos. Atinge cidades vizinhas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T22:45:00-03:00",
+      "fim": "2026-09-10T01:30:00-03:00",
+      "vigencia": "2026-09-09T22:45:00-03:00 → 2026-09-10T01:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T01:50:00+00:00",
+        "intensidade_estimada_mmh": 6.21,
+        "faixa_estimada_mmh": [
+          6.48,
+          17.76
+        ],
+        "dbz_medio": 35.7,
+        "pico_em": "2026-09-10T01:50:00+00:00",
+        "pico_estimado_mmh": 6.21,
+        "pico_dbz_medio": 35.7,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189509/2026",
+      "municipio": "Planalto",
+      "latitude": -21.033837,
+      "longitude": -49.929461,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "resumo": "OBSERVAÇÃO - 09/09 22:44 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para áreas das regiões do Meio-Oeste, Planalto Norte, Grande Florianópolis, Baixo, Médio e Alto Vale do Itajaí nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
+      "descricao": "OBSERVAÇÃO - 09/09 22:44 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para áreas das regiões do Meio-Oeste, Planalto Norte, Grande Florianópolis, Baixo, Médio e Alto Vale do Itajaí nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T22:45:42-03:00",
+      "fim": "2026-09-10T02:45:00-03:00",
+      "vigencia": "2026-09-09T22:45:42-03:00 → 2026-09-10T02:45:00-03:00",
       "status": "ATIVO_OFICIAL",
       "fonte": "Defesa Civil / IDAP-CAP",
       "sender": "CENAD-SEDEC",
@@ -1247,9 +1405,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T01:45:31.510843+00:00",
+    "gerado_em": "2026-09-10T01:55:19.511183+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 5,
+    "eventos_com_eco": 8,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
