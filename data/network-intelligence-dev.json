@@ -1,129 +1,15 @@
 {
-  "gerado_em": "2026-09-10T23:35:31.022465+00:00",
+  "gerado_em": "2026-09-10T23:40:32.217332+00:00",
   "ambiente": "DEV",
-  "mudanca_relevante": false,
-  "fingerprint": "0e5c7cafecde6bb60c37c4b2b682bf799787d9e689a98661825f888213b70e7f",
-  "nivel": "ATENÇÃO",
-  "agora": "Sinal externo em Itajubá/MG aponta risco para o corredor VALE DO PARAÍBA",
-  "proximas_horas": "Potencial avanço para Piquete/Lorena/Guaratinguetá nas próximas horas; rajada até 16 km/h e chuva horária até 3.3 mm",
-  "rede_exposta": "24 trecho(s) Backbone cruzam o corredor potencial",
-  "recomendacao": "Validar preventivamente redundância: 0/5 trechos amostrados têm caminho lógico alternativo fora do corredor",
-  "ameacas_externas": [
-    {
-      "nome": "Itajubá/MG",
-      "corredor": "VALE DO PARAÍBA",
-      "alvo": "Piquete/Lorena/Guaratinguetá",
-      "score": 55,
-      "tempestade": true,
-      "chuva_pico_mmh": 3.3,
-      "rajada_pico_kmh": 15.8,
-      "prob_chuva_pico": 78,
-      "eta_sinal_externo": "2026-09-10T23:00:00+00:00",
-      "backbones_no_corredor": 24,
-      "backbones_amostra": [
-        {
-          "id": "BB-40A6669129DA",
-          "trecho": "CUH.PG-GTA.MF",
-          "cabo": "F-0161",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 10.6,
-          "ponta_a": "CUH.PG",
-          "ponta_b": "GTA.MF"
-        },
-        {
-          "id": "BB-9A1B2BF056E7",
-          "trecho": "GTA.MF-QUZ.BD",
-          "cabo": "F-0934",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 10.6,
-          "ponta_a": "GTA.MF",
-          "ponta_b": "QUZ.BD"
-        },
-        {
-          "id": "BB-28B7B0A33C51",
-          "trecho": "GTA.MF-LNA.VA",
-          "cabo": "F-0105",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 10.6,
-          "ponta_a": "GTA.MF",
-          "ponta_b": "LNA.VA"
-        },
-        {
-          "id": "BB-825A1B0C56F7",
-          "trecho": "GTA.MF-GTA.RC",
-          "cabo": "F-0107",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 10.6,
-          "ponta_a": "GTA.MF",
-          "ponta_b": "GTA.RC"
-        },
-        {
-          "id": "BB-B43151E51873",
-          "trecho": "GTA.MF-GTA.NG",
-          "cabo": "F-0104",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 10.6,
-          "ponta_a": "GTA.MF",
-          "ponta_b": "GTA.NG"
-        },
-        {
-          "id": "BB-1131EFC2E3A2",
-          "trecho": "GTA.MF-POTM.PO",
-          "cabo": "F-0103",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 10.6,
-          "ponta_a": "GTA.MF",
-          "ponta_b": "POTM.PO"
-        },
-        {
-          "id": "BB-28F002053BFB",
-          "trecho": "ADA.CT-GTA.MF",
-          "cabo": "F-0101",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 13.9,
-          "ponta_a": "ADA.CT",
-          "ponta_b": "GTA.MF"
-        },
-        {
-          "id": "BB-DEE383CEDD39",
-          "trecho": "ADA.CT-RSA.DE",
-          "cabo": "F-0101",
-          "cluster": "SAO JOSE DOS CAMPOS",
-          "dist_corredor_km": 13.9,
-          "ponta_a": "ADA.CT",
-          "ponta_b": "RSA.DE"
-        }
-      ],
-      "alternativas": [
-        {
-          "trecho": "CUH.PG-GTA.MF",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "GTA.MF-QUZ.BD",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "GTA.MF-LNA.VA",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "GTA.MF-GTA.RC",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "GTA.MF-GTA.NG",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        }
-      ]
-    }
-  ],
-  "chuva_observada_max_1h": 3.5,
+  "mudanca_relevante": true,
+  "fingerprint": "3d2061c3ce1907c4326333b1bb13b4ec3b05d45dfa47a5e82448465cf96f6360",
+  "nivel": "BAIXO",
+  "agora": "Sem sinal externo relevante nos corredores monitorados",
+  "proximas_horas": "Manter varredura do entorno de SP",
+  "rede_exposta": "Sem corredor externo prioritário neste ciclo",
+  "recomendacao": "Nenhuma alteração preventiva de rota indicada neste ciclo",
+  "ameacas_externas": [],
+  "chuva_observada_max_1h": 3.8,
   "alertas_dc_ativos": 51,
   "municipios_arvore_relevantes": [
     {
