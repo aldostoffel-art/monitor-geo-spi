@@ -1184,6 +1184,17 @@ function tvRender48Map(rows){
  L.geoJSON(weatherLabMunicipios,{filter:f=>mapRows.has(norm(f?.properties?.municipio||'')),interactive:false,style:f=>{const x=mapRows.get(norm(f?.properties?.municipio||'')),lab=x?.level||'';return{className:'tv-risk-poly '+(String(lab).includes('CRÍTICO')?'tv-risk-critical':lab==='ALTO'?'tv-risk-high':'tv-risk-watch'),color:tvRiskStroke(lab),weight:String(lab).includes('CRÍTICO')?3.6:lab==='ALTO'?3.0:2.3,opacity:1,fillColor:tvRiskColor(lab),fillOpacity:String(lab).includes('CRÍTICO')?.94:lab==='ALTO'?.88:.78}}}).addTo(m);
  tvFitOperationalBounds(m,weatherLabMunicipios);setTimeout(()=>m.invalidateSize(),80)
 }
+function tvRenderForecast48(){
+ const el=document.getElementById('tvForecast48');if(!el)return;
+ const wins=commandBoardWindows();
+ el.innerHTML=wins.map(win=>{
+   const rows=commandBoardRegionRows(win), ranked=[...rows].sort((a,b)=>nvCnLevel(b,win).rank-nvCnLevel(a,win).rank||Number(b.score||0)-Number(a.score||0));
+   const x=ranked[0]||null, lv=nvCnLevel(x,win), place=x?nvCnPlace(x):'Sem sinal relevante';
+   const rain=x?Number(x.rain||0):0, gust=x?Number(x.gust||0):0;
+   const cls='tv48-'+(lv.key||'ok');
+   return `<article class="tv48-card ${cls}"><small>${esc(win.label)}</small><b>${lv.icon||'🟢'} ${esc(lv.label||'OK')}</b><strong>${esc(place||'Sem sinal relevante')}</strong><span>${rain>0?'🌧 '+rain.toFixed(1)+' mm':'🌧 —'}${gust>0?' • 🌬 '+gust.toFixed(0)+' km/h':''}</span></article>`;
+ }).join('');
+}
 function tvAiText(ranked,rows48,topObs){
  const topNow=ranked[0], top48=[...(rows48||[])].sort((a,b)=>tvSeverityRank(b)-tvSeverityRank(a)||Number(b.priority_score||b.score||0)-Number(a.priority_score||a.score||0))[0];
  const fallback=commandAiSummary?.resumo||networkIntel?.agora||'Cenário operacional sem mudança material.';
@@ -1204,7 +1215,7 @@ function renderTvView(){
  const treeTop=[...tree].sort((a,b)=>Number(b.score||0)-Number(a.score||0)).slice(0,4),crit48=rows48.filter(x=>String(x.level||'').includes('CRÍTICO')).length,high48=rows48.filter(x=>String(x.level||'')==='ALTO').length;
  const aiDetail=[ai.detail,treeTop.length?`Árvore: ${treeTop.map(x=>`${x.municipio} ${String(x.nivel||'').toLowerCase()}`).join(' • ')}`:'Sem município MODERADO+ para árvore agora.',crit48||high48?`48h: ${crit48} crítico(s) e ${high48} alto(s).`:'48h sem crítico/alto consolidado.'].filter(Boolean).join('  |  ');if(aid)aid.textContent=aiDetail;
  const ais=document.getElementById('tvAiSignals');if(ais)ais.innerHTML=`<span><b>${ranked.length}</b> risco real</span><span><b>${dc}</b> Defesa Civil</span><span><b>${sites4}</b> sites ≤4h</span><span><b>${tree.length}</b> árvore MOD+</span><span><b>${(fireEvents||[]).length}</b> Fire</span>`;
- tvRenderNowMap(cityRanks);tvRender48Map(rows48);
+ tvRenderNowMap(cityRanks);tvRender48Map(rows48);tvRenderForecast48();
  const nowFoot=document.getElementById('tvNowFoot');if(nowFoot)nowFoot.innerHTML=`<b>${ranked.length}</b> prioridade(s) reais • chuva máx. <b>${topObs?Number(topObs.chuva1h||0).toFixed(1):'0.0'} mm/1h</b>`;
  const foot48=document.getElementById('tv48Foot');if(foot48)foot48.innerHTML=`<b>${rows48.length}</b> municípios relevantes • <b>${crit48}</b> crítico(s) • <b>${high48}</b> alto(s)`;
  const sideRisk=document.getElementById('tvSideRisk'),sideRiskDetail=document.getElementById('tvSideRiskDetail');if(sideRisk)sideRisk.textContent=lv.label;if(sideRiskDetail)sideRiskDetail.textContent=ranked[0]?`${nvCityDisplayName(ranked[0][0])} lidera a prioridade atual`:'Sem prioridade real relevante';
