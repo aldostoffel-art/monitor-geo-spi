@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T21:45:20-03:00",
-  "fonte_coletada_em": "2026-09-10T00:45:06Z",
+  "gerado_em": "2026-09-09T22:00:35-03:00",
+  "fonte_coletada_em": "2026-09-10T01:00:08Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 112,
-  "alertas_ativos": 11,
+  "entradas_feed": 108,
+  "alertas_ativos": 12,
   "eventos_geo": [
     {
       "id_alerta": "189404/2026",
@@ -32,48 +32,6 @@
       "sites_referencia": 1,
       "area_oficial": [
         "Rafard/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-09T23:00:00+00:00",
-        "intensidade_estimada_mmh": 0.67,
-        "faixa_estimada_mmh": [
-          0.56,
-          3.16
-        ],
-        "dbz_medio": 20.2,
-        "pico_em": "2026-09-09T23:00:00+00:00",
-        "pico_estimado_mmh": 0.67,
-        "pico_dbz_medio": 20.2,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "189456/2026",
-      "municipio": "Planalto",
-      "latitude": -21.033837,
-      "longitude": -49.929461,
-      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
-      "titulo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
-      "resumo": "OBSERVAÇÃO - 09/09 17:50 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para as regiões do Planalto Norte, Litoral Norte, Grande Florianópolis, Baixo, Médio e Alto Vale do Itajaí nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
-      "descricao": "OBSERVAÇÃO - 09/09 17:50 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para as regiões do Planalto Norte, Litoral Norte, Grande Florianópolis, Baixo, Médio e Alto Vale do Itajaí nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Expected",
-      "certeza": "Observed",
-      "inicio": "2026-09-09T17:52:26-03:00",
-      "fim": "2026-09-09T21:50:00-03:00",
-      "vigencia": "2026-09-09T17:52:26-03:00 → 2026-09-09T21:50:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 1,
-      "area_oficial": [
-        "SANTA CATARINA/SC"
       ],
       "radar_estimativa": {
         "status": "SEM_ECO_NO_PONTO",
@@ -172,11 +130,21 @@
         "SANTA CATARINA/SC"
       ],
       "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
+        "status": "ECO_DETECTADO",
         "fonte": "RainViewer",
-        "metodo": "Radar composto",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+        "ultimo_eco_em": "2026-09-10T00:50:00+00:00",
+        "intensidade_estimada_mmh": 1.01,
+        "faixa_estimada_mmh": [
+          0.75,
+          15.38
+        ],
+        "dbz_medio": 23.0,
+        "pico_em": "2026-09-10T00:50:00+00:00",
+        "pico_estimado_mmh": 1.01,
+        "pico_dbz_medio": 23.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
     {
@@ -208,16 +176,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T00:40:00+00:00",
-        "intensidade_estimada_mmh": 0.95,
+        "ultimo_eco_em": "2026-09-10T01:00:00+00:00",
+        "intensidade_estimada_mmh": 0.87,
         "faixa_estimada_mmh": [
-          0.56,
-          6.48
+          1.0,
+          1.78
         ],
-        "dbz_medio": 22.6,
-        "pico_em": "2026-09-10T00:40:00+00:00",
-        "pico_estimado_mmh": 0.95,
-        "pico_dbz_medio": 22.6,
+        "dbz_medio": 22.0,
+        "pico_em": "2026-09-10T00:50:00+00:00",
+        "pico_estimado_mmh": 1.16,
+        "pico_dbz_medio": 24.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -250,16 +218,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T00:40:00+00:00",
-        "intensidade_estimada_mmh": 0.51,
+        "ultimo_eco_em": "2026-09-10T01:00:00+00:00",
+        "intensidade_estimada_mmh": 0.79,
         "faixa_estimada_mmh": [
-          0.49,
-          1.0
+          1.0,
+          1.15
         ],
-        "dbz_medio": 18.4,
-        "pico_em": "2026-09-09T23:00:00+00:00",
-        "pico_estimado_mmh": 0.56,
-        "pico_dbz_medio": 19.0,
+        "dbz_medio": 21.4,
+        "pico_em": "2026-09-10T01:00:00+00:00",
+        "pico_estimado_mmh": 0.79,
+        "pico_dbz_medio": 21.4,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -320,11 +288,21 @@
         "SANTA CATARINA/SC"
       ],
       "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
+        "status": "ECO_DETECTADO",
         "fonte": "RainViewer",
-        "metodo": "Radar composto",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+        "ultimo_eco_em": "2026-09-10T00:50:00+00:00",
+        "intensidade_estimada_mmh": 1.01,
+        "faixa_estimada_mmh": [
+          0.75,
+          15.38
+        ],
+        "dbz_medio": 23.0,
+        "pico_em": "2026-09-10T00:50:00+00:00",
+        "pico_estimado_mmh": 1.01,
+        "pico_dbz_medio": 23.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
     {
@@ -356,16 +334,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T00:40:00+00:00",
-        "intensidade_estimada_mmh": 0.95,
+        "ultimo_eco_em": "2026-09-10T01:00:00+00:00",
+        "intensidade_estimada_mmh": 0.87,
         "faixa_estimada_mmh": [
-          0.56,
-          6.48
+          1.0,
+          1.78
         ],
-        "dbz_medio": 22.6,
-        "pico_em": "2026-09-10T00:40:00+00:00",
-        "pico_estimado_mmh": 0.95,
-        "pico_dbz_medio": 22.6,
+        "dbz_medio": 22.0,
+        "pico_em": "2026-09-10T00:50:00+00:00",
+        "pico_estimado_mmh": 1.16,
+        "pico_dbz_medio": 24.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -398,16 +376,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T00:40:00+00:00",
-        "intensidade_estimada_mmh": 0.51,
+        "ultimo_eco_em": "2026-09-10T01:00:00+00:00",
+        "intensidade_estimada_mmh": 0.79,
         "faixa_estimada_mmh": [
-          0.49,
-          1.0
+          1.0,
+          1.15
         ],
-        "dbz_medio": 18.4,
-        "pico_em": "2026-09-09T23:00:00+00:00",
-        "pico_estimado_mmh": 0.56,
-        "pico_dbz_medio": 19.0,
+        "dbz_medio": 21.4,
+        "pico_em": "2026-09-10T01:00:00+00:00",
+        "pico_estimado_mmh": 0.79,
+        "pico_dbz_medio": 21.4,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -472,16 +450,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T00:40:00+00:00",
-        "intensidade_estimada_mmh": 0.95,
+        "ultimo_eco_em": "2026-09-10T01:00:00+00:00",
+        "intensidade_estimada_mmh": 0.87,
         "faixa_estimada_mmh": [
-          0.56,
-          6.48
+          1.0,
+          1.78
         ],
-        "dbz_medio": 22.6,
-        "pico_em": "2026-09-10T00:40:00+00:00",
-        "pico_estimado_mmh": 0.95,
-        "pico_dbz_medio": 22.6,
+        "dbz_medio": 22.0,
+        "pico_em": "2026-09-10T00:50:00+00:00",
+        "pico_estimado_mmh": 1.16,
+        "pico_dbz_medio": 24.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -620,13 +598,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T00:40:00+00:00",
-        "intensidade_estimada_mmh": 2.29,
+        "ultimo_eco_em": "2026-09-10T01:00:00+00:00",
+        "intensidade_estimada_mmh": 1.61,
         "faixa_estimada_mmh": [
           2.05,
-          3.65
+          3.16
         ],
-        "dbz_medio": 28.8,
+        "dbz_medio": 26.3,
         "pico_em": "2026-09-10T00:40:00+00:00",
         "pico_estimado_mmh": 2.29,
         "pico_dbz_medio": 28.8,
@@ -658,11 +636,21 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
+        "status": "ECO_DETECTADO",
         "fonte": "RainViewer",
-        "metodo": "Radar composto",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+        "ultimo_eco_em": "2026-09-10T00:50:00+00:00",
+        "intensidade_estimada_mmh": 0.55,
+        "faixa_estimada_mmh": [
+          0.56,
+          0.56
+        ],
+        "dbz_medio": 18.8,
+        "pico_em": "2026-09-10T00:50:00+00:00",
+        "pico_estimado_mmh": 0.55,
+        "pico_dbz_medio": 18.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
     {
@@ -694,13 +682,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T00:40:00+00:00",
-        "intensidade_estimada_mmh": 9.04,
+        "ultimo_eco_em": "2026-09-10T01:00:00+00:00",
+        "intensidade_estimada_mmh": 1.33,
         "faixa_estimada_mmh": [
-          8.65,
-          17.76
+          1.15,
+          2.05
         ],
-        "dbz_medio": 38.3,
+        "dbz_medio": 25.0,
         "pico_em": "2026-09-10T00:30:00+00:00",
         "pico_estimado_mmh": 20.87,
         "pico_dbz_medio": 44.1,
@@ -768,17 +756,133 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T00:40:00+00:00",
-        "intensidade_estimada_mmh": 0.95,
+        "ultimo_eco_em": "2026-09-10T01:00:00+00:00",
+        "intensidade_estimada_mmh": 0.87,
+        "faixa_estimada_mmh": [
+          1.0,
+          1.78
+        ],
+        "dbz_medio": 22.0,
+        "pico_em": "2026-09-10T00:50:00+00:00",
+        "pico_estimado_mmh": 1.16,
+        "pico_dbz_medio": 24.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189501/2026",
+      "municipio": "Dracena",
+      "latitude": -21.488497,
+      "longitude": -51.545389,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:21h52 Chuva intensa na regiao de Panorama, se deslocando na direcao de Dracena. Tem raios e ventos. Atinge cidades vizinhas.",
+      "resumo": "Defesa Civil:21h52 Chuva intensa na regiao de Panorama, se deslocando na direcao de Dracena. Tem raios e ventos. Atinge cidades vizinhas.",
+      "descricao": "21h52 Chuva intensa na região de Panorama, se deslocando na direção de Dracena. Tem raios e ventos. Atinge cidades vizinhas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T21:52:14-03:00",
+      "fim": "2026-09-10T01:00:00-03:00",
+      "vigencia": "2026-09-09T21:52:14-03:00 → 2026-09-10T01:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 7,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T01:00:00+00:00",
+        "intensidade_estimada_mmh": 0.8,
         "faixa_estimada_mmh": [
           0.56,
-          6.48
+          3.65
         ],
-        "dbz_medio": 22.6,
-        "pico_em": "2026-09-10T00:40:00+00:00",
-        "pico_estimado_mmh": 0.95,
-        "pico_dbz_medio": 22.6,
+        "dbz_medio": 21.4,
+        "pico_em": "2026-09-10T01:00:00+00:00",
+        "pico_estimado_mmh": 0.8,
+        "pico_dbz_medio": 21.4,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189501/2026",
+      "municipio": "Panorama",
+      "latitude": -21.407157,
+      "longitude": -51.886048,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:21h52 Chuva intensa na regiao de Panorama, se deslocando na direcao de Dracena. Tem raios e ventos. Atinge cidades vizinhas.",
+      "resumo": "Defesa Civil:21h52 Chuva intensa na regiao de Panorama, se deslocando na direcao de Dracena. Tem raios e ventos. Atinge cidades vizinhas.",
+      "descricao": "21h52 Chuva intensa na região de Panorama, se deslocando na direção de Dracena. Tem raios e ventos. Atinge cidades vizinhas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Severe",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T21:52:14-03:00",
+      "fim": "2026-09-10T01:00:00-03:00",
+      "vigencia": "2026-09-09T21:52:14-03:00 → 2026-09-10T01:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 2,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T01:00:00+00:00",
+        "intensidade_estimada_mmh": 8.93,
+        "faixa_estimada_mmh": [
+          9.99,
+          31.58
+        ],
+        "dbz_medio": 38.2,
+        "pico_em": "2026-09-10T00:50:00+00:00",
+        "pico_estimado_mmh": 9.62,
+        "pico_dbz_medio": 38.7,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189503/2026",
+      "municipio": "Planalto",
+      "latitude": -21.033837,
+      "longitude": -49.929461,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "resumo": "OBSERVAÇÃO - 09/09 21:55 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para áreas das regiões do Meio-Oeste, Planalto Norte, Planalto Sul, Litoral Sul, Grande Florianópolis, Médio e Alto Vale do Itajaí nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
+      "descricao": "OBSERVAÇÃO - 09/09 21:55 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para áreas das regiões do Meio-Oeste, Planalto Norte, Planalto Sul, Litoral Sul, Grande Florianópolis, Médio e Alto Vale do Itajaí nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T21:57:17-03:00",
+      "fim": "2026-09-10T01:55:00-03:00",
+      "vigencia": "2026-09-09T21:57:17-03:00 → 2026-09-10T01:55:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     }
   ],
@@ -1031,6 +1135,31 @@
       "sites_referencia": 1,
       "area_oficial": [
         "SÃO PAULO/SP"
+      ]
+    },
+    {
+      "id_alerta": "189456/2026",
+      "municipio": "Planalto",
+      "latitude": -21.033837,
+      "longitude": -49.929461,
+      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "titulo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
+      "resumo": "OBSERVAÇÃO - 09/09 17:50 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para as regiões do Planalto Norte, Litoral Norte, Grande Florianópolis, Baixo, Médio e Alto Vale do Itajaí nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
+      "descricao": "OBSERVAÇÃO - 09/09 17:50 - TEMPORAIS ISOLADOS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS pontuais para as regiões do Planalto Norte, Litoral Norte, Grande Florianópolis, Baixo, Médio e Alto Vale do Itajaí nas próximas 4 horas. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-09T17:52:26-03:00",
+      "fim": "2026-09-09T21:50:00-03:00",
+      "vigencia": "2026-09-09T17:52:26-03:00 → 2026-09-09T21:50:00-03:00",
+      "status": "RECENTE_EXPIRADO",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SANTA CATARINA/SC"
       ]
     },
     {
@@ -1463,9 +1592,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T00:45:22.918053+00:00",
+    "gerado_em": "2026-09-10T01:00:44.109866+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 6,
+    "eventos_com_eco": 9,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
