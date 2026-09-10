@@ -1,8 +1,8 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T05:15:19-03:00",
-  "fonte_coletada_em": "2026-09-10T08:15:05Z",
+  "gerado_em": "2026-09-10T05:20:19-03:00",
+  "fonte_coletada_em": "2026-09-10T08:20:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
@@ -45,9 +45,9 @@
           0.56
         ],
         "dbz_medio": 19.0,
-        "pico_em": "2026-09-10T06:20:00+00:00",
-        "pico_estimado_mmh": 0.61,
-        "pico_dbz_medio": 19.6,
+        "pico_em": "2026-09-10T06:30:00+00:00",
+        "pico_estimado_mmh": 0.56,
+        "pico_dbz_medio": 19.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -118,21 +118,11 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T06:20:00+00:00",
-        "intensidade_estimada_mmh": 0.61,
-        "faixa_estimada_mmh": [
-          0.56,
-          1.0
-        ],
-        "dbz_medio": 19.6,
-        "pico_em": "2026-09-10T06:20:00+00:00",
-        "pico_estimado_mmh": 0.61,
-        "pico_dbz_medio": 19.6,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -864,31 +854,6 @@
   ],
   "eventos_recentes_geo": [
     {
-      "id_alerta": "189515/2026",
-      "municipio": "Planalto",
-      "latitude": -21.033837,
-      "longitude": -49.929461,
-      "tipo": "TEMPESTADE LOCAL/CONVECTIVA - CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:ATENCAO - 09/09 23:17 - TEMPORAIS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS nas proximas 2 horas. Ocorrencias ligue 199 ou 193.",
-      "resumo": "Defesa Civil:ATENCAO - 09/09 23:17 - TEMPORAIS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS nas proximas 2 horas. Ocorrencias ligue 199 ou 193.",
-      "descricao": "ATENÇÃO - 09/09 23:17 - TEMPORAIS com RAIOS, RAJADAS DE VENTO e ALAGAMENTOS para as regiões do Meio-Oeste e Planalto Sul nas próximas 2 horas. Ocorrências ligue 199 ou 193.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Severe",
-      "urgencia": "Expected",
-      "certeza": "Observed",
-      "inicio": "2026-09-09T23:19:13-03:00",
-      "fim": "2026-09-10T01:20:00-03:00",
-      "vigencia": "2026-09-09T23:19:13-03:00 → 2026-09-10T01:20:00-03:00",
-      "status": "RECENTE_EXPIRADO",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 1,
-      "area_oficial": [
-        "SANTA CATARINA/SC"
-      ]
-    },
-    {
       "id_alerta": "189516/2026",
       "municipio": "Araçatuba",
       "latitude": -21.204814,
@@ -1443,9 +1408,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T08:15:24.506483+00:00",
+    "gerado_em": "2026-09-10T08:20:25.108101+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 18,
+    "eventos_com_eco": 17,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
