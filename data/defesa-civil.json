@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T01:40:23-03:00",
-  "fonte_coletada_em": "2026-09-10T04:40:06Z",
+  "gerado_em": "2026-09-10T01:45:17-03:00",
+  "fonte_coletada_em": "2026-09-10T04:45:06Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 122,
-  "alertas_ativos": 13,
+  "entradas_feed": 123,
+  "alertas_ativos": 15,
   "eventos_geo": [
     {
       "id_alerta": "189503/2026",
@@ -804,6 +804,90 @@
         "pico_em": "2026-09-10T04:40:00+00:00",
         "pico_estimado_mmh": 3.11,
         "pico_dbz_medio": 30.9,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189537/2026",
+      "municipio": "Santa Cruz Do Rio Pardo",
+      "latitude": -22.879563,
+      "longitude": -49.612052,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:01h41 Chuva na regiao de Santa Cruz do Rio Pardo. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:01h41 Chuva na regiao de Santa Cruz do Rio Pardo. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "01h41 Chuva na região de Santa Cruz do Rio Pardo. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T01:41:14-03:00",
+      "fim": "2026-09-10T04:30:00-03:00",
+      "vigencia": "2026-09-10T01:41:14-03:00 → 2026-09-10T04:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 10,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T04:40:00+00:00",
+        "intensidade_estimada_mmh": 5.42,
+        "faixa_estimada_mmh": [
+          6.48,
+          17.76
+        ],
+        "dbz_medio": 34.8,
+        "pico_em": "2026-09-10T04:30:00+00:00",
+        "pico_estimado_mmh": 7.49,
+        "pico_dbz_medio": 37.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189538/2026",
+      "municipio": "Santa Cruz Do Rio Pardo",
+      "latitude": -22.879563,
+      "longitude": -49.612052,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:01h41 Chuva na regiao de Santa Cruz do Rio Pardo. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:01h41 Chuva na regiao de Santa Cruz do Rio Pardo. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "01h41 Chuva na região de Santa Cruz do Rio Pardo. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T01:41:24-03:00",
+      "fim": "2026-09-10T04:30:00-03:00",
+      "vigencia": "2026-09-10T01:41:24-03:00 → 2026-09-10T04:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 10,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T04:40:00+00:00",
+        "intensidade_estimada_mmh": 5.42,
+        "faixa_estimada_mmh": [
+          6.48,
+          17.76
+        ],
+        "dbz_medio": 34.8,
+        "pico_em": "2026-09-10T04:30:00+00:00",
+        "pico_estimado_mmh": 7.49,
+        "pico_dbz_medio": 37.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
@@ -1664,9 +1748,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T04:40:28.407097+00:00",
+    "gerado_em": "2026-09-10T04:45:19.902173+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 12,
+    "eventos_com_eco": 13,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
