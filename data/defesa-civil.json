@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-09T21:15:40-03:00",
-  "fonte_coletada_em": "2026-09-10T00:15:12Z",
+  "gerado_em": "2026-09-09T21:20:37-03:00",
+  "fonte_coletada_em": "2026-09-10T00:20:08Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 109,
-  "alertas_ativos": 13,
+  "entradas_feed": 111,
+  "alertas_ativos": 14,
   "eventos_geo": [
     {
       "id_alerta": "189404/2026",
@@ -140,11 +140,21 @@
         "SANTA CATARINA/SC"
       ],
       "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
+        "status": "ECO_DETECTADO",
         "fonte": "RainViewer",
-        "metodo": "Radar composto",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+        "ultimo_eco_em": "2026-09-10T00:20:00+00:00",
+        "intensidade_estimada_mmh": 0.1,
+        "faixa_estimada_mmh": [
+          0.1,
+          0.1
+        ],
+        "dbz_medio": 7.0,
+        "pico_em": "2026-09-10T00:20:00+00:00",
+        "pico_estimado_mmh": 0.1,
+        "pico_dbz_medio": 7.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
     {
@@ -928,16 +938,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T00:10:00+00:00",
-        "intensidade_estimada_mmh": 0.64,
+        "ultimo_eco_em": "2026-09-10T00:20:00+00:00",
+        "intensidade_estimada_mmh": 0.91,
         "faixa_estimada_mmh": [
-          0.56,
-          1.15
+          1.0,
+          3.65
         ],
-        "dbz_medio": 20.0,
-        "pico_em": "2026-09-10T00:10:00+00:00",
-        "pico_estimado_mmh": 0.64,
-        "pico_dbz_medio": 20.0,
+        "dbz_medio": 22.3,
+        "pico_em": "2026-09-10T00:20:00+00:00",
+        "pico_estimado_mmh": 0.91,
+        "pico_dbz_medio": 22.3,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -1002,46 +1012,53 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-10T00:10:00+00:00",
-        "intensidade_estimada_mmh": 6.59,
+        "ultimo_eco_em": "2026-09-10T00:20:00+00:00",
+        "intensidade_estimada_mmh": 13.55,
         "faixa_estimada_mmh": [
-          8.65,
-          27.34
+          17.76,
+          42.11
         ],
-        "dbz_medio": 36.1,
-        "pico_em": "2026-09-10T00:10:00+00:00",
-        "pico_estimado_mmh": 6.59,
-        "pico_dbz_medio": 36.1,
+        "dbz_medio": 41.1,
+        "pico_em": "2026-09-10T00:20:00+00:00",
+        "pico_estimado_mmh": 13.55,
+        "pico_dbz_medio": 41.1,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189495/2026",
+      "municipio": "Limeira",
+      "latitude": -22.571927,
+      "longitude": -47.400388,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Alerta de tempestades com raios nas proximas 2 horas. Proteja-se!",
+      "resumo": "Defesa Civil:Alerta de tempestades com raios nas proximas 2 horas. Proteja-se!",
+      "descricao": "Alerta de tempestades com raios nas próximas 2 horas.",
+      "instrucao": "Proteja-se!",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Possible",
+      "inicio": "2026-09-09T21:16:41-03:00",
+      "fim": "2026-09-09T23:15:00-03:00",
+      "vigencia": "2026-09-09T21:16:41-03:00 → 2026-09-09T23:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 34,
+      "area_oficial": [
+        "Carneirinho/MG, Limeira do Oeste/MG"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     }
   ],
   "eventos_recentes_geo": [
-    {
-      "id_alerta": "189438/2026",
-      "municipio": "São Sebastião",
-      "latitude": -23.7748,
-      "longitude": -45.557369,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:15:15 - Chuva se deslocando pela regiao de Bertioga e Sao Sebastiao. Tem vento e raios. Atinge municipios vizinhos. Tenha cuidado!",
-      "resumo": "Defesa Civil:15:15 - Chuva se deslocando pela regiao de Bertioga e Sao Sebastiao. Tem vento e raios. Atinge municipios vizinhos. Tenha cuidado!",
-      "descricao": "15:15 - Chuva se deslocando pela região de Bertioga e São Sebastião. Tem vento e raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-09T15:18:25-03:00",
-      "fim": "2026-09-09T19:35:00-03:00",
-      "vigencia": "2026-09-09T15:18:25-03:00 → 2026-09-09T19:35:00-03:00",
-      "status": "RECENTE_EXPIRADO",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
-      "sites_referencia": 47,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ]
-    },
     {
       "id_alerta": "189448/2026",
       "municipio": "Planalto",
@@ -1497,9 +1514,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T00:15:45.607071+00:00",
+    "gerado_em": "2026-09-10T00:20:42.017450+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 7,
+    "eventos_com_eco": 8,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
