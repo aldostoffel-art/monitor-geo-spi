@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-10T04:15:17-03:00",
-  "fonte_coletada_em": "2026-09-10T07:15:05Z",
+  "gerado_em": "2026-09-10T04:20:20-03:00",
+  "fonte_coletada_em": "2026-09-10T07:20:06Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
   "erro_coleta": null,
-  "entradas_feed": 103,
-  "alertas_ativos": 10,
+  "entradas_feed": 104,
+  "alertas_ativos": 11,
   "eventos_geo": [
     {
       "id_alerta": "189530/2026",
@@ -287,9 +287,9 @@
           1.0
         ],
         "dbz_medio": 19.6,
-        "pico_em": "2026-09-10T05:20:00+00:00",
-        "pico_estimado_mmh": 7.73,
-        "pico_dbz_medio": 37.2,
+        "pico_em": "2026-09-10T05:30:00+00:00",
+        "pico_estimado_mmh": 7.07,
+        "pico_dbz_medio": 36.6,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -512,6 +512,132 @@
         "pico_em": "2026-09-10T05:50:00+00:00",
         "pico_estimado_mmh": 0.56,
         "pico_dbz_medio": 19.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189554/2026",
+      "municipio": "Araraquara",
+      "latitude": -21.783634,
+      "longitude": -48.175145,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:04h18 Chuva na regiao de Sao Carlos , Araraquara e Itirapina. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:04h18 Chuva na regiao de Sao Carlos , Araraquara e Itirapina. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "04h18 Chuva na região de São Carlos , Araraquara e Itirapina. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T04:18:29-03:00",
+      "fim": "2026-09-10T07:00:00-03:00",
+      "vigencia": "2026-09-10T04:18:29-03:00 → 2026-09-10T07:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 46,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T07:10:00+00:00",
+        "intensidade_estimada_mmh": 2.81,
+        "faixa_estimada_mmh": [
+          3.16,
+          3.65
+        ],
+        "dbz_medio": 30.2,
+        "pico_em": "2026-09-10T07:00:00+00:00",
+        "pico_estimado_mmh": 4.96,
+        "pico_dbz_medio": 34.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189554/2026",
+      "municipio": "Itirapina",
+      "latitude": -22.225772,
+      "longitude": -47.814761,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:04h18 Chuva na regiao de Sao Carlos , Araraquara e Itirapina. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:04h18 Chuva na regiao de Sao Carlos , Araraquara e Itirapina. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "04h18 Chuva na região de São Carlos , Araraquara e Itirapina. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T04:18:29-03:00",
+      "fim": "2026-09-10T07:00:00-03:00",
+      "vigencia": "2026-09-10T04:18:29-03:00 → 2026-09-10T07:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 7,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T07:10:00+00:00",
+        "intensidade_estimada_mmh": 5.0,
+        "faixa_estimada_mmh": [
+          3.65,
+          15.38
+        ],
+        "dbz_medio": 34.2,
+        "pico_em": "2026-09-10T07:10:00+00:00",
+        "pico_estimado_mmh": 5.0,
+        "pico_dbz_medio": 34.2,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "189554/2026",
+      "municipio": "São Carlos",
+      "latitude": -22.016436,
+      "longitude": -47.889666,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:04h18 Chuva na regiao de Sao Carlos , Araraquara e Itirapina. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:04h18 Chuva na regiao de Sao Carlos , Araraquara e Itirapina. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas proximas horas.",
+      "descricao": "04h18 Chuva na região de São Carlos , Araraquara e Itirapina. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-10T04:18:29-03:00",
+      "fim": "2026-09-10T07:00:00-03:00",
+      "vigencia": "2026-09-10T04:18:29-03:00 → 2026-09-10T07:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mdr.gov.br/idap/api/rss/cap",
+      "sites_referencia": 35,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-10T07:10:00+00:00",
+        "intensidade_estimada_mmh": 7.55,
+        "faixa_estimada_mmh": [
+          8.65,
+          17.76
+        ],
+        "dbz_medio": 37.1,
+        "pico_em": "2026-09-10T07:10:00+00:00",
+        "pico_estimado_mmh": 7.55,
+        "pico_dbz_medio": 37.1,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
@@ -1047,9 +1173,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-10T07:15:24.128617+00:00",
+    "gerado_em": "2026-09-10T07:20:27.610125+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 5,
+    "eventos_com_eco": 8,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
