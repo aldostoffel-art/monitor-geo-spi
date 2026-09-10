@@ -1,20 +1,20 @@
 {
   "core": "ALARMES_P1_SPI_DEV",
-  "gerado_em": "2026-09-10T12:24:10.922519+00:00",
+  "gerado_em": "2026-09-10T12:24:46.908469+00:00",
   "grupo": "🚨 SPI | Informes P1",
-  "ciclos_capturados": 2821,
+  "ciclos_capturados": 2822,
   "historico_exportado_carregado": true,
   "ciclos_descartados_sem_sites": 13,
   "periodo_observado_inicio": "2026-07-30T12:20:00+00:00",
-  "periodo_observado_fim": "2026-09-10T12:01:00+00:00",
-  "total_tas_acumulado": 134139,
-  "sites_unicos": 2368,
+  "periodo_observado_fim": "2026-09-10T12:24:00+00:00",
+  "total_tas_acumulado": 134162,
+  "sites_unicos": 2369,
   "municipios_unicos": 488,
   "ultimo_informe": {
-    "id": "3EB060928F9B39DC098430",
-    "timestamp": "2026-09-10T12:01:57.000Z",
-    "raw": "📊 INFORME — P1 por CN | 10/09/2026 09:01\n\nCN 11 - 10 TA\nSTF, QB2, MAB, OYA, CPJ\n\nCN 12 - 2 TA\nOJX, ZZZ\n\nCN 14 - 14 TA\nBED, KFB, TIB, DTB, AVY, DNG, AVA, PGI\n\nCN 15 - 4 TA\nBKN, DBA\n\nCN 17 - 3 TA\nCTI, BEB\n\nCN 18 - 1 TA\nU50\n\nCN 19 - 7 TA\nIUA, NHR, LKJ, LTP, BTQ\n\nTotal: 41 TAs P1 em 7 CNs",
-    "total_tas": 41,
+    "id": "3EB0FBA741B7D02BE8F171",
+    "timestamp": "2026-09-10T12:24:38.000Z",
+    "raw": "📊 INFORME — P1 por CN | 10/09/2026 09:24\n\nCN 11 - 10 TA\nSTF, QB2, MAB, XQA, OYA, CPJ\n\nCN 12 - 1 TA\nZZZ\n\nCN 14 - 1 TA\nBED\n\nCN 17 - 3 TA\nCTI, BEB\n\nCN 18 - 1 TA\nU50\n\nCN 19 - 7 TA\nIUA, LKJ, LTP, BTQ, ICL\n\nTotal: 23 TAs P1 em 6 CNs",
+    "total_tas": 23,
     "cns": [
       {
         "cn": "11",
@@ -23,38 +23,23 @@
           "STF",
           "QB2",
           "MAB",
+          "XQA",
           "OYA",
           "CPJ"
         ]
       },
       {
         "cn": "12",
-        "ta": 2,
+        "ta": 1,
         "sites": [
-          "OJX",
           "ZZZ"
         ]
       },
       {
         "cn": "14",
-        "ta": 14,
+        "ta": 1,
         "sites": [
-          "BED",
-          "KFB",
-          "TIB",
-          "DTB",
-          "AVY",
-          "DNG",
-          "AVA",
-          "PGI"
-        ]
-      },
-      {
-        "cn": "15",
-        "ta": 4,
-        "sites": [
-          "BKN",
-          "DBA"
+          "BED"
         ]
       },
       {
@@ -77,10 +62,10 @@
         "ta": 7,
         "sites": [
           "IUA",
-          "NHR",
           "LKJ",
           "LTP",
-          "BTQ"
+          "BTQ",
+          "ICL"
         ]
       }
     ],
@@ -97,9 +82,9 @@
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": "ELETROPAULO",
-      "reincidencias": 277,
+      "reincidencias": 278,
       "sla_ativo_inicio": "2026-09-06T03:41:00+00:00",
-      "sla_ativo_h": 104.72,
+      "sla_ativo_h": 104.73,
       "incidente_numero": 4,
       "inicio_real_desconhecido": null,
       "mais_de_6h_confirmado": null,
@@ -115,9 +100,9 @@
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": null,
-      "reincidencias": 99,
+      "reincidencias": 100,
       "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
+      "sla_ativo_h": 0.51,
       "incidente_numero": 6,
       "inicio_real_desconhecido": null,
       "mais_de_6h_confirmado": null,
@@ -133,10 +118,28 @@
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": "ELETROPAULO",
-      "reincidencias": 15,
+      "reincidencias": 16,
       "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
+      "sla_ativo_h": 0.51,
       "incidente_numero": 3,
+      "inicio_real_desconhecido": null,
+      "mais_de_6h_confirmado": null,
+      "override_manual": null
+    },
+    {
+      "site": "XQA",
+      "cn": "11",
+      "municipio": "Embu-Guaçu",
+      "ddd": 11,
+      "latitude": -23.883489,
+      "longitude": -46.84305,
+      "autonomia": "Até 4Hrs",
+      "ate_4h": true,
+      "distribuidora": "ELETROPAULO",
+      "reincidencias": 77,
+      "sla_ativo_inicio": "2026-09-10T12:24:00+00:00",
+      "sla_ativo_h": 0.01,
+      "incidente_numero": 11,
       "inicio_real_desconhecido": null,
       "mais_de_6h_confirmado": null,
       "override_manual": null
@@ -151,9 +154,9 @@
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": null,
-      "reincidencias": 6,
+      "reincidencias": 7,
       "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
+      "sla_ativo_h": 0.51,
       "incidente_numero": 2,
       "inicio_real_desconhecido": null,
       "mais_de_6h_confirmado": null,
@@ -169,28 +172,10 @@
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": "BRAGANTINA",
-      "reincidencias": 26,
+      "reincidencias": 27,
       "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
+      "sla_ativo_h": 0.51,
       "incidente_numero": 5,
-      "inicio_real_desconhecido": null,
-      "mais_de_6h_confirmado": null,
-      "override_manual": null
-    },
-    {
-      "site": "OJX",
-      "cn": "12",
-      "municipio": "São José Dos Campos",
-      "ddd": 12,
-      "latitude": -23.265306,
-      "longitude": -45.894283,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "reincidencias": 23,
-      "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
-      "incidente_numero": 4,
       "inicio_real_desconhecido": null,
       "mais_de_6h_confirmado": null,
       "override_manual": null
@@ -205,9 +190,9 @@
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": null,
-      "reincidencias": 2,
+      "reincidencias": 3,
       "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
+      "sla_ativo_h": 0.51,
       "incidente_numero": 1,
       "inicio_real_desconhecido": null,
       "mais_de_6h_confirmado": null,
@@ -223,172 +208,10 @@
       "autonomia": "Até 4Hrs",
       "ate_4h": true,
       "distribuidora": "CPFL",
-      "reincidencias": 15,
-      "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
-      "incidente_numero": 4,
-      "inicio_real_desconhecido": null,
-      "mais_de_6h_confirmado": null,
-      "override_manual": null
-    },
-    {
-      "site": "KFB",
-      "cn": "14",
-      "municipio": "Cafelândia",
-      "ddd": 14,
-      "latitude": -21.801736,
-      "longitude": -49.592608,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
       "reincidencias": 16,
       "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
-      "incidente_numero": 3,
-      "inicio_real_desconhecido": null,
-      "mais_de_6h_confirmado": null,
-      "override_manual": null
-    },
-    {
-      "site": "TIB",
-      "cn": "14",
-      "municipio": "Bauru",
-      "ddd": 14,
-      "latitude": -22.185579,
-      "longitude": -49.213162,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": "CPFL",
-      "reincidencias": 23,
-      "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
-      "incidente_numero": 5,
-      "inicio_real_desconhecido": null,
-      "mais_de_6h_confirmado": null,
-      "override_manual": null
-    },
-    {
-      "site": "DTB",
-      "cn": "14",
-      "municipio": "Bauru",
-      "ddd": 14,
-      "latitude": -22.237272,
-      "longitude": -49.220722,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "reincidencias": 17,
-      "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
+      "sla_ativo_h": 0.51,
       "incidente_numero": 4,
-      "inicio_real_desconhecido": null,
-      "mais_de_6h_confirmado": null,
-      "override_manual": null
-    },
-    {
-      "site": "AVY",
-      "cn": "14",
-      "municipio": "Avaí",
-      "ddd": 14,
-      "latitude": -22.156682,
-      "longitude": -49.332291,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "reincidencias": 4,
-      "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
-      "incidente_numero": 2,
-      "inicio_real_desconhecido": null,
-      "mais_de_6h_confirmado": null,
-      "override_manual": null
-    },
-    {
-      "site": "DNG",
-      "cn": "14",
-      "municipio": "Avaí",
-      "ddd": 14,
-      "latitude": -22.199281,
-      "longitude": -49.280881,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "reincidencias": 4,
-      "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
-      "incidente_numero": 2,
-      "inicio_real_desconhecido": null,
-      "mais_de_6h_confirmado": null,
-      "override_manual": null
-    },
-    {
-      "site": "AVA",
-      "cn": "14",
-      "municipio": "Avaí",
-      "ddd": 14,
-      "latitude": -22.126433,
-      "longitude": -49.308547,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": "CPFL",
-      "reincidencias": 4,
-      "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
-      "incidente_numero": 2,
-      "inicio_real_desconhecido": null,
-      "mais_de_6h_confirmado": null,
-      "override_manual": null
-    },
-    {
-      "site": "PGI",
-      "cn": "14",
-      "municipio": "Pongaí",
-      "ddd": 14,
-      "latitude": -21.734144,
-      "longitude": -49.357494,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "reincidencias": 83,
-      "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
-      "incidente_numero": 6,
-      "inicio_real_desconhecido": null,
-      "mais_de_6h_confirmado": null,
-      "override_manual": null
-    },
-    {
-      "site": "BKN",
-      "cn": "15",
-      "municipio": "Ribeirão Branco",
-      "ddd": 15,
-      "latitude": -24.295908,
-      "longitude": -48.840275,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "reincidencias": 110,
-      "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
-      "incidente_numero": 9,
-      "inicio_real_desconhecido": null,
-      "mais_de_6h_confirmado": null,
-      "override_manual": null
-    },
-    {
-      "site": "DBA",
-      "cn": "15",
-      "municipio": "Ribeirão Branco",
-      "ddd": 15,
-      "latitude": -24.258593,
-      "longitude": -48.900194,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "reincidencias": 42,
-      "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
-      "incidente_numero": 11,
       "inicio_real_desconhecido": null,
       "mais_de_6h_confirmado": null,
       "override_manual": null
@@ -403,9 +226,9 @@
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": null,
-      "reincidencias": 5,
+      "reincidencias": 6,
       "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
+      "sla_ativo_h": 0.51,
       "incidente_numero": 3,
       "inicio_real_desconhecido": null,
       "mais_de_6h_confirmado": null,
@@ -421,9 +244,9 @@
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": "CPFL",
-      "reincidencias": 13,
+      "reincidencias": 14,
       "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
+      "sla_ativo_h": 0.51,
       "incidente_numero": 3,
       "inicio_real_desconhecido": null,
       "mais_de_6h_confirmado": null,
@@ -439,9 +262,9 @@
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": null,
-      "reincidencias": 2821,
+      "reincidencias": 2822,
       "sla_ativo_inicio": "2026-07-30T12:20:00+00:00",
-      "sla_ativo_h": 1008.07,
+      "sla_ativo_h": 1008.08,
       "incidente_numero": 1,
       "inicio_real_desconhecido": true,
       "mais_de_6h_confirmado": null,
@@ -457,28 +280,10 @@
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": "CPFL",
-      "reincidencias": 36,
+      "reincidencias": 37,
       "sla_ativo_inicio": "2026-09-10T11:54:00+00:00",
-      "sla_ativo_h": 0.5,
+      "sla_ativo_h": 0.51,
       "incidente_numero": 4,
-      "inicio_real_desconhecido": null,
-      "mais_de_6h_confirmado": null,
-      "override_manual": null
-    },
-    {
-      "site": "NHR",
-      "cn": "19",
-      "municipio": "Pirassununga",
-      "ddd": 19,
-      "latitude": -21.964239,
-      "longitude": -47.430261,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "reincidencias": 9,
-      "sla_ativo_inicio": "2026-09-10T12:01:00+00:00",
-      "sla_ativo_h": 0.39,
-      "incidente_numero": 3,
       "inicio_real_desconhecido": null,
       "mais_de_6h_confirmado": null,
       "override_manual": null
@@ -493,9 +298,9 @@
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": null,
-      "reincidencias": 141,
+      "reincidencias": 142,
       "sla_ativo_inicio": "2026-09-10T12:01:00+00:00",
-      "sla_ativo_h": 0.39,
+      "sla_ativo_h": 0.4,
       "incidente_numero": 5,
       "inicio_real_desconhecido": null,
       "mais_de_6h_confirmado": null,
@@ -511,9 +316,9 @@
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": null,
-      "reincidencias": 1,
+      "reincidencias": 2,
       "sla_ativo_inicio": "2026-09-10T12:01:00+00:00",
-      "sla_ativo_h": 0.39,
+      "sla_ativo_h": 0.4,
       "incidente_numero": 1,
       "inicio_real_desconhecido": null,
       "mais_de_6h_confirmado": null,
@@ -529,9 +334,27 @@
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": null,
-      "reincidencias": 1,
+      "reincidencias": 2,
       "sla_ativo_inicio": "2026-09-10T12:01:00+00:00",
-      "sla_ativo_h": 0.39,
+      "sla_ativo_h": 0.4,
+      "incidente_numero": 1,
+      "inicio_real_desconhecido": null,
+      "mais_de_6h_confirmado": null,
+      "override_manual": null
+    },
+    {
+      "site": "ICL",
+      "cn": "19",
+      "municipio": "Indaiatuba",
+      "ddd": 19,
+      "latitude": -23.065189,
+      "longitude": -47.232825,
+      "autonomia": "Acima de 4Hrs",
+      "ate_4h": false,
+      "distribuidora": "CPFL",
+      "reincidencias": 1,
+      "sla_ativo_inicio": "2026-09-10T12:24:00+00:00",
+      "sla_ativo_h": 0.01,
       "incidente_numero": 1,
       "inicio_real_desconhecido": null,
       "mais_de_6h_confirmado": null,
@@ -541,7 +364,7 @@
   "reincidencia": [
     {
       "site": "U50",
-      "ciclos": 2821,
+      "ciclos": 2822,
       "incidentes": 1,
       "municipio": "Presidente Prudente",
       "ddd": 18,
@@ -730,20 +553,20 @@
       "distribuidora": "CPFL"
     },
     {
-      "site": "SJV",
-      "ciclos": 277,
-      "incidentes": 14,
-      "municipio": "Itapevi",
+      "site": "STF",
+      "ciclos": 278,
+      "incidentes": 4,
+      "municipio": "Juquitiba",
       "ddd": 11,
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
       "distribuidora": "ELETROPAULO"
     },
     {
-      "site": "STF",
+      "site": "SJV",
       "ciclos": 277,
-      "incidentes": 4,
-      "municipio": "Juquitiba",
+      "incidentes": 14,
+      "municipio": "Itapevi",
       "ddd": 11,
       "autonomia": "Acima de 4Hrs",
       "ate_4h": false,
@@ -1043,7 +866,7 @@
   "localidades": [
     {
       "municipio": "Presidente Prudente",
-      "ocorrencias": 3184
+      "ocorrencias": 3185
     },
     {
       "municipio": "São José Dos Campos",
@@ -1051,7 +874,7 @@
     },
     {
       "municipio": "Campinas",
-      "ocorrencias": 1590
+      "ocorrencias": 1591
     },
     {
       "municipio": "Piracicaba",
@@ -1063,7 +886,7 @@
     },
     {
       "municipio": "Osasco",
-      "ocorrencias": 1460
+      "ocorrencias": 1461
     },
     {
       "municipio": "Jundiaí",
@@ -1083,7 +906,7 @@
     },
     {
       "municipio": "Bragança Paulista",
-      "ocorrencias": 998
+      "ocorrencias": 1000
     },
     {
       "municipio": "Taubaté",
@@ -1095,7 +918,7 @@
     },
     {
       "municipio": "Juquitiba",
-      "ocorrencias": 918
+      "ocorrencias": 919
     },
     {
       "municipio": "Ubatuba",
@@ -1115,7 +938,7 @@
     },
     {
       "municipio": "Bauru",
-      "ocorrencias": 841
+      "ocorrencias": 842
     },
     {
       "municipio": "Lins",
@@ -1127,7 +950,7 @@
     },
     {
       "municipio": "Embu-Guaçu",
-      "ocorrencias": 816
+      "ocorrencias": 817
     },
     {
       "municipio": "Ribeirão Preto",
@@ -1165,11 +988,11 @@
   "cn_acumulado": [
     {
       "cn": "11",
-      "tas": 39494
+      "tas": 39504
     },
     {
       "cn": "18",
-      "tas": 17245
+      "tas": 17246
     },
     {
       "cn": "16",
@@ -1177,11 +1000,11 @@
     },
     {
       "cn": "12",
-      "tas": 14430
+      "tas": 14431
     },
     {
       "cn": "19",
-      "tas": 14155
+      "tas": 14162
     },
     {
       "cn": "15",
@@ -1189,25 +1012,25 @@
     },
     {
       "cn": "14",
-      "tas": 12494
+      "tas": 12495
     },
     {
       "cn": "17",
-      "tas": 6592
+      "tas": 6595
     }
   ],
   "oportunidades": [
     {
       "site": "U50",
-      "score": 8468,
+      "score": 8471,
       "municipio": "Presidente Prudente",
       "ddd": 18,
       "autonomia": "Acima de 4Hrs",
       "distribuidora": null,
       "incidentes": 1,
       "motivos": [
-        "2821 ciclos com alarme",
-        "3184 ocorrências na localidade"
+        "2822 ciclos com alarme",
+        "3185 ocorrências na localidade"
       ]
     },
     {
@@ -1386,7 +1209,7 @@
       "motivos": [
         "329 ciclos com alarme",
         "17 incidentes observados",
-        "1460 ocorrências na localidade"
+        "1461 ocorrências na localidade"
       ]
     },
     {
@@ -1414,7 +1237,7 @@
       "motivos": [
         "317 ciclos com alarme",
         "7 incidentes observados",
-        "1460 ocorrências na localidade"
+        "1461 ocorrências na localidade"
       ]
     },
     {
@@ -1484,21 +1307,21 @@
       "motivos": [
         "275 ciclos com alarme",
         "10 incidentes observados",
-        "516 ocorrências na localidade"
+        "517 ocorrências na localidade"
       ]
     },
     {
       "site": "STF",
-      "score": 848,
+      "score": 851,
       "municipio": "Juquitiba",
       "ddd": 11,
       "autonomia": "Acima de 4Hrs",
       "distribuidora": "ELETROPAULO",
       "incidentes": 4,
       "motivos": [
-        "277 ciclos com alarme",
+        "278 ciclos com alarme",
         "4 incidentes observados",
-        "918 ocorrências na localidade"
+        "919 ocorrências na localidade"
       ]
     },
     {
@@ -1539,7 +1362,7 @@
       "motivos": [
         "261 ciclos com alarme",
         "5 incidentes observados",
-        "816 ocorrências na localidade"
+        "817 ocorrências na localidade"
       ]
     },
     {
@@ -1755,15 +1578,15 @@
   ],
   "sla": {
     "regra": "ENTRA abre; CONTINUA mantém; primeira ausência fecha; retorno posterior abre novo incidente",
-    "abertos_agora": 25,
-    "fechados_observados": 6547,
-    "eventos_total": 6572,
-    "sla_medio_fechamento_h": 4.52,
-    "sla_medio_fechamento_inicio_confirmado_h": 4.37,
+    "abertos_agora": 16,
+    "fechados_observados": 6558,
+    "eventos_total": 6574,
+    "sla_medio_fechamento_h": 4.51,
+    "sla_medio_fechamento_inicio_confirmado_h": 4.36,
     "abertos_acima_6h": 2,
     "abertos_inicio_desconhecido": 1,
-    "mais_antigo_aberto_h": 1008.07,
-    "idade_media_abertos_h": 44.95,
+    "mais_antigo_aberto_h": 1008.08,
+    "idade_media_abertos_h": 69.91,
     "nota_primeiro_carimbo": "Eventos já presentes no primeiro carimbo NÃO têm idade real conhecida; a duração mostrada é somente o mínimo observado. Não devem ser classificados como abaixo de 6h sem histórico anterior. Overrides manuais só marcam fatos confirmados, sem inventar horário de início."
   },
   "eventos_abertos": [
@@ -1782,9 +1605,9 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": true,
       "incidente_numero": 1,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 1008.07,
-      "idade_ativa_h": 1008.07,
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 1008.08,
+      "idade_ativa_h": 1008.08,
       "inicio_real_desconhecido": true
     },
     {
@@ -1802,9 +1625,9 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": false,
       "incidente_numero": 4,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 104.72,
-      "idade_ativa_h": 104.72
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 104.73,
+      "idade_ativa_h": 104.73
     },
     {
       "site": "QB2",
@@ -1821,9 +1644,9 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": false,
       "incidente_numero": 6,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.51,
+      "idade_ativa_h": 0.51
     },
     {
       "site": "MAB",
@@ -1840,9 +1663,9 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": false,
       "incidente_numero": 3,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.51,
+      "idade_ativa_h": 0.51
     },
     {
       "site": "OYA",
@@ -1859,9 +1682,9 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": false,
       "incidente_numero": 2,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.51,
+      "idade_ativa_h": 0.51
     },
     {
       "site": "CPJ",
@@ -1878,28 +1701,9 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": false,
       "incidente_numero": 5,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
-    },
-    {
-      "site": "OJX",
-      "cn": "12",
-      "municipio": "São José Dos Campos",
-      "ddd": 12,
-      "latitude": -23.265306,
-      "longitude": -45.894283,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "inicio": "2026-09-10T11:54:00+00:00",
-      "fim": null,
-      "status": "ABERTO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 4,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.51,
+      "idade_ativa_h": 0.51
     },
     {
       "site": "ZZZ",
@@ -1916,9 +1720,9 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": false,
       "incidente_numero": 1,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.51,
+      "idade_ativa_h": 0.51
     },
     {
       "site": "BED",
@@ -1935,180 +1739,9 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": false,
       "incidente_numero": 4,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
-    },
-    {
-      "site": "KFB",
-      "cn": "14",
-      "municipio": "Cafelândia",
-      "ddd": 14,
-      "latitude": -21.801736,
-      "longitude": -49.592608,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "inicio": "2026-09-10T11:54:00+00:00",
-      "fim": null,
-      "status": "ABERTO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 3,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
-    },
-    {
-      "site": "TIB",
-      "cn": "14",
-      "municipio": "Bauru",
-      "ddd": 14,
-      "latitude": -22.185579,
-      "longitude": -49.213162,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": "CPFL",
-      "inicio": "2026-09-10T11:54:00+00:00",
-      "fim": null,
-      "status": "ABERTO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 5,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
-    },
-    {
-      "site": "DTB",
-      "cn": "14",
-      "municipio": "Bauru",
-      "ddd": 14,
-      "latitude": -22.237272,
-      "longitude": -49.220722,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "inicio": "2026-09-10T11:54:00+00:00",
-      "fim": null,
-      "status": "ABERTO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 4,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
-    },
-    {
-      "site": "AVY",
-      "cn": "14",
-      "municipio": "Avaí",
-      "ddd": 14,
-      "latitude": -22.156682,
-      "longitude": -49.332291,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "inicio": "2026-09-10T11:54:00+00:00",
-      "fim": null,
-      "status": "ABERTO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 2,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
-    },
-    {
-      "site": "DNG",
-      "cn": "14",
-      "municipio": "Avaí",
-      "ddd": 14,
-      "latitude": -22.199281,
-      "longitude": -49.280881,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "inicio": "2026-09-10T11:54:00+00:00",
-      "fim": null,
-      "status": "ABERTO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 2,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
-    },
-    {
-      "site": "AVA",
-      "cn": "14",
-      "municipio": "Avaí",
-      "ddd": 14,
-      "latitude": -22.126433,
-      "longitude": -49.308547,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": "CPFL",
-      "inicio": "2026-09-10T11:54:00+00:00",
-      "fim": null,
-      "status": "ABERTO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 2,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
-    },
-    {
-      "site": "PGI",
-      "cn": "14",
-      "municipio": "Pongaí",
-      "ddd": 14,
-      "latitude": -21.734144,
-      "longitude": -49.357494,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "inicio": "2026-09-10T11:54:00+00:00",
-      "fim": null,
-      "status": "ABERTO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 6,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
-    },
-    {
-      "site": "BKN",
-      "cn": "15",
-      "municipio": "Ribeirão Branco",
-      "ddd": 15,
-      "latitude": -24.295908,
-      "longitude": -48.840275,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "inicio": "2026-09-10T11:54:00+00:00",
-      "fim": null,
-      "status": "ABERTO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 9,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
-    },
-    {
-      "site": "DBA",
-      "cn": "15",
-      "municipio": "Ribeirão Branco",
-      "ddd": 15,
-      "latitude": -24.258593,
-      "longitude": -48.900194,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "inicio": "2026-09-10T11:54:00+00:00",
-      "fim": null,
-      "status": "ABERTO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 11,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.51,
+      "idade_ativa_h": 0.51
     },
     {
       "site": "CTI",
@@ -2125,9 +1758,9 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": false,
       "incidente_numero": 3,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.51,
+      "idade_ativa_h": 0.51
     },
     {
       "site": "BEB",
@@ -2144,9 +1777,9 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": false,
       "incidente_numero": 3,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.51,
+      "idade_ativa_h": 0.51
     },
     {
       "site": "IUA",
@@ -2163,28 +1796,9 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": false,
       "incidente_numero": 4,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.5,
-      "idade_ativa_h": 0.5
-    },
-    {
-      "site": "NHR",
-      "cn": "19",
-      "municipio": "Pirassununga",
-      "ddd": 19,
-      "latitude": -21.964239,
-      "longitude": -47.430261,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "inicio": "2026-09-10T12:01:00+00:00",
-      "fim": null,
-      "status": "ABERTO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 3,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.39,
-      "idade_ativa_h": 0.39
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.51,
+      "idade_ativa_h": 0.51
     },
     {
       "site": "LKJ",
@@ -2201,9 +1815,9 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": false,
       "incidente_numero": 5,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.39,
-      "idade_ativa_h": 0.39
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.4,
+      "idade_ativa_h": 0.4
     },
     {
       "site": "LTP",
@@ -2220,9 +1834,9 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": false,
       "incidente_numero": 1,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.39,
-      "idade_ativa_h": 0.39
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.4,
+      "idade_ativa_h": 0.4
     },
     {
       "site": "BTQ",
@@ -2239,221 +1853,50 @@
       "status": "ABERTO",
       "inicio_observado_no_primeiro_carimbo": false,
       "incidente_numero": 1,
-      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
-      "idade_observada_h": 0.39,
-      "idade_ativa_h": 0.39
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.4,
+      "idade_ativa_h": 0.4
+    },
+    {
+      "site": "XQA",
+      "cn": "11",
+      "municipio": "Embu-Guaçu",
+      "ddd": 11,
+      "latitude": -23.883489,
+      "longitude": -46.84305,
+      "autonomia": "Até 4Hrs",
+      "ate_4h": true,
+      "distribuidora": "ELETROPAULO",
+      "inicio": "2026-09-10T12:24:00+00:00",
+      "fim": null,
+      "status": "ABERTO",
+      "inicio_observado_no_primeiro_carimbo": false,
+      "incidente_numero": 11,
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.01,
+      "idade_ativa_h": 0.01
+    },
+    {
+      "site": "ICL",
+      "cn": "19",
+      "municipio": "Indaiatuba",
+      "ddd": 19,
+      "latitude": -23.065189,
+      "longitude": -47.232825,
+      "autonomia": "Acima de 4Hrs",
+      "ate_4h": false,
+      "distribuidora": "CPFL",
+      "inicio": "2026-09-10T12:24:00+00:00",
+      "fim": null,
+      "status": "ABERTO",
+      "inicio_observado_no_primeiro_carimbo": false,
+      "incidente_numero": 1,
+      "ultimo_carimbo": "2026-09-10T12:24:00+00:00",
+      "idade_observada_h": 0.01,
+      "idade_ativa_h": 0.01
     }
   ],
   "eventos_fechados": [
-    {
-      "site": "NSR",
-      "cn": "11",
-      "municipio": "São Roque",
-      "ddd": 11,
-      "latitude": -23.52766,
-      "longitude": -47.15647,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": "CPFL",
-      "inicio": "2026-09-08T16:43:00+00:00",
-      "fim": "2026-09-08T17:40:00+00:00",
-      "status": "FECHADO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 1,
-      "ultimo_carimbo": "2026-09-08T17:20:00+00:00",
-      "duracao_h": 0.95,
-      "fechamento_por": "AUSENCIA_NO_CARIMBO"
-    },
-    {
-      "site": "CVN",
-      "cn": "19",
-      "municipio": "Campinas",
-      "ddd": 19,
-      "latitude": -22.848297,
-      "longitude": -47.100601,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": "CPFL",
-      "inicio": "2026-09-08T16:43:00+00:00",
-      "fim": "2026-09-08T17:40:00+00:00",
-      "status": "FECHADO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 7,
-      "ultimo_carimbo": "2026-09-08T17:20:00+00:00",
-      "duracao_h": 0.95,
-      "fechamento_por": "AUSENCIA_NO_CARIMBO"
-    },
-    {
-      "site": "SHK",
-      "cn": "12",
-      "municipio": "São José Dos Campos",
-      "ddd": 12,
-      "latitude": -23.199736,
-      "longitude": -45.881564,
-      "autonomia": "Até 4Hrs",
-      "ate_4h": true,
-      "distribuidora": null,
-      "inicio": "2026-09-08T16:23:00+00:00",
-      "fim": "2026-09-08T18:00:00+00:00",
-      "status": "FECHADO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 1,
-      "ultimo_carimbo": "2026-09-08T17:40:00+00:00",
-      "duracao_h": 1.62,
-      "fechamento_por": "AUSENCIA_NO_CARIMBO"
-    },
-    {
-      "site": "USC",
-      "cn": "12",
-      "municipio": "São José Dos Campos",
-      "ddd": 12,
-      "latitude": -23.199736,
-      "longitude": -45.881567,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": "BANDEIRANTE",
-      "inicio": "2026-09-08T16:23:00+00:00",
-      "fim": "2026-09-08T18:00:00+00:00",
-      "status": "FECHADO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 1,
-      "ultimo_carimbo": "2026-09-08T17:40:00+00:00",
-      "duracao_h": 1.62,
-      "fechamento_por": "AUSENCIA_NO_CARIMBO"
-    },
-    {
-      "site": "RNP",
-      "cn": "18",
-      "municipio": "Rinópolis",
-      "ddd": 18,
-      "latitude": -21.72571,
-      "longitude": -50.71979,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "inicio": "2026-09-08T15:00:00+00:00",
-      "fim": "2026-09-08T18:40:00+00:00",
-      "status": "FECHADO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 16,
-      "ultimo_carimbo": "2026-09-08T18:00:00+00:00",
-      "duracao_h": 3.67,
-      "fechamento_por": "AUSENCIA_NO_CARIMBO"
-    },
-    {
-      "site": "PUA",
-      "cn": "18",
-      "municipio": "Parapuã",
-      "ddd": 18,
-      "latitude": -21.787716,
-      "longitude": -50.793738,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": "CAIUA",
-      "inicio": "2026-09-08T15:00:00+00:00",
-      "fim": "2026-09-08T18:40:00+00:00",
-      "status": "FECHADO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 16,
-      "ultimo_carimbo": "2026-09-08T18:00:00+00:00",
-      "duracao_h": 3.67,
-      "fechamento_por": "AUSENCIA_NO_CARIMBO"
-    },
-    {
-      "site": "RZH",
-      "cn": "11",
-      "municipio": "Mairiporã",
-      "ddd": 11,
-      "latitude": -23.335681,
-      "longitude": -46.5724,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": "ELEKTRO",
-      "inicio": "2026-09-08T16:23:00+00:00",
-      "fim": "2026-09-08T18:40:00+00:00",
-      "status": "FECHADO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 4,
-      "ultimo_carimbo": "2026-09-08T18:00:00+00:00",
-      "duracao_h": 2.28,
-      "fechamento_por": "AUSENCIA_NO_CARIMBO"
-    },
-    {
-      "site": "BBD",
-      "cn": "17",
-      "municipio": "Bebedouro",
-      "ddd": 17,
-      "latitude": -20.989872,
-      "longitude": -48.434747,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": "CPFL",
-      "inicio": "2026-09-08T17:40:00+00:00",
-      "fim": "2026-09-08T18:40:00+00:00",
-      "status": "FECHADO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 5,
-      "ultimo_carimbo": "2026-09-08T18:00:00+00:00",
-      "duracao_h": 1.0,
-      "fechamento_por": "AUSENCIA_NO_CARIMBO"
-    },
-    {
-      "site": "MMX",
-      "cn": "19",
-      "municipio": "Campinas",
-      "ddd": 19,
-      "latitude": -22.971412,
-      "longitude": -47.046948,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": "CPFL",
-      "inicio": "2026-09-08T17:40:00+00:00",
-      "fim": "2026-09-08T18:40:00+00:00",
-      "status": "FECHADO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 6,
-      "ultimo_carimbo": "2026-09-08T18:00:00+00:00",
-      "duracao_h": 1.0,
-      "fechamento_por": "AUSENCIA_NO_CARIMBO"
-    },
-    {
-      "site": "DOU",
-      "cn": "16",
-      "municipio": "Dourado",
-      "ddd": 16,
-      "latitude": -22.115281,
-      "longitude": -48.317722,
-      "autonomia": "Acima de 4Hrs",
-      "ate_4h": false,
-      "distribuidora": null,
-      "inicio": "2026-09-08T18:00:00+00:00",
-      "fim": "2026-09-08T18:40:00+00:00",
-      "status": "FECHADO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 1,
-      "ultimo_carimbo": "2026-09-08T18:00:00+00:00",
-      "duracao_h": 0.67,
-      "fechamento_por": "AUSENCIA_NO_CARIMBO"
-    },
-    {
-      "site": "MCD",
-      "cn": "17",
-      "municipio": "Monções",
-      "ddd": 17,
-      "latitude": -20.850944,
-      "longitude": -50.091167,
-      "autonomia": "Até 4Hrs",
-      "ate_4h": true,
-      "distribuidora": null,
-      "inicio": "2026-09-08T18:00:00+00:00",
-      "fim": "2026-09-08T19:00:00+00:00",
-      "status": "FECHADO",
-      "inicio_observado_no_primeiro_carimbo": false,
-      "incidente_numero": 1,
-      "ultimo_carimbo": "2026-09-08T18:40:00+00:00",
-      "duracao_h": 1.0,
-      "fechamento_por": "AUSENCIA_NO_CARIMBO"
-    },
     {
       "site": "DIY",
       "cn": "17",
@@ -6044,11 +5487,220 @@
       "ultimo_carimbo": "2026-09-10T11:54:00+00:00",
       "duracao_h": 0.12,
       "fechamento_por": "AUSENCIA_NO_CARIMBO"
+    },
+    {
+      "site": "OJX",
+      "cn": "12",
+      "municipio": "São José Dos Campos",
+      "ddd": 12,
+      "latitude": -23.265306,
+      "longitude": -45.894283,
+      "autonomia": "Acima de 4Hrs",
+      "ate_4h": false,
+      "distribuidora": null,
+      "inicio": "2026-09-10T11:54:00+00:00",
+      "fim": "2026-09-10T12:24:00+00:00",
+      "status": "FECHADO",
+      "inicio_observado_no_primeiro_carimbo": false,
+      "incidente_numero": 4,
+      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
+      "duracao_h": 0.5,
+      "fechamento_por": "AUSENCIA_NO_CARIMBO"
+    },
+    {
+      "site": "KFB",
+      "cn": "14",
+      "municipio": "Cafelândia",
+      "ddd": 14,
+      "latitude": -21.801736,
+      "longitude": -49.592608,
+      "autonomia": "Acima de 4Hrs",
+      "ate_4h": false,
+      "distribuidora": null,
+      "inicio": "2026-09-10T11:54:00+00:00",
+      "fim": "2026-09-10T12:24:00+00:00",
+      "status": "FECHADO",
+      "inicio_observado_no_primeiro_carimbo": false,
+      "incidente_numero": 3,
+      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
+      "duracao_h": 0.5,
+      "fechamento_por": "AUSENCIA_NO_CARIMBO"
+    },
+    {
+      "site": "TIB",
+      "cn": "14",
+      "municipio": "Bauru",
+      "ddd": 14,
+      "latitude": -22.185579,
+      "longitude": -49.213162,
+      "autonomia": "Acima de 4Hrs",
+      "ate_4h": false,
+      "distribuidora": "CPFL",
+      "inicio": "2026-09-10T11:54:00+00:00",
+      "fim": "2026-09-10T12:24:00+00:00",
+      "status": "FECHADO",
+      "inicio_observado_no_primeiro_carimbo": false,
+      "incidente_numero": 5,
+      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
+      "duracao_h": 0.5,
+      "fechamento_por": "AUSENCIA_NO_CARIMBO"
+    },
+    {
+      "site": "DTB",
+      "cn": "14",
+      "municipio": "Bauru",
+      "ddd": 14,
+      "latitude": -22.237272,
+      "longitude": -49.220722,
+      "autonomia": "Acima de 4Hrs",
+      "ate_4h": false,
+      "distribuidora": null,
+      "inicio": "2026-09-10T11:54:00+00:00",
+      "fim": "2026-09-10T12:24:00+00:00",
+      "status": "FECHADO",
+      "inicio_observado_no_primeiro_carimbo": false,
+      "incidente_numero": 4,
+      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
+      "duracao_h": 0.5,
+      "fechamento_por": "AUSENCIA_NO_CARIMBO"
+    },
+    {
+      "site": "AVY",
+      "cn": "14",
+      "municipio": "Avaí",
+      "ddd": 14,
+      "latitude": -22.156682,
+      "longitude": -49.332291,
+      "autonomia": "Acima de 4Hrs",
+      "ate_4h": false,
+      "distribuidora": null,
+      "inicio": "2026-09-10T11:54:00+00:00",
+      "fim": "2026-09-10T12:24:00+00:00",
+      "status": "FECHADO",
+      "inicio_observado_no_primeiro_carimbo": false,
+      "incidente_numero": 2,
+      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
+      "duracao_h": 0.5,
+      "fechamento_por": "AUSENCIA_NO_CARIMBO"
+    },
+    {
+      "site": "DNG",
+      "cn": "14",
+      "municipio": "Avaí",
+      "ddd": 14,
+      "latitude": -22.199281,
+      "longitude": -49.280881,
+      "autonomia": "Acima de 4Hrs",
+      "ate_4h": false,
+      "distribuidora": null,
+      "inicio": "2026-09-10T11:54:00+00:00",
+      "fim": "2026-09-10T12:24:00+00:00",
+      "status": "FECHADO",
+      "inicio_observado_no_primeiro_carimbo": false,
+      "incidente_numero": 2,
+      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
+      "duracao_h": 0.5,
+      "fechamento_por": "AUSENCIA_NO_CARIMBO"
+    },
+    {
+      "site": "AVA",
+      "cn": "14",
+      "municipio": "Avaí",
+      "ddd": 14,
+      "latitude": -22.126433,
+      "longitude": -49.308547,
+      "autonomia": "Acima de 4Hrs",
+      "ate_4h": false,
+      "distribuidora": "CPFL",
+      "inicio": "2026-09-10T11:54:00+00:00",
+      "fim": "2026-09-10T12:24:00+00:00",
+      "status": "FECHADO",
+      "inicio_observado_no_primeiro_carimbo": false,
+      "incidente_numero": 2,
+      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
+      "duracao_h": 0.5,
+      "fechamento_por": "AUSENCIA_NO_CARIMBO"
+    },
+    {
+      "site": "PGI",
+      "cn": "14",
+      "municipio": "Pongaí",
+      "ddd": 14,
+      "latitude": -21.734144,
+      "longitude": -49.357494,
+      "autonomia": "Acima de 4Hrs",
+      "ate_4h": false,
+      "distribuidora": null,
+      "inicio": "2026-09-10T11:54:00+00:00",
+      "fim": "2026-09-10T12:24:00+00:00",
+      "status": "FECHADO",
+      "inicio_observado_no_primeiro_carimbo": false,
+      "incidente_numero": 6,
+      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
+      "duracao_h": 0.5,
+      "fechamento_por": "AUSENCIA_NO_CARIMBO"
+    },
+    {
+      "site": "BKN",
+      "cn": "15",
+      "municipio": "Ribeirão Branco",
+      "ddd": 15,
+      "latitude": -24.295908,
+      "longitude": -48.840275,
+      "autonomia": "Acima de 4Hrs",
+      "ate_4h": false,
+      "distribuidora": null,
+      "inicio": "2026-09-10T11:54:00+00:00",
+      "fim": "2026-09-10T12:24:00+00:00",
+      "status": "FECHADO",
+      "inicio_observado_no_primeiro_carimbo": false,
+      "incidente_numero": 9,
+      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
+      "duracao_h": 0.5,
+      "fechamento_por": "AUSENCIA_NO_CARIMBO"
+    },
+    {
+      "site": "DBA",
+      "cn": "15",
+      "municipio": "Ribeirão Branco",
+      "ddd": 15,
+      "latitude": -24.258593,
+      "longitude": -48.900194,
+      "autonomia": "Acima de 4Hrs",
+      "ate_4h": false,
+      "distribuidora": null,
+      "inicio": "2026-09-10T11:54:00+00:00",
+      "fim": "2026-09-10T12:24:00+00:00",
+      "status": "FECHADO",
+      "inicio_observado_no_primeiro_carimbo": false,
+      "incidente_numero": 11,
+      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
+      "duracao_h": 0.5,
+      "fechamento_por": "AUSENCIA_NO_CARIMBO"
+    },
+    {
+      "site": "NHR",
+      "cn": "19",
+      "municipio": "Pirassununga",
+      "ddd": 19,
+      "latitude": -21.964239,
+      "longitude": -47.430261,
+      "autonomia": "Acima de 4Hrs",
+      "ate_4h": false,
+      "distribuidora": null,
+      "inicio": "2026-09-10T12:01:00+00:00",
+      "fim": "2026-09-10T12:24:00+00:00",
+      "status": "FECHADO",
+      "inicio_observado_no_primeiro_carimbo": false,
+      "incidente_numero": 3,
+      "ultimo_carimbo": "2026-09-10T12:01:00+00:00",
+      "duracao_h": 0.38,
+      "fechamento_por": "AUSENCIA_NO_CARIMBO"
     }
   ],
   "historico_reincidentes": {
     "desde": "2026-07-30T12:20:00+00:00",
-    "ate": "2026-09-10T12:01:00+00:00",
+    "ate": "2026-09-10T12:24:00+00:00",
     "top10": [
       {
         "site": "CAF",
@@ -6249,11 +5901,11 @@
       },
       {
         "data": "2026-09-10",
-        "incidentes": 24,
-        "reincidencias": 21,
-        "sites_unicos": 24,
-        "ability": 5,
-        "tel": 19
+        "incidentes": 26,
+        "reincidencias": 22,
+        "sites_unicos": 26,
+        "ability": 6,
+        "tel": 20
       }
     ],
     "pico_dia_mes": {
@@ -6269,12 +5921,12 @@
         "cn": "11",
         "parceira": "ABILITY",
         "sites_unicos": 192,
-        "incidentes": 348,
+        "incidentes": 349,
         "sites": [
           {
             "site": "XQA",
-            "incidentes": 9,
-            "reincidencias": 8
+            "incidentes": 10,
+            "reincidencias": 9
           },
           {
             "site": "SJV",
@@ -10719,8 +10371,8 @@
       {
         "cn": "19",
         "parceira": "TEL",
-        "sites_unicos": 120,
-        "incidentes": 173,
+        "sites_unicos": 121,
+        "incidentes": 174,
         "sites": [
           {
             "site": "DIB",
@@ -10994,6 +10646,11 @@
           },
           {
             "site": "GUY",
+            "incidentes": 1,
+            "reincidencias": 0
+          },
+          {
+            "site": "ICL",
             "incidentes": 1,
             "reincidencias": 0
           },
@@ -20107,10 +19764,10 @@
           {
             "cn": "11",
             "parceira": "ABILITY",
-            "sites_abertos": 5,
-            "aberturas_incidentes": 5,
-            "sites_reincidentes": 5,
-            "reincidencias_no_dia": 5,
+            "sites_abertos": 6,
+            "aberturas_incidentes": 6,
+            "sites_reincidentes": 6,
+            "reincidencias_no_dia": 6,
             "sites": [
               {
                 "site": "AIR",
@@ -20138,6 +19795,12 @@
               },
               {
                 "site": "QB2",
+                "aberturas": 1,
+                "reincidente": true,
+                "reincidencias_no_dia": 1
+              },
+              {
+                "site": "XQA",
                 "aberturas": 1,
                 "reincidente": true,
                 "reincidencias_no_dia": 1
@@ -20271,13 +19934,19 @@
           {
             "cn": "19",
             "parceira": "TEL",
-            "sites_abertos": 5,
-            "aberturas_incidentes": 5,
+            "sites_abertos": 6,
+            "aberturas_incidentes": 6,
             "sites_reincidentes": 3,
             "reincidencias_no_dia": 3,
             "sites": [
               {
                 "site": "BTQ",
+                "aberturas": 1,
+                "reincidente": false,
+                "reincidencias_no_dia": 0
+              },
+              {
+                "site": "ICL",
                 "aberturas": 1,
                 "reincidente": false,
                 "reincidencias_no_dia": 0
@@ -20735,13 +20404,13 @@
         },
         {
           "periodo": "2026-09-10",
-          "backlog_fechamento": 41,
+          "backlog_fechamento": 23,
           "backlog_pico": 41,
-          "backlog_medio": 38.5,
-          "snapshots": 2,
-          "incidentes": 24,
-          "reincidencias": 21,
-          "sites_reincidentes": 21
+          "backlog_medio": 33.3,
+          "snapshots": 3,
+          "incidentes": 26,
+          "reincidencias": 22,
+          "sites_reincidentes": 22
         }
       ],
       "semana": [
@@ -20807,12 +20476,12 @@
         },
         {
           "periodo": "2026-W37",
-          "backlog_fechamento": 41,
+          "backlog_fechamento": 23,
           "backlog_pico": 100,
-          "backlog_medio": 45.8,
-          "snapshots": 174,
-          "incidentes": 345,
-          "reincidencias": 288,
+          "backlog_medio": 45.7,
+          "snapshots": 175,
+          "incidentes": 347,
+          "reincidencias": 289,
           "sites_reincidentes": 219
         }
       ],
@@ -20839,12 +20508,12 @@
         },
         {
           "periodo": "2026-09",
-          "backlog_fechamento": 41,
+          "backlog_fechamento": 23,
           "backlog_pico": 171,
-          "backlog_medio": 57.4,
-          "snapshots": 684,
-          "incidentes": 1592,
-          "reincidencias": 1279,
+          "backlog_medio": 57.3,
+          "snapshots": 685,
+          "incidentes": 1594,
+          "reincidencias": 1280,
           "sites_reincidentes": 784
         }
       ]
@@ -20852,54 +20521,24 @@
   },
   "sla_por_cn": [
     {
-      "cn": "14",
-      "eventos": 772,
-      "fechados": 764,
-      "abertos": 8,
-      "sla_medio_fechamento_h": 4.03,
-      "idade_media_abertos_h": 0.5,
-      "maior_sla_fechado_h": 199.35,
-      "mais_antigo_aberto_h": 0.5
-    },
-    {
       "cn": "11",
-      "eventos": 1351,
+      "eventos": 1352,
       "fechados": 1346,
-      "abertos": 5,
+      "abertos": 6,
       "sla_medio_fechamento_h": 5.31,
-      "idade_media_abertos_h": 21.34,
+      "idade_media_abertos_h": 17.8,
       "maior_sla_fechado_h": 74.0,
-      "mais_antigo_aberto_h": 104.72
+      "mais_antigo_aberto_h": 104.73
     },
     {
       "cn": "19",
-      "eventos": 739,
-      "fechados": 734,
+      "eventos": 740,
+      "fechados": 735,
       "abertos": 5,
       "sla_medio_fechamento_h": 5.12,
-      "idade_media_abertos_h": 0.41,
+      "idade_media_abertos_h": 0.34,
       "maior_sla_fechado_h": 82.23,
-      "mais_antigo_aberto_h": 0.5
-    },
-    {
-      "cn": "12",
-      "eventos": 723,
-      "fechados": 721,
-      "abertos": 2,
-      "sla_medio_fechamento_h": 4.72,
-      "idade_media_abertos_h": 0.5,
-      "maior_sla_fechado_h": 50.0,
-      "mais_antigo_aberto_h": 0.5
-    },
-    {
-      "cn": "15",
-      "eventos": 1099,
-      "fechados": 1097,
-      "abertos": 2,
-      "sla_medio_fechamento_h": 2.83,
-      "idade_media_abertos_h": 0.5,
-      "maior_sla_fechado_h": 59.05,
-      "mais_antigo_aberto_h": 0.5
+      "mais_antigo_aberto_h": 0.51
     },
     {
       "cn": "17",
@@ -20907,9 +20546,9 @@
       "fechados": 551,
       "abertos": 2,
       "sla_medio_fechamento_h": 2.82,
-      "idade_media_abertos_h": 0.5,
+      "idade_media_abertos_h": 0.51,
       "maior_sla_fechado_h": 25.98,
-      "mais_antigo_aberto_h": 0.5
+      "mais_antigo_aberto_h": 0.51
     },
     {
       "cn": "18",
@@ -20917,9 +20556,29 @@
       "fechados": 650,
       "abertos": 1,
       "sla_medio_fechamento_h": 5.47,
-      "idade_media_abertos_h": 1008.07,
+      "idade_media_abertos_h": 1008.08,
       "maior_sla_fechado_h": 530.67,
-      "mais_antigo_aberto_h": 1008.07
+      "mais_antigo_aberto_h": 1008.08
+    },
+    {
+      "cn": "12",
+      "eventos": 723,
+      "fechados": 722,
+      "abertos": 1,
+      "sla_medio_fechamento_h": 4.72,
+      "idade_media_abertos_h": 0.51,
+      "maior_sla_fechado_h": 50.0,
+      "mais_antigo_aberto_h": 0.51
+    },
+    {
+      "cn": "14",
+      "eventos": 772,
+      "fechados": 771,
+      "abertos": 1,
+      "sla_medio_fechamento_h": 4.0,
+      "idade_media_abertos_h": 0.51,
+      "maior_sla_fechado_h": 199.35,
+      "mais_antigo_aberto_h": 0.51
     },
     {
       "cn": "16",
@@ -20930,38 +20589,28 @@
       "idade_media_abertos_h": null,
       "maior_sla_fechado_h": 95.67,
       "mais_antigo_aberto_h": null
+    },
+    {
+      "cn": "15",
+      "eventos": 1099,
+      "fechados": 1099,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 2.83,
+      "idade_media_abertos_h": null,
+      "maior_sla_fechado_h": 59.05,
+      "mais_antigo_aberto_h": null
     }
   ],
   "sla_por_municipio": [
-    {
-      "municipio": "Bauru",
-      "eventos": 133,
-      "fechados": 130,
-      "abertos": 3,
-      "sla_medio_fechamento_h": 2.28,
-      "idade_media_abertos_h": 0.5,
-      "maior_sla_fechado_h": 39.38,
-      "mais_antigo_aberto_h": 0.5
-    },
-    {
-      "municipio": "Avaí",
-      "eventos": 8,
-      "fechados": 5,
-      "abertos": 3,
-      "sla_medio_fechamento_h": 0.8,
-      "idade_media_abertos_h": 0.5,
-      "maior_sla_fechado_h": 2.33,
-      "mais_antigo_aberto_h": 0.5
-    },
     {
       "municipio": "Leme",
       "eventos": 6,
       "fechados": 4,
       "abertos": 2,
       "sla_medio_fechamento_h": 11.5,
-      "idade_media_abertos_h": 0.39,
+      "idade_media_abertos_h": 0.4,
       "maior_sla_fechado_h": 39.67,
-      "mais_antigo_aberto_h": 0.39
+      "mais_antigo_aberto_h": 0.4
     },
     {
       "municipio": "Bragança Paulista",
@@ -20969,29 +20618,9 @@
       "fechados": 56,
       "abertos": 2,
       "sla_medio_fechamento_h": 6.28,
-      "idade_media_abertos_h": 0.5,
+      "idade_media_abertos_h": 0.51,
       "maior_sla_fechado_h": 59.33,
-      "mais_antigo_aberto_h": 0.5
-    },
-    {
-      "municipio": "Ribeirão Branco",
-      "eventos": 38,
-      "fechados": 36,
-      "abertos": 2,
-      "sla_medio_fechamento_h": 3.87,
-      "idade_media_abertos_h": 0.5,
-      "maior_sla_fechado_h": 14.0,
-      "mais_antigo_aberto_h": 0.5
-    },
-    {
-      "municipio": "Pirassununga",
-      "eventos": 11,
-      "fechados": 9,
-      "abertos": 2,
-      "sla_medio_fechamento_h": 3.45,
-      "idade_media_abertos_h": 0.39,
-      "maior_sla_fechado_h": 9.33,
-      "mais_antigo_aberto_h": 0.39
+      "mais_antigo_aberto_h": 0.51
     },
     {
       "municipio": "Juquitiba",
@@ -20999,9 +20628,9 @@
       "fechados": 27,
       "abertos": 1,
       "sla_medio_fechamento_h": 10.26,
-      "idade_media_abertos_h": 104.72,
+      "idade_media_abertos_h": 104.73,
       "maior_sla_fechado_h": 37.57,
-      "mais_antigo_aberto_h": 104.72
+      "mais_antigo_aberto_h": 104.73
     },
     {
       "municipio": "Osasco",
@@ -21009,9 +20638,19 @@
       "fechados": 88,
       "abertos": 1,
       "sla_medio_fechamento_h": 5.91,
-      "idade_media_abertos_h": 0.5,
+      "idade_media_abertos_h": 0.51,
       "maior_sla_fechado_h": 66.67,
-      "mais_antigo_aberto_h": 0.5
+      "mais_antigo_aberto_h": 0.51
+    },
+    {
+      "municipio": "Embu-Guaçu",
+      "eventos": 47,
+      "fechados": 46,
+      "abertos": 1,
+      "sla_medio_fechamento_h": 5.89,
+      "idade_media_abertos_h": 0.01,
+      "maior_sla_fechado_h": 74.0,
+      "mais_antigo_aberto_h": 0.01
     },
     {
       "municipio": "Caçapava",
@@ -21019,9 +20658,9 @@
       "fechados": 29,
       "abertos": 1,
       "sla_medio_fechamento_h": 5.75,
-      "idade_media_abertos_h": 0.5,
+      "idade_media_abertos_h": 0.51,
       "maior_sla_fechado_h": 43.03,
-      "mais_antigo_aberto_h": 0.5
+      "mais_antigo_aberto_h": 0.51
     },
     {
       "municipio": "Campinas",
@@ -21029,29 +20668,9 @@
       "fechados": 106,
       "abertos": 1,
       "sla_medio_fechamento_h": 5.45,
-      "idade_media_abertos_h": 0.5,
+      "idade_media_abertos_h": 0.51,
       "maior_sla_fechado_h": 51.98,
-      "mais_antigo_aberto_h": 0.5
-    },
-    {
-      "municipio": "Pongaí",
-      "eventos": 6,
-      "fechados": 5,
-      "abertos": 1,
-      "sla_medio_fechamento_h": 5.21,
-      "idade_media_abertos_h": 0.5,
-      "maior_sla_fechado_h": 10.67,
-      "mais_antigo_aberto_h": 0.5
-    },
-    {
-      "municipio": "São José Dos Campos",
-      "eventos": 131,
-      "fechados": 130,
-      "abertos": 1,
-      "sla_medio_fechamento_h": 5.13,
-      "idade_media_abertos_h": 0.5,
-      "maior_sla_fechado_h": 50.0,
-      "mais_antigo_aberto_h": 0.5
+      "mais_antigo_aberto_h": 0.51
     },
     {
       "municipio": "Taboão Da Serra",
@@ -21059,9 +20678,19 @@
       "fechados": 24,
       "abertos": 1,
       "sla_medio_fechamento_h": 3.76,
-      "idade_media_abertos_h": 0.5,
+      "idade_media_abertos_h": 0.51,
       "maior_sla_fechado_h": 22.33,
-      "mais_antigo_aberto_h": 0.5
+      "mais_antigo_aberto_h": 0.51
+    },
+    {
+      "municipio": "Pirassununga",
+      "eventos": 11,
+      "fechados": 10,
+      "abertos": 1,
+      "sla_medio_fechamento_h": 3.14,
+      "idade_media_abertos_h": 0.4,
+      "maior_sla_fechado_h": 9.33,
+      "mais_antigo_aberto_h": 0.4
     },
     {
       "municipio": "Presidente Prudente",
@@ -21069,9 +20698,19 @@
       "fechados": 52,
       "abertos": 1,
       "sla_medio_fechamento_h": 2.67,
-      "idade_media_abertos_h": 1008.07,
+      "idade_media_abertos_h": 1008.08,
       "maior_sla_fechado_h": 17.32,
-      "mais_antigo_aberto_h": 1008.07
+      "mais_antigo_aberto_h": 1008.08
+    },
+    {
+      "municipio": "Bauru",
+      "eventos": 133,
+      "fechados": 132,
+      "abertos": 1,
+      "sla_medio_fechamento_h": 2.25,
+      "idade_media_abertos_h": 0.51,
+      "maior_sla_fechado_h": 39.38,
+      "mais_antigo_aberto_h": 0.51
     },
     {
       "municipio": "Bebedouro",
@@ -21079,19 +20718,19 @@
       "fechados": 22,
       "abertos": 1,
       "sla_medio_fechamento_h": 2.17,
-      "idade_media_abertos_h": 0.5,
+      "idade_media_abertos_h": 0.51,
       "maior_sla_fechado_h": 20.67,
-      "mais_antigo_aberto_h": 0.5
+      "mais_antigo_aberto_h": 0.51
     },
     {
-      "municipio": "Cafelândia",
-      "eventos": 17,
-      "fechados": 16,
+      "municipio": "Indaiatuba",
+      "eventos": 19,
+      "fechados": 18,
       "abertos": 1,
-      "sla_medio_fechamento_h": 1.99,
-      "idade_media_abertos_h": 0.5,
-      "maior_sla_fechado_h": 5.68,
-      "mais_antigo_aberto_h": 0.5
+      "sla_medio_fechamento_h": 1.9,
+      "idade_media_abertos_h": 0.01,
+      "maior_sla_fechado_h": 13.38,
+      "mais_antigo_aberto_h": 0.01
     },
     {
       "municipio": "Catanduva",
@@ -21099,9 +20738,9 @@
       "fechados": 31,
       "abertos": 1,
       "sla_medio_fechamento_h": 0.57,
-      "idade_media_abertos_h": 0.5,
+      "idade_media_abertos_h": 0.51,
       "maior_sla_fechado_h": 2.0,
-      "mais_antigo_aberto_h": 0.5
+      "mais_antigo_aberto_h": 0.51
     },
     {
       "municipio": "Engenheiro Coelho",
@@ -22194,16 +21833,6 @@
       "mais_antigo_aberto_h": null
     },
     {
-      "municipio": "Embu-Guaçu",
-      "eventos": 46,
-      "fechados": 46,
-      "abertos": 0,
-      "sla_medio_fechamento_h": 5.89,
-      "idade_media_abertos_h": null,
-      "maior_sla_fechado_h": 74.0,
-      "mais_antigo_aberto_h": null
-    },
-    {
       "municipio": "Novo Horizonte",
       "eventos": 10,
       "fechados": 10,
@@ -22501,6 +22130,16 @@
       "sla_medio_fechamento_h": 5.16,
       "idade_media_abertos_h": null,
       "maior_sla_fechado_h": 5.65,
+      "mais_antigo_aberto_h": null
+    },
+    {
+      "municipio": "São José Dos Campos",
+      "eventos": 131,
+      "fechados": 131,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 5.1,
+      "idade_media_abertos_h": null,
+      "maior_sla_fechado_h": 50.0,
       "mais_antigo_aberto_h": null
     },
     {
@@ -22934,6 +22573,16 @@
       "mais_antigo_aberto_h": null
     },
     {
+      "municipio": "Pongaí",
+      "eventos": 6,
+      "fechados": 6,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 4.42,
+      "idade_media_abertos_h": null,
+      "maior_sla_fechado_h": 10.67,
+      "mais_antigo_aberto_h": null
+    },
+    {
       "municipio": "Franco Da Rocha",
       "eventos": 15,
       "fechados": 15,
@@ -23271,6 +22920,16 @@
       "sla_medio_fechamento_h": 3.69,
       "idade_media_abertos_h": null,
       "maior_sla_fechado_h": 37.67,
+      "mais_antigo_aberto_h": null
+    },
+    {
+      "municipio": "Ribeirão Branco",
+      "eventos": 38,
+      "fechados": 38,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 3.69,
+      "idade_media_abertos_h": null,
+      "maior_sla_fechado_h": 14.0,
       "mais_antigo_aberto_h": null
     },
     {
@@ -24634,13 +24293,13 @@
       "mais_antigo_aberto_h": null
     },
     {
-      "municipio": "Indaiatuba",
-      "eventos": 18,
-      "fechados": 18,
+      "municipio": "Cafelândia",
+      "eventos": 17,
+      "fechados": 17,
       "abertos": 0,
       "sla_medio_fechamento_h": 1.9,
       "idade_media_abertos_h": null,
-      "maior_sla_fechado_h": 13.38,
+      "maior_sla_fechado_h": 5.68,
       "mais_antigo_aberto_h": null
     },
     {
@@ -25414,6 +25073,16 @@
       "mais_antigo_aberto_h": null
     },
     {
+      "municipio": "Avaí",
+      "eventos": 8,
+      "fechados": 8,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 0.69,
+      "idade_media_abertos_h": null,
+      "maior_sla_fechado_h": 2.33,
+      "mais_antigo_aberto_h": null
+    },
+    {
       "municipio": "Monte Castelo",
       "eventos": 1,
       "fechados": 1,
@@ -25833,7 +25502,7 @@
       "fechados": 4,
       "abertos": 1,
       "sla_medio_fechamento_h": 11.5,
-      "idade_ativa_h": 0.39,
+      "idade_ativa_h": 0.4,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
@@ -25845,31 +25514,7 @@
       "fechados": 5,
       "abertos": 1,
       "sla_medio_fechamento_h": 7.93,
-      "idade_ativa_h": 0.5,
-      "inicio_real_desconhecido": false,
-      "mais_de_6h_confirmado": false
-    },
-    {
-      "site": "PGI",
-      "municipio": "Pongaí",
-      "ddd": 14,
-      "incidentes": 6,
-      "fechados": 5,
-      "abertos": 1,
-      "sla_medio_fechamento_h": 5.21,
-      "idade_ativa_h": 0.5,
-      "inicio_real_desconhecido": false,
-      "mais_de_6h_confirmado": false
-    },
-    {
-      "site": "BKN",
-      "municipio": "Ribeirão Branco",
-      "ddd": 15,
-      "incidentes": 9,
-      "fechados": 8,
-      "abertos": 1,
-      "sla_medio_fechamento_h": 3.88,
-      "idade_ativa_h": 0.5,
+      "idade_ativa_h": 0.51,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
@@ -25881,7 +25526,7 @@
       "fechados": 3,
       "abertos": 1,
       "sla_medio_fechamento_h": 3.66,
-      "idade_ativa_h": 0.5,
+      "idade_ativa_h": 0.51,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
@@ -25893,19 +25538,19 @@
       "fechados": 3,
       "abertos": 1,
       "sla_medio_fechamento_h": 3.19,
-      "idade_ativa_h": 104.72,
+      "idade_ativa_h": 104.73,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
     {
-      "site": "KFB",
-      "municipio": "Cafelândia",
-      "ddd": 14,
-      "incidentes": 3,
-      "fechados": 2,
+      "site": "XQA",
+      "municipio": "Embu-Guaçu",
+      "ddd": 11,
+      "incidentes": 11,
+      "fechados": 10,
       "abertos": 1,
       "sla_medio_fechamento_h": 2.19,
-      "idade_ativa_h": 0.5,
+      "idade_ativa_h": 0.01,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
@@ -25917,19 +25562,7 @@
       "fechados": 2,
       "abertos": 1,
       "sla_medio_fechamento_h": 2.17,
-      "idade_ativa_h": 0.5,
-      "inicio_real_desconhecido": false,
-      "mais_de_6h_confirmado": false
-    },
-    {
-      "site": "OJX",
-      "municipio": "São José Dos Campos",
-      "ddd": 12,
-      "incidentes": 4,
-      "fechados": 3,
-      "abertos": 1,
-      "sla_medio_fechamento_h": 2.1,
-      "idade_ativa_h": 0.5,
+      "idade_ativa_h": 0.51,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
@@ -25941,7 +25574,7 @@
       "fechados": 4,
       "abertos": 1,
       "sla_medio_fechamento_h": 1.98,
-      "idade_ativa_h": 0.5,
+      "idade_ativa_h": 0.51,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
@@ -25953,43 +25586,7 @@
       "fechados": 2,
       "abertos": 1,
       "sla_medio_fechamento_h": 1.67,
-      "idade_ativa_h": 0.5,
-      "inicio_real_desconhecido": false,
-      "mais_de_6h_confirmado": false
-    },
-    {
-      "site": "DBA",
-      "municipio": "Ribeirão Branco",
-      "ddd": 15,
-      "incidentes": 11,
-      "fechados": 10,
-      "abertos": 1,
-      "sla_medio_fechamento_h": 1.63,
-      "idade_ativa_h": 0.5,
-      "inicio_real_desconhecido": false,
-      "mais_de_6h_confirmado": false
-    },
-    {
-      "site": "DTB",
-      "municipio": "Bauru",
-      "ddd": 14,
-      "incidentes": 4,
-      "fechados": 3,
-      "abertos": 1,
-      "sla_medio_fechamento_h": 1.56,
-      "idade_ativa_h": 0.5,
-      "inicio_real_desconhecido": false,
-      "mais_de_6h_confirmado": false
-    },
-    {
-      "site": "TIB",
-      "municipio": "Bauru",
-      "ddd": 14,
-      "incidentes": 5,
-      "fechados": 4,
-      "abertos": 1,
-      "sla_medio_fechamento_h": 1.51,
-      "idade_ativa_h": 0.5,
+      "idade_ativa_h": 0.51,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
@@ -26001,19 +25598,7 @@
       "fechados": 1,
       "abertos": 1,
       "sla_medio_fechamento_h": 1.38,
-      "idade_ativa_h": 0.5,
-      "inicio_real_desconhecido": false,
-      "mais_de_6h_confirmado": false
-    },
-    {
-      "site": "NHR",
-      "municipio": "Pirassununga",
-      "ddd": 19,
-      "incidentes": 3,
-      "fechados": 2,
-      "abertos": 1,
-      "sla_medio_fechamento_h": 1.35,
-      "idade_ativa_h": 0.39,
+      "idade_ativa_h": 0.51,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
@@ -26025,7 +25610,7 @@
       "fechados": 3,
       "abertos": 1,
       "sla_medio_fechamento_h": 1.31,
-      "idade_ativa_h": 0.5,
+      "idade_ativa_h": 0.51,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
@@ -26037,43 +25622,7 @@
       "fechados": 2,
       "abertos": 1,
       "sla_medio_fechamento_h": 0.49,
-      "idade_ativa_h": 0.5,
-      "inicio_real_desconhecido": false,
-      "mais_de_6h_confirmado": false
-    },
-    {
-      "site": "AVA",
-      "municipio": "Avaí",
-      "ddd": 14,
-      "incidentes": 2,
-      "fechados": 1,
-      "abertos": 1,
-      "sla_medio_fechamento_h": 0.33,
-      "idade_ativa_h": 0.5,
-      "inicio_real_desconhecido": false,
-      "mais_de_6h_confirmado": false
-    },
-    {
-      "site": "AVY",
-      "municipio": "Avaí",
-      "ddd": 14,
-      "incidentes": 2,
-      "fechados": 1,
-      "abertos": 1,
-      "sla_medio_fechamento_h": 0.33,
-      "idade_ativa_h": 0.5,
-      "inicio_real_desconhecido": false,
-      "mais_de_6h_confirmado": false
-    },
-    {
-      "site": "DNG",
-      "municipio": "Avaí",
-      "ddd": 14,
-      "incidentes": 2,
-      "fechados": 1,
-      "abertos": 1,
-      "sla_medio_fechamento_h": 0.33,
-      "idade_ativa_h": 0.5,
+      "idade_ativa_h": 0.51,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
@@ -26085,7 +25634,19 @@
       "fechados": 0,
       "abertos": 1,
       "sla_medio_fechamento_h": null,
-      "idade_ativa_h": 0.39,
+      "idade_ativa_h": 0.4,
+      "inicio_real_desconhecido": false,
+      "mais_de_6h_confirmado": false
+    },
+    {
+      "site": "ICL",
+      "municipio": "Indaiatuba",
+      "ddd": 19,
+      "incidentes": 1,
+      "fechados": 0,
+      "abertos": 1,
+      "sla_medio_fechamento_h": null,
+      "idade_ativa_h": 0.01,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
@@ -26097,7 +25658,7 @@
       "fechados": 0,
       "abertos": 1,
       "sla_medio_fechamento_h": null,
-      "idade_ativa_h": 0.39,
+      "idade_ativa_h": 0.4,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
@@ -26109,7 +25670,7 @@
       "fechados": 0,
       "abertos": 1,
       "sla_medio_fechamento_h": null,
-      "idade_ativa_h": 1008.07,
+      "idade_ativa_h": 1008.08,
       "inicio_real_desconhecido": true,
       "mais_de_6h_confirmado": false
     },
@@ -26121,7 +25682,7 @@
       "fechados": 0,
       "abertos": 1,
       "sla_medio_fechamento_h": null,
-      "idade_ativa_h": 0.5,
+      "idade_ativa_h": 0.51,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
     },
@@ -27021,6 +26582,114 @@
       "fechados": 1,
       "abertos": 0,
       "sla_medio_fechamento_h": 17.68,
+      "idade_ativa_h": null,
+      "inicio_real_desconhecido": false,
+      "mais_de_6h_confirmado": false
+    },
+    {
+      "site": "BYV",
+      "municipio": "Bragança Paulista",
+      "ddd": 11,
+      "incidentes": 2,
+      "fechados": 2,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 17.5,
+      "idade_ativa_h": null,
+      "inicio_real_desconhecido": false,
+      "mais_de_6h_confirmado": false
+    },
+    {
+      "site": "EMY",
+      "municipio": "Embu-Guaçu",
+      "ddd": 11,
+      "incidentes": 5,
+      "fechados": 5,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 17.48,
+      "idade_ativa_h": null,
+      "inicio_real_desconhecido": false,
+      "mais_de_6h_confirmado": false
+    },
+    {
+      "site": "SRH",
+      "municipio": "São Roque",
+      "ddd": 11,
+      "incidentes": 2,
+      "fechados": 2,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 17.44,
+      "idade_ativa_h": null,
+      "inicio_real_desconhecido": false,
+      "mais_de_6h_confirmado": false
+    },
+    {
+      "site": "TUL",
+      "municipio": "Tuiuti",
+      "ddd": 11,
+      "incidentes": 2,
+      "fechados": 2,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 17.43,
+      "idade_ativa_h": null,
+      "inicio_real_desconhecido": false,
+      "mais_de_6h_confirmado": false
+    },
+    {
+      "site": "BVT",
+      "municipio": "Jundiaí",
+      "ddd": 11,
+      "incidentes": 1,
+      "fechados": 1,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 17.35,
+      "idade_ativa_h": null,
+      "inicio_real_desconhecido": false,
+      "mais_de_6h_confirmado": false
+    },
+    {
+      "site": "LSC",
+      "municipio": "São Lourenço Da Serra",
+      "ddd": 11,
+      "incidentes": 4,
+      "fechados": 4,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 17.25,
+      "idade_ativa_h": null,
+      "inicio_real_desconhecido": false,
+      "mais_de_6h_confirmado": false
+    },
+    {
+      "site": "OJP",
+      "municipio": "Ourinhos",
+      "ddd": 14,
+      "incidentes": 3,
+      "fechados": 3,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 17.18,
+      "idade_ativa_h": null,
+      "inicio_real_desconhecido": false,
+      "mais_de_6h_confirmado": false
+    },
+    {
+      "site": "GIB",
+      "municipio": "Guariba",
+      "ddd": 16,
+      "incidentes": 4,
+      "fechados": 4,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 17.09,
+      "idade_ativa_h": null,
+      "inicio_real_desconhecido": false,
+      "mais_de_6h_confirmado": false
+    },
+    {
+      "site": "FPV",
+      "municipio": "Franca",
+      "ddd": 16,
+      "incidentes": 1,
+      "fechados": 1,
+      "abertos": 0,
+      "sla_medio_fechamento_h": 17.0,
       "idade_ativa_h": null,
       "inicio_real_desconhecido": false,
       "mais_de_6h_confirmado": false
