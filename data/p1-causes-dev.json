@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-10T10:21:52.226626-03:00",
+  "gerado_em": "2026-09-10T10:24:16.615492-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-10T13:14:21.000Z",
+  "historico_grupos_fim": "2026-09-10T13:20:53.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -18786,6 +18786,13 @@
               "evidencias": []
             },
             {
+              "site": "DSI",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "DTB",
               "reincidente": true,
               "aberturas": 1,
@@ -18795,6 +18802,13 @@
             {
               "site": "KFB",
               "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "OMI",
+              "reincidente": false,
               "aberturas": 1,
               "causa": "SEM CAUSA LOCALIZADA",
               "evidencias": []
@@ -18979,7 +18993,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 48
+      "mensagens_grupos_no_dia": 49
     }
   ],
   "ativos_agora": [
@@ -18987,25 +19001,6 @@
       "cn": "11",
       "parceira": "ABILITY",
       "sites": [
-        {
-          "site": "CPJ",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "09:31",
-              "grupo": "Movel N1 SPA",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "STF, QB2, MAB, OYA, CPJ"
-            },
-            {
-              "hora": "09:46",
-              "grupo": "Movel N1 SPA",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "CPJ - Tecnico atuando."
-            }
-          ],
-          "idade_ativa_h": 1.45
-        },
         {
           "site": "MAB",
           "causa": "REDE EXTERNA",
@@ -19023,32 +19018,13 @@
               "status": "MAB - rede externa"
             }
           ],
-          "idade_ativa_h": 1.45
+          "idade_ativa_h": 1.5
         },
         {
           "site": "OUA",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.67
-        },
-        {
-          "site": "OYA",
-          "causa": "INFRA",
-          "evidencias": [
-            {
-              "hora": "09:31",
-              "grupo": "Movel N1 SPA",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "STF, QB2, MAB, OYA, CPJ"
-            },
-            {
-              "hora": "09:46",
-              "grupo": "Movel N1 SPA",
-              "causa": "INFRA",
-              "status": "OYA - falta de AC, (não é possivel acoplar GMG)"
-            }
-          ],
-          "idade_ativa_h": 1.45
+          "idade_ativa_h": 0.72
         },
         {
           "site": "QB2",
@@ -19067,7 +19043,7 @@
               "status": "QB2 - no site. aguardando acesso"
             }
           ],
-          "idade_ativa_h": 1.45
+          "idade_ativa_h": 1.5
         },
         {
           "site": "STF",
@@ -19092,7 +19068,7 @@
               "status": "STF nada do sobressalente ainda?"
             }
           ],
-          "idade_ativa_h": 105.67
+          "idade_ativa_h": 105.72
         }
       ]
     },
@@ -19104,7 +19080,7 @@
           "site": "ZZZ",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.45
+          "idade_ativa_h": 1.5
         }
       ]
     },
@@ -19113,28 +19089,16 @@
       "parceira": "TEL",
       "sites": [
         {
-          "site": "BED",
+          "site": "DSI",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.45
-        }
-      ]
-    },
-    {
-      "cn": "16",
-      "parceira": "TEL",
-      "sites": [
-        {
-          "site": "AQM",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 0.67
+          "idade_ativa_h": 0.07
         },
         {
-          "site": "AVS",
+          "site": "OMI",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.67
+          "idade_ativa_h": 0.07
         }
       ]
     },
@@ -19146,7 +19110,7 @@
           "site": "CTI",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.45
+          "idade_ativa_h": 1.5
         }
       ]
     },
@@ -19158,19 +19122,19 @@
           "site": "ARD",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.67
+          "idade_ativa_h": 0.72
         },
         {
           "site": "MRO",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.67
+          "idade_ativa_h": 0.72
         },
         {
           "site": "U50",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1009.02
+          "idade_ativa_h": 1009.07
         }
       ]
     },
@@ -19189,7 +19153,7 @@
               "status": "IUA, LKJ, LTP, BTQ, ICL"
             }
           ],
-          "idade_ativa_h": 1.33
+          "idade_ativa_h": 1.39
         },
         {
           "site": "ICL",
@@ -19202,20 +19166,7 @@
               "status": "IUA, LKJ, LTP, BTQ, ICL"
             }
           ],
-          "idade_ativa_h": 0.95
-        },
-        {
-          "site": "IUA",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "09:45",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "IUA, LKJ, LTP, BTQ, ICL"
-            }
-          ],
-          "idade_ativa_h": 1.45
+          "idade_ativa_h": 1.0
         },
         {
           "site": "LKJ",
@@ -19228,7 +19179,7 @@
               "status": "IUA, LKJ, LTP, BTQ, ICL"
             }
           ],
-          "idade_ativa_h": 1.33
+          "idade_ativa_h": 1.39
         },
         {
           "site": "LTP",
@@ -19241,7 +19192,7 @@
               "status": "IUA, LKJ, LTP, BTQ, ICL"
             }
           ],
-          "idade_ativa_h": 1.33
+          "idade_ativa_h": 1.39
         }
       ]
     }
