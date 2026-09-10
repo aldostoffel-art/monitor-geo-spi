@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-10T09:40:48.314383-03:00",
+  "gerado_em": "2026-09-10T09:42:21.231093-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-10T12:31:57.000Z",
+  "historico_grupos_fim": "2026-09-10T12:41:54.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -18659,6 +18659,13 @@
               ]
             },
             {
+              "site": "OUA",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "OYA",
               "reincidente": true,
               "aberturas": 1,
@@ -18805,6 +18812,26 @@
           ]
         },
         {
+          "cn": "16",
+          "parceira": "TEL",
+          "sites": [
+            {
+              "site": "AQM",
+              "reincidente": false,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "AVS",
+              "reincidente": false,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            }
+          ]
+        },
+        {
           "cn": "17",
           "parceira": "TEL",
           "sites": [
@@ -18817,6 +18844,26 @@
             },
             {
               "site": "CTI",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            }
+          ]
+        },
+        {
+          "cn": "18",
+          "parceira": "TEL",
+          "sites": [
+            {
+              "site": "ARD",
+              "reincidente": false,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "MRO",
               "reincidente": true,
               "aberturas": 1,
               "causa": "SEM CAUSA LOCALIZADA",
@@ -18873,7 +18920,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 37
+      "mensagens_grupos_no_dia": 39
     }
   ],
   "ativos_agora": [
@@ -18892,7 +18939,7 @@
               "status": "STF, QB2, MAB, OYA, CPJ"
             }
           ],
-          "idade_ativa_h": 0.77
+          "idade_ativa_h": 0.8
         },
         {
           "site": "MAB",
@@ -18905,7 +18952,13 @@
               "status": "STF, QB2, MAB, OYA, CPJ"
             }
           ],
-          "idade_ativa_h": 0.77
+          "idade_ativa_h": 0.8
+        },
+        {
+          "site": "OUA",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.02
         },
         {
           "site": "OYA",
@@ -18918,7 +18971,7 @@
               "status": "STF, QB2, MAB, OYA, CPJ"
             }
           ],
-          "idade_ativa_h": 0.77
+          "idade_ativa_h": 0.8
         },
         {
           "site": "QB2",
@@ -18931,7 +18984,7 @@
               "status": "STF, QB2, MAB, OYA, CPJ"
             }
           ],
-          "idade_ativa_h": 0.77
+          "idade_ativa_h": 0.8
         },
         {
           "site": "STF",
@@ -18944,13 +18997,7 @@
               "status": "STF, QB2, MAB, OYA, CPJ"
             }
           ],
-          "idade_ativa_h": 104.99
-        },
-        {
-          "site": "XQA",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 0.27
+          "idade_ativa_h": 105.02
         }
       ]
     },
@@ -18962,7 +19009,7 @@
           "site": "ZZZ",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.77
+          "idade_ativa_h": 0.8
         }
       ]
     },
@@ -18974,7 +19021,25 @@
           "site": "BED",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.77
+          "idade_ativa_h": 0.8
+        }
+      ]
+    },
+    {
+      "cn": "16",
+      "parceira": "TEL",
+      "sites": [
+        {
+          "site": "AQM",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.02
+        },
+        {
+          "site": "AVS",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.02
         }
       ]
     },
@@ -18983,16 +19048,10 @@
       "parceira": "TEL",
       "sites": [
         {
-          "site": "BEB",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 0.77
-        },
-        {
           "site": "CTI",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.77
+          "idade_ativa_h": 0.8
         }
       ]
     },
@@ -19001,10 +19060,22 @@
       "parceira": "TEL",
       "sites": [
         {
+          "site": "ARD",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.02
+        },
+        {
+          "site": "MRO",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.02
+        },
+        {
           "site": "U50",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1008.34
+          "idade_ativa_h": 1008.37
         }
       ]
     },
@@ -19016,31 +19087,31 @@
           "site": "BTQ",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.66
+          "idade_ativa_h": 0.69
         },
         {
           "site": "ICL",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.27
+          "idade_ativa_h": 0.3
         },
         {
           "site": "IUA",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.77
+          "idade_ativa_h": 0.8
         },
         {
           "site": "LKJ",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.66
+          "idade_ativa_h": 0.69
         },
         {
           "site": "LTP",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.66
+          "idade_ativa_h": 0.69
         }
       ]
     }
