@@ -1,8 +1,8 @@
 {
-  "gerado_em": "2026-09-11T08:25:17.696572+00:00",
+  "gerado_em": "2026-09-11T08:30:27.633944+00:00",
   "ambiente": "DEV",
-  "mudanca_relevante": false,
-  "fingerprint": "d1c09d6b02e48aacbf16596cf6cb080ea0f8be7d4c8f07aa8e0a43bed548cf1d",
+  "mudanca_relevante": true,
+  "fingerprint": "0d4cf2cdd086fec5322c519d69af0d1010c582dc68053dbafed8f7c205f3276b",
   "nivel": "ATENÇÃO",
   "agora": "Sinal externo em Extrema/MG aponta risco para o corredor BRAGANÇA/JUNDIAÍ",
   "proximas_horas": "Potencial avanço para Bragança/Jundiaí nas próximas horas; rajada até 68 km/h e chuva horária até 0.8 mm",
@@ -17,7 +17,7 @@
       "tempestade": false,
       "chuva_pico_mmh": 0.8,
       "rajada_pico_kmh": 68.0,
-      "prob_chuva_pico": 70,
+      "prob_chuva_pico": 92,
       "eta_sinal_externo": "2026-09-11T11:00:00+00:00",
       "backbones_no_corredor": 194,
       "backbones_amostra": [
@@ -117,6 +117,119 @@
         },
         {
           "trecho": "ITA.CS-ITA.MD",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        }
+      ]
+    },
+    {
+      "nome": "Poços de Caldas/MG",
+      "corredor": "MOGI/CAMPINAS",
+      "alvo": "Mogi Mirim/Campinas",
+      "score": 25,
+      "tempestade": false,
+      "chuva_pico_mmh": 0.3,
+      "rajada_pico_kmh": 59.0,
+      "prob_chuva_pico": 86,
+      "eta_sinal_externo": "2026-09-11T14:00:00+00:00",
+      "backbones_no_corredor": 173,
+      "backbones_amostra": [
+        {
+          "id": "BB-511F74E35A76",
+          "trecho": "MMM.PJ-MMM.SE",
+          "cabo": "F-0280",
+          "cluster": "CAMPINAS",
+          "dist_corredor_km": 1.3,
+          "ponta_a": "MMM.PJ",
+          "ponta_b": "MMM.SE"
+        },
+        {
+          "id": "BB-87F29D24F18C",
+          "trecho": "MMM.PJ-MMM.RD",
+          "cabo": "F-0023",
+          "cluster": "CAMPINAS",
+          "dist_corredor_km": 1.3,
+          "ponta_a": "MMM.PJ",
+          "ponta_b": "MMM.RD"
+        },
+        {
+          "id": "BB-D47C19C91C25",
+          "trecho": "HLBA.HB-SAP.JR",
+          "cabo": "F-0259",
+          "cluster": "CAMPINAS",
+          "dist_corredor_km": 2.4,
+          "ponta_a": "HLBA.HB",
+          "ponta_b": "SAP.JR"
+        },
+        {
+          "id": "BB-DA2227E678E0",
+          "trecho": "MGU.CP-MMM.PJ",
+          "cabo": "F-0022",
+          "cluster": "CAMPINAS",
+          "dist_corredor_km": 3.3,
+          "ponta_a": "MGU.CP",
+          "ponta_b": "MMM.PJ"
+        },
+        {
+          "id": "BB-4F6B9038D559",
+          "trecho": "MGU.HC-MMM.PJ",
+          "cabo": "F-0134",
+          "cluster": "CAMPINAS",
+          "dist_corredor_km": 3.4,
+          "ponta_a": "MGU.HC",
+          "ponta_b": "MMM.PJ"
+        },
+        {
+          "id": "BB-A57AC1D710E4",
+          "trecho": "MMM.MF-MMM.PJ",
+          "cabo": "F-0099",
+          "cluster": "CAMPINAS",
+          "dist_corredor_km": 4.1,
+          "ponta_a": "MMM.MF",
+          "ponta_b": "MMM.PJ"
+        },
+        {
+          "id": "BB-51DBAFB5F938",
+          "trecho": "ESP.JB-MGU.HC",
+          "cabo": "F-0150",
+          "cluster": "CAMPINAS",
+          "dist_corredor_km": 5.1,
+          "ponta_a": "ESP.JB",
+          "ponta_b": "MGU.HC"
+        },
+        {
+          "id": "BB-2F1ADE2C9DD7",
+          "trecho": "ESP.JB-SDJ.MR",
+          "cabo": "F-0169",
+          "cluster": "CAMPINAS",
+          "dist_corredor_km": 5.1,
+          "ponta_a": "ESP.JB",
+          "ponta_b": "SDJ.MR"
+        }
+      ],
+      "alternativas": [
+        {
+          "trecho": "MMM.PJ-MMM.SE",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "MMM.PJ-MMM.RD",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "HLBA.HB-SAP.JR",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "MGU.CP-MMM.PJ",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "MGU.HC-MMM.PJ",
           "alternativa_logica": false,
           "caminho_potencial": []
         }
