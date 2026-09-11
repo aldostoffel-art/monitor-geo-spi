@@ -6,7 +6,7 @@
   <title>Monitor Operacional GEO SPI</title>
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-  <link rel="stylesheet" href="styles.css?v=1789160349">
+  <link rel="stylesheet" href="styles.css?v=1789168044">
 </head>
 <body>
   <header class="topbar">
@@ -272,7 +272,8 @@
       <div id="p1CnOverview" class="p1-cn-overview"></div>
     </section>
     <section class="p1-pareto-card" data-p1-section="now">
-      <header><div><b>📊 PARETO • CAUSA / STATUS ATUAL</b><small>distribuição dos status/causas já identificados nos ativos</small></div><span id="p1ParetoCoverage">—</span></header>
+      <header><div><b>📊 PARETO • CAUSA / STATUS</b><small>ativos, hoje, mês e histórico processado</small></div><span id="p1ParetoCoverage">—</span></header>
+      <div class="p1-pareto-tabs" id="p1ParetoTabs"><button data-p1-pareto="active">ATIVOS</button><button data-p1-pareto="today" class="active">HOJE</button><button data-p1-pareto="month">MÊS</button><button data-p1-pareto="history">HIST.</button></div>
       <div id="p1CausePareto" class="p1-pareto"></div>
     </section>
     <section class="p1-ops-cockpit" data-p1-section="now"><div class="p1-ops-title"><div><b>📊 COCKPIT OPERACIONAL P1</b><small>Ability = CN 11 • TEL = demais CNs SPI</small></div><span>ONLINE</span></div><div id="p1PartnerCards" class="p1-partner-cards"></div><div class="p1-ops-grid"><article class="p1-chart-card"><header><b>BACKLOG ATIVO POR FAIXA DE SLA</b><small>sites ainda abertos</small></header><div id="p1SlaBands"></div></article><article class="p1-chart-card"><header><b>IDADE MÉDIA DOS ATIVOS POR CN</b><small>visão online por operação</small></header><div id="p1CnChart"></div></article></div></section>
@@ -358,7 +359,7 @@
   </main>
   <footer>Monitor Operacional GEO SPI • Backbone DEV • OpenStreetMap</footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js?v=1789160349"></script>
+  <script src="app.js?v=1789168044"></script>
 </body>
 </html>
 
