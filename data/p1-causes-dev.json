@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-11T15:20:56.407422-03:00",
+  "gerado_em": "2026-09-11T15:22:16.612799-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-11T18:20:28.000Z",
+  "historico_grupos_fim": "2026-09-11T18:20:37.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -23932,6 +23932,13 @@
               ]
             },
             {
+              "site": "ECP",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "FR6",
               "reincidente": true,
               "aberturas": 1,
@@ -24157,6 +24164,13 @@
                   "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
                 }
               ]
+            },
+            {
+              "site": "ZPM",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             }
           ]
         },
@@ -25853,7 +25867,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 282
+      "mensagens_grupos_no_dia": 283
     }
   ],
   "ativos_agora": [
@@ -25878,7 +25892,13 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.7
+        },
+        {
+          "site": "ECP",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "FWL",
@@ -25903,7 +25923,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 2.33
+          "idade_ativa_h": 2.35
         },
         {
           "site": "KEI",
@@ -25928,7 +25948,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 2.33
+          "idade_ativa_h": 2.35
         },
         {
           "site": "KUR",
@@ -25947,32 +25967,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 0.68
-        },
-        {
-          "site": "MET",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "08:18",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "Metálico aí consegue falar com o pessoal"
-            },
-            {
-              "hora": "13:32",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "STF, T4P, XQA, PYP, FWL, KEI, MET, EBY"
-            },
-            {
-              "hora": "15:11",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
-            }
-          ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 0.7
         },
         {
           "site": "PYP",
@@ -25997,7 +25992,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 2.99
+          "idade_ativa_h": 3.02
         },
         {
           "site": "SDZ",
@@ -26010,7 +26005,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 0.68
+          "idade_ativa_h": 0.7
         },
         {
           "site": "SLS",
@@ -26023,7 +26018,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.04
         },
         {
           "site": "STF",
@@ -26048,7 +26043,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 134.66
+          "idade_ativa_h": 134.69
         },
         {
           "site": "T4P",
@@ -26073,7 +26068,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 5.01
+          "idade_ativa_h": 5.04
         },
         {
           "site": "XQA",
@@ -26098,7 +26093,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 7.66
+          "idade_ativa_h": 7.69
         },
         {
           "site": "YC3",
@@ -26111,7 +26106,13 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 1.33
+          "idade_ativa_h": 1.35
+        },
+        {
+          "site": "ZPM",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         }
       ]
     },
@@ -26119,12 +26120,6 @@
       "cn": "12",
       "parceira": "TEL",
       "sites": [
-        {
-          "site": "JQY",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 1.01
-        },
         {
           "site": "OEP",
           "causa": "FIBRA/BACKBONE",
@@ -26160,7 +26155,7 @@
               "status": "OEP"
             }
           ],
-          "idade_ativa_h": 25.68
+          "idade_ativa_h": 25.7
         }
       ]
     },
@@ -26185,7 +26180,7 @@
               "status": "PDN, BAD, RKN, FLR, CFL, KFC, KFB"
             }
           ],
-          "idade_ativa_h": 2.33
+          "idade_ativa_h": 2.35
         }
       ]
     },
@@ -26228,7 +26223,7 @@
               "status": "DYA, tecnico em deslocamento com GMG 70 min LGE tecnico em deslocamento com GMG 70 min para passagem DYA"
             }
           ],
-          "idade_ativa_h": 2.99
+          "idade_ativa_h": 3.02
         },
         {
           "site": "JKN",
@@ -26253,7 +26248,7 @@
               "status": "JKN tecnico em deslocamento"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.04
         },
         {
           "site": "LGE",
@@ -26290,7 +26285,7 @@
               "status": "LGE tecnico em deslocamento com GMG 70 min para passagem DYA"
             }
           ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.7
         },
         {
           "site": "SUB",
@@ -26309,7 +26304,7 @@
               "status": "SUB verificando"
             }
           ],
-          "idade_ativa_h": 0.68
+          "idade_ativa_h": 0.7
         },
         {
           "site": "TS9",
@@ -26346,7 +26341,7 @@
               "status": "TS9 Tecnico em deslocamento com GMG 40 min"
             }
           ],
-          "idade_ativa_h": 2.33
+          "idade_ativa_h": 2.35
         },
         {
           "site": "WAV",
@@ -26365,7 +26360,7 @@
               "status": "WAV Tecnico em deslocamento 50min"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.04
         }
       ]
     },
@@ -26384,7 +26379,7 @@
               "status": "IFM, ICZ, IGB"
             }
           ],
-          "idade_ativa_h": 5.99
+          "idade_ativa_h": 6.02
         }
       ]
     },
@@ -26403,7 +26398,7 @@
               "status": "DRU, EWI, BEW, BVM"
             }
           ],
-          "idade_ativa_h": 2.99
+          "idade_ativa_h": 3.02
         },
         {
           "site": "DRU",
@@ -26440,7 +26435,7 @@
               "status": "DRU, EWI, BEW, BVM"
             }
           ],
-          "idade_ativa_h": 13.61
+          "idade_ativa_h": 13.64
         }
       ]
     },
@@ -26465,7 +26460,7 @@
               "status": "U50, AJU"
             }
           ],
-          "idade_ativa_h": 12.68
+          "idade_ativa_h": 12.7
         },
         {
           "site": "U50",
@@ -26484,13 +26479,13 @@
               "status": "U50, AJU"
             }
           ],
-          "idade_ativa_h": 1038.01
+          "idade_ativa_h": 1038.04
         },
         {
           "site": "YPK",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.68
+          "idade_ativa_h": 0.7
         }
       ]
     },
@@ -26533,7 +26528,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 5.01
+          "idade_ativa_h": 5.04
         },
         {
           "site": "ADN",
@@ -26546,20 +26541,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 0.34
-        },
-        {
-          "site": "ATA",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "15:11",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
-            }
-          ],
-          "idade_ativa_h": 0.68
+          "idade_ativa_h": 0.37
         },
         {
           "site": "C3P",
@@ -26572,7 +26554,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.7
         },
         {
           "site": "EJT",
@@ -26609,7 +26591,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 25.01
+          "idade_ativa_h": 25.04
         },
         {
           "site": "GRI",
@@ -26622,7 +26604,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.7
         },
         {
           "site": "KSQ",
@@ -26641,7 +26623,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 0.68
+          "idade_ativa_h": 0.7
         },
         {
           "site": "MMI",
@@ -26678,7 +26660,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 16.34
+          "idade_ativa_h": 16.37
         },
         {
           "site": "PQI",
@@ -26715,7 +26697,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 12.34
+          "idade_ativa_h": 12.37
         },
         {
           "site": "RD1",
@@ -26728,7 +26710,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 0.68
+          "idade_ativa_h": 0.7
         },
         {
           "site": "SFZ",
@@ -26765,44 +26747,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 25.01
-        },
-        {
-          "site": "SNY",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "11:41",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, SFZ, RKC, EJT, DMF, MMI, MF8, 0PF, LTT, ELK, SNY"
-            },
-            {
-              "hora": "12:45",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, SFZ, RKC, EJT, MMI, KSQ, MF8, 0PF, ELK, SNY"
-            },
-            {
-              "hora": "13:22",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, SFZ, RKC, EJT, MMI, MF8, 0PF, ELK, SNY"
-            },
-            {
-              "hora": "13:32",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, SFZ, RKC, EJT, MMI, MF8, 0PF, ELK, SNY"
-            },
-            {
-              "hora": "15:11",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
-            }
-          ],
-          "idade_ativa_h": 5.01
+          "idade_ativa_h": 25.04
         }
       ]
     }
