@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-11T19:56:23.136905-03:00",
+  "gerado_em": "2026-09-11T19:58:17.045177-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-11T22:54:54.000Z",
+  "historico_grupos_fim": "2026-09-11T22:57:59.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -24985,7 +24985,7 @@
               "site": "GUT",
               "reincidente": true,
               "aberturas": 2,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "INFRA",
               "evidencias": [
                 {
                   "hora": "19:51",
@@ -24998,6 +24998,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "TS9, KPA, GUT, ICG, TSQ, T1S, IBP"
+                },
+                {
+                  "hora": "19:57",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "GUT infra ok, tx deslocamento 50 min"
                 }
               ]
             },
@@ -25136,6 +25142,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "TS9, KPA, GUT, ICG, TSQ, T1S, IBP"
+                },
+                {
+                  "hora": "19:57",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "IBP técnico chegando no local, 20 min"
                 }
               ]
             },
@@ -25143,7 +25155,7 @@
               "site": "ICG",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "NORMALIZADO/OK",
               "evidencias": [
                 {
                   "hora": "19:51",
@@ -25156,6 +25168,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "TS9, KPA, GUT, ICG, TSQ, T1S, IBP"
+                },
+                {
+                  "hora": "19:57",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NORMALIZADO/OK",
+                  "status": "ICG normalizado, favor testar"
                 }
               ]
             },
@@ -25334,12 +25352,6 @@
               "causa": "INFRA",
               "evidencias": [
                 {
-                  "hora": "15:46",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "INFRA",
-                  "status": "TS9 Tecnico em deslocamento no local acoplando GMG"
-                },
-                {
                   "hora": "17:18",
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
@@ -25362,6 +25374,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "TS9, KPA, GUT, ICG, TSQ, T1S, IBP"
+                },
+                {
+                  "hora": "19:57",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "TS9 Morador Sinval pediu que desligasse o GMG devido barulho"
                 }
               ]
             },
@@ -25407,7 +25425,7 @@
               "site": "TSQ",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "REDE EXTERNA",
               "evidencias": [
                 {
                   "hora": "19:51",
@@ -25420,6 +25438,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "TS9, KPA, GUT, ICG, TSQ, T1S, IBP"
+                },
+                {
+                  "hora": "19:57",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "REDE EXTERNA",
+                  "status": "TSQ rede externa"
                 }
               ]
             },
@@ -26392,7 +26416,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 360
+      "mensagens_grupos_no_dia": 361
     }
   ],
   "ativos_agora": [
@@ -26417,7 +26441,7 @@
               "status": "STF, KUR, XQA, ZPM, FWL, JBN, JCB, ISJ, 4GC, CKD"
             }
           ],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         },
         {
           "site": "CKD",
@@ -26436,13 +26460,13 @@
               "status": "STF, KUR, XQA, ZPM, FWL, JBN, JCB, ISJ, 4GC, CKD"
             }
           ],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         },
         {
           "site": "EKP",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.27
+          "idade_ativa_h": 0.3
         },
         {
           "site": "FWL",
@@ -26479,7 +26503,7 @@
               "status": "STF, KUR, XQA, ZPM, FWL, JBN, JCB, ISJ, 4GC, CKD"
             }
           ],
-          "idade_ativa_h": 6.92
+          "idade_ativa_h": 6.95
         },
         {
           "site": "ISJ",
@@ -26498,7 +26522,7 @@
               "status": "STF, KUR, XQA, ZPM, FWL, JBN, JCB, ISJ, 4GC, CKD"
             }
           ],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         },
         {
           "site": "JBN",
@@ -26517,7 +26541,7 @@
               "status": "STF, KUR, XQA, ZPM, FWL, JBN, JCB, ISJ, 4GC, CKD"
             }
           ],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         },
         {
           "site": "JCB",
@@ -26536,13 +26560,13 @@
               "status": "STF, KUR, XQA, ZPM, FWL, JBN, JCB, ISJ, 4GC, CKD"
             }
           ],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         },
         {
           "site": "JIS",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.27
+          "idade_ativa_h": 0.3
         },
         {
           "site": "KUR",
@@ -26579,7 +26603,7 @@
               "status": "STF, KUR, XQA, ZPM, FWL, JBN, JCB, ISJ, 4GC, CKD"
             }
           ],
-          "idade_ativa_h": 0.27
+          "idade_ativa_h": 0.3
         },
         {
           "site": "STF",
@@ -26616,7 +26640,7 @@
               "status": "STF, KUR, XQA, ZPM, FWL, JBN, JCB, ISJ, 4GC, CKD"
             }
           ],
-          "idade_ativa_h": 139.25
+          "idade_ativa_h": 139.29
         },
         {
           "site": "XQA",
@@ -26653,7 +26677,7 @@
               "status": "STF, KUR, XQA, ZPM, FWL, JBN, JCB, ISJ, 4GC, CKD"
             }
           ],
-          "idade_ativa_h": 12.25
+          "idade_ativa_h": 12.29
         },
         {
           "site": "ZPM",
@@ -26672,7 +26696,7 @@
               "status": "STF, KUR, XQA, ZPM, FWL, JBN, JCB, ISJ, 4GC, CKD"
             }
           ],
-          "idade_ativa_h": 4.6
+          "idade_ativa_h": 4.64
         }
       ]
     },
@@ -26715,13 +26739,13 @@
               "status": "CJY aguardando o suporte só W fora"
             }
           ],
-          "idade_ativa_h": 0.27
+          "idade_ativa_h": 0.3
         },
         {
           "site": "GTN",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.27
+          "idade_ativa_h": 4.3
         }
       ]
     },
@@ -26733,7 +26757,7 @@
           "site": "IPY",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         }
       ]
     },
@@ -26743,7 +26767,7 @@
       "sites": [
         {
           "site": "GUT",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "INFRA",
           "evidencias": [
             {
               "hora": "19:51",
@@ -26756,9 +26780,15 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "TS9, KPA, GUT, ICG, TSQ, T1S, IBP"
+            },
+            {
+              "hora": "19:57",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "GUT infra ok, tx deslocamento 50 min"
             }
           ],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         },
         {
           "site": "IBP",
@@ -26775,13 +26805,19 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "TS9, KPA, GUT, ICG, TSQ, T1S, IBP"
+            },
+            {
+              "hora": "19:57",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "IBP técnico chegando no local, 20 min"
             }
           ],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         },
         {
           "site": "ICG",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "NORMALIZADO/OK",
           "evidencias": [
             {
               "hora": "19:51",
@@ -26794,9 +26830,15 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "TS9, KPA, GUT, ICG, TSQ, T1S, IBP"
+            },
+            {
+              "hora": "19:57",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NORMALIZADO/OK",
+              "status": "ICG normalizado, favor testar"
             }
           ],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         },
         {
           "site": "KPA",
@@ -26815,7 +26857,7 @@
               "status": "TS9, KPA, GUT, ICG, TSQ, T1S, IBP"
             }
           ],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         },
         {
           "site": "T1S",
@@ -26834,18 +26876,12 @@
               "status": "TS9, KPA, GUT, ICG, TSQ, T1S, IBP"
             }
           ],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         },
         {
           "site": "TS9",
           "causa": "INFRA",
           "evidencias": [
-            {
-              "hora": "15:46",
-              "grupo": "Móvel 15 - 19",
-              "causa": "INFRA",
-              "status": "TS9 Tecnico em deslocamento no local acoplando GMG"
-            },
             {
               "hora": "17:18",
               "grupo": "Móvel 15 - 19",
@@ -26869,13 +26905,19 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "TS9, KPA, GUT, ICG, TSQ, T1S, IBP"
+            },
+            {
+              "hora": "19:57",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "TS9 Morador Sinval pediu que desligasse o GMG devido barulho"
             }
           ],
-          "idade_ativa_h": 6.92
+          "idade_ativa_h": 6.95
         },
         {
           "site": "TSQ",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "REDE EXTERNA",
           "evidencias": [
             {
               "hora": "19:51",
@@ -26888,9 +26930,15 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "TS9, KPA, GUT, ICG, TSQ, T1S, IBP"
+            },
+            {
+              "hora": "19:57",
+              "grupo": "Móvel 15 - 19",
+              "causa": "REDE EXTERNA",
+              "status": "TSQ rede externa"
             }
           ],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         }
       ]
     },
@@ -26909,13 +26957,13 @@
               "status": "IFM, ICZ, IGB"
             }
           ],
-          "idade_ativa_h": 10.59
+          "idade_ativa_h": 10.62
         },
         {
           "site": "RL3",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         }
       ]
     },
@@ -26940,7 +26988,7 @@
               "status": "U50, AJU"
             }
           ],
-          "idade_ativa_h": 17.27
+          "idade_ativa_h": 17.3
         },
         {
           "site": "U50",
@@ -26959,7 +27007,7 @@
               "status": "U50, AJU"
             }
           ],
-          "idade_ativa_h": 1042.6
+          "idade_ativa_h": 1042.64
         }
       ]
     },
@@ -27002,13 +27050,13 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 9.6
+          "idade_ativa_h": 9.64
         },
         {
           "site": "BVI",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         },
         {
           "site": "EJT",
@@ -27045,7 +27093,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 29.6
+          "idade_ativa_h": 29.64
         },
         {
           "site": "GRI",
@@ -27070,7 +27118,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 6.27
+          "idade_ativa_h": 6.3
         },
         {
           "site": "LTT",
@@ -27107,7 +27155,7 @@
               "status": "*Site:*. M.SP.LTT"
             }
           ],
-          "idade_ativa_h": 0.9
+          "idade_ativa_h": 0.94
         },
         {
           "site": "MMI",
@@ -27144,7 +27192,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 20.94
+          "idade_ativa_h": 20.97
         },
         {
           "site": "RD1",
@@ -27169,7 +27217,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 0.27
+          "idade_ativa_h": 0.3
         }
       ]
     }
