@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-11T15:12:20.042053-03:00",
+  "gerado_em": "2026-09-11T15:14:17.757156-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-11T18:11:28.000Z",
+  "historico_grupos_fim": "2026-09-11T18:13:30.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -24755,12 +24755,6 @@
               "causa": "INFRA",
               "evidencias": [
                 {
-                  "hora": "13:32",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "TS9, TSC, APM, DYA, DPY, DVJ, BPH, YBR, DUU, LGE"
-                },
-                {
                   "hora": "13:48",
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
@@ -24783,6 +24777,12 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "TS9, DYA, LGE, JKN, WAV, SUB"
+                },
+                {
+                  "hora": "15:13",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "DYA, tecnico em deslocamento com GMG 70 min LGE tecnico em deslocamento com GMG 70 min para passagem DYA"
                 }
               ]
             },
@@ -24797,7 +24797,7 @@
               "site": "JKN",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "ACESSO/PROCESSO",
               "evidencias": [
                 {
                   "hora": "14:42",
@@ -24810,6 +24810,12 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "TS9, DYA, LGE, JKN, WAV, SUB"
+                },
+                {
+                  "hora": "15:13",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "ACESSO/PROCESSO",
+                  "status": "JKN tecnico em deslocamento"
                 }
               ]
             },
@@ -24856,6 +24862,12 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "TS9, DYA, LGE, JKN, WAV, SUB"
+                },
+                {
+                  "hora": "15:13",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "LGE tecnico em deslocamento com GMG 70 min para passagem DYA"
                 }
               ]
             },
@@ -24884,13 +24896,19 @@
               "site": "SUB",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "EM VERIFICAÇÃO",
               "evidencias": [
                 {
                   "hora": "15:11",
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "TS9, DYA, LGE, JKN, WAV, SUB"
+                },
+                {
+                  "hora": "15:13",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "EM VERIFICAÇÃO",
+                  "status": "SUB verificando"
                 }
               ]
             },
@@ -24900,12 +24918,6 @@
               "aberturas": 1,
               "causa": "INFRA",
               "evidencias": [
-                {
-                  "hora": "13:22",
-                  "grupo": "Móvel 14 - 18",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "TS9, TSC, APM, DYA"
-                },
                 {
                   "hora": "13:32",
                   "grupo": "Móvel 15 - 19",
@@ -24929,6 +24941,12 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "TS9, DYA, LGE, JKN, WAV, SUB"
+                },
+                {
+                  "hora": "15:13",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "TS9 Tecnico em deslocamento com GMG 40 min"
                 }
               ]
             },
@@ -24974,13 +24992,19 @@
               "site": "WAV",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "ACESSO/PROCESSO",
               "evidencias": [
                 {
                   "hora": "15:11",
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "TS9, DYA, LGE, JKN, WAV, SUB"
+                },
+                {
+                  "hora": "15:13",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "ACESSO/PROCESSO",
+                  "status": "WAV Tecnico em deslocamento 50min"
                 }
               ]
             },
@@ -25829,7 +25853,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 279
+      "mensagens_grupos_no_dia": 280
     }
   ],
   "ativos_agora": [
@@ -25854,7 +25878,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 1.54
+          "idade_ativa_h": 1.57
         },
         {
           "site": "FWL",
@@ -25879,7 +25903,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 2.19
+          "idade_ativa_h": 2.22
         },
         {
           "site": "KEI",
@@ -25904,7 +25928,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 2.19
+          "idade_ativa_h": 2.22
         },
         {
           "site": "KUR",
@@ -25923,7 +25947,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 0.54
+          "idade_ativa_h": 0.57
         },
         {
           "site": "MET",
@@ -25948,7 +25972,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 1.54
+          "idade_ativa_h": 1.57
         },
         {
           "site": "PYP",
@@ -25973,7 +25997,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 2.85
+          "idade_ativa_h": 2.89
         },
         {
           "site": "SDZ",
@@ -25986,7 +26010,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 0.54
+          "idade_ativa_h": 0.57
         },
         {
           "site": "SLS",
@@ -25999,7 +26023,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 0.87
+          "idade_ativa_h": 0.9
         },
         {
           "site": "STF",
@@ -26024,7 +26048,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 134.52
+          "idade_ativa_h": 134.55
         },
         {
           "site": "T4P",
@@ -26049,7 +26073,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 4.87
+          "idade_ativa_h": 4.9
         },
         {
           "site": "XQA",
@@ -26074,7 +26098,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 7.52
+          "idade_ativa_h": 7.55
         },
         {
           "site": "YC3",
@@ -26087,7 +26111,7 @@
               "status": "STF, T4P, KUR, XQA, SLS, PYP, FWL, KEI, MET, EBY, YC3, SDZ"
             }
           ],
-          "idade_ativa_h": 1.19
+          "idade_ativa_h": 1.22
         }
       ]
     },
@@ -26099,7 +26123,7 @@
           "site": "JQY",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.87
+          "idade_ativa_h": 0.9
         },
         {
           "site": "OEP",
@@ -26136,7 +26160,7 @@
               "status": "OEP"
             }
           ],
-          "idade_ativa_h": 25.54
+          "idade_ativa_h": 25.57
         }
       ]
     },
@@ -26161,7 +26185,7 @@
               "status": "PDN, BAD, RKN, FLR, CFL, KFC, KFB"
             }
           ],
-          "idade_ativa_h": 2.19
+          "idade_ativa_h": 2.22
         }
       ]
     },
@@ -26173,12 +26197,6 @@
           "site": "DYA",
           "causa": "INFRA",
           "evidencias": [
-            {
-              "hora": "13:32",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "TS9, TSC, APM, DYA, DPY, DVJ, BPH, YBR, DUU, LGE"
-            },
             {
               "hora": "13:48",
               "grupo": "Móvel 15 - 19",
@@ -26202,13 +26220,19 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "TS9, DYA, LGE, JKN, WAV, SUB"
+            },
+            {
+              "hora": "15:13",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "DYA, tecnico em deslocamento com GMG 70 min LGE tecnico em deslocamento com GMG 70 min para passagem DYA"
             }
           ],
-          "idade_ativa_h": 2.85
+          "idade_ativa_h": 2.89
         },
         {
           "site": "JKN",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "ACESSO/PROCESSO",
           "evidencias": [
             {
               "hora": "14:42",
@@ -26221,9 +26245,15 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "TS9, DYA, LGE, JKN, WAV, SUB"
+            },
+            {
+              "hora": "15:13",
+              "grupo": "Móvel 15 - 19",
+              "causa": "ACESSO/PROCESSO",
+              "status": "JKN tecnico em deslocamento"
             }
           ],
-          "idade_ativa_h": 0.87
+          "idade_ativa_h": 0.9
         },
         {
           "site": "LGE",
@@ -26252,33 +26282,39 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "TS9, DYA, LGE, JKN, WAV, SUB"
+            },
+            {
+              "hora": "15:13",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "LGE tecnico em deslocamento com GMG 70 min para passagem DYA"
             }
           ],
-          "idade_ativa_h": 1.54
+          "idade_ativa_h": 1.57
         },
         {
           "site": "SUB",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "EM VERIFICAÇÃO",
           "evidencias": [
             {
               "hora": "15:11",
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "TS9, DYA, LGE, JKN, WAV, SUB"
+            },
+            {
+              "hora": "15:13",
+              "grupo": "Móvel 15 - 19",
+              "causa": "EM VERIFICAÇÃO",
+              "status": "SUB verificando"
             }
           ],
-          "idade_ativa_h": 0.54
+          "idade_ativa_h": 0.57
         },
         {
           "site": "TS9",
           "causa": "INFRA",
           "evidencias": [
-            {
-              "hora": "13:22",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "TS9, TSC, APM, DYA"
-            },
             {
               "hora": "13:32",
               "grupo": "Móvel 15 - 19",
@@ -26302,22 +26338,34 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "TS9, DYA, LGE, JKN, WAV, SUB"
+            },
+            {
+              "hora": "15:13",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "TS9 Tecnico em deslocamento com GMG 40 min"
             }
           ],
-          "idade_ativa_h": 2.19
+          "idade_ativa_h": 2.22
         },
         {
           "site": "WAV",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "ACESSO/PROCESSO",
           "evidencias": [
             {
               "hora": "15:11",
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "TS9, DYA, LGE, JKN, WAV, SUB"
+            },
+            {
+              "hora": "15:13",
+              "grupo": "Móvel 15 - 19",
+              "causa": "ACESSO/PROCESSO",
+              "status": "WAV Tecnico em deslocamento 50min"
             }
           ],
-          "idade_ativa_h": 0.87
+          "idade_ativa_h": 0.9
         }
       ]
     },
@@ -26336,7 +26384,7 @@
               "status": "IFM, ICZ, IGB"
             }
           ],
-          "idade_ativa_h": 5.85
+          "idade_ativa_h": 5.89
         }
       ]
     },
@@ -26355,7 +26403,7 @@
               "status": "DRU, EWI, BEW, BVM"
             }
           ],
-          "idade_ativa_h": 2.85
+          "idade_ativa_h": 2.89
         },
         {
           "site": "DRU",
@@ -26392,7 +26440,7 @@
               "status": "DRU, EWI, BEW, BVM"
             }
           ],
-          "idade_ativa_h": 13.47
+          "idade_ativa_h": 13.5
         }
       ]
     },
@@ -26417,7 +26465,7 @@
               "status": "U50, AJU"
             }
           ],
-          "idade_ativa_h": 12.54
+          "idade_ativa_h": 12.57
         },
         {
           "site": "U50",
@@ -26436,13 +26484,13 @@
               "status": "U50, AJU"
             }
           ],
-          "idade_ativa_h": 1037.87
+          "idade_ativa_h": 1037.9
         },
         {
           "site": "YPK",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.54
+          "idade_ativa_h": 0.57
         }
       ]
     },
@@ -26485,7 +26533,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 4.87
+          "idade_ativa_h": 4.9
         },
         {
           "site": "ADN",
@@ -26498,7 +26546,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 0.2
+          "idade_ativa_h": 0.24
         },
         {
           "site": "ATA",
@@ -26511,7 +26559,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 0.54
+          "idade_ativa_h": 0.57
         },
         {
           "site": "C3P",
@@ -26524,7 +26572,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 1.54
+          "idade_ativa_h": 1.57
         },
         {
           "site": "EJT",
@@ -26561,7 +26609,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 24.87
+          "idade_ativa_h": 24.9
         },
         {
           "site": "GRI",
@@ -26574,7 +26622,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 1.54
+          "idade_ativa_h": 1.57
         },
         {
           "site": "KSQ",
@@ -26593,7 +26641,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 0.54
+          "idade_ativa_h": 0.57
         },
         {
           "site": "MMI",
@@ -26630,7 +26678,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 16.2
+          "idade_ativa_h": 16.24
         },
         {
           "site": "PQI",
@@ -26667,7 +26715,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 12.2
+          "idade_ativa_h": 12.24
         },
         {
           "site": "RD1",
@@ -26680,7 +26728,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 0.54
+          "idade_ativa_h": 0.57
         },
         {
           "site": "SFZ",
@@ -26717,7 +26765,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 24.87
+          "idade_ativa_h": 24.9
         },
         {
           "site": "SNY",
@@ -26754,7 +26802,7 @@
               "status": "PQI, SFZ, EJT, MMI, KSQ, 0PF, SNY, GRI, C3P, RD1, ATA, ADN"
             }
           ],
-          "idade_ativa_h": 4.87
+          "idade_ativa_h": 4.9
         }
       ]
     }
