@@ -1149,16 +1149,19 @@ setTimeout(p1BindSubViews,0);
 
 
 // P1 RESUMO COMPACTO + PARETO • DEV 20260908
+let p1ParetoMode='today';
+function p1ParetoValidCause(v){const c=String(v||'').toUpperCase();return c&&c!=='SEM CAUSA LOCALIZADA'&&c!=='NÃO IDENTIFICADA'}
+function p1ParetoSource(mode,rows){const out=[];if(mode==='active'){const cmap=p1CurrentCauseMap();for(const r of rows||[]){const s=cmap.get(String(r.cn)+'|'+String(r.site).toUpperCase());out.push(String(s?.causa||'SEM CAUSA LOCALIZADA'))}return{causes:out,total:(rows||[]).length,label:'ativos'}}const days=p1CausesData?.dias||[],now=new Date(),ym=now.toLocaleDateString('sv-SE',{timeZone:'America/Sao_Paulo'}).slice(0,7),today=now.toLocaleDateString('sv-SE',{timeZone:'America/Sao_Paulo'});let use=mode==='today'?days.filter(d=>d.data===today):mode==='month'?days.filter(d=>String(d.data||'').startsWith(ym)):days;for(const d of use)for(const c of(d.cns||[]))for(const x of(c.sites||[]))out.push(String(x.causa||'SEM CAUSA LOCALIZADA'));let label=mode==='today'?'hoje':mode==='month'?ym:'hist. processado';if(mode==='history'&&use.length)label=`${use[0].data} → ${use[use.length-1].data}`;return{causes:out,total:out.length,label}}
+function p1BindParetoModes(){document.querySelectorAll('[data-p1-pareto]').forEach(b=>{b.classList.toggle('active',b.dataset.p1Pareto===p1ParetoMode);if(b.dataset.bound)return;b.dataset.bound='1';b.addEventListener('click',()=>{p1ParetoMode=b.dataset.p1Pareto||'today';document.querySelectorAll('[data-p1-pareto]').forEach(x=>x.classList.toggle('active',x.dataset.p1Pareto===p1ParetoMode));p1RenderCompactNow(p1OnlineRows())})})}
 function p1CurrentCauseMap(){const m=new Map();for(const c of (p1CausesData?.ativos_agora||[]))for(const s of (c.sites||[]))m.set(String(c.cn)+'|'+String(s.site).toUpperCase(),s);return m}
 function p1RenderCompactNow(rows){
  const ov=document.getElementById('p1CnOverview');
  const groups=p1OnlineGroups(rows,'cn').sort((a,b)=>Number(a.key)-Number(b.key)),max=Math.max(1,...groups.map(x=>x.count));
  if(ov)ov.innerHTML=groups.length?groups.map(g=>{const rs=rows.filter(x=>String(x.cn)===String(g.key)).slice().sort((a,b)=>p1Age(b)-p1Age(a)),over=rs.filter(x=>p1Age(x)>6||x.mais_de_6h_confirmado).length;return `<details class="p1-cn-overview-item"><summary><span class="p1-cn-big"><small>CN ${p1Esc(g.key)} • ${g.key==='11'?'ABILITY':'TEL'}</small><b>${g.count}</b><em>ativos</em></span><span class="p1-cn-overview-bar"><i style="width:${g.count/max*100}%"></i></span><span class="p1-cn-overview-meta"><b>${over}</b><small>&gt;6h</small><b>${p1FmtHours(g.avg)}</b><small>média</small></span><u>abrir</u></summary><div class="p1-cn-hidden-sites">${rs.map(x=>`<div><span><b>${p1Esc(x.site)}</b><small>${p1Esc(x.municipio||'—')}</small></span><em>${p1FmtHours(p1Age(x))}</em></div>`).join('')}</div></details>`}).join(''):'<div class="p1-empty">Sem ativos para os filtros.</div>';
- const cmap=p1CurrentCauseMap(), counts=new Map();let identified=0;
- for(const r of rows){const s=cmap.get(String(r.cn)+'|'+String(r.site).toUpperCase()),c=String(s?.causa||'SEM CAUSA LOCALIZADA');if(c!=='SEM CAUSA LOCALIZADA'){identified++;counts.set(c,(counts.get(c)||0)+1)}}
- const pareto=document.getElementById('p1CausePareto'),cov=document.getElementById('p1ParetoCoverage'),arr=[...counts.entries()].sort((a,b)=>b[1]-a[1]),mx=Math.max(1,...arr.map(x=>x[1]));let cum=0;
- if(cov)cov.textContent=`${identified}/${rows.length} identificados`;
- if(pareto)pareto.innerHTML=arr.length?arr.map(([name,n])=>{cum+=n;const pct=identified?cum/identified*100:0;return `<div class="p1-pareto-row"><span><b>${p1Esc(name)}</b><small>${n} ativo(s)</small></span><div><i style="width:${n/mx*100}%"></i></div><em>${pct.toFixed(0)}% acum.</em></div>`}).join(''):'<div class="p1-empty">Ainda não há causa/status identificado nos ativos filtrados.</div>';
+ const src=p1ParetoSource(p1ParetoMode,rows),counts=new Map();let identified=0;for(const raw of src.causes){const c=String(raw||'SEM CAUSA LOCALIZADA');if(p1ParetoValidCause(c)){identified++;counts.set(c,(counts.get(c)||0)+1)}}
+ const pareto=document.getElementById('p1CausePareto'),cov=document.getElementById('p1ParetoCoverage'),arr=[...counts.entries()].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])),mx=Math.max(1,...arr.map(x=>x[1]));let cum=0;
+ if(cov)cov.textContent=`${identified}/${src.total} identificados • ${src.label}`;
+ if(pareto)pareto.innerHTML=arr.length?arr.map(([name,n])=>{cum+=n;const pct=identified?cum/identified*100:0;return `<div class="p1-pareto-row"><span><b>${p1Esc(name)}</b><small>${n} ocorrência(s)</small></span><div><i style="width:${n/mx*100}%"></i></div><em>${pct.toFixed(0)}% acum.</em></div>`}).join(''):'<div class="p1-empty">Sem causa/status identificado neste recorte.</div>';p1BindParetoModes();
 }
 
 // TV OPERACIONAL • DEV • MAPAS AGORA x 48H
