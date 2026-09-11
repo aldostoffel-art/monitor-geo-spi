@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-11T07:20:55.510479-03:00",
+  "gerado_em": "2026-09-11T07:22:34.017687-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-11T10:20:02.000Z",
+  "historico_grupos_fim": "2026-09-11T10:22:16.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -23938,12 +23938,6 @@
               "causa": "EQUIPAMENTO",
               "evidencias": [
                 {
-                  "hora": "07:05",
-                  "grupo": "Móvel N1 - 12 ",
-                  "causa": "EQUIPAMENTO",
-                  "status": "Técnico a mais de 1 hora sem atendimento rede metro para verificar pq porta Giga travada no HL5g site CJY."
-                },
-                {
                   "hora": "07:08",
                   "grupo": "Móvel 16 - 17",
                   "causa": "NÃO IDENTIFICADA",
@@ -23966,6 +23960,12 @@
                   "grupo": "Móvel N1 - 12 ",
                   "causa": "EQUIPAMENTO",
                   "status": "CJY w fora com a porta 4 do HL5g travada"
+                },
+                {
+                  "hora": "07:22",
+                  "grupo": "Móvel N1 - 12 ",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "CJY aguardando o suporte só W fora"
                 }
               ]
             },
@@ -23973,7 +23973,7 @@
               "site": "RIO",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "FIBRA/BACKBONE",
               "evidencias": [
                 {
                   "hora": "06:42",
@@ -23998,6 +23998,12 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "OEP, CJY, BN1, SBP, RIO, TY1, TM5, CCP"
+                },
+                {
+                  "hora": "07:21",
+                  "grupo": "Móvel N1 - 12 ",
+                  "causa": "FIBRA/BACKBONE",
+                  "status": "RIO, TY1 e TM5 envolvidas em rompimento da fixa"
                 }
               ]
             },
@@ -24031,7 +24037,7 @@
               "site": "TM5",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "FIBRA/BACKBONE",
               "evidencias": [
                 {
                   "hora": "07:08",
@@ -24050,6 +24056,12 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "OEP, CJY, BN1, SBP, RIO, TY1, TM5, CCP"
+                },
+                {
+                  "hora": "07:21",
+                  "grupo": "Móvel N1 - 12 ",
+                  "causa": "FIBRA/BACKBONE",
+                  "status": "RIO, TY1 e TM5 envolvidas em rompimento da fixa"
                 }
               ]
             },
@@ -24057,7 +24069,7 @@
               "site": "TY1",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "FIBRA/BACKBONE",
               "evidencias": [
                 {
                   "hora": "07:08",
@@ -24076,6 +24088,12 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "OEP, CJY, BN1, SBP, RIO, TY1, TM5, CCP"
+                },
+                {
+                  "hora": "07:21",
+                  "grupo": "Móvel N1 - 12 ",
+                  "causa": "FIBRA/BACKBONE",
+                  "status": "RIO, TY1 e TM5 envolvidas em rompimento da fixa"
                 }
               ]
             }
@@ -24462,7 +24480,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 56
+      "mensagens_grupos_no_dia": 60
     }
   ],
   "ativos_agora": [
@@ -24474,25 +24492,25 @@
           "site": "IFS",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 18.67
+          "idade_ativa_h": 18.71
         },
         {
           "site": "IJZ",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 17.01
+          "idade_ativa_h": 17.04
         },
         {
           "site": "OJB",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.67
+          "idade_ativa_h": 1.71
         },
         {
           "site": "STF",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 126.66
+          "idade_ativa_h": 126.69
         }
       ]
     },
@@ -24502,7 +24520,7 @@
       "sites": [
         {
           "site": "BN1",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "ACESSO/PROCESSO",
           "evidencias": [
             {
               "hora": "07:08",
@@ -24521,9 +24539,15 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "OEP, CJY, BN1, SBP, RIO, TY1, TM5, CCP"
+            },
+            {
+              "hora": "07:20",
+              "grupo": "Móvel N1 - 12 ",
+              "causa": "ACESSO/PROCESSO",
+              "status": "BN1, estamos em deslocamento, para fazer nova tentativa de acesso, vou deixar mais um pouquinho na gestão suas, ok."
             }
           ],
-          "idade_ativa_h": 13.01
+          "idade_ativa_h": 13.04
         },
         {
           "site": "CCP",
@@ -24548,18 +24572,12 @@
               "status": "OEP, CJY, BN1, SBP, RIO, TY1, TM5, CCP"
             }
           ],
-          "idade_ativa_h": 1.67
+          "idade_ativa_h": 1.71
         },
         {
           "site": "CJY",
           "causa": "EQUIPAMENTO",
           "evidencias": [
-            {
-              "hora": "07:05",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "EQUIPAMENTO",
-              "status": "Técnico a mais de 1 hora sem atendimento rede metro para verificar pq porta Giga travada no HL5g site CJY."
-            },
             {
               "hora": "07:08",
               "grupo": "Móvel 16 - 17",
@@ -24583,13 +24601,19 @@
               "grupo": "Móvel N1 - 12 ",
               "causa": "EQUIPAMENTO",
               "status": "CJY w fora com a porta 4 do HL5g travada"
+            },
+            {
+              "hora": "07:22",
+              "grupo": "Móvel N1 - 12 ",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "CJY aguardando o suporte só W fora"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.04
         },
         {
           "site": "OEP",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "FIBRA/BACKBONE",
           "evidencias": [
             {
               "hora": "07:08",
@@ -24608,13 +24632,19 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "OEP, CJY, BN1, SBP, RIO, TY1, TM5, CCP"
+            },
+            {
+              "hora": "07:21",
+              "grupo": "Móvel N1 - 12 ",
+              "causa": "FIBRA/BACKBONE",
+              "status": "OEP está com a rede fibra"
             }
           ],
-          "idade_ativa_h": 17.67
+          "idade_ativa_h": 17.71
         },
         {
           "site": "RIO",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "FIBRA/BACKBONE",
           "evidencias": [
             {
               "hora": "06:42",
@@ -24639,9 +24669,15 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "OEP, CJY, BN1, SBP, RIO, TY1, TM5, CCP"
+            },
+            {
+              "hora": "07:21",
+              "grupo": "Móvel N1 - 12 ",
+              "causa": "FIBRA/BACKBONE",
+              "status": "RIO, TY1 e TM5 envolvidas em rompimento da fixa"
             }
           ],
-          "idade_ativa_h": 3.01
+          "idade_ativa_h": 3.04
         },
         {
           "site": "SBP",
@@ -24666,11 +24702,11 @@
               "status": "OEP, CJY, BN1, SBP, RIO, TY1, TM5, CCP"
             }
           ],
-          "idade_ativa_h": 3.01
+          "idade_ativa_h": 3.04
         },
         {
           "site": "TM5",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "FIBRA/BACKBONE",
           "evidencias": [
             {
               "hora": "07:08",
@@ -24689,13 +24725,19 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "OEP, CJY, BN1, SBP, RIO, TY1, TM5, CCP"
+            },
+            {
+              "hora": "07:21",
+              "grupo": "Móvel N1 - 12 ",
+              "causa": "FIBRA/BACKBONE",
+              "status": "RIO, TY1 e TM5 envolvidas em rompimento da fixa"
             }
           ],
-          "idade_ativa_h": 3.01
+          "idade_ativa_h": 3.04
         },
         {
           "site": "TY1",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "FIBRA/BACKBONE",
           "evidencias": [
             {
               "hora": "07:08",
@@ -24714,9 +24756,15 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "OEP, CJY, BN1, SBP, RIO, TY1, TM5, CCP"
+            },
+            {
+              "hora": "07:21",
+              "grupo": "Móvel N1 - 12 ",
+              "causa": "FIBRA/BACKBONE",
+              "status": "RIO, TY1 e TM5 envolvidas em rompimento da fixa"
             }
           ],
-          "idade_ativa_h": 3.01
+          "idade_ativa_h": 3.04
         }
       ]
     },
@@ -24728,13 +24776,13 @@
           "site": "J95",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 11.01
+          "idade_ativa_h": 11.04
         },
         {
           "site": "ORN",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 11.01
+          "idade_ativa_h": 11.04
         }
       ]
     },
@@ -24746,13 +24794,13 @@
           "site": "KPP",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.34
+          "idade_ativa_h": 3.37
         },
         {
           "site": "SZX",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 10.01
+          "idade_ativa_h": 10.04
         }
       ]
     },
@@ -24764,25 +24812,25 @@
           "site": "ICZ",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.67
+          "idade_ativa_h": 3.71
         },
         {
           "site": "IFM",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 15.01
+          "idade_ativa_h": 15.04
         },
         {
           "site": "MFL",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.34
+          "idade_ativa_h": 3.37
         },
         {
           "site": "RXC",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 11.01
+          "idade_ativa_h": 11.04
         }
       ]
     },
@@ -24813,7 +24861,7 @@
               "status": "BEC, BCD, DRU, EWI, BEW, CLN, SEV, CXD, EW4"
             }
           ],
-          "idade_ativa_h": 7.66
+          "idade_ativa_h": 7.69
         },
         {
           "site": "BEC",
@@ -24838,7 +24886,7 @@
               "status": "BEC, BCD, DRU, EWI, BEW, CLN, SEV, CXD, EW4"
             }
           ],
-          "idade_ativa_h": 7.66
+          "idade_ativa_h": 7.69
         },
         {
           "site": "BEW",
@@ -24863,7 +24911,7 @@
               "status": "BEC, BCD, DRU, EWI, BEW, CLN, SEV, CXD, EW4"
             }
           ],
-          "idade_ativa_h": 3.34
+          "idade_ativa_h": 3.37
         },
         {
           "site": "CLN",
@@ -24888,7 +24936,7 @@
               "status": "BEC, BCD, DRU, EWI, BEW, CLN, SEV, CXD, EW4"
             }
           ],
-          "idade_ativa_h": 2.01
+          "idade_ativa_h": 2.04
         },
         {
           "site": "CXD",
@@ -24913,7 +24961,7 @@
               "status": "BEC, BCD, DRU, EWI, BEW, CLN, SEV, CXD, EW4"
             }
           ],
-          "idade_ativa_h": 2.01
+          "idade_ativa_h": 2.04
         },
         {
           "site": "DRU",
@@ -24938,7 +24986,7 @@
               "status": "BEC, BCD, DRU, EWI, BEW, CLN, SEV, CXD, EW4"
             }
           ],
-          "idade_ativa_h": 5.61
+          "idade_ativa_h": 5.64
         },
         {
           "site": "EW4",
@@ -24963,7 +25011,7 @@
               "status": "BEC, BCD, DRU, EWI, BEW, CLN, SEV, CXD, EW4"
             }
           ],
-          "idade_ativa_h": 2.01
+          "idade_ativa_h": 2.04
         },
         {
           "site": "EWI",
@@ -24988,7 +25036,7 @@
               "status": "BEC, BCD, DRU, EWI, BEW, CLN, SEV, CXD, EW4"
             }
           ],
-          "idade_ativa_h": 3.34
+          "idade_ativa_h": 3.37
         },
         {
           "site": "SEV",
@@ -25013,7 +25061,7 @@
               "status": "BEC, BCD, DRU, EWI, BEW, CLN, SEV, CXD, EW4"
             }
           ],
-          "idade_ativa_h": 2.01
+          "idade_ativa_h": 2.04
         }
       ]
     },
@@ -25025,19 +25073,19 @@
           "site": "1KD",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.67
+          "idade_ativa_h": 1.71
         },
         {
           "site": "AJU",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.67
+          "idade_ativa_h": 4.71
         },
         {
           "site": "U50",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1030.01
+          "idade_ativa_h": 1030.04
         }
       ]
     },
@@ -25074,7 +25122,7 @@
               "status": "M.SP.FZS Mestre do M.SP.CR9"
             }
           ],
-          "idade_ativa_h": 17.01
+          "idade_ativa_h": 17.04
         },
         {
           "site": "EJT",
@@ -25099,7 +25147,7 @@
               "status": "PQI, SFZ, RKC, EJT, CR9, MMI, FZS, MF8"
             }
           ],
-          "idade_ativa_h": 17.01
+          "idade_ativa_h": 17.04
         },
         {
           "site": "FZS",
@@ -25130,7 +25178,7 @@
               "status": "M.SP.FZS Mestre do M.SP.CR9"
             }
           ],
-          "idade_ativa_h": 3.34
+          "idade_ativa_h": 3.37
         },
         {
           "site": "MF8",
@@ -25155,7 +25203,7 @@
               "status": "PQI, SFZ, RKC, EJT, CR9, MMI, FZS, MF8"
             }
           ],
-          "idade_ativa_h": 7.66
+          "idade_ativa_h": 7.69
         },
         {
           "site": "MMI",
@@ -25180,7 +25228,7 @@
               "status": "PQI, SFZ, RKC, EJT, CR9, MMI, FZS, MF8"
             }
           ],
-          "idade_ativa_h": 8.34
+          "idade_ativa_h": 8.37
         },
         {
           "site": "PQI",
@@ -25211,7 +25259,7 @@
               "status": "M.SP.PQI"
             }
           ],
-          "idade_ativa_h": 4.34
+          "idade_ativa_h": 4.37
         },
         {
           "site": "RKC",
@@ -25242,7 +25290,7 @@
               "status": "M.SP.RKC"
             }
           ],
-          "idade_ativa_h": 17.01
+          "idade_ativa_h": 17.04
         },
         {
           "site": "SFZ",
@@ -25267,7 +25315,7 @@
               "status": "PQI, SFZ, RKC, EJT, CR9, MMI, FZS, MF8"
             }
           ],
-          "idade_ativa_h": 17.01
+          "idade_ativa_h": 17.04
         }
       ]
     }
