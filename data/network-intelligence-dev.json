@@ -1,14 +1,127 @@
 {
-  "gerado_em": "2026-09-11T10:25:20.077927+00:00",
+  "gerado_em": "2026-09-11T10:30:44.110292+00:00",
   "ambiente": "DEV",
-  "mudanca_relevante": false,
-  "fingerprint": "eecd25aa025405f20dd7ddcf8eb0ce0f18ab1a83409fbd8dba7dcaec6de9d49a",
-  "nivel": "ATENÇÃO",
-  "agora": "Sinal externo em Extrema/MG aponta risco para o corredor BRAGANÇA/JUNDIAÍ",
-  "proximas_horas": "Potencial avanço para Bragança/Jundiaí nas próximas horas; rajada até 68 km/h e chuva horária até 0.8 mm",
-  "rede_exposta": "194 trecho(s) Backbone cruzam o corredor potencial",
+  "mudanca_relevante": true,
+  "fingerprint": "bc1e2f8dc98fd5feae9fdbd267d37a6591cbad7c05af0f2f4cb56666fe3462ff",
+  "nivel": "ALTO",
+  "agora": "Sinal externo em Itajubá/MG aponta risco para o corredor VALE DO PARAÍBA",
+  "proximas_horas": "Potencial avanço para Piquete/Lorena/Guaratinguetá nas próximas horas; rajada até 43 km/h e chuva horária até 7.5 mm",
+  "rede_exposta": "24 trecho(s) Backbone cruzam o corredor potencial",
   "recomendacao": "Validar preventivamente redundância: 0/5 trechos amostrados têm caminho lógico alternativo fora do corredor",
   "ameacas_externas": [
+    {
+      "nome": "Itajubá/MG",
+      "corredor": "VALE DO PARAÍBA",
+      "alvo": "Piquete/Lorena/Guaratinguetá",
+      "score": 65,
+      "tempestade": true,
+      "chuva_pico_mmh": 7.5,
+      "rajada_pico_kmh": 42.8,
+      "prob_chuva_pico": 100,
+      "eta_sinal_externo": "2026-09-11T17:00:00+00:00",
+      "backbones_no_corredor": 24,
+      "backbones_amostra": [
+        {
+          "id": "BB-40A6669129DA",
+          "trecho": "CUH.PG-GTA.MF",
+          "cabo": "F-0161",
+          "cluster": "SAO JOSE DOS CAMPOS",
+          "dist_corredor_km": 10.6,
+          "ponta_a": "CUH.PG",
+          "ponta_b": "GTA.MF"
+        },
+        {
+          "id": "BB-9A1B2BF056E7",
+          "trecho": "GTA.MF-QUZ.BD",
+          "cabo": "F-0934",
+          "cluster": "SAO JOSE DOS CAMPOS",
+          "dist_corredor_km": 10.6,
+          "ponta_a": "GTA.MF",
+          "ponta_b": "QUZ.BD"
+        },
+        {
+          "id": "BB-28B7B0A33C51",
+          "trecho": "GTA.MF-LNA.VA",
+          "cabo": "F-0105",
+          "cluster": "SAO JOSE DOS CAMPOS",
+          "dist_corredor_km": 10.6,
+          "ponta_a": "GTA.MF",
+          "ponta_b": "LNA.VA"
+        },
+        {
+          "id": "BB-825A1B0C56F7",
+          "trecho": "GTA.MF-GTA.RC",
+          "cabo": "F-0107",
+          "cluster": "SAO JOSE DOS CAMPOS",
+          "dist_corredor_km": 10.6,
+          "ponta_a": "GTA.MF",
+          "ponta_b": "GTA.RC"
+        },
+        {
+          "id": "BB-B43151E51873",
+          "trecho": "GTA.MF-GTA.NG",
+          "cabo": "F-0104",
+          "cluster": "SAO JOSE DOS CAMPOS",
+          "dist_corredor_km": 10.6,
+          "ponta_a": "GTA.MF",
+          "ponta_b": "GTA.NG"
+        },
+        {
+          "id": "BB-1131EFC2E3A2",
+          "trecho": "GTA.MF-POTM.PO",
+          "cabo": "F-0103",
+          "cluster": "SAO JOSE DOS CAMPOS",
+          "dist_corredor_km": 10.6,
+          "ponta_a": "GTA.MF",
+          "ponta_b": "POTM.PO"
+        },
+        {
+          "id": "BB-28F002053BFB",
+          "trecho": "ADA.CT-GTA.MF",
+          "cabo": "F-0101",
+          "cluster": "SAO JOSE DOS CAMPOS",
+          "dist_corredor_km": 13.9,
+          "ponta_a": "ADA.CT",
+          "ponta_b": "GTA.MF"
+        },
+        {
+          "id": "BB-DEE383CEDD39",
+          "trecho": "ADA.CT-RSA.DE",
+          "cabo": "F-0101",
+          "cluster": "SAO JOSE DOS CAMPOS",
+          "dist_corredor_km": 13.9,
+          "ponta_a": "ADA.CT",
+          "ponta_b": "RSA.DE"
+        }
+      ],
+      "alternativas": [
+        {
+          "trecho": "CUH.PG-GTA.MF",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "GTA.MF-QUZ.BD",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "GTA.MF-LNA.VA",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "GTA.MF-GTA.RC",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        },
+        {
+          "trecho": "GTA.MF-GTA.NG",
+          "alternativa_logica": false,
+          "caminho_potencial": []
+        }
+      ]
+    },
     {
       "nome": "Extrema/MG",
       "corredor": "BRAGANÇA/JUNDIAÍ",
