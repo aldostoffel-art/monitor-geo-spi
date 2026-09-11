@@ -1834,3 +1834,35 @@ body.tv-mode .tv-ai>small{font-size:11px!important;line-height:1.16!important}
   body.tv-mode .tv-side>section:nth-child(2)>span{font-size:10px!important}
   body.tv-mode #tvSideAction{font-size:12.5px!important;line-height:1.16!important;max-height:46px!important}
 }
+
+/* TV OPERACIONAL • aproveitamento total da tela v24 • DEV */
+@media(min-width:1200px){
+  body.tv-mode .tv-view{
+    height:calc(100vh - 36px)!important;
+    min-height:calc(100vh - 36px)!important;
+    grid-template-rows:auto auto minmax(300px,42vh) 72px minmax(210px,1fr) auto!important;
+    gap:6px!important;
+    padding-bottom:4px!important;
+  }
+  body.tv-mode .tv-map-grid{min-height:300px!important;align-items:stretch!important}
+  body.tv-mode .tv-map-panel{height:100%!important;max-height:none!important}
+  body.tv-mode .tv-side{height:100%!important;min-height:0!important;grid-template-rows:minmax(82px,.95fr) minmax(72px,.85fr) minmax(108px,1.25fr) minmax(86px,1fr)!important;gap:6px!important}
+  body.tv-mode .tv-side-card{height:auto!important;min-height:0!important;overflow:hidden!important}
+  body.tv-mode .tv-side-priority>b{font-size:36px!important}
+  body.tv-mode .tv-side-card>span{font-size:14px!important;line-height:1.24!important}
+  body.tv-mode #tvSideAction{font-size:15px!important;line-height:1.25!important;-webkit-line-clamp:5!important}
+  body.tv-mode .tv-forecast48-wrap{height:72px!important;max-height:72px!important}
+  body.tv-mode .tv-bottom-v6{height:auto!important;min-height:210px!important;align-self:stretch!important}
+  body.tv-mode .tv-bottom-block{height:100%!important}
+  body.tv-mode .tv-bottom-block header b{font-size:16px!important}
+  body.tv-mode .tv-event-cities b,body.tv-mode .tv-tree-cities b,body.tv-mode .tv-compare b{font-size:14px!important}
+  body.tv-mode .tv-event-cities em,body.tv-mode .tv-tree-cities em,body.tv-mode .tv-tree-cities small,body.tv-mode .tv-compare span{font-size:12px!important}
+}
+@media(min-width:1200px) and (max-height:900px){
+  body.tv-mode .tv-view{
+    grid-template-rows:auto auto minmax(280px,40vh) 68px minmax(190px,1fr) auto!important;
+  }
+  body.tv-mode .tv-map-grid{min-height:280px!important}
+  body.tv-mode .tv-forecast48-wrap{height:68px!important;max-height:68px!important}
+  body.tv-mode .tv-bottom-v6{min-height:190px!important}
+}
