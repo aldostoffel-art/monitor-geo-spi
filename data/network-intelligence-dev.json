@@ -1,11 +1,11 @@
 {
-  "gerado_em": "2026-09-11T12:15:24.486777+00:00",
+  "gerado_em": "2026-09-11T12:20:37.011801+00:00",
   "ambiente": "DEV",
   "mudanca_relevante": true,
-  "fingerprint": "65cfe9e38fc4e22b9b63d7ede07677fafaeba3a05320342272b087e8f76f2cbe",
+  "fingerprint": "cca6fe470a118e31c5cf33aa6cbcce5f8fe8bea3416c55f843c1516f493df1b0",
   "nivel": "ALTO",
   "agora": "Sinal externo em Itajubá/MG aponta risco para o corredor VALE DO PARAÍBA",
-  "proximas_horas": "Potencial avanço para Piquete/Lorena/Guaratinguetá nas próximas horas; rajada até 43 km/h e chuva horária até 5.0 mm",
+  "proximas_horas": "Potencial avanço para Piquete/Lorena/Guaratinguetá nas próximas horas; rajada até 40 km/h e chuva horária até 5.0 mm",
   "rede_exposta": "24 trecho(s) Backbone cruzam o corredor potencial",
   "recomendacao": "Validar preventivamente redundância: 0/5 trechos amostrados têm caminho lógico alternativo fora do corredor",
   "ameacas_externas": [
@@ -16,7 +16,7 @@
       "score": 65,
       "tempestade": true,
       "chuva_pico_mmh": 5.0,
-      "rajada_pico_kmh": 42.8,
+      "rajada_pico_kmh": 40.3,
       "prob_chuva_pico": 88,
       "eta_sinal_externo": "2026-09-11T18:00:00+00:00",
       "backbones_no_corredor": 24,
@@ -129,7 +129,7 @@
       "score": 25,
       "tempestade": false,
       "chuva_pico_mmh": 0.4,
-      "rajada_pico_kmh": 68.0,
+      "rajada_pico_kmh": 59.0,
       "prob_chuva_pico": 76,
       "eta_sinal_externo": "2026-09-11T12:00:00+00:00",
       "backbones_no_corredor": 194,
@@ -230,119 +230,6 @@
         },
         {
           "trecho": "ITA.CS-ITA.MD",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        }
-      ]
-    },
-    {
-      "nome": "Poços de Caldas/MG",
-      "corredor": "MOGI/CAMPINAS",
-      "alvo": "Mogi Mirim/Campinas",
-      "score": 25,
-      "tempestade": false,
-      "chuva_pico_mmh": 0.3,
-      "rajada_pico_kmh": 59.0,
-      "prob_chuva_pico": 80,
-      "eta_sinal_externo": "2026-09-11T14:00:00+00:00",
-      "backbones_no_corredor": 173,
-      "backbones_amostra": [
-        {
-          "id": "BB-511F74E35A76",
-          "trecho": "MMM.PJ-MMM.SE",
-          "cabo": "F-0280",
-          "cluster": "CAMPINAS",
-          "dist_corredor_km": 1.3,
-          "ponta_a": "MMM.PJ",
-          "ponta_b": "MMM.SE"
-        },
-        {
-          "id": "BB-87F29D24F18C",
-          "trecho": "MMM.PJ-MMM.RD",
-          "cabo": "F-0023",
-          "cluster": "CAMPINAS",
-          "dist_corredor_km": 1.3,
-          "ponta_a": "MMM.PJ",
-          "ponta_b": "MMM.RD"
-        },
-        {
-          "id": "BB-D47C19C91C25",
-          "trecho": "HLBA.HB-SAP.JR",
-          "cabo": "F-0259",
-          "cluster": "CAMPINAS",
-          "dist_corredor_km": 2.4,
-          "ponta_a": "HLBA.HB",
-          "ponta_b": "SAP.JR"
-        },
-        {
-          "id": "BB-DA2227E678E0",
-          "trecho": "MGU.CP-MMM.PJ",
-          "cabo": "F-0022",
-          "cluster": "CAMPINAS",
-          "dist_corredor_km": 3.3,
-          "ponta_a": "MGU.CP",
-          "ponta_b": "MMM.PJ"
-        },
-        {
-          "id": "BB-4F6B9038D559",
-          "trecho": "MGU.HC-MMM.PJ",
-          "cabo": "F-0134",
-          "cluster": "CAMPINAS",
-          "dist_corredor_km": 3.4,
-          "ponta_a": "MGU.HC",
-          "ponta_b": "MMM.PJ"
-        },
-        {
-          "id": "BB-A57AC1D710E4",
-          "trecho": "MMM.MF-MMM.PJ",
-          "cabo": "F-0099",
-          "cluster": "CAMPINAS",
-          "dist_corredor_km": 4.1,
-          "ponta_a": "MMM.MF",
-          "ponta_b": "MMM.PJ"
-        },
-        {
-          "id": "BB-51DBAFB5F938",
-          "trecho": "ESP.JB-MGU.HC",
-          "cabo": "F-0150",
-          "cluster": "CAMPINAS",
-          "dist_corredor_km": 5.1,
-          "ponta_a": "ESP.JB",
-          "ponta_b": "MGU.HC"
-        },
-        {
-          "id": "BB-2F1ADE2C9DD7",
-          "trecho": "ESP.JB-SDJ.MR",
-          "cabo": "F-0169",
-          "cluster": "CAMPINAS",
-          "dist_corredor_km": 5.1,
-          "ponta_a": "ESP.JB",
-          "ponta_b": "SDJ.MR"
-        }
-      ],
-      "alternativas": [
-        {
-          "trecho": "MMM.PJ-MMM.SE",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "MMM.PJ-MMM.RD",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "HLBA.HB-SAP.JR",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "MGU.CP-MMM.PJ",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "MGU.HC-MMM.PJ",
           "alternativa_logica": false,
           "caminho_potencial": []
         }
