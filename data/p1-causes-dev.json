@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-12T20:01:36.925255-03:00",
+  "gerado_em": "2026-09-12T20:02:34.813655-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-12T23:00:52.000Z",
+  "historico_grupos_fim": "2026-09-12T23:00:58.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -26717,6 +26717,20 @@
           "parceira": "ABILITY",
           "sites": [
             {
+              "site": "CVO",
+              "reincidente": true,
+              "aberturas": 3,
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "17:16",
+                  "grupo": "Movel N1 SPA",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, CVO, KPB, KDV"
+                }
+              ]
+            },
+            {
               "site": "CVA",
               "reincidente": true,
               "aberturas": 2,
@@ -26733,20 +26747,6 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
-                }
-              ]
-            },
-            {
-              "site": "CVO",
-              "reincidente": true,
-              "aberturas": 2,
-              "causa": "NÃO IDENTIFICADA",
-              "evidencias": [
-                {
-                  "hora": "17:16",
-                  "grupo": "Movel N1 SPA",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, CVO, KPB, KDV"
                 }
               ]
             },
@@ -29099,6 +29099,13 @@
               "evidencias": []
             },
             {
+              "site": "RFE",
+              "reincidente": false,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "ROI",
               "reincidente": true,
               "aberturas": 1,
@@ -29611,6 +29618,44 @@
               ]
             },
             {
+              "site": "NW1",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "12:39",
+                  "grupo": "Móvel 14 - 18",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "EJT, MMI, BVI, NW1, PJL, SQR, S2U, MF8, MPD"
+                },
+                {
+                  "hora": "12:39",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "EJT, MMI, BVI, NW1, PJL, SQR, S2U, MF8, MPD"
+                },
+                {
+                  "hora": "12:39",
+                  "grupo": "Móvel 16 - 17",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "EJT, MMI, BVI, NW1, PJL, SQR, S2U, MF8, MPD"
+                },
+                {
+                  "hora": "17:30",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "EJT, NW1, RDB, DVB, MOP, PJL, SSN, SNR"
+                },
+                {
+                  "hora": "17:39",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "NW1 - conjunta Rede"
+                }
+              ]
+            },
+            {
               "site": "PJL",
               "reincidente": true,
               "aberturas": 1,
@@ -29877,7 +29922,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 283
+      "mensagens_grupos_no_dia": 284
     }
   ],
   "ativos_agora": [
@@ -29920,7 +29965,20 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 10.33
+          "idade_ativa_h": 10.36
+        },
+        {
+          "site": "CVO",
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "17:16",
+              "grupo": "Movel N1 SPA",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, CVO, KPB, KDV"
+            }
+          ],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "DID",
@@ -29957,7 +30015,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 8.98
+          "idade_ativa_h": 9.01
         },
         {
           "site": "EBY",
@@ -29994,7 +30052,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 3.33
+          "idade_ativa_h": 3.36
         },
         {
           "site": "EKP",
@@ -30031,7 +30089,7 @@
               "status": "STF, KUR, XQA, JBN, JCB, ISJ, CKD, EKP, TAO, SP0, NS2, IJZ, PNT, BGJ"
             }
           ],
-          "idade_ativa_h": 2.0
+          "idade_ativa_h": 2.02
         },
         {
           "site": "KUR",
@@ -30068,7 +30126,7 @@
               "status": "Site: KUR"
             }
           ],
-          "idade_ativa_h": 0.68
+          "idade_ativa_h": 0.71
         },
         {
           "site": "NS2",
@@ -30105,7 +30163,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 15.68
+          "idade_ativa_h": 15.71
         },
         {
           "site": "PNT",
@@ -30142,13 +30200,13 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 13.01
+          "idade_ativa_h": 13.04
         },
         {
           "site": "RNN",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 2.0
+          "idade_ativa_h": 2.02
         },
         {
           "site": "STF",
@@ -30185,7 +30243,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 163.33
+          "idade_ativa_h": 163.36
         },
         {
           "site": "TAO",
@@ -30222,13 +30280,13 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 18.68
+          "idade_ativa_h": 18.71
         },
         {
           "site": "WSE",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.35
+          "idade_ativa_h": 1.37
         },
         {
           "site": "XQA",
@@ -30265,7 +30323,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 36.33
+          "idade_ativa_h": 36.36
         }
       ]
     },
@@ -30277,13 +30335,13 @@
           "site": "GRY",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 14.33
+          "idade_ativa_h": 14.36
         },
         {
           "site": "NPA",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 2.66
+          "idade_ativa_h": 2.69
         }
       ]
     },
@@ -30326,7 +30384,7 @@
               "status": "• Site: KPV"
             }
           ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.71
         },
         {
           "site": "SM5",
@@ -30363,7 +30421,7 @@
               "status": "KPV/SM5/JKN Tecnico Osmar no local acoplando GMG abrindo protocolo concessionária TS9 aguardando liberação de acesso WINITY Tecnico em deslocamento site concentrador KPV/SM5"
             }
           ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.71
         },
         {
           "site": "TS9",
@@ -30400,7 +30458,7 @@
               "status": "TS9, KPV, ICA, YPI, IRP, ALM, NVC, NBB, DBA, NCM, YOC, NCO, NCB, IIO"
             }
           ],
-          "idade_ativa_h": 31.0
+          "idade_ativa_h": 31.02
         }
       ]
     },
@@ -30412,7 +30470,7 @@
           "site": "PAF",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 2.66
+          "idade_ativa_h": 2.69
         }
       ]
     },
@@ -30424,7 +30482,7 @@
           "site": "TVY",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.35
+          "idade_ativa_h": 0.37
         }
       ]
     },
@@ -30449,25 +30507,31 @@
               "status": "AJU tem previsão pra recuperar?"
             }
           ],
-          "idade_ativa_h": 0.68
+          "idade_ativa_h": 0.71
+        },
+        {
+          "site": "RFE",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.04
         },
         {
           "site": "SDM",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.68
+          "idade_ativa_h": 0.71
         },
         {
           "site": "TAC",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 2.66
+          "idade_ativa_h": 2.69
         },
         {
           "site": "U50",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1066.68
+          "idade_ativa_h": 1066.71
         }
       ]
     },
@@ -30510,13 +30574,50 @@
               "status": "EJT -"
             }
           ],
-          "idade_ativa_h": 53.68
+          "idade_ativa_h": 53.71
         },
         {
           "site": "HNV",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.35
+          "idade_ativa_h": 0.37
+        },
+        {
+          "site": "NW1",
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "12:39",
+              "grupo": "Móvel 14 - 18",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "EJT, MMI, BVI, NW1, PJL, SQR, S2U, MF8, MPD"
+            },
+            {
+              "hora": "12:39",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "EJT, MMI, BVI, NW1, PJL, SQR, S2U, MF8, MPD"
+            },
+            {
+              "hora": "12:39",
+              "grupo": "Móvel 16 - 17",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "EJT, MMI, BVI, NW1, PJL, SQR, S2U, MF8, MPD"
+            },
+            {
+              "hora": "17:30",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "EJT, NW1, RDB, DVB, MOP, PJL, SSN, SNR"
+            },
+            {
+              "hora": "17:39",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "NW1 - conjunta Rede"
+            }
+          ],
+          "idade_ativa_h": 0.04
         }
       ]
     }
