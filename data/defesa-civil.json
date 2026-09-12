@@ -1,40 +1,15 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-12T19:05:36-03:00",
-  "fonte_coletada_em": "2026-09-12T22:05:32Z",
+  "gerado_em": "2026-09-12T19:30:44-03:00",
+  "fonte_coletada_em": "2026-09-12T22:30:09Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 32,
-  "alertas_ativos": 2,
+  "entradas_feed": 31,
+  "alertas_ativos": 1,
   "eventos_geo": [
-    {
-      "id_alerta": "190112/2026",
-      "municipio": "Marília",
-      "latitude": -22.215435,
-      "longitude": -49.951103,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:12:00 - Chuva na regiao de Marilia. Tem vento e condicao para raios. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:12:00 - Chuva na regiao de Marilia. Tem vento e condicao para raios. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
-      "descricao": "12:00 - Chuva na região de Marília. Tem vento e condição para raios. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-12T12:05:42-03:00",
-      "fim": "2026-09-12T19:30:00-03:00",
-      "vigencia": "2026-09-12T12:05:42-03:00 → 2026-09-12T19:30:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
-      "sites_referencia": 40,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ]
-    },
     {
       "id_alerta": "190127/2026",
       "municipio": "Marília",
@@ -58,7 +33,24 @@
       "sites_referencia": 40,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-12T22:00:00+00:00",
+        "intensidade_estimada_mmh": 0.56,
+        "faixa_estimada_mmh": [
+          0.56,
+          0.56
+        ],
+        "dbz_medio": 19.0,
+        "pico_em": "2026-09-12T22:00:00+00:00",
+        "pico_estimado_mmh": 0.56,
+        "pico_dbz_medio": 19.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "190127/2026",
@@ -83,7 +75,24 @@
       "sites_referencia": 10,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-12T21:30:00+00:00",
+        "intensidade_estimada_mmh": 0.36,
+        "faixa_estimada_mmh": [
+          0.36,
+          0.36
+        ],
+        "dbz_medio": 16.0,
+        "pico_em": "2026-09-12T21:10:00+00:00",
+        "pico_estimado_mmh": 1.34,
+        "pico_dbz_medio": 25.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [],
@@ -105,5 +114,12 @@
         "SÃO PAULO/SP"
       ]
     }
-  ]
+  ],
+  "radar_enriquecimento": {
+    "fonte": "RainViewer",
+    "gerado_em": "2026-09-12T22:30:47.607745+00:00",
+    "janela_min": 120,
+    "eventos_com_eco": 2,
+    "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
+  }
 }
