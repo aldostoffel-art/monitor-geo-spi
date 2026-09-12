@@ -1,128 +1,14 @@
 {
-  "gerado_em": "2026-09-12T06:25:25.707665+00:00",
+  "gerado_em": "2026-09-12T06:30:44.619559+00:00",
   "ambiente": "DEV",
-  "mudanca_relevante": false,
-  "fingerprint": "e8b994dc653c4f540a58beb47354d844d5e2ca3d19642fba994e47e4ef5aed4f",
-  "nivel": "ATENÇÃO",
-  "agora": "Sinal externo em Maringá/PR aponta risco para o corredor OESTE",
-  "proximas_horas": "Potencial avanço para Presidente Prudente/Assis nas próximas horas; rajada até 25 km/h e chuva horária até 0.3 mm",
-  "rede_exposta": "8 trecho(s) Backbone cruzam o corredor potencial",
-  "recomendacao": "Validar preventivamente redundância: 0/5 trechos amostrados têm caminho lógico alternativo fora do corredor",
-  "ameacas_externas": [
-    {
-      "nome": "Maringá/PR",
-      "corredor": "OESTE",
-      "alvo": "Presidente Prudente/Assis",
-      "score": 40,
-      "tempestade": true,
-      "chuva_pico_mmh": 0.3,
-      "rajada_pico_kmh": 25.2,
-      "prob_chuva_pico": 59,
-      "eta_sinal_externo": "2026-09-12T12:00:00+00:00",
-      "backbones_no_corredor": 8,
-      "backbones_amostra": [
-        {
-          "id": "BB-8C8ED3016579",
-          "trecho": "AHU.RJ-RGF.MF",
-          "cabo": "F-0103.2",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 22.7,
-          "ponta_a": "AHU.RJ",
-          "ponta_b": "RGF.MF"
-        },
-        {
-          "id": "BB-945CFE97CA5B",
-          "trecho": "PPZ.JA-TAR.SS",
-          "cabo": "F-0102",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 29.2,
-          "ponta_a": "PPZ.JA",
-          "ponta_b": "TAR.SS"
-        },
-        {
-          "id": "BB-2BCE0DD8FE86",
-          "trecho": "PPZ.JA-PPZ.RD",
-          "cabo": "F-0101",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 29.2,
-          "ponta_a": "PPZ.JA",
-          "ponta_b": "PPZ.RD"
-        },
-        {
-          "id": "BB-7A94C061DEE4",
-          "trecho": "RGF.MF-TCI.FT",
-          "cabo": "F-0103",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 31.4,
-          "ponta_a": "RGF.MF",
-          "ponta_b": "TCI.FT"
-        },
-        {
-          "id": "BB-0C4F92D97003",
-          "trecho": "IDI.CW-RGF.MF",
-          "cabo": "F-0101",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 37.1,
-          "ponta_a": "IDI.CW",
-          "ponta_b": "RGF.MF"
-        },
-        {
-          "id": "BB-B057C8D20161",
-          "trecho": "IDI.CW-MPO.PJ",
-          "cabo": "F-0111",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 37.1,
-          "ponta_a": "IDI.CW",
-          "ponta_b": "MPO.PJ"
-        },
-        {
-          "id": "BB-8087B20528E9",
-          "trecho": "PPE.RB-RGF.MF",
-          "cabo": "F-0107",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 37.8,
-          "ponta_a": "PPE.RB",
-          "ponta_b": "RGF.MF"
-        },
-        {
-          "id": "BB-0F44F74448D9",
-          "trecho": "PPE.RB-PPZ.JA",
-          "cabo": "F-0109",
-          "cluster": "ARACATUBA",
-          "dist_corredor_km": 37.9,
-          "ponta_a": "PPE.RB",
-          "ponta_b": "PPZ.JA"
-        }
-      ],
-      "alternativas": [
-        {
-          "trecho": "AHU.RJ-RGF.MF",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "PPZ.JA-TAR.SS",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "PPZ.JA-PPZ.RD",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "RGF.MF-TCI.FT",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        },
-        {
-          "trecho": "IDI.CW-RGF.MF",
-          "alternativa_logica": false,
-          "caminho_potencial": []
-        }
-      ]
-    }
-  ],
+  "mudanca_relevante": true,
+  "fingerprint": "66ed312d7e6f0a580dd186886e0e85e95fe917f5cf3a0daf65ad4c518b1d8fc7",
+  "nivel": "BAIXO",
+  "agora": "Sem sinal externo relevante nos corredores monitorados",
+  "proximas_horas": "Manter varredura do entorno de SP",
+  "rede_exposta": "Sem corredor externo prioritário neste ciclo",
+  "recomendacao": "Nenhuma alteração preventiva de rota indicada neste ciclo",
+  "ameacas_externas": [],
   "chuva_observada_max_1h": 37.6,
   "alertas_dc_ativos": 0,
   "municipios_arvore_relevantes": [
