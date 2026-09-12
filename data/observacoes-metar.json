@@ -1,22 +1,35 @@
 {
   "core": "OBSERVACOES METAR SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-12T08:07:58.852534+00:00",
+  "gerado_em": "2026-09-12T08:37:02.359216+00:00",
   "fonte": "Aviation Weather Center / METAR",
   "tipo": "OBSERVADO",
   "estacoes": [
     {
       "estacao": "SBSP",
-      "observado_em": "2026-09-12T08:04:00.000Z",
+      "observado_em": "2026-09-12T08:20:00.000Z",
       "latitude": -23.627,
       "longitude": -46.655,
-      "vento_kmh": 11.1,
+      "vento_kmh": 5.6,
       "rajada_kmh": null,
-      "direcao_vento_graus": 150.0,
+      "direcao_vento_graus": 90.0,
       "temperatura_c": 17.0,
-      "tempo_presente": "RA",
-      "categoria_voo": "VFR",
-      "metar_raw": "SPECI SBSP 120804Z AUTO 15006KT 9000 RA FEW009 SCT049 17/16 Q1018"
+      "tempo_presente": "+RA",
+      "categoria_voo": "MVFR",
+      "metar_raw": "SPECI SBSP 120820Z AUTO 09003KT 040V140 7000 +RA SCT046 17/16 Q1018"
+    },
+    {
+      "estacao": "SBKP",
+      "observado_em": "2026-09-12T08:20:00.000Z",
+      "latitude": -23.007,
+      "longitude": -47.135,
+      "vento_kmh": 9.3,
+      "rajada_kmh": null,
+      "direcao_vento_graus": 80.0,
+      "temperatura_c": 17.0,
+      "tempo_presente": "-RA",
+      "categoria_voo": "MVFR",
+      "metar_raw": "SPECI SBKP 120820Z 08005KT 050V120 8000 -RA SCT019 BKN030 OVC070 17/17 Q1018 RERA"
     },
     {
       "estacao": "SBGR",
@@ -27,9 +40,9 @@
       "rajada_kmh": null,
       "direcao_vento_graus": 130.0,
       "temperatura_c": 17.0,
-      "tempo_presente": "RA TSRA",
+      "tempo_presente": "RA",
       "categoria_voo": "MVFR",
-      "metar_raw": "METAR SBGR 120800Z 13002KT 9999 RA SCT008 BKN013 BKN070 17/17 Q1018 RETS RETSRA"
+      "metar_raw": "METAR SBGR 120800Z COR 13002KT 9999 RA SCT008 BKN013 BKN070 17/17 Q1018 RETSRA"
     },
     {
       "estacao": "SBLO",
@@ -58,32 +71,6 @@
       "metar_raw": "METAR SBSJ 120800Z 29005KT 230V310 2000 RA BR OVC023 18/17 Q1019 RERA"
     },
     {
-      "estacao": "SBCT",
-      "observado_em": "2026-09-12T08:00:00.000Z",
-      "latitude": -25.529,
-      "longitude": -49.176,
-      "vento_kmh": 7.4,
-      "rajada_kmh": null,
-      "direcao_vento_graus": 170.0,
-      "temperatura_c": 16.0,
-      "tempo_presente": null,
-      "categoria_voo": "MVFR",
-      "metar_raw": "METAR SBCT 120800Z 17004KT 9999 BKN020 16/16 Q1014"
-    },
-    {
-      "estacao": "SBKP",
-      "observado_em": "2026-09-12T08:00:00.000Z",
-      "latitude": -23.007,
-      "longitude": -47.135,
-      "vento_kmh": 5.6,
-      "rajada_kmh": null,
-      "direcao_vento_graus": 70.0,
-      "temperatura_c": 17.0,
-      "tempo_presente": "RA BR",
-      "categoria_voo": "IFR",
-      "metar_raw": "METAR SBKP 120800Z 07003KT 2200 RA BR BKN009 OVC020 17/17 Q1018 RETSRA"
-    },
-    {
       "estacao": "SBRP",
       "observado_em": "2026-09-12T08:00:00.000Z",
       "latitude": -21.134,
@@ -97,8 +84,21 @@
       "metar_raw": "METAR SBRP 120800Z VRB02KT 9999 FEW040 BKN100 22/20 Q1013"
     },
     {
+      "estacao": "SBCT",
+      "observado_em": "2026-09-12T08:00:00.000Z",
+      "latitude": -25.529,
+      "longitude": -49.176,
+      "vento_kmh": 7.4,
+      "rajada_kmh": null,
+      "direcao_vento_graus": 170.0,
+      "temperatura_c": 16.0,
+      "tempo_presente": null,
+      "categoria_voo": "MVFR",
+      "metar_raw": "METAR SBCT 120800Z 17004KT 9999 BKN020 16/16 Q1014"
+    },
+    {
       "estacao": "SBUR",
-      "observado_em": "2026-09-12T07:00:00.000Z",
+      "observado_em": "2026-09-12T08:00:00.000Z",
       "latitude": -19.765,
       "longitude": -47.965,
       "vento_kmh": 16.7,
@@ -107,59 +107,59 @@
       "temperatura_c": 24.0,
       "tempo_presente": null,
       "categoria_voo": "VFR",
-      "metar_raw": "METAR SBUR 120700Z 02009KT CAVOK 24/14 Q1014"
+      "metar_raw": "METAR SBUR 120800Z 02009KT CAVOK 24/14 Q1015"
     },
     {
       "estacao": "SBSR",
-      "observado_em": "2026-09-12T07:00:00.000Z",
+      "observado_em": "2026-09-12T08:00:00.000Z",
       "latitude": -20.817,
       "longitude": -49.407,
-      "vento_kmh": 5.6,
+      "vento_kmh": 16.7,
       "rajada_kmh": null,
-      "direcao_vento_graus": 0.0,
-      "temperatura_c": 24.0,
-      "tempo_presente": null,
+      "direcao_vento_graus": 200.0,
+      "temperatura_c": 23.0,
+      "tempo_presente": "-RA",
       "categoria_voo": "VFR",
-      "metar_raw": "METAR SBSR 120700Z VRB03KT 9999 SCT020 24/20 Q1013"
+      "metar_raw": "METAR SBSR 120800Z 20009KT 180V240 9999 -RA SCT020 FEW020TCU 23/19 Q1014"
     },
     {
       "estacao": "SBDN",
-      "observado_em": "2026-09-12T07:00:00.000Z",
+      "observado_em": "2026-09-12T08:00:00.000Z",
       "latitude": -22.175,
       "longitude": -51.427,
-      "vento_kmh": 16.7,
+      "vento_kmh": 11.1,
       "rajada_kmh": null,
-      "direcao_vento_graus": 240.0,
-      "temperatura_c": 20.0,
+      "direcao_vento_graus": 220.0,
+      "temperatura_c": 19.0,
       "tempo_presente": "-TSRA",
-      "categoria_voo": "MVFR",
-      "metar_raw": "METAR SBDN 120700Z 24009KT 5000 -TSRA BKN010 FEW050CB BKN070 OVC100 20/18 Q1015"
+      "categoria_voo": "VFR",
+      "metar_raw": "METAR SBDN 120800Z 22006KT 9999 -TSRA FEW050CB OVC100 19/18 Q1015"
     },
     {
       "estacao": "SBAX",
-      "observado_em": "2026-09-12T07:00:00.000Z",
+      "observado_em": "2026-09-12T08:00:00.000Z",
       "latitude": -19.563,
       "longitude": -46.96,
-      "vento_kmh": 3.7,
+      "vento_kmh": 0.0,
       "rajada_kmh": null,
-      "direcao_vento_graus": 180.0,
-      "temperatura_c": 21.0,
+      "direcao_vento_graus": 0.0,
+      "temperatura_c": 20.0,
       "tempo_presente": null,
       "categoria_voo": "VFR",
-      "metar_raw": "METAR SBAX 120700Z AUTO 18002KT CAVOK 21/14 Q1016"
+      "metar_raw": "METAR SBAX 120800Z AUTO 00000KT CAVOK 20/14 Q1017"
     },
     {
       "estacao": "SBMG",
-      "observado_em": "2026-09-12T07:00:00.000Z",
+      "observado_em": "2026-09-12T08:00:00.000Z",
       "latitude": -23.476,
       "longitude": -52.017,
-      "vento_kmh": 27.8,
+      "vento_kmh": 16.7,
       "rajada_kmh": null,
-      "direcao_vento_graus": 290.0,
+      "direcao_vento_graus": 320.0,
       "temperatura_c": 19.0,
       "tempo_presente": "-RA",
       "categoria_voo": "VFR",
-      "metar_raw": "METAR SBMG 120700Z AUTO 29015KT 9999 -RA NSC 19/18 Q1014"
+      "metar_raw": "METAR SBMG 120800Z AUTO 32009KT 290V350 9999 -RA NSC 19/16 Q1012"
     }
   ],
   "total_estacoes": 12,
