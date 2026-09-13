@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-13T03:50:07-03:00",
-  "fonte_coletada_em": "2026-09-13T06:45:05Z",
+  "gerado_em": "2026-09-13T03:55:08-03:00",
+  "fonte_coletada_em": "2026-09-13T06:55:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
-  "coleta_ok": false,
-  "erro_coleta": "IDAP indisponivel em todos os endpoints: Remote end closed connection without response",
-  "entradas_feed": 18,
+  "coleta_ok": true,
+  "erro_coleta": null,
+  "entradas_feed": 17,
   "alertas_ativos": 1,
   "eventos_geo": [
     {
@@ -39,13 +39,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-13T06:40:00+00:00",
-        "intensidade_estimada_mmh": 0.91,
+        "ultimo_eco_em": "2026-09-13T06:50:00+00:00",
+        "intensidade_estimada_mmh": 0.61,
         "faixa_estimada_mmh": [
-          1.0,
+          0.56,
           1.15
         ],
-        "dbz_medio": 22.3,
+        "dbz_medio": 19.6,
         "pico_em": "2026-09-13T06:40:00+00:00",
         "pico_estimado_mmh": 0.91,
         "pico_dbz_medio": 22.3,
@@ -151,7 +151,7 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-13T06:50:09.723076+00:00",
+    "gerado_em": "2026-09-13T06:55:11.025956+00:00",
     "janela_min": 120,
     "eventos_com_eco": 2,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
