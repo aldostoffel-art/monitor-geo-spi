@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-12T22:01:06.725624-03:00",
+  "gerado_em": "2026-09-12T22:02:22.121588-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-13T00:58:09.000Z",
+  "historico_grupos_fim": "2026-09-13T01:01:40.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -26731,29 +26731,9 @@
               ]
             },
             {
-              "site": "CVA",
-              "reincidente": true,
-              "aberturas": 2,
-              "causa": "NÃO IDENTIFICADA",
-              "evidencias": [
-                {
-                  "hora": "17:16",
-                  "grupo": "Movel N1 SPA",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, CVO, KPB, KDV"
-                },
-                {
-                  "hora": "17:30",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
-                }
-              ]
-            },
-            {
               "site": "EBY",
               "reincidente": true,
-              "aberturas": 2,
+              "aberturas": 3,
               "causa": "NÃO IDENTIFICADA",
               "evidencias": [
                 {
@@ -26774,6 +26754,26 @@
                   "causa": "NÃO IDENTIFICADA",
                   "status": "STF, KUR, XQA, DID, CKD, TAO, NS2, PNT, PHK, EBY"
                 },
+                {
+                  "hora": "17:16",
+                  "grupo": "Movel N1 SPA",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, CVO, KPB, KDV"
+                },
+                {
+                  "hora": "17:30",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
+                }
+              ]
+            },
+            {
+              "site": "CVA",
+              "reincidente": true,
+              "aberturas": 2,
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
                 {
                   "hora": "17:16",
                   "grupo": "Movel N1 SPA",
@@ -29936,7 +29936,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 297
+      "mensagens_grupos_no_dia": 300
     }
   ],
   "ativos_agora": [
@@ -29944,12 +29944,6 @@
       "cn": "11",
       "parceira": "ABILITY",
       "sites": [
-        {
-          "site": "CJI",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 1.68
-        },
         {
           "site": "CKD",
           "causa": "NÃO IDENTIFICADA",
@@ -29985,7 +29979,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 12.33
+          "idade_ativa_h": 12.35
         },
         {
           "site": "CVO",
@@ -29998,7 +29992,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, CVO, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 2.01
+          "idade_ativa_h": 2.04
         },
         {
           "site": "DID",
@@ -30035,7 +30029,44 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 10.98
+          "idade_ativa_h": 11.0
+        },
+        {
+          "site": "EBY",
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "12:39",
+              "grupo": "Móvel 14 - 18",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "STF, KUR, XQA, DID, CKD, TAO, NS2, PNT, PHK, EBY"
+            },
+            {
+              "hora": "12:39",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "STF, KUR, XQA, DID, CKD, TAO, NS2, PNT, PHK, EBY"
+            },
+            {
+              "hora": "12:39",
+              "grupo": "Móvel 16 - 17",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "STF, KUR, XQA, DID, CKD, TAO, NS2, PNT, PHK, EBY"
+            },
+            {
+              "hora": "17:16",
+              "grupo": "Movel N1 SPA",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, CVO, KPB, KDV"
+            },
+            {
+              "hora": "17:30",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
+            }
+          ],
+          "idade_ativa_h": 0.02
         },
         {
           "site": "EKP",
@@ -30072,7 +30103,7 @@
               "status": "STF, KUR, XQA, JBN, JCB, ISJ, CKD, EKP, TAO, SP0, NS2, IJZ, PNT, BGJ"
             }
           ],
-          "idade_ativa_h": 4.0
+          "idade_ativa_h": 4.02
         },
         {
           "site": "KUR",
@@ -30109,7 +30140,7 @@
               "status": "Site: KUR"
             }
           ],
-          "idade_ativa_h": 2.68
+          "idade_ativa_h": 2.7
         },
         {
           "site": "NS2",
@@ -30146,7 +30177,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 17.68
+          "idade_ativa_h": 17.7
         },
         {
           "site": "PNT",
@@ -30183,13 +30214,13 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 15.01
+          "idade_ativa_h": 15.04
         },
         {
           "site": "RNN",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.0
+          "idade_ativa_h": 4.02
         },
         {
           "site": "STF",
@@ -30226,7 +30257,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 165.33
+          "idade_ativa_h": 165.35
         },
         {
           "site": "TAO",
@@ -30263,13 +30294,13 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 20.68
+          "idade_ativa_h": 20.7
         },
         {
           "site": "WSE",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.35
+          "idade_ativa_h": 3.37
         },
         {
           "site": "XQA",
@@ -30306,7 +30337,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 38.33
+          "idade_ativa_h": 38.35
         }
       ]
     },
@@ -30318,13 +30349,13 @@
           "site": "GRY",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 16.33
+          "idade_ativa_h": 16.35
         },
         {
           "site": "NPA",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.66
+          "idade_ativa_h": 4.69
         }
       ]
     },
@@ -30367,7 +30398,7 @@
               "status": "PDN, IPY, YBA, PGI, TIB, BAD, BKV, KHB"
             }
           ],
-          "idade_ativa_h": 0.33
+          "idade_ativa_h": 0.35
         }
       ]
     },
@@ -30379,7 +30410,7 @@
           "site": "BMG",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.33
+          "idade_ativa_h": 0.35
         },
         {
           "site": "KPV",
@@ -30416,7 +30447,7 @@
               "status": "• Site: KPV"
             }
           ],
-          "idade_ativa_h": 3.68
+          "idade_ativa_h": 3.7
         },
         {
           "site": "SM5",
@@ -30453,7 +30484,7 @@
               "status": "KPV/SM5/JKN Tecnico Osmar no local acoplando GMG abrindo protocolo concessionária TS9 aguardando liberação de acesso WINITY Tecnico em deslocamento site concentrador KPV/SM5"
             }
           ],
-          "idade_ativa_h": 3.68
+          "idade_ativa_h": 3.7
         },
         {
           "site": "TS9",
@@ -30490,7 +30521,7 @@
               "status": "TS9, KPV, ICA, YPI, IRP, ALM, NVC, NBB, DBA, NCM, YOC, NCO, NCB, IIO"
             }
           ],
-          "idade_ativa_h": 33.0
+          "idade_ativa_h": 33.02
         }
       ]
     },
@@ -30502,7 +30533,7 @@
           "site": "PAF",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.66
+          "idade_ativa_h": 4.69
         }
       ]
     },
@@ -30514,7 +30545,7 @@
           "site": "TVY",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 2.35
+          "idade_ativa_h": 2.37
         }
       ]
     },
@@ -30526,13 +30557,13 @@
           "site": "TAC",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.66
+          "idade_ativa_h": 4.69
         },
         {
           "site": "U50",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1068.68
+          "idade_ativa_h": 1068.7
         }
       ]
     },
@@ -30575,13 +30606,13 @@
               "status": "EJT -"
             }
           ],
-          "idade_ativa_h": 55.68
+          "idade_ativa_h": 55.7
         },
         {
           "site": "HNV",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 2.35
+          "idade_ativa_h": 2.37
         },
         {
           "site": "PJL",
@@ -30618,7 +30649,7 @@
               "status": "PJL - atendimento - furto"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.04
         },
         {
           "site": "SFZ",
@@ -30655,7 +30686,7 @@
               "status": "SFZ, EJT, MMI, KSQ, BTQ, BVI, NW1, JBD, DVB, PJL, 0IJ, JS9, 0NE, SQR, VCH, S2U"
             }
           ],
-          "idade_ativa_h": 1.35
+          "idade_ativa_h": 1.37
         }
       ]
     }
