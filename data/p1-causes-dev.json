@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-12T21:01:39.715297-03:00",
+  "gerado_em": "2026-09-12T21:06:17.212630-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-12T23:40:41.000Z",
+  "historico_grupos_fim": "2026-09-13T00:00:59.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -29262,6 +29262,44 @@
               ]
             },
             {
+              "site": "PJL",
+              "reincidente": true,
+              "aberturas": 2,
+              "causa": "FURTO/VANDALISMO",
+              "evidencias": [
+                {
+                  "hora": "12:39",
+                  "grupo": "Móvel 16 - 17",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "EJT, MMI, BVI, NW1, PJL, SQR, S2U, MF8, MPD"
+                },
+                {
+                  "hora": "14:55",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "Site PJL"
+                },
+                {
+                  "hora": "17:30",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "EJT, NW1, RDB, DVB, MOP, PJL, SSN, SNR"
+                },
+                {
+                  "hora": "17:32",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "EM VERIFICAÇÃO",
+                  "status": "PJL Jonathan no local verificando a parte da TX"
+                },
+                {
+                  "hora": "17:39",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "FURTO/VANDALISMO",
+                  "status": "PJL - atendimento - furto"
+                }
+              ]
+            },
+            {
               "site": "RDB",
               "reincidente": true,
               "aberturas": 2,
@@ -29701,44 +29739,6 @@
               ]
             },
             {
-              "site": "PJL",
-              "reincidente": true,
-              "aberturas": 1,
-              "causa": "FURTO/VANDALISMO",
-              "evidencias": [
-                {
-                  "hora": "12:39",
-                  "grupo": "Móvel 16 - 17",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "EJT, MMI, BVI, NW1, PJL, SQR, S2U, MF8, MPD"
-                },
-                {
-                  "hora": "14:55",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "Site PJL"
-                },
-                {
-                  "hora": "17:30",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "EJT, NW1, RDB, DVB, MOP, PJL, SSN, SNR"
-                },
-                {
-                  "hora": "17:32",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "EM VERIFICAÇÃO",
-                  "status": "PJL Jonathan no local verificando a parte da TX"
-                },
-                {
-                  "hora": "17:39",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "FURTO/VANDALISMO",
-                  "status": "PJL - atendimento - furto"
-                }
-              ]
-            },
-            {
               "site": "REA",
               "reincidente": true,
               "aberturas": 1,
@@ -29929,7 +29929,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 292
+      "mensagens_grupos_no_dia": 294
     }
   ],
   "ativos_agora": [
@@ -29941,7 +29941,7 @@
           "site": "CJI",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.68
+          "idade_ativa_h": 0.75
         },
         {
           "site": "CKD",
@@ -29978,7 +29978,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 11.33
+          "idade_ativa_h": 11.4
         },
         {
           "site": "CVO",
@@ -29991,7 +29991,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, CVO, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.08
         },
         {
           "site": "DID",
@@ -30028,7 +30028,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 9.98
+          "idade_ativa_h": 10.05
         },
         {
           "site": "EBY",
@@ -30065,7 +30065,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 4.33
+          "idade_ativa_h": 4.4
         },
         {
           "site": "EKP",
@@ -30102,7 +30102,7 @@
               "status": "STF, KUR, XQA, JBN, JCB, ISJ, CKD, EKP, TAO, SP0, NS2, IJZ, PNT, BGJ"
             }
           ],
-          "idade_ativa_h": 3.0
+          "idade_ativa_h": 3.07
         },
         {
           "site": "KUR",
@@ -30139,7 +30139,7 @@
               "status": "Site: KUR"
             }
           ],
-          "idade_ativa_h": 1.68
+          "idade_ativa_h": 1.75
         },
         {
           "site": "NS2",
@@ -30176,7 +30176,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 16.68
+          "idade_ativa_h": 16.75
         },
         {
           "site": "PNT",
@@ -30213,13 +30213,13 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 14.01
+          "idade_ativa_h": 14.08
         },
         {
           "site": "RNN",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.0
+          "idade_ativa_h": 3.07
         },
         {
           "site": "STF",
@@ -30256,7 +30256,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 164.33
+          "idade_ativa_h": 164.4
         },
         {
           "site": "TAO",
@@ -30293,13 +30293,13 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 19.68
+          "idade_ativa_h": 19.75
         },
         {
           "site": "WSE",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 2.35
+          "idade_ativa_h": 2.42
         },
         {
           "site": "XQA",
@@ -30336,7 +30336,7 @@
               "status": "CVA, STF, XQA, DID, CKD, TAO, NS2, PNT, EBY, KPB, KDV"
             }
           ],
-          "idade_ativa_h": 37.33
+          "idade_ativa_h": 37.4
         }
       ]
     },
@@ -30348,13 +30348,13 @@
           "site": "GRY",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 15.33
+          "idade_ativa_h": 15.4
         },
         {
           "site": "NPA",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.66
+          "idade_ativa_h": 3.73
         }
       ]
     },
@@ -30397,7 +30397,7 @@
               "status": "• Site: KPV"
             }
           ],
-          "idade_ativa_h": 2.68
+          "idade_ativa_h": 2.75
         },
         {
           "site": "SM5",
@@ -30434,7 +30434,7 @@
               "status": "KPV/SM5/JKN Tecnico Osmar no local acoplando GMG abrindo protocolo concessionária TS9 aguardando liberação de acesso WINITY Tecnico em deslocamento site concentrador KPV/SM5"
             }
           ],
-          "idade_ativa_h": 2.68
+          "idade_ativa_h": 2.75
         },
         {
           "site": "TS9",
@@ -30471,7 +30471,7 @@
               "status": "TS9, KPV, ICA, YPI, IRP, ALM, NVC, NBB, DBA, NCM, YOC, NCO, NCB, IIO"
             }
           ],
-          "idade_ativa_h": 32.0
+          "idade_ativa_h": 32.07
         }
       ]
     },
@@ -30483,7 +30483,7 @@
           "site": "PAF",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.66
+          "idade_ativa_h": 3.73
         }
       ]
     },
@@ -30495,7 +30495,7 @@
           "site": "TVY",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.35
+          "idade_ativa_h": 1.42
         }
       ]
     },
@@ -30507,13 +30507,13 @@
           "site": "TAC",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.66
+          "idade_ativa_h": 3.73
         },
         {
           "site": "U50",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1067.68
+          "idade_ativa_h": 1067.75
         }
       ]
     },
@@ -30556,13 +30556,50 @@
               "status": "EJT -"
             }
           ],
-          "idade_ativa_h": 54.68
+          "idade_ativa_h": 54.75
         },
         {
           "site": "HNV",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.35
+          "idade_ativa_h": 1.42
+        },
+        {
+          "site": "PJL",
+          "causa": "FURTO/VANDALISMO",
+          "evidencias": [
+            {
+              "hora": "12:39",
+              "grupo": "Móvel 16 - 17",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "EJT, MMI, BVI, NW1, PJL, SQR, S2U, MF8, MPD"
+            },
+            {
+              "hora": "14:55",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "Site PJL"
+            },
+            {
+              "hora": "17:30",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "EJT, NW1, RDB, DVB, MOP, PJL, SSN, SNR"
+            },
+            {
+              "hora": "17:32",
+              "grupo": "Móvel 15 - 19",
+              "causa": "EM VERIFICAÇÃO",
+              "status": "PJL Jonathan no local verificando a parte da TX"
+            },
+            {
+              "hora": "17:39",
+              "grupo": "Móvel 15 - 19",
+              "causa": "FURTO/VANDALISMO",
+              "status": "PJL - atendimento - furto"
+            }
+          ],
+          "idade_ativa_h": 0.08
         },
         {
           "site": "SFZ",
@@ -30599,7 +30636,7 @@
               "status": "SFZ, EJT, MMI, KSQ, BTQ, BVI, NW1, JBD, DVB, PJL, 0IJ, JS9, 0NE, SQR, VCH, S2U"
             }
           ],
-          "idade_ativa_h": 0.35
+          "idade_ativa_h": 0.42
         }
       ]
     }
