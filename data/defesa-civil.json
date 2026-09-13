@@ -1,16 +1,108 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-13T00:05:32-03:00",
-  "fonte_coletada_em": "2026-09-13T03:05:30Z",
+  "gerado_em": "2026-09-13T00:10:21-03:00",
+  "fonte_coletada_em": "2026-09-13T03:10:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
   "entradas_feed": 28,
-  "alertas_ativos": 0,
-  "eventos_geo": [],
+  "alertas_ativos": 1,
+  "eventos_geo": [
+    {
+      "id_alerta": "190141/2026",
+      "municipio": "Fartura",
+      "latitude": -23.391281,
+      "longitude": -49.510894,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:00h08 Chuva isolada na regiao de Fartura e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado!",
+      "resumo": "Defesa Civil:00h08 Chuva isolada na regiao de Fartura e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado!",
+      "descricao": "00h08 Chuva isolada na região de Fartura e Taguaí. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-13T00:08:31-03:00",
+      "fim": "2026-09-13T03:30:00-03:00",
+      "vigencia": "2026-09-13T00:08:31-03:00 → 2026-09-13T03:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-13T03:00:00+00:00",
+        "intensidade_estimada_mmh": 1.96,
+        "faixa_estimada_mmh": [
+          1.91,
+          15.38
+        ],
+        "dbz_medio": 27.7,
+        "pico_em": "2026-09-13T03:00:00+00:00",
+        "pico_estimado_mmh": 1.96,
+        "pico_dbz_medio": 27.7,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190141/2026",
+      "municipio": "Taguaí",
+      "latitude": -23.454727,
+      "longitude": -49.399856,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:00h08 Chuva isolada na regiao de Fartura e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado!",
+      "resumo": "Defesa Civil:00h08 Chuva isolada na regiao de Fartura e Taguai. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado!",
+      "descricao": "00h08 Chuva isolada na região de Fartura e Taguaí. Tem raios e ventos. Atinge cidades vizinhas. Tome cuidado!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-13T00:08:31-03:00",
+      "fim": "2026-09-13T03:30:00-03:00",
+      "vigencia": "2026-09-13T00:08:31-03:00 → 2026-09-13T03:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-13T03:00:00+00:00",
+        "intensidade_estimada_mmh": 1.02,
+        "faixa_estimada_mmh": [
+          1.15,
+          3.16
+        ],
+        "dbz_medio": 23.2,
+        "pico_em": "2026-09-13T03:00:00+00:00",
+        "pico_estimado_mmh": 1.02,
+        "pico_dbz_medio": 23.2,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    }
+  ],
   "eventos_recentes_geo": [],
   "janela_recentes_horas": 6,
-  "alertas_sp_sem_municipio_spi": []
+  "alertas_sp_sem_municipio_spi": [],
+  "radar_enriquecimento": {
+    "fonte": "RainViewer",
+    "gerado_em": "2026-09-13T03:10:23.227072+00:00",
+    "janela_min": 120,
+    "eventos_com_eco": 2,
+    "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
+  }
 }
