@@ -2099,3 +2099,40 @@ body.tv-mode .tv48-card{padding:3px 5px!important;min-height:0!important}.tv48-c
   body.tv-mode .tv-event-cities b,body.tv-mode .tv-tree-cities b,body.tv-mode .tv-compare b{font-size:15px!important}
   body.tv-mode .tv-event-cities em,body.tv-mode .tv-tree-cities em,body.tv-mode .tv-tree-cities small,body.tv-mode .tv-compare span,body.tv-mode .tv-compare span em{font-size:12px!important}
 }
+
+/* TV OPERACIONAL • encaixe vertical completo v28 • DEV
+   Corrige cards inferiores cortados em TVs/navegadores com viewport baixo. */
+@media(min-width:1200px){
+  body.tv-mode .tv-view{
+    grid-template-rows:auto auto auto minmax(245px,1.15fr) 56px minmax(220px,1fr) auto!important;
+    gap:5px!important;
+  }
+  body.tv-mode .tv-map-grid,
+  body.tv-mode .tv-map-panel,
+  body.tv-mode .tv-side{min-height:245px!important}
+  body.tv-mode .tv-forecast48-wrap{height:56px!important;min-height:56px!important;max-height:56px!important}
+  body.tv-mode .tv-bottom-v6{height:auto!important;min-height:220px!important;overflow:visible!important}
+  body.tv-mode .tv-bottom-block{height:auto!important;min-height:220px!important;overflow:visible!important}
+  body.tv-mode .tv-event-cities,
+  body.tv-mode .tv-tree-cities,
+  body.tv-mode .tv-compare{overflow:visible!important;max-height:none!important}
+}
+@media(min-width:1200px) and (max-height:900px){
+  body.tv-mode .tv-view{grid-template-rows:auto auto auto 225px 52px 205px auto!important;gap:4px!important}
+  body.tv-mode .tv-map-grid,
+  body.tv-mode .tv-map-panel,
+  body.tv-mode .tv-side{min-height:225px!important;height:225px!important}
+  body.tv-mode .tv-forecast48-wrap{height:52px!important;min-height:52px!important;max-height:52px!important}
+  body.tv-mode .tv-bottom-v6,
+  body.tv-mode .tv-bottom-block{min-height:205px!important}
+}
+@media(min-width:1200px) and (max-height:760px){
+  body.tv-mode .tv-view{grid-template-rows:auto auto auto 200px 48px 205px auto!important;gap:4px!important}
+  body.tv-mode .tv-map-grid,
+  body.tv-mode .tv-map-panel,
+  body.tv-mode .tv-side{min-height:200px!important;height:200px!important}
+  body.tv-mode .tv-forecast48-wrap{height:48px!important;min-height:48px!important;max-height:48px!important}
+  body.tv-mode .tv-bottom-v6,
+  body.tv-mode .tv-bottom-block{min-height:205px!important}
+  body.tv-mode .tv-bottom-block{padding:8px 9px!important}
+}
