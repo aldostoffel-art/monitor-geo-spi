@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-13T05:15:11-03:00",
-  "fonte_coletada_em": "2026-09-13T08:15:05Z",
+  "gerado_em": "2026-09-13T05:25:06-03:00",
+  "fonte_coletada_em": "2026-09-13T08:25:03Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 14,
-  "alertas_ativos": 1,
+  "entradas_feed": 15,
+  "alertas_ativos": 2,
   "eventos_geo": [
     {
       "id_alerta": "190143/2026",
@@ -39,13 +39,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-13T08:00:00+00:00",
-        "intensidade_estimada_mmh": 0.12,
+        "ultimo_eco_em": "2026-09-13T08:20:00+00:00",
+        "intensidade_estimada_mmh": 0.07,
         "faixa_estimada_mmh": [
-          0.12,
-          0.24
+          0.07,
+          0.07
         ],
-        "dbz_medio": 8.5,
+        "dbz_medio": 5.0,
         "pico_em": "2026-09-13T06:40:00+00:00",
         "pico_estimado_mmh": 0.91,
         "pico_dbz_medio": 22.3,
@@ -81,17 +81,49 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-13T08:10:00+00:00",
-        "intensidade_estimada_mmh": 0.56,
+        "ultimo_eco_em": "2026-09-13T08:20:00+00:00",
+        "intensidade_estimada_mmh": 0.5,
         "faixa_estimada_mmh": [
           0.56,
-          0.56
+          1.0
         ],
-        "dbz_medio": 19.0,
+        "dbz_medio": 18.2,
         "pico_em": "2026-09-13T08:10:00+00:00",
         "pico_estimado_mmh": 0.56,
         "pico_dbz_medio": 19.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190144/2026",
+      "municipio": "São Francisco",
+      "latitude": -20.358926,
+      "longitude": -50.69761,
+      "tipo": "ALAGAMENTOS",
+      "titulo": "ALAGAMENTOS",
+      "resumo": "OBSERVAÇÃO - 13/09 05:16 - ALAGAMENTOS COSTEIROS para os municípios de Joinville e São Francisco do Sul. Pico previsto às 05:30h. Ocorrências ligue 199 ou 193.",
+      "descricao": "OBSERVAÇÃO - 13/09 05:16 - ALAGAMENTOS COSTEIROS para os municípios de Joinville e São Francisco do Sul. Pico previsto às 05:30h. Ocorrências ligue 199 ou 193.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-13T05:21:11-03:00",
+      "fim": "2026-09-13T08:20:00-03:00",
+      "vigencia": "2026-09-13T05:21:11-03:00 → 2026-09-13T08:20:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "Joinville/SC, São Francisco do Sul/SC"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     }
   ],
@@ -151,7 +183,7 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-13T08:15:15.829117+00:00",
+    "gerado_em": "2026-09-13T08:25:08.721723+00:00",
     "janela_min": 120,
     "eventos_com_eco": 2,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
