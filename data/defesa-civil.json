@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-13T14:05:32-03:00",
-  "fonte_coletada_em": "2026-09-13T17:05:30Z",
+  "gerado_em": "2026-09-13T14:10:21-03:00",
+  "fonte_coletada_em": "2026-09-13T17:10:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 15,
-  "alertas_ativos": 1,
+  "entradas_feed": 18,
+  "alertas_ativos": 2,
   "eventos_geo": [
     {
       "id_alerta": "190157/2026",
@@ -33,7 +33,24 @@
       "sites_referencia": 45,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-13T17:10:00+00:00",
+        "intensidade_estimada_mmh": 4.21,
+        "faixa_estimada_mmh": [
+          4.21,
+          4.21
+        ],
+        "dbz_medio": 33.0,
+        "pico_em": "2026-09-13T17:10:00+00:00",
+        "pico_estimado_mmh": 4.21,
+        "pico_dbz_medio": 33.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "190157/2026",
@@ -58,7 +75,24 @@
       "sites_referencia": 28,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-13T16:50:00+00:00",
+        "intensidade_estimada_mmh": 0.49,
+        "faixa_estimada_mmh": [
+          0.49,
+          0.49
+        ],
+        "dbz_medio": 18.0,
+        "pico_em": "2026-09-13T16:50:00+00:00",
+        "pico_estimado_mmh": 0.49,
+        "pico_dbz_medio": 18.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     },
     {
       "id_alerta": "190157/2026",
@@ -83,7 +117,14 @@
       "sites_referencia": 10,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
     },
     {
       "id_alerta": "190157/2026",
@@ -108,7 +149,150 @@
       "sites_referencia": 108,
       "area_oficial": [
         "SÃO PAULO/SP"
-      ]
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-13T17:10:00+00:00",
+        "intensidade_estimada_mmh": 4.38,
+        "faixa_estimada_mmh": [
+          4.21,
+          17.76
+        ],
+        "dbz_medio": 33.3,
+        "pico_em": "2026-09-13T17:10:00+00:00",
+        "pico_estimado_mmh": 4.38,
+        "pico_dbz_medio": 33.3,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190158/2026",
+      "municipio": "Cajamar",
+      "latitude": -23.351225,
+      "longitude": -46.848041,
+      "tipo": "DESLIZAMENTOS",
+      "titulo": "Defesa Civil:14:05 - Chuva fraca persistente na regiao de Franco da Rocha, Mairipora e Cajamar. Atinge municipios vizinhos. Em areas de risco, atencao!",
+      "resumo": "Defesa Civil:14:05 - Chuva fraca persistente na regiao de Franco da Rocha, Mairipora e Cajamar. Atinge municipios vizinhos. Em areas de risco, atencao!",
+      "descricao": "14:05 - Chuva fraca persistente na região de Franco da Rocha, Mairiporã e Cajamar. Atinge municípios vizinhos. Em áreas de risco, redobre os cuidados. Atenção para o risco de deslizamentos.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-13T14:06:02-03:00",
+      "fim": "2026-09-13T23:55:00-03:00",
+      "vigencia": "2026-09-13T14:06:02-03:00 → 2026-09-13T23:55:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 22,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-13T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.77,
+        "faixa_estimada_mmh": [
+          1.0,
+          8.65
+        ],
+        "dbz_medio": 27.0,
+        "pico_em": "2026-09-13T17:00:00+00:00",
+        "pico_estimado_mmh": 2.29,
+        "pico_dbz_medio": 28.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190158/2026",
+      "municipio": "Franco Da Rocha",
+      "latitude": -23.321261,
+      "longitude": -46.726225,
+      "tipo": "DESLIZAMENTOS",
+      "titulo": "Defesa Civil:14:05 - Chuva fraca persistente na regiao de Franco da Rocha, Mairipora e Cajamar. Atinge municipios vizinhos. Em areas de risco, atencao!",
+      "resumo": "Defesa Civil:14:05 - Chuva fraca persistente na regiao de Franco da Rocha, Mairipora e Cajamar. Atinge municipios vizinhos. Em areas de risco, atencao!",
+      "descricao": "14:05 - Chuva fraca persistente na região de Franco da Rocha, Mairiporã e Cajamar. Atinge municípios vizinhos. Em áreas de risco, redobre os cuidados. Atenção para o risco de deslizamentos.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-13T14:06:02-03:00",
+      "fim": "2026-09-13T23:55:00-03:00",
+      "vigencia": "2026-09-13T14:06:02-03:00 → 2026-09-13T23:55:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 12,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-13T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.17,
+        "faixa_estimada_mmh": [
+          1.0,
+          8.65
+        ],
+        "dbz_medio": 24.1,
+        "pico_em": "2026-09-13T16:50:00+00:00",
+        "pico_estimado_mmh": 3.11,
+        "pico_dbz_medio": 30.9,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190158/2026",
+      "municipio": "Mairiporã",
+      "latitude": -23.328017,
+      "longitude": -46.586303,
+      "tipo": "DESLIZAMENTOS",
+      "titulo": "Defesa Civil:14:05 - Chuva fraca persistente na regiao de Franco da Rocha, Mairipora e Cajamar. Atinge municipios vizinhos. Em areas de risco, atencao!",
+      "resumo": "Defesa Civil:14:05 - Chuva fraca persistente na regiao de Franco da Rocha, Mairipora e Cajamar. Atinge municipios vizinhos. Em areas de risco, atencao!",
+      "descricao": "14:05 - Chuva fraca persistente na região de Franco da Rocha, Mairiporã e Cajamar. Atinge municípios vizinhos. Em áreas de risco, redobre os cuidados. Atenção para o risco de deslizamentos.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-13T14:06:02-03:00",
+      "fim": "2026-09-13T23:55:00-03:00",
+      "vigencia": "2026-09-13T14:06:02-03:00 → 2026-09-13T23:55:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 21,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-13T17:10:00+00:00",
+        "intensidade_estimada_mmh": 1.46,
+        "faixa_estimada_mmh": [
+          0.56,
+          8.65
+        ],
+        "dbz_medio": 25.6,
+        "pico_em": "2026-09-13T17:00:00+00:00",
+        "pico_estimado_mmh": 3.08,
+        "pico_dbz_medio": 30.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [],
@@ -145,6 +329,21 @@
       "area": [
         "SÃO PAULO/SP"
       ]
+    },
+    {
+      "id": "190160/2026",
+      "evento": "DESLIZAMENTOS",
+      "headline": "Defesa Civil:14:05 - Chuva fraca persistente na regiao Baixada Santista. Atinge municipios vizinhos. Em areas de risco, redobre os cuidados. Atencao!",
+      "area": [
+        "SÃO PAULO/SP"
+      ]
     }
-  ]
+  ],
+  "radar_enriquecimento": {
+    "fonte": "RainViewer",
+    "gerado_em": "2026-09-13T17:10:27.119178+00:00",
+    "janela_min": 120,
+    "eventos_com_eco": 6,
+    "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
+  }
 }
