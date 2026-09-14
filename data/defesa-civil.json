@@ -1,8 +1,8 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-14T19:55:57-03:00",
-  "fonte_coletada_em": "2026-09-14T22:55:06Z",
+  "gerado_em": "2026-09-14T20:00:31-03:00",
+  "fonte_coletada_em": "2026-09-14T23:00:06Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
@@ -406,9 +406,9 @@
           8.65
         ],
         "dbz_medio": 27.1,
-        "pico_em": "2026-09-14T21:00:00+00:00",
-        "pico_estimado_mmh": 8.85,
-        "pico_dbz_medio": 38.2,
+        "pico_em": "2026-09-14T21:10:00+00:00",
+        "pico_estimado_mmh": 6.53,
+        "pico_dbz_medio": 36.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -448,9 +448,9 @@
           0.56
         ],
         "dbz_medio": 18.0,
-        "pico_em": "2026-09-14T21:00:00+00:00",
-        "pico_estimado_mmh": 12.14,
-        "pico_dbz_medio": 40.4,
+        "pico_em": "2026-09-14T21:20:00+00:00",
+        "pico_estimado_mmh": 9.25,
+        "pico_dbz_medio": 38.5,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -522,9 +522,9 @@
           0.56
         ],
         "dbz_medio": 17.7,
-        "pico_em": "2026-09-14T21:00:00+00:00",
-        "pico_estimado_mmh": 0.76,
-        "pico_dbz_medio": 21.1,
+        "pico_em": "2026-09-14T22:20:00+00:00",
+        "pico_estimado_mmh": 0.54,
+        "pico_dbz_medio": 18.8,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -764,9 +764,9 @@
           0.56
         ],
         "dbz_medio": 19.0,
-        "pico_em": "2026-09-14T21:00:00+00:00",
-        "pico_estimado_mmh": 1.76,
-        "pico_dbz_medio": 26.9,
+        "pico_em": "2026-09-14T21:10:00+00:00",
+        "pico_estimado_mmh": 1.35,
+        "pico_dbz_medio": 25.1,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -837,21 +837,11 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-14T21:00:00+00:00",
-        "intensidade_estimada_mmh": 1.4,
-        "faixa_estimada_mmh": [
-          1.15,
-          6.48
-        ],
-        "dbz_medio": 25.3,
-        "pico_em": "2026-09-14T21:00:00+00:00",
-        "pico_estimado_mmh": 1.4,
-        "pico_dbz_medio": 25.3,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -879,21 +869,11 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-14T21:00:00+00:00",
-        "intensidade_estimada_mmh": 0.47,
-        "faixa_estimada_mmh": [
-          0.56,
-          0.56
-        ],
-        "dbz_medio": 17.8,
-        "pico_em": "2026-09-14T21:00:00+00:00",
-        "pico_estimado_mmh": 0.47,
-        "pico_dbz_medio": 17.8,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     }
   ],
@@ -1169,9 +1149,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-14T22:56:00.360562+00:00",
+    "gerado_em": "2026-09-14T23:00:35.922730+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 15,
+    "eventos_com_eco": 13,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
