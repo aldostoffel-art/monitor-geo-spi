@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-14T07:05:20-03:00",
-  "fonte_coletada_em": "2026-09-14T10:05:05Z",
+  "gerado_em": "2026-09-14T07:10:23-03:00",
+  "fonte_coletada_em": "2026-09-14T10:10:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
   "entradas_feed": 35,
-  "alertas_ativos": 2,
+  "alertas_ativos": 3,
   "eventos_geo": [
     {
       "id_alerta": "190225/2026",
@@ -172,9 +172,9 @@
           4.21
         ],
         "dbz_medio": 22.7,
-        "pico_em": "2026-09-14T08:10:00+00:00",
-        "pico_estimado_mmh": 2.45,
-        "pico_dbz_medio": 29.2,
+        "pico_em": "2026-09-14T08:20:00+00:00",
+        "pico_estimado_mmh": 1.65,
+        "pico_dbz_medio": 26.5,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -259,6 +259,90 @@
         "pico_em": "2026-09-14T09:10:00+00:00",
         "pico_estimado_mmh": 1.5,
         "pico_dbz_medio": 25.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190233/2026",
+      "municipio": "José Bonifácio",
+      "latitude": -21.08347,
+      "longitude": -49.742552,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:07h05 Chuva na regiao de Penapolis e Jose Bonifacio. Tem raios. Atinge municipios vizinhos. Busque abrigo.",
+      "resumo": "Defesa Civil:07h05 Chuva na regiao de Penapolis e Jose Bonifacio. Tem raios. Atinge municipios vizinhos. Busque abrigo.",
+      "descricao": "07h05 Chuva na região de Penápolis e José Bonifácio. Tem raios. Atinge municípios vizinhos. Busque abrigo.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T07:05:48-03:00",
+      "fim": "2026-09-14T09:25:00-03:00",
+      "vigencia": "2026-09-14T07:05:48-03:00 → 2026-09-14T09:25:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T10:00:00+00:00",
+        "intensidade_estimada_mmh": 1.41,
+        "faixa_estimada_mmh": [
+          1.07,
+          8.65
+        ],
+        "dbz_medio": 25.4,
+        "pico_em": "2026-09-14T10:00:00+00:00",
+        "pico_estimado_mmh": 1.41,
+        "pico_dbz_medio": 25.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190233/2026",
+      "municipio": "Penápolis",
+      "latitude": -21.416114,
+      "longitude": -50.089443,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:07h05 Chuva na regiao de Penapolis e Jose Bonifacio. Tem raios. Atinge municipios vizinhos. Busque abrigo.",
+      "resumo": "Defesa Civil:07h05 Chuva na regiao de Penapolis e Jose Bonifacio. Tem raios. Atinge municipios vizinhos. Busque abrigo.",
+      "descricao": "07h05 Chuva na região de Penápolis e José Bonifácio. Tem raios. Atinge municípios vizinhos. Busque abrigo.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T07:05:48-03:00",
+      "fim": "2026-09-14T09:25:00-03:00",
+      "vigencia": "2026-09-14T07:05:48-03:00 → 2026-09-14T09:25:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 8,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T10:00:00+00:00",
+        "intensidade_estimada_mmh": 6.39,
+        "faixa_estimada_mmh": [
+          6.48,
+          8.65
+        ],
+        "dbz_medio": 35.9,
+        "pico_em": "2026-09-14T10:00:00+00:00",
+        "pico_estimado_mmh": 6.39,
+        "pico_dbz_medio": 35.9,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
@@ -444,9 +528,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-14T10:05:24.710064+00:00",
+    "gerado_em": "2026-09-14T10:10:26.609123+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 6,
+    "eventos_com_eco": 8,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
