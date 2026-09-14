@@ -1250,19 +1250,24 @@ function tvRenderAlertDeck(){
  const dcRows=(typeof operationalDefesaEvents==='function'?operationalDefesaEvents():[]).filter(e=>defesaItemStillActive(e));
  const seen=new Set(),current=[];
  for(const x of official){const k=norm(x.municipio)+'|'+norm(x.alert?.tipo||x.alert?.titulo||'');if(seen.has(k))continue;seen.add(k);current.push({kind:'official',...x})}
- for(const e of dcRows){const k=norm(e.municipio)+'|'+norm(e.tipo||e.titulo||'');if(seen.has(k))continue;seen.add(k);current.push({kind:'dc',municipio:e.municipio,alert:e,weather:weatherEvents.find(w=>norm(w.municipio)===norm(e.municipio))||{},rank:decisionOfficialSeverityRank(e)>=2?2:1})}
- current.sort((a,b)=>Number(b.rank||0)-Number(a.rank||0)||Number(b.weather?.score_risco||0)-Number(a.weather?.score_risco||0));
+ for(const e of dcRows){const k=norm(e.municipio)+'|'+norm(e.tipo||e.titulo||'');if(seen.has(k))continue;seen.add(k);const w=weatherEvents.find(z=>norm(z.municipio)===norm(e.municipio))||{};current.push({kind:'dc',municipio:e.municipio,alert:e,weather:w,rank:decisionOfficialSeverityRank(e)>=2?2:1})}
+ current.forEach(x=>{x.localUrgency=decisionUrgencyText(x.municipio,x.alert||{},x.weather||{})});
+ current.sort((a,b)=>Number(b.localUrgency?.meta?.score||0)-Number(a.localUrgency?.meta?.score||0)||Number(b.rank||0)-Number(a.rank||0));
  const main=current[0]||null;
  const forecasts=[3,6].map(h=>{const rows=nvProjectionRows(h),x=[...rows].sort((a,b)=>tvSeverityRank(b)-tvSeverityRank(a)||Number(b.priority_score||b.score||0)-Number(a.priority_score||a.score||0))[0];return x?{h,x}:null}).filter(Boolean);
  if(!main&&!forecasts.length){box.hidden=true;box.innerHTML='';return}
  let html='';
- if(main){const a=main.alert||{},w=main.weather||{},u=decisionUrgencyText(main.municipio,a,w),vig=a.vigencia||[a.inicio,a.fim].filter(Boolean).join(' → '),title=u.meta.score>=70?'ALERTA CRÍTICO':u.meta.score>=50?'ALERTA SEVERO':u.meta.score>=30?'ALERTA ALTO':'ALERTA ATENÇÃO',potential=decisionOfficialPotential(a);html+=`<article class="tv-alert-main ${u.meta.cls}"><div class="tv-alert-icon">⚠</div><div class="tv-alert-copy"><div class="tv-alert-title"><span>${esc(title)}</span><b>${esc(main.municipio)}</b><em>${esc(u.meta.label)} • ${u.meta.score}/100</em></div><p>${esc(u.text)}</p><div class="tv-alert-now"><strong>AGORA</strong><span>${esc(u.meta.local.observed.join(' • '))}</span><span>⚠ potencial: ${esc(potential)}</span><span>📡 ${Number(w.sites_total||0)} sites • ${Number(w.sites_ate_4h||0)} ≤4h</span></div><small>CEMADEN/METAR + modelo • ${esc(a.fonte||'alerta oficial')}${vig?` • vigência ${esc(vig)}`:''}</small></div></article>`;
+ if(main){
+   const a=main.alert||{},w=main.weather||{},u=main.localUrgency||decisionUrgencyText(main.municipio,a,w),m=u.meta||{},score=Number(m.score||0),title=score>=70?'ALERTA CRÍTICO':score>=50?'ALERTA SEVERO':score>=30?'ALERTA ALTO':'ALERTA ATENÇÃO';
+   const sev=`${m.label||'ATENÇÃO'} • ${score}/100`,vig=a.vigencia||[a.inicio,a.fim].filter(Boolean).join(' → '),potential=decisionOfficialPotential(a);
+   html+=`<article class="tv-alert-main ${score>=70?'extreme':score>=50?'severe':'active'}"><div class="tv-alert-icon">⚠</div><div class="tv-alert-copy"><div class="tv-alert-title"><span>${esc(title)}</span><b>${esc(main.municipio)}</b><em>${esc(sev)}</em></div><p>${esc(u.text)}</p><div class="tv-alert-now"><strong>URGÊNCIA LOCAL</strong><span>${esc((m.local?.observed||[]).join(' • ')||'sem observação local suficiente')}</span><span>⚠ potencial oficial: ${esc(potential)}</span><span>📡 ${Number(w.sites_total||0)} sites • ${Number(w.sites_ate_4h||0)} ≤4h</span></div><small>Fonte local: CEMADEN/METAR + modelo • alerta: ${esc(a.fonte||'Defesa Civil / oficial')}${vig?` • vigência ${esc(vig)}`:''}</small></div></article>`;
  }
  const extras=current.slice(1,4);
- if(extras.length)html+=`<div class="tv-alert-more">${extras.map(x=>{const a=x.alert||{};return `<div><span>🚨 ${esc(x.municipio)}</span><b>${esc(a.tipo||a.titulo||'Alerta oficial')}</b><small>${esc(a.severidade||a.gravidade||'vigente')}</small></div>`}).join('')}</div>`;
- if(forecasts.length)html+=`<div class="tv-alert-forecast">${forecasts.map(({h,x})=>`<article><small>PREVISÃO ${h}H</small><b>${esc(x.municipio||'SPI')} • ${esc(x.level||'ATENÇÃO')}</b><span>🌧 ${Number(x.rain||0).toFixed(1)} mm • 🌬 ${Number(x.gust||0).toFixed(0)} km/h${Number(x.prob||0)>0?` • ${Number(x.prob).toFixed(0)}%`:''}${(()=>{const t=decisionRainTiming(x.municipio);return !t.emCurso&&t.inicio?` • ⏱ ${esc(t.inicio)}`:t.emCurso?' • 🌧 em curso':''})()}</span></article>`).join('')}</div>`;
+ if(extras.length)html+=`<div class="tv-alert-more">${extras.map(x=>{const a=x.alert||{},m=x.localUrgency?.meta||{};return `<div><span>🚨 ${esc(x.municipio)}</span><b>${esc(m.label||a.tipo||a.titulo||'Alerta')}</b><small>${Number(m.score||0)}/100 • ${esc(a.tipo||a.titulo||'oficial')}</small></div>`}).join('')}</div>`;
+ if(forecasts.length)html+=`<div class="tv-alert-forecast">${forecasts.map(({h,x})=>`<article><small>PREVISÃO ${h}H</small><b>${esc(x.municipio||'SPI')} • ${esc(x.level||'ATENÇÃO')}</b><span>🌧 ${Number(x.rain||0).toFixed(1)} mm • 🌬 ${Number(x.gust||0).toFixed(0)} km/h${Number(x.prob||0)>0?` • ${Number(x.prob).toFixed(0)}%`:''}</span></article>`).join('')}</div>`;
  box.hidden=false;box.innerHTML=html;
 }
+
 function tvAiText(ranked,rows48,topObs){
  const topNow=ranked[0], top48=[...(rows48||[])].sort((a,b)=>tvSeverityRank(b)-tvSeverityRank(a)||Number(b.priority_score||b.score||0)-Number(a.priority_score||a.score||0))[0];
  const fallback=commandAiSummary?.resumo||networkIntel?.agora||'Cenário operacional sem mudança material.';
