@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-14T13:10:38-03:00",
-  "fonte_coletada_em": "2026-09-14T16:10:09Z",
+  "gerado_em": "2026-09-14T13:15:14-03:00",
+  "fonte_coletada_em": "2026-09-14T16:15:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 47,
-  "alertas_ativos": 7,
+  "entradas_feed": 48,
+  "alertas_ativos": 8,
   "eventos_geo": [
     {
       "id_alerta": "190251/2026",
@@ -807,6 +807,174 @@
         "pico_dbz_medio": 39.4,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
+    },
+    {
+      "id_alerta": "190267/2026",
+      "municipio": "Catanduva",
+      "latitude": -21.134128,
+      "longitude": -48.971193,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva na regiao de Catanduva e se espalhando por Santa Adelia, Taquaritinga e Tabatinga. Tem raios e vento. Atinge municipio vizinho. Abrigue-se!",
+      "resumo": "Defesa Civil:Chuva na regiao de Catanduva e se espalhando por Santa Adelia, Taquaritinga e Tabatinga. Tem raios e vento. Atinge municipio vizinho. Abrigue-se!",
+      "descricao": "Chuva na região de Catanduva e se espalhando por Santa Adélia, Taquaritinga e Tabatinga. Tem raios, vento e condição para granizo. Atinge municípios vizinhos. Caso necessário, busque abrigo.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-14T13:12:49-03:00",
+      "fim": "2026-09-14T19:30:00-03:00",
+      "vigencia": "2026-09-14T13:12:49-03:00 → 2026-09-14T19:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 20,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T16:10:00+00:00",
+        "intensidade_estimada_mmh": 1.41,
+        "faixa_estimada_mmh": [
+          1.15,
+          3.16
+        ],
+        "dbz_medio": 25.4,
+        "pico_em": "2026-09-14T16:00:00+00:00",
+        "pico_estimado_mmh": 3.08,
+        "pico_dbz_medio": 30.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190267/2026",
+      "municipio": "Santa Adélia",
+      "latitude": -21.315069,
+      "longitude": -48.816226,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva na regiao de Catanduva e se espalhando por Santa Adelia, Taquaritinga e Tabatinga. Tem raios e vento. Atinge municipio vizinho. Abrigue-se!",
+      "resumo": "Defesa Civil:Chuva na regiao de Catanduva e se espalhando por Santa Adelia, Taquaritinga e Tabatinga. Tem raios e vento. Atinge municipio vizinho. Abrigue-se!",
+      "descricao": "Chuva na região de Catanduva e se espalhando por Santa Adélia, Taquaritinga e Tabatinga. Tem raios, vento e condição para granizo. Atinge municípios vizinhos. Caso necessário, busque abrigo.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-14T13:12:49-03:00",
+      "fim": "2026-09-14T19:30:00-03:00",
+      "vigencia": "2026-09-14T13:12:49-03:00 → 2026-09-14T19:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 5,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T16:10:00+00:00",
+        "intensidade_estimada_mmh": 3.67,
+        "faixa_estimada_mmh": [
+          3.16,
+          15.38
+        ],
+        "dbz_medio": 32.0,
+        "pico_em": "2026-09-14T16:10:00+00:00",
+        "pico_estimado_mmh": 3.67,
+        "pico_dbz_medio": 32.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190267/2026",
+      "municipio": "Tabatinga",
+      "latitude": -21.728623,
+      "longitude": -48.633953,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva na regiao de Catanduva e se espalhando por Santa Adelia, Taquaritinga e Tabatinga. Tem raios e vento. Atinge municipio vizinho. Abrigue-se!",
+      "resumo": "Defesa Civil:Chuva na regiao de Catanduva e se espalhando por Santa Adelia, Taquaritinga e Tabatinga. Tem raios e vento. Atinge municipio vizinho. Abrigue-se!",
+      "descricao": "Chuva na região de Catanduva e se espalhando por Santa Adélia, Taquaritinga e Tabatinga. Tem raios, vento e condição para granizo. Atinge municípios vizinhos. Caso necessário, busque abrigo.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-14T13:12:49-03:00",
+      "fim": "2026-09-14T19:30:00-03:00",
+      "vigencia": "2026-09-14T13:12:49-03:00 → 2026-09-14T19:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 2,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T16:10:00+00:00",
+        "intensidade_estimada_mmh": 1.87,
+        "faixa_estimada_mmh": [
+          2.05,
+          3.16
+        ],
+        "dbz_medio": 27.4,
+        "pico_em": "2026-09-14T16:00:00+00:00",
+        "pico_estimado_mmh": 3.04,
+        "pico_dbz_medio": 30.7,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190267/2026",
+      "municipio": "Taquaritinga",
+      "latitude": -21.412825,
+      "longitude": -48.522984,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva na regiao de Catanduva e se espalhando por Santa Adelia, Taquaritinga e Tabatinga. Tem raios e vento. Atinge municipio vizinho. Abrigue-se!",
+      "resumo": "Defesa Civil:Chuva na regiao de Catanduva e se espalhando por Santa Adelia, Taquaritinga e Tabatinga. Tem raios e vento. Atinge municipio vizinho. Abrigue-se!",
+      "descricao": "Chuva na região de Catanduva e se espalhando por Santa Adélia, Taquaritinga e Tabatinga. Tem raios, vento e condição para granizo. Atinge municípios vizinhos. Caso necessário, busque abrigo.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-14T13:12:49-03:00",
+      "fim": "2026-09-14T19:30:00-03:00",
+      "vigencia": "2026-09-14T13:12:49-03:00 → 2026-09-14T19:30:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 12,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T16:10:00+00:00",
+        "intensidade_estimada_mmh": 2.23,
+        "faixa_estimada_mmh": [
+          2.05,
+          17.76
+        ],
+        "dbz_medio": 28.6,
+        "pico_em": "2026-09-14T16:10:00+00:00",
+        "pico_estimado_mmh": 2.23,
+        "pico_dbz_medio": 28.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [],
@@ -823,9 +991,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-14T16:10:57.118716+00:00",
+    "gerado_em": "2026-09-14T16:15:15.510869+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 19,
+    "eventos_com_eco": 23,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
