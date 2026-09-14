@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-14T02:10:23-03:00",
-  "fonte_coletada_em": "2026-09-14T05:10:06Z",
+  "gerado_em": "2026-09-14T02:15:15-03:00",
+  "fonte_coletada_em": "2026-09-14T05:15:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 59,
-  "alertas_ativos": 1,
+  "entradas_feed": 57,
+  "alertas_ativos": 2,
   "eventos_geo": [
     {
       "id_alerta": "190219/2026",
@@ -91,6 +91,174 @@
         "pico_em": "2026-09-14T03:30:00+00:00",
         "pico_estimado_mmh": 12.76,
         "pico_dbz_medio": 40.7,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190220/2026",
+      "municipio": "Angatuba",
+      "latitude": -23.530444,
+      "longitude": -48.407972,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:02h12 Chuva persiste na regiao de Cerqueira Cesar, Paranapanema, Angatuba e Itapetininga. Atinge municipios vizinhos. Cuidado nas proximas horas!",
+      "resumo": "Defesa Civil:02h12 Chuva persiste na regiao de Cerqueira Cesar, Paranapanema, Angatuba e Itapetininga. Atinge municipios vizinhos. Cuidado nas proximas horas!",
+      "descricao": "02h12 Chuva persiste na região de Cerqueira César, Paranapanema, Angatuba e Itapetininga. Atinge municípios vizinhos. Cuidado nas próximas horas!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T02:12:49-03:00",
+      "fim": "2026-09-14T04:15:00-03:00",
+      "vigencia": "2026-09-14T02:12:49-03:00 → 2026-09-14T04:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 5,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T05:10:00+00:00",
+        "intensidade_estimada_mmh": 1.21,
+        "faixa_estimada_mmh": [
+          1.15,
+          2.05
+        ],
+        "dbz_medio": 24.4,
+        "pico_em": "2026-09-14T05:10:00+00:00",
+        "pico_estimado_mmh": 1.21,
+        "pico_dbz_medio": 24.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190220/2026",
+      "municipio": "Cerqueira César",
+      "latitude": -23.02199,
+      "longitude": -49.161769,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:02h12 Chuva persiste na regiao de Cerqueira Cesar, Paranapanema, Angatuba e Itapetininga. Atinge municipios vizinhos. Cuidado nas proximas horas!",
+      "resumo": "Defesa Civil:02h12 Chuva persiste na regiao de Cerqueira Cesar, Paranapanema, Angatuba e Itapetininga. Atinge municipios vizinhos. Cuidado nas proximas horas!",
+      "descricao": "02h12 Chuva persiste na região de Cerqueira César, Paranapanema, Angatuba e Itapetininga. Atinge municípios vizinhos. Cuidado nas próximas horas!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T02:12:49-03:00",
+      "fim": "2026-09-14T04:15:00-03:00",
+      "vigencia": "2026-09-14T02:12:49-03:00 → 2026-09-14T04:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 3,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T05:10:00+00:00",
+        "intensidade_estimada_mmh": 1.24,
+        "faixa_estimada_mmh": [
+          1.78,
+          2.05
+        ],
+        "dbz_medio": 24.5,
+        "pico_em": "2026-09-14T05:00:00+00:00",
+        "pico_estimado_mmh": 3.29,
+        "pico_dbz_medio": 31.3,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190220/2026",
+      "municipio": "Itapetininga",
+      "latitude": -23.591981,
+      "longitude": -48.052536,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:02h12 Chuva persiste na regiao de Cerqueira Cesar, Paranapanema, Angatuba e Itapetininga. Atinge municipios vizinhos. Cuidado nas proximas horas!",
+      "resumo": "Defesa Civil:02h12 Chuva persiste na regiao de Cerqueira Cesar, Paranapanema, Angatuba e Itapetininga. Atinge municipios vizinhos. Cuidado nas proximas horas!",
+      "descricao": "02h12 Chuva persiste na região de Cerqueira César, Paranapanema, Angatuba e Itapetininga. Atinge municípios vizinhos. Cuidado nas próximas horas!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T02:12:49-03:00",
+      "fim": "2026-09-14T04:15:00-03:00",
+      "vigencia": "2026-09-14T02:12:49-03:00 → 2026-09-14T04:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 35,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T05:10:00+00:00",
+        "intensidade_estimada_mmh": 1.06,
+        "faixa_estimada_mmh": [
+          1.0,
+          1.15
+        ],
+        "dbz_medio": 23.4,
+        "pico_em": "2026-09-14T05:10:00+00:00",
+        "pico_estimado_mmh": 1.06,
+        "pico_dbz_medio": 23.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190220/2026",
+      "municipio": "Paranapanema",
+      "latitude": -23.410977,
+      "longitude": -48.824669,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:02h12 Chuva persiste na regiao de Cerqueira Cesar, Paranapanema, Angatuba e Itapetininga. Atinge municipios vizinhos. Cuidado nas proximas horas!",
+      "resumo": "Defesa Civil:02h12 Chuva persiste na regiao de Cerqueira Cesar, Paranapanema, Angatuba e Itapetininga. Atinge municipios vizinhos. Cuidado nas proximas horas!",
+      "descricao": "02h12 Chuva persiste na região de Cerqueira César, Paranapanema, Angatuba e Itapetininga. Atinge municípios vizinhos. Cuidado nas próximas horas!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T02:12:49-03:00",
+      "fim": "2026-09-14T04:15:00-03:00",
+      "vigencia": "2026-09-14T02:12:49-03:00 → 2026-09-14T04:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T05:10:00+00:00",
+        "intensidade_estimada_mmh": 1.6,
+        "faixa_estimada_mmh": [
+          1.78,
+          2.05
+        ],
+        "dbz_medio": 26.3,
+        "pico_em": "2026-09-14T05:00:00+00:00",
+        "pico_estimado_mmh": 2.28,
+        "pico_dbz_medio": 28.7,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
@@ -484,9 +652,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-14T05:10:27.615243+00:00",
+    "gerado_em": "2026-09-14T05:15:18.515514+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 2,
+    "eventos_com_eco": 6,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
