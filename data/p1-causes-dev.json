@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-14T08:26:27.640301-03:00",
+  "gerado_em": "2026-09-14T08:28:19.330170-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-14T11:21:32.000Z",
+  "historico_grupos_fim": "2026-09-14T11:27:28.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -32245,14 +32245,8 @@
               "site": "CHH",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "FIBRA/BACKBONE",
               "evidencias": [
-                {
-                  "hora": "07:26",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
-                },
                 {
                   "hora": "07:27",
                   "grupo": "Móvel N1 - 12 ",
@@ -32276,6 +32270,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
+                },
+                {
+                  "hora": "08:27",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "FIBRA/BACKBONE",
+                  "status": "CHH, rompimento de fibra"
                 }
               ]
             },
@@ -32283,14 +32283,8 @@
               "site": "ICA",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "INFRA",
               "evidencias": [
-                {
-                  "hora": "07:26",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
-                },
                 {
                   "hora": "07:27",
                   "grupo": "Móvel N1 - 12 ",
@@ -32314,6 +32308,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
+                },
+                {
+                  "hora": "08:27",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "ICA, Infra verificando"
                 }
               ]
             },
@@ -32321,7 +32321,7 @@
               "site": "SBD",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "NORMALIZADO/OK",
               "evidencias": [
                 {
                   "hora": "07:26",
@@ -32346,6 +32346,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
+                },
+                {
+                  "hora": "08:27",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NORMALIZADO/OK",
+                  "status": "SBD, normalizado"
                 }
               ]
             },
@@ -32353,14 +32359,8 @@
               "site": "YPI",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "INFRA",
               "evidencias": [
-                {
-                  "hora": "07:26",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
-                },
                 {
                   "hora": "07:27",
                   "grupo": "Móvel N1 - 12 ",
@@ -32384,6 +32384,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
+                },
+                {
+                  "hora": "08:27",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "YPI, falta de ac"
                 }
               ]
             },
@@ -32391,14 +32397,8 @@
               "site": "YPN",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "ACESSO/PROCESSO",
               "evidencias": [
-                {
-                  "hora": "07:26",
-                  "grupo": "Móvel 15 - 19",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
-                },
                 {
                   "hora": "07:27",
                   "grupo": "Móvel N1 - 12 ",
@@ -32422,6 +32422,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
+                },
+                {
+                  "hora": "08:27",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "ACESSO/PROCESSO",
+                  "status": "YPN, Gabriel em deslocamento 40min"
                 }
               ]
             }
@@ -32518,7 +32524,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 68
+      "mensagens_grupos_no_dia": 69
     }
   ],
   "ativos_agora": [
@@ -32555,7 +32561,7 @@
               "status": "STF, KUR, XQA, CKD, TAO, EBY, MBM, EMY"
             }
           ],
-          "idade_ativa_h": 46.75
+          "idade_ativa_h": 46.79
         },
         {
           "site": "EBY",
@@ -32592,7 +32598,7 @@
               "status": "@7078240366662 EBY capital escalonando, oq pega??"
             }
           ],
-          "idade_ativa_h": 11.1
+          "idade_ativa_h": 11.14
         },
         {
           "site": "EMY",
@@ -32623,7 +32629,7 @@
               "status": "STF, KUR, XQA, CKD, TAO, EBY, MBM, EMY"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         },
         {
           "site": "KUR",
@@ -32654,7 +32660,7 @@
               "status": "STF, KUR, XQA, CKD, TAO, EBY, MBM, EMY"
             }
           ],
-          "idade_ativa_h": 32.1
+          "idade_ativa_h": 32.14
         },
         {
           "site": "MBM",
@@ -32691,7 +32697,7 @@
               "status": "as placas do MBM conseguiu alguma?"
             }
           ],
-          "idade_ativa_h": 24.1
+          "idade_ativa_h": 24.14
         },
         {
           "site": "STF",
@@ -32722,7 +32728,7 @@
               "status": "STF, KUR, XQA, CKD, TAO, EBY, MBM, EMY"
             }
           ],
-          "idade_ativa_h": 199.75
+          "idade_ativa_h": 199.79
         },
         {
           "site": "TAO",
@@ -32753,7 +32759,7 @@
               "status": "STF, KUR, XQA, CKD, TAO, EBY, MBM, EMY"
             }
           ],
-          "idade_ativa_h": 55.1
+          "idade_ativa_h": 55.14
         },
         {
           "site": "XQA",
@@ -32784,7 +32790,7 @@
               "status": "STF, KUR, XQA, CKD, TAO, EBY, MBM, EMY"
             }
           ],
-          "idade_ativa_h": 72.75
+          "idade_ativa_h": 72.79
         }
       ]
     },
@@ -32803,7 +32809,7 @@
               "status": "GRY, C2J, TVM, CPR, PHM, PHR, SBP, OP9, PMP, BMK"
             }
           ],
-          "idade_ativa_h": 0.77
+          "idade_ativa_h": 0.8
         },
         {
           "site": "C2J",
@@ -32840,7 +32846,7 @@
               "status": "GRY, C2J, TVM, CPR, PHM, PHR, SBP, OP9, PMP, BMK"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         },
         {
           "site": "CPR",
@@ -32877,7 +32883,7 @@
               "status": "GRY, C2J, TVM, CPR, PHM, PHR, SBP, OP9, PMP, BMK"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         },
         {
           "site": "GRY",
@@ -32914,7 +32920,7 @@
               "status": "GRY, C2J, TVM, CPR, PHM, PHR, SBP, OP9, PMP, BMK"
             }
           ],
-          "idade_ativa_h": 11.77
+          "idade_ativa_h": 11.8
         },
         {
           "site": "OP9",
@@ -32951,7 +32957,7 @@
               "status": "GRY, C2J, TVM, CPR, PHM, PHR, SBP, OP9, PMP, BMK"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         },
         {
           "site": "PHM",
@@ -32988,7 +32994,7 @@
               "status": "GRY, C2J, TVM, CPR, PHM, PHR, SBP, OP9, PMP, BMK"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         },
         {
           "site": "PHR",
@@ -33025,7 +33031,7 @@
               "status": "GRY, C2J, TVM, CPR, PHM, PHR, SBP, OP9, PMP, BMK"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         },
         {
           "site": "PMP",
@@ -33062,7 +33068,7 @@
               "status": "GRY, C2J, TVM, CPR, PHM, PHR, SBP, OP9, PMP, BMK"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         },
         {
           "site": "SBP",
@@ -33099,7 +33105,7 @@
               "status": "GRY, C2J, TVM, CPR, PHM, PHR, SBP, OP9, PMP, BMK"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         },
         {
           "site": "TVM",
@@ -33136,7 +33142,7 @@
               "status": "GRY, C2J, TVM, CPR, PHM, PHR, SBP, OP9, PMP, BMK"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         }
       ]
     },
@@ -33179,7 +33185,7 @@
               "status": "GRT como estamos?"
             }
           ],
-          "idade_ativa_h": 10.77
+          "idade_ativa_h": 10.8
         },
         {
           "site": "TUB",
@@ -33210,7 +33216,7 @@
               "status": "GRT, TUB"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         }
       ]
     },
@@ -33253,18 +33259,12 @@
               "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
             }
           ],
-          "idade_ativa_h": 20.42
+          "idade_ativa_h": 20.45
         },
         {
           "site": "CHH",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "FIBRA/BACKBONE",
           "evidencias": [
-            {
-              "hora": "07:26",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
-            },
             {
               "hora": "07:27",
               "grupo": "Móvel N1 - 12 ",
@@ -33288,20 +33288,20 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
+            },
+            {
+              "hora": "08:27",
+              "grupo": "Móvel 15 - 19",
+              "causa": "FIBRA/BACKBONE",
+              "status": "CHH, rompimento de fibra"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         },
         {
           "site": "HEN",
-          "causa": "CLIMA",
+          "causa": "EQUIPAMENTO",
           "evidencias": [
-            {
-              "hora": "07:27",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
-            },
             {
               "hora": "07:27",
               "grupo": "Móvel 15 - 19",
@@ -33325,20 +33325,20 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
+            },
+            {
+              "hora": "08:27",
+              "grupo": "Móvel 15 - 19",
+              "causa": "EQUIPAMENTO",
+              "status": "HEN, sem acesso ao morro RIR.RD Ribeira Rádio"
             }
           ],
-          "idade_ativa_h": 18.77
+          "idade_ativa_h": 18.8
         },
         {
           "site": "I3C",
-          "causa": "CLIMA",
+          "causa": "EQUIPAMENTO",
           "evidencias": [
-            {
-              "hora": "07:27",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
-            },
             {
               "hora": "07:27",
               "grupo": "Móvel 15 - 19",
@@ -33362,20 +33362,20 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
+            },
+            {
+              "hora": "08:27",
+              "grupo": "Móvel 15 - 19",
+              "causa": "EQUIPAMENTO",
+              "status": "I3C, sem acesso ao morro RIR.RD Ribeira Rádio"
             }
           ],
-          "idade_ativa_h": 18.77
+          "idade_ativa_h": 18.8
         },
         {
           "site": "ICA",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "INFRA",
           "evidencias": [
-            {
-              "hora": "07:26",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
-            },
             {
               "hora": "07:27",
               "grupo": "Móvel N1 - 12 ",
@@ -33399,20 +33399,20 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
+            },
+            {
+              "hora": "08:27",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "ICA, Infra verificando"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         },
         {
           "site": "IFD",
-          "causa": "CLIMA",
+          "causa": "EQUIPAMENTO",
           "evidencias": [
-            {
-              "hora": "07:27",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
-            },
             {
               "hora": "07:27",
               "grupo": "Móvel 15 - 19",
@@ -33436,20 +33436,20 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
+            },
+            {
+              "hora": "08:27",
+              "grupo": "Móvel 15 - 19",
+              "causa": "EQUIPAMENTO",
+              "status": "IFD, sem acesso ao morro RIR.RD Ribeira Rádio"
             }
           ],
-          "idade_ativa_h": 18.77
+          "idade_ativa_h": 18.8
         },
         {
           "site": "ILD",
-          "causa": "CLIMA",
+          "causa": "EQUIPAMENTO",
           "evidencias": [
-            {
-              "hora": "07:27",
-              "grupo": "Móvel N1 - 12 ",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
-            },
             {
               "hora": "07:27",
               "grupo": "Móvel 15 - 19",
@@ -33473,21 +33473,21 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
+            },
+            {
+              "hora": "08:27",
+              "grupo": "Móvel 15 - 19",
+              "causa": "EQUIPAMENTO",
+              "status": "ILD, sem acesso ao morro RIR.RD Ribeira Rádio"
             }
           ],
-          "idade_ativa_h": 18.77
+          "idade_ativa_h": 18.8
         },
         {
           "site": "PDE",
           "causa": "NÃO IDENTIFICADA",
           "evidencias": [
             {
-              "hora": "07:26",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
-            },
-            {
               "hora": "07:27",
               "grupo": "Móvel N1 - 12 ",
               "causa": "NÃO IDENTIFICADA",
@@ -33510,20 +33510,20 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
+            },
+            {
+              "hora": "08:27",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "PDE, Amauri"
             }
           ],
-          "idade_ativa_h": 11.44
+          "idade_ativa_h": 11.47
         },
         {
           "site": "YPI",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "INFRA",
           "evidencias": [
-            {
-              "hora": "07:26",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
-            },
             {
               "hora": "07:27",
               "grupo": "Móvel N1 - 12 ",
@@ -33547,20 +33547,20 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
+            },
+            {
+              "hora": "08:27",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "YPI, falta de ac"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         },
         {
           "site": "YPN",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "ACESSO/PROCESSO",
           "evidencias": [
-            {
-              "hora": "07:26",
-              "grupo": "Móvel 15 - 19",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, SBD, YPN"
-            },
             {
               "hora": "07:27",
               "grupo": "Móvel N1 - 12 ",
@@ -33584,9 +33584,15 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, HEN, I3C, IFD, ILD, PDE, ICA, YPI, CHH, YPN"
+            },
+            {
+              "hora": "08:27",
+              "grupo": "Móvel 15 - 19",
+              "causa": "ACESSO/PROCESSO",
+              "status": "YPN, Gabriel em deslocamento 40min"
             }
           ],
-          "idade_ativa_h": 1.44
+          "idade_ativa_h": 1.47
         }
       ]
     },
@@ -33623,7 +33629,7 @@
               "status": "FJN"
             }
           ],
-          "idade_ativa_h": 1.44
+          "idade_ativa_h": 1.47
         }
       ]
     },
@@ -33660,7 +33666,7 @@
               "status": "U50, NMA, DVI, CXE"
             }
           ],
-          "idade_ativa_h": 10.1
+          "idade_ativa_h": 10.14
         },
         {
           "site": "DVI",
@@ -33691,7 +33697,7 @@
               "status": "U50, NMA, DVI, CXE"
             }
           ],
-          "idade_ativa_h": 10.1
+          "idade_ativa_h": 10.14
         },
         {
           "site": "NMA",
@@ -33722,7 +33728,7 @@
               "status": "U50, NMA, DVI, CXE"
             }
           ],
-          "idade_ativa_h": 12.07
+          "idade_ativa_h": 12.1
         },
         {
           "site": "U50",
@@ -33753,7 +33759,7 @@
               "status": "U50, NMA, DVI, CXE"
             }
           ],
-          "idade_ativa_h": 1103.1
+          "idade_ativa_h": 1103.14
         }
       ]
     },
@@ -33790,7 +33796,7 @@
               "status": "JBD, EFR"
             }
           ],
-          "idade_ativa_h": 1.85
+          "idade_ativa_h": 1.89
         },
         {
           "site": "JBD",
@@ -33821,7 +33827,7 @@
               "status": "JBD, EFR"
             }
           ],
-          "idade_ativa_h": 27.1
+          "idade_ativa_h": 27.14
         }
       ]
     }
