@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-14T11:55:27-03:00",
-  "fonte_coletada_em": "2026-09-14T14:55:10Z",
+  "gerado_em": "2026-09-14T12:00:43-03:00",
+  "fonte_coletada_em": "2026-09-14T15:00:18Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 39,
-  "alertas_ativos": 2,
+  "entradas_feed": 41,
+  "alertas_ativos": 3,
   "eventos_geo": [
     {
       "id_alerta": "190251/2026",
@@ -81,16 +81,268 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-14T14:50:00+00:00",
-        "intensidade_estimada_mmh": 2.02,
+        "ultimo_eco_em": "2026-09-14T15:00:00+00:00",
+        "intensidade_estimada_mmh": 2.3,
+        "faixa_estimada_mmh": [
+          2.05,
+          3.65
+        ],
+        "dbz_medio": 28.8,
+        "pico_em": "2026-09-14T14:00:00+00:00",
+        "pico_estimado_mmh": 7.42,
+        "pico_dbz_medio": 36.9,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190259/2026",
+      "municipio": "Avanhandava",
+      "latitude": -21.460194,
+      "longitude": -49.950047,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva forte na regiao de Avanhandava, Promissao, Lins, Novo Horizonte e Cafelandia. Tem raios e vento forte. Atinge municipio vizinho. Abrigue-se!",
+      "resumo": "Defesa Civil:Chuva forte na regiao de Avanhandava, Promissao, Lins, Novo Horizonte e Cafelandia. Tem raios e vento forte. Atinge municipio vizinho. Abrigue-se!",
+      "descricao": "Chuva forte se espalhando na região de Avanhandava, Promissão, Guaiçara, Lins, Novo Horizonte e Cafelândia. Tem raios e vento forte. Atinge municípios vizinhos. Caso necessário, busque abrigo imediatamente.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-14T11:57:38-03:00",
+      "fim": "2026-09-14T19:00:00-03:00",
+      "vigencia": "2026-09-14T11:57:38-03:00 → 2026-09-14T19:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 3,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T15:00:00+00:00",
+        "intensidade_estimada_mmh": 2.48,
+        "faixa_estimada_mmh": [
+          2.05,
+          8.65
+        ],
+        "dbz_medio": 29.3,
+        "pico_em": "2026-09-14T14:40:00+00:00",
+        "pico_estimado_mmh": 3.35,
+        "pico_dbz_medio": 31.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190259/2026",
+      "municipio": "Cafelândia",
+      "latitude": -21.782998,
+      "longitude": -49.59355,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva forte na regiao de Avanhandava, Promissao, Lins, Novo Horizonte e Cafelandia. Tem raios e vento forte. Atinge municipio vizinho. Abrigue-se!",
+      "resumo": "Defesa Civil:Chuva forte na regiao de Avanhandava, Promissao, Lins, Novo Horizonte e Cafelandia. Tem raios e vento forte. Atinge municipio vizinho. Abrigue-se!",
+      "descricao": "Chuva forte se espalhando na região de Avanhandava, Promissão, Guaiçara, Lins, Novo Horizonte e Cafelândia. Tem raios e vento forte. Atinge municípios vizinhos. Caso necessário, busque abrigo imediatamente.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-14T11:57:38-03:00",
+      "fim": "2026-09-14T19:00:00-03:00",
+      "vigencia": "2026-09-14T11:57:38-03:00 → 2026-09-14T19:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 8,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T15:00:00+00:00",
+        "intensidade_estimada_mmh": 3.66,
+        "faixa_estimada_mmh": [
+          3.65,
+          6.48
+        ],
+        "dbz_medio": 32.0,
+        "pico_em": "2026-09-14T15:00:00+00:00",
+        "pico_estimado_mmh": 3.66,
+        "pico_dbz_medio": 32.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190259/2026",
+      "municipio": "Guaiçara",
+      "latitude": -21.629456,
+      "longitude": -49.793547,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva forte na regiao de Avanhandava, Promissao, Lins, Novo Horizonte e Cafelandia. Tem raios e vento forte. Atinge municipio vizinho. Abrigue-se!",
+      "resumo": "Defesa Civil:Chuva forte na regiao de Avanhandava, Promissao, Lins, Novo Horizonte e Cafelandia. Tem raios e vento forte. Atinge municipio vizinho. Abrigue-se!",
+      "descricao": "Chuva forte se espalhando na região de Avanhandava, Promissão, Guaiçara, Lins, Novo Horizonte e Cafelândia. Tem raios e vento forte. Atinge municípios vizinhos. Caso necessário, busque abrigo imediatamente.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-14T11:57:38-03:00",
+      "fim": "2026-09-14T19:00:00-03:00",
+      "vigencia": "2026-09-14T11:57:38-03:00 → 2026-09-14T19:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 4,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T15:00:00+00:00",
+        "intensidade_estimada_mmh": 1.73,
+        "faixa_estimada_mmh": [
+          2.05,
+          6.48
+        ],
+        "dbz_medio": 26.8,
+        "pico_em": "2026-09-14T14:40:00+00:00",
+        "pico_estimado_mmh": 4.24,
+        "pico_dbz_medio": 33.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190259/2026",
+      "municipio": "Lins",
+      "latitude": -21.664063,
+      "longitude": -49.741172,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva forte na regiao de Avanhandava, Promissao, Lins, Novo Horizonte e Cafelandia. Tem raios e vento forte. Atinge municipio vizinho. Abrigue-se!",
+      "resumo": "Defesa Civil:Chuva forte na regiao de Avanhandava, Promissao, Lins, Novo Horizonte e Cafelandia. Tem raios e vento forte. Atinge municipio vizinho. Abrigue-se!",
+      "descricao": "Chuva forte se espalhando na região de Avanhandava, Promissão, Guaiçara, Lins, Novo Horizonte e Cafelândia. Tem raios e vento forte. Atinge municípios vizinhos. Caso necessário, busque abrigo imediatamente.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-14T11:57:38-03:00",
+      "fim": "2026-09-14T19:00:00-03:00",
+      "vigencia": "2026-09-14T11:57:38-03:00 → 2026-09-14T19:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 13,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T15:00:00+00:00",
+        "intensidade_estimada_mmh": 1.67,
         "faixa_estimada_mmh": [
           2.05,
           3.16
         ],
-        "dbz_medio": 27.9,
-        "pico_em": "2026-09-14T14:00:00+00:00",
-        "pico_estimado_mmh": 7.42,
-        "pico_dbz_medio": 36.9,
+        "dbz_medio": 26.6,
+        "pico_em": "2026-09-14T14:40:00+00:00",
+        "pico_estimado_mmh": 5.29,
+        "pico_dbz_medio": 34.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190259/2026",
+      "municipio": "Novo Horizonte",
+      "latitude": -21.478241,
+      "longitude": -49.234835,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva forte na regiao de Avanhandava, Promissao, Lins, Novo Horizonte e Cafelandia. Tem raios e vento forte. Atinge municipio vizinho. Abrigue-se!",
+      "resumo": "Defesa Civil:Chuva forte na regiao de Avanhandava, Promissao, Lins, Novo Horizonte e Cafelandia. Tem raios e vento forte. Atinge municipio vizinho. Abrigue-se!",
+      "descricao": "Chuva forte se espalhando na região de Avanhandava, Promissão, Guaiçara, Lins, Novo Horizonte e Cafelândia. Tem raios e vento forte. Atinge municípios vizinhos. Caso necessário, busque abrigo imediatamente.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-14T11:57:38-03:00",
+      "fim": "2026-09-14T19:00:00-03:00",
+      "vigencia": "2026-09-14T11:57:38-03:00 → 2026-09-14T19:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 8,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T15:00:00+00:00",
+        "intensidade_estimada_mmh": 0.53,
+        "faixa_estimada_mmh": [
+          0.56,
+          0.56
+        ],
+        "dbz_medio": 18.6,
+        "pico_em": "2026-09-14T15:00:00+00:00",
+        "pico_estimado_mmh": 0.53,
+        "pico_dbz_medio": 18.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190259/2026",
+      "municipio": "Promissão",
+      "latitude": -21.572515,
+      "longitude": -49.880572,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva forte na regiao de Avanhandava, Promissao, Lins, Novo Horizonte e Cafelandia. Tem raios e vento forte. Atinge municipio vizinho. Abrigue-se!",
+      "resumo": "Defesa Civil:Chuva forte na regiao de Avanhandava, Promissao, Lins, Novo Horizonte e Cafelandia. Tem raios e vento forte. Atinge municipio vizinho. Abrigue-se!",
+      "descricao": "Chuva forte se espalhando na região de Avanhandava, Promissão, Guaiçara, Lins, Novo Horizonte e Cafelândia. Tem raios e vento forte. Atinge municípios vizinhos. Caso necessário, busque abrigo imediatamente.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-14T11:57:38-03:00",
+      "fim": "2026-09-14T19:00:00-03:00",
+      "vigencia": "2026-09-14T11:57:38-03:00 → 2026-09-14T19:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 4,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T15:00:00+00:00",
+        "intensidade_estimada_mmh": 1.49,
+        "faixa_estimada_mmh": [
+          1.15,
+          3.16
+        ],
+        "dbz_medio": 25.8,
+        "pico_em": "2026-09-14T14:40:00+00:00",
+        "pico_estimado_mmh": 3.67,
+        "pico_dbz_medio": 32.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
@@ -151,9 +403,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-14T14:55:33.205321+00:00",
+    "gerado_em": "2026-09-14T15:00:47.205475+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 2,
+    "eventos_com_eco": 8,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
