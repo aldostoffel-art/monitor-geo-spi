@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-14T05:10:18-03:00",
-  "fonte_coletada_em": "2026-09-14T08:10:04Z",
+  "gerado_em": "2026-09-14T05:15:14-03:00",
+  "fonte_coletada_em": "2026-09-14T08:15:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 44,
-  "alertas_ativos": 1,
+  "entradas_feed": 46,
+  "alertas_ativos": 2,
   "eventos_geo": [
     {
       "id_alerta": "190221/2026",
@@ -133,6 +133,174 @@
         "pico_em": "2026-09-14T06:50:00+00:00",
         "pico_estimado_mmh": 2.53,
         "pico_dbz_medio": 29.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190225/2026",
+      "municipio": "Brotas",
+      "latitude": -22.28178,
+      "longitude": -48.093961,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h13 Chuva persiste na regiao de Piracicaba, Capivari, Sao Pedro e Brotas. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:05h13 Chuva persiste na regiao de Piracicaba, Capivari, Sao Pedro e Brotas. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "05h13 Chuva persiste na região de Piracicaba, Capivari, São Pedro e Brotas. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T05:14:06-03:00",
+      "fim": "2026-09-14T07:15:00-03:00",
+      "vigencia": "2026-09-14T05:14:06-03:00 → 2026-09-14T07:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T08:10:00+00:00",
+        "intensidade_estimada_mmh": 1.79,
+        "faixa_estimada_mmh": [
+          2.05,
+          3.65
+        ],
+        "dbz_medio": 27.1,
+        "pico_em": "2026-09-14T08:10:00+00:00",
+        "pico_estimado_mmh": 1.79,
+        "pico_dbz_medio": 27.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190225/2026",
+      "municipio": "Capivari",
+      "latitude": -22.993049,
+      "longitude": -47.487953,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h13 Chuva persiste na regiao de Piracicaba, Capivari, Sao Pedro e Brotas. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:05h13 Chuva persiste na regiao de Piracicaba, Capivari, Sao Pedro e Brotas. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "05h13 Chuva persiste na região de Piracicaba, Capivari, São Pedro e Brotas. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T05:14:06-03:00",
+      "fim": "2026-09-14T07:15:00-03:00",
+      "vigencia": "2026-09-14T05:14:06-03:00 → 2026-09-14T07:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 8,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T08:10:00+00:00",
+        "intensidade_estimada_mmh": 1.89,
+        "faixa_estimada_mmh": [
+          2.05,
+          3.16
+        ],
+        "dbz_medio": 27.4,
+        "pico_em": "2026-09-14T08:10:00+00:00",
+        "pico_estimado_mmh": 1.89,
+        "pico_dbz_medio": 27.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190225/2026",
+      "municipio": "Piracicaba",
+      "latitude": -22.724979,
+      "longitude": -47.649197,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h13 Chuva persiste na regiao de Piracicaba, Capivari, Sao Pedro e Brotas. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:05h13 Chuva persiste na regiao de Piracicaba, Capivari, Sao Pedro e Brotas. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "05h13 Chuva persiste na região de Piracicaba, Capivari, São Pedro e Brotas. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T05:14:06-03:00",
+      "fim": "2026-09-14T07:15:00-03:00",
+      "vigencia": "2026-09-14T05:14:06-03:00 → 2026-09-14T07:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 60,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T08:10:00+00:00",
+        "intensidade_estimada_mmh": 4.26,
+        "faixa_estimada_mmh": [
+          3.65,
+          8.65
+        ],
+        "dbz_medio": 33.1,
+        "pico_em": "2026-09-14T08:10:00+00:00",
+        "pico_estimado_mmh": 4.26,
+        "pico_dbz_medio": 33.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190225/2026",
+      "municipio": "São Pedro",
+      "latitude": -22.567861,
+      "longitude": -47.913933,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:05h13 Chuva persiste na regiao de Piracicaba, Capivari, Sao Pedro e Brotas. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:05h13 Chuva persiste na regiao de Piracicaba, Capivari, Sao Pedro e Brotas. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "05h13 Chuva persiste na região de Piracicaba, Capivari, São Pedro e Brotas. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T05:14:06-03:00",
+      "fim": "2026-09-14T07:15:00-03:00",
+      "vigencia": "2026-09-14T05:14:06-03:00 → 2026-09-14T07:15:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 5,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T08:10:00+00:00",
+        "intensidade_estimada_mmh": 2.45,
+        "faixa_estimada_mmh": [
+          3.16,
+          6.48
+        ],
+        "dbz_medio": 29.2,
+        "pico_em": "2026-09-14T08:00:00+00:00",
+        "pico_estimado_mmh": 3.03,
+        "pico_dbz_medio": 30.7,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
@@ -377,9 +545,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-14T08:10:21.714983+00:00",
+    "gerado_em": "2026-09-14T08:15:16.903226+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 3,
+    "eventos_com_eco": 7,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
