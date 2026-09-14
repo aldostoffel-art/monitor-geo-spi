@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-14T00:40:27-03:00",
-  "fonte_coletada_em": "2026-09-14T03:40:07Z",
+  "gerado_em": "2026-09-14T00:50:21-03:00",
+  "fonte_coletada_em": "2026-09-14T03:50:07Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 67,
-  "alertas_ativos": 1,
+  "entradas_feed": 68,
+  "alertas_ativos": 2,
   "eventos_geo": [
     {
       "id_alerta": "190218/2026",
@@ -39,13 +39,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-14T03:40:00+00:00",
-        "intensidade_estimada_mmh": 4.03,
+        "ultimo_eco_em": "2026-09-14T03:50:00+00:00",
+        "intensidade_estimada_mmh": 3.23,
         "faixa_estimada_mmh": [
           3.16,
-          23.68
+          7.49
         ],
-        "dbz_medio": 32.7,
+        "dbz_medio": 31.1,
         "pico_em": "2026-09-14T03:00:00+00:00",
         "pico_estimado_mmh": 7.16,
         "pico_dbz_medio": 36.7,
@@ -81,13 +81,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-14T03:40:00+00:00",
-        "intensidade_estimada_mmh": 1.16,
+        "ultimo_eco_em": "2026-09-14T03:50:00+00:00",
+        "intensidade_estimada_mmh": 5.09,
         "faixa_estimada_mmh": [
-          1.0,
-          2.05
+          4.86,
+          15.38
         ],
-        "dbz_medio": 24.0,
+        "dbz_medio": 34.3,
         "pico_em": "2026-09-14T03:20:00+00:00",
         "pico_estimado_mmh": 12.53,
         "pico_dbz_medio": 40.6,
@@ -123,16 +123,100 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-14T03:40:00+00:00",
-        "intensidade_estimada_mmh": 1.58,
+        "ultimo_eco_em": "2026-09-14T03:50:00+00:00",
+        "intensidade_estimada_mmh": 2.98,
         "faixa_estimada_mmh": [
-          2.05,
-          3.16
+          3.16,
+          7.49
         ],
-        "dbz_medio": 26.2,
+        "dbz_medio": 30.6,
         "pico_em": "2026-09-14T02:30:00+00:00",
         "pico_estimado_mmh": 4.53,
         "pico_dbz_medio": 33.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190219/2026",
+      "municipio": "Campinas",
+      "latitude": -22.904322,
+      "longitude": -47.066593,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:00h48 Chuva persiste na regiao de Campinas e Itatiba. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:00h48 Chuva persiste na regiao de Campinas e Itatiba. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "00h48 Chuva persiste na região de Campinas e Itatiba. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T00:48:50-03:00",
+      "fim": "2026-09-14T02:50:00-03:00",
+      "vigencia": "2026-09-14T00:48:50-03:00 → 2026-09-14T02:50:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 200,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T03:50:00+00:00",
+        "intensidade_estimada_mmh": 2.05,
+        "faixa_estimada_mmh": [
+          2.05,
+          7.49
+        ],
+        "dbz_medio": 28.0,
+        "pico_em": "2026-09-14T03:40:00+00:00",
+        "pico_estimado_mmh": 6.25,
+        "pico_dbz_medio": 35.7,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190219/2026",
+      "municipio": "Itatiba",
+      "latitude": -23.004979,
+      "longitude": -46.819672,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:00h48 Chuva persiste na regiao de Campinas e Itatiba. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:00h48 Chuva persiste na regiao de Campinas e Itatiba. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "00h48 Chuva persiste na região de Campinas e Itatiba. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T00:48:50-03:00",
+      "fim": "2026-09-14T02:50:00-03:00",
+      "vigencia": "2026-09-14T00:48:50-03:00 → 2026-09-14T02:50:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 36,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T03:50:00+00:00",
+        "intensidade_estimada_mmh": 2.75,
+        "faixa_estimada_mmh": [
+          3.16,
+          7.49
+        ],
+        "dbz_medio": 30.0,
+        "pico_em": "2026-09-14T03:30:00+00:00",
+        "pico_estimado_mmh": 12.76,
+        "pico_dbz_medio": 40.7,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     }
@@ -500,14 +584,6 @@
       ]
     },
     {
-      "id": "190196/2026",
-      "evento": "DESLIZAMENTOS",
-      "headline": "Defesa Civil:18:45 - Chuva persistente na Regiao Metropolitana de Sao Paulo. Com o solo mais saturado, o risco para deslizamento permanece elevado. Atencao!",
-      "area": [
-        "SÃO PAULO/SP"
-      ]
-    },
-    {
       "id": "190213/2026",
       "evento": "CHUVAS INTENSAS",
       "headline": "Defesa Civil:22h17 Chuva persistente na Regiao Metropolitana de Sao Paulo. Tem ventos. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
@@ -534,9 +610,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-14T03:40:31.327270+00:00",
+    "gerado_em": "2026-09-14T03:50:26.308881+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 3,
+    "eventos_com_eco": 5,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
