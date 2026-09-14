@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-14T12:40:26-03:00",
-  "fonte_coletada_em": "2026-09-14T15:40:06Z",
+  "gerado_em": "2026-09-14T12:45:12-03:00",
+  "fonte_coletada_em": "2026-09-14T15:45:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 44,
-  "alertas_ativos": 4,
+  "entradas_feed": 45,
+  "alertas_ativos": 5,
   "eventos_geo": [
     {
       "id_alerta": "190251/2026",
@@ -471,6 +471,90 @@
         "pico_dbz_medio": 24.2,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
+    },
+    {
+      "id_alerta": "190263/2026",
+      "municipio": "Mirandópolis",
+      "latitude": -21.051806,
+      "longitude": -51.105517,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:12:40 - Chuva na regiao de Mirandopolis e Valparaiso. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:12:40 - Chuva na regiao de Mirandopolis e Valparaiso. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "12:40 - Chuva na região de Mirandópolis e Valparaíso. Tem raios e vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T12:42:33-03:00",
+      "fim": "2026-09-14T19:35:00-03:00",
+      "vigencia": "2026-09-14T12:42:33-03:00 → 2026-09-14T19:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T15:40:00+00:00",
+        "intensidade_estimada_mmh": 3.71,
+        "faixa_estimada_mmh": [
+          3.65,
+          6.48
+        ],
+        "dbz_medio": 32.1,
+        "pico_em": "2026-09-14T15:40:00+00:00",
+        "pico_estimado_mmh": 3.71,
+        "pico_dbz_medio": 32.1,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190263/2026",
+      "municipio": "Valparaíso",
+      "latitude": -21.326786,
+      "longitude": -50.949081,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:12:40 - Chuva na regiao de Mirandopolis e Valparaiso. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:12:40 - Chuva na regiao de Mirandopolis e Valparaiso. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "12:40 - Chuva na região de Mirandópolis e Valparaíso. Tem raios e vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-14T12:42:33-03:00",
+      "fim": "2026-09-14T19:35:00-03:00",
+      "vigencia": "2026-09-14T12:42:33-03:00 → 2026-09-14T19:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 3,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-14T15:40:00+00:00",
+        "intensidade_estimada_mmh": 0.82,
+        "faixa_estimada_mmh": [
+          1.0,
+          2.05
+        ],
+        "dbz_medio": 21.6,
+        "pico_em": "2026-09-14T15:30:00+00:00",
+        "pico_estimado_mmh": 0.97,
+        "pico_dbz_medio": 22.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [
@@ -529,9 +613,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-14T15:40:31.910628+00:00",
+    "gerado_em": "2026-09-14T15:45:14.617768+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 11,
+    "eventos_com_eco": 13,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
