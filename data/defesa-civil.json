@@ -1,13 +1,13 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-15T02:11:32-03:00",
-  "fonte_coletada_em": "2026-09-15T05:10:06Z",
+  "gerado_em": "2026-09-15T02:20:38-03:00",
+  "fonte_coletada_em": "2026-09-15T05:20:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 66,
+  "entradas_feed": 64,
   "alertas_ativos": 3,
   "eventos_geo": [
     {
@@ -88,9 +88,9 @@
           1.78
         ],
         "dbz_medio": 12.9,
-        "pico_em": "2026-09-15T03:20:00+00:00",
-        "pico_estimado_mmh": 20.22,
-        "pico_dbz_medio": 43.9,
+        "pico_em": "2026-09-15T03:30:00+00:00",
+        "pico_estimado_mmh": 18.8,
+        "pico_dbz_medio": 43.4,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -119,21 +119,11 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-15T03:20:00+00:00",
-        "intensidade_estimada_mmh": 0.25,
-        "faixa_estimada_mmh": [
-          0.21,
-          0.36
-        ],
-        "dbz_medio": 13.3,
-        "pico_em": "2026-09-15T03:20:00+00:00",
-        "pico_estimado_mmh": 0.25,
-        "pico_dbz_medio": 13.3,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -678,9 +668,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-15T05:11:43.625245+00:00",
+    "gerado_em": "2026-09-15T05:20:40.321456+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 8,
+    "eventos_com_eco": 7,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
