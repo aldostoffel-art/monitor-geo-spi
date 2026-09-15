@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-15T16:20:47-03:00",
-  "fonte_coletada_em": "2026-09-15T19:20:07Z",
+  "gerado_em": "2026-09-15T16:25:14-03:00",
+  "fonte_coletada_em": "2026-09-15T19:25:04Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 35,
-  "alertas_ativos": 6,
+  "entradas_feed": 37,
+  "alertas_ativos": 7,
   "eventos_geo": [
     {
       "id_alerta": "190363/2026",
@@ -755,6 +755,70 @@
         "pico_dbz_medio": 23.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
+    },
+    {
+      "id_alerta": "190380/2026",
+      "municipio": "Bauru",
+      "latitude": -22.3276,
+      "longitude": -49.066851,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva forte na regiao de Bauru e Pederneiras. Tem raios, vento e condicao para granizo. Atinge municipios vizinhos. Busque abrigo!",
+      "resumo": "Defesa Civil:Chuva forte na regiao de Bauru e Pederneiras. Tem raios, vento e condicao para granizo. Atinge municipios vizinhos. Busque abrigo!",
+      "descricao": "Chuva forte na região de Bauru e Pederneiras. Tem raios, vento e condição para granizo. Atinge municípios vizinhos. Busque abrigo!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-15T16:23:10-03:00",
+      "fim": "2026-09-15T23:35:00-03:00",
+      "vigencia": "2026-09-15T16:23:10-03:00 → 2026-09-15T23:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 56,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
+    },
+    {
+      "id_alerta": "190380/2026",
+      "municipio": "Pederneiras",
+      "latitude": -22.34752,
+      "longitude": -48.792198,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva forte na regiao de Bauru e Pederneiras. Tem raios, vento e condicao para granizo. Atinge municipios vizinhos. Busque abrigo!",
+      "resumo": "Defesa Civil:Chuva forte na regiao de Bauru e Pederneiras. Tem raios, vento e condicao para granizo. Atinge municipios vizinhos. Busque abrigo!",
+      "descricao": "Chuva forte na região de Bauru e Pederneiras. Tem raios, vento e condição para granizo. Atinge municípios vizinhos. Busque abrigo!",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-15T16:23:10-03:00",
+      "fim": "2026-09-15T23:35:00-03:00",
+      "vigencia": "2026-09-15T16:23:10-03:00 → 2026-09-15T23:35:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 10,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "SEM_ECO_NO_PONTO",
+        "fonte": "RainViewer",
+        "metodo": "Radar composto",
+        "janela_min": 120,
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
+      }
     }
   ],
   "eventos_recentes_geo": [],
@@ -771,7 +835,7 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-15T19:20:49.510131+00:00",
+    "gerado_em": "2026-09-15T19:25:15.931853+00:00",
     "janela_min": 120,
     "eventos_com_eco": 16,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
