@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-15T18:01:16.026132-03:00",
+  "gerado_em": "2026-09-15T18:02:26.646242-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-15T20:54:22.000Z",
+  "historico_grupos_fim": "2026-09-15T21:01:53.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -33418,6 +33418,13 @@
               "evidencias": []
             },
             {
+              "site": "3VM",
+              "reincidente": false,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "4IT",
               "reincidente": false,
               "aberturas": 1,
@@ -33617,6 +33624,13 @@
                   "status": "GRY, OJX"
                 }
               ]
+            },
+            {
+              "site": "OT5",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             },
             {
               "site": "SJX",
@@ -33873,6 +33887,13 @@
               "evidencias": []
             },
             {
+              "site": "IBP",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
               "site": "NBB",
               "reincidente": true,
               "aberturas": 1,
@@ -33969,6 +33990,44 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "FIBRA/BACKBONE",
                   "status": "esse dwdm afetando os sites NCO, NCM, NVC, NBB, DBA, YOC, NCB"
+                }
+              ]
+            },
+            {
+              "site": "PDE",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "NORMALIZADO/OK",
+              "evidencias": [
+                {
+                  "hora": "07:10",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+                },
+                {
+                  "hora": "08:01",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "PDE, técnicos Gabriel e Momberg providenciando troca da RRU"
+                },
+                {
+                  "hora": "11:42",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "BDV, PDE, IPP, R0B, SZ5, NCO, NCM, NVC, NBB, DBA, YOC, NCB"
+                },
+                {
+                  "hora": "12:23",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "BDV, IPO, IPP, L06, PDE, R0B, RWC, SXK, VOM e YMA."
+                },
+                {
+                  "hora": "17:36",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NORMALIZADO/OK",
+                  "status": "@175531169468498 boa tarde. sites PDE, BLB, ZIO, PYE, PVQ e PY2 de Piedade normalizados."
                 }
               ]
             },
@@ -34633,7 +34692,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 312
+      "mensagens_grupos_no_dia": 316
     }
   ],
   "ativos_agora": [
@@ -34641,6 +34700,12 @@
       "cn": "11",
       "parceira": "ABILITY",
       "sites": [
+        {
+          "site": "3VM",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.02
+        },
         {
           "site": "CJ1",
           "causa": "NÃO IDENTIFICADA",
@@ -34658,19 +34723,19 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 2.68
+          "idade_ativa_h": 2.7
         },
         {
           "site": "ERO",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.63
+          "idade_ativa_h": 1.65
         },
         {
           "site": "JLH",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 7.01
+          "idade_ativa_h": 7.04
         },
         {
           "site": "MBM",
@@ -34689,19 +34754,19 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 57.68
+          "idade_ativa_h": 57.7
         },
         {
           "site": "OBU",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 3.3
+          "idade_ativa_h": 3.32
         },
         {
           "site": "SRQ",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.63
+          "idade_ativa_h": 4.65
         },
         {
           "site": "STF",
@@ -34720,13 +34785,13 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 233.33
+          "idade_ativa_h": 233.35
         },
         {
           "site": "VLR",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.63
+          "idade_ativa_h": 1.65
         },
         {
           "site": "XQA",
@@ -34745,7 +34810,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 106.33
+          "idade_ativa_h": 106.35
         }
       ]
     },
@@ -34757,7 +34822,13 @@
           "site": "CDI",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 5.68
+          "idade_ativa_h": 5.7
+        },
+        {
+          "site": "OT5",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.02
         }
       ]
     },
@@ -34769,7 +34840,7 @@
           "site": "DTT",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.0
+          "idade_ativa_h": 1.02
         }
       ]
     },
@@ -34781,7 +34852,13 @@
           "site": "BXO",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 4.63
+          "idade_ativa_h": 4.65
+        },
+        {
+          "site": "IBP",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.02
         },
         {
           "site": "IPP",
@@ -34812,7 +34889,44 @@
               "status": "BDV, IPO, IPP, L06, PDE, R0B, RWC, SXK, VOM e YMA."
             }
           ],
-          "idade_ativa_h": 32.01
+          "idade_ativa_h": 32.04
+        },
+        {
+          "site": "PDE",
+          "causa": "NORMALIZADO/OK",
+          "evidencias": [
+            {
+              "hora": "07:10",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            },
+            {
+              "hora": "08:01",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "PDE, técnicos Gabriel e Momberg providenciando troca da RRU"
+            },
+            {
+              "hora": "11:42",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "BDV, PDE, IPP, R0B, SZ5, NCO, NCM, NVC, NBB, DBA, YOC, NCB"
+            },
+            {
+              "hora": "12:23",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "BDV, IPO, IPP, L06, PDE, R0B, RWC, SXK, VOM e YMA."
+            },
+            {
+              "hora": "17:36",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NORMALIZADO/OK",
+              "status": "@175531169468498 boa tarde. sites PDE, BLB, ZIO, PYE, PVQ e PY2 de Piedade normalizados."
+            }
+          ],
+          "idade_ativa_h": 0.02
         },
         {
           "site": "R0B",
@@ -34843,7 +34957,7 @@
               "status": "BDV, IPO, IPP, L06, PDE, R0B, RWC, SXK, VOM e YMA."
             }
           ],
-          "idade_ativa_h": 32.01
+          "idade_ativa_h": 32.04
         },
         {
           "site": "ZIO",
@@ -34856,7 +34970,7 @@
               "status": "@175531169468498 boa tarde. sites PDE, BLB, ZIO, PYE, PVQ e PY2 de Piedade normalizados."
             }
           ],
-          "idade_ativa_h": 4.35
+          "idade_ativa_h": 4.37
         }
       ]
     },
@@ -34899,7 +35013,7 @@
               "status": "FJN/PME/REFFURTO VANDALISMO."
             }
           ],
-          "idade_ativa_h": 35.01
+          "idade_ativa_h": 35.04
         }
       ]
     },
@@ -34911,13 +35025,13 @@
           "site": "ID2",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.35
+          "idade_ativa_h": 0.37
         },
         {
           "site": "YSR",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.63
+          "idade_ativa_h": 1.65
         }
       ]
     },
@@ -34929,13 +35043,13 @@
           "site": "DBT",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.0
+          "idade_ativa_h": 1.02
         },
         {
           "site": "OUV",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 2.68
+          "idade_ativa_h": 2.7
         },
         {
           "site": "U50",
@@ -34954,7 +35068,7 @@
               "status": "U50, NX1"
             }
           ],
-          "idade_ativa_h": 1136.68
+          "idade_ativa_h": 1136.7
         }
       ]
     },
@@ -34966,7 +35080,7 @@
           "site": "ESL",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 1.0
+          "idade_ativa_h": 1.02
         }
       ]
     }
