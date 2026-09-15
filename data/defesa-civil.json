@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-15T17:41:01-03:00",
-  "fonte_coletada_em": "2026-09-15T20:40:10Z",
+  "gerado_em": "2026-09-15T17:45:15-03:00",
+  "fonte_coletada_em": "2026-09-15T20:45:06Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 58,
-  "alertas_ativos": 9,
+  "entradas_feed": 63,
+  "alertas_ativos": 11,
   "eventos_geo": [
     {
       "id_alerta": "190367/2026",
@@ -1081,6 +1081,90 @@
         "pico_dbz_medio": 29.3,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
+    },
+    {
+      "id_alerta": "190403/2026",
+      "municipio": "Piracicaba",
+      "latitude": -22.724979,
+      "longitude": -47.649197,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva forte se deslocando para Piracicaba. Tem raios, vento e condicao para granizo. Atinge municipios vizinhos. Busque abrigo.",
+      "resumo": "Defesa Civil:Chuva forte se deslocando para Piracicaba. Tem raios, vento e condicao para granizo. Atinge municipios vizinhos. Busque abrigo.",
+      "descricao": "Chuva forte se deslocando para Piracicaba. Tem raios, vento e condição para granizo. Atinge municípios vizinhos. Busque abrigo.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-15T17:41:42-03:00",
+      "fim": "2026-09-15T23:55:00-03:00",
+      "vigencia": "2026-09-15T17:41:42-03:00 → 2026-09-15T23:55:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 60,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-15T20:40:00+00:00",
+        "intensidade_estimada_mmh": 0.66,
+        "faixa_estimada_mmh": [
+          0.56,
+          1.0
+        ],
+        "dbz_medio": 20.1,
+        "pico_em": "2026-09-15T20:30:00+00:00",
+        "pico_estimado_mmh": 0.9,
+        "pico_dbz_medio": 22.3,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190405/2026",
+      "municipio": "Piracicaba",
+      "latitude": -22.724979,
+      "longitude": -47.649197,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:Chuva forte se deslocando para Piracicaba. Tem raios, vento e condicao para granizo. Atinge municipios vizinhos. Busque abrigo.",
+      "resumo": "Defesa Civil:Chuva forte se deslocando para Piracicaba. Tem raios, vento e condicao para granizo. Atinge municipios vizinhos. Busque abrigo.",
+      "descricao": "Chuva forte se deslocando para Piracicaba. Tem raios, vento e condição para granizo. Atinge municípios vizinhos. Busque abrigo.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Extreme",
+      "urgencia": "Expected",
+      "certeza": "Likely",
+      "inicio": "2026-09-15T17:42:50-03:00",
+      "fim": "2026-09-15T23:55:00-03:00",
+      "vigencia": "2026-09-15T17:42:50-03:00 → 2026-09-15T23:55:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 60,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-15T20:40:00+00:00",
+        "intensidade_estimada_mmh": 0.66,
+        "faixa_estimada_mmh": [
+          0.56,
+          1.0
+        ],
+        "dbz_medio": 20.1,
+        "pico_em": "2026-09-15T20:30:00+00:00",
+        "pico_estimado_mmh": 0.9,
+        "pico_dbz_medio": 22.3,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [
@@ -1256,9 +1340,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-15T20:41:11.014943+00:00",
+    "gerado_em": "2026-09-15T20:45:17.940839+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 24,
+    "eventos_com_eco": 25,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
