@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-15T14:45:13-03:00",
-  "fonte_coletada_em": "2026-09-15T17:45:04Z",
+  "gerado_em": "2026-09-15T14:50:36-03:00",
+  "fonte_coletada_em": "2026-09-15T17:50:05Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 20,
-  "alertas_ativos": 1,
+  "entradas_feed": 21,
+  "alertas_ativos": 2,
   "eventos_geo": [
     {
       "id_alerta": "190363/2026",
@@ -93,6 +93,174 @@
         "pico_dbz_medio": 20.5,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
+    },
+    {
+      "id_alerta": "190364/2026",
+      "municipio": "Avaré",
+      "latitude": -23.093673,
+      "longitude": -48.927014,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14h45 Chuva isolada na regiao de Ourinhos, Piraju, Fartura e Avare. Tem raios e vento. Atinge municipios vizinhos. Cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:14h45 Chuva isolada na regiao de Ourinhos, Piraju, Fartura e Avare. Tem raios e vento. Atinge municipios vizinhos. Cuidado nas proximas horas.",
+      "descricao": "14h45 Chuva isolada na região de Ourinhos, Piraju, Fartura e Avaré. Tem raios e vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-15T14:46:06-03:00",
+      "fim": "2026-09-15T16:40:00-03:00",
+      "vigencia": "2026-09-15T14:46:06-03:00 → 2026-09-15T16:40:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 16,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-15T17:40:00+00:00",
+        "intensidade_estimada_mmh": 1.06,
+        "faixa_estimada_mmh": [
+          1.07,
+          3.65
+        ],
+        "dbz_medio": 23.4,
+        "pico_em": "2026-09-15T17:40:00+00:00",
+        "pico_estimado_mmh": 1.06,
+        "pico_dbz_medio": 23.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190364/2026",
+      "municipio": "Fartura",
+      "latitude": -23.391281,
+      "longitude": -49.510894,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14h45 Chuva isolada na regiao de Ourinhos, Piraju, Fartura e Avare. Tem raios e vento. Atinge municipios vizinhos. Cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:14h45 Chuva isolada na regiao de Ourinhos, Piraju, Fartura e Avare. Tem raios e vento. Atinge municipios vizinhos. Cuidado nas proximas horas.",
+      "descricao": "14h45 Chuva isolada na região de Ourinhos, Piraju, Fartura e Avaré. Tem raios e vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-15T14:46:06-03:00",
+      "fim": "2026-09-15T16:40:00-03:00",
+      "vigencia": "2026-09-15T14:46:06-03:00 → 2026-09-15T16:40:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 1,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-15T17:40:00+00:00",
+        "intensidade_estimada_mmh": 0.53,
+        "faixa_estimada_mmh": [
+          1.0,
+          3.16
+        ],
+        "dbz_medio": 18.5,
+        "pico_em": "2026-09-15T17:40:00+00:00",
+        "pico_estimado_mmh": 0.53,
+        "pico_dbz_medio": 18.5,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190364/2026",
+      "municipio": "Ourinhos",
+      "latitude": -22.976534,
+      "longitude": -49.878119,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14h45 Chuva isolada na regiao de Ourinhos, Piraju, Fartura e Avare. Tem raios e vento. Atinge municipios vizinhos. Cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:14h45 Chuva isolada na regiao de Ourinhos, Piraju, Fartura e Avare. Tem raios e vento. Atinge municipios vizinhos. Cuidado nas proximas horas.",
+      "descricao": "14h45 Chuva isolada na região de Ourinhos, Piraju, Fartura e Avaré. Tem raios e vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-15T14:46:06-03:00",
+      "fim": "2026-09-15T16:40:00-03:00",
+      "vigencia": "2026-09-15T14:46:06-03:00 → 2026-09-15T16:40:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 19,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-15T17:40:00+00:00",
+        "intensidade_estimada_mmh": 1.93,
+        "faixa_estimada_mmh": [
+          2.05,
+          8.65
+        ],
+        "dbz_medio": 27.6,
+        "pico_em": "2026-09-15T17:40:00+00:00",
+        "pico_estimado_mmh": 1.93,
+        "pico_dbz_medio": 27.6,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190364/2026",
+      "municipio": "Piraju",
+      "latitude": -23.186985,
+      "longitude": -49.382018,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:14h45 Chuva isolada na regiao de Ourinhos, Piraju, Fartura e Avare. Tem raios e vento. Atinge municipios vizinhos. Cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:14h45 Chuva isolada na regiao de Ourinhos, Piraju, Fartura e Avare. Tem raios e vento. Atinge municipios vizinhos. Cuidado nas proximas horas.",
+      "descricao": "14h45 Chuva isolada na região de Ourinhos, Piraju, Fartura e Avaré. Tem raios e vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Expected",
+      "certeza": "Observed",
+      "inicio": "2026-09-15T14:46:06-03:00",
+      "fim": "2026-09-15T16:40:00-03:00",
+      "vigencia": "2026-09-15T14:46:06-03:00 → 2026-09-15T16:40:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 6,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-15T17:40:00+00:00",
+        "intensidade_estimada_mmh": 1.5,
+        "faixa_estimada_mmh": [
+          1.15,
+          8.65
+        ],
+        "dbz_medio": 25.8,
+        "pico_em": "2026-09-15T17:40:00+00:00",
+        "pico_estimado_mmh": 1.5,
+        "pico_dbz_medio": 25.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [],
@@ -100,9 +268,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-15T17:45:14.708047+00:00",
+    "gerado_em": "2026-09-15T17:50:38.524058+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 2,
+    "eventos_com_eco": 6,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
