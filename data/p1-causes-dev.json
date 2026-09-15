@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-15T07:08:19.417887-03:00",
+  "gerado_em": "2026-09-15T07:10:59.414152-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-15T10:07:56.000Z",
+  "historico_grupos_fim": "2026-09-15T10:10:33.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -33420,8 +33420,15 @@
               "site": "BMG",
               "reincidente": true,
               "aberturas": 3,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "07:10",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+                }
+              ]
             },
             {
               "site": "GOE",
@@ -33434,8 +33441,15 @@
               "site": "YPN",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "07:10",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+                }
+              ]
             }
           ]
         },
@@ -33447,36 +33461,71 @@
               "site": "DNV",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "07:08",
+                  "grupo": "Móvel 14 - 18",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "U50, TPP, NGT, DNV, MTE, TPL"
+                }
+              ]
             },
             {
               "site": "MTE",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "07:08",
+                  "grupo": "Móvel 14 - 18",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "U50, TPP, NGT, DNV, MTE, TPL"
+                }
+              ]
             },
             {
               "site": "NGT",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "07:08",
+                  "grupo": "Móvel 14 - 18",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "U50, TPP, NGT, DNV, MTE, TPL"
+                }
+              ]
             },
             {
               "site": "TPL",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "07:08",
+                  "grupo": "Móvel 14 - 18",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "U50, TPP, NGT, DNV, MTE, TPL"
+                }
+              ]
             },
             {
               "site": "TPP",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "07:08",
+                  "grupo": "Móvel 14 - 18",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "U50, TPP, NGT, DNV, MTE, TPL"
+                }
+              ]
             }
           ]
         },
@@ -33501,6 +33550,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "JBD, SPO, ZUA, ASU, ICN, DIC, RSL"
+                },
+                {
+                  "hora": "07:10",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "JBD, SPO, ZUA, ASU, ICN"
                 }
               ]
             },
@@ -33555,6 +33610,12 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "JBD, SPO, ZUA, ASU, ICN, DIC, RSL"
+                },
+                {
+                  "hora": "07:10",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "JBD, SPO, ZUA, ASU, ICN"
                 }
               ]
             },
@@ -33602,13 +33663,19 @@
                   "grupo": "Movel N1 SPA",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "JBD, SPO, ZUA, ASU, ICN, DIC, RSL"
+                },
+                {
+                  "hora": "07:10",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "JBD, SPO, ZUA, ASU, ICN"
                 }
               ]
             }
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 62
+      "mensagens_grupos_no_dia": 66
     }
   ],
   "ativos_agora": [
@@ -33633,7 +33700,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 14.47
+          "idade_ativa_h": 14.51
         },
         {
           "site": "CJ1",
@@ -33652,7 +33719,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 7.75
+          "idade_ativa_h": 7.79
         },
         {
           "site": "EBY",
@@ -33671,7 +33738,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 11.8
+          "idade_ativa_h": 11.84
         },
         {
           "site": "FBO",
@@ -33690,7 +33757,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 12.47
+          "idade_ativa_h": 12.51
         },
         {
           "site": "MBM",
@@ -33709,7 +33776,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 46.8
+          "idade_ativa_h": 46.84
         },
         {
           "site": "STF",
@@ -33728,7 +33795,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 222.45
+          "idade_ativa_h": 222.49
         },
         {
           "site": "XQA",
@@ -33747,7 +33814,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 95.45
+          "idade_ativa_h": 95.49
         }
       ]
     },
@@ -33766,7 +33833,7 @@
               "status": "GRY"
             }
           ],
-          "idade_ativa_h": 34.47
+          "idade_ativa_h": 34.51
         }
       ]
     },
@@ -33776,39 +33843,81 @@
       "sites": [
         {
           "site": "BDV",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 43.12
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:10",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            }
+          ],
+          "idade_ativa_h": 43.16
         },
         {
           "site": "BMG",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 0.14
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:10",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            }
+          ],
+          "idade_ativa_h": 0.18
         },
         {
           "site": "IPP",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 21.14
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:10",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            }
+          ],
+          "idade_ativa_h": 21.18
         },
         {
           "site": "PDE",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 34.14
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:10",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            }
+          ],
+          "idade_ativa_h": 34.18
         },
         {
           "site": "R0B",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 21.14
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:10",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            }
+          ],
+          "idade_ativa_h": 21.18
         },
         {
           "site": "YPN",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 0.14
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:10",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            }
+          ],
+          "idade_ativa_h": 0.18
         }
       ]
     },
@@ -33818,27 +33927,55 @@
       "sites": [
         {
           "site": "FJN",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 24.14
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:09",
+              "grupo": "Móvel 16 - 17",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "FJN, NAM, REG, PME"
+            }
+          ],
+          "idade_ativa_h": 24.18
         },
         {
           "site": "NAM",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 10.14
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:09",
+              "grupo": "Móvel 16 - 17",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "FJN, NAM, REG, PME"
+            }
+          ],
+          "idade_ativa_h": 10.18
         },
         {
           "site": "PME",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 7.75
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:09",
+              "grupo": "Móvel 16 - 17",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "FJN, NAM, REG, PME"
+            }
+          ],
+          "idade_ativa_h": 7.79
         },
         {
           "site": "REG",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 7.75
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:09",
+              "grupo": "Móvel 16 - 17",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "FJN, NAM, REG, PME"
+            }
+          ],
+          "idade_ativa_h": 7.79
         }
       ]
     },
@@ -33848,39 +33985,81 @@
       "sites": [
         {
           "site": "DNV",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 0.14
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:08",
+              "grupo": "Móvel 14 - 18",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "U50, TPP, NGT, DNV, MTE, TPL"
+            }
+          ],
+          "idade_ativa_h": 0.18
         },
         {
           "site": "MTE",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 0.14
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:08",
+              "grupo": "Móvel 14 - 18",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "U50, TPP, NGT, DNV, MTE, TPL"
+            }
+          ],
+          "idade_ativa_h": 0.18
         },
         {
           "site": "NGT",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 0.14
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:08",
+              "grupo": "Móvel 14 - 18",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "U50, TPP, NGT, DNV, MTE, TPL"
+            }
+          ],
+          "idade_ativa_h": 0.18
         },
         {
           "site": "TPL",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 0.14
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:08",
+              "grupo": "Móvel 14 - 18",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "U50, TPP, NGT, DNV, MTE, TPL"
+            }
+          ],
+          "idade_ativa_h": 0.18
         },
         {
           "site": "TPP",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 0.14
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:08",
+              "grupo": "Móvel 14 - 18",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "U50, TPP, NGT, DNV, MTE, TPL"
+            }
+          ],
+          "idade_ativa_h": 0.18
         },
         {
           "site": "U50",
-          "causa": "SEM CAUSA LOCALIZADA",
-          "evidencias": [],
-          "idade_ativa_h": 1125.8
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:08",
+              "grupo": "Móvel 14 - 18",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "U50, TPP, NGT, DNV, MTE, TPL"
+            }
+          ],
+          "idade_ativa_h": 1125.84
         }
       ]
     },
@@ -33903,9 +34082,15 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "JBD, SPO, ZUA, ASU, ICN, DIC, RSL"
+            },
+            {
+              "hora": "07:10",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "JBD, SPO, ZUA, ASU, ICN"
             }
           ],
-          "idade_ativa_h": 6.14
+          "idade_ativa_h": 6.18
         },
         {
           "site": "ICN",
@@ -33922,9 +34107,15 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "JBD, SPO, ZUA, ASU, ICN, DIC, RSL"
+            },
+            {
+              "hora": "07:10",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "JBD, SPO, ZUA, ASU, ICN"
             }
           ],
-          "idade_ativa_h": 4.77
+          "idade_ativa_h": 4.81
         },
         {
           "site": "JBD",
@@ -33941,9 +34132,15 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "JBD, SPO, ZUA, ASU, ICN, DIC, RSL"
+            },
+            {
+              "hora": "07:10",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "JBD, SPO, ZUA, ASU, ICN"
             }
           ],
-          "idade_ativa_h": 49.8
+          "idade_ativa_h": 49.84
         },
         {
           "site": "SPO",
@@ -33960,9 +34157,15 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "JBD, SPO, ZUA, ASU, ICN, DIC, RSL"
+            },
+            {
+              "hora": "07:10",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "JBD, SPO, ZUA, ASU, ICN"
             }
           ],
-          "idade_ativa_h": 18.47
+          "idade_ativa_h": 18.51
         },
         {
           "site": "ZUA",
@@ -33979,9 +34182,15 @@
               "grupo": "Movel N1 SPA",
               "causa": "NÃO IDENTIFICADA",
               "status": "JBD, SPO, ZUA, ASU, ICN, DIC, RSL"
+            },
+            {
+              "hora": "07:10",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "JBD, SPO, ZUA, ASU, ICN"
             }
           ],
-          "idade_ativa_h": 3.14
+          "idade_ativa_h": 3.18
         }
       ]
     }
