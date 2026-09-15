@@ -1,10 +1,10 @@
 {
   "core": "ENERGY CORE SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-15T06:20:03.922699+00:00",
-  "fonte_gerada_em": "2026-09-15T03:18:14-03:00",
-  "quantidade_ocorrencias_origem": 204,
-  "quantidade_regioes_sem_energia": 151,
+  "gerado_em": "2026-09-15T06:30:04.013760+00:00",
+  "fonte_gerada_em": "2026-09-15T03:24:47-03:00",
+  "quantidade_ocorrencias_origem": 198,
+  "quantidade_regioes_sem_energia": 147,
   "sem_coordenada": [],
   "regioes": [
     {
@@ -85,6 +85,7 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
+        "em_atendimento",
         "aberta"
       ],
       "ocorrencias": [
@@ -205,6 +206,25 @@
       ],
       "ocorrencias": [
         "ENEL-351060905"
+      ],
+      "sem_energia": true
+    },
+    {
+      "regiao": "JARINU",
+      "municipio": "JARINU",
+      "latitude": -23.096312,
+      "longitude": -46.720381,
+      "origem_coordenada": "AREA_GEOCODIFICADA",
+      "confianca_geografica": "ALTA",
+      "nivel": "CRITICO",
+      "distribuidoras": [
+        "NEOENERGIA ELEKTRO"
+      ],
+      "status": [
+        "aberta"
+      ],
+      "ocorrencias": [
+        "ELEKTRO-2026-1586930"
       ],
       "sem_energia": true
     },
@@ -340,25 +360,6 @@
       ],
       "ocorrencias": [
         "ENEL-3534401001"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "PORTO FERREIRA",
-      "municipio": "PORTO FERREIRA",
-      "latitude": -21.842921,
-      "longitude": -47.452453,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "ALTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "aberta"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1586923"
       ],
       "sem_energia": true
     },
@@ -585,12 +586,11 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta",
-        "em_atendimento"
+        "em_atendimento",
+        "aberta"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1586901",
-        "ELEKTRO-2026-1586414",
         "ELEKTRO-2026-1585404",
         "ELEKTRO-2026-1579592"
       ],
@@ -2134,12 +2134,10 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "em_atendimento",
         "aberta"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1586846",
-        "ELEKTRO-2026-1582771",
         "ELEKTRO-2026-1557903"
       ],
       "sem_energia": true
@@ -2357,7 +2355,6 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1586917",
-        "ELEKTRO-2026-1586814",
         "ELEKTRO-2026-1586752",
         "ELEKTRO-2026-1586278",
         "ELEKTRO-2026-1585951",
@@ -2423,25 +2420,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "BRO CUIABA",
-      "municipio": "NAZARE PAULISTA",
-      "latitude": -23.270954,
-      "longitude": -46.398751,
-      "origem_coordenada": "REFERENCIA_OCORRENCIA",
-      "confianca_geografica": "FALLBACK",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1584464"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "NAZARE PAULISTA",
       "municipio": "NAZARE PAULISTA",
       "latitude": -23.205,
@@ -2453,8 +2431,8 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta",
-        "em_atendimento"
+        "em_atendimento",
+        "aberta"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1586904",
@@ -2476,7 +2454,7 @@
         "NEOENERGIA ELEKTRO"
       ],
       "status": [
-        "aberta"
+        "em_atendimento"
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1582499"
@@ -2560,25 +2538,6 @@
       "sem_energia": true
     },
     {
-      "regiao": "PIEDADE",
-      "municipio": "PIEDADE",
-      "latitude": -23.7995,
-      "longitude": -47.44575,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1585110"
-      ],
-      "sem_energia": true
-    },
-    {
       "regiao": "PILAR DO SUL",
       "municipio": "PILAR DO SUL",
       "latitude": -23.8585,
@@ -2598,7 +2557,7 @@
       "sem_energia": true
     },
     {
-      "regiao": "BRO DO ROSARIO",
+      "regiao": "BAIRRO DOS NOGUEIRAS",
       "municipio": "PIRACAIA",
       "latitude": -23.066449,
       "longitude": -46.391275,
@@ -2631,6 +2590,7 @@
         "aberta"
       ],
       "ocorrencias": [
+        "ELEKTRO-2026-1586966",
         "ELEKTRO-2026-1586817",
         "ELEKTRO-2026-1580814"
       ],
@@ -2671,25 +2631,6 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1586417"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "PORANGABA",
-      "municipio": "PORANGABA",
-      "latitude": -23.174826,
-      "longitude": -48.102016,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1584792"
       ],
       "sem_energia": true
     },
@@ -2823,25 +2764,6 @@
       ],
       "ocorrencias": [
         "ELEKTRO-2026-1586793"
-      ],
-      "sem_energia": true
-    },
-    {
-      "regiao": "SANTA RITA DO PASSA QUATRO",
-      "municipio": "SANTA RITA DO PASSA QUATRO",
-      "latitude": -21.676592,
-      "longitude": -47.517669,
-      "origem_coordenada": "AREA_GEOCODIFICADA",
-      "confianca_geografica": "ALTA",
-      "nivel": "MONITORAMENTO",
-      "distribuidoras": [
-        "NEOENERGIA ELEKTRO"
-      ],
-      "status": [
-        "em_atendimento"
-      ],
-      "ocorrencias": [
-        "ELEKTRO-2026-1586651"
       ],
       "sem_energia": true
     },
