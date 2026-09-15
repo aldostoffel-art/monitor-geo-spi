@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-15T08:01:42.722755-03:00",
+  "gerado_em": "2026-09-15T08:04:19.114189-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-15T10:56:13.000Z",
+  "historico_grupos_fim": "2026-09-15T11:02:23.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -33420,13 +33420,19 @@
               "site": "BMG",
               "reincidente": true,
               "aberturas": 3,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "INFRA",
               "evidencias": [
                 {
                   "hora": "07:10",
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+                },
+                {
+                  "hora": "08:01",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "INFRA",
+                  "status": "BMG, téc Nilson em deslocamento com GMG p tentativa de acesso ao morro."
                 }
               ]
             },
@@ -33441,13 +33447,19 @@
               "site": "YPN",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "ACESSO/PROCESSO",
               "evidencias": [
                 {
                   "hora": "07:10",
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+                },
+                {
+                  "hora": "08:01",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "ACESSO/PROCESSO",
+                  "status": "YPN, téc Lucas em deslocamento de 50min"
                 }
               ]
             }
@@ -33544,7 +33556,7 @@
               "site": "ASU",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
+              "causa": "FURTO/VANDALISMO",
               "evidencias": [
                 {
                   "hora": "06:46",
@@ -33563,6 +33575,12 @@
                   "grupo": "Móvel 15 - 19",
                   "causa": "NÃO IDENTIFICADA",
                   "status": "JBD, SPO, ZUA, ASU, ICN"
+                },
+                {
+                  "hora": "08:01",
+                  "grupo": "Móvel 15 - 19",
+                  "causa": "FURTO/VANDALISMO",
+                  "status": "ASU Furto e Vandalismo. Estamos a Caminho"
                 }
               ]
             },
@@ -33682,7 +33700,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 80
+      "mensagens_grupos_no_dia": 85
     }
   ],
   "ativos_agora": [
@@ -33707,7 +33725,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 15.35
+          "idade_ativa_h": 15.4
         },
         {
           "site": "CJ1",
@@ -33726,7 +33744,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 8.63
+          "idade_ativa_h": 8.69
         },
         {
           "site": "EBY",
@@ -33745,7 +33763,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 12.68
+          "idade_ativa_h": 12.74
         },
         {
           "site": "MBM",
@@ -33764,7 +33782,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 47.68
+          "idade_ativa_h": 47.74
         },
         {
           "site": "STF",
@@ -33783,7 +33801,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 223.33
+          "idade_ativa_h": 223.39
         },
         {
           "site": "XQA",
@@ -33802,7 +33820,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 96.33
+          "idade_ativa_h": 96.39
         }
       ]
     },
@@ -33821,7 +33839,7 @@
               "status": "GRY"
             }
           ],
-          "idade_ativa_h": 35.35
+          "idade_ativa_h": 35.4
         }
       ]
     },
@@ -33838,35 +33856,53 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            },
+            {
+              "hora": "08:01",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "BDV, técnicos Eliel e Renan tentando outro caminho p conseguir chegar em Barra do Turvo q está com as estradas obstruídas."
             }
           ],
-          "idade_ativa_h": 44.0
+          "idade_ativa_h": 44.05
         },
         {
           "site": "BMG",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "INFRA",
           "evidencias": [
             {
               "hora": "07:10",
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            },
+            {
+              "hora": "08:01",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "BMG, téc Nilson em deslocamento com GMG p tentativa de acesso ao morro."
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.07
         },
         {
           "site": "IPP",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "CLIMA",
           "evidencias": [
             {
               "hora": "07:10",
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            },
+            {
+              "hora": "08:01",
+              "grupo": "Móvel 15 - 19",
+              "causa": "CLIMA",
+              "status": "IPP, sem acesso o morro de RIR.RD Ribeira Rádio devido chuvas e estrada"
             }
           ],
-          "idade_ativa_h": 22.01
+          "idade_ativa_h": 22.07
         },
         {
           "site": "PDE",
@@ -33877,35 +33913,53 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            },
+            {
+              "hora": "08:01",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "PDE, técnicos Gabriel e Momberg providenciando troca da RRU"
             }
           ],
-          "idade_ativa_h": 35.01
+          "idade_ativa_h": 35.07
         },
         {
           "site": "R0B",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "CLIMA",
           "evidencias": [
             {
               "hora": "07:10",
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            },
+            {
+              "hora": "08:01",
+              "grupo": "Móvel 15 - 19",
+              "causa": "CLIMA",
+              "status": "R0B, sem acesso o morro de RIR.RD Ribeira Rádio devido chuvas e estrada"
             }
           ],
-          "idade_ativa_h": 22.01
+          "idade_ativa_h": 22.07
         },
         {
           "site": "YPN",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "ACESSO/PROCESSO",
           "evidencias": [
             {
               "hora": "07:10",
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            },
+            {
+              "hora": "08:01",
+              "grupo": "Móvel 15 - 19",
+              "causa": "ACESSO/PROCESSO",
+              "status": "YPN, téc Lucas em deslocamento de 50min"
             }
           ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 1.07
         }
       ]
     },
@@ -33930,7 +33984,7 @@
               "status": "FJN_Furto vandalismo"
             }
           ],
-          "idade_ativa_h": 25.01
+          "idade_ativa_h": 25.07
         },
         {
           "site": "NAM",
@@ -33943,7 +33997,7 @@
               "status": "FJN, NAM, REG, PME"
             }
           ],
-          "idade_ativa_h": 11.01
+          "idade_ativa_h": 11.07
         },
         {
           "site": "PME",
@@ -33962,7 +34016,7 @@
               "status": "PME - leva o REG _ provável rompimento (verificando Deslocamento tec)"
             }
           ],
-          "idade_ativa_h": 8.63
+          "idade_ativa_h": 8.69
         },
         {
           "site": "REG",
@@ -33981,7 +34035,7 @@
               "status": "PME - leva o REG _ provável rompimento (verificando Deslocamento tec)"
             }
           ],
-          "idade_ativa_h": 8.63
+          "idade_ativa_h": 8.69
         }
       ]
     },
@@ -33990,62 +34044,10 @@
       "parceira": "TEL",
       "sites": [
         {
-          "site": "DNV",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "07:08",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, TPP, NGT, DNV, MTE, TPL"
-            }
-          ],
-          "idade_ativa_h": 1.01
-        },
-        {
-          "site": "NGT",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "07:08",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, TPP, NGT, DNV, MTE, TPL"
-            }
-          ],
-          "idade_ativa_h": 1.01
-        },
-        {
           "site": "PJH",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.68
-        },
-        {
-          "site": "TPL",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "07:08",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, TPP, NGT, DNV, MTE, TPL"
-            }
-          ],
-          "idade_ativa_h": 1.01
-        },
-        {
-          "site": "TPP",
-          "causa": "NÃO IDENTIFICADA",
-          "evidencias": [
-            {
-              "hora": "07:08",
-              "grupo": "Móvel 14 - 18",
-              "causa": "NÃO IDENTIFICADA",
-              "status": "U50, TPP, NGT, DNV, MTE, TPL"
-            }
-          ],
-          "idade_ativa_h": 1.01
+          "idade_ativa_h": 0.74
         },
         {
           "site": "U50",
@@ -34058,7 +34060,7 @@
               "status": "U50, TPP, NGT, DNV, MTE, TPL"
             }
           ],
-          "idade_ativa_h": 1126.68
+          "idade_ativa_h": 1126.74
         }
       ]
     },
@@ -34068,7 +34070,7 @@
       "sites": [
         {
           "site": "ASU",
-          "causa": "NÃO IDENTIFICADA",
+          "causa": "FURTO/VANDALISMO",
           "evidencias": [
             {
               "hora": "06:46",
@@ -34087,9 +34089,15 @@
               "grupo": "Móvel 15 - 19",
               "causa": "NÃO IDENTIFICADA",
               "status": "JBD, SPO, ZUA, ASU, ICN"
+            },
+            {
+              "hora": "08:01",
+              "grupo": "Móvel 15 - 19",
+              "causa": "FURTO/VANDALISMO",
+              "status": "ASU Furto e Vandalismo. Estamos a Caminho"
             }
           ],
-          "idade_ativa_h": 7.01
+          "idade_ativa_h": 7.07
         },
         {
           "site": "ICN",
@@ -34114,7 +34122,7 @@
               "status": "JBD, SPO, ZUA, ASU, ICN"
             }
           ],
-          "idade_ativa_h": 5.65
+          "idade_ativa_h": 5.7
         },
         {
           "site": "JBD",
@@ -34139,7 +34147,7 @@
               "status": "JBD, SPO, ZUA, ASU, ICN"
             }
           ],
-          "idade_ativa_h": 50.68
+          "idade_ativa_h": 50.74
         },
         {
           "site": "SPO",
@@ -34164,7 +34172,7 @@
               "status": "JBD, SPO, ZUA, ASU, ICN"
             }
           ],
-          "idade_ativa_h": 19.35
+          "idade_ativa_h": 19.4
         },
         {
           "site": "ZUA",
@@ -34189,7 +34197,7 @@
               "status": "JBD, SPO, ZUA, ASU, ICN"
             }
           ],
-          "idade_ativa_h": 4.01
+          "idade_ativa_h": 4.07
         }
       ]
     }
