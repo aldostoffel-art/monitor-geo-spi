@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-15T00:35:26-03:00",
-  "fonte_coletada_em": "2026-09-15T03:35:06Z",
+  "gerado_em": "2026-09-15T00:40:28-03:00",
+  "fonte_coletada_em": "2026-09-15T03:40:08Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
-  "entradas_feed": 77,
-  "alertas_ativos": 4,
+  "entradas_feed": 78,
+  "alertas_ativos": 6,
   "eventos_geo": [
     {
       "id_alerta": "190334/2026",
@@ -88,9 +88,9 @@
           3.16
         ],
         "dbz_medio": 27.4,
-        "pico_em": "2026-09-15T01:40:00+00:00",
-        "pico_estimado_mmh": 4.27,
-        "pico_dbz_medio": 33.1,
+        "pico_em": "2026-09-15T03:00:00+00:00",
+        "pico_estimado_mmh": 2.43,
+        "pico_dbz_medio": 29.2,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -471,6 +471,216 @@
         "pico_dbz_medio": 32.9,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
+    },
+    {
+      "id_alerta": "190339/2026",
+      "municipio": "Aguaí",
+      "latitude": -22.056403,
+      "longitude": -46.979354,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:00:35 - Chuva forte e persistente em Pirassununga, Leme e Aguai. Tem vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:00:35 - Chuva forte e persistente em Pirassununga, Leme e Aguai. Tem vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "00:35 - Chuva forte e persistente em Pirassununga, Leme e Aguaí. Tem vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-15T00:35:32-03:00",
+      "fim": "2026-09-15T03:00:00-03:00",
+      "vigencia": "2026-09-15T00:35:32-03:00 → 2026-09-15T03:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 5,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-15T03:30:00+00:00",
+        "intensidade_estimada_mmh": 0.59,
+        "faixa_estimada_mmh": [
+          0.56,
+          1.15
+        ],
+        "dbz_medio": 19.4,
+        "pico_em": "2026-09-15T03:30:00+00:00",
+        "pico_estimado_mmh": 0.59,
+        "pico_dbz_medio": 19.4,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190339/2026",
+      "municipio": "Leme",
+      "latitude": -22.185211,
+      "longitude": -47.381401,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:00:35 - Chuva forte e persistente em Pirassununga, Leme e Aguai. Tem vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:00:35 - Chuva forte e persistente em Pirassununga, Leme e Aguai. Tem vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "00:35 - Chuva forte e persistente em Pirassununga, Leme e Aguaí. Tem vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-15T00:35:32-03:00",
+      "fim": "2026-09-15T03:00:00-03:00",
+      "vigencia": "2026-09-15T00:35:32-03:00 → 2026-09-15T03:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 15,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-15T03:30:00+00:00",
+        "intensidade_estimada_mmh": 1.33,
+        "faixa_estimada_mmh": [
+          1.15,
+          6.48
+        ],
+        "dbz_medio": 25.0,
+        "pico_em": "2026-09-15T03:00:00+00:00",
+        "pico_estimado_mmh": 3.53,
+        "pico_dbz_medio": 31.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190339/2026",
+      "municipio": "Pirassununga",
+      "latitude": -21.99809,
+      "longitude": -47.425553,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:00:35 - Chuva forte e persistente em Pirassununga, Leme e Aguai. Tem vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:00:35 - Chuva forte e persistente em Pirassununga, Leme e Aguai. Tem vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "00:35 - Chuva forte e persistente em Pirassununga, Leme e Aguaí. Tem vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-15T00:35:32-03:00",
+      "fim": "2026-09-15T03:00:00-03:00",
+      "vigencia": "2026-09-15T00:35:32-03:00 → 2026-09-15T03:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 13,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-15T03:30:00+00:00",
+        "intensidade_estimada_mmh": 3.73,
+        "faixa_estimada_mmh": [
+          3.16,
+          11.53
+        ],
+        "dbz_medio": 32.2,
+        "pico_em": "2026-09-15T03:20:00+00:00",
+        "pico_estimado_mmh": 4.23,
+        "pico_dbz_medio": 33.0,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190340/2026",
+      "municipio": "Matão",
+      "latitude": -21.598232,
+      "longitude": -48.363474,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:00:37 - Chuva forte e persistente em Tabatinga e Matao. Tem raios e  vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:00:37 - Chuva forte e persistente em Tabatinga e Matao. Tem raios e  vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "00:37 - Chuva forte e persistente em Tabatinga e Matão. Tem raios e  vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-15T00:38:28-03:00",
+      "fim": "2026-09-15T03:00:00-03:00",
+      "vigencia": "2026-09-15T00:38:28-03:00 → 2026-09-15T03:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 16,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-15T03:30:00+00:00",
+        "intensidade_estimada_mmh": 1.97,
+        "faixa_estimada_mmh": [
+          3.16,
+          8.65
+        ],
+        "dbz_medio": 27.7,
+        "pico_em": "2026-09-15T03:30:00+00:00",
+        "pico_estimado_mmh": 1.97,
+        "pico_dbz_medio": 27.7,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
+    },
+    {
+      "id_alerta": "190340/2026",
+      "municipio": "Tabatinga",
+      "latitude": -21.728623,
+      "longitude": -48.633953,
+      "tipo": "CHUVAS INTENSAS",
+      "titulo": "Defesa Civil:00:37 - Chuva forte e persistente em Tabatinga e Matao. Tem raios e  vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "resumo": "Defesa Civil:00:37 - Chuva forte e persistente em Tabatinga e Matao. Tem raios e  vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
+      "descricao": "00:37 - Chuva forte e persistente em Tabatinga e Matão. Tem raios e  vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
+      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
+      "gravidade": "Moderate",
+      "urgencia": "Immediate",
+      "certeza": "Observed",
+      "inicio": "2026-09-15T00:38:28-03:00",
+      "fim": "2026-09-15T03:00:00-03:00",
+      "vigencia": "2026-09-15T00:38:28-03:00 → 2026-09-15T03:00:00-03:00",
+      "status": "ATIVO_OFICIAL",
+      "fonte": "Defesa Civil / IDAP-CAP",
+      "sender": "CENAD-SEDEC",
+      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
+      "sites_referencia": 2,
+      "area_oficial": [
+        "SÃO PAULO/SP"
+      ],
+      "radar_estimativa": {
+        "status": "ECO_DETECTADO",
+        "fonte": "RainViewer",
+        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "janela_min": 120,
+        "ultimo_eco_em": "2026-09-15T03:30:00+00:00",
+        "intensidade_estimada_mmh": 1.49,
+        "faixa_estimada_mmh": [
+          1.0,
+          6.48
+        ],
+        "dbz_medio": 25.8,
+        "pico_em": "2026-09-15T03:30:00+00:00",
+        "pico_estimado_mmh": 1.49,
+        "pico_dbz_medio": 25.8,
+        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+      }
     }
   ],
   "eventos_recentes_geo": [
@@ -604,9 +814,9 @@
   "alertas_sp_sem_municipio_spi": [],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-15T03:35:27.125247+00:00",
+    "gerado_em": "2026-09-15T03:40:32.214128+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 9,
+    "eventos_com_eco": 12,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
