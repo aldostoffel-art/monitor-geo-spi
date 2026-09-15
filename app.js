@@ -1248,6 +1248,17 @@ function tvRenderForecast48(){
    return `<article class="tv48-card ${cls}"><small>${esc(win.label)}</small><b>${lv.icon||'🟢'} ${esc(lv.label||'OK')}</b><strong>${esc(place||'Sem sinal relevante')}</strong><span>${rain>0?'🌧 '+rain.toFixed(1)+' mm':'🌧 —'}${gust>0?' • 🌬 '+gust.toFixed(0)+' km/h':''}</span></article>`;
  }).join('');
 }
+function tvRenderOpsBoard(){
+ const box=document.getElementById('tvOpsWindows'),exp=document.getElementById('tvOpsExposure');if(!box)return;
+ const wins=commandBoardWindows();
+ box.innerHTML=wins.map(win=>{
+   const rows=commandBoardRegionRows(win),ranked=[...rows].sort((a,b)=>nvCnLevel(b,win).rank-nvCnLevel(a,win).rank||Number(b.score||0)-Number(a.score||0));
+   const top=ranked.slice(0,5),lead=top[0]||null,leadLv=nvCnLevel(lead,win),cls='tvops-'+(leadLv.key||'ok');
+   const items=top.map(x=>{const lv=nvCnLevel(x,win),place=nvCnPlace(x)||('CN '+x.ddd),rain=Number(x.rain||0),gust=Number(x.gust||0),s4=Number(x.sites?.ate4h||0);return `<div class="tvops-row tvops-${lv.key||'ok'}"><span><b>CN ${esc(x.ddd)}</b><small>${esc(place)}</small></span><em>${esc(lv.label||'OK')}</em><i>${rain>0?'🌧 '+rain.toFixed(1)+' mm':''}${gust>0?' • 🌬 '+gust.toFixed(0)+' km/h':''}${s4>0?' • 🔋 '+s4:''}</i></div>`}).join('');
+   return `<article class="tvops-col ${cls}"><header><small>${esc(win.label)}</small><b>${esc(leadLv.icon||'🟢')} ${esc(leadLv.label||'OK')}</b><span>${esc(win.sub||'')}</span></header><div>${items||'<div class="tvops-empty">Sem sinal relevante</div>'}</div></article>`;
+ }).join('');
+ if(exp){const tree=nvDynamicTreeRiskRows().filter(x=>['CRÍTICO','ALTO','MODERADO'].includes(String(x.nivel||'').toUpperCase())),sites4=(siteEvents||[]).filter(x=>siteIsCritical(x)&&['11','12','14','15','16','17','18','19'].includes(String(x.ddd??''))&&(String(x.ddd)!=='11'||x.escopo_spi_ddd11===true)).length;exp.innerHTML=`<div><b>${sites4}</b><span>Sites ≤4h</span></div><div><b>${tree.length}</b><span>Municípios árvore MOD+</span></div><div><b>${(fireEvents||[]).length}</b><span>Fire ativos</span></div><div><b>${(energyEvents||[]).length}</b><span>Energia</span></div><div><b>${(defesaEvents||[]).length}</b><span>Defesa Civil</span></div>`}
+}
 function tvRenderAlertDeck(){
  const box=document.getElementById('tvAlertDeck');if(!box)return;
  const official=decisionCurrentOfficialAlerts();
@@ -1287,7 +1298,7 @@ function renderTvView(){
  const treeTop=[...tree].sort((a,b)=>Number(b.score||0)-Number(a.score||0)).slice(0,4),crit48=rows48.filter(x=>String(x.level||'').includes('CRÍTICO')).length,high48=rows48.filter(x=>String(x.level||'')==='ALTO').length;
  const aiDetail=[ai.detail,treeTop.length?`Árvore: ${treeTop.map(x=>`${x.municipio} ${String(x.nivel||'').toLowerCase()}`).join(' • ')}`:'Sem município MODERADO+ para árvore agora.',crit48||high48?`48h: ${crit48} crítico(s) e ${high48} alto(s).`:'48h sem crítico/alto consolidado.'].filter(Boolean).join('  |  ');if(aid)aid.textContent=aiDetail;
  const ais=document.getElementById('tvAiSignals');if(ais)ais.innerHTML=`<span><b>${ranked.length}</b> risco real</span><span><b>${dc}</b> Defesa Civil</span><span><b>${sites4}</b> sites ≤4h</span><span><b>${tree.length}</b> árvore MOD+</span><span><b>${(fireEvents||[]).length}</b> Fire</span>`;
- tvRenderAlertDeck();tvRenderNowMap(cityRanks);tvRender48Map(rows48);tvRenderForecast48();
+ tvRenderAlertDeck();tvRenderNowMap(cityRanks);tvRender48Map(rows48);tvRenderForecast48();tvRenderOpsBoard();
  const nowFoot=document.getElementById('tvNowFoot');if(nowFoot)nowFoot.innerHTML=`<b>${ranked.length}</b> prioridade(s) reais • chuva máx. <b>${topObs?Number(topObs.chuva1h||0).toFixed(1):'0.0'} mm/1h</b>`;
  const foot48=document.getElementById('tv48Foot');if(foot48)foot48.innerHTML=`<b>${rows48.length}</b> municípios relevantes • <b>${crit48}</b> crítico(s) • <b>${high48}</b> alto(s)`;
  const sideRisk=document.getElementById('tvSideRisk'),sideRiskDetail=document.getElementById('tvSideRiskDetail');if(sideRisk)sideRisk.textContent=lv.label;if(sideRiskDetail)sideRiskDetail.textContent=ranked[0]?`${nvCityDisplayName(ranked[0][0])} lidera a prioridade atual`:'Sem prioridade real relevante';
