@@ -1,14 +1,14 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-14T23:20:38-03:00",
-  "fonte_coletada_em": "2026-09-15T02:20:06Z",
+  "gerado_em": "2026-09-14T23:31:18-03:00",
+  "fonte_coletada_em": "2026-09-15T02:30:06Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
   "coleta_ok": true,
   "erro_coleta": null,
   "entradas_feed": 82,
-  "alertas_ativos": 11,
+  "alertas_ativos": 10,
   "eventos_geo": [
     {
       "id_alerta": "190297/2026",
@@ -35,21 +35,11 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-15T00:30:00+00:00",
-        "intensidade_estimada_mmh": 0.53,
-        "faixa_estimada_mmh": [
-          0.56,
-          1.15
-        ],
-        "dbz_medio": 18.6,
-        "pico_em": "2026-09-15T00:30:00+00:00",
-        "pico_estimado_mmh": 0.53,
-        "pico_dbz_medio": 18.6,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -109,21 +99,11 @@
         "SÃO PAULO/SP"
       ],
       "radar_estimativa": {
-        "status": "ECO_DETECTADO",
+        "status": "SEM_ECO_NO_PONTO",
         "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
+        "metodo": "Radar composto",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-15T00:30:00+00:00",
-        "intensidade_estimada_mmh": 0.45,
-        "faixa_estimada_mmh": [
-          0.45,
-          0.56
-        ],
-        "dbz_medio": 17.5,
-        "pico_em": "2026-09-15T00:30:00+00:00",
-        "pico_estimado_mmh": 0.45,
-        "pico_dbz_medio": 17.5,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
+        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
       }
     },
     {
@@ -204,7 +184,7 @@
           0.56
         ],
         "dbz_medio": 19.0,
-        "pico_em": "2026-09-15T00:30:00+00:00",
+        "pico_em": "2026-09-15T00:40:00+00:00",
         "pico_estimado_mmh": 0.56,
         "pico_dbz_medio": 19.0,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
@@ -281,13 +261,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-15T02:20:00+00:00",
-        "intensidade_estimada_mmh": 4.26,
+        "ultimo_eco_em": "2026-09-15T02:30:00+00:00",
+        "intensidade_estimada_mmh": 3.86,
         "faixa_estimada_mmh": [
-          4.21,
-          6.48
+          3.65,
+          8.65
         ],
-        "dbz_medio": 33.1,
+        "dbz_medio": 32.4,
         "pico_em": "2026-09-15T02:00:00+00:00",
         "pico_estimado_mmh": 5.78,
         "pico_dbz_medio": 35.2,
@@ -333,112 +313,6 @@
         "pico_em": "2026-09-15T01:00:00+00:00",
         "pico_estimado_mmh": 0.56,
         "pico_dbz_medio": 19.0,
-        "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
-      }
-    },
-    {
-      "id_alerta": "190305/2026",
-      "municipio": "Andradina",
-      "latitude": -20.898863,
-      "longitude": -51.376042,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:17:10 - Chuva na regiao de Andradina, Mirandopolis e Valparaiso. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:17:10 - Chuva na regiao de Andradina, Mirandopolis e Valparaiso. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
-      "descricao": "17:10 - Chuva na região de Andradina, Mirandópolis e Valparaíso. Tem raios e vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-14T17:17:50-03:00",
-      "fim": "2026-09-14T23:30:00-03:00",
-      "vigencia": "2026-09-14T17:17:50-03:00 → 2026-09-14T23:30:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
-      "sites_referencia": 6,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
-        "fonte": "RainViewer",
-        "metodo": "Radar composto",
-        "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
-      }
-    },
-    {
-      "id_alerta": "190305/2026",
-      "municipio": "Mirandópolis",
-      "latitude": -21.051806,
-      "longitude": -51.105517,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:17:10 - Chuva na regiao de Andradina, Mirandopolis e Valparaiso. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:17:10 - Chuva na regiao de Andradina, Mirandopolis e Valparaiso. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
-      "descricao": "17:10 - Chuva na região de Andradina, Mirandópolis e Valparaíso. Tem raios e vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-14T17:17:50-03:00",
-      "fim": "2026-09-14T23:30:00-03:00",
-      "vigencia": "2026-09-14T17:17:50-03:00 → 2026-09-14T23:30:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
-      "sites_referencia": 6,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "SEM_ECO_NO_PONTO",
-        "fonte": "RainViewer",
-        "metodo": "Radar composto",
-        "janela_min": 120,
-        "observacao": "Sem eco detectável no ponto amostrado nos frames disponíveis; não equivale a 0 mm medido."
-      }
-    },
-    {
-      "id_alerta": "190305/2026",
-      "municipio": "Valparaíso",
-      "latitude": -21.326786,
-      "longitude": -50.949081,
-      "tipo": "CHUVAS INTENSAS",
-      "titulo": "Defesa Civil:17:10 - Chuva na regiao de Andradina, Mirandopolis e Valparaiso. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
-      "resumo": "Defesa Civil:17:10 - Chuva na regiao de Andradina, Mirandopolis e Valparaiso. Tem raios e vento. Atinge municipios vizinhos. Tenha cuidado nas proximas horas.",
-      "descricao": "17:10 - Chuva na região de Andradina, Mirandópolis e Valparaíso. Tem raios e vento. Atinge municípios vizinhos. Tenha cuidado nas próximas horas.",
-      "instrucao": "Siga as orientações da defesa civil local e do plano de contingência municipal. Em caso de emergência, ligue 199 ou 193.",
-      "gravidade": "Moderate",
-      "urgencia": "Immediate",
-      "certeza": "Observed",
-      "inicio": "2026-09-14T17:17:50-03:00",
-      "fim": "2026-09-14T23:30:00-03:00",
-      "vigencia": "2026-09-14T17:17:50-03:00 → 2026-09-14T23:30:00-03:00",
-      "status": "ATIVO_OFICIAL",
-      "fonte": "Defesa Civil / IDAP-CAP",
-      "sender": "CENAD-SEDEC",
-      "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
-      "sites_referencia": 3,
-      "area_oficial": [
-        "SÃO PAULO/SP"
-      ],
-      "radar_estimativa": {
-        "status": "ECO_DETECTADO",
-        "fonte": "RainViewer",
-        "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
-        "janela_min": 120,
-        "ultimo_eco_em": "2026-09-15T01:40:00+00:00",
-        "intensidade_estimada_mmh": 0.85,
-        "faixa_estimada_mmh": [
-          1.0,
-          3.16
-        ],
-        "dbz_medio": 21.9,
-        "pico_em": "2026-09-15T01:00:00+00:00",
-        "pico_estimado_mmh": 1.68,
-        "pico_dbz_medio": 26.6,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -779,16 +653,16 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-15T02:20:00+00:00",
-        "intensidade_estimada_mmh": 0.55,
+        "ultimo_eco_em": "2026-09-15T02:30:00+00:00",
+        "intensidade_estimada_mmh": 0.29,
         "faixa_estimada_mmh": [
-          0.49,
-          1.15
+          0.32,
+          0.56
         ],
-        "dbz_medio": 18.9,
-        "pico_em": "2026-09-15T00:30:00+00:00",
-        "pico_estimado_mmh": 8.68,
-        "pico_dbz_medio": 38.0,
+        "dbz_medio": 14.4,
+        "pico_em": "2026-09-15T00:50:00+00:00",
+        "pico_estimado_mmh": 6.15,
+        "pico_dbz_medio": 35.6,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -821,13 +695,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-15T02:20:00+00:00",
-        "intensidade_estimada_mmh": 1.35,
+        "ultimo_eco_em": "2026-09-15T02:30:00+00:00",
+        "intensidade_estimada_mmh": 1.23,
         "faixa_estimada_mmh": [
           1.15,
-          3.65
+          2.05
         ],
-        "dbz_medio": 25.1,
+        "dbz_medio": 24.4,
         "pico_em": "2026-09-15T01:40:00+00:00",
         "pico_estimado_mmh": 2.27,
         "pico_dbz_medio": 28.7,
@@ -863,13 +737,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-15T02:20:00+00:00",
-        "intensidade_estimada_mmh": 1.32,
+        "ultimo_eco_em": "2026-09-15T02:30:00+00:00",
+        "intensidade_estimada_mmh": 2.12,
         "faixa_estimada_mmh": [
-          1.15,
-          3.16
+          2.05,
+          3.65
         ],
-        "dbz_medio": 25.0,
+        "dbz_medio": 28.2,
         "pico_em": "2026-09-15T01:40:00+00:00",
         "pico_estimado_mmh": 4.27,
         "pico_dbz_medio": 33.1,
@@ -905,13 +779,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-15T02:20:00+00:00",
-        "intensidade_estimada_mmh": 1.59,
+        "ultimo_eco_em": "2026-09-15T02:30:00+00:00",
+        "intensidade_estimada_mmh": 0.87,
         "faixa_estimada_mmh": [
-          1.15,
-          3.16
+          0.86,
+          1.78
         ],
-        "dbz_medio": 26.2,
+        "dbz_medio": 22.1,
         "pico_em": "2026-09-15T01:40:00+00:00",
         "pico_estimado_mmh": 3.34,
         "pico_dbz_medio": 31.4,
@@ -1031,13 +905,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-15T02:20:00+00:00",
-        "intensidade_estimada_mmh": 0.71,
+        "ultimo_eco_em": "2026-09-15T02:30:00+00:00",
+        "intensidade_estimada_mmh": 0.74,
         "faixa_estimada_mmh": [
-          0.49,
-          3.16
+          0.86,
+          2.05
         ],
-        "dbz_medio": 20.6,
+        "dbz_medio": 20.9,
         "pico_em": "2026-09-15T02:00:00+00:00",
         "pico_estimado_mmh": 3.67,
         "pico_dbz_medio": 32.0,
@@ -1073,13 +947,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-15T02:20:00+00:00",
-        "intensidade_estimada_mmh": 2.99,
+        "ultimo_eco_em": "2026-09-15T02:30:00+00:00",
+        "intensidade_estimada_mmh": 0.44,
         "faixa_estimada_mmh": [
-          3.16,
-          4.86
+          0.56,
+          0.56
         ],
-        "dbz_medio": 30.6,
+        "dbz_medio": 17.3,
         "pico_em": "2026-09-15T02:20:00+00:00",
         "pico_estimado_mmh": 2.99,
         "pico_dbz_medio": 30.6,
@@ -1115,13 +989,13 @@
         "fonte": "RainViewer",
         "metodo": "Radar dBZ → mm/h (Marshall-Palmer, estimativa)",
         "janela_min": 120,
-        "ultimo_eco_em": "2026-09-15T02:20:00+00:00",
-        "intensidade_estimada_mmh": 2.83,
+        "ultimo_eco_em": "2026-09-15T02:30:00+00:00",
+        "intensidade_estimada_mmh": 0.99,
         "faixa_estimada_mmh": [
-          3.16,
-          4.86
+          1.0,
+          3.16
         ],
-        "dbz_medio": 30.2,
+        "dbz_medio": 23.0,
         "pico_em": "2026-09-15T02:10:00+00:00",
         "pico_estimado_mmh": 3.58,
         "pico_dbz_medio": 31.9,
@@ -1227,9 +1101,9 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-15T02:20:40.807047+00:00",
+    "gerado_em": "2026-09-15T02:31:19.699763+00:00",
     "janela_min": 120,
-    "eventos_com_eco": 19,
+    "eventos_com_eco": 16,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
   }
 }
