@@ -1,9 +1,9 @@
 {
   "core": "P1_CAUSAS_DEV",
-  "gerado_em": "2026-09-15T09:22:19.622435-03:00",
+  "gerado_em": "2026-09-15T09:24:37.646770-03:00",
   "metodo": "correlação por sigla do site e por associação operacional segura: quando há exatamente um único site pendente no único CN elegível do grupo, uma resposta operacional curta pode ser vinculada a esse site; sem evidência = SEM CAUSA LOCALIZADA",
   "historico_grupos_inicio": "2024-08-01T07:57:00-03:00",
-  "historico_grupos_fim": "2026-09-15T12:18:34.000Z",
+  "historico_grupos_fim": "2026-09-15T12:24:25.000Z",
   "dias": [
     {
       "data": "2026-09-01",
@@ -33432,7 +33432,7 @@
             {
               "site": "BMG",
               "reincidente": true,
-              "aberturas": 3,
+              "aberturas": 4,
               "causa": "INFRA",
               "evidencias": [
                 {
@@ -33451,6 +33451,20 @@
             },
             {
               "site": "GOE",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "HEN",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "I3C",
               "reincidente": true,
               "aberturas": 1,
               "causa": "SEM CAUSA LOCALIZADA",
@@ -33483,6 +33497,20 @@
           "parceira": "TEL",
           "sites": [
             {
+              "site": "DNV",
+              "reincidente": true,
+              "aberturas": 2,
+              "causa": "NÃO IDENTIFICADA",
+              "evidencias": [
+                {
+                  "hora": "07:08",
+                  "grupo": "Móvel 14 - 18",
+                  "causa": "NÃO IDENTIFICADA",
+                  "status": "U50, TPP, NGT, DNV, MTE, TPL"
+                }
+              ]
+            },
+            {
               "site": "NGT",
               "reincidente": true,
               "aberturas": 2,
@@ -33511,16 +33539,9 @@
               ]
             },
             {
-              "site": "BIO",
+              "site": "TPP",
               "reincidente": true,
-              "aberturas": 1,
-              "causa": "SEM CAUSA LOCALIZADA",
-              "evidencias": []
-            },
-            {
-              "site": "DNV",
-              "reincidente": true,
-              "aberturas": 1,
+              "aberturas": 2,
               "causa": "NÃO IDENTIFICADA",
               "evidencias": [
                 {
@@ -33530,6 +33551,20 @@
                   "status": "U50, TPP, NGT, DNV, MTE, TPL"
                 }
               ]
+            },
+            {
+              "site": "ADL",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "BIO",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             },
             {
               "site": "MTE",
@@ -33553,18 +33588,18 @@
               "evidencias": []
             },
             {
-              "site": "TPP",
+              "site": "PLU",
               "reincidente": true,
               "aberturas": 1,
-              "causa": "NÃO IDENTIFICADA",
-              "evidencias": [
-                {
-                  "hora": "07:08",
-                  "grupo": "Móvel 14 - 18",
-                  "causa": "NÃO IDENTIFICADA",
-                  "status": "U50, TPP, NGT, DNV, MTE, TPL"
-                }
-              ]
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
+            },
+            {
+              "site": "PNM",
+              "reincidente": true,
+              "aberturas": 1,
+              "causa": "SEM CAUSA LOCALIZADA",
+              "evidencias": []
             }
           ]
         },
@@ -33732,7 +33767,7 @@
           ]
         }
       ],
-      "mensagens_grupos_no_dia": 109
+      "mensagens_grupos_no_dia": 113
     }
   ],
   "ativos_agora": [
@@ -33757,7 +33792,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 16.7
+          "idade_ativa_h": 16.74
         },
         {
           "site": "CJ1",
@@ -33776,7 +33811,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 9.99
+          "idade_ativa_h": 10.02
         },
         {
           "site": "EBY",
@@ -33795,7 +33830,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 14.04
+          "idade_ativa_h": 14.07
         },
         {
           "site": "MBM",
@@ -33814,7 +33849,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 49.04
+          "idade_ativa_h": 49.07
         },
         {
           "site": "STF",
@@ -33833,7 +33868,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 224.69
+          "idade_ativa_h": 224.72
         },
         {
           "site": "XQA",
@@ -33852,7 +33887,7 @@
               "status": "STF, XQA, EBY, MBM, BGJ, FBO, CJ1"
             }
           ],
-          "idade_ativa_h": 97.69
+          "idade_ativa_h": 97.72
         }
       ]
     },
@@ -33871,7 +33906,7 @@
               "status": "GRY"
             }
           ],
-          "idade_ativa_h": 36.7
+          "idade_ativa_h": 36.74
         }
       ]
     },
@@ -33896,7 +33931,38 @@
               "status": "BDV, técnicos Eliel e Renan tentando outro caminho p conseguir chegar em Barra do Turvo q está com as estradas obstruídas."
             }
           ],
-          "idade_ativa_h": 45.35
+          "idade_ativa_h": 45.39
+        },
+        {
+          "site": "BMG",
+          "causa": "INFRA",
+          "evidencias": [
+            {
+              "hora": "07:10",
+              "grupo": "Móvel 15 - 19",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "BDV, BMG, PDE, IPP, R0B, YPN"
+            },
+            {
+              "hora": "08:01",
+              "grupo": "Móvel 15 - 19",
+              "causa": "INFRA",
+              "status": "BMG, téc Nilson em deslocamento com GMG p tentativa de acesso ao morro."
+            }
+          ],
+          "idade_ativa_h": 0.02
+        },
+        {
+          "site": "HEN",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.02
+        },
+        {
+          "site": "I3C",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.02
         },
         {
           "site": "IPP",
@@ -33915,7 +33981,7 @@
               "status": "IPP, sem acesso o morro de RIR.RD Ribeira Rádio devido chuvas e estrada"
             }
           ],
-          "idade_ativa_h": 23.37
+          "idade_ativa_h": 23.41
         },
         {
           "site": "PDE",
@@ -33934,7 +34000,7 @@
               "status": "PDE, técnicos Gabriel e Momberg providenciando troca da RRU"
             }
           ],
-          "idade_ativa_h": 36.37
+          "idade_ativa_h": 36.41
         },
         {
           "site": "R0B",
@@ -33953,7 +34019,7 @@
               "status": "R0B, sem acesso o morro de RIR.RD Ribeira Rádio devido chuvas e estrada"
             }
           ],
-          "idade_ativa_h": 23.37
+          "idade_ativa_h": 23.41
         }
       ]
     },
@@ -33978,7 +34044,7 @@
               "status": "FJN_Furto vandalismo"
             }
           ],
-          "idade_ativa_h": 26.37
+          "idade_ativa_h": 26.41
         },
         {
           "site": "NAM",
@@ -33991,7 +34057,7 @@
               "status": "FJN, NAM, REG, PME"
             }
           ],
-          "idade_ativa_h": 12.37
+          "idade_ativa_h": 12.41
         },
         {
           "site": "PME",
@@ -34016,7 +34082,7 @@
               "status": "PME Fibras aparentemente integras tec deslocando para o site"
             }
           ],
-          "idade_ativa_h": 9.99
+          "idade_ativa_h": 10.02
         },
         {
           "site": "REG",
@@ -34035,7 +34101,7 @@
               "status": "PME - leva o REG _ provável rompimento (verificando Deslocamento tec)"
             }
           ],
-          "idade_ativa_h": 9.99
+          "idade_ativa_h": 10.02
         }
       ]
     },
@@ -34044,10 +34110,29 @@
       "parceira": "TEL",
       "sites": [
         {
+          "site": "ADL",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.02
+        },
+        {
           "site": "BIO",
           "causa": "SEM CAUSA LOCALIZADA",
           "evidencias": [],
-          "idade_ativa_h": 0.7
+          "idade_ativa_h": 0.74
+        },
+        {
+          "site": "DNV",
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:08",
+              "grupo": "Móvel 14 - 18",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "U50, TPP, NGT, DNV, MTE, TPL"
+            }
+          ],
+          "idade_ativa_h": 0.02
         },
         {
           "site": "NGT",
@@ -34060,7 +34145,19 @@
               "status": "U50, TPP, NGT, DNV, MTE, TPL"
             }
           ],
-          "idade_ativa_h": 0.37
+          "idade_ativa_h": 0.41
+        },
+        {
+          "site": "PLU",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.02
+        },
+        {
+          "site": "PNM",
+          "causa": "SEM CAUSA LOCALIZADA",
+          "evidencias": [],
+          "idade_ativa_h": 0.02
         },
         {
           "site": "TPL",
@@ -34073,7 +34170,20 @@
               "status": "U50, TPP, NGT, DNV, MTE, TPL"
             }
           ],
-          "idade_ativa_h": 0.37
+          "idade_ativa_h": 0.41
+        },
+        {
+          "site": "TPP",
+          "causa": "NÃO IDENTIFICADA",
+          "evidencias": [
+            {
+              "hora": "07:08",
+              "grupo": "Móvel 14 - 18",
+              "causa": "NÃO IDENTIFICADA",
+              "status": "U50, TPP, NGT, DNV, MTE, TPL"
+            }
+          ],
+          "idade_ativa_h": 0.02
         },
         {
           "site": "U50",
@@ -34086,7 +34196,7 @@
               "status": "U50, TPP, NGT, DNV, MTE, TPL"
             }
           ],
-          "idade_ativa_h": 1128.04
+          "idade_ativa_h": 1128.07
         }
       ]
     },
@@ -34123,7 +34233,7 @@
               "status": "ASU Furto e Vandalismo. Estamos a Caminho"
             }
           ],
-          "idade_ativa_h": 8.37
+          "idade_ativa_h": 8.41
         },
         {
           "site": "ICN",
@@ -34154,7 +34264,7 @@
               "status": "Bom dia, ICN furto."
             }
           ],
-          "idade_ativa_h": 7.0
+          "idade_ativa_h": 7.04
         },
         {
           "site": "JBD",
@@ -34185,7 +34295,7 @@
               "status": "JBD iniciando recuperação furto"
             }
           ],
-          "idade_ativa_h": 52.04
+          "idade_ativa_h": 52.07
         },
         {
           "site": "SPO",
@@ -34216,7 +34326,7 @@
               "status": "SPO equipe em deslocamento para alinhamento de enlace"
             }
           ],
-          "idade_ativa_h": 20.7
+          "idade_ativa_h": 20.74
         },
         {
           "site": "ZUA",
@@ -34247,7 +34357,7 @@
               "status": "ZUA em atendimento"
             }
           ],
-          "idade_ativa_h": 5.37
+          "idade_ativa_h": 5.41
         }
       ]
     }
