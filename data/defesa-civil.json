@@ -1,12 +1,12 @@
 {
   "core": "DEFESA CIVIL GEO SPI",
   "ambiente": "DEV",
-  "gerado_em": "2026-09-15T19:40:34-03:00",
+  "gerado_em": "2026-09-15T19:50:10-03:00",
   "fonte_coletada_em": "2026-09-15T22:40:06Z",
   "origem_coleta": "IDAP_CAP_OFICIAL",
   "url_fonte": "https://idapfile.mi.gov.br/idap/api/rss/cap",
-  "coleta_ok": true,
-  "erro_coleta": null,
+  "coleta_ok": false,
+  "erro_coleta": "IDAP indisponivel em todos os endpoints: Remote end closed connection without response",
   "entradas_feed": 105,
   "alertas_ativos": 19,
   "eventos_geo": [
@@ -46,9 +46,9 @@
           0.56
         ],
         "dbz_medio": 19.0,
-        "pico_em": "2026-09-15T20:50:00+00:00",
-        "pico_estimado_mmh": 1.48,
-        "pico_dbz_medio": 25.7,
+        "pico_em": "2026-09-15T21:00:00+00:00",
+        "pico_estimado_mmh": 0.66,
+        "pico_dbz_medio": 20.2,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -372,9 +372,9 @@
           2.05
         ],
         "dbz_medio": 19.2,
-        "pico_em": "2026-09-15T20:50:00+00:00",
-        "pico_estimado_mmh": 3.16,
-        "pico_dbz_medio": 31.0,
+        "pico_em": "2026-09-15T21:40:00+00:00",
+        "pico_estimado_mmh": 0.58,
+        "pico_dbz_medio": 19.2,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -708,9 +708,9 @@
           0.21
         ],
         "dbz_medio": 12.0,
-        "pico_em": "2026-09-15T20:50:00+00:00",
-        "pico_estimado_mmh": 4.69,
-        "pico_dbz_medio": 33.8,
+        "pico_em": "2026-09-15T21:00:00+00:00",
+        "pico_estimado_mmh": 4.26,
+        "pico_dbz_medio": 33.1,
         "observacao": "Estimativa por radar; não substitui pluviômetro CEMADEN/INMET."
       }
     },
@@ -2154,7 +2154,7 @@
   ],
   "radar_enriquecimento": {
     "fonte": "RainViewer",
-    "gerado_em": "2026-09-15T22:40:40.409601+00:00",
+    "gerado_em": "2026-09-15T22:50:15.706729+00:00",
     "janela_min": 120,
     "eventos_com_eco": 40,
     "nota": "Estimativa complementar. CEMADEN/INMET observados têm precedência quando disponíveis."
